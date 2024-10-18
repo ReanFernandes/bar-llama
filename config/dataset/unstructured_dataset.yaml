@@ -1,0 +1,3 @@
+dataset_path: ${hydra:runtime.cwd}/dataset/Consolidated_data.json
+domains: ["all"]
+label: unstructured_explanation

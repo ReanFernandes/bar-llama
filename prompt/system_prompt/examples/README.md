@@ -1,0 +1,1 @@
+Contains the examples to be used in case of few shot prompting. Use either depending on the explanation type, whether it is structured or unstructured.

@@ -1,0 +1,7 @@
+Respond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:
+
+{
+    "chosen_domain": "...",
+    "chosen_option_label" : "...",
+    "explanation": "..."
+}

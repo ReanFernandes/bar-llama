@@ -1,0 +1,4 @@
+batch_size: 1   # Larger batch size for evaluation
+shuffle: False      # No shuffling needed for evaluation
+num_workers: 1     # Adjust based on your system
+drop_last: False    # Process all samples in evaluation

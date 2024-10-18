@@ -1,0 +1,5 @@
+eval : True
+trained_model: True 
+lora_adapter_path: ${train.model_save_directory}
+pipeline_available : false
+

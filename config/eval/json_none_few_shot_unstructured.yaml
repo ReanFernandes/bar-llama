@@ -1,0 +1,23 @@
+dataset_label: "json_none_few_shot_unstructured"
+model_label: 'llama2'
+new_model_name: ${eval.model_label}_${eval.dataset_label} # sanity check, this must match the namesake train config file to avoid model mismatch
+eval: True
+trained_model: True
+pipeline_available: false
+lora_adapter_path: ${hydra:runtime.cwd}/../../saved_models/${eval.new_model_name}
+output_path: ${hydra:runtime.cwd}/trained_model_output/${eval.new_model_name}
+
+# Include the specifics of prompt handling and response types as needed
+prompt:
+  system_prompt: ${hydra:runtime.cwd}/system_prompts/system # the way i made the system prompts, this will have to be suffixed with the config in the prompt handler.
+  prompt_type: "few_shot" # either few_shot or zero_shot
+  example_path: ${hydra:runtime.cwd}/dataset/data_generation_pipline/restructure_data/unstructured_example.json
+  # fact_first : True # if the the model is required to provide explanation before the chosen answer, then set true.
+  response_format: "json"
+  response_type: "none"
+  mode: "eval"
+  model_name: "llama2"
+  # structured_explanation: true deprecated, have set explanation type insteadd
+  store_prompt: false # flag to use such that the generated prompt will be add to a prompt list within the class, which can be dumped to a json file at the end. 
+  pipeline_available: None 
+  explanation_type: "unstructured"

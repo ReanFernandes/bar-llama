@@ -1,0 +1,7 @@
+system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system # this thing is completed in the prompt handler to put together the actual system prompt file name
+prompt_type: <prompt_type>
+example_path: ${hydra:runtime.cwd}/prompt/examples/<explanation_type>_example.json
+explanation_type: <explanation_type>
+response_type: <response_type>
+response_format: <response_format>
+store_prompt: False # true if compiling trainset, false if using for eval ( so that there is no need to store the prompt as a batch)

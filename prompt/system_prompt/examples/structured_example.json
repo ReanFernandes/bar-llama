@@ -1,0 +1,21 @@
+[
+    {
+        "domain": "Criminal_law",
+        "question_number": 887,
+        "question": " A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found",
+        "options": {
+            "optionA": "A. not guilty, because the neighbor had as much right as the husband to be in the house.",
+            "optionB": "B. not guilty, because the husband attacked the neighbor with a deadly weapon.",
+            "optionC": "C. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.",
+            "optionD": "D. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser."
+        },
+        "correct_answer": "B",
+        "not_used_explanation": " The husband, clearly the aggressor, was attacking the neighbor with a deadly weapon, a knife. That, combined with the neighbor's consistent refusal to engage in violence with the husband and that the neighbor used a nearby, available lamp, all are clear indications that the neighbor was acting in self-defense, and thus not guilty of murder. A claim of self-defense will be successful against a murder charge if the action is reasonably necessary to prevent imminent death or great bodily harm as a result of unlawful force. The husband's lunging at the neighbor with a knife was an unlawful use of deadly force, which led the neighbor to reasonably believe that his own use of force was necessary to protect himself. The husband was clearly the initiator of the violence and use of deadly force here.",
+        "explanation": {
+            "Legal_Concept": "Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.",
+            "Fact_Analysis": "The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.",
+            "Rule_Application": "Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor’s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.",
+            "Legal_Conclusion": "Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B."
+        }
+    }
+]

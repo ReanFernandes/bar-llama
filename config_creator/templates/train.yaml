@@ -1,0 +1,45 @@
+train_config_label : <config_label>
+dataset_path: ${hydra:runtime.cwd}/dataset/train_sets/${train.train_config_label}.json
+
+wandb:
+  model_id: ${model.model_label}_${train.train_config_label}
+  project_name: bar_llama
+  run_name: fine_tune_${train.train_config_label}
+  tags: [${model.model_label}, ${train.train_config_label}]
+
+lora_config:
+  r: 8
+  lora_alpha: 16
+  bias: "none"
+  lora_dropout: 0.5 # higher drop out because more params than tokens
+  task_type: "CAUSAL_LM"
+  target_modules: [
+    "q_proj",
+    "up_proj",
+    "o_proj",
+    "k_proj",
+    "down_proj",
+    "gate_proj",
+    "v_proj"]
+
+training_args:
+  output_dir: ${hydra:runtime.cwd}/train_checkpoints/${train.train_config_label}
+  num_train_epochs: 5
+  per_device_train_batch_size: 1
+  gradient_checkpointing: True
+  gradient_accumulation_steps: 1
+  optim: "paged_adamw_32bit"
+  save_steps: 500
+  logging_steps: 10
+  learning_rate: 2e-4
+  weight_decay: 0.01 #l2 reg
+  fp16: False
+  bf16: False
+  max_grad_norm: 0.3
+  max_steps: -1
+  group_by_length: True
+  lr_scheduler_type: "constant"
+  report_to: "wandb"
+
+model_adapter_name: ${model.model_label}_${train.train_config_label}
+lora_adapter_path: ${hydra:runtime.cwd}/sft_adapters/${train.model_adapter_name}

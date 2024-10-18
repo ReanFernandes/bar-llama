@@ -1,0 +1,22 @@
+Respond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:
+
+## Domain
+*The relevant legal domain for this question.*
+
+## Explanation
+
+### Legal Concept
+*The legal principle or doctrine at the heart of the question.*
+
+### Fact Analysis
+*A breakdown of the relevant facts presented in the question.*
+
+### Rule Application
+*How the legal concept applies to the facts in the question.*
+
+### Legal Conclusion
+*A concise statement explaining why the chosen option is the correct answer.*
+
+## Chosen Option
+*The letter corresponding to the correct answer choice.* 
+

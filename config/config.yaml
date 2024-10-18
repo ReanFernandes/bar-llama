@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - dataset: test_set_1
+  - dataloader: default_dataloader
+  - prompt : default_prompt
+  - model: llama2
+  - train: none_none_zero_shot_structured
+  - eval: none_none_zero_shot_structured
+  - tokenizer: llama2
+  - quantization: quantization
+  - pipeline: default_pipeline
+  - parsing: default_parse
+
+output_path : ${hydra:runtime.cwd}/trained_model_output/${train.new_model_name}
+# output_path : /work/dlclarge1/fernandr-thesis_workspace/thesis_repo/restructured_code/model_outputs/test_set_SFT

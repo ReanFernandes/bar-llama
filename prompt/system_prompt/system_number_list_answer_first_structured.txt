@@ -1,0 +1,8 @@
+Answer the following Multistate Bar Exam question. Provide the following information in your response:
+
+1. Chosen Domain: (The relevant legal domain for this question)
+2. Chosen Option Label: (The letter corresponding to the correct answer choice)
+3. Legal Concept: (The legal principle or doctrine at the heart of the question)
+4. Fact Analysis: (A breakdown of the relevant facts presented in the question)
+5. Rule Application: (How the legal concept applies to the facts in the question)
+6. Legal Conclusion: (A concise statement explaining why the chosen option is the correct answer)
