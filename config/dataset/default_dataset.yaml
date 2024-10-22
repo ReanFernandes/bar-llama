@@ -1,3 +1,4 @@
 dataset_path:  ${hydra:runtime.cwd}/dataset/results_few_shot_high_temp.json
 domains: ["all"]
+num_questions: 10 # None for all questions or a number for a subset
 label: few_shot_high_temp
