@@ -8,7 +8,7 @@ The tests cover various aspects of the QuestionDataset functionality, including:
 - Randomizing question selection
 
 These tests ensure that the QuestionDataset class correctly loads and filters
-data based on the provided configuration options.
+data based on the question_numbered configuration options.
 """
 
 
@@ -27,7 +27,8 @@ class TestQuestionDataset(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # Set up the path to your existing dataset
-        cls.dataset_path = "/mnt/b1aa7336-e92e-43c1-9d8b-d627549a7f7d/bar-llama/dataset/seed_dataset/high_temp_structured_expl_dataset.json"
+        # cls.dataset_path = "/mnt/b1aa7336-e92e-43c1-9d8b-d627549a7f7d/bar-llama/dataset/seed_dataset/high_temp_structured_expl_dataset.json" # this is on my local pc
+        cls.dataset_path = "/work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/seed_dataset/high_temp_structured_expl_dataset.json"    # this is on the server
 
     def test_all_domains(self):
         config = {
@@ -41,7 +42,7 @@ class TestQuestionDataset(unittest.TestCase):
 
     def test_specific_domains(self):
         # Assuming your dataset has at least two domains, replace with actual domain names
-        test_domains = ["domain1", "domain2"]
+        test_domains = ["Criminal_law", "Evidence"]
         config = {
             "dataset_path": self.dataset_path,
             "domains": test_domains,
@@ -74,7 +75,7 @@ class TestQuestionDataset(unittest.TestCase):
         dataset1 = QuestionDataset(config)
         dataset2 = QuestionDataset(config)
         # This test might occasionally fail due to randomness
-        self.assertNotEqual([item['id'] for item in dataset1], [item['id'] for item in dataset2])
+        self.assertNotEqual([item['question_number'] for item in dataset1], [item['question_number'] for item in dataset2])
 
     def test_getitem(self):
         config = {
@@ -85,7 +86,7 @@ class TestQuestionDataset(unittest.TestCase):
         }
         dataset = QuestionDataset(config)
         item = dataset[0]
-        self.assertIn("id", item)
+        self.assertIn("question_number", item)
         self.assertIn("question", item)
         self.assertIn("domain", item)
 
