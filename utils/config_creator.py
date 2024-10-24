@@ -1,5 +1,6 @@
 import os
 import itertools
+import re
 
 # Define the paths
 TEMPLATE_DIR = "config_creator/templates/"
@@ -23,14 +24,22 @@ non_combinable_params = {
     "randomise_questions": "True"
 }
 
+# Function to find missing placeholders
+def find_unsubstituted_placeholders(template_str):
+    # Regex to match placeholders like <param_name>
+    return re.findall(r"<(.*?)>", template_str)
+
 # Function to replace placeholders in the template and enforce placeholder checks
-def substitute_template(template_str, param_values):
+def substitute_template(template_str, param_values, template_name):
     for key, value in param_values.items():
         template_str = template_str.replace(f"<{key}>", str(value))
 
-    # Enforce placeholder check: If any "<>" remain in the string, raise an error
-    if "<" in template_str or ">" in template_str:
-        raise ValueError(f"Unsubstituted placeholders detected in template after substitution! Check your param values.")
+    # Find any remaining placeholders
+    missing_placeholders = find_unsubstituted_placeholders(template_str)
+
+    # If any placeholders are found, raise an error with specific details
+    if missing_placeholders:
+        raise ValueError(f"Unsubstituted placeholders detected in {template_name}: {', '.join(missing_placeholders)}")
     
     return template_str
 
@@ -50,7 +59,7 @@ def process_combinable_templates(template_dir, actual_config_dir, param_combinat
                     template_content = file.read()
 
                 # Substitute placeholders with enforced checking
-                substituted_content = substitute_template(template_content, param_values)
+                substituted_content = substitute_template(template_content, param_values, template_filename)
 
                 # Generate the output filename and directory
                 output_filename = generate_filename(param_values)
@@ -77,7 +86,7 @@ def process_non_combinable_templates(template_dir, actual_config_dir, non_combin
                 template_content = file.read()
 
             # Substitute placeholders with enforced checking
-            substituted_content = substitute_template(template_content, non_combinable_params)
+            substituted_content = substitute_template(template_content, non_combinable_params, template_filename)
 
             # Save in the appropriate subfolder (dataset or dataloader)
             subfolder = template_filename.split(".")[0]
