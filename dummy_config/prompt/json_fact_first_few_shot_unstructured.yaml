@@ -1,7 +1,7 @@
-prompt_type: <prompt_type>
-example_path: ${hydra:runtime.cwd}/prompt/examples/<explanation_type>_example.json # this gets ignored if prompt_type is set to zero_shot
-explanation_type: <explanation_type>
-response_type: <response_type>
-response_format: <response_format>
+prompt_type: few_shot
+example_path: ${hydra:runtime.cwd}/prompt/examples/unstructured_example.json # this gets ignored if prompt_type is set to zero_shot
+explanation_type: unstructured
+response_type: fact_first
+response_format: json
 store_prompt: False # true if compiling trainset, false if using for eval ( so that there is no need to store the prompt as a batch)
 system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system_${prompt.response_format}_${prompt.response_type}_${prompt.explanation_type}.txt # this thing is completed in the prompt handler to put together the actual system prompt file name

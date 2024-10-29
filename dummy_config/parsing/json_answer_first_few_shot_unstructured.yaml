@@ -1,0 +1,18 @@
+#Over-ridable
+base_model_output_dir: ${eval.output_directory} # where the output will be loaded from, typically i will be scanning the entire directory to parse all the files
+
+# deprecated, previous paradigm was to finish the infererence and then manually parse the files, current strategy is to directly parse the file 
+# in the eval script after the inference is done, and save the parsed responses to save me time .
+# prompt_type: few_shot # 'few_shot' or 'zero_shot'
+# response_type: answer_first #"fact_first" or 'none'
+# response_format: json #'json' or 'markdown' or 'none'
+# explanation_type: unstructured # 'structured' or 'unstructured'
+# training_status : untrained # can be 'trained' or 'untrained'
+# quantisation_status: full_model # can be 'quantised_model' or 'full_model'
+# model_name: llama2 # currently only 'llama2'
+
+#inferred
+# config_name: ${parsing.model_name}_${parsing.response_format}_${parsing.response_type}_${parsing.prompt_type}_${parsing.explanation_type} # put together from response type, response format, prompt type, explanation type, this is the model config
+# model_output_path: ${parsing.base_model_output_dir}/${parsing.training_status}_${parsing.quantisation_status}/${parsing.config_name} # this only shows the level 2 directory to be accessed, further more, the test set label must be added to it in the main code to access the file
+parsed_output_dir: ${hydra:runtime.cwd}/parsed_outputs/${eval.training_status}_${eval.quantisation_status}/${eval.eval_model_name} # where the parsed outputs will be saved, still need to append the test set label to this path
+parsed_statistics: ${hydra:runtime.cwd}/parsing_statistics/${eval.training_status}_${eval.quantisation_status}/${eval.eval_model_name} # where the parsed statistics will be saved still need to append the test set label to this path

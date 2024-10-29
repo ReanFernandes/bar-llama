@@ -5,9 +5,11 @@ import pandas as pd
 # note to self:
 # args list for this file:
 # data_dir
-# domains : list of domains to be included in the dataset
-# batch_size
-# shuffle
+# to add the following functionalities:
+# num_questions : number of questions to be included in the dataset [DONE]
+# domains : list of domains to be included in the dataset [DONE]
+# batch_size [DONE]
+# random question selection [DONE]
 
 
 class QuestionDataset(Dataset):

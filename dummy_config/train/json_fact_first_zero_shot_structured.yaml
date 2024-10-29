@@ -1,4 +1,4 @@
-train_config_label : <response_format>_<response_type>_<prompt_type>_<explanation_type>
+train_config_label : json_fact_first_zero_shot_structured
 dataset_path: ${hydra:runtime.cwd}/dataset/train_sets/${train.train_config_label}.json
 
 wandb:

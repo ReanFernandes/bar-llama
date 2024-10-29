@@ -1,7 +1,7 @@
-training_status: <training_status>
-quantisation_status: <quantisation_status>
+training_status: untrained
+quantisation_status: full_model
 
-train_config_label: <response_format>_<response_type>_<prompt_type>_<explanation_type>
+train_config_label: json_fact_first_zero_shot_unstructured
 model_label: ${model.model_label}
 eval_model_name: ${eval.model_label}_${eval.train_config_label}
 eval: True
@@ -12,8 +12,8 @@ output_directory: ${hydra:runtime.cwd}/model_outputs/raw_responses/${eval.traini
 
 prompt: 
   system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system # this thing is completed in the prompt handler to put together the actual system prompt file name
-  prompt_type: <prompt_type>
-  example_path: ${hydra:runtime.cwd}/prompt/examples/<explanation_type>_example.json
-  explanation_type: <explanation_type>
-  response_type: <response_type>
-  response_format: <response_format>
+  prompt_type: zero_shot
+  example_path: ${hydra:runtime.cwd}/prompt/examples/unstructured_example.json
+  explanation_type: unstructured
+  response_type: fact_first
+  response_format: json

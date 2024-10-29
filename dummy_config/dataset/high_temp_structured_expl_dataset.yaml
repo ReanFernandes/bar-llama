@@ -1,0 +1,5 @@
+dataset_path: ${hydra:runtime.cwd}/dataset/seed_dataset/high_temp_structured_expl_dataset.json
+domains: ["all"] # either "all, or single fixed domain"
+num_questions : None # or integer value. If all selected, then questions from each domain will be selected. if fixed selected, then only questions from that domain will be selected. 
+randomise_questions: False # Randomise the questions selected from the dataset
+dataset_label: high_temp_structured_expl_dataset

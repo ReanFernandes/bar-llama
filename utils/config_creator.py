@@ -2,24 +2,31 @@ import os
 import itertools
 import re
 
+import sys
+
+# Add the project root directory to the Python path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
 # Define the paths
-TEMPLATE_DIR = "config_creator/templates/"
-ACTUAL_CONFIG_DIR = "config/"
+TEMPLATE_DIR = "../config_creator/templates/"
+ACTUAL_CONFIG_DIR = "../dummy_config/"
 
 # Define the combinable parameters and their possible values
 combinable_params = {
     "training_status": ["trained", "untrained"],
     "quantisation_status": ["quantised_model", "full_model"],
-    "config_label": ["config1", "config2"],  # Example values; replace with your real ones
+    # "config_label": ["config1", "config2"],  # Example values; replace with your real ones
     "prompt_type": ["few_shot", "zero_shot"],
     "explanation_type": ["structured", "unstructured"],
-    "response_type": ["fact_first", "none"],
-    "response_format": ["json", "markdown", "none"]
+    "response_type": ["fact_first", "answer_first"],
+    "response_format": ["json", "markdown", "number_list"],
+    "model_name": ["llama2"]
 }
 
 # Non-combinable parameters for dataset and dataloader templates
 non_combinable_params = {
-    "seed_dataset_label": "example_dataset",
+    "seed_dataset_label": "high_temp_structured_expl_dataset",
     "num_questions": "10",
     "randomise_questions": "True"
 }
@@ -54,7 +61,8 @@ def process_combinable_templates(template_dir, actual_config_dir, param_combinat
         for template_filename in os.listdir(template_dir):
             template_path = os.path.join(template_dir, template_filename)
             
-            if template_filename.endswith('.yaml'):
+            # Only process relevant YAML templates (train, eval, parsing, prompt)
+            if template_filename in ["train.yaml", "eval.yaml", "parsing.yaml", "prompt.yaml"]:
                 with open(template_path, 'r') as file:
                     template_content = file.read()
 
@@ -81,6 +89,7 @@ def process_non_combinable_templates(template_dir, actual_config_dir, non_combin
     for template_filename in os.listdir(template_dir):
         template_path = os.path.join(template_dir, template_filename)
 
+        # Only process relevant YAML templates (dataset, dataloader)
         if template_filename in ["dataset.yaml", "dataloader.yaml"]:
             with open(template_path, 'r') as file:
                 template_content = file.read()
