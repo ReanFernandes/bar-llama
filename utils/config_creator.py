@@ -10,7 +10,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Define the paths
 TEMPLATE_DIR = "../config_creator/templates/"
-ACTUAL_CONFIG_DIR = "../dummy_config/"
+ACTUAL_CONFIG_DIR = "../conf/"
 
 # Define the combinable parameters and their possible values
 combinable_params = {
