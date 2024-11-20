@@ -263,7 +263,7 @@ Response:
                 Exception("pipeline available not set correctly")
         
         if self.cfg["store_prompt"]:
-            # append prompt_template as a value for the key "text", to self.promp_list
+            # append prompt_template as a value for the key "text", to self.prompt_list
             self.prompt_dict.append({"text":prompt_template})
         
         return prompt_template, ground_truth
