@@ -1,0 +1,1 @@
+This repo contains an in-progress rework of my Thesis in fine-tuning LLAMA-2 for the bar. The goal here is to use this as a jump point for future experiments regarding counter-factuality, chat- fine-tuning and alignment. 
