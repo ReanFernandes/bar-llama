@@ -1,0 +1,4 @@
+Here, 
+`high_temp_structured_expl_dataset` is used in a different context from the other files. This is the only config here which is used to compile the training dataset in a ready format for the fine_tuning to be done. thus, it is fundamentally different from the others in functionality
+
+The other config files simply load the appropriate, pre-formatted datasets, and are used in the evaluation pipeline such that each question is tokenized while the evaluation occurs and not before, like the former case. They only contain the dataset location and the label for proper naming purposes downstream.

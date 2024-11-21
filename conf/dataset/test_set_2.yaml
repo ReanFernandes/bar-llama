@@ -1,0 +1,4 @@
+
+
+dataset_path: ${hydra:runtime.cwd}/dataset/test_sets/bar_set_2.json
+dataset_label: test_set_2

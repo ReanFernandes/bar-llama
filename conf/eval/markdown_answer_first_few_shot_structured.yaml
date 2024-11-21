@@ -1,4 +1,4 @@
-# this must be set in the sllurm bash, depedningon which combination must be checked
+# this must be set in the slurm bash, depending on which combination must be checked
 training_status: untrained # "trained" or  "untrained"
 quantisation_status: full_model # "quantised_model" or "full_model"
 
