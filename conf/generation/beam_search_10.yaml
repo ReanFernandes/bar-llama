@@ -1,0 +1,5 @@
+do_sample: False
+num_beams: 10
+max_new_tokens: 600
+return_full_text: False
+label: beam_search_10

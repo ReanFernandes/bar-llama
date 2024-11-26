@@ -1,0 +1,7 @@
+do_sample: False
+num_beams: 1
+penalty_alpha: 0.8  # Recommended starting value
+top_k: 10  # Balances diversity and coherence
+max_new_tokens: 600
+label: contrastive_alpha_08_topk_10
+return_full_text: False

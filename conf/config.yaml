@@ -8,7 +8,7 @@ defaults:
   - eval: none_none_zero_shot_structured
   - tokenizer: llama2
   - quantization: quantization
-  - pipeline: default_pipeline
+  - generation: default_generation
   - parsing: default_parse
 
 # output_path : ${hydra:runtime.cwd}/trained_model_output/${train.new_model_name}

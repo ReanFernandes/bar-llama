@@ -88,4 +88,9 @@ def main(cfg: DictConfig):
     # create prompt handler instance
     promptor = PromptHandler(cfg.eval.prompt)
 
+    # create empty data storage list 
+    raw_outputs = []
+
+    #----------------- specify correct saving paths for the raw output -----------------
+    """ Slight caveat here that i currently have not that clear of an idea about how i want to go about saving outputs. It is super dependent on the type of experiment im aiming for, e.g. trying diff decoding techniques would need to involve saving the files that way
 
