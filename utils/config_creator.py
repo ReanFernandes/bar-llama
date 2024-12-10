@@ -1,3 +1,12 @@
+"""
+This file creates the configs from the config templats stored in the config_creator directory. 
+The way to run it is :
+1) Make changes to the templates as need in the config_creator directory for whichever config must be changed
+2) Run this file after specifying the directory to save them to.
+"""
+
+
+
 import os
 import itertools
 import re

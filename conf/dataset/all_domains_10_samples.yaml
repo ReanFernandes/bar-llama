@@ -1,0 +1,7 @@
+dataset_path: ${hydra:runtime.cwd}/dataset/seed_dataset/high_temp_structured_expl_dataset.json #currently, either "high_temp_structured_expl_dataset" (default) or "low_temp_structured_expl_dataset" or "unstructured_expl_dataset"
+domains: ["all"] # either "all" or "Criminal_law" or "Contracts" or "Constitutional_law" or "Property" or "Evidence" or a combination of these. Currently "Torts" and "Civil_procedure" do not exist in the dataset and will be added
+num_questions : 10 # None or integer value. For every domain that is selected, these many questions will be selected for every listed domain. if set to None, then all the questions belonging to the domain will be selected.  
+randomise_questions: True # Randomise the questions selected from the dataset
+domain_label : all_domains
+num_sample_label : "10"
+dataset_label: all_domains_10_samples

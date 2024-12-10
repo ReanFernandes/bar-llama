@@ -9,7 +9,7 @@ eval_model_name: ${eval.model_label}_${eval.train_config_label}
 mode: "eval"
 pipeline_available: None # again must be true or false, trained models cant run pipeline, only untrained models can
 lora_adapter_path: ${hydra:runtime.cwd}/sft_adapters/${eval.eval_model_name}
-output_directory: ${hydra:runtime.cwd}/model_outputs/raw_responses/${eval.training_status}_${eval.quantisation_status}/${eval.eval_model_name} # this will need to be appended with the test set label to complete the path
+output_directory: ${hydra:runtime.cwd}/model_outputs/raw_responses
 
 prompt: 
   system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system # this thing is completed in the prompt handler to put together the actual system prompt file name
@@ -19,3 +19,4 @@ prompt:
   response_type: <response_type> # "answer_first" or "fact_first"
   response_format: <response_format> # "json" or "markdown" or "number_list"
   store_prompt: False # by default, since we dont care about storing the question and stuff, this is only set to true when we make the training dataset
+  include_system_prompt: True # this is set to true if our prompt has an instructtion, and false otherwise

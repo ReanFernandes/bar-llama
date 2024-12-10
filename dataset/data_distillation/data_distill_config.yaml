@@ -1,0 +1,37 @@
+# Path to the dataset file
+dataset_location: /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/data_distillation/dataset_to_distill/distillation_test_sample.json
+
+# Directory to store the results
+result_directory: /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/data_distillation/distillation_result
+
+# Experiments and parameters
+experiments:
+  few_shot_high_temp:
+    # Random seed for reproducibility
+    seed: 42
+    
+    # Maximum tokens allowed in the output
+    max_tokens: 1024
+    
+    # Temperature for output randomness (lower = deterministic)
+    temperature: 0.2
+    
+    # Controls diversity in sampling (higher = more diverse)
+    top_p: 1.0
+    
+    # Enable few-shot prompting
+    few_shot: True
+    
+    # Path to examples file for few-shot learning
+    examples_file: /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/data_distillation/examples/restructured_example.json
+    
+    # Batch size for processing dataset
+    batch_size: 50
+
+# Server configuration for the LLM
+server_config:
+  # Address of the LLM server
+  base_url: http://localhost:8080/v1
+  
+  # Model to use
+  model: llama3.1-70b-8192

@@ -32,7 +32,6 @@ class PromptHandler:
         that something like ollama can procces.
         
         '''
-
         self.cfg = config
         self.system = self._set_system_prompt()
         if self.cfg["prompt_type"] == "few_shot": # this means that we provide the model with an example to guide the model
@@ -276,17 +275,29 @@ Response:
         if mode == "train":  # Use in the format of the model, with the answers appended after the input prompt
             expected_response = self._set_response(question_item)
             if model_name == "llama2":
-                prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]{expected_response}</s>"""
+                if self.cfg["include_system_prompt"]:
+                    prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]{expected_response}</s>"""
+                else:
+                    prompt_template = f"""[INST]\n{input_prompt}[/INST]{expected_response}</s>"""
             elif model_name == "mistral":
-                raise NotImplementedError("Mistral model formatting is not implemented yet.")
+                if self.cfg["include_system_prompt"]:
+                    raise NotImplementedError("Mistral model formatting is not implemented yet.")
+                else:
+                    raise NotImplementedError("Mistral model formatting is not implemented yet.")
             else:
                 raise ValueError(f"Unsupported model_name: {model_name}")
         
         elif mode == "eval":
             if pipeline_available:
-                prompt_template = f"""{self.system}\n{input_prompt}"""
+                if self.cfg["include_system_prompt"]:
+                    prompt_template = f"""{self.system}\n{input_prompt}"""
+                else:
+                    prompt_template = f"""{self.system}\n{input_prompt}"""
             else:
-                prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
+                if self.cfg["include_system_prompt"]:
+                    prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
+                else:
+                    prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
         else:
             raise ValueError(f"Invalid mode: {mode}")
 

@@ -64,6 +64,7 @@ def main(cfg: DictConfig):
         raise ValueError("Invalid quantisation status. Please check the config file.")
 
     # ----------------- Logic block for correct model adapter if needed -----------------
+    # TODO add padding token as was done in the training to ensure proper generation
     if cfg.eval.training_status == 'trained':
         logging.info("Fine-tuned model selected, loading adapter")
         cfg.eval.pipeline_available = False
@@ -86,11 +87,17 @@ def main(cfg: DictConfig):
     # ----------------- Loading inference related stuff -----------------
 
     # create prompt handler instance
-    promptor = PromptHandler(cfg.eval.prompt)
+    promptor = PromptHandler(cfg.eval.prompt, cfg.eval.prompt.include_system_prompt)
 
     # create empty data storage list 
     raw_outputs = []
 
     #----------------- specify correct saving paths for the raw output -----------------
-    """ Slight caveat here that i currently have not that clear of an idea about how i want to go about saving outputs. It is super dependent on the type of experiment im aiming for, e.g. trying diff decoding techniques would need to involve saving the files that way
+    """ Slight caveat here that i currently have not that clear of an idea about how i want to go about saving outputs. It is super dependent on the type of experiment im aiming for, e.g. trying diff decoding techniques would need to involve saving the files that way"""
+    ### sanity check : The output_directory in eval configs is set to ${hydra:runtime.cwd}/model_outputs/raw_responses
+    ### Start with level 0 : the global seed : Output will be ${hydra:runtime.cwd}/model_outputs/raw_responses/<seed_label>
+    raw_save_path = os.path.join(cfg.eval.output_directory, cfg.seeds.label) # the global seed for the entire pipeline
+
+    ### Level 1 : 
+
 
