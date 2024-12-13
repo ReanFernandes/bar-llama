@@ -54,7 +54,7 @@ def main(cfg: DictConfig):
     
     #load model based on quantisation status
     if cfg.eval.quantisation_status == 'quantised_model':
-        loggin.info("Quantised model selected, loading quantisation config")
+        logging.info("Quantised model selected, loading quantisation config")
         bnb_config = BitsAndBytesConfig(**cfg.quantisation)
         model = AutoModelForCausalLM.from_pretrained(cfg.model.model_id, quantization_config=bnb_config)
     elif cfg.eval.quantisation_status == 'full_model':

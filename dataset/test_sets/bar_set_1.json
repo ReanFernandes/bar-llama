@@ -9,7 +9,7 @@
             "optionD": "D. Where the company\u2019s major place of manufacturing is located."
         },
         "correct_answer": "C",
-        "domain": "Civil Procedure I-A",
+        "domain": "Civil_procedure",
         "explanation": "Answer C is correct. Determining diversity for purposes of diversity jurisdiction is done with reference to the citizenship of the adverse parties. Here, because the party in question is a corporate entity, its citizenship is determined by where it is incorporated and the location of its principal place of business, which the US Supreme Court has defined as a company\u2019s headquarters. Answer A is incorrect. Where a company distributes its cars does not bear on citizenship for purposes of diversity jurisdiction. Rather, the place of distribution would potentially be relevant to where the company could be subjected to personal jurisdiction in this action. Answer B is incorrect. The concept of minimum contacts is relevant to determinations of personal jurisdiction, not subject-matter jurisdiction, which is what the question asks about here. Answer D is incorrect. Before the US Supreme Court\u2019s decision in Hertz Corp. v. Friend, 559 U.S. 77 (2010), the circuits took varying approaches to determining the location of a corporation\u2019s principal place of business, with some treating a company\u2019s major place of manufacturing as determinative. However, the Supreme Court ruled in Hertz that a company\u2019s principal place of business for purposes of diversity is the location of its headquarters."
     },
     {
@@ -22,7 +22,7 @@
             "optionD": "D. Yes, because the Constitution guarantees the availability of habeas corpus."
         },
         "correct_answer": "A",
-        "domain": "Constitutional Law III-B-2",
+        "domain": "Constitutional_law",
         "explanation": "Answer A is correct. Tarble\u2019s Case, 80 U.S. 397 (1871), holds that the Supremacy Clause prohibits states from interfering with federal detention by issuing habeas writs. Answer B is incorrect. The fact that an arrest was made pursuant to a warrant does not automatically make the arrest constitutional. Answer C is incorrect. The governor does not enjoy federal immunity from prosecution for violating federal laws while in office. Answer D is incorrect. The inability of state courts to issue habeas writs against federal detentions does not violate the Suspension Clause because federal courts are still able to issue such writs."
     },
     {
@@ -35,7 +35,7 @@
             "optionD": "D. Yes, because terms supplied by the UCC will govern the contract formed by the conduct of the parties."
         },
         "correct_answer": "C",
-        "domain": "Contracts and Sales I-A",
+        "domain": "Contracts",
         "explanation": "Answer C is correct. The retailer\u2019s order constituted an offer. Under UCC \u00a7 2-206, an offer made by an order of goods may be accepted by the shipment of goods or by a prompt promise to ship. Here, the shipment of the laptops constituted the manufacturer\u2019s acceptance of the retailer\u2019s offer and the terms set forth in the offer. Answer A is incorrect. The manufacturer\u2019s shipment of the laptops was a reasonable mode of acceptance and gave rise to a contract. Answer B is incorrect. The retailer\u2019s order constituted an offer, and a contract was formed when the manufacturer shipped the laptops. Therefore, the exclusion of consequential damages in the manufacturer\u2019s acknowledgment constituted a request to modify that contract. The exclusion would become a term of the parties\u2019 agreement if the retailer assented to it, which did not occur here.   Answer D is incorrect. This response assumes that the parties formed a contract under UCC \u00a7 2-207(3) by their conduct. Here a contract was formed when the manufacturer shipped the laptops and thereby accepted the retailer\u2019s offer."
     },
     {
@@ -48,7 +48,7 @@
             "optionD": "D. There is no evidence of careless conduct by the company."
         },
         "correct_answer": "A",
-        "domain": "Torts II-A",
+        "domain": "Torts",
         "explanation": "Answer A is correct. The company\u2019s best argument against liability is that it has no duty to protect people from being injured by third parties who intentionally misuse its site, which merely provides a platform for transactions between individuals. Answer B is incorrect. The question asks for the company\u2019s strongest defense. If the company had owed a duty to the homeowner, it could argue that the cousin\u2019s actions were a proximate cause of the homeowner\u2019s loss. But a stronger defense is that the company owed no duty to the homeowner. Answer C is incorrect. The First Amendment limits tort liability in some contexts but does not prohibit all tort actions just because there is a speech component to the defendant\u2019s actions. Answer D is incorrect. Again, the question asks for the company\u2019s strongest defense. The question of whether a defendant has acted with reasonable care is usually a fact-intensive question that a jury resolves, but if a defendant can show that it had no duty, the court need not advance the case to a jury trial to determine whether there was carelessness."
     },
     {
@@ -61,7 +61,7 @@
             "optionD": "D. Yes, because the evidence is relevant to show the defendant\u2019s motive to commit the crime."
         },
         "correct_answer": "C",
-        "domain": "Evidence II-A-1",
+        "domain": "Evidence",
         "explanation": "Answer C is correct. Evidence of the defendant\u2019s intent to flee satisfies FRE 401\u2019s definition of relevance: it shows his consciousness of guilt and makes his guilt more probable than it would be without the evidence. Answer A is incorrect. FRE 401 defines relevance as evidence having \u201cany tendency to make a fact [of consequence] more probable than it would be without the evidence.\u201d Evidence that the defendant tried to flee from prosecution\u2014that he purchased an airplane ticket to another country using an alias\u2014satisfies the definition of relevance, because it shows his consciousness of guilt. Answer B is incorrect. Evidence of an intent to flee is relevant to show the defendant\u2019s consciousness of guilt but not to show his motive to commit the crime. The defendant\u2019s attempt to flee the jurisdiction after his arrest sheds no light on his motive to commit the crime. Answer D is incorrect. Proof of motive is generally relevant and admissible, but evidence of the defendant\u2019s intent to flee after his arrest sheds no light on his motive to commit the crime. Because the evidence is irrelevant to motive, it is inadmissible if offered to prove motive."
     },
     {
@@ -74,7 +74,7 @@
             "optionD": "D. To the grantor, because the friend\u2019s estate had ended."
         },
         "correct_answer": "D",
-        "domain": "Real Property I-A-1-b/I-A-2-d",
+        "domain": "Property",
         "explanation": "Answer D is correct because the grantor conveyed a fee simple determinable to the friend, reserving a possibility of reverter. When the defeasible event occurred (selling alcoholic beverages), the fee simple determinable immediately terminated and title vested in the grantor. Answer A is incorrect. While it is true that both the friend and the grantor had an interest in the property, when the defeasible event occurred (selling alcoholic beverages), the friend\u2019s fee simple determinable immediately terminated and title vested in the grantor, who had a possibility of reverter. Answer B is incorrect. Even though the friend was in physical possession of the property on the date of the condemnation, legal title to the property was in the grantor.   Answer C is incorrect. The limitation contained in the deed, prohibiting the sale of alcohol, is not an invalid restraint nor against public policy."
     },
     {
@@ -87,7 +87,7 @@
             "optionD": "D. The court must not hear the state-law claim, because it arises under state law and the depositor seeks less than the minimum amount in controversy."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure I-A",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. As long as a plaintiff presents a colorable claim under federal law, it will be sufficient to support supplemental jurisdiction over state-law claims that form part of the same case or controversy. The dismissal of the federal claim did not divest the court of supplemental jurisdiction over the state-law claim, though the court, in its discretion, might rely on the dismissal as a reason to discontinue hearing the state-law claim. Answer B is incorrect. Supplemental jurisdiction is a discretionary doctrine, meaning that a court is never obligated to exercise it, even when the state-law claim forms part of the same case or controversy as the federal claim. Answer C is incorrect. Federal subject-matter jurisdiction cannot be conferred over a claim based on the nature of the defense raised in response to it. Rather, under the well-pleaded complaint rule, the basis for federal subject-matter jurisdiction must appear on the face of the plaintiff\u2019s complaint. Answer D is incorrect. Although the court lacks diversity jurisdiction over the state-law claim, the court could exercise supplemental jurisdiction over it because it forms part of the same case or controversy as the federal-law claim. As discussed above, the dismissal of the federal-law claim did not divest the court of supplemental jurisdiction."
     },
     {
@@ -100,7 +100,7 @@
             "optionD": "D. Compensation necessary to protect the plumber\u2019s restitutionary interest, because there was no meeting of the minds between the parties on price."
         },
         "correct_answer": "B",
-        "domain": "Contracts and Sales I-A",
+        "domain": "Contracts",
         "explanation": "Answer B is correct. The homeowner will be deemed to have agreed to the hourly rate set by the plumber on the website that the homeowner visited. Answer A is incorrect. This is not a case where there is no agreement as to price, since the plumber\u2019s hourly rate was available to the homeowner on his website. Answer C is incorrect. The parties had a bargained-for contract that included the hourly rate set by the plumber, so a reliance-based measure of damages does not apply. Answer D is incorrect. The parties had a bargained-for contract that included the hourly rate set by the plumber, so a restitution-based measure of damages does not apply."
     },
     {
@@ -113,7 +113,7 @@
             "optionD": "D. Yes, because the politician is a public figure and any information about him is in the public domain."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law IV-F-3",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct. The Supreme Court has consistently rejected claims that the freedom of the press protected by the First Amendment exempts press activities from laws of general application such as contract law. Answer A is incorrect. It is irrelevant that the daughter is not a state actor. The requisite state action here is state contract law, from which the reporter seeks an exemption. The Supreme Court has consistently rejected such claims for exemption. Answer C is incorrect. The Supreme Court has consistently rejected claims that the freedom of the press protected by the First Amendment exempts press activities from laws of general application. Answer D is incorrect. It is irrelevant that the politician is a public figure. It also is irrelevant whether or not the information was in the public domain. The action here is for breach of contract, and the Supreme Court has consistently rejected claims that the freedom of the press protected by the First Amendment exempts press activities from laws of   general application."
     },
     {
@@ -126,7 +126,7 @@
             "optionD": "D. Yes, because the supplier believed that his shots had killed the lookout."
         },
         "correct_answer": "C",
-        "domain": "Criminal Law and Procedure III-B",
+        "domain": "Criminal_law",
         "explanation": "No explanation available."
     },
     {
@@ -139,7 +139,7 @@
             "optionD": "D. Yes, because the boy was 11 years old at the time."
         },
         "correct_answer": "A",
-        "domain": "Torts II-B-1",
+        "domain": "Torts",
         "explanation": "Answer A is correct. Because he was driving a motorcycle\u2014an adult activity\u2014the boy will be held to the adult standard of care. Answer B is incorrect. The boy\u2019s status on the land is not relevant to his negligence. Answer C is incorrect. Whether comparative negligence applies does not impact the standard of care by which the boy\u2019s conduct will be measured. Answer D is incorrect. Because the boy was engaged in an adult activity and was not of \u201ctender years,\u201d he will be held to the adult standard of care."
     },
     {
@@ -152,7 +152,7 @@
             "optionD": "D. There was a waiver of the attorney-client privilege for all 25 documents if the state law that supplies the rule of decision would support such a result."
         },
         "correct_answer": "B",
-        "domain": "Evidence III-B",
+        "domain": "Evidence",
         "explanation": "Answer B is correct. Under FRE 502(a), because the disclosure was inadvertent, the waiver does not extend to undisclosed communications. Answer A is incorrect. Under FRE 502(b), an inadvertent disclosure will not operate as a waiver of the attorney-client privilege if the holder of the privilege \u201cpromptly [takes] reasonable steps to rectify the error.\u201d Here, the manufacturer learned of the disclosure during discovery but waited until the day before trial to rectify the error. Its response was not \u201cprompt,\u201d and therefore the disclosure operates as a waiver as to the two documents that were disclosed. Answer C is incorrect. Under FRE 502(a), because the disclosure was inadvertent, the waiver does not extend to undisclosed communications\u2014to the other 23 documents\u2014even if they concern the same subject matter. Answer D is incorrect. FRE 502 applies to \u201cdisclosure[s] . . . made in a federal proceeding.\u201d Thus, state law does not apply, even when federal jurisdiction is based on diversity of citizenship."
     },
     {
@@ -165,7 +165,7 @@
             "optionD": "D. Yes, because the mother is in privity of contract with the purchaser."
         },
         "correct_answer": "C",
-        "domain": "Real Property II-B-1",
+        "domain": "Property",
         "explanation": "Answer C is correct. The mother created an equitable servitude when she conveyed the third lot to her son. The burden was on the son\u2019s lot (to build only a one-story house), and the benefit was on her retained lot (to preserve her view of the lake). The equitable servitude was in writing and was recorded, providing constructive notice of it; actual notice was not required. Answer A is incorrect. Even though the burden was on the son\u2019s lot (to build only a one-story house) and the benefit was on the mother\u2019s retained lot, the benefit does not limit the mother to building only a one-story house. The mother was permitted to build a three-story house on her lot without being estopped from enforcing the covenant against the purchaser of the son\u2019s lot. Answer B is incorrect. The son did receive his lot by a deed of gift, and no consideration was given. The mother created an equitable servitude, which may be by deed of gift, when she conveyed the third lot to her son, and that deed was recorded, giving constructive notice of the servitude. Answer D is incorrect. It is irrelevant whether the mother is in privity of contract with the purchaser. The son had privity of contract with his mother, who created an equitable servitude when she conveyed the third lot to her son."
     },
     {
@@ -178,7 +178,7 @@
             "optionD": "D. Yes, because the parties met the requirements for diversity jurisdiction."
         },
         "correct_answer": "C",
-        "domain": "Civil Procedure I-A",
+        "domain": "Civil_procedure",
         "explanation": "Answer C is correct. An action is removable if it could have been originally filed in federal court. Here, the amended complaint contained a claim that qualified for federal-question jurisdiction. Although there also was diversity jurisdiction, removal was not barred by the forum-defendant rule because that rule bars removal only when diversity is the only basis for federal jurisdiction. Answer A is incorrect. The forum-defendant rule only operates to bar removal when diversity is the claimed basis for federal jurisdiction. Because in this case a claim under federal law had been asserted, the presence of a defendant from the forum state was not a bar to removal. Answer B is incorrect. When defendants are served at different times, each defendant gets 30 days to remove from the time of service. The defendant who removed the case did so within 25 days after being served with the amended complaint. The removal statutes permit an earlier-served defendant to consent to removal by a later-served defendant even when the earlier-served defendant had failed to timely remove based on when it was served. Answer D is incorrect. Although there also was diversity jurisdiction in this case, the presence of a defendant from the forum state prevented removal based on diversity."
     },
     {
@@ -191,7 +191,7 @@
             "optionD": "D. Yes."
         },
         "correct_answer": "D",
-        "domain": "Criminal Law and Procedure II-H",
+        "domain": "Criminal_law",
         "explanation": "Answer D is correct. On the facts presented, a jury could rationally find that the woman intended to possess stolen drugs and that she took substantial steps to complete that offense. Answer A is incorrect because the facts do not suggest that the agents induced the woman to commit an offense that she otherwise would have been unlikely or unwilling to commit. Answer B is incorrect because a person can be guilty of attempt even though the circumstances are not what the person believes them to be.   Answer C is incorrect because the woman constructively possessed the drugs by directing or controlling the agents\u2019 disposition of them."
     },
     {
@@ -204,7 +204,7 @@
             "optionD": "D. Undue influence."
         },
         "correct_answer": "D",
-        "domain": "Contracts and Sales II-B",
+        "domain": "Contracts",
         "explanation": "Answer D is correct. Undue influence, or \u201cover-persuasion,\u201d often includes the factors that are found in these facts, such as an unusual time and place for the persuasion, multiple persuaders, and time pressure. Answer A is incorrect. Duress requires force or an improper threat, and there was neither one in these facts. Answer B is incorrect. Any mistake was unilateral, and avoidance of a contract for unilateral mistake requires either that the other party be aware of the mistake or that enforcement would be unconscionable; neither element is present here. Answer C is incorrect. Unconscionability requires a lack of bargaining power and an unfair term; neither element is present here."
     },
     {
@@ -217,7 +217,7 @@
             "optionD": "D. Hear and determine the case on the merits."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law I-C-1",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct. The only relief sought by the company was an injunction against awarding the contract to another firm. That relief is no longer available, so the case is moot. See Alvarez v. Smith, 558 U.S. 87 (2009); De Funis v. Odegaard, 416 U.S. 312 (1974). Answer A is incorrect. The company did not seek damages. Answer C is incorrect. Discretionary decisions of federal officials are not necessarily immune from review by the courts. Answer D is incorrect. Because the case is moot, the court cannot consider the merits of the dispute."
     },
     {
@@ -230,7 +230,7 @@
             "optionD": "D. The homeowner only, because she insisted on having the old boards removed in a dangerously deceptive fashion and posted no warning."
         },
         "correct_answer": "B",
-        "domain": "Evidence II-D-4",
+        "domain": "Evidence",
         "explanation": "Answer B is correct. Under FRE 702, an expert\u2019s opinion must be based on sufficient facts and data and the expert must employ a reliable methodology. Here, the expert failed to satisfy those standards. She relied on studies showing the effects of prolonged exposure to high doses of a similar toxin, when the plaintiff was exposed briefly to small doses of this particular toxin. The expert also failed to consider recent studies about the toxin in question. Answer A is incorrect. There is no prohibition on an expert\u2019s relying on studies that were read for purposes of testifying in the litigation. Answer C is incorrect. The burden is on the party offering expert testimony to prove the reliability of that testimony by a preponderance of the evidence. Answer D is incorrect. Under FRE 104(a), the preliminary questions here\u2014the sufficiency of the expert\u2019s basis for her opinion and the reliability of the expert\u2019s methodology\u2014are for the court to determine by a preponderance of the evidence."
     },
     {
@@ -243,7 +243,7 @@
             "optionD": "D. Yes, because the woman gave no reason for rejecting the prospective buyer\u2019s offer during the listing period."
         },
         "correct_answer": "B",
-        "domain": "Real Property III-A",
+        "domain": "Property",
         "explanation": "Answer B is correct. The broker found a prospective buyer who made an offer to purchase the house, but the woman had a right to reject the offer. The fact that the woman later sold the house to a corporation for the same price offered by the prospective buyer is irrelevant because it was after the listing agreement had expired and the broker did not help find the corporation. Answer A is incorrect. It is not required that a listing agreement be recorded, and listing agreements often are not recorded. Answer C is incorrect. The broker did not produce a ready, willing, and able buyer during the term of the listing agreement because the offer was for an amount less than the listing price in the listing agreement. The broker was not involved in the sale of the house after the listing agreement had expired. Answer D is incorrect. The woman was not required to give a reason for rejecting an offer for an amount less than the listing price made during the listing period."
     },
     {
@@ -256,7 +256,7 @@
             "optionD": "D. Yes, because service was not delivered to the defendant at her home."
         },
         "correct_answer": "C",
-        "domain": "Civil Procedure I-B",
+        "domain": "Civil_procedure",
         "explanation": "Answer C is correct. The defendant does not have any contacts with State A that are related to this lawsuit. The defendant is not domiciled in State A and only visits there periodically for reasons unrelated to the plaintiff\u2019s claim. Answer A is incorrect. Federal Rule of Civil Procedure 12(h) permits litigants to raise personal-jurisdiction challenges for the first time in an answer that is amended as a matter of course under Rule 15(a)(1). Thus, the defendant timely asserted the defense of lack of personal jurisdiction by asserting it in her amended answer that was filed one week after the original answer. Answer B is incorrect. Service within 100 miles of the courthouse where an action is pending is effective to establish personal jurisdiction only over defendants joined under Rule 14 or Rule 19, not original defendants. Answer D is incorrect. Personal service under Rule 4 can occur at any location, not just the person\u2019s home. State A nonetheless lacks personal jurisdiction because the defendant was not served in State A and lacks minimum contacts with State A, as explained above."
     },
     {
@@ -269,7 +269,7 @@
             "optionD": "D. Yes, because the confirmation letter satisfies the statute of frauds and evidences the parties\u2019 intent to be bound."
         },
         "correct_answer": "B",
-        "domain": "Contracts and Sales I-B",
+        "domain": "Contracts",
         "explanation": "Answer B is correct. The absence of agreement on a material term\u2014the executive\u2019s salary\u2014makes the agreement too indefinite to be enforceable.   Answer A is incorrect. A \u201clifetime\u201d employment agreement is not subject to the statute of frauds, because it could be performed within a year if the employee dies within that time period. Answer C is incorrect. While it is true that a \u201clifetime\u201d employment agreement is not subject to the statute of frauds, when the parties fail to expressly agree to an essential term in a contract, there is no requirement that they negotiate for agreement on that term in good faith. Answer D is incorrect. A \u201clifetime\u201d employment agreement does not fall within the statute of frauds, so the confirmation letter is not necessary to enforce any contract formed. But the parties do not have a binding contract, because they have not agreed on an essential term\u2014the executive\u2019s salary."
     },
     {
@@ -282,7 +282,7 @@
             "optionD": "D. Yes, because the statements are those of a party-opponent and therefore are admissible under a hearsay exception."
         },
         "correct_answer": "B",
-        "domain": "Evidence IV-A",
+        "domain": "Evidence",
         "explanation": "Answer B is correct. Under the best evidence rule, the woman cannot testify to the contents of the letter unless the original is lost and did not become so by her in bad faith. See FRE 1004(a). Because a showing of the letter\u2019s unavailability has not been made, the woman\u2019s testimony is inadmissible. Answer A is incorrect. The statements in the letter are not being offered for their truth and so are not hearsay. They are rather being offered as false and defamatory statements. Answer C is incorrect. While it is correct that the statements are not hearsay because they are not being offered for their truth, the woman\u2019s testimony is inadmissible under the best evidence rule. Answer D is incorrect. While the statements in the letter are those of a party-opponent, the woman\u2019s testimony is inadmissible under the best evidence rule. Moreover, because the statements are not offered for their truth, they are not hearsay, and one does not need to invoke FRE 801(d)(2)(A)."
     },
     {
@@ -295,7 +295,7 @@
             "optionD": "D. Yes, because the former employee was simply competing with the established cemetery."
         },
         "correct_answer": "B",
-        "domain": "Torts IV-D",
+        "domain": "Torts",
         "explanation": "Answer B is correct. A jury could find that the former employee intentionally and improperly interfered with the established cemetery\u2019s contracts by intentionally misrepresenting to the established cemetery\u2019s customers that they could cancel their existing contracts without penalty. Answer A is incorrect. Providing a monetary incentive to induce a person to breach a contract is not by itself sufficient to establish tortious interference with contract. Answer C is incorrect. The customers\u2019 ability to terminate their contracts does not mean that the former employee could improperly interfere with those contracts. Answer D is incorrect. The former employee\u2019s actions in sending the established cemetery\u2019s customers misinformation about their contracts was not permissible competition but rather improper interference with their contractual relationships with the established cemetery."
     },
     {
@@ -308,7 +308,7 @@
             "optionD": "D. Yes, because there is no judicially manageable standard governing diplomatic recognition."
         },
         "correct_answer": "A",
-        "domain": "Constitutional Law I-C-3",
+        "domain": "Constitutional_law",
         "explanation": "Answer A is correct. Zivotofsky v. Clinton, 566 U.S. 189 (2012), held that interbranch disputes involving foreign affairs are not subject to the political question doctrine when they concern the validity of a federal statute. Answer B is incorrect. Application of the political question doctrine is based on the issue involved in the litigation, not the identities of the parties.   Answer C is incorrect. Zivotofsky made it clear that the Court may decide cases involving sensitive issues of foreign affairs when the issue is the constitutionality of a statute. Answer D is incorrect. There is a judicially manageable standard in this case because the issue is the constitutionality of the second statute passed by Congress, a purely legal question."
     },
     {
@@ -321,7 +321,7 @@
             "optionD": "D. No embezzlement crime."
         },
         "correct_answer": "B",
-        "domain": "Criminal Law and Procedure II-A",
+        "domain": "Criminal_law",
         "explanation": "Answer B is correct. This problem poses two related questions: (1) Did the woman commit an embezzlement; and (2) if so, what amount did she unlawfully take? The answer to the first question is yes. As a trustee, the woman had lawful possession of property that belonged to the trust fund. Instead of honoring her fiduciary obligation to the fund, the woman converted the property to her own use. It does not matter that her motives were arguably charitable. The answer to the second question, how much the woman took, turns on the value of the property at the time of the commission of the offense. Answer B is correct because the certificate of deposit was worth $100,000 when the woman converted it to her own use. Answer A is incorrect because the defendant\u2019s culpability is measured by the value of the property when the crime was committed, not by its subsequent value. This remains true regardless of whether the embezzled funds are depleted or increased. Answer C is incorrect. Even though the trust fund ultimately received all but $80,000 of the ultimate stock sale, that is not the amount that the woman embezzled. Answer D is incorrect because the woman did embezzle $100,000; see the explanation for answer B."
     },
     {
@@ -334,7 +334,7 @@
             "optionD": "D. Yes, because an implied-in-fact contract does not require proof of an agreement between the parties."
         },
         "correct_answer": "C",
-        "domain": "Contracts and Sales I-A",
+        "domain": "Contracts",
         "explanation": "Answer C is correct. According to the Restatement (Second) of Contracts \u00a7 4, an implied-in-fact contract is a contract where the mutual promises are inferred from conduct. Answer A is incorrect. A promise in an implied-in-fact contract does not have to be evidenced by a signed writing. Answer B is incorrect. Whether parties have entered into an agreement is determined by an objective standard and not by the subjective intent of the parties. Answer D is incorrect. As with any contract, an implied-in-fact contract requires mutual assent."
     },
     {
@@ -347,7 +347,7 @@
             "optionD": "D. Yes, because the plaintiff mailed notice of the complaint as permitted by the Federal Rules of Civil Procedure."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure I-C",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. Although a request for waiver of service was sent, the defendant was not obligated to and did not respond to the request. Without a waiver of formal service, the plaintiff must formally serve the defendant before the defendant would have an obligation to respond. In the absence of formal service, an entry of default would be inappropriate. Answer B is incorrect. Per Rule 4(l), the failure to file proof of service does not affect the validity of service. The problem here is that there has been no service of process and the defendant has not waived formal service. Answer C is incorrect. Rule 4(d) encourages but does not require defendants to waive formal service by returning a signed waiver request. Thus, a failure to return the waiver simply obliges the plaintiff to proceed with formal service; it   does not subject the defendant to the possibility of default. Answer D is incorrect. Mailing notice of the complaint does not qualify as a permissible form of service under the Federal Rules of Civil Procedure. Thus, no formal service of process has been effected in this case."
     },
     {
@@ -360,7 +360,7 @@
             "optionD": "D. Yes, because, in the aggregate, the deaths and cases of paralysis caused by the stimulant have a significant economic impact."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law II-A-1",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct. United States v. Lopez, 514 U.S. 549 (1995), holds that Congress does not have the power under the Commerce Clause to regulate a noncommercial activity with no link to interstate commerce. Unlike in Gonzales v. Raich, 545 U.S. 1 (2005), the facts here do not involve a comprehensive regulation of commerce that incidentally covers some intrastate activities. Answer A is incorrect. Congress can use its commerce power to regulate economic activity, such as manufacturing and production of articles for interstate commerce, that is not itself a commercial transaction. In addition, Gonzales v. Raich holds that Congress can incidentally regulate noncommercial activities in order to effectuate regulations of related commercial activities. Answer C is incorrect. While stoves and fuels may have previously moved in interstate commerce, they are not themselves channels or instrumentalities of commerce. Answer D is incorrect. United States v. Lopez holds that the aggregate effects test applies only to regulations of economic activity."
     },
     {
@@ -373,7 +373,7 @@
             "optionD": "D. Voluntary manslaughter."
         },
         "correct_answer": "B",
-        "domain": "Criminal Law and Procedure I-B-2",
+        "domain": "Criminal_law",
         "explanation": "Answer B is correct. Defense counsel should request an instruction on the lesser included offense of involuntary manslaughter. On the facts described, a jury could potentially conclude that the woman did not act with the sort of aggravated recklessness necessary to constitute depraved-heart homicide or extreme-indifference murder, even though she was intoxicated and driving in an unlawful manner. Answer A is incorrect because depraved-heart homicide is a form of murder. Accordingly, this instruction would not constitute a lesser-offense instruction. Answer C is incorrect. Voluntary intoxication is generally a theory of defense and not a crime in and of itself. Even if understood as the offense of \u201cpublic intoxication,\u201d this offense would be a poor choice because public intoxication is not a lesser included offense of murder. Answer D is incorrect. The facts do not suggest that the woman intended to kill the pedestrian. Neither do they suggest any sort of provocation."
     },
     {
@@ -386,7 +386,7 @@
             "optionD": "D. Yes, because the photograph is self- authenticating."
         },
         "correct_answer": "C",
-        "domain": "Evidence II-B",
+        "domain": "Evidence",
         "explanation": "Answer C is correct. The witness\u2019s testimony is sufficient to authenticate the photograph under FRE 901. It is testimony of a witness with knowledge that the photograph is what it is claimed to be. Answer A is incorrect. The answer misstates the standard under FRE 403. For the photograph to be inadmissible under that rule, the unfair prejudice from the photograph must substantially outweigh its probative value. In any event, here the probative value of the photograph is considerable (it shows the plaintiff\u2019s injury and supports the claim that the paint can dropped by the defendant caused it), and the prejudicial effect (the potential to inflame or distract the jury) is low.   Answer B is incorrect. FRE 901 requires proof that the photograph \u201cis what the proponent claims it is.\u201d The witness\u2019s proffered testimony satisfies that requirement: he will testify that the photograph accurately portrays the scene as he saw it. Proof that cell-phone technology produces accurate photographs is unnecessary, given the witness\u2019s testimony. Answer D is incorrect. The photograph is not self-authenticating; it falls under none of the categories of self- authenticating documents listed in FRE 902. A witness is required to authenticate it, in this case the witness who took the photograph."
     },
     {
@@ -399,7 +399,7 @@
             "optionD": "D. The tree specialist only."
         },
         "correct_answer": "A",
-        "domain": "Torts I-A",
+        "domain": "Torts",
         "explanation": "Answer A is correct. Conversion occurs when an actor intentionally interacts with an item that is the personal property of another so as to permanently deprive the other of possession. This is true regardless of whether the actor knows that the item is in another\u2019s possession. Thus, the landowner\u2019s reasonable belief that the trees were his does not defeat liability for either the landowner or the tree specialist. Answers B and C are both incorrect. The tree specialist\u2019s action meets the definition of conversion regardless of the fact that he was directed to take that action by the landowner. Answer D is incorrect. Because the tree specialist was hired by the landowner and cut down the trees at the direction of the landowner, the landowner (along with the tree specialist) is subject to liability for conversion."
     },
     {
@@ -412,7 +412,7 @@
             "optionD": "D. Yes, because the nephew did not marry before the woman\u2019s death."
         },
         "correct_answer": "B",
-        "domain": "Real Property I-A-2-c",
+        "domain": "Property",
         "explanation": "Answer B is correct because the woman conveyed a springing executory interest to the nephew while retaining a fee simple subject to executory limitation. The woman\u2019s death did not affect the nephew\u2019s springing executory interest, and her estate now holds the fee simple subject to executory limitation. When and if the nephew marries, his executory interest will vest in fee simple. If the nephew dies unmarried, the sister\u2019s interest will swell into a fee simple. Answer A is incorrect. The fact that the nephew recorded the deed provided constructive notice to the world of his interest but did not affect his interest. The nephew received a springing executory interest and the woman held a fee simple subject to executory limitation. Answer C is incorrect. The nephew received a future interest that will vest when he marries. The woman\u2019s death did not invalidate the nephew\u2019s springing executory interest. Answer D is incorrect. The nephew received a springing executory interest. The warranty deed did not require the nephew to marry before the death of the woman."
     },
     {
@@ -425,7 +425,7 @@
             "optionD": "D. The defendant has forfeited neither objection, because the prosecutor must prove forfeiture by more than a preponderance of the evidence."
         },
         "correct_answer": "C",
-        "domain": "Evidence V-L",
+        "domain": "Evidence",
         "explanation": "Answer C is correct. The requirements for forfeiting a hearsay objection and a confrontation objection are the same, and the prosecutor has not demonstrated forfeiture of either objection. In order to forfeit either a hearsay objection under FRE 804(b)(6) or a confrontation clause objection, a defendant must have engaged in wrongful conduct for the purpose of preventing the declarant from testifying. Here, the defendant\u2019s purpose for his wrongful conduct (killing the declarant) was revenge for a theft and not a desire to prevent trial testimony. Therefore, the prosecutor cannot make the showing of intent required for forfeiture of either objection. Answers A and B are incorrect for the reasons set out above.   Answer D is incorrect. The federal courts have held that a trial judge may find the threshold requirements for forfeiture by a preponderance of the evidence. Further, the preponderance standard applies to the trial judge\u2019s determinations on preliminary questions of admissibility under FRE 104(a)."
     },
     {
@@ -438,7 +438,7 @@
             "optionD": "D. Venue is not proper in State A."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure I-D",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. Transfers to a different federal court are granted in the interest of justice and for the convenience of the parties and witnesses. Here, because the accident occurred in State B, because the railroad is located in State B, and because other passengers have brought actions in State B federal court, State B appears to be the most convenient venue for the action. Answer B is incorrect. Whether an action shares common questions of fact with similar actions pending in another state is not a driving component of a change-of-venue analysis. Rather, what matters most is the convenience of the parties and witnesses and the \u201cinterests of justice.\u201d Answer C is incorrect. Although the railroad\u2019s being located in State B is an aspect of what would make State B a convenient forum for this action, it is not determinative and would not on its own be a basis for rejecting the forum selected by the passenger. Answer D is incorrect. Venue is proper in a district where a substantial part of the events or omissions giving rise to the claim occurred. Thus, venue could be proper in the State A federal court, depending on facts not set out in the question, such as where the railroad maintained or housed the train. But even if venue were not proper in State A, the appropriate remedy for the railroad in that case would be dismissal. To support a transfer to a State B federal court, the railroad will still need to argue that a State B federal court would be convenient for the parties and the witnesses."
     },
     {
@@ -451,7 +451,7 @@
             "optionD": "D. Yes, because the jury could rationally find the defendant not guilty of the greater offense but guilty of the lesser included offense."
         },
         "correct_answer": "D",
-        "domain": "Criminal Law and Procedure V-F",
+        "domain": "Criminal_law",
         "explanation": "No explanation available."
     },
     {
@@ -464,7 +464,7 @@
             "optionD": "D. Yes, because Congress cannot limit the ability of the President to remove any employee of the executive branch."
         },
         "correct_answer": "C",
-        "domain": "Constitutional Law II-B-4",
+        "domain": "Constitutional_law",
         "explanation": "Answer C is correct. Congress cannot play any role in the removal of executive officers, as the Supreme Court made clear in Myers v. United States, 272 U.S. 52 (1926), and Bowsher v. Synar, 478 U.S. 714 (1986). Answer A is incorrect. A series of Supreme Court cases beginning with Myers sharply limits Congress\u2019s ability to impose conditions on the removal of federal officials.   Answer B is incorrect. Myers and subsequent cases make it clear that the Senate has no role in the removal of federal officers other than via impeachment. Answer D is incorrect because it is an overbroad statement of the law. The Supreme Court has upheld the power of Congress to remove certain types of federal officials, such as those serving as members of the governing bodies of regulatory agencies and inferior officers in agencies where the head of the agency is removable by the President at will."
     },
     {
@@ -477,7 +477,7 @@
             "optionD": "D. Yes, because the contract will be construed against the landowner, who drafted it."
         },
         "correct_answer": "C",
-        "domain": "Contracts and Sales II-C",
+        "domain": "Contracts",
         "explanation": "Answer C is correct. When the written contract fails to express the actual agreement because of a mistake of both parties, the court may reform the writing to accurately express the agreement. Answer A is incorrect. When a written contract fails to express the actual agreement of the parties, the remedy is reformation of the contract, not avoidance. Answer B is incorrect. The parol evidence rule does not bar the introduction of evidence to prove that an agreed-upon term was mistakenly omitted from the writing. Answer D is incorrect. This is not a case of interpreting a written contract but rather one of reforming a writing to express the parties\u2019 true intentions."
     },
     {
@@ -490,7 +490,7 @@
             "optionD": "D. Yes, because the woman\u2019s agreement with the friend constituted an equitable mortgage."
         },
         "correct_answer": "D",
-        "domain": "Real Property IV-A-1-a",
+        "domain": "Property",
         "explanation": "Answer D is correct. Where a deed is delivered to secure a loan to buy land, the deed is treated as a mortgage if doing so accomplishes the parties\u2019 intent. Here the facts clearly establish the parties\u2019 intent that the friend merely have a security interest in the land, not an absolute title. Answer A is incorrect. As a matter of law there is no such presumption. Answer B is incorrect. The merger doctrine relates to contractual promises relating to the quality of transferred title. Here the promises relate to whether the terms of the conveyance were intended to transfer any title or merely create a lien on the land. Answer C is incorrect. Whether or not the woman lived on the land is irrelevant to the characterization of the transaction as an equitable mortgage."
     },
     {
@@ -503,7 +503,7 @@
             "optionD": "D. Yes, because the defense objected to the statement during the trial."
         },
         "correct_answer": "B",
-        "domain": "Evidence I-A-3",
+        "domain": "Evidence",
         "explanation": "Answer B is correct. The defense attorney should have immediately objected when the witness related inadmissible hearsay. An objection raised only after the witness has left the stand is not timely under FRE 103. In addition, the delayed objection failed to preserve the right to appeal, because the defense attorney did not state a specific basis for the objection under FRE 103. Answer A is incorrect. Sometimes a witness relates inadmissible information before opposing counsel has had an opportunity to identify the inadmissible nature of the information and object. An objection accompanied by a motion to strike at the first opportunity\u2014even after the inadmissible information has been presented to the jury\u2014may be timely pursuant to FRE 103. Answer C is incorrect. A hearsay statement to the witness by a friend is not \u201ctestimonial\u201d for purposes of the Sixth Amendment. In addition, counsel must timely raise a confrontation objection at trial in order to preserve the objection for   appeal, which the defense attorney did not do in this case. Answer D is incorrect. An objection must be made at the earliest opportunity under FRE 103, and an objection that is made \u201cduring trial\u201d but not while the witness is still on the stand is not sufficient to preserve the issue for appeal."
     },
     {
@@ -516,7 +516,7 @@
             "optionD": "D. The man will not be able to recover damages."
         },
         "correct_answer": "D",
-        "domain": "Torts I-G-1",
+        "domain": "Torts",
         "explanation": "Answer D is correct. Given the rule provided in the question, because the man was 25% responsible, he cannot recover from any defendant, as each was also 25% responsible (a percentage equal to the man\u2019s responsibility). Answers A, B, and C are incorrect for the same reason."
     },
     {
@@ -529,7 +529,7 @@
             "optionD": "D. Yes, because the planned demonstrations threatened imminent irreparable harm."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure III-A",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. Federal Rule of Civil Procedure 65(d) requires that every order granting a TRO must state the reasons why it was issued and must detail the acts restrained, which this order failed to do. Answer B is incorrect. A TRO may be issued without notifying the party to be enjoined if the moving party submits an affidavit certifying the reasonable efforts made to give notice. Because the US Attorney submitted that certification along with the motion, no notice was required. Answer C is incorrect. The fact that damages would be inadequate to address the indicated harm would be a reason to grant the TRO. However, in this instance the TRO is improper because the court failed to state the reasons why it was issued and failed to detail the acts restrained. Answer D is incorrect. The fact that imminent irreparable harm is threatened would be a reason to grant the TRO. However, in this instance the TRO is improper because the court failed to state the reasons why it was issued and failed to detail the acts restrained."
     },
     {
@@ -542,7 +542,7 @@
             "optionD": "D. Neither decision is constitutional."
         },
         "correct_answer": "D",
-        "domain": "Constitutional Law II-B-1",
+        "domain": "Constitutional_law",
         "explanation": "Answer D is correct. The Take Care Clause requires the President to take care that the laws be faithfully executed, and one of those laws is the requirement that all the funds in question be spent on planting flowers. Keeping the funds in the federal treasury violates the legal mandate that all the funds be spent. The President cannot use the money to train troops, because the Appropriations Clause of Article I provides that federal spending must be authorized by Congress. Answer A is incorrect for the reasons stated in the explanation for answer D. Answer B is incorrect because spending the money to train federal troops violates the Appropriations Clause. Answer C is incorrect because retaining the funds in the treasury violates the federal mandate to spend all appropriated funds."
     },
     {
@@ -555,7 +555,7 @@
             "optionD": "D. Yes, because property owners such as the stockholder are entitled to express an opinion on changes in the value of their property."
         },
         "correct_answer": "A",
-        "domain": "Evidence I-A-4",
+        "domain": "Evidence",
         "explanation": "Answer A is correct. The stockholder is a lay witness seeking to give testimony on causation that requires the specialized knowledge of an expert witness. Under FRE 701, the stockholder\u2019s testimony is inadmissible.   Answer B is incorrect. If otherwise qualified, an expert witness can have a personal interest in the outcome of the action and still testify. The expert\u2019s personal interest can be explored on cross-examination. In this case, however, the stockholder is not qualified as an expert. Answer C is incorrect. An admissible opinion about the cause of the price drop cannot be based on the stockholder\u2019s perception; it requires an expertise that he does not possess. His opinion testimony will not be helpful to the jury because the stockholder is not qualified to speak to the causation issue. Answer D is incorrect. Under FRE 701, property owners are entitled to express opinions on the value of their property, but here the stockholder is expressing an opinion on the cause of the publicly traded stock\u2019s price drop. Such testimony requires a witness with specialized knowledge about the stock market."
     },
     {
@@ -568,7 +568,7 @@
             "optionD": "D. No crime."
         },
         "correct_answer": "C",
-        "domain": "Criminal Law and Procedure III-A-3",
+        "domain": "Criminal_law",
         "explanation": "Answer C is correct. The man committed criminal solicitation by attempting to cause the officer to commit the crime of possessing a controlled substance. Answer A is incorrect. The man is not guilty of conspiracy because the facts do not show an agreement between the participants. Answer B is incorrect. The man is not guilty of attempt because the facts do not show that he was in dangerously close proximity to a completed offense. Most pertinently, the man did not have drugs in his possession. Answer D is incorrect because the facts show that the man committed a criminal solicitation."
     },
     {
@@ -581,7 +581,7 @@
             "optionD": "D. Yes, because the attorney\u2019s email accepted the client\u2019s offer, which was irrevocable for a reasonable time."
         },
         "correct_answer": "C",
-        "domain": "Contracts and Sales I-A",
+        "domain": "Contracts",
         "explanation": "Answer C is correct. When an offer can be accepted either by promise or by performance, the beginning of performance acts as an acceptance that completes the process of mutual assent and binds both parties since consideration also is present. Answer A is incorrect. When an offer can be accepted by performance, notice of beginning performance is not required unless that requirement is included in the offer by the offeror. Answer B is incorrect. An offer generally can be revoked prior to acceptance. But here the attorney accepted the offer by beginning performance before the client\u2019s attempted revocation. Answer D is incorrect. The offer was revocable only before acceptance, and the attorney accepted it when she began performance."
     },
     {
@@ -594,7 +594,7 @@
             "optionD": "D. Yes, because the patient smoked cigarettes and therefore was contributorily negligent."
         },
         "correct_answer": "C",
-        "domain": "Torts II-E",
+        "domain": "Torts",
         "explanation": "Answer C is correct. This answer accurately states the relevant legal rule. Answer A is incorrect. The problem is not the amount of damages but rather the lack of evidence demonstrating that the radiologist injured the patient in a willful or wanton manner, which is required for the award of any punitive damages. Answer B is incorrect. Punitive damages are allowed to be awarded when there is a showing that the defendant willfully or wantonly injured the plaintiff, and such damages are not based on the extent of the plaintiff\u2019s injuries.   Answer D is incorrect. The patient\u2019s own negligence is irrelevant to the question of whether punitive damages are appropriate."
     },
     {
@@ -607,7 +607,7 @@
             "optionD": "D. Yes, because the transaction would constitute a valid short sale by the woman."
         },
         "correct_answer": "C",
-        "domain": "Real Property IV-D-2",
+        "domain": "Property",
         "explanation": "Answer C is correct. Because there are no other liens against the property, the bank\u2019s acceptance of the deed in lieu of foreclosure gives the bank a free and clear title to the property. Answer A is incorrect. The point of offering the deed to the bank is to get the woman out from under a liability to the bank. The woman does not wish to redeem the property. Answer B is incorrect. Deeds in lieu of foreclosure can be used for both commercial and residential properties. Answer D is incorrect. A short sale occurs when the lender (the bank) agrees to release its lien in exchange for the sale proceeds. Here, the woman wants to deed the house back to the bank and not sell it to another party."
     },
     {
@@ -620,7 +620,7 @@
             "optionD": "D. Yes, because the allegations against the competitor arise out of the same factual circumstances and relate back to the allegations in the original complaint."
         },
         "correct_answer": "B",
-        "domain": "Civil Procedure III-B",
+        "domain": "Civil_procedure",
         "explanation": "Answer B is correct. Courts may deny leave to amend when the claim to be added is futile. Here, the claim is futile on limitations grounds unless relation back applies. Relation back does not apply here because the worker\u2019s failure to name the competitor in the original complaint was not due to a mistake of identity, which is the standard that Federal Rule of Civil Procedure 15 imposes to permit relation back of amendments adding a party. Answer A is incorrect. The closing of discovery does not foreclose amending a complaint to add a new party. And whether the competitor will be prejudiced by being made a party at this stage of the case is relevant to whether to allow the amendment, but it is not dispositive. Answer C is incorrect. Although leave to amend should be freely granted, the claim here is futile because it is brought after the applicable limitations period has expired and does not relate back. Answer D is incorrect. The fact that the allegations against the competitor arise out of the same factual circumstances outlined in the original complaint is a necessary but not a sufficient condition for the new claim to relate back when it is asserted against a new party. Additionally, for Rule 15 to permit relation back, the failure to name a party in the original complaint must have been due to a mistake of identity, which was not the case here."
     },
     {
@@ -633,7 +633,7 @@
             "optionD": "D. Misprision of a felony."
         },
         "correct_answer": "C",
-        "domain": "Criminal Law and Procedure III-A-3",
+        "domain": "Criminal_law",
         "explanation": "Answer C is correct. The man committed solicitation of murder by attempting to induce the undercover officer to murder the man\u2019s ex-wife. Answer A is incorrect because the facts do not show that the man took sufficient steps toward completing a murder. The man did nothing but offer to pay, and this conduct is not \u201cdangerously proximate\u201d to the commission of the offense as required by the common law. Answer B is incorrect because the facts do not show the existence of a bilateral conspiracy. The man\u2019s offer, given the undercover officer\u2019s insincere agreement, established only a unilateral conspiracy. Answer D is incorrect. The question calls for the most serious crime of which the man can be convicted, and solicitation of murder is more serious than misprision of a felony. Additionally, the facts do not establish a misprision. That offense   occurs when a person fails to inform the authorities about a felony that the person knows about."
     },
     {
@@ -646,7 +646,7 @@
             "optionD": "D. Yes, because the parties were mutually mistaken as to the true value of the painting at the time of the sale."
         },
         "correct_answer": "A",
-        "domain": "Contracts and Sales II-C",
+        "domain": "Contracts",
         "explanation": "Answer A is correct. A person cannot avoid a contract for mistake where that person bears the risk of mistake. Here, the heir bore the risk because she was aware that she had only limited knowledge with respect to the facts but treated her limited knowledge as sufficient. Answer B is incorrect. The neighbor may have also been mistaken as to the value of the painting, but it was the heir who bore the risk of mistake, as she treated her limited knowledge as sufficient. Answer C is incorrect. Where a mistake is mutual, the loss falls on the party who bore the risk of mistake. Answer D is incorrect. Although it is true that the parties were mutually mistaken, it was the heir who bore the risk of mistake."
     },
     {
@@ -659,7 +659,7 @@
             "optionD": "D. Yes, because the buyer complied with the law by returning the car keys and acted reasonably in asking to retrieve the laptop."
         },
         "correct_answer": "A",
-        "domain": "Torts I-B-2",
+        "domain": "Torts",
         "explanation": "Answer A is correct. The buyer intentionally shoved the employee, which satisfies the prima facie case for battery. As an affirmative defense, the buyer could claim that she was privileged to use force against the employee in order to maintain possession of her laptop. However, this defense will be established only if the jury reasonably concludes that the buyer\u2019s use of force was reasonable under the circumstances (rather than excessive). Thus, the trial court should deny the buyer\u2019s motion for summary judgment. Answer B is incorrect. The buyer\u2019s claim of privilege for the use of force would be based on her possessory right in the laptop, not the car. Answer C is incorrect. This answer suggests that there is a general rule permitting possessors to use nonlethal force to protect their possessory rights in all situations. This is not the case: possessors can sometimes use nonlethal force to protect their possessions, but only if the force used is reasonable under the circumstances. Answer D is incorrect. The buyer\u2019s compliance with the employee\u2019s request for the keys, and the reasonableness of the buyer\u2019s request to retrieve the laptop, do not establish as a matter of law that the buyer\u2019s use of force was reasonable under the circumstances."
     },
     {
@@ -672,7 +672,7 @@
             "optionD": "D. Yes, as the woman\u2019s declaration against penal interest."
         },
         "correct_answer": "A",
-        "domain": "Evidence V-A-1",
+        "domain": "Evidence",
         "explanation": "Answer A is correct. The woman\u2019s statement is hearsay if offered to prove its truth\u2014that the defendant sold cocaine. There is no hearsay exception that would apply to admit her statement against the defendant. Answer B is incorrect. The prosecutor\u2019s failure to establish the woman\u2019s unavailability is not the reason that her statement is inadmissible. Because there is no hearsay exception that would make the woman\u2019s statement admissible to prove its truth, it would be inadmissible even if the prosecutor were to properly establish her unavailability. Answer C is incorrect. The woman\u2019s statement was made to a police officer following her arrest and not during a drug conspiracy with the defendant. The statement also certainly did nothing to further a drug conspiracy, even if one did exist. Answer D is incorrect. The portion of the woman\u2019s statement attributing fault to the defendant and suggesting that he was her drug supplier was not against the woman\u2019s penal interest. Indeed, once she was apprehended, her statement   shifted blame to the defendant and away from herself and was in fact self-serving."
     },
     {
@@ -685,7 +685,7 @@
             "optionD": "D. Yes, because the original contract was silent concerning time being \u201cof the essence.\u201d"
         },
         "correct_answer": "B",
-        "domain": "Real Property III-B-3",
+        "domain": "Property",
         "explanation": "Answer B is correct. The initial contract did not require time to be \u201cof the essence\u201d for the closing. When the buyer requested a postponement of 15 days, the seller agreed but noted that time was now \u201cof the essence,\u201d which the buyer agreed was reasonable. Time may be made of the essence later if there is a reasonable time between the notice and the new date. Answer A is incorrect. A buyer can request a change in the closing date. If the seller had not agreed, the buyer could close within a reasonable time of the initial closing date because time had not yet been made of the essence. Answer C is incorrect. Time had been made \u201cof the essence\u201d when the closing date was changed. It is irrelevant why the buyer did not appear at the rescheduled closing. Answer D is incorrect. Though the original contract did not mention time being \u201cof the essence,\u201d time can be made \u201cof the essence\u201d in a later document provided that there is a reasonable time between the date of the notice that time is now \u201cof the essence\u201d and the rescheduled closing date."
     },
     {
@@ -698,7 +698,7 @@
             "optionD": "D. None of these appointment methods would be constitutional."
         },
         "correct_answer": "C",
-        "domain": "Constitutional Law II-B-4",
+        "domain": "Constitutional_law",
         "explanation": "No explanation available."
     },
     {
@@ -711,7 +711,7 @@
             "optionD": "D. The defendant waived the errors in the instructions by not objecting to them at trial."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure IV-C",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. Because the defendant did not object to any of the instructions, Federal Rule of Civil Procedure 51(d)(2) provides that the defendant\u2019s appeal can only be successful if the instruction affected the defendant\u2019s substantial rights, which is the standard for plain error. Answer B is incorrect. There is no obligation to seek a new trial before challenging jury instructions on appeal, so long as the applicable plain error standard can be satisfied. Plain error is the standard because the defendant failed to object at trial. Answer C is incorrect. Plain error, not abuse of discretion, is the standard for reviewing instructions that the parties did not object to, as was the case here. Answer D is incorrect. The errors were not waived by the failure to object. Rather, the failure to object waived full review, with the result that the standard for assigning error was raised to plain error."
     },
     {
@@ -724,7 +724,7 @@
             "optionD": "D. No crime."
         },
         "correct_answer": "A",
-        "domain": "Criminal Law and Procedure III-B",
+        "domain": "Criminal_law",
         "explanation": "No explanation available."
     },
     {
@@ -737,7 +737,7 @@
             "optionD": "D. The engineer, because the failure of an express condition to the developer\u2019s obligation to pay the engineer was excused by governmental action."
         },
         "correct_answer": "C",
-        "domain": "Contracts and Sales IV-C",
+        "domain": "Contracts",
         "explanation": "Answer C is correct. The engineer\u2019s obligation was to \u201cuse best efforts to obtain county approval,\u201d not to obtain county approval, and the engineer performed all obligations as promised. Therefore, the developer breached by refusing to perform the developer\u2019s obligations under the contract. Restatement (Second) of Contracts \u00a7\u00a7 225, 235. Answer A is incorrect. There is no express condition. Under the rule of constructive conditions of exchange, the performance by one party is an implied condition to performance by the other party. Since the engineer performed all obligations, the developer breached by refusing to perform the developer\u2019s contractual obligation to pay the engineer. Answer B is incorrect. The engineer did not breach the contract, because the engineer had an obligation to \u201cuse best efforts to obtain county approval,\u201d not to obtain county approval. Answer D is incorrect. There is no express condition. The engineer had an obligation to \u201cuse best efforts to obtain county approval\u201d and performed that obligation."
     },
     {
@@ -750,7 +750,7 @@
             "optionD": "D. Whether, by a preponderance of the evidence, the items in question are what the prosecution claims them to be."
         },
         "correct_answer": "C",
-        "domain": "Evidence II-B",
+        "domain": "Evidence",
         "explanation": "Answer C is correct. The production of evidence \u201csufficient to support a finding\u201d that the evidence is what the proponent (here the prosecution) claims it to be is the proper standard for authentication under FRE 901. Answer A is incorrect. To authenticate the items under FRE 901, the prosecution must produce evidence \u201csufficient to support a finding\u201d that the items were found in the apartment. A finding by the court that the prosecution has made a clear and convincing showing that the items are what the prosecution claims them to be is not required. That is too high a standard and would result in keeping relevant evidence from the jury. Answer B is incorrect. Proof of chain of custody\u2014what happened to the evidence after it was initially seized from the apartment\u2014is one way of authenticating evidence, but it is not necessary here, since the prosecution has called a witness who will testify that he saw each of the items in the apartment. Answer D is incorrect. FRE 901 requires proof sufficient to support a finding that the items are what the prosecution claims them to be. Requiring a court to find by a preponderance of the evidence that the items are what the prosecution claims them to be would result in keeping relevant evidence from the jury; it is too high a standard."
     },
     {
@@ -763,7 +763,7 @@
             "optionD": "D. Yes, because the tax did not discriminate against the federal government or its contractors, and the materials were purchased by the contractor rather than by the federal government."
         },
         "correct_answer": "D",
-        "domain": "Constitutional Law III-A-1",
+        "domain": "Constitutional_law",
         "explanation": "No explanation available."
     },
     {
@@ -776,7 +776,7 @@
             "optionD": "D. The woman retained no interest in the land after she conveyed it to the city."
         },
         "correct_answer": "A",
-        "domain": "Real Property V-A",
+        "domain": "Property",
         "explanation": "Answer A is correct. The 10-year statute of limitations began to run 17 years ago when the city began using the land for non-park purposes, a use it continued for more than the statutory 10-year period. The woman failed to sue the city in a timely manner after the city stopped using the land for a park. Thus, when the woman died, she no longer owned the land and no interest passed to her son. Answer B is incorrect. The changing needs of the city did not make the city\u2019s actions permissible; the woman could have filed a timely claim that the city had violated the terms of the deed. Answer C is incorrect. Lapse occurs when a recipient under a will dies before the testator. That is not what occurred here. Answer D is incorrect. When the woman conveyed the land to the city, she retained a possibility of reverter, which became possessory when the city ceased to use the land for a park. At that time, the woman had a cause of action against the city, which she failed to bring in a timely manner."
     },
     {
@@ -789,7 +789,7 @@
             "optionD": "D. The judge should grant the passenger\u2019s request, because the passenger acted reasonably considering the stress of the situation."
         },
         "correct_answer": "C",
-        "domain": "Torts II-C / II-G-1",
+        "domain": "Torts",
         "explanation": "Answer C is correct. The question of the passenger\u2019s negligence is relevant to the jury\u2019s assessment of damages but is not a bar to a res ipsa instruction. Answer A is incorrect. The company was exclusively in control of the elevator and the injury would not have happened if the elevator had not malfunctioned, so the passenger\u2019s request for a res ipsa instruction should be granted. Answer B is incorrect. The passenger\u2019s negligence is relevant to the damages awarded, if any, but it is not a bar to a res ipsa instruction. Answer D is incorrect. The question of the passenger\u2019s negligence is not relevant to whether a res ipsa instruction is appropriate but rather to the amount of damages to assess if the company is found liable."
     },
     {
@@ -802,7 +802,7 @@
             "optionD": "D. Yes, because the consumer\u2019s attorney objected within 28 days after the judge gave the instruction."
         },
         "correct_answer": "C",
-        "domain": "Civil Procedure IV-C",
+        "domain": "Civil_procedure",
         "explanation": "Answer C is correct. Because the governing law does not recognize contributory negligence as a defense to this kind of claim, instructing the jury on contributory negligence and allowing that instruction to stand will affect the consumer\u2019s substantive rights by permitting the consumer to lose the case based on an erroneous statement of the law. The inclusion of the instruction thus constitutes plain error. Answer A is incorrect. The attorney\u2019s failure to object before the judge gave the contributory negligence instruction is   not an obstacle to the judge\u2019s considering the objection, if the error referenced in the objection is plain error. Here, the error is plain, since the governing law does not recognize contributory negligence as a defense to this kind of claim. Answer B is incorrect. The attorney\u2019s failure to object at the time the judge gave the contributory negligence instruction is not an obstacle to the judge\u2019s considering the objection, if the error referenced in the objection is plain error. Here, the error is plain, since the governing law does not recognize contributory negligence as a defense to this kind of claim. Answer D is incorrect. For most objections to jury instructions, the objection must be made before the instruction is given to the jury. There is no 28-day window after the jury is instructed to object to any instructions. The exception to the general rule of making all objections before the jury is instructed is for objections of plain error, which is the case here."
     },
     {
@@ -815,7 +815,7 @@
             "optionD": "D. Yes, because the emergency aid exception does not apply when a homeowner clearly and unambiguously invokes his right to a warrant."
         },
         "correct_answer": "B",
-        "domain": "Criminal Law and Procedure V-A",
+        "domain": "Criminal_law",
         "explanation": "No explanation available."
     },
     {
@@ -828,7 +828,7 @@
             "optionD": "D. Yes, because the requirements are the least restrictive means of serving the state\u2019s compelling interest in highway safety."
         },
         "correct_answer": "C",
-        "domain": "Constitutional Law III-B-1",
+        "domain": "Constitutional_law",
         "explanation": "No explanation available."
     },
     {
@@ -841,7 +841,7 @@
             "optionD": "D. The firm has no rights against the first subcontractor, because the first subcontractor was free to revoke its bid at any time before the firm accepted that bid."
         },
         "correct_answer": "C",
-        "domain": "Contracts and Sales I-A",
+        "domain": "Contracts",
         "explanation": "Answer C is correct. Here the offeror (the subcontractor) knew that the offeree (the firm) would substantially rely on the offer in creating a bid for the municipality\u2019s project and knew that the firm could not accept the subcontractor\u2019s offer until the municipality accepted the firm\u2019s overall bid on the project. This reasonable reliance had the   effect of creating an option contract under which the subcontractor could not revoke its bid for a reasonable time. Since the subcontractor could not revoke its bid, its attempt at revocation was ineffective, and the bid was still open at the time the firm accepted it. Therefore, a contract was formed by offer and acceptance, and the remedy for breach of this contract is expectation damages. Restatement (Second) of Contracts \u00a7\u00a7 87(2) & cmt. e; Drennan v. Star Paving, 333 P.2d 757 (1958). Answer A is incorrect. A contract was formed when the firm timely accepted the subcontractor\u2019s offer. Therefore, the firm is entitled to recover expectation damages measured by the difference between the amount paid to the second subcontractor and the amount of the first subcontractor\u2019s bid. Answer B is incorrect. As discussed above, the firm\u2019s reliance kept the subcontractor\u2019s bid open as an option contract. Once the offer was accepted, a contract was formed, and expectation damages would be the most appropriate measure of recovery for breach. Answer D is incorrect. While an offeror generally has the power to revoke an offer up until the moment of acceptance, detrimental reliance by the offeree can make an offer irrevocable by transforming it into an option contract, which is what happened here with the subcontractor\u2019s bid."
     },
     {
@@ -854,7 +854,7 @@
             "optionD": "D. The mother, because the bank does not hold an enforceable mortgage on the motel."
         },
         "correct_answer": "A",
-        "domain": "Real Property IV-A-1-a",
+        "domain": "Property",
         "explanation": "Answer A is correct. A person may validly mortgage their land to secure the debt of another person. The mortgagor need not be the debtor. Answer B is incorrect. The mother is not personally liable on the debt because she neither signed the note secured by the mortgage nor at any time agreed to assume payment of the mortgage. Answer C is incorrect. A person can mortgage their property even though the person did not become liable on a debt by signing the promissory note. Answer D is incorrect. The bank\u2019s mortgage is enforceable because the mother signed the mortgage."
     },
     {
@@ -867,7 +867,7 @@
             "optionD": "D. Yes, but only for the limited purpose of impeaching the witness\u2019s trial testimony."
         },
         "correct_answer": "D",
-        "domain": "Evidence I-D-1",
+        "domain": "Evidence",
         "explanation": "Answer D is correct. The defense may offer extrinsic evidence of a witness\u2019s prior inconsistent statement for the limited non-hearsay purpose of impeaching the witness after the witness has been given an opportunity to explain or deny the statement. Answer A is incorrect. The witness\u2019s statement to the investigator may be admitted for the non-hearsay purpose of impeaching the witness with a prior inconsistent statement. Answer B is incorrect. An opposing party must give a witness an opportunity to explain or deny a prior inconsistent statement under FRE 613(b). But, if the witness has had that opportunity, the opposing party may offer extrinsic evidence of the statement. It is precisely in situations where the witness denies having made the inconsistent statement that extrinsic evidence that it was made would be most useful. Answer C is incorrect. The statement would have to be admitted for its truth in order to prove that the plaintiff did not fall, but because the statement was made out of court to an investigator, it is hearsay for that purpose. And since there is no applicable hearsay exception for the witness\u2019s statement to the investigator, it cannot be admitted to prove that the plaintiff did not fall."
     },
     {
@@ -880,7 +880,7 @@
             "optionD": "D. The court should rule that the friend\u2019s action fails as a matter of law because no reasonable jury would find him less at fault than the manager."
         },
         "correct_answer": "B",
-        "domain": "Civil Procedure V-A",
+        "domain": "Civil_procedure",
         "explanation": "Answer B is correct. Whether the friend\u2019s conduct amounts to an implied assumption of risk, thus defeating liability entirely, or comparative fault, thus potentially allowing for partial recovery, is a jury question. Answers A and C are incorrect for the same reason. Answer D is incorrect. A jury could reasonably find the friend less at fault than the manager."
     },
     {
@@ -893,7 +893,7 @@
             "optionD": "D. Submit an affidavit that she cannot yet present facts essential to her claim."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure VI-A",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. Federal Rule of Civil Procedure 41(a)(2) permits a plaintiff to obtain a voluntary dismissal by filing a motion with the court, and a dismissal order under Rule 41(a)(2) is presumptively without prejudice, consistent with the woman\u2019s goal of refiling the action at a later date. Answer B is incorrect. Rule 41(a)(1) permits a plaintiff to voluntarily dismiss an action by filing a notice of dismissal, without having to seek permission from the court. However, that pathway is only available until the defendant answers (or moves for summary judgment). Because the defendants have both answered, it is too late to dismiss the action simply by giving notice. Answer C is incorrect. To dismiss an action voluntarily on stipulation requires the assent of all parties who have appeared in the action. Thus, a stipulation signed only by the doctor would be insufficient to effect dismissal, since the doctor and the hospital have both answered the complaint. Answer D is incorrect. Submitting such an affidavit would be a proper response to achieve a delay of the court\u2019s consideration of the summary judgment motion in order to allow the woman further discovery. However, the woman\u2019s goal is to dismiss and refile the action. Submitting the described affidavit would not achieve that goal."
     },
     {
@@ -906,7 +906,7 @@
             "optionD": "D. Order the company to give the resident an opportunity for a hearing, because the Fourteenth Amendment applies to private franchises granted by public entities."
         },
         "correct_answer": "A",
-        "domain": "Constitutional Law IV-A",
+        "domain": "Constitutional_law",
         "explanation": "Answer A is correct. The fact that the company supplies a very important good to the public is not sufficient to make it a state actor, nor is the non-exclusive franchise from the city. Jackson v. Metropolitan Edison Co., 419 U.S. 345 (1974). Answer B is incorrect. The facts do not indicate that the resident was actually in arrears. The purpose of the due process hearing would be to determine whether the resident was in arrears. Answer C is incorrect. Private entities performing a public function are state actors only if the function is an exclusively governmental service or one that involves inherently governmental powers such as incarceration. Supplying water does not satisfy either of these requirements. Answer D is incorrect. Receipt of a public franchise is not enough to make a company a state actor."
     },
     {
@@ -919,7 +919,7 @@
             "optionD": "D. Yes, because after his financial situation changed, the man was obligated to disclose facts necessary to prevent his previous statement of his financial condition from being a misrepresentation."
         },
         "correct_answer": "D",
-        "domain": "Contracts and Sales II-D",
+        "domain": "Contracts",
         "explanation": "Answer D is correct. Nondisclosure of a fact is the equivalent of a misrepresentation when a person knows that disclosure of the fact is necessary to prevent some previous assertion from being a misrepresentation. Answer A is incorrect. The lender had no duty to make an independent assessment when reliance on the representation was reasonable.   Answer B is incorrect. While it is true that the man did not make an affirmative misrepresentation, failure to disclose is the equivalent of an assertion under these facts. Answer C is incorrect. Concealment requires an affirmative act; here the man failed to disclose the change in circumstances rather than affirmatively acting to conceal it."
     },
     {
@@ -932,7 +932,7 @@
             "optionD": "D. Yes, because the rules of evidence do not apply at a grand jury proceeding."
         },
         "correct_answer": "C",
-        "domain": "Evidence III-B",
+        "domain": "Evidence",
         "explanation": "Answer C is correct. Disclosure to the grand jury of the client\u2019s identity would not reveal anything about the communications between the client and the lawyer; the attorney-client privilege therefore does not apply, and the lawyer can be compelled to make the disclosure. Answer A is incorrect because the identity of a lawyer\u2019s client is generally not protected by the attorney-client privilege; disclosure of the client\u2019s identity alone would not reveal any confidential attorney-client communications. Answer B is incorrect. The privilege against self-incrimination prevents the client from being compelled to give testimony harmful to themself. It does not prevent the lawyer from disclosing the client\u2019s identity. Answer D is incorrect. Under FRE 1101(c), rules on privilege apply to all stages of a case, including grand jury proceedings."
     },
     {
@@ -945,7 +945,7 @@
             "optionD": "D. Neither conspiracy offense."
         },
         "correct_answer": "B",
-        "domain": "Criminal Law and Procedure III-A-2",
+        "domain": "Criminal_law",
         "explanation": "Answer B is correct. The man can be convicted of conspiracy to commit robbery because he and his friend agreed to commit that offense. Answer A is incorrect because the man did not agree to commit an armed robbery. The facts show that the man was unaware of the friend\u2019s gun. Answer C is incorrect for the reasons given in the explanations for answers A and B. The man can be convicted of conspiracy to commit robbery but not conspiracy to commit armed robbery. Answer D is incorrect because, as noted, the man did conspire to commit a robbery. It does not matter that the robbery was unsuccessful; a conspiracy is complete when the agreement has been reached."
     },
     {
@@ -958,7 +958,7 @@
             "optionD": "D. The man, because the easement was an easement in gross personal to the woman who previously owned the land."
         },
         "correct_answer": "A",
-        "domain": "Real Property II-B-1",
+        "domain": "Property",
         "explanation": "Answer A is correct. The man granted an express easement appurtenant to the woman \u201cand her heirs and assigns.\u201d The man\u2019s land was the servient estate, the woman\u2019s land was the dominant estate, and the easement benefits the woman\u2019s land. An easement appurtenant passes with the title, and now the buyer has the benefit of the easement. It is irrelevant that the buyer had no actual notice of the easement when she bought the land. Answer B is incorrect. The fact that the man received $10,000 is irrelevant. The man granted the woman an easement appurtenant, which runs with the dominant estate. An easement appurtenant may be granted by purchase or by gift. Answer C is incorrect. The buyer did purchase the land without any type of notice, but this is not a reason for the man to prevail. The easement is for the benefit of whoever owns the land. The buyer can still assert her right to the easement appurtenant because the easement has not terminated.   Answer D is incorrect. The easement was granted to the woman as the owner of the land across the street, which is the dominant estate. The easement was not granted to the woman in her personal capacity. It was an easement appurtenant and not in gross."
     },
     {
@@ -971,7 +971,7 @@
             "optionD": "D. No, because the bystander was privileged to act as he did."
         },
         "correct_answer": "D",
-        "domain": "Torts I-B-2",
+        "domain": "Torts",
         "explanation": "Answer D is correct. A person is privileged to use reasonable force to protect another against imminent harm, including self-inflicted harm. Given that the intoxicated man appears to have been on the verge of harming or killing himself, it was reasonable for the bystander to push the man and lock him in the bedroom until the danger had passed. Answer A is incorrect. Even though the intentional pushing of another person without that person\u2019s consent meets the definition of a battery, the privilege to use force (referenced above) would defeat any battery claim brought by the man. Answer B is incorrect. Even though the intentional confinement of another person without that person\u2019s consent meets the definition of false imprisonment, the privilege to use force (referenced above) would defeat this claim. Answer C is incorrect for the reasons stated in the explanations for answers A and B."
     },
     {
@@ -984,7 +984,7 @@
             "optionD": "D. Grant a new trial, because the verdict was not unanimous."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure IV-B",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. Federal Rule of Civil Procedure 48 permits a non-unanimous verdict if the parties so stipulate, which happened here. Answers B and C are incorrect. There is no requirement that a jury verdict be agreed to by at least six jurors. Answer D is incorrect for the reason set out in the explanation for answer A."
     },
     {
@@ -997,7 +997,7 @@
             "optionD": "D. Exclude the bartender\u2019s testimony in its entirety, because extrinsic evidence is not admissible to impeach."
         },
         "correct_answer": "A",
-        "domain": "Evidence I-D-6",
+        "domain": "Evidence",
         "explanation": "No explanation available."
     },
     {
@@ -1010,7 +1010,7 @@
             "optionD": "D. Yes, because the law violates the privileges and immunities clause of Article IV."
         },
         "correct_answer": "A",
-        "domain": "Constitutional Law IV-C-3",
+        "domain": "Constitutional_law",
         "explanation": "Explanation: Answer A is correct. The state licensing requirement should receive rational basis scrutiny because it neither burdens a fundamental individual right nor creates a constitutionally suspect classification. The licensing requirement for tutors is a rational means of protecting the state’s legitimate interest in ensuring the competency of tutors,and so the state law easily satisfies the rational basis test. Answer B is incorrect. Although answer B states correctly that the challenge to the licensing requirement will fail, it provides the wrong standard of judicial review. The standard of review described in answer B is associated with the more demanding intermediate judicial scrutiny, which does not apply here because the licensing requirement neither burdens a specially protected individual right nor creates a constitutionally sensitive classification. Answer C is incorrect. Although the licensing requirement serves the special interests of licensed tutors, it is at least rational to believe that it also serves the state’s legitimate interest in ensuring the competency of tutors, which is all that is required to sustain the statute. Answer D is incorrect. The privileges and immunities clause of Article IV, which prohibits certain forms of discrimination by states against the citizens of other states, is not implicated on these facts. Although the challenge is by an out-of-state company, the state licensing requirement applies equally to the state’s citizens and to the citizens of other states."
     },
     {
@@ -1023,7 +1023,7 @@
             "optionD": "D. No homicide offense."
         },
         "correct_answer": "C",
-        "domain": "Criminal Law and Procedure I-B-4",
+        "domain": "Criminal_law",
         "explanation": "Answer C is correct. On these facts, a jury could rationally find both that the woman was guilty of reckless driving and that her illegal conduct caused the truck driver\u2019s death. The woman\u2019s conduct constitutes involuntary manslaughter under a theory of \u201cmisdemeanor-manslaughter.\u201d Answer A is incorrect. The woman could be guilty of murder on a theory of malice aforethought only if she intended to kill the driver. But the facts do not remotely suggest that the woman had that intent. The facts also do not support any theory of imputed malice, such as felony murder or depraved indifference. Answer B is incorrect because the woman did not intend to kill the driver and thus cannot be guilty of voluntary manslaughter. Answer D is incorrect because a jury could rationally convict the woman of involuntary manslaughter."
     },
     {
@@ -1036,7 +1036,7 @@
             "optionD": "D. Yes, because the buyer failed to protect himself when he did not accept the owner\u2019s offer to enter into an option contract."
         },
         "correct_answer": "B",
-        "domain": "Contracts and Sales IV-C",
+        "domain": "Contracts",
         "explanation": "Answer B is correct. Anticipatory repudiation requires (1) an overt communication of an intention not to perform a contractual obligation or (2) an action that renders performance impossible or shows a party\u2019s determination not to perform. UCC \u00a7 2-610, cmt. 1. Here the buyer did not anticipatorily repudiate because on March 3, he merely said that he \u201cmight not\u201d have the money to complete the transaction on March 6. Therefore, the owner anticipatorily repudiated by selling the car to the neighbor and will not succeed in a claim against the buyer for breach of contract. Answer A is incorrect. The duty of good faith did not require the seller to respond to the buyer in this situation. Answer C is incorrect. As explained above, the buyer did not anticipatorily repudiate the contract. Answer D is incorrect. An option contract would have made the seller\u2019s offer irrevocable, but here the parties had already formed an enforceable contract, and thus the revocability of an option offer became irrelevant."
     },
     {
@@ -1049,7 +1049,7 @@
             "optionD": "D. \u201cIf you conclude that the owner failed to provide reasonably safe premises, then you may in your discretion award the man both compensatory and punitive damages.\u201d"
         },
         "correct_answer": "B",
-        "domain": "Torts II-G-2",
+        "domain": "Torts",
         "explanation": "Answer B is correct. The traditional assumption-of-risk defense is a complete defense, so if the jury finds that the man knowingly and voluntarily chose to encounter the risk of falling down the darkened stairs, the owner will not be liable. Answer A is incorrect. The question states that the jurisdiction recognizes the traditional rule for assumption of risk, which is a complete defense. Answer C is incorrect. The man\u2019s status as a licensee is not relevant to whether he assumed the risk of falling down the stairs. Answer D is incorrect. The question is not about what damages the man might recover but whether he assumed the risk of falling down the stairs such that the owner would not be liable for his injuries."
     },
     {
@@ -1062,7 +1062,7 @@
             "optionD": "D. The niece, because the nephew did not seek or obtain her consent before he made the payments."
         },
         "correct_answer": "B",
-        "domain": "Real Property I-B-2-c",
+        "domain": "Property",
         "explanation": "Answer B is correct. The nephew and the niece inherited the vacant land as tenants in common. While neither is personally liable on the mortgage, their failure to pay could result in a foreclosure. To avoid foreclosure, payment must be made to the bank, and as co-tenants, each is responsible for his or her share of the mortgage payment. The nephew paid more than his pro rata share and thus may recover the amount owed by the niece in a contribution action. Answer A is incorrect. The doctrine of exoneration applies when land that is subject to a mortgage is acquired at the time of death and an attempt is made by the specific legatee to claim that the mortgage must be paid from general estate assets, a scenario that does not exist here. Answer C is incorrect. A partition action is not required before bringing an action for contribution for making mortgage payments that, if not made, might have resulted in the foreclosure on the property by the bank. Answer D is incorrect. Each tenant in common is required to make his or her pro rata share of payments such as mortgage payments, which if not paid could result in foreclosure on the property. Consent is not required before making the payments."
     },
     {
@@ -1075,7 +1075,7 @@
             "optionD": "D. Punitive damages are limited to 10 times the amount of compensatory damages, because the constitutional limit preempts state-law limits."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure II-A",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. In Klaxon Co. v. Stentor Elec. Mfg. Co., 313 U.S. 498 (1941), the US Supreme Court ruled that in cases governed by Erie R. Co. v. Tompkins, 304 U.S. 64 (1938), the court is to apply whatever law would be applied by the courts of the state in which the district court is sitting. Answer B is incorrect. In Klaxon, the US Supreme Court ruled that in cases governed by Erie, the court is to apply whatever law would be applied by the courts of the state in which the district court is sitting, not simply forum law. Answer C is incorrect. Under Erie, the fact that the action is in federal court does not create a right to apply federal law, and state substantive law governs. Answer D is incorrect. While the constitutional limit preempts any state law that would extend that limit, the state-law limit here is less than the constitutional limit and thus controls."
     },
     {
@@ -1088,7 +1088,7 @@
             "optionD": "D. Yes, because the statute requiring collection of DNA samples from felony arrestees violates the Fourth Amendment."
         },
         "correct_answer": "B",
-        "domain": "Criminal Law and Procedure V-A",
+        "domain": "Criminal_law",
         "explanation": "No explanation available."
     },
     {
@@ -1101,7 +1101,7 @@
             "optionD": "D. Yes, because it includes the prior consistent statement of the defendant, who testified as a witness."
         },
         "correct_answer": "A",
-        "domain": "Evidence V-A-3",
+        "domain": "Evidence",
         "explanation": "Answer A is correct. The witness would testify about the defendant\u2019s out-of-court statement, and the defense is offering that statement for the truth of the matter asserted: that the defendant wanted to pull out of the robbery. There is no hearsay exception that applies to admit the statement. Answer B is incorrect. There is no federal rule of evidence that automatically prohibits the admission of a criminal defendant\u2019s self-serving statement. If such a statement fit a hearsay exception (such as the excited utterance exception or the state of mind exception), it could be admissible notwithstanding its self-serving nature. Answer C is incorrect. The defendant\u2019s statement does not satisfy the state of mind exception, which admits only statements of a declarant\u2019s own then-existing physical or mental state. It does not admit statements about past facts that the declarant remembers or believes. Because the defendant\u2019s statement describes past events (the robbery) and describes a past state of mind (not one existing at the time he was speaking), the statement fails to satisfy the state of mind exception. Answer D is incorrect. Although the statement at issue is a \u201cprior consistent\u201d statement of the defendant, Federal Rule of Evidence 801(d)(1)(B) does not admit all prior consistent statements for their truth. It admits only those that rehabilitate the declarant-witness after an impeaching attack on the witness. Here there is no information about an impeaching attack by the prosecution on the defendant that would justify admission of the earlier statement. Further, Rule 801(d)(1)(B) admits only \u201cpre-motive\u201d statements when a witness has been impeached for recent fabrication. The defendant\u2019s statement, made after his arrest, would be post-motive and would not satisfy the requirements of Rule 801(d)(1)(B), even if there had been an impeaching attack on the defendant\u2019s credibility."
     },
     {
@@ -1114,7 +1114,7 @@
             "optionD": "D. The requirement of sterilization is not rationally related to a legitimate governmental interest."
         },
         "correct_answer": "A",
-        "domain": "Constitutional Law IV-B-1-a",
+        "domain": "Constitutional_law",
         "explanation": "Answer A is correct. The state requirement of sterilization denies affected individuals the right to procreate, which the US Supreme Court has held to be a fundamental right. A state law that burdens a fundamental right must satisfy strict judicial scrutiny, the elements of which are correctly stated in Answer A. Answer B is incorrect. Answer B states the elements of intermediate judicial scrutiny, which is not the proper standard. Although laws that discriminate on the basis of sex receive intermediate scrutiny, a sex-neutral law like the sterilization requirement would constitute sex discrimination only if the legislature had intended that the requirement benefit or harm individuals because of their sex. There is no indication of such an intention on these facts. The disparate impact of the sterilization requirement on men by itself is insufficient to demonstrate sex discrimination.   Answer C is incorrect. Answer C states the elements of strict judicial scrutiny, which is the proper standard. But the state law receives that scrutiny because it burdens the fundamental right of procreation, not because it is racially discriminatory. A race-neutral law like the sterilization requirement would trigger strict scrutiny only if the legislature had intended that the requirement benefit or harm individuals because of their race. There is no indication of such an intention on these facts. The disparate impact of the sterilization requirement on members of a racial minority group by itself is insufficient to demonstrate race discrimination. Answer D is incorrect. It states the elements of rational basis scrutiny, which is not applicable in this case. The state sterilization requirement would receive strict judicial scrutiny because it burdens the fundamental right of procreation."
     },
     {
@@ -1127,7 +1127,7 @@
             "optionD": "D. The parties have no contract, because they were mutually mistaken regarding the hourly rate to be paid for the company\u2019s extra services."
         },
         "correct_answer": "B",
-        "domain": "Contracts and Sales I-B",
+        "domain": "Contracts",
         "explanation": "Answer B is correct. If a written agreement fails to include a term of the agreement due to both parties\u2019 mistake, the writing may be reformed to express the actual agreement. Restatement (Second) of Contracts \u00a7 155. Here the landlord is entitled to reformation to include the mistakenly omitted term. Answer A is incorrect. A contract may not be formed if the terms are too indefinite, but here there was a mistakenly omitted term, not an indefinite term. Answer C is incorrect. As discussed above, the landlord is entitled to reformation reflecting the agreed-upon discount for the extra hours. Answer D is incorrect. The parties did not share a mutual mistake\u2014a belief that is not in accord with the facts. Rather, both parties mistakenly believed that the writing reflected their actual agreement. In this situation, the writing may be reformed to express the actual agreement."
     },
     {
@@ -1140,7 +1140,7 @@
             "optionD": "D. Yes, because the seller was unaware of the buyer\u2019s plans to construct a gas station."
         },
         "correct_answer": "A",
-        "domain": "Real Property III-C",
+        "domain": "Property",
         "explanation": "Answer A is correct. A seller is required to convey a marketable title to a buyer in the absence of a contrary provision in the contract. A restrictive covenant makes title unmarketable unless the covenant is excepted in the contract. Here there is no exception in the contract. Answer B is incorrect. The law will require the title to be marketable but will not require a perfect title. Answer C is incorrect. A restrictive covenant does render title unmarketable. A third party can prevent the buyer from using the land as desired. Answer D is incorrect. It is irrelevant that the seller did not know of the buyer\u2019s plans to construct a gas station."
     },
     {
@@ -1153,7 +1153,7 @@
             "optionD": "D. The debt collector\u2019s conduct was extreme and outrageous."
         },
         "correct_answer": "D",
-        "domain": "Torts I-A",
+        "domain": "Torts",
         "explanation": "Answer D is correct. A conclusion that the debt collector\u2019s conduct was extreme and outrageous, combined with the fact that the woman experienced severe emotional distress and the fact that the debt collector was probably at least reckless with respect to the risk of causing her distress, will provide the woman with a plausible claim for intentional infliction of emotional distress (IIED). None of the conclusions stated in the other answers will provide as much assistance to the woman in proving her IIED claim. Answer A is incorrect. Even if the woman\u2019s distress was reasonably foreseeable to the debt collector, that would not suffice to establish the recklessness or intentionality necessary for IIED liability.   Answer B is incorrect. The woman\u2019s subjective belief that the debt collector might someday attack her would not establish that she suffered severe distress or that the debt collector\u2019s conduct was extreme and outrageous. Answer C is incorrect. A mere failure to comply with industry custom does not establish any of the elements of IIED."
     },
     {
@@ -1166,7 +1166,7 @@
             "optionD": "D. State law, because the assignment of the burden of pleading is bound up with the definition of the tenant\u2019s substantive rights."
         },
         "correct_answer": "B",
-        "domain": "Civil Procedure II-A",
+        "domain": "Civil_procedure",
         "explanation": "Answer B is correct. When a Federal Rule of Civil Procedure is valid and on point, it controls over a conflicting state rule. Rule 8(c)(1) is on point because it specifically provides that contributory negligence is an affirmative defense that a defending party must assert in its answer to the complaint. The rule is a valid exercise of the US Supreme Court\u2019s rulemaking power, because the manner of pleading defenses is an issue that can rationally be classified as procedure and the rule itself regulates the manner and means by which the parties\u2019 rights are enforced. Answer A is incorrect. The question of who has the burden of pleading, in contrast to the burden of proof, in federal actions is a procedural matter within the US Supreme Court\u2019s rulemaking power. Answer C is incorrect. The \u201coutcome determinative\u201d test applies only when asking whether a state rule that conflicts with a judge-made federal practice should be followed. It does not apply when federal law comes from a valid and on- point federal rule. Answer D is incorrect. The \u201cbound up\u201d concept also applies only when asking whether a state rule that conflicts with a judge-made federal practice should be followed."
     },
     {
@@ -1179,7 +1179,7 @@
             "optionD": "D. Yes, because defense counsel is required to present any known mitigating factors in the penalty phase of a capital murder case."
         },
         "correct_answer": "C",
-        "domain": "Criminal Law and Procedure V-D",
+        "domain": "Criminal_law",
         "explanation": "Answer C is correct. To establish a claim of ineffective assistance of counsel under Strickland v. Washington, 466 U.S. 668 (1984), a defendant must show two things: (1) that defense counsel\u2019s performance was deficient and (2) that the deficiency was prejudicial. In Wiggins v. Smith, 539 U.S. 510 (2003), the Court held that defense counsel has a duty to conduct a reasonable investigation to determine whether there are mitigating facts for the penalty phase of a capital case. The Court held that defense counsel\u2019s inadequate investigation was prejudicial because a reasonable investigation would have revealed details that gave rise to a reasonable probability of a different outcome in sentencing; thus, the defendant had been deprived of the effective assistance of counsel. Answer C is correct because, as in Wiggins, defense counsel unreasonably chose not to investigate facts that could have been presented in mitigation, and that failure was prejudicial. Answer A is incorrect. Defense counsel\u2019s decisions can be defended as strategic only when based on a reasonably complete investigation. Although counsel does not have to pursue every conceivable line of inquiry, the investigation must be reasonable under the circumstances. Here, counsel\u2019s decision not to investigate was clearly unreasonable. Answer B states a correct principle of law: Defense counsel must adhere to an objective standard of reasonableness. Here, however, counsel\u2019s failure to investigate was objectively unreasonable. Answer D is incorrect because the Strickland standard does not require the presentation of all mitigating evidence, or of any particular mitigating evidence. It rather requires counsel to engage in a reasonable investigation into mitigating evidence, so that counsel can then employ a reasonable strategy in presenting such evidence."
     },
     {
@@ -1192,7 +1192,7 @@
             "optionD": "D. Yes, because the tax is imposed on all leases of real estate and does not discriminate against the federal government."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law III-A-1",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct because the state cannot impose a tax directly on the federal government or any of its   agencies. United States v. New Mexico, 455 U.S. 720 (1982). Answer A is incorrect. The tax on the lessee is rationally related to the collection of revenue and to imposing tax burdens on the possessor of property. Answer C is incorrect because the Social Security Administration is an agency of the federal government, regardless of whether it has independence from the President. Answer D is incorrect because even nondiscriminatory taxes imposed directly on the federal government are invalid."
     },
     {
@@ -1205,7 +1205,7 @@
             "optionD": "D. Yes, because the father\u2019s signed modification is enforceable without consideration."
         },
         "correct_answer": "A",
-        "domain": "Contracts and Sales I-E",
+        "domain": "Contracts",
         "explanation": "Answer A is correct. Modification of a contract governed by common law requires mutual assent and consideration. Here, the daughter did not agree to the modification and the father provided no consideration. Answer B is incorrect. Even though the nephew was a third-party beneficiary of the contract between the father and his daughter, the nephew\u2019s consent was not required for modification unless the contract provided otherwise. Here, however, there was no modification of the contract, because the daughter did not agree to it. Answer C is incorrect. The father retained no interest in the future proceeds of his daughter\u2019s promise, and thus he could not alter her obligation without her consent. Answer D is incorrect. There was no effective modification, because the daughter did not agree to it. Furthermore, the general common law rule is that a modification requires consideration, and here there was no consideration from the father."
     },
     {
@@ -1218,7 +1218,7 @@
             "optionD": "D. Strict products liability."
         },
         "correct_answer": "A",
-        "domain": "Torts III",
+        "domain": "Torts",
         "explanation": "Answer A is correct. Even though the spectator might not obtain summary judgment on a claim of liability for an abnormally dangerous activity, that claim\u2014which imposes strict liability for injuries caused by an activity that is not commonplace and that remains dangerous to bystanders even when the actor uses reasonable care to avoid causing injuries\u2014provides the spectator with the best chance of doing so. Answer B is incorrect. The spectator was injured in an accident: the amusement park did not intend to touch the spectator in a harmful or offensive manner, as is required for battery liability. Answer C is incorrect. The spectator suffered personal injuries. The tort of nuisance imposes liability for unreasonable interference with another person\u2019s use or enjoyment of their property. Answer D is incorrect. The doctrine of strict products liability applies only to commercial sellers of defective products that cause injury, and there is nothing in the question to suggest that the amusement park\u2014the only defendant in the action\u2014was in the business of selling fireworks."
     },
     {
@@ -1231,7 +1231,7 @@
             "optionD": "D. Yes, because the newspaper is self- authenticating and the story is not offered for its truth."
         },
         "correct_answer": "D",
-        "domain": "Evidence II-B / V-1",
+        "domain": "Evidence",
         "explanation": "Answer D is correct. The newspaper is self-authenticating under FRE 902(6), and the newspaper story is not hearsay, because it is not offered for its truth but rather to show that the defendant was on notice of the plaintiff\u2019s bankruptcy.   Answer A is incorrect. A newspaper is a self-authenticating document under FRE 902(6) and thus does not require separate authentication to be admitted into evidence. Answer B is incorrect. The newspaper story is not hearsay because it is not being offered for its truth but rather to prove that the defendant had notice of the plaintiff\u2019s bankruptcy before he pursued the plaintiff for payment of the debts. See FRE 801(c)(2). Answer C is incorrect. Because the newspaper story is not offered for its truth, but rather to demonstrate notice of the plaintiff\u2019s bankruptcy, it is not hearsay, and no hearsay exception is required for its admission. Further, the past recollection recorded exception to the hearsay rule applies to testimony from a witness who made or adopted the recorded recollection, which is not the case here."
     },
     {
@@ -1244,7 +1244,7 @@
             "optionD": "D. Yes, because the public land records continue to show the investor\u2019s predecessor in title as the mortgagee."
         },
         "correct_answer": "C",
-        "domain": "Real Property IV-C-2",
+        "domain": "Property",
         "explanation": "Answer C is correct. The assignment of a note automatically transfers the mortgage to the assignee of the note; a separate document assigning the mortgage to the assignee is unnecessary. Answer A is incorrect. It is the opposite of answer C (the correct answer) and is contrary to the law. Answer B is incorrect. A mortgage is not extinguished by a transfer of the note. Answer D is incorrect. This question does not raise any issue of priorities concerning the land records. Transfers of a mortgage are not required to be recorded to be valid in a dispute between the mortgagor and the holder of the note. The investor is permitted to foreclose by virtue of being the assignee of the note."
     },
     {
@@ -1257,7 +1257,7 @@
             "optionD": "D. Yes, because the contract claim is a permissive counterclaim."
         },
         "correct_answer": "C",
-        "domain": "Civil Procedure III-D",
+        "domain": "Civil_procedure",
         "explanation": "Answer C is correct. The contract claim is a compulsory counterclaim under Federal Rule of Civil Procedure 13(a), because it arises out of the same transaction or occurrence that is the subject matter of the investor\u2019s claim, and thus not only may the broker assert the contract claim, but that claim must be included in the broker\u2019s answer or it will be forfeited. Answer A is incorrect. Nothing in the application of Rule 13 turns on whether the counterclaim is based on federal or state law. Answer B is incorrect. The lack of diversity is relevant to whether the court would have subject-matter jurisdiction, but it is not relevant to whether Rule 13 permits the counterclaim to be asserted. In this case, despite the lack of diversity, the court can hear the counterclaim, and in fact the broker must include it in the answer or forfeit it, because it is a compulsory counterclaim. The court would have supplemental jurisdiction over the counterclaim because it is related to the investor\u2019s securities law claim. Answer D is incorrect. While Rule 13(b) permits parties to assert unrelated counterclaims as permissive counterclaims, this is a compulsory counterclaim, as explained above, and thus it must be included in the broker\u2019s answer or it will be forfeited."
     },
     {
@@ -1270,7 +1270,7 @@
             "optionD": "D. Unsightly conditions ordinarily do not of themselves amount to an unreasonable interference with the use and enjoyment of a neighboring property."
         },
         "correct_answer": "D",
-        "domain": "Torts IV-A",
+        "domain": "Torts",
         "explanation": "Answer D is correct. The question asks for the BEST argument against liability. Courts typically have held that a defendant\u2019s causing a property owner to view unsightly things from her property by itself does not suffice to establish the sort of unreasonable interference with the use and enjoyment of property that is necessary for nuisance   liability. While there is no guarantee that the farmer would prevail on the basis of this argument, it would be the farmer\u2019s best argument. Answer A is incorrect. The harm the homeowner must prove in order to prevail on the nuisance claim is unreasonable interference with her use and enjoyment of her property, not diminution in the market value of her property. Answer B is incorrect. Items on one person\u2019s land, if they cause an unreasonable interference with a neighboring property owner\u2019s use and enjoyment of their property, can constitute a nuisance. For example, if a person maintains a trash heap in her backyard that sends nauseating odors to her neighbor\u2019s yard, that person may be subject to liability for nuisance even though the trash heap does not physically encroach on the neighbor\u2019s property. Answer C is incorrect. Determinations of nuisance often rest on judgments about the character of, and common practices in, the relevant location. In this case, the fact that farmers in this area do not tend to keep old equipment on their land in places visible to neighbors strengthens rather than weakens the homeowner\u2019s claim that the farmer\u2019s placement of the unsightly items constitutes a nuisance."
     },
     {
@@ -1283,7 +1283,7 @@
             "optionD": "D. The niece, because the deed to the man is void."
         },
         "correct_answer": "D",
-        "domain": "Real Property V-B-1",
+        "domain": "Property",
         "explanation": "Answer D is correct. A deed to a deceased grantee is void. Answer A is incorrect. Because the deed to the man is void, it is irrelevant that the deed was recorded. Recording does not validate a void deed. Answer B is incorrect. The man had no interest in the land and thus could not devise any interest in the land to his wife. Answer C is incorrect. Because the deed is void, the woman\u2019s stated intent to take back the gift is irrelevant, as there was no gift to the man."
     }
 ]

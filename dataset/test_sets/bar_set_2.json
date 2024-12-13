@@ -9,7 +9,7 @@
             "optionD": "D. Yes, because the law rationally promotes the legitimate state interest in fostering resource development."
         },
         "correct_answer": "A",
-        "domain": "Constitutional Law IV-D",
+        "domain": "Constitutional_law",
         "explanation": "Answer A is correct. The law effects a taking of property because it extinguishes an owner\u2019s interest in real property. It does not matter that the owner\u2019s interest in the property is very small. The law violates the takings clause because it does not provide just compensation to owners who lose their interests in the affected properties. Answer B is incorrect. The law does not violate the negative implications of the commerce clause because it does not discriminate in favor of in-state interests at the expense of out-of-state interests, and because on these facts any burden on interstate commerce would not clearly outweigh the state\u2019s legitimate interest in facilitating the production of oil and gas. Answer C is incorrect. It is true that property inheritance is a privilege created by state law, but that does not permit a state to use inheritance law to effect takings of an individual\u2019s property. All state laws are subject to the takings clause of the federal Constitution. Answer D is incorrect. Answer D states the elements of the rational basis test, which does not apply here. The state law is subject to the takings clause, which requires the state to pay just compensation when it takes an individual\u2019s property, even if the state had a legitimate interest for the taking."
     },
     {
@@ -22,7 +22,7 @@
             "optionD": "D. Counsel was not ineffective, because there was overwhelming evidence of guilt."
         },
         "correct_answer": "A",
-        "domain": "Criminal Law and Procedure V-D",
+        "domain": "Criminal_law",
         "explanation": "No explanation available."
     },
     {
@@ -35,7 +35,7 @@
             "optionD": "D. When the carrier delivered the kayaks to the outfitter."
         },
         "correct_answer": "B",
-        "domain": "Contracts and Sales IV-F",
+        "domain": "Contracts",
         "explanation": "Answer B is correct. Goods are identified to the contract when the seller ships, marks, or otherwise designates them as goods to which the contract refers. UCC \u00a7 2-501. Here the seller marked them before they were shipped, so identification occurred when the seller put the labels on the kayaks.      Answer A is incorrect. The seller didn\u2019t designate the particular kayaks that were eventually shipped as the ones to which the contract referred until after the contract between the parties was formed. Answer C is incorrect. Before the carrier picked up the goods, the seller designated the kayaks that were shipped as the ones to which the contract referred. Answer D is incorrect. Before delivery to the outfitter, the seller designated the kayaks that were shipped as the ones to which the contract referred."
     },
     {
@@ -48,7 +48,7 @@
             "optionD": "D. The state\u2019s privilege law."
         },
         "correct_answer": "D",
-        "domain": "Evidence III-C",
+        "domain": "Evidence",
         "explanation": "Answer D is correct. Under FRE 501, state law governs privilege in a diversity action. Answers A, B, and C are incorrect for the same reason."
     },
     {
@@ -61,7 +61,7 @@
             "optionD": "D. Yes, because the attorney should have verified the manager\u2019s signature before attaching the covenant to the complaint."
         },
         "correct_answer": "B",
-        "domain": "Civil Procedure III-C",
+        "domain": "Civil_procedure",
         "explanation": "Answer B is correct. Federal Rule of Civil Procedure 11(b) requires that factual contentions presented by an attorney to the court have evidentiary support. Attorneys may rely on affidavits and documents provided by their clients unless the circumstances suggest that it would be unreasonable to do so or that further inquiry is needed. Answer A is incorrect. The \u201csafe harbor\u201d requirement in Rule 11 applies only when a party moves for sanctions, not when the court acts on its own initiative. Answer C is incorrect. Under Rule 11(b), attorneys certify that factual contentions they present to the court have evidentiary support, not that they are true. As indicated above, there is nothing in the facts suggesting that the attorney should have questioned either the signed covenant or the president\u2019s affidavit as containing false information. Answer D is incorrect. There is no general rule requiring attorneys to verify signatures on documents before presenting them to a court. Rather, the inquiry under Rule 11(b) is whether the attorney acted to the best of the attorney\u2019s knowledge, information, and belief, formed after a reasonable inquiry under the circumstances. Here, there are no facts given that suggest that it would have been unreasonable for the attorney to assume that the signature on the covenant was valid."
     },
     {
@@ -74,7 +74,7 @@
             "optionD": "D. Yes, because the mayor can require those who work for the town to support its current administration to ensure that the work is consistent with the administration\u2019s policies."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law IV-F-2-e",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct. The Supreme Court has held that the First Amendment rights of free expression and free association apply to government contractors in the same manner these rights apply to government employees. These rights generally prohibit government officials from penalizing employees and contractors because of their political beliefs or associations unless political beliefs or affiliations are relevant to job performance. It is important here that the government contract is for road construction, which does not involve political policy making. Answer A is incorrect. Under some circumstances, it may be a rational decision for the government to award a contract to a higher-cost bidder. For example, this would occur when the government decides that a lower-cost bidder is not competent to perform a job, or when a higher-cost bidder will complete a job in substantially less time. Answer C is incorrect. The fact that state law does not require awarding contracts to the lowest-cost bidder is irrelevant to the determination whether the mayor\u2019s selection of the other contractor violated the First Amendment. The rights of free expression and free association generally prohibit government officials from penalizing employees and contractors because of their political beliefs or associations unless political beliefs or affiliations are relevant to job performance; such      beliefs or affiliations are not relevant to road construction. Answer D is incorrect. The mayor can require those who work for the town to support its current administration to ensure that the work is consistent with the administration's policies. But the mayor has other means available to ensure that the contractor\u2019s work conforms to the job requirements set out by the city. For example, the city can monitor the contractor\u2019s job performance and require compliance with contract requirements. The contractor\u2019s political conduct is irrelevant to the type of work in question."
     },
     {
@@ -87,7 +87,7 @@
             "optionD": "D. Yes, because the car\u2019s odometer reading constituted an express warranty."
         },
         "correct_answer": "C",
-        "domain": "Contracts and Sales II-D",
+        "domain": "Contracts",
         "explanation": "Answer C is correct. A party may avoid a contract if their assent was induced by either a fraudulent or a material misrepresentation. Here, the misrepresentation about the car\u2019s mileage was not fraudulent, since the woman made it innocently, but it was material. Answer A is incorrect. The friend had no duty to have a mechanic check the mileage when his reliance on the odometer reading was reasonable. Answer B is incorrect. Because the woman was unaware of the actual mileage, the misrepresentation was not fraudulent, but an innocent misrepresentation is grounds for avoidance of a contract when the misrepresentation is material. Answer D is incorrect. Even if the odometer reading constituted an express warranty, the remedy for breach of warranty would be money damages, not avoidance of the contract."
     },
     {
@@ -100,7 +100,7 @@
             "optionD": "D. Yes, because the police created any exigent circumstances."
         },
         "correct_answer": "A",
-        "domain": "Criminal Law and Procedure V-A",
+        "domain": "Criminal_law",
         "explanation": "Answer A is correct. In Kentucky v. King, 563 U.S. 452 (2011), the Supreme Court held that the exigent circumstances doctrine, which permits warrantless entry, applies even when (lawful) police action precipitates the exigency. Here, the police lawfully knocked and announced their presence at the door. That lawful conduct gave rise to an exigency\u2014the concern that evidence was being destroyed\u2014that justified the warrantless entry. Answer B is incorrect. Although the exigent circumstances doctrine allows police to dispense with a warrant, it does not allow them to dispense with the requirement of probable cause. Consequently, reasonable suspicion would not suffice to justify the warrantless entry. Answer C is incorrect because the exigent circumstances doctrine does not require an inquiry into whether police might have obtained a warrant. The basis of the doctrine is that officers may proceed without a warrant because of the exigency. Answer D is incorrect. In Kentucky v. King, the Supreme Court expressly rejected the broad \u201cpolice-created exigency\u201d doctrine that some lower courts had developed. The proper test, according to the Supreme Court, is whether the police created the exigency by engaging in, or threatening to engage in, conduct that violates the Fourth Amendment. Here, the police conduct\u2014knocking and announcing their presence\u2014was not itself unreasonable under the Fourth Amendment."
     },
     {
@@ -113,7 +113,7 @@
             "optionD": "D. Yes, because the woman\u2019s will was written before the mortgage was granted."
         },
         "correct_answer": "C",
-        "domain": "Real Property V-C-1",
+        "domain": "Property",
         "explanation": "Answer C is correct. A will speaks at the time of the testator\u2019s death. At that time, the woman did not own the land because she had lost it in the foreclosure action. At the time of the woman\u2019s death, she only had an interest in the surplus proceeds, which was personal property that passed to the brother, who is the woman\u2019s residuary legatee. Answer A is incorrect. Whether the brother or the charity prevails depends on whether the woman owned the land when she died. How the woman lost ownership of the land is irrelevant.      Answer B is incorrect. The woman\u2019s intent is irrelevant. When a will specifically disposes of land not owned by the testator at death, the bequest to the specific legatee adeems (fails). Answer D is incorrect. The fact that the will was written before the mortgage was granted is irrelevant to the question of ademption."
     },
     {
@@ -126,7 +126,7 @@
             "optionD": "D. The ledger may not be admitted through either the officer or the codefendant, because the business records exception to the hearsay rule does not apply to illegal activity."
         },
         "correct_answer": "B",
-        "domain": "Evidence V-F",
+        "domain": "Evidence",
         "explanation": "No explanation available."
     },
     {
@@ -139,7 +139,7 @@
             "optionD": "D. Yes, because the jury could conclude that cattle would not ordinarily escape a strong, secure cattle pen in the absence of negligence."
         },
         "correct_answer": "D",
-        "domain": "Torts II-C",
+        "domain": "Torts",
         "explanation": "Answer D is correct. The farmer was in exclusive control of his farm, and the trucker did not contribute to the accident, so the jury is permitted to conclude that the cattle escaped due to the farmer\u2019s negligence. Answer A is incorrect. The farmer was in exclusive control of his farm, and since the trucker did not contribute to the accident, the jury can infer that the cattle escaped due to the farmer\u2019s negligence. While it is of course possible that a third party let the cattle out of the pen, res ipsa would allow an inference of the farmer\u2019s negligence in this case. Answer B is incorrect. The trucker needs to establish that the farmer was in exclusive control of the pen, that the accident would not have occurred but for negligence, and that the accident was not due to the trucker\u2019s own actions. Answer C is incorrect. Strict liability does not attach to raising cattle, which is not an abnormally dangerous activity."
     },
     {
@@ -152,7 +152,7 @@
             "optionD": "D. The crossclaim is premature, because it is contingent on a finding that the defendants breached the construction contract."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure III-D",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. Federal Rule of Civil Procedure 13(g) allows parties to bring claims against co- parties. There is no authority under Rule 13(g) to allow an attempt to assert a defense against the plaintiff so as to shift direct liability for damages owed to the plaintiff to a codefendant. Answer B is incorrect. The general contractor and the subcontractor were both joined by the corporation as defendants.      That makes them codefendants under Rule 13(g). Answer C is incorrect. Even if the corporation\u2019s claim against the general contractor has been dismissed, as long as the crossclaim remains undetermined, the general contractor and the subcontractor remain in the suit for purposes of that claim. Answer D is incorrect. Rule 13(g) specifically provides that a crossclaim may include a claim that the co-party is or \u201cmay be\u201d liable for all or part of the claim asserted in the main action. The Federal Rules of Civil Procedure often allow for the assertion of contingent claims to avoid multiple lawsuits and encourage resolution of the entire controversy among the parties with a minimum of procedural steps."
     },
     {
@@ -165,7 +165,7 @@
             "optionD": "D. The two-year time period is too long to be rationally related to the prevention of fraud against creditors."
         },
         "correct_answer": "C",
-        "domain": "Constitutional Law IV-E",
+        "domain": "Constitutional_law",
         "explanation": "Answer C is correct. The Supreme Court has held that durational residency requirements such as the state law here generally violate the right to travel protected through the privileges and immunities clause of the Fourteenth Amendment. Congress does not have the power to contravene the Court\u2019s holding. Answer A is incorrect. The federal law does not regulate automobile negligence. It regulates bankruptcy proceedings, which is within Congress\u2019s power to legislate in Article I. Answer B is incorrect. The federal statute does not violate the no-commandeering principle because it authorizes rather than requires states to create durational residency requirements. Answer D is incorrect. Answer D states the elements of rational basis scrutiny, which is not the proper standard. The Supreme Court has held that durational residency requirements burden the fundamental right to travel, and thus they receive strict judicial scrutiny, which requires the state to demonstrate that the requirement is necessary to serve a compelling government interest."
     },
     {
@@ -178,7 +178,7 @@
             "optionD": "D. It will supply a term that is reasonable for both parties under the circumstances."
         },
         "correct_answer": "D",
-        "domain": "Contracts and Sales I-B",
+        "domain": "Contracts",
         "explanation": "Answer D is correct. When the parties have left gaps in an agreement that is otherwise enforceable, a court may supply a term that is reasonable in the circumstances. Answer A is incorrect. The remedy of rescission is not appropriate if the parties intended to have a contract and the court can supply an omitted term. Answer B is incorrect. The canon of construction known as contra proferentem\u2014that a writing will be construed against the drafter\u2014applies only as a last resort to address ambiguous language. Here the franchise agreement is silent rather than ambiguous on the particular issue. Answer C is incorrect. To fill a gap in a contract, a court will supply a term that is reasonable, not the term that the parties might have agreed to."
     },
     {
@@ -191,7 +191,7 @@
             "optionD": "D. Attempted murder of the neighbor."
         },
         "correct_answer": "B",
-        "domain": "Criminal Law and Procedure I-A-1",
+        "domain": "Criminal_law",
         "explanation": "Answer B is correct. The man is guilty of first-degree murder because, while acting with the intent to kill the neighbor, he inadvertently killed the police officer. In this situation, the doctrine of transferred intent applies to hold him liable for the intentional killing of the officer. Answer A is incorrect. To be guilty of capital murder, the man would need to have acted with the intent to kill a police      officer. Answer C is incorrect because the man acted with premeditation and malice. Under the doctrine of transferred intent, the man is therefore guilty of the more serious offense of first-degree murder. Answer D is incorrect because the question asks for the most serious crime. Although the man is guilty of the attempted murder of the neighbor, first-degree murder is the more serious offense."
     },
     {
@@ -204,7 +204,7 @@
             "optionD": "D. Yes, because the defendant did not demonstrate likely prejudice from permitting the plaintiff to present evidence in any order he wished."
         },
         "correct_answer": "A",
-        "domain": "Evidence I-A-7",
+        "domain": "Evidence",
         "explanation": "Answer A is correct. Under FRE 611(a), a trial judge possesses broad discretion to control the mode and order of examining witnesses and presenting evidence so as to make trial procedures effective for determining truth. A trial judge who is concerned about a party\u2019s hearing all eyewitness testimony and thereafter tailoring his testimony to that of other witnesses would not abuse her discretion in ordering that party to testify before the other witnesses. Answer B is incorrect. The parties typically determine the order in which their evidence will be presented at trial. And while the trial judge has the discretion to control the order of presentation, determining the order of evidence within a party\u2019s case is not an obligation that the trial judge must routinely undertake. Answer C is incorrect. Although parties typically are afforded broad latitude in controlling their presentation of proof, they are not always permitted to do so; under FRE 611(a), the trial judge has discretion to control the order of presentation. Answer D is incorrect. The trial judge has the discretion to alter the order of proof without a showing of specific prejudice by an opposing party."
     },
     {
@@ -217,7 +217,7 @@
             "optionD": "D. Whether the woman has planned or built any improvements on her land."
         },
         "correct_answer": "C",
-        "domain": "Real Property V-D-1",
+        "domain": "Property",
         "explanation": "Answer C is correct. A buyer is on constructive notice of all information that a search of the land records would reveal. At issue is whether the entrepreneur had record (constructive) notice of the restriction. If so, the entrepreneur would not be a good-faith purchaser for value. Courts are divided about whether a buyer is required to search deeds outside of the chain of title to the land the buyer is purchasing. Here, the deed from the man to the woman is outside of the entrepreneur\u2019s chain of title even though they share a common grantor. Thus, knowing whether the jurisdiction\u2019s law puts a buyer on notice of all land transfers of the buyer\u2019s grantor, even those outside of the chain of title, is essential. If it does, the entrepreneur had a duty to search the title for the westerly tract. Answer A is incorrect. The type of index does not determine what instruments are in the chain of title. Answer B is incorrect. The recording system does not affect whether the entrepreneur is a good-faith purchaser for value. Answer D is incorrect. The intended use of the land does not affect the determination of whether the entrepreneur was aware of the recorded restriction."
     },
     {
@@ -230,7 +230,7 @@
             "optionD": "D. Yes, because the driver cannot establish that the manufacturer intended or knew to a substantial certainty that its placement of the tire into the stream of commerce would cause her to suffer a harmful or offensive contact."
         },
         "correct_answer": "D",
-        "domain": "Torts I-A / III",
+        "domain": "Torts",
         "explanation": "Answer D is correct. The driver might have a valid strict products liability claim against the manufacturer. However, the manufacturer\u2019s knowledge of a small statistical likelihood of tire failure is not by itself sufficient to support a finding\u2014required for battery liability\u2014that the manufacturer acted with the intent to cause harmful contact, or with the knowledge that a harmful contact would occur. Thus, the court should grant the manufacturer\u2019s partial summary judgment motion.      Answer A is incorrect. Even if a reasonable jury could conclude that a responsible manufacturer would have taken greater care, that finding would not establish the intent necessary for battery liability. Answer B is incorrect. The evidence of a relatively small statistical likelihood of tire failure does not satisfy the \u201csubstantial certainty\u201d element required for battery liability. The manufacturer knew to a substantial certainty that a few of its tires would rupture. It did not know to a substantial certainty that particular persons would be injured as a result of those ruptures. Answer C is incorrect. There is no rule of tort law stating that a plaintiff is prohibited from pursuing claims for battery and products liability on the basis of the same set of facts."
     },
     {
@@ -243,7 +243,7 @@
             "optionD": "D. Yes, because the defendant has not shown sufficient prejudice that will result if the requested extension is granted."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure III-G",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. Federal Rule of Civil Procedure 16(b)(4) states that in order to have a scheduling order modified, the moving party must show \u201cgood cause.\u201d This requires a showing that the party acted diligently to try to meet the original deadline. Answer B is incorrect. If the moving party shows good cause, the court can amend any of the dates or deadlines in the scheduling order, including the trial date or the date for jury selection. Answer C is incorrect. Whether additional time could facilitate a settlement is immaterial, because it does not speak to whether the moving party can show the required diligence needed to establish good cause. Answer D is incorrect. The busy schedule of the plaintiff\u2019s attorney did not establish the good cause needed to amend the scheduling order, which is why the motion should be denied. A party opposing a requested extension would need to show prejudice that would likely result from the extension only if the moving party had first met its burden to show good cause."
     },
     {
@@ -256,7 +256,7 @@
             "optionD": "D. Yes, because the case is not ripe."
         },
         "correct_answer": "C",
-        "domain": "Constitutional Law I-C-1",
+        "domain": "Constitutional_law",
         "explanation": "Answer C is correct. The case is moot because the only relief sought by the homeowner is no longer available. Allready LLC v. Nike, Inc., 568 U.S. 85 (2013). Answer A is incorrect. \u201cCapable of repetition yet evading review\u201d applies only in situations where litigation is unlikely to be completed because of the short-term nature of an issue, such as review of an explicitly short-term legal mandate. Answer B is incorrect. The voluntary cessation exception does not apply when it is unreasonable to expect that the allegedly unlawful conduct will recur. The emergency ordinance\u2019s explicit requirements of prior notice and owner consent make it unreasonable to expect that the city will attempt to change the homeowner\u2019s meter without prior notice and the homeowner\u2019s consent. In addition, the only relief sought by the homeowner was an injunction against the previous ordinance, which is no longer in effect. Answer D is incorrect. Ripeness is determined when a suit is filed. The case was ripe given the city\u2019s attempts to install the meter and its threats of prosecution."
     },
     {
@@ -269,7 +269,7 @@
             "optionD": "D. Yes, because the parolee\u2019s statements were compelled, as he could reasonably believe that he was required to answer questions asked by his parole officer."
         },
         "correct_answer": "B",
-        "domain": "Criminal Law and Procedure V-A",
+        "domain": "Criminal_law",
         "explanation": "Answer B is correct. A Miranda warning is required whenever a suspect is (1) in custody and (2) being subjected to custodial interrogation. Here, the parolee was not in custody. As the Court explained in      Minnesota v. Murphy, 465 U.S. 420 (1984), the \u201cin custody\u201d requirement is not met simply because a probationer or parolee is under a general obligation to appear and answer questions truthfully. Instead, a person is \u201cin custody\u201d only when under \u201cformal arrest or restraint on freedom of movement of the degree associated with a formal arrest.\u201d Answer A is incorrect because parolees do retain their Fifth Amendment rights. However, parolees are entitled to receive Miranda warnings only when being subjected to custodial interrogation. In all other contexts, parolees must affirmatively assert the privilege against compelled self-incrimination. Answer C is incorrect for the reasons given in the explanations for answers B and A. Law enforcement interrogation is not enough. The suspect also must be in custody. Answer D is incorrect because a probation or parole officer may in fact compel both attendance and truthful answers. However, as the Court held in Minnesota v. Murphy, neither of those entitlements transforms the exchange into a custodial interrogation."
     },
     {
@@ -282,7 +282,7 @@
             "optionD": "D. Yes, because the distributor knew that an improper mixture of sand, water, and cement would result in defective concrete."
         },
         "correct_answer": "B",
-        "domain": "Torts III",
+        "domain": "Torts",
         "explanation": "Answer B is correct. A commercial seller of a nondefective component part that is incorporated into a finished product by the product\u2019s manufacturer is not strictly liable for injuries caused by the product unless the seller substantially participated in the integration of the part into the design of the finished product, and the integration of the component is what rendered the finished product defective. Restatement (Third) of Torts: Products Liability \u00a7 5 (1998). In this case, the distributor did not participate, much less substantially participate, in the integration of the sand into the defective concrete used in the columns and thus is not subject to liability under the doctrine of strict products liability. Answer A is incorrect. The rule it states is too broad: a commercial seller of a component part can sometimes be strictly liable for an injury caused by a defective product into which the part is integrated (namely, when the conditions specified in the explanation for answer B are met). Answer C is incorrect. The fact that the columns were defective does not render the distributor liable under the doctrine of strict products liability. Answer D is incorrect. The mere knowledge that the sand needed to be properly mixed with water and cement to make sound concrete is not sufficient to render the distributor liable for an injury caused by the defective concrete."
     },
     {
@@ -295,7 +295,7 @@
             "optionD": "D. Yes, because the witness\u2019s opinion is rationally based on his perception and would be helpful to the grand jury."
         },
         "correct_answer": "C",
-        "domain": "Evidence I-E",
+        "domain": "Evidence",
         "explanation": "Answer C is correct. The Federal Rules of Evidence do not apply to grand jury proceedings under FRE 1101(d)(2). Answer A is incorrect. Because the Federal Rules of Evidence do not apply to grand jury proceedings under FRE 1101(d)(2), Rule 702 is not applicable. Answer B is incorrect. Because the Federal Rules of Evidence do not apply to grand jury proceedings under FRE 1101(d)(2), Rule 701 regarding lay opinion testimony is not applicable. Answer D is incorrect. Because the Federal Rules of Evidence do not apply to grand jury proceedings under FRE 1101(d)(2), Rule 701 regarding lay opinion testimony is not applicable."
     },
     {
@@ -308,7 +308,7 @@
             "optionD": "D. Yes, because the man\u2019s death does not discharge his contractual obligations."
         },
         "correct_answer": "B",
-        "domain": "Contracts and Sales IV-G",
+        "domain": "Contracts",
         "explanation": "No explanation available."
     },
     {
@@ -321,7 +321,7 @@
             "optionD": "D. For the seller, because of the doctrine of merger."
         },
         "correct_answer": "C",
-        "domain": "Real Property III-F",
+        "domain": "Property",
         "explanation": "Answer C is correct. This house is not new construction where a seller may have a duty of disclosure. There are no applicable statutes that may require disclosure. The seller asked the buyer whether she wanted to inspect the property, but the buyer declined. An \u201cas is\u201d clause will be enforced when there is no positive misrepresentation or fraudulent concealment. Answer A is incorrect. A court will enforce an \u201cas is\u201d clause in residential sales as long as there is no positive misrepresentation or fraudulent concealment, neither of which is present in these facts. Answer B is incorrect. A warranty deed provides protection for title issues, not issues of physical condition. Answer D is incorrect. The merger doctrine is irrelevant. Under that doctrine, acceptance of the warranty deed extinguishes all contractual promises of the seller relating to the quality of title. Here, the suit is about the condition of the residence, not its title. The \u201cas is\u201d clause extinguishes claims based upon termites, as that clause eliminates any contractual duty of the seller to deliver a residence free of termites."
     },
     {
@@ -334,7 +334,7 @@
             "optionD": "D. Grant the motion, because the defendant has not denied that it failed to deliver products after payment by the plaintiff."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure III-B",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. Under Federal Rule of Civil Procedure 12(c), a judgment on the pleadings may be made after the pleadings are closed. However, because the defendant in this case has asserted a counterclaim in its answer, the plaintiff must file an answer to the counterclaim under Rule 7(a)(3) before making any motions. Answer B is incorrect. Under Rule 10(c), a party may attach a written instrument to the complaint, and it becomes part of the pleadings to which the defendant must respond. Nothing in Rule 12(c) precludes a party from moving for judgment based on admissions made regarding an incorporated document. Answer C is incorrect. There is no requirement under the Federal Rules of Civil Procedure that when a plaintiff moves for judgment on the pleadings, the defendant must file a cross-motion for judgment on the pleadings. The defendant, in its discretion, may choose to file its own motion for judgment on the pleadings, or it may simply defend against the plaintiff\u2019s motion. Answer D is incorrect. The fact that the defendant has not denied the alleged failure to deliver goods does not in itself support the grant of the motion. The plaintiff\u2019s motion for judgment on the pleadings seeks judgment not only on its primary claim for damages but also on the defendant\u2019s counterclaim for nonpayment. Because the plaintiff has not yet answered the counterclaim, the pleadings are not closed on that issue, and a judgment on the pleadings would be premature."
     },
     {
@@ -347,7 +347,7 @@
             "optionD": "D. The ordinance unconstitutionally burdens the farmer\u2019s right to travel across state lines to sell his vegetables at the farmers\u2019 market."
         },
         "correct_answer": "A",
-        "domain": "Constitutional Law III-B-1",
+        "domain": "Constitutional_law",
         "explanation": "Answer A is correct because on its face the ordinance discriminates against commerce from outside the city. By doing so, it necessarily excludes commerce from outside the state. Even though the ordinance also excludes some commerce from within the state, it is still considered facially discriminatory. Such facially discriminatory laws are allowed only in the absence of any nondiscriminatory way to promote the government\u2019s interest. C&A Carbone, Inc. v. Town of Clarkstown, 511 U.S. 383 (1994). Answer B is incorrect. Answer B states the elements of heightened scrutiny for an individual rights claim, but none of the factors that support heightened scrutiny for such a claim are present here. In the absence of a burden on interstate commerce or impingement on some fundamental right or suspect class, a law needs only a rational basis connecting it with a legitimate government interest. Answer C is incorrect. Because the law is facially discriminatory, it is not subject to the \u201cundue burden\u201d test. In addition, we do not have sufficient facts to know whether the ordinance would pass this test. Answer D is incorrect. The right to travel does not protect the right to engage in commercial enterprises while temporarily present in a state."
     },
     {
@@ -360,7 +360,7 @@
             "optionD": "D. Nothing, because the arborist did not complete the work."
         },
         "correct_answer": "B",
-        "domain": "Contracts and Sales IV-G",
+        "domain": "Contracts",
         "explanation": "Answer B is correct. The arborist\u2019s performance was discharged by impracticability because the non- occurrence of the vandalism and fire was a basic assumption of the contract. Restatement (Second) of Contracts \u00a7 261. But the arborist is entitled to restitution for the value of the part of the contract that the arborist performed before that discharge. Restatement (Second) of Contracts \u00a7\u00a7 272 & 377. Answer A is incorrect. Expectation damages are a remedy for breach of contract, and here the owner is not in breach. Answer C is incorrect. The arborist would be entitled to restitutionary relief whether the parties\u2019 performance was excused by impracticability or frustration of purpose. Answer D is incorrect. As explained above, the arborist\u2019s failure to complete the work was excused by impracticability, and the arborist is entitled to recover in restitution for the benefit conferred."
     },
     {
@@ -373,7 +373,7 @@
             "optionD": "D. Yes, because a warrant is required to collect such extensive historical cell-phone site- location data."
         },
         "correct_answer": "D",
-        "domain": "Criminal Law and Procedure V-A",
+        "domain": "Criminal_law",
         "explanation": "Answer D is correct. In Carpenter v. United States, 138 S. Ct. 2206 (2018), the Supreme Court held that a warrant is required to collect extensive historical site-location data from a cell-phone provider. Here, the data sought was one year\u2019s worth of site-location information, which clearly falls within the rule of Carpenter. In addition, Carpenter rejected the use of a subpoena to circumvent this warrant requirement. Answer A is incorrect. Though answer A states a Fourth Amendment principle that is generally true\u2014namely, that there is no reasonable expectation of privacy in information shared with a third party, known as the \u201cthird party doctrine\u201d\u2014the Court in Carpenter specifically rejected this doctrine for historical cell-phone site-location data. Answer B is incorrect because the cell-phone number is not the targeted evidence. Although the phone number may be widely accessible, that fact does not create a right of access to historical cell-phone site-location data (which is created by the cell-phone provider) or to the contents of the phone itself.      Answer C is incorrect for two reasons. First, a subpoena need not be based on \u201cprobable cause.\u201d Second, Carpenter held that the government could not rely on a subpoena to obtain historical cell-phone site-location data. As a rule, when the government wants to obtain that sort of data, it must first get a warrant."
     },
     {
@@ -386,7 +386,7 @@
             "optionD": "D. Yes, because the tenant is entitled to a reasonable accommodation for her disability."
         },
         "correct_answer": "D",
-        "domain": "Real Property I-D-3",
+        "domain": "Property",
         "explanation": "Answer D is correct. The tenant has a serious hearing impairment, which is a handicap under the Fair Housing Act. The Act requires the landlord to make a reasonable accommodation for such a handicap, and the tenant\u2019s need for a trained service dog outweighs any concerns underlying the landlord\u2019s prohibition of pets. Answer A is incorrect. The Act does not apply if the owner occupies a unit in a building with four or fewer units. This building has 10 units, and thus the exception does not apply. Answer B is incorrect. The fact that the tenant agreed to the \u201cno pets\u201d provision in the lease does not relieve the landlord from making a reasonable accommodation for the tenant\u2019s handicap. Answer C is incorrect. The landlord\u2019s refusal to permit the tenant to have a service dog may be arbitrary, but that is irrelevant because the Act requires the landlord to make a reasonable accommodation for the tenant\u2019s hearing impairment."
     },
     {
@@ -399,7 +399,7 @@
             "optionD": "D. Yes, because the statement\u2019s probative value outweighs the risk of prejudice and jury confusion."
         },
         "correct_answer": "B",
-        "domain": "Evidence III-G",
+        "domain": "Evidence",
         "explanation": "Answer B is correct. Under FRE 408(a)(2), statements made during settlement negotiations in a private civil action\u2014negotiations not involving a public office\u2014are inadmissible in a subsequent criminal case arising out of the same incident. Answer A is incorrect. When offered by the prosecution, the driver\u2019s statement to the woman is a statement of an opposing party, and therefore it would come within the exception to the hearsay rule set out in FRE 801(d)(2)(A). Answer C is incorrect. FRE 408(a)(2) distinguishes between settlement negotiations involving private parties and those involving a public office. Statements made in negotiations related to a claim by a public office in the exercise of its enforcement authority may be admissible in a subsequent criminal case. But statements made in negotiations with a private party are not admissible in a subsequent criminal prosecution. Answer D is incorrect. The statement is inadmissible under FRE 408(b)(2). FRE 403\u2019s balancing test has no role in the analysis. Moreover, the balancing test is improperly stated in the answer."
     },
     {
@@ -412,7 +412,7 @@
             "optionD": "D. Yes, because the fact-finder could assign some of the responsibility for the shopper\u2019s injuries to the grocery store."
         },
         "correct_answer": "D",
-        "domain": "Torts II-G-1",
+        "domain": "Torts",
         "explanation": "Answer D is correct. The doctor can implead the grocery store, because the fact-finder could find that the negligence of both the grocery store and the doctor contributed to the total injury suffered by the shopper, including the worsening of her injury resulting most immediately from the doctor\u2019s malpractice. Answer A is incorrect. The question is not about the standard of care applicable to the doctor and the store, but rather whether the store, if found negligent, can be held responsible along with the doctor not only for the shopper\u2019s initial injury but also for the worsening of the injury as a result of the doctor\u2019s malpractice. Answer B is incorrect. The mere fact that the doctor\u2019s malpractice happened after any possible negligence on the part of the store does not defeat the imposition of liability on the store for the worsening of the shopper\u2019s injury caused by the doctor\u2019s malpractice.      Answer C is incorrect. The fact that the doctor\u2019s negligence and the store\u2019s negligence (if any) both contributed to the plaintiff\u2019s injury provides a basis for why the doctor can implead the grocery store."
     },
     {
@@ -425,7 +425,7 @@
             "optionD": "D. Yes, because the executor has presented insufficient evidence to support a verdict."
         },
         "correct_answer": "D",
-        "domain": "Civil Procedure V-B",
+        "domain": "Civil_procedure",
         "explanation": "Answer D is correct. In determining whether to grant judgment as a matter of law, the court must determine, after considering all the evidence introduced by both parties, whether there is legally sufficient evidence to support a judgment for the estate. The executor, who bears the burden of proof, has presented only the testimony of another bike rider who was not a true eyewitness to the decedent\u2019s accident, but who provided circumstantial evidence about what he saw before and after it. In contrast, the man has provided three disinterested witnesses who testified that they never saw any contact between the man and the decedent. Because the testimony of the witnesses is not in actual conflict, and because the executor has not presented legally sufficient evidence to support a verdict in the estate\u2019s favor, the motion should be granted. Answer A is incorrect. The executor\u2019s evidence consists of one witness who did not actually see the accident but testified to circumstances that might or might not suggest that the man was at fault. In light of the direct evidence provided by the man\u2019s testimony and that of his three witnesses, the executor\u2019s evidence would not be legally sufficient for the jury to find for the executor, who is the party with the burden of proof at trial. Answer B is incorrect. The witnesses\u2019 testimony is not in direct conflict, since the executor\u2019s witness did not actually see the accident or any contact between the man\u2019s bike and the decedent\u2019s bike, and the man\u2019s witnesses testified that they never saw any contact between the two. Thus, there is no real credibility dispute. Answer C is incorrect. In determining whether to grant judgment as a matter of law, the court is not to weigh the evidence but rather is to determine whether there is legally sufficient evidence to support a verdict for the party who bears the burden of proof at trial, in this case the nonmoving party."
     },
     {
@@ -438,7 +438,7 @@
             "optionD": "D. $18,000, because that is the value of the benefit the subcontractor conferred on the general contractor."
         },
         "correct_answer": "C",
-        "domain": "Contracts and Sales I-E",
+        "domain": "Contracts",
         "explanation": "Answer C is correct. Although there was no consideration for the modification, under the modern rule of Restatement (Second) of Contracts \u00a7 89, a modification is binding \u201cif the modification is fair and equitable in view of circumstances not anticipated by the parties when the contract was made.\u201d Answer A is incorrect. This is the answer under the pre-existing duty rule, but that rule does not apply when a modification is fair and equitable in light of changed circumstances. Answer B is incorrect. This answer would be correct if the subcontractor were asking for relief on the basis of its mistake, but it is not relevant when the subcontractor is seeking to enforce a modification. Answer D is incorrect. Relief based on restitution is not applicable when there is an enforceable contract."
     },
     {
@@ -451,7 +451,7 @@
             "optionD": "D. Yes, because the law has the public purpose of promoting tourism."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law IV-D",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct. The state-created easement provides for the physical occupation of a portion of the owner\u2019s farm and thus constitutes a government taking of that portion of land. The takings clause requires that the government provide just compensation to owners for the land it takes. Just compensation is determined by the fair market value of the taken land. Although the state law allows the owner to charge a fee to recover costs from hikers who use the trail on the farm, the fee is not equivalent to the fair market value of an easement across the land. Answer A is incorrect. The Supreme Court has held that the privileges and immunities clause of the Fourteenth      Amendment is limited to rights of a special national nature, such as the right to travel. The clause does not apply here. Answer C is incorrect. Just compensation is determined by the fair market value of the property taken by the state. Although the state law allows the owner to charge a fee to hikers who use the trail on the farm, the fee is not equivalent to the fair market value of an easement across the land at issue. Answer D is incorrect. The state law is subject to the takings clause, which requires the state to pay just compensation when it takes an individual\u2019s property, even if the taking serves a public purpose."
     },
     {
@@ -464,7 +464,7 @@
             "optionD": "D. Yes, because the son tricked his father into signing the deed to him and that deed is therefore void."
         },
         "correct_answer": "D",
-        "domain": "Real Property V-D-1-d",
+        "domain": "Property",
         "explanation": "Answer D is correct. Fraud in the execution of a deed is the equivalent of a forged deed; as a result, the deed is void. Answer A is incorrect. A forged signature is only one example of a condition that makes a deed void; fraud in the execution of a deed is the equivalent of a forged deed. Answer B is incorrect. Fraud in the execution of a deed is treated like a forged deed, and a bona fide purchaser is not protected. Both the grantor (the father) and the bona fide purchaser (the investor) are innocent; however, the father is favored as he is entirely blameless. Answer C is incorrect. The father\u2019s executed will gave no rights, at the time of the will\u2019s execution, to any beneficiaries named in the will. Whether the wife owns the apartment building depends on whether the father owned the building when he died."
     },
     {
@@ -477,7 +477,7 @@
             "optionD": "D. Uphold the conviction, because the prospective juror did not serve on the jury."
         },
         "correct_answer": "D",
-        "domain": "Criminal Law and Procedure V-E",
+        "domain": "Criminal_law",
         "explanation": "No explanation available."
     },
     {
@@ -490,7 +490,7 @@
             "optionD": "D. Exclude the report, because the fire marshal\u2019s conclusion is based on multiple hearsay."
         },
         "correct_answer": "A",
-        "domain": "Evidence V-G",
+        "domain": "Evidence",
         "explanation": "Answer A is correct. Because the fire marshal is a public official and his conclusion about the cause of the fire is a factual finding based upon an official investigation, the report is admissible under the public records exception to the hearsay rule. The witness\u2019s statement quoted in the report is not admissible under the public records exception, however, because the witness is not a public official reporting matters observed under a legal duty, and so that statement must be excised from the report. Answer B is incorrect. While the report is generally admissible, the witness\u2019s statement quoted in the report is not admissible under the public records exception because the witness is not a public official reporting matters observed under      a legal duty. Therefore, the portion of the report quoting that statement must be excised before the report is admitted. Answer C is incorrect. The neighbor is being sued in a civil action. The Sixth Amendment right to confrontation protects defendants only in criminal cases and so does not protect the neighbor in this civil action. Answer D is incorrect. Public officials may rely on bystander statements and hearsay in making factual findings. To the extent that a public official\u2019s factual findings rest on only such hearsay, those findings could be excluded for a lack of trustworthiness under FRE 803(8)(B). Here, the fire marshal\u2019s factual findings rest on his significant experience, as well as his examination of the scene, and would not be excludable solely due to reliance on some hearsay."
     },
     {
@@ -503,7 +503,7 @@
             "optionD": "D. Yes, on a claim of invasion of privacy."
         },
         "correct_answer": "D",
-        "domain": "Torts IV-B",
+        "domain": "Torts",
         "explanation": "Answer D is correct. The company, through its employee, engaged in conduct that a jury could determine to be intrusion upon seclusion. Intrusion upon seclusion is one of the four privacy torts recognized by the Second Restatement of Torts and most states. See Restatement (Second) of Torts \u00a7 652A\u2013E (1977). Answer A is incorrect. The fact that the company did not expressly authorize the security officer\u2019s specific actions does not necessarily allow it to avoid liability. The security officer was an employee of the company, and the company both directed the officer to investigate the woman and provided the officer with her phone number. On this basis, a jury could reasonably hold the company liable based on the officer\u2019s actions. Answer B is incorrect. The woman\u2019s breach of the noncompetition agreement, if any, would not prevent a reasonable jury from concluding that the company is liable to the woman for intrusion upon seclusion. Whether the company has a cause of action against the woman for breach of the agreement is a separate question. Answer C is incorrect. There is no evidence that the company or the security officer acted with an intent to cause the woman severe emotional distress, or recklessly with respect to that risk, or even that the woman suffered severe emotional distress."
     },
     {
@@ -516,7 +516,7 @@
             "optionD": "D. Yes, because although the motion was late, the parties agreed to extend the time for posttrial motions."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure V-B",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. Federal Rule of Civil Procedure 6(b)(2) provides that a court \u201cmust not extend the time to act\u201d under Rule 50(b), governing renewed motions for judgment as a matter of law. Answer B is incorrect. Whether \u201cgood cause\u201d was or was not shown is immaterial, as Rule 6(b)(2) prohibits any extensions of time for filing renewed motions for judgment as a matter of law. Answer C is incorrect. Although the factors mentioned might be relevant to finding good cause to extend time limits generally, they are irrelevant here because Rule 6(b)(2) prohibits any extensions of time for filing renewed motions for judgment as a matter of law. Answer D is incorrect. Rule 6(b)(2) prohibits any extensions for renewed motions for judgment as a matter of law, and it provides no exception for the parties to agree to alter that prohibition."
     },
     {
@@ -529,7 +529,7 @@
             "optionD": "D. Yes, because the law is remedial rather than punitive."
         },
         "correct_answer": "A",
-        "domain": "Constitutional Law IV-E",
+        "domain": "Constitutional_law",
         "explanation": "Answer A is correct. A law that increases the punishment for a crime after the crime was committed violates the ex post facto clause. The law here was passed after the woman committed the crime, so the law may not be applied to her.      Answer B is incorrect. Procedural due process requires that the government provide notice and an opportunity to be heard before depriving someone of a liberty interest or of an interest in property. The woman received that notice prior to trial, and the law provides an opportunity for a hearing. However, the law is an unconstitutional ex post facto law as applied to the woman. Answer C is incorrect. Whether or not the law is rationally related to a legitimate government interest is not the proper standard. The ex post facto clause is violated by laws that increase the punishment for a crime after the crime was committed, even if the law furthers a legitimate interest. Answer D is incorrect. The law constitutes punishment because it increases the consequences for having been found guilty of committing a crime, and the law increases the punishment for the crime after the woman committed the crime, violating the ex post facto clause."
     },
     {
@@ -542,7 +542,7 @@
             "optionD": "D. Yes, because the agreement was for $65,000."
         },
         "correct_answer": "B",
-        "domain": "Contracts and Sales II-F",
+        "domain": "Contracts",
         "explanation": "Answer B is correct. An oral agreement is within the statute of frauds and is unenforceable if by its terms it cannot be performed within a year from the making. Here, however, the agreement was made on January 2 and would be fully performed a year later. Answer A is incorrect. Full performance of one party\u2019s obligations under an oral agreement removes the statute of frauds as a defense, but here there was only partial performance by the applicant. Answer C is incorrect. The agreement could have been performed within a year from its making on January 2. Answer D is incorrect. The amount of money involved is irrelevant to the application of the common law statute of frauds."
     },
     {
@@ -555,7 +555,7 @@
             "optionD": "D. Yes, as evidence of the company\u2019s routine practice."
         },
         "correct_answer": "D",
-        "domain": "Evidence II-C-3",
+        "domain": "Evidence",
         "explanation": "Answer D is correct. The routine practice of the company\u2019s agents in discussing supplemental policy options with customers is admissible under FRE 406. Answer A is incorrect. Under FRE 406, evidence of an organization\u2019s routine practice is admissible to prove that on a particular occasion the organization acted in accordance with that practice. The fact that the woman, an eyewitness, claims that the practice was not followed in her case does not affect the admissibility of this evidence but rather creates a factual issue for the jury. Answer B is incorrect. To constitute habit evidence, an organization\u2019s practice need not be \u201cautomatic\u201d but only routine\u2014something that is regularly done. The supervisor\u2019s testimony here is that the agents\u2019 regular practice is to discuss supplemental policy options with customers. Answer C is incorrect. Character evidence is not admissible in civil cases to prove conduct. See FRE 404(a) and (b). This evidence is admissible only if it is habit evidence\u2014evidence of an organization\u2019s routine practice\u2014under FRE 406."
     },
     {
@@ -568,7 +568,7 @@
             "optionD": "D. Assault."
         },
         "correct_answer": "C",
-        "domain": "Criminal Law and Procedure II-D",
+        "domain": "Criminal_law",
         "explanation": "Answer C is correct. Although his method was unusual, the driver committed a battery. Acting with the intent to cause offensive or harmful contact, the driver caused an offensive or harmful contact.      Answer A is incorrect. The driver is not guilty of attempted murder because the facts do not suggest that he intended to kill the bicyclist. Answer B is incorrect. The driver is not guilty of attempted voluntary manslaughter because the facts do not suggest that he intended to kill the bicyclist. The driver cannot be guilty of attempted involuntary manslaughter because, at common law, that crime did not exist. (Attempted negligence is a legal impossibility.) Answer D is incorrect because the question calls for the most serious crime of which the driver can be convicted. At common law, assault required only placing another person in fear of imminent harm. Here, the driver committed the greater offense of engaging in physical contact."
     },
     {
@@ -581,7 +581,7 @@
             "optionD": "D. The student was an invitee in the storeroom, because she had permission to enter the storeroom consistent with the store\u2019s policy of making its empty boxes available to repeat customers."
         },
         "correct_answer": "D",
-        "domain": "Torts II-E-2",
+        "domain": "Torts",
         "explanation": "Answer D is correct. The store\u2019s policy, combined with the employee\u2019s grant of permission, conferred on the student the status of invitee while she was in the storeroom seeking empty boxes. Answer A is incorrect. The student was an invitee in the storeroom, because the store had a policy of giving empty boxes to customers and because the employee permitted her to enter the storeroom, and therefore the store owed her a duty of care. Answer B is incorrect. Store visitors are not required to intend to purchase anything to be categorized as invitees. Answer C is incorrect. The student was an invitee in the storeroom, because the store had a policy of giving empty boxes to customers and because the employee permitted her to enter the storeroom."
     },
     {
@@ -594,7 +594,7 @@
             "optionD": "D. Yes, because the lapse in insurance coverage constituted a material default of the terms of the mortgage."
         },
         "correct_answer": "D",
-        "domain": "Real Property IV-E-2",
+        "domain": "Property",
         "explanation": "Answer D is correct. Acceleration clauses are valid. While typically triggered by nonpayment of the mortgage debt, they can also be triggered by the mortgagor\u2019s failure to satisfy other conditions in the mortgage, such as timely payment of insurance premiums. Answer A is incorrect. Once acceleration has properly occurred, the consequences cannot be avoided because the owner attempts to pay the delinquent insurance premium. Foreclosure can only be avoided by paying the mortgagee the entire accelerated amount. Answer B is incorrect for the same reasons given in the explanation for answer A. Answer C is incorrect. The desire to bring a foreclosure action does not create a right to accelerate a mortgage. Rather, the right to accelerate depends upon whether a term of a mortgage has been breached. Such a term may include, as here, the failure to pay an insurance premium."
     },
     {
@@ -607,7 +607,7 @@
             "optionD": "D. The default judgment was entered as a result of the attorney\u2019s mistaken belief that he need not respond."
         },
         "correct_answer": "C",
-        "domain": "Civil Procedure V-C",
+        "domain": "Civil_procedure",
         "explanation": "Answer C is correct. Federal Rule of Civil Procedure 60(b)(4) specifically authorizes relief if the \u201cjudgment is void.\u201d Because the court had no personal jurisdiction over the attorney in the action, the judgment is void. Answer A is incorrect. Relief from a default judgment is available only for the reasons listed under Rule 60(b), and the attorney first must show that he falls within one of those provisions. If he does not, then it is immaterial that he has a meritorious defense.      Answer B is incorrect. Rule 60(b) lists six possible grounds for relief from a judgment, and none of them looks to whether the movant\u2019s conduct was reasonable in the underlying action. Answer D is incorrect. Rule 60(b)(1) allows for relief from a judgment if it was entered as a result of a \u201cmistake.\u201d However, it does not provide relief in situations where a party makes a choice that turns out to be a tactical error. Because the attorney correctly determined that the court lacked jurisdiction, the judgment is void. But if he were wrong, he would have to accept the consequences of his choice."
     },
     {
@@ -620,7 +620,7 @@
             "optionD": "D. The objective theory of contracts."
         },
         "correct_answer": "B",
-        "domain": "Contracts and Sales III-B",
+        "domain": "Contracts",
         "explanation": "Answer B is correct. The lease does not explicitly say that the owner may enter the house to show it to prospective lessees, but such a right may be fairly implied in order to carry out the intention of the parties. Answer A is incorrect. The principle of reasonable expectations posits that parties should not be bound by terms that they would not expect to find in a contract unless those terms were called to their attention. That doctrine is not relevant here. Answer C is incorrect. Best efforts is a duty read into a contract to prevent it from being illusory when the scope of a party\u2019s performance is omitted or unclear. The duty of best efforts, which requires all parties to use their best efforts to carry out the intent of the contract, is not relevant here. Answer D is incorrect. The objective theory means that a party to a contract is bound by a contract term even if that party is not subjectively aware of the term; it is not relevant here."
     },
     {
@@ -633,7 +633,7 @@
             "optionD": "D. Yes, because the ordinance reasonably regulates the use of public roadways."
         },
         "correct_answer": "C",
-        "domain": "Constitutional Law IV-F-2-b",
+        "domain": "Constitutional_law",
         "explanation": "Answer C is correct. The ordinance is a content-neutral restriction on speech because it regulates without regard to the content of the message expressed on the billboards. Content-neutral speech restrictions receive intermediate judicial scrutiny, the elements of which are summarized in Answer C. The Supreme Court has held that the aesthetic interests of a community are sufficiently substantial to justify content-neutral restrictions on public displays of signs. The ordinance here is narrowly tailored because it applies only to scenic roadways and it does not completely ban signs there. Answer A is incorrect. Even though the ordinance burdens political speech, it is a content-neutral restriction because it regulates without regard to the message on the billboards. Content-neutral speech restrictions receive intermediate judicial scrutiny, which requires that the restriction be narrowly tailored to serve a substantial government interest. Answer B is incorrect. Although the ordinance restricts speech in a traditional public forum, it is not a total ban of speech and it is content-neutral. The ordinance therefore does not violate the First Amendment if it satisfies intermediate scrutiny. The ordinance satisfies intermediate scrutiny because it is narrowly tailored to serve a substantial government interest. Answer D is incorrect. Answer D states an incorrect standard of judicial review for the ordinance. The ordinance is a content-neutral restriction on expression, and therefore it must satisfy intermediate judicial scrutiny. Intermediate scrutiny requires that the restriction be narrowly tailored to serve a substantial government interest."
     },
     {
@@ -646,7 +646,7 @@
             "optionD": "D. Yes, unless the error in excluding the defendant was harmless."
         },
         "correct_answer": "B",
-        "domain": "Evidence V-L",
+        "domain": "Evidence",
         "explanation": "No explanation available."
     },
     {
@@ -659,7 +659,7 @@
             "optionD": "D. Yes, because the confidential informant\u2019s statement is not offered for its truth."
         },
         "correct_answer": "C",
-        "domain": "Evidence I-E",
+        "domain": "Evidence",
         "explanation": "Answer C is correct. Because the Federal Rules of Evidence do not apply to probation revocation proceedings under FRE 1101(d), the government may present evidence that would be inadmissible under the rules. Answer A is incorrect. Because the Federal Rules of Evidence do not apply to probation revocation proceedings under FRE 1101(d), whether evidence would be hearsay under the rules is not relevant to the admissibility of that evidence. Answer B is incorrect. Because the Federal Rules of Evidence do not apply to probation revocation proceedings under FRE 1101(d), the rule governing lay opinion testimony is not applicable. Answer D is incorrect. The Federal Rules of Evidence do not apply to probation revocation proceedings under FRE 1101(d), and even if they did, the confidential informant\u2019s statement is in fact being offered for its truth\u2014to show the basis for revoking probation."
     },
     {
@@ -672,7 +672,7 @@
             "optionD": "D. Trespass to chattels."
         },
         "correct_answer": "A",
-        "domain": "Torts I-A",
+        "domain": "Torts",
         "explanation": "Answer A is correct. A reasonable jury could conclude that the father intentionally caused the driver to apprehend imminent harmful physical contact, as is required for assault liability. Answer B is incorrect. There was no battery because the father never touched the driver. Even under the \u201cextended personality\u201d doctrine\u2014which, for example, allows a battery plaintiff to establish the necessary contact element if the defendant touches an article of clothing the plaintiff is wearing\u2014making contact with the bus is almost certain not to count as contacting the driver\u2019s person. Answer C is incorrect. Establishing the elements of an intentional infliction of emotional distress claim requires showing both that the defendant intended to cause severe distress and that the defendant\u2019s conduct was extreme and outrageous. These elements will be harder for the driver to establish than will the elements of an assault claim. Answer D is incorrect. The driver is not likely to be considered to have a possessory interest in the damaged bus, and therefore trespass to chattels would not be a viable claim."
     },
     {
@@ -685,7 +685,7 @@
             "optionD": "D. Yes, because the neighbor\u2019s use of the easement on the west fixed the location of the easement."
         },
         "correct_answer": "D",
-        "domain": "Real Property II-B-2-a",
+        "domain": "Property",
         "explanation": "Answer D is correct. The man conveyed an express easement over his land to his neighbor by a deed of gift, which satisfied the statute of frauds. Although the location of the easement was not in writing, the location was set by the neighbor\u2019s 14-year use of a 15-foot strip on the west side of the man\u2019s land. Answer A is incorrect. The deed granting the easement satisfied the statute of frauds. Although the location of the      easement was not fixed in the deed, the location was established by the neighbor\u2019s 14-year use of the 15-foot strip along the west side of the man\u2019s land. Answer B is incorrect. It is irrelevant that the neighbor only asked to relocate the easement because her cabin was destroyed by fire. The location of the easement was set by the neighbor\u2019s 14-year use of the easement on the west side of the man\u2019s land. Answer C is incorrect. An express easement may be made by a deed of gift."
     },
     {
@@ -698,7 +698,7 @@
             "optionD": "D. Yes, because the employees are entitled to immediate review of the grant of summary judgment on the federal-law claims."
         },
         "correct_answer": "B",
-        "domain": "Civil Procedure VII-B",
+        "domain": "Civil_procedure",
         "explanation": "Answer B is correct. If an action includes claims based on federal law and state law, and if those claims involve overlapping facts and evidence, rather than being separate and distinct, typically the court will not enter a final judgment under Federal Rule of Civil Procedure 54(b) on the claim that has been resolved. This practice is to avoid duplication of effort in the appellate and trial courts. Answer A is incorrect. Under Rule 54(b), it is the district court, not the court of appeals, that is authorized to direct entry of final judgment as to fewer than all claims. Answer C is incorrect. Waiting until a final judgment on the entire action is entered will always delay plaintiffs\u2019 recovery. If that factor controlled, every claim determined in a multiple-claim action before a final judgment was reached in the entire action would be immediately appealable. That would be inconsistent with the final judgment rule and the limited role envisioned for Rule 54(b). Answer D is incorrect. There is no final judgment in the case, and as discussed in the explanation for answer B, a court will not enter a Rule 54(b) final judgment when there is overlap between resolved and unresolved claims, including when the resolution of some claims was by summary judgment."
     },
     {
@@ -711,7 +711,7 @@
             "optionD": "D. Yes, because the woman was entitled to use deadly force to defend her home."
         },
         "correct_answer": "B",
-        "domain": "Criminal Law and Procedure IV-E",
+        "domain": "Criminal_law",
         "explanation": "Answer B is correct because the common law rule that deadly force cannot be used in defense of property remains the rule in virtually every state today. Answer A is incorrect. The \u201cduty to retreat\u201d rule, which has been removed in most states, limits one\u2019s ability to use deadly force in self-defense. The rule does not apply in defense-of-property cases because in that context deadly force is categorically disallowed. Answer C is incorrect because the act described\u2014intentionally shooting a man with a shotgun\u2014clearly qualifies as \u201cdeadly force.\u201d Although states define the term in various ways, \u201cdeadly force\u201d is generally regarded as the kind of force that is likely to cause serious bodily injury or death whether or not the serious bodily injury or death actually occurs. Answer D is incorrect because the woman used deadly force, not in defense of her dwelling or real property, but in defense of her personal property\u2014namely, her car and her laptop."
     },
     {
@@ -724,7 +724,7 @@
             "optionD": "D. Yes, because Congress has the authority under Article III to define the Supreme Court\u2019s original jurisdiction."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law I-B-1",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct. Marbury v. Madison, 5 U.S. 137 (1803), held that Congress lacks the constitutional power to add to the Supreme Court\u2019s original jurisdiction. Answer A is incorrect. Article I of the Constitution, not Article II, gives Congress, not the President, the power to \u201cmake      Rules for the Government and Regulation of the land and naval Forces.\u201d Answer C is incorrect. Congress\u2019s Article I power to create military tribunals does not expand its power over the Supreme Court\u2019s original jurisdiction, which is set by Article III. Answer D is incorrect for the same reason given in the explanation for answer B."
     },
     {
@@ -737,7 +737,7 @@
             "optionD": "D. Nothing."
         },
         "correct_answer": "D",
-        "domain": "Torts II-G-2",
+        "domain": "Torts",
         "explanation": "Answer D is correct. This question specifies that the traditional common law rule of assumption of risk applies. Under that rule, even if an actor causes injury to a victim, the victim is barred from recovering damages if the injury results from the victim\u2019s having knowingly and voluntarily chosen to encounter the risk of injury posed by the actor\u2019s conduct. The motorist was fully aware that there was risk posed by the blasting company\u2019s activity and was instructed to stop, yet chose to proceed, thus assuming the risk of damage to the car as a result of the blasting. Answers A, B, and C are all incorrect, because the assumption-of-risk defense bars the motorist from recovering for the damage to the car."
     },
     {
@@ -750,7 +750,7 @@
             "optionD": "D. Yes, because the buyer manifested an intent to perform before the broker refused to perform."
         },
         "correct_answer": "A",
-        "domain": "Contracts and Sales IV-A",
+        "domain": "Contracts",
         "explanation": "Answer A is correct. In contracts for the sale of goods, unless otherwise agreed, the seller\u2019s tender of delivery is a condition to the buyer\u2019s duty to accept and pay for goods, and the buyer\u2019s tender of payment is a condition to the seller\u2019s duty to tender delivery. UCC \u00a7\u00a7 2-507 & 2-511. Here both parties\u2019 obligations were discharged, because neither condition for performance was satisfied. Answer B is incorrect. The buyer did not breach, because the buyer\u2019s obligations were discharged as discussed above. Answer C is incorrect. The broker did not breach, because the broker\u2019s obligations were discharged, as discussed above. Answer D is incorrect. The buyer\u2019s manifestation of an intent to perform is irrelevant, since both the buyer\u2019s and the broker\u2019s obligations were discharged, as discussed above."
     },
     {
@@ -763,7 +763,7 @@
             "optionD": "D. He may remove the power lawn mower."
         },
         "correct_answer": "D",
-        "domain": "Real Property II-C",
+        "domain": "Property",
         "explanation": "Answer D is correct. When a real estate contract does not mention which items will stay with the house, the law of fixtures applies. A fixture is an item that has been attached to the land, is appropriate to be so attached, and is intended to be part of the land. The garbage disposal and the ceiling fan qualify as fixtures. The power lawn mower is not a fixture but is considered personal property, which may be removed. Answer A is incorrect. The power lawn mower is an article of personal property, which may be removed. The garbage disposal and ceiling fan are fixtures, which must remain with the house. Answer B is incorrect. The garbage disposal and the ceiling fan are fixtures, which must remain with the house. Answer C is incorrect. The ceiling fan is a fixture, which must remain with the house. The power lawn mower is personal property, which may be removed."
     },
     {
@@ -776,7 +776,7 @@
             "optionD": "D. Yes, because the man\u2019s statement is a nontestimonial statement by a coconspirator."
         },
         "correct_answer": "C",
-        "domain": "Evidence V-J",
+        "domain": "Evidence",
         "explanation": "No explanation available."
     },
     {
@@ -789,7 +789,7 @@
             "optionD": "D. Yes, because the decision on the federal claim is final."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure VII-B",
+        "domain": "Civil_procedure",
         "explanation": "Answer A is correct. As the state-law claim remains to be decided in the action, there is not yet a final judgment on the merits of the entire action, and thus an appeal is not allowed under the final judgment rule. Answer B is incorrect. There is supplemental jurisdiction over the state-law claim. Further, whether an appeal is proper for the federal claim is not tied to jurisdiction over the state-law claim. Answer C is incorrect. To obtain a discretionary interlocutory appeal, the party seeking to appeal must apply to both the district and appellate courts to meet the statutory standards. See 28 U.S.C. \u00a7 1292(b). Because the scientist has appealed without attempting to satisfy that requirement, the appeal cannot be treated as a discretionary interlocutory appeal. Answer D is incorrect. Under the final judgment rule, a judgment is not final until all the claims in the action have been resolved. While a party can ask the court, under Federal Rule of Civil Procedure 54(b), to certify a final judgment as to a resolved claim when it is separate and distinct from the unresolved claims and then appeal that decision, in this particular case, the court would reject such a request because the federal and state claims overlap."
     },
     {
@@ -802,7 +802,7 @@
             "optionD": "D. The ordinance is unconstitutional, because it is overbroad."
         },
         "correct_answer": "A",
-        "domain": "Constitutional Law IV-F-2-b",
+        "domain": "Constitutional_law",
         "explanation": "Answer A is correct. The burning of the one-dollar bills was expressive conduct protected by the First Amendment, because the speaker intended the burning to communicate a message, and in context, the audience was likely to receive the message. The ordinance, however, does not violate the First Amendment because it is content-neutral and it satisfies the elements of intermediate judicial scrutiny, which are stated correctly in Answer A. Answer B is incorrect. It is true that the ordinance prohibits conduct, but on these facts, the burning of the one-dollar bills was expressive conduct protected by the First Amendment, because the speaker intended the burning to communicate a message, and in context, the audience was likely to receive the message. In this situation, the ordinance satisfies the First Amendment not simply because it regulates conduct, but because it is content-neutral and it satisfies the elements of intermediate judicial scrutiny.      Answer C is incorrect. Notwithstanding the absence of a fire risk here, there is no indication on these facts that the prosecution was a pretext for the government\u2019s disapproval of the speaker\u2019s message. The city has a legitimate interest in enforcing the permit requirement generally because of the risks associated with open fires in public places. Answer D is incorrect. The ordinance is not overbroad because a permit requirement for open fires in public places does not restrict substantially more speech than the First Amendment allows to be restricted."
     },
     {
@@ -815,7 +815,7 @@
             "optionD": "D. Grant the motion, because there is no evidence from which a jury could reasonably conclude that the supervisor acted carelessly with respect to the dispatcher\u2019s emotional well-being."
         },
         "correct_answer": "C",
-        "domain": "Torts II-E-3",
+        "domain": "Torts",
         "explanation": "Answer C is correct. Negligently caused emotional distress is ordinarily not actionable unless connected to a physical injury. Answer A is incorrect. Negligence causing \u201cpure\u201d emotional distress is only actionable in limited circumstances, such as when a defendant causes a plaintiff distress at the prospect of imminent physical injury (the \u201czone of danger\u201d) or when a certain kind of special relationship exists between the parties (e.g., therapist-patient). Courts have not deemed the employment relationship to be \u201cspecial\u201d in the relevant sense, and therefore the dispatcher\u2019s claim will fail because it does not fit within any of the recognized exceptions to the general rule of no liability for negligence causing only emotional distress, without physical injury. Answer B is incorrect. The insufficiency in the dispatcher\u2019s case is not as to breach of a duty but rather as to the existence of a duty. As noted earlier, courts generally do not recognize a duty to take care against causing emotional distress unconnected to a physical injury. Answer D is incorrect. The insufficiency in the dispatcher\u2019s case is not as to breach of a duty but rather as to the existence of a duty."
     },
     {
@@ -828,7 +828,7 @@
             "optionD": "D. The woman may be tried for both murder and attempted murder but can be convicted of only one of them."
         },
         "correct_answer": "A",
-        "domain": "Criminal Law and Procedure I-A-1 / III-A-1 / IV-B-1",
+        "domain": "Criminal_law",
         "explanation": "Answer A is correct. Typically for a single offense, an attempt merges into the completed offense because the intended target is the one who suffers the harm. However, there are two separate offenses here. The first is the woman\u2019s failed attempt to kill the husband, which resulted only in his injury; this is an attempted murder. The second is causing the death of her son, which is a completed murder. Although the woman did not intend to harm her son, her intent toward her husband can be transferred under the doctrine of transferred intent to hold her liable for the actual harm caused to her son. The doctrines of mens rea and causation support liability for both the action the woman attempted and the harm she caused to each victim. Consequently, a fact-finder could find her guilty of the son\u2019s murder. The charges need not be tried together; each is a separate and independent offense. Answer B is incorrect because there is no constitutional requirement that the two offenses be charged together. The attempt is not a lesser included offense of the murder; it is a separate charge with a separate victim and independent theory of liability. Answer C is incorrect because the two offenses each address a separate, and separately punishable, harm. The offenses do not merge, nor do they constitutionally require concurrent sentencing. Answer D is incorrect for the same reason as answer C: attempted murder does not merge as a lesser offense to murder because the attempted murder and murder were separate acts that caused independent harm to independent victims."
     },
     {
@@ -841,7 +841,7 @@
             "optionD": "D. No, because the buyer breached her duty to mitigate her damages when she purchased replacement lumber at a price higher than that offered by the seller."
         },
         "correct_answer": "A",
-        "domain": "Contracts and Sales IV-C / V-A",
+        "domain": "Contracts",
         "explanation": "No explanation available."
     },
     {
@@ -854,7 +854,7 @@
             "optionD": "D. The law of State D, because State D has the most significant contacts."
         },
         "correct_answer": "A",
-        "domain": "Real Property V-C-4",
+        "domain": "Property",
         "explanation": "Answer A is correct because the location of the real estate determines which law to use in determining whether the gift has lapsed. The cabin is real estate located in State A, and therefore State A\u2019s law of lapse will be used. Answer B is incorrect. The location of the testator\u2019s domicile at the time of his death (State B) will be used in determining the validity and construction of the will regarding all property located in that state, but it will not be used regarding real estate located in another state (State A). Answer C is incorrect. The nephew is the beneficiary under the man\u2019s will, but the beneficiary\u2019s place of domicile is irrelevant to determining whether the bequest lapsed. Answer D is incorrect. Which state has the most significant contacts is irrelevant. The location of the cabin (State A) determines which law to use."
     },
     {
@@ -867,7 +867,7 @@
             "optionD": "D. Yes, because the manufacturer reserved the right to do business with other State A distributors."
         },
         "correct_answer": "C",
-        "domain": "Torts IV-C",
+        "domain": "Torts",
         "explanation": "Answer C is correct. The manufacturer, at the time of entering into the contract with the distributor, falsely stated to the distributor that it did not have a plan in place to cease providing products for sale in State A. This was an intentional and material misrepresentation, made for the purpose of deceiving the distributor, on which misrepresentation the distributor actually and reasonably relied to its detriment. As such, it supports a fraud claim by the distributor. Answer A is incorrect. The distributor may sue for fraud regardless of whether the distributor also has a valid claim for breach of contract. Answer B is incorrect. The manufacturer affirmatively misrepresented a material fact when it falsely stated that it had no plan in place to cease doing business in State A. Answer D is incorrect. This answer points to a fact\u2014the manufacturer\u2019s reservation of a right to do business with other distributors\u2014that is irrelevant to the question of whether the manufacturer is subject to liability for fraud."
     },
     {
@@ -880,7 +880,7 @@
             "optionD": "D. State A law, because the action arises under State A law."
         },
         "correct_answer": "A",
-        "domain": "Civil Procedure II-A",
+        "domain": "Civil_procedure",
         "explanation": "No explanation available."
     },
     {
@@ -893,7 +893,7 @@
             "optionD": "D. Yes, because the investor\u2019s mortgage secures improvements made to vacant land."
         },
         "correct_answer": "C",
-        "domain": "Real Property IV-D-2",
+        "domain": "Property",
         "explanation": "Answer C is correct. The deed in lieu of foreclosure does not extinguish the subsequent mortgage on the property. A mortgagor\u2019s later-executed mortgage generally can be extinguished only by foreclosure. Thus, the holder of the senior lien (the seller) should have searched the title to determine if a junior lien existed and, if so, brought a foreclosure action to extinguish it rather than accepting a deed in lieu of foreclosure. Answer A is incorrect. The status of the investor, the junior lienholder, is not affected by that lienholder\u2019s failure to cure the mortgagor\u2019s default. Answer B is incorrect. The general rule that a deed in lieu of foreclosure does not extinguish subsequent mortgages is unaffected by whether the senior lien was a purchase money mortgage or not. Answer D is incorrect. The reason for obtaining the junior mortgage is irrelevant. It is not extinguished by the deed in lieu of foreclosure."
     },
     {
@@ -906,7 +906,7 @@
             "optionD": "D. The city enacted the ordinance to prevent further protests of its policies."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law IV-F-2-g",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct. The ordinance is overbroad because prohibiting all First Amendment activities on the beach restricts substantially more speech than the First Amendment allows to be restricted. Answer A is incorrect. The ordinance does not create a prior restraint on speech. Prior restraints are injunctions or administrative systems that prevent speech from occurring. The ordinance here is a mere prohibition of speech, penalizing speech after it occurs. Answer C is incorrect. A public beach is not a traditional public forum. The Supreme Court has limited such forums to streets, sidewalks, and parks. Nor is there an indication on these facts that the city had dedicated the beach as a speech forum. Answer D is incorrect. These facts are not sufficient to prove that the city enacted the ordinance because officials disapproved of the message of the protesters. The facts indicate that swimmers were unable to use the beach for several days because of the demonstrations. The concern for swimmers is a content-neutral interest that would permit the city to regulate demonstrations at the beach more narrowly."
     },
     {
@@ -919,7 +919,7 @@
             "optionD": "D. Yes."
         },
         "correct_answer": "B",
-        "domain": "Criminal Law and Procedure V-G",
+        "domain": "Criminal_law",
         "explanation": "No explanation available."
     },
     {
@@ -932,7 +932,7 @@
             "optionD": "D. The builder will recover $30,000, because the contract is divisible into two parts."
         },
         "correct_answer": "D",
-        "domain": "Contracts and Sales IV-A",
+        "domain": "Contracts",
         "explanation": "Answer D is correct. According to the rule of divisible contract, when performance under a contract can be divided into multiple tasks, each with a corresponding price that the other party must pay when the task is completed, one party\u2019s performance of a task triggers the other party\u2019s duty to pay for it, even when the performing party breaches another part of the contract. Restatement (Second) of Contracts \u00a7 240. Answer A is incorrect. When it is applicable, as here, the rule of divisible contract provides a way to fairly compensate a party who has materially breached a contract. Answers B and C are incorrect. As discussed above, when a breaching party can recover under the rule of divisible contract, it is not necessary to look to restitution to provide a remedy."
     },
     {
@@ -945,7 +945,7 @@
             "optionD": "D. No, because the statement is hearsay if offered to prove that the defendant did not run the red light and cannot be offered to impeach because the woman was not given an opportunity to explain or deny the statement."
         },
         "correct_answer": "D",
-        "domain": "Evidence I-D-1 / V-A-1",
+        "domain": "Evidence",
         "explanation": "Answer D is correct. The woman\u2019s out-of-court statement would be hearsay if offered to prove that the defendant, in fact, did not run the red light, and there is no applicable hearsay exception. Further, extrinsic evidence of the woman\u2019s prior inconsistent statement may not be offered to impeach her, because she had no opportunity at trial to explain or deny the earlier statement. Answer A is incorrect. The woman\u2019s out-of-court statement would be hearsay if offered to prove that the defendant, in fact, did not run the red light, and there is no applicable hearsay exception. This answer is also incorrect because extrinsic evidence of the woman\u2019s prior inconsistent statement may not be offered to impeach her, because she had no opportunity at trial to explain or deny the earlier statement. Answer B is incorrect. The woman\u2019s out-of-court statement would be hearsay if offered to prove that the defendant, in fact, did not run the red light, and there is no applicable hearsay exception. Answer C is incorrect. Extrinsic evidence of the woman\u2019s prior inconsistent statement may not be offered to impeach her, because she had no opportunity at trial to explain or deny the earlier statement."
     },
     {
@@ -958,7 +958,7 @@
             "optionD": "D. The mother, knowing of her daughter\u2019s very rare allergy, should not have purchased the medication without knowing what ingredients were in the coating."
         },
         "correct_answer": "B",
-        "domain": "Torts III",
+        "domain": "Torts",
         "explanation": "Answer B is correct. This question asks which argument would be LEAST effective for the manufacturer\u2019s defense against liability. The learned intermediary doctrine\u2014which insulates manufacturers of prescription drugs from liability if they provide adequate warnings to prescribing physicians\u2014has no application in this case, which involves the      sale and use of an over-the-counter medication. Accordingly, the doctrine would offer no help to the manufacturer in its defense of the action. Answer A is incorrect. The incidence of injury being very rare would be a helpful argument for the manufacturer, as it would help to establish that the medication was not defective as a result of the manufacturer\u2019s failure to list the coating\u2019s ingredients or to otherwise warn of the risk of allergic reaction. (If the risk of a certain type of injury is low enough, there is no duty to warn.) Answer C is incorrect. The manufacturer can argue that its failure to warn was not a proximate cause of the daughter\u2019s injury because the mother\u2019s administration of a triple dose to the daughter was an unforeseeable intervening (superseding) cause. The argument may not win, but it is plausible and thus would be a better ground for avoiding liability than the learned intermediary rule, which would be ineffective as a defense. Answer D is incorrect for the same reasons that answer C is incorrect. Given the mother\u2019s knowledge of the daughter\u2019s allergy, the mother\u2019s failure to determine whether the medication contained the substance to which the daughter was allergic might provide the basis for a no-proximate-cause argument."
     },
     {
@@ -971,7 +971,7 @@
             "optionD": "D. The motion may be granted only to prevent manifest injustice."
         },
         "correct_answer": "D",
-        "domain": "Civil Procedure III-G",
+        "domain": "Civil_procedure",
         "explanation": "Answer D is correct. Under Federal Rule of Civil Procedure 16(e), a final pretrial order may be amended only to prevent manifest injustice. Answer A is incorrect. Under Rule 16(e), a final pretrial order may be amended only to prevent manifest injustice. The \u201cif justice so requires\u201d standard, generally associated with pretrial amendments under Rule 15(a), does not apply in this setting. Answer B is incorrect. Under Rule 16(e), a final pretrial order may be amended only to prevent manifest injustice. The language cited in this answer comes from Rule 60(b), which governs motions seeking relief from a judgment. Answer C is incorrect. Under Rule 16(e), a final pretrial order may be amended only to prevent manifest injustice. While \u201cgood cause\u201d is the standard for amending a pretrial order under Rule 16(b), the higher \u201cmanifest injustice\u201d standard applies once the court enters the final pretrial order under Rule 16(e)."
     },
     {
@@ -984,7 +984,7 @@
             "optionD": "D. Yes, because the jury never returned a verdict on the first-degree murder charge."
         },
         "correct_answer": "A",
-        "domain": "Criminal Law and Procedure V-F",
+        "domain": "Criminal_law",
         "explanation": "Answer A is correct because a jury\u2019s conviction on a lesser charge constitutes an implied acquittal of a greater charge, thus barring retrial on that greater charge. Answer B is incorrect. Although vindictive-prosecution doctrines do preclude a prosecutor from retaliating for a successful defense appeal, here the prosecutor would be simply retrying the original charge. The problem is not that the prosecutor would be enhancing the charges; it is that the jury has already acquitted the defendant of the primary count. Answer C is incorrect because the defendant\u2019s request for the instruction on the lesser included offense does not operate to nullify the jury\u2019s implied not-guilty verdict on the greater offense. Answer D is incorrect because, by convicting the defendant only on the lesser count, the jury impliedly acquitted on the greater count."
     },
     {
@@ -997,7 +997,7 @@
             "optionD": "D. Because the parties have attached different meanings to a key term of the contract, there is no contract."
         },
         "correct_answer": "C",
-        "domain": "Contracts and Sales III-B",
+        "domain": "Contracts",
         "explanation": "No explanation available."
     },
     {
@@ -1010,7 +1010,7 @@
             "optionD": "D. Whether the violence in the videos is patently offensive according to the standards of the community."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law IV-F-2-a",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct. The denial of the permit was a content-based restriction on expression because it was based on the content of the videos, which city officials found to be disturbing. Content-based restrictions on expression in a traditional public forum receive strict judicial scrutiny, the elements of which Answer B correctly states. Answer A is incorrect. It states the incorrect standard of review for the city\u2019s denial of the permit. More than an \u201cimportant government interest\u201d is required. The denial of the permit was a content-based restriction on expression in a traditional public forum because it was based on the content of the videos, which city officials found to be disturbing. Content-based restrictions on expression in a traditional public forum receive strict judicial scrutiny, which requires the city to prove that its denial of the permit was necessary to serve a compelling government interest. Answer C is incorrect. It states the incorrect standard of review for the city\u2019s denial of the permit. The existence of alternative opportunities would only be relevant in a case involving a content-neutral restriction on speech. But the denial of the permit was a content-based restriction on expression in a traditional public forum because it was based on the content of the videos, which city officials found to be disturbing. Content-based restrictions on expression in a traditional public forum receive strict judicial scrutiny, which requires the city to prove that its denial of the permit was necessary to serve a compelling government interest. Answer D is incorrect. It states the incorrect standard of review for the city\u2019s denial of the permit. Whether speech is patently offensive is relevant only in obscenity cases, which involve expression relating to sex."
     },
     {
@@ -1023,7 +1023,7 @@
             "optionD": "D. Yes, because the milking system\u2019s defect proximately caused the farmer\u2019s loss of revenue."
         },
         "correct_answer": "A",
-        "domain": "Torts III",
+        "domain": "Torts",
         "explanation": "Answer A is correct. In this case, the only harm suffered by the farmer was lost revenue, and strict products liability does not apply when a defective product causes only economic loss, as opposed to personal injury or property damage. Answer B is incorrect. The problem is not the manufacturer\u2019s lack of knowledge about the farmer\u2019s contracts but the rule that prevents an injured party from recovering for purely economic loss caused by a defective product. Answer C is incorrect. The statement is true, but it does not entitle the farmer to damages. The contract law rule of consequential damages is irrelevant to the resolution of a tort claim. Answer D is incorrect. Because the farmer has suffered only economic loss, he cannot recover on a strict products liability theory."
     },
     {
@@ -1036,7 +1036,7 @@
             "optionD": "D. Yes, because it is probative of the defendant\u2019s knowledge about drugs."
         },
         "correct_answer": "A",
-        "domain": "Evidence II-C-4",
+        "domain": "Evidence",
         "explanation": "No explanation available."
     },
     {
@@ -1049,7 +1049,7 @@
             "optionD": "D. Yes, because the son paid the policy premium."
         },
         "correct_answer": "C",
-        "domain": "Real Property V-D-2",
+        "domain": "Property",
         "explanation": "Answer C is correct. A title insurance policy is a contract of indemnity and insures the named insured in the policy and his heirs and devisees so long as the named insured or his heirs or devisees own the insured property. Here, the house passed to the buyer\u2019s son under the buyer\u2019s will, and the son owned the house/property when the holder of the superior title brought the suit. Answer A is incorrect. The son is insured because he was the devisee of the house under the buyer\u2019s will. It is irrelevant that the son is not a named insured. Answer B is incorrect. A title policy protects whoever is the named insured (and heirs or devisees), whether that person is the buyer or the mortgagee. Here the buyer was the named insured. Answer D is incorrect. The only person who is protected by the policy is the named insured (and heirs or devisees). It is irrelevant who paid the policy premium."
     },
     {
@@ -1062,7 +1062,7 @@
             "optionD": "D. Whether there is legally sufficient evidence to support the verdict."
         },
         "correct_answer": "D",
-        "domain": "Civil Procedure V-B",
+        "domain": "Civil_procedure",
         "explanation": "Answer D is correct. Under Federal Rule of Civil Procedure 50, a court may grant judgment as a matter of law against a party only if the court finds that a reasonable jury would not have a legally sufficient evidentiary basis to find for that party. Answer A is incorrect. A preponderance standard involves weighing the evidence, and courts cannot weigh the evidence when ruling on a Rule 50 motion. Answer B is incorrect. Courts cannot weigh the evidence when ruling on a Rule 50 motion. Answer C is incorrect. Under Rule 50, a court may grant judgment as a matter of law against a party only if the court finds that a reasonable jury would not have a legally sufficient evidentiary basis to find for that party. A mere scintilla of evidence would be insufficient under this standard."
     },
     {
@@ -1075,7 +1075,7 @@
             "optionD": "D. Yes, because there was evidence that reasonably could support a jury finding of adequate provocation."
         },
         "correct_answer": "D",
-        "domain": "Criminal Law and Procedure I-A-2",
+        "domain": "Criminal_law",
         "explanation": "Answer D is correct because a reasonable jury could find that the defendant was twice kicked in the groin by the victim prior to the homicide, and on that basis could conclude that the defendant had adequate provocation. Even      though it is a single witness who recounts this event, a jury can credit a single witness\u2019s testimony. Answer A is incorrect because the state offered evidence of a serious battery on the defendant, which can constitute an adequate provocation, no matter which party presented the evidence. Answer B is incorrect because the judge\u2019s job is not to weigh the evidence but is only to determine whether a reasonable jury could find adequate provocation. The jury may permissibly credit one single witness\u2019s account, even when that account contradicts ample other evidence. Answer C is incorrect because there is no general rule that the defense is entitled to an instruction on any theory of the case; the defense is only entitled to instructions for which there is a factual and legal basis. For instance, if there were no evidence of provocation, but the defense sought a manslaughter instruction, such an instruction should be denied."
     },
     {
@@ -1088,7 +1088,7 @@
             "optionD": "D. Nothing, because the carpenter\u2019s breach discharged the homeowner\u2019s obligation to pay the bank."
         },
         "correct_answer": "A",
-        "domain": "Contracts and Sales VI-A",
+        "domain": "Contracts",
         "explanation": "Answer A is correct. The bank is an intended beneficiary of the contract between the carpenter and the homeowner. An intended beneficiary can enforce a contract to which it is not a party, because the parties intended the contract to benefit that beneficiary. Restatement (Second) of Contracts \u00a7 302. However, one party to the contract can assert, against the beneficiary, claims for breach by the other party to the contract. Here, the homeowner, as promisee of the carpenter\u2019s promise to perform the work, can assert the $2,000 claim for breach of that promise against the bank. Restatement (Second) of Contracts \u00a7 309(2). Answer B is incorrect. As discussed above, the homeowner, as promisee of the carpenter\u2019s promise to do the work, can assert the $2,000 claim for damages against the bank, as an intended beneficiary. Answer C is incorrect. The bank is not an incidental beneficiary. Instead the bank is an intended beneficiary that can enforce a contract to which it is not a party because the parties intended the contract to benefit that beneficiary. Restatement (Second) of Contracts \u00a7 302. Answer D is incorrect. As an intended beneficiary, the bank can assert the carpenter\u2019s rights under the contract. Here, the carpenter\u2019s breach was not material, so the homeowner\u2019s obligation was not discharged. And even if the carpenter\u2019s breach was material, the bank could recover the value of the work done for the homeowner as restitution. Restatement (Second) of Contracts \u00a7 374."
     },
     {
@@ -1101,7 +1101,7 @@
             "optionD": "D. Yes, but only if corroborating circumstances clearly indicate the statement\u2019s trustworthiness."
         },
         "correct_answer": "A",
-        "domain": "Evidence V-J",
+        "domain": "Evidence",
         "explanation": "Answer A is correct. The exception to the hearsay rule for statements against interest may be used to admit evidence only after a showing that the declarant is unavailable to testify. Because the brother is available, that particular hearsay exception may not be used. Answer B is incorrect. The hearsay exception for statements against interest may be used in civil or criminal cases. Answer C is incorrect. The statement is inadmissible due to the brother\u2019s availability to testify. Although the statement is clearly against the brother\u2019s criminal interest, that is not a sufficient condition for admissibility. Unavailability of the brother, as the declarant, also needs to be established. Answer D is incorrect. The statement is inadmissible due to the brother\u2019s availability to testify. Even if the employer could show corroboration, the statement would not be admissible through the hearsay exception for statements against interest."
     },
     {
@@ -1114,7 +1114,7 @@
             "optionD": "D. Yes, because it substantially advances the city\u2019s legitimate interest in reducing street traffic in the residential neighborhood."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law IV-D",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct. The Supreme Court has held that government-imposed conditions on the development of a property constitute a taking unless the conditions are rationally related to preventing harms caused by the new development. Because the condition of making the swimming pool available to neighborhood residents is not rationally related to alleviating the harm of increased street traffic, the condition constitutes a government taking. The city does not propose to provide just compensation for the taking, and therefore the condition is unconstitutional. Answer A is incorrect. Requiring the pool to be open to all neighborhood residents does not violate the current tenants\u2019 freedom of expressive association, because their association with one another is not for the advancement of free expression. Nor does the requirement violate freedom of intimate association, because their association is not small and intimate. Answer C is incorrect. Whether or not the condition undermines the owner\u2019s reasonable investment-backed expectations is not the proper standard. Because the government is demanding public access to the property in exchange for a permit to build, the test for determining whether the condition constitutes a taking is whether it is rationally related to preventing harms caused by the new development. Answer D is incorrect. Whether or not the condition substantially advances a legitimate interest of the city is not the proper standard. The proper test for determining whether the condition constitutes a taking is whether it is rationally related to preventing harms caused by the new development."
     },
     {
@@ -1127,7 +1127,7 @@
             "optionD": "D. Nothing, because the contractor\u2019s breach was willful."
         },
         "correct_answer": "C",
-        "domain": "Contracts and Sales V-H",
+        "domain": "Contracts",
         "explanation": "Answer C is correct. A party that materially breaches a contract is nevertheless entitled to recover under a theory of restitution the amount of the value of the benefit that the breaching party\u2019s part performance conferred on the victim of the breach. Restatement (Second) of Contracts \u00a7 374. Answer A is incorrect. A breaching party cannot recover on a theory of reliance. Answer B is incorrect. This is not a divisible contract in which performance can be divided into multiple tasks, each with a corresponding price that the other party must pay when the task is completed. Instead it is a typical construction contract with progress payments as elements of the job are completed. Thus, the contractor does not have a right to $60,000 for having laid the foundation. Restatement (Second) of Contracts \u00a7 240. Answer D is incorrect. Contract law generally does not distinguish between willful breaches and other breaches. Restatement (Second) of Contracts \u00a7 374; Farnsworth, Contracts \u00a7 12.3. This situation would not require a court to consider the reason for breach."
     },
     {
@@ -1140,7 +1140,7 @@
             "optionD": "D. Yes, because otherwise the man would have to go on Medicaid."
         },
         "correct_answer": "B",
-        "domain": "Real Property II-D-3",
+        "domain": "Property",
         "explanation": "Answer B is correct. An area variance may be granted when the owner suffers a hardship as the land is currently zoned and the variance will protect the public interest. The man purchased a three-acre tract of land knowing that the applicable zoning law required any home to be surrounded by least two acres of vacant land. The man created the hardship by building the home on his land in a location that left an insufficient amount of land to satisfy the zoning law if he built a second home. The man cannot take advantage of the hardship he created. Answer A is incorrect. The fact that the land is used for residential purposes is irrelevant. An area variance may be granted in the residential setting but not when the hardship is self-created. Answer C is incorrect. The fact that the deed contained a covenant noting that the land can be used only for residential      purposes is irrelevant. The applicable zoning law allows residential use but limits it by the amount of vacant land surrounding any home. Answer D is incorrect. The owner\u2019s personal hardship is irrelevant. An area variance can be granted if the owner suffers a hardship, but he cannot take advantage of the hardship he created."
     },
     {
@@ -1153,7 +1153,7 @@
             "optionD": "D. Yes, regardless of the likelihood of a different outcome."
         },
         "correct_answer": "C",
-        "domain": "Criminal Law and Procedure V-E",
+        "domain": "Criminal_law",
         "explanation": "Answer C is correct because the prosecution has a constitutional obligation to turn over material exculpatory evidence, which includes evidence that would impeach a critical government witness. Here, the government\u2019s key witness had a conviction for an offense\u2014perjury\u2014that directly related to the witness\u2019s credibility. If the failure to disclose that information created a reasonable probability of a different outcome, then the appellate court should reverse the conviction. Answer A is incorrect because, although generally discovery is governed by state rules, the due process clause contains some core rights, such as the right to disclosure of critical exculpatory evidence. Answer B is incorrect because the scope of due process is not limited to proof of actual innocence. The government must disclose any evidence favorable to the defendant that could affect the outcome of the case. Answer D is incorrect because the due process clause requires disclosure only if the evidence is significant enough to affect the outcome. If the appellate court concludes that the outcome would not have been affected by disclosure of the witness\u2019s prior conviction, then there is no basis for reversal."
     },
     {
@@ -1166,7 +1166,7 @@
             "optionD": "D. Yes, to impeach the girlfriend\u2019s direct testimony and to prove the time the defendant left home on the day of the robbery."
         },
         "correct_answer": "C",
-        "domain": "Evidence I-D-1 / V-A-1",
+        "domain": "Evidence",
         "explanation": "Answer C is correct. Extrinsic evidence of the girlfriend\u2019s earlier statement may be admitted for the purpose of impeaching her direct testimony that the defendant was at home with her during the entire morning, since she was given an opportunity to explain or deny the statement. The statement is admissible for impeachment purposes only, though, because it would be hearsay not within any exception if offered to prove the truth of the statement concerning the time the defendant left home. Answer A is incorrect. FRE 613(b) permits proof of a witness\u2019s prior inconsistent statement through extrinsic evidence so long as the witness has an opportunity to explain or deny the statement. Here, the girlfriend had that opportunity and denied the statement, making proof of the statement by extrinsic evidence permissible. Answer B is incorrect. While the girlfriend\u2019s prior inconsistent statement is inadmissible hearsay if offered for its truth, it may be admitted for the non-hearsay purpose of impeaching the girlfriend. Answer D is incorrect. The girlfriend\u2019s prior inconsistent statement is admissible only for impeachment purposes. If offered to prove the truth of the statement concerning the time the defendant left home, it would be inadmissible hearsay not within any exception."
     },
     {
@@ -1179,7 +1179,7 @@
             "optionD": "D. The seller, because the daughter, not the seller, was primarily liable for payment of the commission."
         },
         "correct_answer": "C",
-        "domain": "Real Property III-A",
+        "domain": "Property",
         "explanation": "Answer C is correct. A real estate broker has a duty to make full disclosure of any interest the broker or a family member of the broker may have in the purchase of the property. The broker had a duty to disclose that the purchaser was a family member. Failure to make this disclosure breaches a fiduciary duty and results in the broker\u2019s losing the commission.      Answer A is incorrect. The broker failed to disclose that the purchaser was a family member and that she was going to make a profit from the resale of the building. Answer B is incorrect. It is irrelevant that the daughter agreed to purchase the building at the full listing price. A broker has a fiduciary duty to disclose any interest the broker or a family member of the broker may have in the purchase of the property. Answer D is incorrect. The commission is paid by the seller who signed the listing agreement with the broker. The daughter did not sign the listing agreement and was not liable for the commission."
     },
     {
@@ -1192,7 +1192,7 @@
             "optionD": "D. Yes, because the RV was obviously defective and the manufacturer should be held strictly liable for the damage caused by the defect."
         },
         "correct_answer": "A",
-        "domain": "Torts III",
+        "domain": "Torts",
         "explanation": "Answer A is correct. A rule of products liability law states that there is no recovery if a defect in a product causes damage only to the product itself (as opposed to personal injury, or injury to other property). This rule is sometimes referred to as the \u201ceconomic loss rule.\u201d In such cases, the owner of the damaged product is limited to contract remedies. Answer B is incorrect. The absence of negligence on the part of the manufacturer does not provide a basis for denying recovery to the couple on a strict products liability claim. Answer C is incorrect. Recovery on a strict products liability claim does not depend on whether the evidence supports an inference of manufacturer negligence. Answer D is incorrect for the reasons stated in the explanation for answer A."
     },
     {
@@ -1205,7 +1205,7 @@
             "optionD": "D. Yes, because the employee filed the motion promptly after learning of the mistake."
         },
         "correct_answer": "B",
-        "domain": "Civil Procedure V-C",
+        "domain": "Civil_procedure",
         "explanation": "Answer B is correct. A motion under Federal Rule of Civil Procedure 60(b)(1) must be made within one year from the entry of judgment. The employee\u2019s motion was untimely because it was made 15 months after entry of judgment. Answer A is incorrect. In appropriate circumstances, a court may grant relief under Rule 60(b)(1) for \u201cmistake, inadvertence, surprise, or excusable neglect.\u201d Answer C is incorrect. The court should deny the motion because it was filed more than one year after entry of judgment. Answer D is incorrect. The court should deny the motion because it was filed more than one year after entry of judgment. The one-year limit applies even if the party moves promptly after learning of the mistake for which relief would be sought."
     },
     {
@@ -1218,7 +1218,7 @@
             "optionD": "D. The man, because the bank\u2019s collateral has not been impaired and in fact has been enhanced."
         },
         "correct_answer": "B",
-        "domain": "Real Property IV-E-2",
+        "domain": "Property",
         "explanation": "Answer B is correct. Acceleration clauses are valid and can be triggered solely by nonpayment of the mortgage debt but also by other conditions in the mortgage. Here, the breached condition was waste, which occurred when the man tore down the one warehouse without the bank\u2019s permission. Answer A is incorrect. Courts generally do not imply conditions that could constitute a default. Here the court is merely recognizing the contract between the man and the bank.      Answer C is incorrect. Acceleration clauses can be triggered by conditions not directly related to the mortgage debt, such as by waste. Answer D is incorrect. It is irrelevant that the man\u2019s actions improved the value of the property. The bank\u2019s security interest attached to the land and two warehouses as they existed when the mortgage was signed."
     },
     {
@@ -1231,7 +1231,7 @@
             "optionD": "D. The dealership is neither directly liable nor vicariously liable."
         },
         "correct_answer": "D",
-        "domain": "Torts II-F-2",
+        "domain": "Torts",
         "explanation": "Answer D is correct. Because the dealership\u2019s duty of care was delegable, because the dealership was not negligent in hiring the EMS firm, and because the EMT was not an employee of the dealership, there is no basis for holding the dealership liable, whether directly or vicariously. Answer A is incorrect. The EMS firm was an independent contractor, not an employee of the dealership, so there can be no vicarious liability, and we know that the dealership exercised due care in selecting the EMS firm, so therefore there is also no basis for direct liability. Answer B is incorrect. The duty to provide competent medical care was properly delegated to the EMS firm. Answer C is incorrect. Because the EMT was an employee only of the EMS firm, not the dealership, any carelessness by the EMT could be imputed only to the EMS firm."
     },
     {
@@ -1244,7 +1244,7 @@
             "optionD": "D. Yes, because an appeals court may correct plain error affecting substantial rights."
         },
         "correct_answer": "D",
-        "domain": "Criminal Law and Procedure V-I",
+        "domain": "Criminal_law",
         "explanation": "Answer D is correct because, under the \u201cplain error\u201d rule, an appellate court may remedy an error that was plain or obvious if that error affected substantial rights. Here, the error was obvious, of constitutional dimension, and likely prejudicial. Consequently, the court of appeals has authority to reverse the conviction. Answer A is incorrect because, although a defendant\u2019s failure to object can change the standard of appellate review, it does not foreclose review. Answer B is incorrect because the plain-error rule allows an appellate court to remedy serious and obvious errors on direct appeal. For such errors, the defendant is not required to claim or prove ineffective assistance of counsel. Answer C is incorrect because a defendant is, in a sense, \u201cpenalized\u201d by an attorney\u2019s failure to object. Because the attorney did not object, the defendant must now meet the stringent requirements of the plain-error standard. Had the error been preserved by a contemporaneous objection, the standard of review would be more favorable to the defendant."
     },
     {
@@ -1257,7 +1257,7 @@
             "optionD": "D. Nothing, because the seller had a duty not to complete the manufacture of the machine after the buyer repudiated."
         },
         "correct_answer": "A",
-        "domain": "Contracts and Sales V-A",
+        "domain": "Contracts",
         "explanation": "Answer A is correct. If a buyer repudiates a contract for unfinished goods, the seller may in the exercise of reasonable commercial judgment proceed in any reasonable manner, including finishing the goods for resale. UCC \u00a7 2- 704(2). The seller\u2019s damages in that situation are the difference between the contract price and the resale price. UCC \u00a7 2- 706(1). Here that amount is $8,000. Answer B is incorrect. As discussed above, after repudiation by a buyer, the seller has the alternative of finishing the goods for resale. Answer C is incorrect. As discussed above, after repudiation by a buyer, the seller has the alternative of finishing the goods for resale rather than seeking costs and lost profit. Note that this has the effect of reducing the seller\u2019s damages.      Answer D is incorrect. In the common law case of Rockingham County v. Luten Bridge Co., 35 F.2d 301 (4th Cir. 1929), the court held that the seller had a duty not to complete a bridge after the buyer repudiated. But UCC Article Two has a different rule, because unlike a completed bridge, completed goods can be resold to avoid or reduce loss."
     },
     {
@@ -1270,7 +1270,7 @@
             "optionD": "D. The psychiatrist\u2019s testimony is inadmissible in its entirety, because an expert witness may not testify about a criminal defendant\u2019s mental state."
         },
         "correct_answer": "C",
-        "domain": "Evidence II-D-5 / II-D-3",
+        "domain": "Evidence",
         "explanation": "Answer C is correct. The first part of the psychiatrist\u2019s proposed testimony is admissible, but the second part\u2014that the defendant was legally insane\u2014is inadmissible. Under FRE 704(b), an expert in a criminal case may not state an opinion about whether a defendant was legally insane at the time of the alleged crime. Such testimony is inadmissible because it is an opinion about whether the defendant had a mental state that constitutes a defense. Answer A is incorrect. As explained above, under FRE 704(b), an expert in a criminal case may not state an opinion about whether a defendant was legally insane at the time of the alleged crime. Thus, the first part of the psychiatrist\u2019s proposed testimony is admissible, as it will be helpful to the jury, but the second part is not. Answer B is incorrect. FRE 704(b)\u2019s prohibition on expert testimony about a defendant\u2019s mental state applies to both parties\u2019 experts in a criminal case. Answer D is incorrect. An expert may testify that a defendant suffered from schizophrenia but may not testify that the defendant was legally insane at the time of the alleged crime. The latter testimony is barred by FRE 704(b)."
     },
     {
@@ -1283,7 +1283,7 @@
             "optionD": "D. Yes, because the demonstrators\u2019 conduct constitutes protected speech and the ordinance is not narrowly tailored to further a substantial government interest."
         },
         "correct_answer": "B",
-        "domain": "Constitutional Law IV-F-2-b",
+        "domain": "Constitutional_law",
         "explanation": "Answer B is correct. Although the Supreme Court has held that nude dancing is expressive conduct protected by the First Amendment, the Court nevertheless has upheld bans on nude dancing in particular and public nudity more generally. The ordinance here is a content-neutral prohibition because it does not target any message conveyed by public nudity. Answer A is incorrect. Demonstrating in the city park, which is a traditional public forum, is expressive conduct protected by the First Amendment. In addition, the Supreme Court has held that nude dancing is expressive conduct protected by the First Amendment. However, the ordinance here is a content-neutral prohibition because it does not target any message conveyed by public nudity. Answer C is incorrect. While it is true that the city park is a public forum, the ordinance prohibiting public nudity is a valid restriction on the use of the park by demonstrators. The ordinance here is a content-neutral prohibition. Answer D is incorrect. Although the Supreme Court has held that nude dancing is expressive conduct protected by the First Amendment, the Court nevertheless has held that cities may ban nude dancing in particular and public nudity more generally. The ordinance here is a content-neutral prohibition because it does not target any message conveyed by public nudity."
     },
     {
@@ -1296,7 +1296,7 @@
             "optionD": "D. The son owns the land, because the remainder was not alienable."
         },
         "correct_answer": "B",
-        "domain": "Real Property V-E",
+        "domain": "Property",
         "explanation": "Answer B is correct. While the daughter did not own the fee when she purported to convey the fee to the purchaser, the purchaser subsequently acquired the fee when, after the daughter conveyed to the purchaser, the son conveyed his remainder interest to the daughter. This is due to the doctrine of \u201cestoppel by deed\u201d or \u201cafter-acquired property.\u201d Under this doctrine, the portion of the title the daughter did not own when she purported to convey a fee simple to the purchaser (the son\u2019s remainder interest) automatically passed through to the purchaser when the daughter acquired it from the son.      Answer A is incorrect. The daughter did not intend or purport to convey a life estate pur autre vie to the purchaser; rather she purported to convey a fee. And, even if a life estate were conveyed, the husband would have no claim because the daughter\u2019s life estate (and the purchaser\u2019s life estate pur autre vie) would have terminated at the daughter\u2019s death. Answer C is incorrect. Here again, the daughter did not purport to convey a life estate to the purchaser and even if she had, it would have terminated at her death. Answer D is incorrect. Remainder interests are alienable."
     }
 ]
