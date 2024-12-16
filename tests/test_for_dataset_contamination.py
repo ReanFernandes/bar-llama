@@ -1,5 +1,6 @@
 """
 Test how much overlap exists between the train and test set, and remove question from the train set that are found in test.
+Note: As of 15.12.2024, all the samples have been validated and there is no overlap between train and test.
 """
 
 from rapidfuzz import fuzz

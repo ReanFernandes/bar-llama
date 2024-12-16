@@ -292,12 +292,12 @@ Response:
                 if self.cfg["include_system_prompt"]:
                     prompt_template = f"""{self.system}\n{input_prompt}"""
                 else:
-                    prompt_template = f"""{self.system}\n{input_prompt}"""
+                    prompt_template = f"""{input_prompt}"""
             else:
                 if self.cfg["include_system_prompt"]:
                     prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
                 else:
-                    prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
+                    prompt_template = f"""[INST]\n{input_prompt}[/INST]"""
         else:
             raise ValueError(f"Invalid mode: {mode}")
 

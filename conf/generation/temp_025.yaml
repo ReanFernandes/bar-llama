@@ -1,7 +1,8 @@
-do_sample: True
-top_k: 10
-num_return_sequences: 1
-return_full_text: False
-max_new_tokens: 600
-temperature: 0.25  # main factor to be tested over
+kwargs:
+  do_sample: True
+  top_k: 10
+  num_return_sequences: 1
+  return_full_text: False
+  max_new_tokens: 600
+  temperature: 0.25  # main factor to be tested over
 label: temp_025

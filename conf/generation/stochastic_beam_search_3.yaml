@@ -1,5 +1,7 @@
-do_sample: True
-num_beams: 3
-max_new_tokens: 600
+kwargs:
+  do_sample: True
+  num_beams: 3
+  max_new_tokens: 600
+  return_full_text: False
+
 label: stochastic_beam_search_3
-return_full_text: False
