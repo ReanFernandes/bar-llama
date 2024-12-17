@@ -4,7 +4,6 @@ import json
 import os
 import pandas as pd
 import itertools
-
 class ResponseHandler():
     def __init__(self,config):
         """
@@ -15,11 +14,9 @@ class ResponseHandler():
     
         self.cfg = config
         # logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-        self.score = 0
-        self.count = 0
+        self.count = 0 # counter which is incremented for every response that is assessed, used to log the current question number if any processing errors for that question
         self.response_dump = []
         self.stats = {
-            "total_correct":0,
             "total_processed":0,
             "incompletely_proccessed":{
                 "Criminal_law":{"domain":0,"chosen_option_label":0,"Legal_concept":0,"Fact_analysis":0,"Rule_application":0,"Legal_conclusion":0},
@@ -323,10 +320,7 @@ class ResponseHandler():
         response_dict = self.parse(response["response"])
         response["response"] = response_dict
         self.response_dump.append(response)
-        #currently, just match the chosen option
-        if response_dict["chosen_option_label"] == response["ground_truth"]["correct_answer"]:
-            self.stats["total_correct"]+=1 #for logging
-            self.score+=1 #redundant
+        
         
     def dump_to(self, file_path):
         """
@@ -345,11 +339,10 @@ class ResponseHandler():
         logging.info(f"Dumped the stats to {file_path}")
 
 
-import json
-import re
+
 
 class ResponseGrader:
-    def __init__(self):
+    def __init__(self, comparison_dict):
         # Malformed counts for logging
         self.malformed_count = {'malformed_label': 0, 'malformed_domain': 0}
 
@@ -380,9 +373,20 @@ class ResponseGrader:
         # Confidence tracking for domains
         self.domain_prediction_counts = {domain: 0 for domain in self.domains}
 
-        # Load domain mapping from JSON
-        with open("utils/bar_domain_mapping.json", "r") as f:
+        # Get the directory containing this script (response_utils.py)
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+
+        # Construct the path to domain_mapping.json
+        domain_mapping_path = os.path.join(script_dir, "bar_domain_mapping.json")
+
+        # Check if the file exists and load the domain mapping
+        if not os.path.exists(domain_mapping_path):
+            raise FileNotFoundError(f"Domain mapping file not found at: {domain_mapping_path}")
+
+        with open(domain_mapping_path, "r") as f:
             self.domain_mapping = json.load(f)
+        
+        self.comparison_dict = comparison_dict
 
     def map_domain(self, domain):
         """Map domain names to standardized versions using a preloaded mapping."""
@@ -475,7 +479,7 @@ class ResponseGrader:
             for domain, count in self.domain_prediction_counts.items()
         }
 
-    def finalise_metrics(self, comparison_dict):
+    def finalise_metrics(self):
         """Calculate and finalize metrics, adding them to the comparison dictionary."""
         # Overall accuracies
         label_accuracy = self.correct_predictions / self.total_predictions if self.total_predictions > 0 else 0
@@ -494,7 +498,7 @@ class ResponseGrader:
         domain_confidence = self.calculate_domain_confidence()
 
         # Add metrics to comparison dictionary
-        comparison_dict['metrics'] = {
+        self.comparison_dict['metrics'] = {
             'label_accuracy': label_accuracy,
             'misclassification_rate': misclassification_rate,
             'combined_accuracy': combined_accuracy,
@@ -509,4 +513,10 @@ class ResponseGrader:
             **self.error_types  # Add error pattern analysis
         }
 
-        return comparison_dict
+        return self.comparison_dict 
+
+    def dump_metrics(self, file_path):
+        """Dump the metrics to a file."""
+        with open(file_path, "w") as f:
+            json.dump(self.comparison_dict, f, indent=4)
+        logging.info(f"Dumped the metrics to {file_path}")

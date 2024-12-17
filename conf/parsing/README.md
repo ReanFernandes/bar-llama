@@ -1,0 +1,1 @@
+This config might become redundant since the current eval code will use the same eval configs to infer experiment config related params ( prompt type, expl type, resp format and resp type) 
