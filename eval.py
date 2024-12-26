@@ -23,7 +23,9 @@ from huggingface_hub import login, snapshot_download
 from omegaconf import DictConfig
 from torch.utils.data import DataLoader
 from transformers import (AutoModelForCausalLM, AutoTokenizer,
-                          BitsAndBytesConfig, pipeline)
+                          BitsAndBytesConfig, pipeline, set_seed)
+import random 
+import numpy as np
 from utils.dataloader import QuestionDataset
 from utils.prompt_utils import PromptHandler
 from utils.response_utils import ResponseHandler, ResponseGrader
@@ -73,8 +75,26 @@ def append_metrics_to_csv(metrics_dict):
         except Exception as e:
             print(f"Error while writing to master CSV: {e}")
 
+def set_global_seed(seed):
+    """
+    Set global seed for reproducibility.
+    """
+    random.seed(seed)
+    np.random.seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(seed)
+        torch.cuda.manual_seed_all(seed)
+        # Ensure deterministic behavior in PyTorch (optional, might impact performance)
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
+    set_seed(seed)
+
 @hydra.main(config_path="conf", config_name="config", version_base=None)
 def main(cfg: DictConfig):
+    #-----------------set global seed-----------------
+    seed = cfg.seeds.seed
+    logging.info(f"Setting global seed to {seed}")
+    set_global_seed(seed)
     #-----------------Logging and configuration related information-----------------
     
     logging.info(f"Running evaluation of the {cfg.eval.training_status} model on the {cfg.evaluation_dataset.dataset_label}")
@@ -147,7 +167,7 @@ def main(cfg: DictConfig):
 
     ### Level 1 : Number of training samples(and optionally number of domains, but not testing for that currently) : For the timebeing i do not care about testing epoch wise results, so directly skipping it and movbing on to num samples
 
-    raw_save_path = os.path.join(raw_save_path, cfg.dataset.dataset_label) # This is basically  ${hydra:runtime.cwd}/model_outputs/raw_responses/<seed_label>/<dataset_label>
+    raw_save_path = os.path.join(raw_save_path, cfg.dataset.dataset_label) # model has been trained on a certain dataset and that datasets label is used
 
     ## Level 2 : Training and quantisation status :  results in   ${hydra:runtime.cwd}/model_outputs/raw_responses/<seed_label>/<dataset_label>/<training_status>_<quantisation_status>
     train_quant = cfg.eval.training_status + '_' + cfg.eval.quantisation_status
