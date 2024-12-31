@@ -12,5 +12,6 @@ defaults:
   - generation: default_generation
   - parsing: default_parse
 
-# output_path : ${hydra:runtime.cwd}/trained_model_output/${train.new_model_name}
-# output_path : /work/dlclarge1/fernandr-thesis_workspace/thesis_repo/restructured_code/model_outputs/test_set_SFT
+# using absolute paths here, need to change with rel paths at some point
+distilled_dataset_sft_path: /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/seed_dataset/distilled_dataset.json
+raw_dataset_sft_path: /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/seed_dataset/raw_dataset.json

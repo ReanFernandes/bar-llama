@@ -1,6 +1,6 @@
 import json
 import textwrap
-
+import logging
 
 class PromptHandler:
     '''
@@ -38,6 +38,7 @@ class PromptHandler:
             self.example = self._get_example()
             # append the example to the system prompt
             self.system += self.example
+        logging.info(f"Prompt Handler initialized with configuration: {self.cfg}")
         self.prompt_dict = [] # list to store the prompts if we plan to do that (for training data putting together thing)
     def _set_system_prompt(self):
         '''

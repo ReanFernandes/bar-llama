@@ -1,5 +1,14 @@
 train_config_label : <response_format>_<response_type>_<prompt_type>_<explanation_type>
-dataset_path: ${hydra:runtime.cwd}/dataset/train_sets/${train.train_config_label}.json
+
+prompt: 
+  prompt_type: <prompt_type>
+  example_path: ${hydra:runtime.cwd}/prompt/examples/<explanation_type>_example.json # this gets ignored if prompt_type is set to zero_shot
+  explanation_type: <explanation_type>
+  response_type: <response_type>
+  response_format: <response_format>
+  store_prompt: True # true if compiling trainset, false if using for eval ( so that there is no need to store the prompt as a batch)
+  system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system_${train.prompt.response_format}_${train.prompt.response_type}_${train.prompt.explanation_type}.txt # this thing is completed in the prompt handler to put together the actual system prompt file name
+  include_system_prompt: True # Set to true if we want the instruction to be there in the system prompt and False otherwise
 
 wandb:
   model_id: ${model.model_label}_${train.train_config_label}

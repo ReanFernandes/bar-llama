@@ -15,7 +15,7 @@ Steps for fine-tuning
 """
 import json
 import os
-from peft import LoraConfig, PeftModel
+from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 import hydra
 import torch
 from huggingface_hub import login, snapshot_download
@@ -23,6 +23,8 @@ from omegaconf import DictConfig
 from torch.utils.data import DataLoader
 from transformers import (AutoModelForCausalLM, AutoTokenizer,
                           BitsAndBytesConfig, pipeline, set_seed)
+from omegaconf import DictConfig, OmegaConf
+
 import random 
 import numpy as np
 from utils.dataloader import QuestionDataset
@@ -56,7 +58,13 @@ def main(cfg: DictConfig):
     set_global_seed(cfg.seeds.seed)
     logging.info(f"Global seed set to {cfg.seeds.seed}")
 
-
+    #---------------------decide if doing qlora or lora ---------------------
+    # set this flag as false if we are not quantising the model
+    use_quantisation = False
+    if use_quantisation:
+        logging.warning("Quantisation will be done on loaded model, THIS IS A QLORA FINE-TUNING RUN")
+    elif not use_quantisation:
+        logging.warning("No quantisation will be done on loaded model, THIS IS A LORA FINE-TUNING RUN")
 
     #--------------------- Logging and configuration related info---------------------
      
@@ -65,4 +73,80 @@ def main(cfg: DictConfig):
      
     logging.info(f"Running Fine-tuning on the {cfg.training_dataset.dataset_label} dataset")
     logging.info(f"Current training config is : \n Prompt type : {cfg.training.prompt.prompt_type} \n Response type : {cfg.training.prompt.response_type} \n Explanation type : {cfg.training.prompt.explanation_type} \n Response Format : {cfg.training.prompt.response_format} ")
+    
+    #--------------------- Load the training dataset ---------------------# 
+    # the training dataset config contains a hardcoded path to a deprecated dataset, and we will load the dataset 
+    # based on the explanation type, since there are two main training sets, one which is raw and the other which is distilled
+    try: 
+        if cfg.train.prompt.explanation_type == "structured": #override dataset path
+            cfg.dataset.dataset_path = cfg.disilled_dataset_sft_path
+        elif cfg.train.prompt.explanation_type == "unstructured":
+            cfg.dataset.dataset_path = cfg.raw_dataset_sft_path
+    except Exception as e:
+        logging.error(f"Error loading the dataset : {e},  using default Distilled dataset path, stop run if necessary")
+        raise e
+
+    # create dataset instance and prompt handler instance
+    unformatted_dataset = QuestionDataset(cfg.dataset) 
+    promptor = PromptHandler(cfg.train.prompt)
+
+    for data_item in unformatted_dataset:
+        # run over loop to populate the prompt_dict for the training ready samples
+        promptor.create_prompt(question_item=data_item,
+                                mode="train", #when set to "train", the model format for training text is use to create the prompt
+                                store_prompt=True) # this stores the prompt to the prompt_dict of the class
+
+    #copy over the prompt_dict to the train_set,  at this point the dataset should look like a colleciton of {"text": "<training_question_sample_text>"}             
+    train_set = promptor.prompt_dict
+
+    # create the dataloader with custom collate function
+    train_loader =  DataLoader(train_set, collate_fn=unformatted_dataset.collate_fn, **cfg.dataloader)
+
+
+    #--------------------- Load the model and tokenizer ---------------------#
+    access_token = os.getenv("HUGGINGFACE_TOKEN")
+    login(token=access_token)
+
+    # Load tokenizer. Here we add the pad token to step away from the usual strategy of setting the pad token to the end token, this lead
+    # to the model not learning when to stop generating text
+    tokenizer = AutoTokenizer.from_pretrained(cfg.tokenizer.model_id, **cfg.tokenizer['kwargs'])
+    tokenizer.add_special_tokens({'pad_token': '[PAD]'}) # trying to folow llama 2's style, but in theory can be anything
+    logging.info(f"Tokenizer {cfg.tokenizer.model_id} loaded successfully")
+
+    # Load model. Note to self: Previously used quantised lora, skipping that now. Hopefully this works
+    if use_quantisation:
+        bnb_config = BitsAndBytesConfig(**cfg.quantization)
+        model = AutoModelForCausalLM.from_pretrained(cfg.model.model_id, quantization_config=bnb_config)
+        logging.info(f"Quantised model {cfg.model.model_id} loaded successfully")
+    elif not use_quantisation :
+        model = AutoModelForCausalLM.from_pretrained(cfg.model.model_id)
+        logging.info(f"Model {cfg.model.model_id} loaded successfully")
+
+    # lengthen the models vocabulary to match the tokenizer
+    model.resize_token_embeddings(len(tokenizer))
+    model.config.use_cache=False #KV cache not used during fine_tuning, memory will be use needlessly otherwise
+    model.config.pad_token_id = tokenizer.pad_token_id
+    # enable gradient checkpointing
+    model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant":False}) # voodoo stuff, was needed for earlier iterations but might not be needed here, still keeping it for testing before final run
+
+    if use_quantisation:
+        model = prepare_model_for_kbit_training(model,bnb_config)
+        logging.info("Model prepared for kbit training")
+    
+    #--------------------- Load the lora config ---------------------#
+    target_modules = OmegaConf.to_container(cfg.training.lora_config.target_modules)
+    lora_config = LoraConfig(
+                r=128,
+                lora_alpha=cfg.training.lora_config.lora_alpha,
+                lora_dropout=cfg.training.lora_config.lora_dropout,
+                bias=cfg.training.lora_config.bias,
+                target_modules=target_modules,
+                task_type=cfg.training.lora_config.task_type
+            )
+    logging.info(f"Lora config loaded, following are the details : \n {lora_config}")
+    model = get_peft_model(model, lora_config)
+    logging.info("Lora adapter added to model")
+    model.print_trainable_params()
+
+    #--------------------- C
     
