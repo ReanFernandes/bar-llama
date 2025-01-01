@@ -6,3 +6,4 @@ Answer the following Multistate Bar Exam question. Provide the following informa
 4. Fact Analysis: (A breakdown of the relevant facts presented in the question)
 5. Rule Application: (How the legal concept applies to the facts in the question)
 6. Legal Conclusion: (A concise statement explaining why the chosen option is the correct answer)
+

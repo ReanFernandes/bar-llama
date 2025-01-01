@@ -3,3 +3,4 @@ Answer the following Multistate Bar Exam question. Provide the following informa
 1. Chosen Domain: (The relevant legal domain for this question)
 2. Chosen Option Label: (The letter corresponding to the correct answer choice)
 3. Explanation: (Analysis of the facts supporting the best possible answer choice for the scenario, taking into account relevant laws and principles)
+

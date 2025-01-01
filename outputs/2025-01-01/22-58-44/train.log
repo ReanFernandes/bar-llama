@@ -1,0 +1,6 @@
+[2025-01-01 22:58:51,277][root][INFO] - Global seed set to 21
+[2025-01-01 22:58:55,695][root][WARNING] - No quantisation will be done on loaded model, THIS IS A LORA FINE-TUNING RUN
+[2025-01-01 22:58:59,006][root][WARNING] - Following flags are set for the run : 
+ Use Quantisation before fine-tuning : False 
+ Perform Validation on epoch end : False
+[2025-01-01 22:59:00,435][root][INFO] - Running Fine-tuning on the all_domains_1_samples dataset

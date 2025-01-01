@@ -39,7 +39,7 @@ class QuestionDataset(Dataset):
         logging.info(f"Indexing complete, sampling of questions set to {self.config['randomise_questions']}")
         self._select_questions(all_data)
         self.len = self.__len__()
-        logging.info(f"Questions selected, dataset contains {self.len} questions with {self.len/(self.domain_indices)} questions per domain")
+        logging.info(f"Questions selected, dataset contains {self.len} questions with {self.len/(len(self.domain_indices))} questions per domain")
         
 
     def _index_all_questions(self, all_data):

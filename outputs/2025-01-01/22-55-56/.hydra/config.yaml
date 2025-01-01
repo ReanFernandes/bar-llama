@@ -1,0 +1,128 @@
+distilled_dataset_sft_path: /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/seed_dataset/distilled_dataset.json
+raw_dataset_sft_path: /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/seed_dataset/raw_dataset.json
+dataset:
+  dataset_path: ${hydra:runtime.cwd}/dataset/seed_dataset/distilled_dataset.json
+  domains:
+  - all
+  num_questions: 1
+  randomise_questions: true
+  domain_label: all_domains
+  num_sample_label: '1'
+  dataset_label: all_domains_1_samples
+evaluation_dataset:
+  dataset_path: ${hydra:runtime.cwd}/dataset/test_sets/test_4_out.json
+  dataset_label: val_set_4
+  domains:
+  - all
+  num_questions: None
+  randomise_questions: false
+dataloader:
+  batch_size: 1
+  shuffle: false
+  num_workers: 1
+  drop_last: false
+  num_train_samples: None
+prompt:
+  prompt_type: few_shot
+  example_path: ${hydra:runtime.cwd}/prompt/examples/structured_example.json
+  explanation_type: structured
+  response_type: answer_first
+  response_format: json
+  store_prompt: false
+  system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system_${prompt.response_format}_${prompt.response_type}_${prompt.explanation_type}.txt
+  include_system_prompt: true
+model:
+  model_id: meta-llama/Llama-2-7b-hf
+  model_label: llama2
+train:
+  train_config_label: json_answer_first_few_shot_structured
+  prompt:
+    prompt_type: few_shot
+    example_path: ${hydra:runtime.cwd}/prompt/examples/structured_example.json
+    explanation_type: structured
+    response_type: answer_first
+    response_format: json
+    store_prompt: true
+    system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system_${train.prompt.response_format}_${train.prompt.response_type}_${train.prompt.explanation_type}.txt
+    include_system_prompt: true
+  wandb:
+    model_id: ${model.model_label}_${train.train_config_label}
+    project_name: bar_llama
+    run_name: fine_tune_${train.train_config_label}
+  lora_config:
+    r: 8
+    lora_alpha: 16
+    bias: none
+    lora_dropout: 0.5
+    task_type: CAUSAL_LM
+    target_modules:
+    - q_proj
+    - up_proj
+    - o_proj
+    - k_proj
+    - down_proj
+    - gate_proj
+    - v_proj
+  training_args:
+    output_dir: ${hydra:runtime.cwd}/train_checkpoints/${train.train_config_label}
+    num_train_epochs: 5
+    per_device_train_batch_size: 1
+    gradient_checkpointing: true
+    gradient_accumulation_steps: 1
+    optim: paged_adamw_32bit
+    save_steps: 500
+    logging_steps: 10
+    learning_rate: 0.0002
+    weight_decay: 0.01
+    fp16: false
+    bf16: false
+    max_grad_norm: 0.3
+    max_steps: -1
+    group_by_length: true
+    lr_scheduler_type: constant
+    report_to: wandb
+  model_adapter_name: ${model.model_label}_${train.train_config_label}
+  lora_adapter_path: ${hydra:runtime.cwd}/sft_adapters
+eval:
+  training_status: untrained
+  quantisation_status: full_model
+  train_config_label: json_answer_first_few_shot_structured
+  model_label: ${model.model_label}
+  eval_model_name: ${eval.model_label}_${eval.train_config_label}
+  mode: eval
+  pipeline_available: None
+  lora_adapter_path: ${hydra:runtime.cwd}/sft_adapters
+  output_directory: ${hydra:runtime.cwd}/model_outputs/raw_responses
+  prompt:
+    system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system
+    prompt_type: few_shot
+    example_path: ${hydra:runtime.cwd}/prompt/examples/structured_example.json
+    explanation_type: structured
+    response_type: answer_first
+    response_format: json
+    store_prompt: false
+    include_system_prompt: true
+tokenizer:
+  model_id: meta-llama/Llama-2-7b-hf
+  kwargs:
+    padding_side: right
+    eos_token: </s>
+    bos_token: <s>
+quantization:
+  load_in_4bit: true
+  bnb_4bit_quant_type: nf4
+  use_nested_quant: false
+  bnb_4bit_compute_dtype: float16
+generation:
+  kwargs:
+    do_sample: true
+    top_k: 10
+    num_return_sequences: 1
+    return_full_text: false
+    max_new_tokens: 600
+    temperature: 0.6
+  label: temp_06
+parsing:
+  base_model_output_dir: ${eval.output_directory}
+  parsed_output_dir: ${hydra:runtime.cwd}/parsed_outputs/${eval.training_status}_${eval.quantisation_status}/${eval.eval_model_name}
+  parsed_statistics: ${hydra:runtime.cwd}/parsing_statistics/${eval.training_status}_${eval.quantisation_status}/${eval.eval_model_name}

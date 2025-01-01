@@ -9,4 +9,3 @@ Respond to the Multistate Bar Exam question with a detailed explanation in the f
 ## Chosen Option
 *The letter corresponding to the correct answer choice.* 
 
-

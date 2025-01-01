@@ -72,15 +72,15 @@ def main(cfg: DictConfig):
     logging.warning(f"Following flags are set for the run : \n Use Quantisation before fine-tuning : {use_quantisation} \n Perform Validation on epoch end : {run_validation_on_epoch_end}")
     #--------------------- Logging and configuration related info---------------------
      
-    logging.info(f"Running Fine-tuning on the {cfg.training_dataset.dataset_label} dataset")
-    logging.info(f"Current training config is : \n Prompt type : {cfg.training.prompt.prompt_type} \n Response type : {cfg.training.prompt.response_type} \n Explanation type : {cfg.training.prompt.explanation_type} \n Response Format : {cfg.training.prompt.response_format} ")
+    logging.info(f"Running Fine-tuning on the {cfg.dataset.dataset_label} dataset")
+    logging.info(f"Current training config is : \n Prompt type : {cfg.train.prompt.prompt_type} \n Response type : {cfg.train.prompt.response_type} \n Explanation type : {cfg.train.prompt.explanation_type} \n Response Format : {cfg.train.prompt.response_format} ")
     
     #--------------------- Load the training dataset ---------------------# 
     # the training dataset config contains a hardcoded path to a deprecated dataset, and we will load the dataset 
     # based on the explanation type, since there are two main training sets, one which is raw and the other which is distilled
     try: 
         if cfg.train.prompt.explanation_type == "structured": #override dataset path
-            cfg.dataset.dataset_path = cfg.disilled_dataset_sft_path
+            cfg.dataset.dataset_path = cfg.distilled_dataset_sft_path
         elif cfg.train.prompt.explanation_type == "unstructured":
             cfg.dataset.dataset_path = cfg.raw_dataset_sft_path
     except Exception as e:
@@ -180,3 +180,6 @@ def main(cfg: DictConfig):
 
     )
     
+
+if __name__ == "__main__":
+    main()
