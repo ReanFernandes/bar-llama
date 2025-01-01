@@ -1,7 +1,7 @@
 defaults:
   - _self_
   - dataset: default_dataset
-  - evaluation_dataset: val_set_1
+  - evaluation_dataset: val_set_4 # toughest one out of 4 val sets
   - dataloader: default_dataloader
   - prompt : default_prompt
   - model: llama2

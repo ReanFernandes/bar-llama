@@ -58,18 +58,19 @@ def main(cfg: DictConfig):
     set_global_seed(cfg.seeds.seed)
     logging.info(f"Global seed set to {cfg.seeds.seed}")
 
-    #---------------------decide if doing qlora or lora ---------------------
-    # set this flag as false if we are not quantising the model
+    #---------------------setting flags for run, need to set these for the code to run properly  ---------------------
+    # set this flag as false if we are not quantising the model prior to training
     use_quantisation = False
-    if use_quantisation:
+    if use_quantisation: # this will be the QLORA training case, in case LORA breaks things
         logging.warning("Quantisation will be done on loaded model, THIS IS A QLORA FINE-TUNING RUN")
-    elif not use_quantisation:
+    elif not use_quantisation: # LORA training case
         logging.warning("No quantisation will be done on loaded model, THIS IS A LORA FINE-TUNING RUN")
 
+    # for the timebeiing i wont work on this becauae it seems too much work, will include it at the end of the code testing
+    run_validation_on_epoch_end = False # every epoch, the inference will be run on the latest checkpoint, and results will be logged
+
+    logging.warning(f"Following flags are set for the run : \n Use Quantisation before fine-tuning : {use_quantisation} \n Perform Validation on epoch end : {run_validation_on_epoch_end}")
     #--------------------- Logging and configuration related info---------------------
-     
-    logging.info(f"Running evaluation of the {cfg.eval.training_status} model on the {cfg.evaluation_dataset.dataset_label}")
-    logging.info(f"Current evaluation config is : \n Prompt type : {cfg.eval.prompt.prompt_type} \n Response type : {cfg.eval.prompt.response_type} \n Explanation type : {cfg.eval.prompt.explanation_type} \n Response Format : {cfg.eval.prompt.response_format} ")
      
     logging.info(f"Running Fine-tuning on the {cfg.training_dataset.dataset_label} dataset")
     logging.info(f"Current training config is : \n Prompt type : {cfg.training.prompt.prompt_type} \n Response type : {cfg.training.prompt.response_type} \n Explanation type : {cfg.training.prompt.explanation_type} \n Response Format : {cfg.training.prompt.response_format} ")
@@ -86,7 +87,7 @@ def main(cfg: DictConfig):
         logging.error(f"Error loading the dataset : {e},  using default Distilled dataset path, stop run if necessary")
         raise e
 
-    # create dataset instance and prompt handler instance
+    # create train dataset instance and prompt handler instance
     unformatted_dataset = QuestionDataset(cfg.dataset) 
     promptor = PromptHandler(cfg.train.prompt)
 
@@ -100,8 +101,12 @@ def main(cfg: DictConfig):
     train_set = promptor.prompt_dict
 
     # create the dataloader with custom collate function
-    train_loader =  DataLoader(train_set, collate_fn=unformatted_dataset.collate_fn, **cfg.dataloader)
+    #TODO: Complete this when adding validation callback
+    if run_validation_on_epoch_end:
+        pass
+        
 
+    #--------------------- Load the evaluation dataset ---------------------#
 
     #--------------------- Load the model and tokenizer ---------------------#
     access_token = os.getenv("HUGGINGFACE_TOKEN")
@@ -147,6 +152,12 @@ def main(cfg: DictConfig):
     model = get_peft_model(model, lora_config)
     logging.info("Lora adapter added to model")
     model.print_trainable_params()
+    #--------------------- Create the pathing logic to store the model ---------------------#
+    
+    #--------------------- Create training arguments ---------------------#
 
-    #--------------------- C
+    training_args = TrainArguments(
+                  run_name = cfg.train.wandb.run_name,
+                  output_dir = cfg.train.training_args 
+    )
     
