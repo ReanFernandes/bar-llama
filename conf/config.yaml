@@ -5,8 +5,8 @@ defaults:
   - dataloader: default_dataloader
   - prompt : default_prompt
   - model: llama2
-  - train: none_none_zero_shot_structured
-  - eval: none_none_zero_shot_structured
+  - train: json_answer_first_few_shot_structured
+  - eval: njson_answer_first_few_shot_structured
   - tokenizer: llama2
   - quantization: quantization
   - generation: default_generation

@@ -51,4 +51,4 @@ training_args:
   report_to: "wandb"
 
 model_adapter_name: ${model.model_label}_${train.train_config_label}
-lora_adapter_path: ${hydra:runtime.cwd}/sft_adapters/${train.model_adapter_name}
+lora_adapter_path: ${hydra:runtime.cwd}/sft_adapters # this is the raw path, the final sys path will be resolved while the code runs

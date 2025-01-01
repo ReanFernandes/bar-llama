@@ -22,7 +22,7 @@ from huggingface_hub import login, snapshot_download
 from omegaconf import DictConfig
 from torch.utils.data import DataLoader
 from transformers import (AutoModelForCausalLM, AutoTokenizer,
-                          BitsAndBytesConfig, pipeline, set_seed)
+                          BitsAndBytesConfig, TrainingArguments, set_seed)
 from omegaconf import DictConfig, OmegaConf
 
 import random 
@@ -153,11 +153,30 @@ def main(cfg: DictConfig):
     logging.info("Lora adapter added to model")
     model.print_trainable_params()
     #--------------------- Create the pathing logic to store the model ---------------------#
-    
+    # The  starting point is ${hydra:runtime.cwd}/sft_adapters
+    #Level 1 : Add seed label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>
+    raw_adapter_path = os.path.join(cfg.train.lora_adapter_path, cfg.seeds.label)
+
+    #Level 2 : Add training dataset label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>
+    raw_adapter_path = os.path.join(raw_adapter_path, cfg.dataset.dataset_label)
+
+    #Level 3 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>
+    raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
+
+    #Level 4 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>/<model_adapter_name>
+    raw_adapter_path = os.path.join(raw_adapter_path, cfg.train.model_adapter_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
+
+    # this should basically be the completed directory path for this models adapter to be saved to. 
+    os.makedirs(raw_adapter_path, exist_ok=True)
     #--------------------- Create training arguments ---------------------#
 
-    training_args = TrainArguments(
-                  run_name = cfg.train.wandb.run_name,
-                  output_dir = cfg.train.training_args 
+    training_args = TrainingArguments(
+        run_name = cfg.train.wandb.run_name,
+        output_dir = cfg.train.training_args.output_dir,
+        num_train_epochs = cfg.train.training_args.num_train_epochs,
+        per_device_train_batch_size = cfg.train.training_args.per_device_train_batch_size,
+        gradient_checkpointing = cfg.train.training_args.gradient_checkpointing,
+        gradient_accumulation_steps = cfg.train.training_args.gradient_accumulation_steps,
+
     )
     
