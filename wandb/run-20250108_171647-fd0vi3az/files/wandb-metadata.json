@@ -1,0 +1,120 @@
+{
+    "os": "Linux-5.15.0-127-generic-x86_64-with-glibc2.35",
+    "python": "3.11.7",
+    "heartbeatAt": "2025-01-08T16:16:48.613065",
+    "startedAt": "2025-01-08T16:16:47.326419",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/work/dlclarge1/fernandr-thesis_workspace/bar-llama/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ReanFernandes/bar-llama.git",
+        "commit": "b8f4756b4d1b1a063dffff13be62d7b3125008ff"
+    },
+    "email": "rean.fernandes@students.uni-freiburg.de",
+    "root": "/work/dlclarge1/fernandr-thesis_workspace/bar-llama",
+    "host": "kis3bat2",
+    "username": "fernandr",
+    "executable": "/home/fernandr/miniconda3/envs/thesis_env/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2349.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2349.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 190.03353118896484,
+            "used": 17.892215728759766
+        }
+    },
+    "memory": {
+        "total": 125.77262496948242
+    }
+}

@@ -8,7 +8,7 @@ Steps for fine-tuning
 	Load the model and tokenizer
 	Make sure the pad token is added to the tokenizer and model vocab
 	OPTIONAL: Decide if we are doing lora or qlora, based on that need to load the quantisation configs
-	Load lora config and instantiate from cfg.training.lora_config
+	Load lora config and instantiate from cfg.train.lora_config
 	Join lora adapter to the model with get_peft_model
 	create training args and
     train the model
@@ -24,7 +24,7 @@ from torch.utils.data import DataLoader
 from transformers import (AutoModelForCausalLM, AutoTokenizer,
                           BitsAndBytesConfig, TrainingArguments, set_seed)
 from omegaconf import DictConfig, OmegaConf
-
+import wandb
 import random 
 import numpy as np
 from utils.dataloader import QuestionDataset
@@ -34,7 +34,8 @@ import logging
 import copy
 from filelock import FileLock
 import pandas as pd
-
+from trl import SFTTrainer
+from datasets import  Dataset
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def set_global_seed(seed):
@@ -54,13 +55,13 @@ def set_global_seed(seed):
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 @hydra.main(config_path="conf", config_name="config", version_base=None)
 def main(cfg: DictConfig):
-    #--------------------- set global seed ---------------------
+    #--------------------- set global seed (VALIDATED)---------------------
     set_global_seed(cfg.seeds.seed)
     logging.info(f"Global seed set to {cfg.seeds.seed}")
 
-    #---------------------setting flags for run, need to set these for the code to run properly  ---------------------
+    #---------------------setting flags for run, need to set these for the code to run properly (VALIDATED)  ---------------------
     # set this flag as false if we are not quantising the model prior to training
-    use_quantisation = False
+    use_quantisation = True
     if use_quantisation: # this will be the QLORA training case, in case LORA breaks things
         logging.warning("Quantisation will be done on loaded model, THIS IS A QLORA FINE-TUNING RUN")
     elif not use_quantisation: # LORA training case
@@ -70,12 +71,16 @@ def main(cfg: DictConfig):
     run_validation_on_epoch_end = False # every epoch, the inference will be run on the latest checkpoint, and results will be logged
 
     logging.warning(f"Following flags are set for the run : \n Use Quantisation before fine-tuning : {use_quantisation} \n Perform Validation on epoch end : {run_validation_on_epoch_end}")
-    #--------------------- Logging and configuration related info---------------------
+    #--------------------- Logging (local and WandB) and configuration related info (VALIDATED)---------------------
      
     logging.info(f"Running Fine-tuning on the {cfg.dataset.dataset_label} dataset")
     logging.info(f"Current training config is : \n Prompt type : {cfg.train.prompt.prompt_type} \n Response type : {cfg.train.prompt.response_type} \n Explanation type : {cfg.train.prompt.explanation_type} \n Response Format : {cfg.train.prompt.response_format} ")
-    
-    #--------------------- Load the training dataset ---------------------# 
+    wandb.login(key=os.environ.get('WANDB_token'))
+    #create new customised name for run name using the seed and also the train set label
+    run_name = f"{cfg.seeds.label}_{cfg.dataset.dataset_label}_{cfg.generation.label}_{cfg.train.train_config_label}"
+
+    wandb.init(project=cfg.train.wandb.project_name, name=run_name)
+    #--------------------- Load the training dataset (VALIDATED)---------------------# 
     # the training dataset config contains a hardcoded path to a deprecated dataset, and we will load the dataset 
     # based on the explanation type, since there are two main training sets, one which is raw and the other which is distilled
     try: 
@@ -107,7 +112,7 @@ def main(cfg: DictConfig):
         
 
     #--------------------- Load the evaluation dataset ---------------------#
-
+    # not implemented yet, might not do so in the interest of time but will try to
     #--------------------- Load the model and tokenizer ---------------------#
     access_token = os.getenv("HUGGINGFACE_TOKEN")
     login(token=access_token)
@@ -139,20 +144,20 @@ def main(cfg: DictConfig):
         logging.info("Model prepared for kbit training")
     
     #--------------------- Load the lora config ---------------------#
-    target_modules = OmegaConf.to_container(cfg.training.lora_config.target_modules)
+    target_modules = OmegaConf.to_container(cfg.train.lora_config.target_modules)
     lora_config = LoraConfig(
                 r=128,
-                lora_alpha=cfg.training.lora_config.lora_alpha,
-                lora_dropout=cfg.training.lora_config.lora_dropout,
-                bias=cfg.training.lora_config.bias,
+                lora_alpha=cfg.train.lora_config.lora_alpha,
+                lora_dropout=cfg.train.lora_config.lora_dropout,
+                bias=cfg.train.lora_config.bias,
                 target_modules=target_modules,
-                task_type=cfg.training.lora_config.task_type
+                task_type=cfg.train.lora_config.task_type
             )
     logging.info(f"Lora config loaded, following are the details : \n {lora_config}")
     model = get_peft_model(model, lora_config)
     logging.info("Lora adapter added to model")
-    model.print_trainable_params()
-    #--------------------- Create the pathing logic to store the model ---------------------#
+    # model.print_trainable_params()
+    #--------------------- Create the pathing logic to store the model (VALIDATED)---------------------#
     # The  starting point is ${hydra:runtime.cwd}/sft_adapters
     #Level 1 : Add seed label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>
     raw_adapter_path = os.path.join(cfg.train.lora_adapter_path, cfg.seeds.label)
@@ -160,14 +165,15 @@ def main(cfg: DictConfig):
     #Level 2 : Add training dataset label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>
     raw_adapter_path = os.path.join(raw_adapter_path, cfg.dataset.dataset_label)
 
-    #Level 3 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>
-    raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
+    # #Level 3 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>
+    # raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
 
     #Level 4 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>/<model_adapter_name>
     raw_adapter_path = os.path.join(raw_adapter_path, cfg.train.model_adapter_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
 
     # this should basically be the completed directory path for this models adapter to be saved to. 
     os.makedirs(raw_adapter_path, exist_ok=True)
+    # ------
     #--------------------- Create training arguments ---------------------#
 
     training_args = TrainingArguments(
@@ -177,8 +183,35 @@ def main(cfg: DictConfig):
         per_device_train_batch_size = cfg.train.training_args.per_device_train_batch_size,
         gradient_checkpointing = cfg.train.training_args.gradient_checkpointing,
         gradient_accumulation_steps = cfg.train.training_args.gradient_accumulation_steps,
-
+        optim=cfg.train.training_args.optim,
+        save_steps=cfg.train.training_args.save_steps,
+        logging_steps=cfg.train.training_args.logging_steps,
+        learning_rate=cfg.train.training_args.learning_rate,
+        weight_decay=cfg.train.training_args.weight_decay,
+        fp16=cfg.train.training_args.fp16,
+        bf16=cfg.train.training_args.bf16,
+        max_grad_norm=cfg.train.training_args.max_grad_norm,
+        max_steps=cfg.train.training_args.max_steps,
+        group_by_length=cfg.train.training_args.group_by_length,
+        lr_scheduler_type=cfg.train.training_args.lr_scheduler_type,
+        report_to="wandb"
     )
+    hf_format_train_set =  Dataset.from_list(train_set)
+
+    trainer = SFTTrainer(
+        model=model,
+        tokenizer=tokenizer,
+        train_dataset = hf_format_train_set,
+        dataset_text_field='text',
+        peft_config = lora_config,
+        max_seq_length = None,
+        args = training_args,
+        packing = False
+    )
+    trainer.train()
+    trainer.save_model(raw_adapter_path)
+    wandb.finish()
+    
     
 
 if __name__ == "__main__":

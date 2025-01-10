@@ -14,3 +14,4 @@
 [2025-01-01 23:21:37,495][root][INFO] - Indexing complete, sampling of questions set to True
 [2025-01-01 23:21:43,256][root][INFO] - Questions selected, dataset contains 7 questions with 1.0 questions per domain
 [2025-01-01 23:23:51,254][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'few_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'json', 'store_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${train.prompt.response_format}_${train.prompt.response_type}_${train.prompt.explanation_type}.txt', 'include_system_prompt': True}
+[2025-01-01 23:36:38,411][datasets][INFO] - PyTorch version 2.3.1 available.

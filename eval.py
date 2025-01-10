@@ -136,8 +136,8 @@ def main(cfg: DictConfig):
         #Level 2 : Add training dataset label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>
         raw_adapter_path = os.path.join(raw_adapter_path, cfg.dataset.dataset_label)
 
-        #Level 3 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>
-        raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
+        # #Level 3 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>
+        # raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
 
         #Level 4 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>/<model_adapter_name>
         lora_adapter_path = os.path.join(raw_adapter_path, cfg.eval.eval_model_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"

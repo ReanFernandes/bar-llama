@@ -27,6 +27,7 @@ class QuestionDataset(Dataset):
 
         """
         self.config = config
+        self.config["num_questions"] = None if self.config["num_questions"] == "None" else self.config["num_questions"]
         self.data_points = []
         self.domain_indices = {}  # this dict contains the indices for all questions belonging to a specific domain in the dataset
         self.dataset_path = self.config["dataset_path"]
