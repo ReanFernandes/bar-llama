@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #SBATCH --job-name=run-finetuning-one-seed
-#SBATCH --output=logs/run-finetuning-one-seed
-#SBATCH --error=logs/run-finetuning-one-seed
+#SBATCH --output=logs/run-finetuning-one-seed-%j
+#SBATCH --error=logs/run-finetuning-one-seed-%j
 #SBATCH --cpus-per-task=1
-#SBATCH --partition=alldlc2_gpu-l40s
+#SBATCH --partition=mldlc2_gpu-l40s
 #SBATCH --gres=gpu:1
 
-#SBATCH --time=6:00:00 # 6 hours
+#SBATCH --time=14:00:00 # 6 hours
 
 # Load the required modules
 # run bash rc

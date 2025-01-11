@@ -14,7 +14,7 @@ wandb:
   model_id: ${model.model_label}_${train.train_config_label}
   project_name: bar_llama
   run_name: fine_tune_${train.train_config_label}
-  tags: [${model.model_label}, ${train.train_config_label}]
+  # tags: [${model.model_label}, ${train.train_config_label}]
 
 lora_config:
   r: 8

@@ -35,6 +35,7 @@ from filelock import FileLock
 import pandas as pd
 
 # set the current directory as the working directory
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 MASTER_CSV_PATH = os.path.join(os.getcwd(), "master_metrics.csv")
@@ -170,9 +171,10 @@ def main(cfg: DictConfig):
                                     )
 
     # ----------------- Loading inference related stuff -----------------
-
+    # model to cuda
+    model.to(device)
     # create prompt handler instance
-    promptor = PromptHandler(cfg.eval.prompt, cfg.eval.prompt.include_system_prompt)
+    promptor = PromptHandler(cfg.eval.prompt)
 
     # create empty data storage list 
     raw_outputs = []
@@ -224,7 +226,7 @@ def main(cfg: DictConfig):
         logging.info(f"Domain : {data['domain']}, Question : {data['question_number']}")
 
         if cfg.eval.pipeline_available is True: 
-            sequences = text_gen_pipeline(prompt, **cfg.generation.kwargs)
+            sequences = text_gen_pipeline(prompt,**cfg.generation.kwargs)
             processed_data = {"prompt": prompt,
                               "response":sequences[0]['generated_text'],
                               "ground_truth":ground_truth}

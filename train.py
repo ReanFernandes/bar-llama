@@ -61,7 +61,7 @@ def main(cfg: DictConfig):
 
     #---------------------setting flags for run, need to set these for the code to run properly (VALIDATED)  ---------------------
     # set this flag as false if we are not quantising the model prior to training
-    use_quantisation = True
+    use_quantisation = False
     if use_quantisation: # this will be the QLORA training case, in case LORA breaks things
         logging.warning("Quantisation will be done on loaded model, THIS IS A QLORA FINE-TUNING RUN")
     elif not use_quantisation: # LORA training case

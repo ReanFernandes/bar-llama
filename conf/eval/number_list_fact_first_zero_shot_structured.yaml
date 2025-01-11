@@ -12,7 +12,7 @@ lora_adapter_path: ${hydra:runtime.cwd}/sft_adapters
 output_directory: ${hydra:runtime.cwd}/model_outputs/raw_responses
 
 prompt: 
-  system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system # this thing is completed in the prompt handler to put together the actual system prompt file name
+  
   prompt_type: zero_shot  # "few_shot" or "zero_shot"
   example_path: ${hydra:runtime.cwd}/prompt/examples/structured_example.json
   explanation_type: structured # "structured" or "unstructured"
@@ -20,3 +20,4 @@ prompt:
   response_format: number_list # "json" or "markdown" or "number_list"
   store_prompt: False # by default, since we dont care about storing the question and stuff, this is only set to true when we make the training dataset
   include_system_prompt: True # this is set to true if our prompt has an instructtion, and false otherwise
+  system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt

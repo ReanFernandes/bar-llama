@@ -7,7 +7,7 @@ prompt:
   response_type: answer_first
   response_format: json
   store_prompt: True # true if compiling trainset, false if using for eval ( so that there is no need to store the prompt as a batch)
-  system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system_${train.prompt.response_format}_${train.prompt.response_type}_${train.prompt.explanation_type}.txt # Path to exact system prompt file for this config
+  system_prompt: ${hydra:runtime.cwd}/prompt/system_prompt/system_${train.prompt.response_format}_${train.prompt.response_type}_${train.prompt.explanation_type}.txt # this thing is completed in the prompt handler to put together the actual system prompt file name
   include_system_prompt: True # Set to true if we want the instruction to be there in the system prompt and False otherwise
 
 wandb:
