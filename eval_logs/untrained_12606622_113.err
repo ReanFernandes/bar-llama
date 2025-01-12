@@ -1,0 +1,2 @@
+cpu-bind=MASK - dlc2gpu02, task  0  0 [194672]: mask 0xc0c00001c0800000c0c00001c08000 set
+python3: can't open file '/work/dlclarge1/fernandr-thesis_workspace/bar-llama/evaluate.py': [Errno 2] No such file or directory

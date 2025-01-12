@@ -313,19 +313,6 @@
     },
     {
         "domain": "Criminal_law",
-        "question_number": 25,
-        "question": "  An already married man went through a marriage ceremony with a woman and thereby committed bigamy. The man's friend, who did not know of the man's previous marriage, had encouraged the man to marry the woman and was best man at the ceremony. If the friend is charged with being an accessory to bigamy, he should be found",
-        "options": {
-            "optionA": "A. not guilty, because his encouragement and assistance was not the legal cause of the crime.",
-            "optionB": "B. not guilty, because he did not have the mental state required for aiding and abetting.",
-            "optionC": "C. guilty, because he encouraged the man, and his mistake as to the existence of a prior marriage is not a defense to a charge of bigamy.",
-            "optionD": "D. guilty, because he was present when the crime occurred and is thus a principal in the second degree."
-        },
-        "correct_answer": "B",
-        "explanation": " "
-    },
-    {
-        "domain": "Criminal_law",
         "question_number": 27,
         "question": "  In which of the following situations is the defendant most likely to be guilty of larceny?",
         "options": {
@@ -859,19 +846,6 @@
     },
     {
         "domain": "Criminal_law",
-        "question_number": 69,
-        "question": "  The question was: Which of the following is LEAST likely to be the underlying felony in a prosecution for felony murder?",
-        "options": {
-            "optionA": "A. Arson",
-            "optionB": "B. Manslaughter",
-            "optionC": "C. Attempted rape",
-            "optionD": "D. Burglary"
-        },
-        "correct_answer": "B",
-        "explanation": ""
-    },
-    {
-        "domain": "Criminal_law",
         "question_number": 70,
         "question": "  A man was a suspect in a homicide committed during a robbery of a liquor store. A barber was a friend of the suspect. The police telephoned the barber and asked if he would help locate the suspect. The barber agreed and met the police officers at headquarters later that night. After a discussion during which police asked questions about the suspect and the homicide, the barber said he wanted to get something \"off his chest\" and advised the officers that he was in on the robbery but that the suspect had shot the owner of the store without his permission or prior knowledge. The officers then for the first time gave the barber his Miranda warnings. The barber was indicted for felony murder. He moved to prevent the introduction of his statement into evidence. His motion should be",
         "options": {
@@ -1129,19 +1103,6 @@
         },
         "correct_answer": "D",
         "explanation": " Under the Automobile Exception to the warrant requirement of the Fourth Amendment, the police may properly search a vehicle, including any containers contained therein, that might contain the evidence they seek, without first obtaining a warrant. The motion to suppress the evidence of the marijuana and the cocaine should be denied as to both."
-    },
-    {
-        "domain": "Criminal_law",
-        "question_number": 90,
-        "question": "  Police received information from an undercover police officer that she had just seen two men (whom she described) in a red pickup truck selling marijuana to schoolchildren near the city's largest high school. A few minutes later, two police officers saw a pickup truck fitting the description a half block from the high school. The driver of the truck matched the description of one of the men described by the undercover officer. The only passenger was a young woman who was in the back of the truck. The police saw her get out and stand at a nearby bus stop. They stopped the truck and searched the driver. In the pocket of the driver's jacket, the police found a small bottle of pills that they recognized as narcotics. They then broke open a locked toolbox attached to the flatbed of the truck and found a small sealed envelope inside. They opened it and found marijuana. They also found a quantity of cocaine in the glove compartment. After completing their search of the driver and the truck, the police went over to the young woman and searched her purse. In her purse, they found a small quantity of heroin. Both the driver and the young woman were arrested and charged with unlawful possession of narcotics. If the young woman moves to suppress the use as evidence of the heroin, the court should",
-        "options": {
-            "optionA": "A. grant the motion, because she did not fit the description given by the informant and her mere presence does not justify the search.",
-            "optionB": "B. grant the motion, because the police should have seized her purse and then obtained a warrant to search it.",
-            "optionC": "C. deny the motion, because she had been a passenger in the truck and the police had probable cause to search the truck.",
-            "optionD": "D. deny the motion, because she was planning to leave the scene by bus and so exigent circumstances existed."
-        },
-        "correct_answer": "A",
-        "explanation": ""
     },
     {
         "domain": "Criminal_law",
@@ -1847,17 +1808,6 @@
     },
     {
         "domain": "Criminal_law",
-        "question_number": 145,
-        "question": "  An executive director of an equal housing opportunity organization was the leader of a sit-in at the offices of a real estate management company. The protest was designed to call attention to the company's racially discriminatory rental practices. When police demanded that the executive director desist from trespassing on the company's property, she refused and was arrested. In the executive director's trial for trespass, the prosecution peremptorily excused all non-whites from the jury, arguing to the court that even though the executive director was white, minority groups would automatically support her because of her fight against racism in housing accommodations. If the executive director is convicted of trespass by an all-white jury and appeals, claiming a violation of her constitutional rights, the court should",
-        "options": {
-            "optionA": "A. affirm the conviction, because the executive director was not a member of the class discriminated against.",
-            "optionB": "B. affirm the conviction, because peremptory challenge of the non-whites did not deny the executive director the right to an impartial jury.",
-            "optionC": "C. reverse the conviction, because racially based peremptory challenges violate equal protection of the law.",
-            "optionD": "D. reverse the conviction, because the executive director was denied the right to have her case heard by a fair cross section of the community."
-        }
-    },
-    {
-        "domain": "Criminal_law",
         "question_number": 146,
         "question": "  The legislature of a state is debating reforms in the law governing insanity. Two reforms have been proposed. Proposal A would eliminate the insanity defense altogether. Proposal B would retain the defense but place on the defendant the burden of proving insanity by a preponderance of the evidence. Opponents of the reforms argue that the proposals would be unconstitutional under the due process clause of the United States Constitution. Which of the following proposed reforms would be unconstitutional?",
         "options": {
@@ -1894,17 +1844,6 @@
         },
         "correct_answer": "B",
         "explanation": " The defendant's pointing a loaded weapon at the victim and pulling the trigger posed a great threat of serious bodily injury to the victim, and, because it resulted in the victim's death, the defendant should be convicted of murder in the second degree. Murder in the second degree is murder with malice aforethought, done without premeditation and deliberation. The defendant's actions, because they posed such a serious threat of death or serious bodily injury, were done with gross recklessness toward human life sufficient for a finding of malice aforethought."
-    },
-    {
-        "domain": "Criminal_law",
-        "question_number": 149,
-        "question": "  The police had, over time, accumulated reliable information that a suspect operated a large cocaine-distribution network, that he and his accomplices often resorted to violence, and that they kept a small arsenal of weapons in his home. One day, the police received reliable information that a large brown suitcase with leather straps containing a supply of cocaine had been delivered to the suspect's home and that it would be moved to a distribution point the next morning. The police obtained a valid search warrant to search for and seize the brown suitcase and the cocaine and went to the suspect's house. The police knocked on the suspect's door and called out, \"Police. Open up. We have a search warrant.\" After a few seconds with no response, the police forced the door open and entered. Hearing noises in the basement, the police ran down there and found the suspect with a large brown suitcase and put handcuffs on the suspect. A search of his person revealed a switchblade knife and a .45-caliber pistol. The suspect cursed the police and said, \"You never would have caught me with the stuff if it hadn't been for that lousy snitch Harvey!\" The police then fanned out through the house, looking in every room and closet. They found no one else, but one officer found an Uzi automatic weapon in a box on a closet shelf in the suspect's bedroom. In addition to charges relating to the cocaine in the suitcase, the suspect is charged with unlawful possession of weapons. The suspect moves pretrial to suppress the use as evidence of the weapons seized by the police and of the statement he made. As to the switchblade knife and the .45-caliber pistol, the suspect's motion to suppress should be",
-        "options": {
-            "optionA": "A. granted, because the search and seizure were the result of illegal police conduct in executing the search warrant.",
-            "optionB": "B. granted, because the police did not inform the suspect that he was under arrest and did not read him his Miranda rights.",
-            "optionC": "C. denied, because the search and seizure were incident to a lawful arrest.",
-            "optionD": "D. denied, because the police had reasonable grounds to believe that there were weapons in the house."
-        }
     },
     {
         "domain": "Criminal_law",
@@ -3088,19 +3027,6 @@
         },
         "correct_answer": "A",
         "explanation": " The recording can be authenticated by the testimony of a lay witness who, through first-hand knowledge, is familiar with the defendant's voice. However, the testimony of the witness in answer A is the least likely to provide a sufficient basis for admitting the recording. The witness's knowledge of the defendant's voice in answer A is based solely on the hearsay statement of the defendant's brother. The witness in answer A has no first-hand knowledge of the defendant's voice."
-    },
-    {
-        "domain": "Evidence",
-        "question_number": 10,
-        "question": "  A plaintiff sued a defendant on a product liability claim. A friend testified for the plaintiff. On cross-examination, which of the following questions is the trial judge most likely to rule improper?",
-        "options": {
-            "optionA": "A. \"Isn't it a fact that you are the plaintiff's close friend?\"",
-            "optionB": "B. \"Isn't it true that you are known in the community as 'Lush' because of your addiction to alcohol?\"",
-            "optionC": "C. \"Didn't you fail to report some income on your tax return last year?\"",
-            "optionD": "D. \"Weren't you convicted, seven years ago in this court, of obtaining money under false pretenses?\""
-        },
-        "correct_answer": "B",
-        "explanation": ""
     },
     {
         "domain": "Evidence",
@@ -4547,17 +4473,6 @@
     },
     {
         "domain": "Evidence",
-        "question_number": 122,
-        "question": "  A threatening telephone call that purports to be from a defendant to a witness is most likely to be admitted against the defendant if",
-        "options": {
-            "optionA": "A. the caller identified himself as the defendant.",
-            "optionB": "B. the witness had previously given damaging testimony against the defendant in another lawsuit.",
-            "optionC": "C. the witness had given his unlisted number only to the defendant and a few other persons.",
-            "optionD": "D. the witness believes that the defendant is capable of making such threats."
-        }
-    },
-    {
-        "domain": "Evidence",
         "question_number": 123,
         "question": "  In an automobile collision case brought by a plaintiff against a defendant, the plaintiff introduced evidence that a bystander made an excited utterance that the defendant ran the red light. The defendant called a witness to testify that later the bystander, now deceased, told the witness that the defendant went through a yellow light. The witness's testimony should be",
         "options": {
@@ -4961,19 +4876,6 @@
     },
     {
         "domain": "Evidence",
-        "question_number": 154,
-        "question": "  A plaintiff is suing a doctor for medical malpractice occasioned by allegedly prescribing an incorrect medication, causing the plaintiff to undergo substantial hospitalization. When the doctor learned of the medication problem, she immediately offered to pay the plaintiff's hospital expenses. At trial, the plaintiff offers evidence of the doctor's offer to pay the costs of his hospitalization. The evidence of the doctor's offer is",
-        "options": {
-            "optionA": "A. admissible as a nonhearsay statement of a party.",
-            "optionB": "B. admissible, although hearsay, as a statement against interest.",
-            "optionC": "C. inadmissible, because it is an offer to pay medical expenses.",
-            "optionD": "D. inadmissible, because it is an offer to compromise."
-        },
-        "correct_answer": "is",
-        "explanation": " As the defendant, the doctor's offer to the plaintiff is not hearsay. The out-of-court offer to pay medical expenses is an admission of a party opponent that the plaintiff could try to use as evidence of the doctor's liability. It is not admissible, however. Federal Rule of Evidence 409, as a policy matter, states that the use of any offer or promise to pay the medical expenses of an injured party is inadmissible to prove liability for that injury. Thus, A is incorrect."
-    },
-    {
-        "domain": "Evidence",
         "question_number": 155,
         "question": "  A plaintiff sued an auto manufacturing company for his wife's death, claiming that a defective steering mechanism on the family car caused it to veer off the road and hit a tree when his wife was driving. The defendant claims that the steering mechanism was damaged in the collision and offers testimony that the deceased wife was intoxicated at the time of the accident. Testimony concerning the wife's intoxication is",
         "options": {
@@ -4997,19 +4899,6 @@
         },
         "correct_answer": "B",
         "explanation": " On the issue of notice, the letter copy is not being offered for the truth of the matter asserted \u2013 i.e. what the proposed expenditures beyond the original estimates were. The letter copy is being offered to show that the plaintiff sent the letter, not the actual contents of the letter; therefore, it is not hearsay. In addition, evidence of the routine practice of an organization, whether corroborated or not and regardless of the presence of eyewitnesses, is relevant to prove that the conduct of the organization on a particular occasion was in conformity with the routine practice."
-    },
-    {
-        "domain": "Evidence",
-        "question_number": 157,
-        "question": "  A plaintiff sued a defendant under an age discrimination statute, alleging that the defendant refused to hire the plaintiff because she was over age 65. The defendant's defense was that he refused to employ the plaintiff because he reasonably believed that she would be unable to perform the job. The defendant seeks to testify that the plaintiff's former employer advised him not to hire the plaintiff because she was unable to perform productively for more than four hours a day. The testimony of the defendant is",
-        "options": {
-            "optionA": "A. inadmissible, because the defendant's opinion of the plaintiff's abilities is not based on personal knowledge.",
-            "optionB": "B. inadmissible, because the plaintiff's former employer's statement is hearsay not within any exception.",
-            "optionC": "C. admissible as evidence that the plaintiff would be unable to work longer than four hours per day.",
-            "optionD": "D. admissible as evidence of the defendant's reason for refusing to hire the plaintiff."
-        },
-        "correct_answer": "is",
-        "explanation": ""
     },
     {
         "domain": "Evidence",
@@ -5429,17 +5318,6 @@
     },
     {
         "domain": "Evidence",
-        "question_number": 190,
-        "question": "  In a civil action for breach of an oral contract, the defendant admits that there had been discussions, but denies that he ever entered into an agreement with the plaintiff. Which of the following standards of admissibility should be applied by the court to evidence proffered as relevant to prove whether a contract was formed?",
-        "options": {
-            "optionA": "A. Whether a reasonable juror would find the evidence determinative of whether the contract was or was not formed.",
-            "optionB": "B. Whether the evidence has any tendency to make the fact of contract formation more or less probable than without the evidence.",
-            "optionC": "C. Whether the evidence is sufficient to prove, absent contrary evidence, that the contract was or was not formed.",
-            "optionD": "D. Whether the evidence makes it more likely than not that a contract was or was not formed."
-        }
-    },
-    {
-        "domain": "Evidence",
         "question_number": 191,
         "question": "  At a civil trial for slander, the plaintiff showed that the defendant had called the plaintiff a thief. In defense, the defendant called a witness to testify, \"I have been the plaintiff's neighbor for many years, and people in our community generally have said that he is a thief.\" Is the testimony concerning the plaintiff's reputation in the community admissible?",
         "options": {
@@ -5489,19 +5367,6 @@
         },
         "correct_answer": "A",
         "explanation": " Miranda warnings must be given before a confession made by a person under arrest can be admitted. Since the defendant contends that no Miranda warnings were given, she is entitled to a hearing on the issue. Under Rule 104(c) of the Federal Rules of Evidence, \"[h]earings on the admissibility of a confession shall in all cases be conducted out of the hearing of the jury.\" Thus, Answer A is correct, and Answer B is incorrect."
-    },
-    {
-        "domain": "Evidence",
-        "question_number": 195,
-        "question": "  A defendant was charged with murder. While walking down the hallway during a recess in the defendant's trial, the judge overheard the defendant say to his attorney, \"So what if I did it? There's not enough proof to convict.\" Upon the judge's reporting the incident to counsel, the prosecutor called the judge as a witness in the trial. Is the judge's testimony regarding the defendant's statement admissible?",
-        "options": {
-            "optionA": "A. Yes, as the statement of a party-opponent.",
-            "optionB": "B. Yes, because the defendant's statement, although otherwise privileged, was made without reasonable efforts to preserve confidentiality.",
-            "optionC": "C. No, because the statement was a privileged attorney-client communication.",
-            "optionD": "D. No, because a judge may never testify in a trial over which he or she is presiding."
-        },
-        "correct_answer": "605",
-        "explanation": "\" Therefore, the judge will not be able to testify as to the defendant's statements, so long as the judge is still presiding over the defendant's trial. Thus, Answer D is correct."
     },
     {
         "domain": "Evidence",
@@ -5658,17 +5523,6 @@
         },
         "correct_answer": "C",
         "explanation": " The statement is admissible as a present sense impression under Rule 803(1) of the Federal Rules of Evidence because it describes or explains an event or condition and was \"made while the declarant was perceiving the event or condition, or immediately thereafter.\" It is also admissible under Rule 803(5) of the Federal Rules of Evidence because it is a record \"concerning a matter about which a witness once had knowledge but now has insufficient recollection to testify fully and accurately,\" and it was made by the witness \"when the matter was fresh in the witness' memory\" and \"reflect[s] that knowledge correctly.\" Thus, Answer C is correct and Answers A, B, and D are incorrect."
-    },
-    {
-        "domain": "Evidence",
-        "question_number": 208,
-        "question": "  A defendant was on trial for tax evasion. The IRS, seeking to establish the defendant's income by showing his expenditures, called on the defendant's attorney to produce records showing only how much the defendant had paid his attorney in fees. Should the demand for the attorney's fee records be upheld?",
-        "options": {
-            "optionA": "A. Yes, because it calls for relevant information not within the attorney-client privilege.",
-            "optionB": "B. Yes, because the attorney-client privilege cannot be invoked to conceal evidence of a crime.",
-            "optionC": "C. No, because the records are protected by the attorney-client privilege.",
-            "optionD": "D. No, because the records are protected by the attorney work-product doctrine."
-        }
     },
     {
         "domain": "Evidence",
@@ -6059,19 +5913,6 @@
         },
         "correct_answer": "B",
         "explanation": " The deceased man's statement to the police officer is an out-of-court statement that is being offered for the truth of the matter asserted - that the deceased man loaned the defendant $10,000. As such, it is hearsay, and it is inadmissible because it does not meet the requirements for any exception to the hearsay rule."
-    },
-    {
-        "domain": "Evidence",
-        "question_number": 239,
-        "question": " In a civil trial for professional malpractice, the plaintiff sought to show that the defendant, an engineer, had designed the plaintiff's flour mill with inadequate power. The plaintiff called an expert witness who based his testimony solely on his own professional experience but also asserted, when asked, that the book Smith on Milling Systems was a reliable treatise in the field and was consistent with his views. On cross-examination, the defendant asked the witness whether he and the book's author were ever wrong. The witness answered, \"Nobody's perfect.\" The defendant asked no further questions. The defendant called a second expert witness and asked, \"Do you accept the book as reliable?\" The second witness said, \"It once was, but it is now badly out of date.\" The plaintiff requested that the jury be allowed to examine the book and judge for itself the book's reliability. Should the court allow the jury to examine the book?",
-        "options": {
-            "optionA": "A. No, because the jury may consider only passages read to it by counsel or witness.",
-            "optionB": "B. No, because the plaintiff's expert in testifying did not rely on the treatise but on his own experience.",
-            "optionC": "C. Yes, because an expert has testified that the treatise is reliable.",
-            "optionD": "D. Yes, because the jury is the judge of the weight and credibility to be accorded both written and oral evidence."
-        },
-        "correct_answer": "is",
-        "explanation": " Federal Rule of Evidence 803(18), the learned treatise exception, provides that if the court finds a publication to be a reliable authority, then \"statements\" may be read into evidence, but that the publication may not be received as an exhibit. Thus, the jury is not allowed to bring learned treatises into the jury room. There is a concern that if juries were allowed unrestricted access to the whole publication, they may rely on parts of the publication that are not germane to the case. Moreover, the intent of the rule is that juries need to be guided through the pertinent parts of the publication by the testifying experts."
     },
     {
         "domain": "Evidence",
@@ -6699,19 +6540,6 @@
     },
     {
         "domain": "Contracts",
-        "question_number": 45,
-        "question": "  Two salesmen who lived in different suburbs twenty miles apart were golfing acquaintances at the Interurban Country Club. Both were traveling salesmen--one for a pharmaceutical company and the other for a widget manufacturer. The pharmaceutical salesman wrote the widget salesman by United States mail on Friday October 8: I need a motorcycle for transportation to the country club and will buy your Sujocki for $1200 upon your bringing it to my home address above [stated in the letterhead] on or before noon November 12 next. This offer is not subject to countermand. Sincerely [signed] the pharmaceutical salesman The widget salesman replied by mail the following day: I accept your offer and promise to deliver the bike as you specified. Sincerely [signed] the widget salesman This letter although properly addressed was misdirected by the postal service and not received by the pharmaceutical salesman until November 10. The pharmaceutical salesman had bought another Sujocki bike from a different friend for $1050 a few hours before. The friend saw the widget salesman at the Interurban Country Club on November 11 and said: \"I sold my Sujocki to the pharmaceutical salesman yesterday for $1050. Would you consider selling me yours for $950?\" The widget salesman replied: \"I'll let you know in a few days.\" On November 12 the widget salesman took his Sujocki to the pharmaceutical salesman's residence; he arrived at 11:15 a.m. The pharmaceutical salesman was asleep and did not answer the ringing doorbell until 12:15 p.m. The pharmaceutical salesman then rejected the widget salesman's bike on the ground that he had already bought someone else's bike. What is the probable legal effect of the friend's conversation with the widget salesman and report that he (the friend) had sold his Sujocki to the pharmaceutical salesman on November 10?",
-        "options": {
-            "optionA": "A. This report had no legal effect because the pharmaceutical salesman's offer was irrevocable until November 12.",
-            "optionB": "B. Unless a contract had already been formed between the widget salesman and the pharmaceutical salesman the friend's report to the widget salesman operated to terminate the widget salesman's power of accepting the pharmaceutical salesman's offer.",
-            "optionC": "C. This report has no legal effect because the offer had been made by a prospective buyer (the pharmaceutical salesman) rather than a prospective seller.",
-            "optionD": "D. The friend's conversation with the widget salesman on November 11 terminated the pharmaceutical salesman's original offer and operated as an offer by the friend to buy the widget salesman's Sujocki for $950."
-        },
-        "correct_answer": "is",
-        "explanation": " The call of the question asks for the probable legal effect of the friend's conversation with the widget salesman regarding the purchase of the friend's motorcycle which indicates that the issue is revocation of an offer. The question to be answered therefore is whether a contract had been formed between the pharmaceutical salesman and the widget salesman and if the conversation with the friend impacted that contract. The pharmaceutical salesman offered the widget salesman a unilateral contract. The method of acceptance was the presentation of the motorcycle on or before November 12. B is the best answer because it thoroughly addresses the issues of revocation between the widget salesman and the pharmaceutical salesman both of which are probable legal effects of the conversation between the widget salesman and the friend."
-    },
-    {
-        "domain": "Contracts",
         "question_number": 46,
         "question": "  On May 1 a lot owner telegraphed a buyer \"Will sell you any or all of the lots in Grover subdivision at $5000 each. Details will follow in letter.\" The letter contained all the necessary details concerning terms of payment insurance mortgages etc. and provided \"This offer remains open until June 1 .\" On May 2 after he had received the telegram but before he had received the letter the buyer telegraphed the owner \"Accept your offer with respect to lot 101 .\" Both parties knew that there were fifty lots in the Grover subdivision and that they were numbered 101 through 150. Assume that the owner and the buyer were bound by a contract for the sale of lot 101 for $5000 that on May 3 the owner telephoned the buyer to explain that because he had just discovered that a shopping center was going to be erected adjacent to the Grove subdivision he would \"have to have $6000 for each of the lots including lot 101\" that the buyer thereupon agreed to pay him $6000 for lot 101 and that on May 6 the buyer telegraphed \"Accept your offer with respect to the rest of the lots.\" Assuming that two contracts were formed and that there is no controlling statute the buyer will most likely be required to pay",
         "options": {
@@ -7115,19 +6943,6 @@
     },
     {
         "domain": "Contracts",
-        "question_number": 77,
-        "question": "  On January 15 in a signed writing an artist agreed to remodel a building owner's building according to certain specifications and the owner to pay the agreed price of $5000 to the artist's niece as a birthday present. The niece did not learn of the agreement until her birthday on May 5. Before they signed the writing the artist and the owner had orally agreed that their \"written agreement will be null and void unless the owner is able to obtain a $5000 loan from the bank before January 31.\" The owner was unable to obtain the loan and on January 31 phoned the artist and told him \"Don't begin the work. The deal is off.\" In an action for breach of contract brought against the owner by the proper party will the owner be successful in asserting as a defense his inability to obtain a loan?",
-        "options": {
-            "optionA": "A. Yes because obtaining a loan was a condition precedent to the existence of an enforceable contract.",
-            "optionB": "B. Yes because the agreement about obtaining a loan is a modification of a construction contract and is not required to be in writing.",
-            "optionC": "C. No. because the agreement about obtaining a loan contradicts the express and implied terms of the writing.",
-            "optionD": "D. No because the owner is estopped to deny the validity of the written agreement."
-        },
-        "correct_answer": "A",
-        "explanation": ""
-    },
-    {
-        "domain": "Contracts",
         "question_number": 78,
         "question": "  On January 15 in a signed writing an artist agreed to remodel a building owner's building according to certain specifications and the owner to pay the agreed price of $5000 to the artist's niece as a birthday present. The niece did not learn of the agreement until her birthday on May 5. Before they signed the writing the artist and the owner had orally agreed that their \"written agreement will be null and void unless the owner is able to obtain a $5000 loan from the bank before January 31.\" The owner obtained the loan the artist completed the remodeling on May 1 and on May 3 at the artist's request the owner paid the $5000 to the artist. If the niece learns of the owner's payment to the artist on May 5 at the same time she learns of the written the artist-owner contract will she succeed in action against the owner for $5000?",
         "options": {
@@ -7463,17 +7278,6 @@
         },
         "correct_answer": "D",
         "explanation": " The landowner is entitled to damages representing the difference between the original contract price with the builder ($60000) and his contract price with the third-party ($75000). He is not entitled to an additional amount representing the $10000 extra that he paid the third-party because he was not contractually obligated to pay that amount to the third-party. It would therefore not be a part of the actual loss he avoided by the substitute transaction. For this reason C is incorrect."
-    },
-    {
-        "domain": "Contracts",
-        "question_number": 104,
-        "question": "  A farmer leased in writing a 100-acre farm from a landowner for five years at $2000 per year with an option to purchase \"five acres of the land for $10000 cash\" at the end of the lease term. Before the lease was executed the landowner orally promised to have a five-acre parcel surveyed before the end of the lease term. The farmer took possession of the farm and paid the rent for five years. During the fifth year having decided that he would exercise the purchase option the farmer planted several fruit trees and built a large grain silo on the property. At the end of the term the farmer tendered the landowner $10000 and demanded a conveyance but the landowner repudiated the option agreement and retook possession of the farm. He had never had the five-acre parcel surveyed. In an action by the farmer against the landowner for specific performance of the option agreement which of the following is the landowner's best defense?",
-        "options": {
-            "optionA": "A. The option part of the agreement is unenforceable because it lacked a separate consideration.",
-            "optionB": "B. The description of the property to be sold in the parties' written agreement is too indefinite to permit the remedy sought.",
-            "optionC": "C. The landowner's failure to have the five-acre parcel surveyed was failure of a condition precedent to his own duty of performance.",
-            "optionD": "D. The option part of the agreement is unenforceable under the parol evidence rule."
-        }
     },
     {
         "domain": "Contracts",
@@ -8059,17 +7863,6 @@
         },
         "correct_answer": "A",
         "explanation": " In order to be enforceable a promise must be supported by bargained-for consideration. Consideration is bargained for if it is sought by the promisor in exchange for the promise. The retailer's promise to give his daughter the car was supported by consideration because the promise was conditioned upon the daughter's promise to pay her father $3000. Answer B is incorrect. moral obligation does not suffice as consideration. Answer C is incorrect. courts at law do not inquire into the adequacy of considerations exchanged. Answer D is incorrect. the fact that the car was sold to a third party does not discharge the retailer's contractual obligation to sell the car to his daughter although the daughter may be limited to recovering monetary damages."
-    },
-    {
-        "domain": "Contracts",
-        "question_number": 150,
-        "question": "  An owner and operator of a small business encourages \"wellness\" on the part of his employees and supports various physical-fitness programs to that end. Learning that one of his employees was a dedicated jogger the business owner promised to pay her a special award of $100 if she could and would run one mile in less than six minutes on the following Saturday. The employee thanked him and did in fact run a mile in less than six minutes on the day specified. Shortly thereafter however the business owner discovered that for more than a year the employee had been running at least one mile in less than six minutes every day as a part of her personal fitness program. He refused to pay the $100.  In an action by the employee against the business owner for breach of contract which of the following best summarizes the probable decision of the court?",
-        "options": {
-            "optionA": "A. The business owner wins because it is a compelling inference that his promise did not induce the employee to run the specified mile.",
-            "optionB": "B. The business owner wins because the employee's running of the specified mile was beneficial not detrimental to her in any event.",
-            "optionC": "C. The employee wins because running a mile in less than six minutes is a significantly demanding enterprise.",
-            "optionD": "D. The employee wins because she ran the specified mile as requested and her motives for doing so are irrelevant."
-        }
     },
     {
         "domain": "Contracts",
@@ -8814,17 +8607,6 @@
     },
     {
         "domain": "Contracts",
-        "question_number": 208,
-        "question": "  On June 1 a seller and a buyer contracted in writing for the sale and purchase of the seller's cattle ranch (a large single tract) and to close the transaction on December 1. On October 1 the buyer told the seller \"I'm increasingly unhappy about our June 1 contract because of the current cattle market and do not intend to buy your ranch unless I'm legally obligated to do so.\" If the seller sues the buyer on October 15 for breach of contract the seller will probably",
-        "options": {
-            "optionA": "A. win because the buyer committed a total breach by anticipatory repudiation on October 1.",
-            "optionB": "B. win because the buyer's October 1 statement created reasonable grounds for the seller's insecurity with respect to the buyer's performance.",
-            "optionC": "C. lose because the parties contracted for the sale and conveyance of a single tract and the seller cannot bring suit for breach of such a contract prior to the agreed closing date.",
-            "optionD": "D. lose because the buyer's October 1 statement to the seller was neither a repudiation nor a present breach of the June 1 contract."
-        }
-    },
-    {
-        "domain": "Contracts",
         "question_number": 209,
         "question": "  On June 1 a seller and a buyer contracted in writing for the sale and purchase of the seller's cattle ranch (a large single tract) and to close the transaction on December 1. The buyer unequivocally repudiated the contract on August 1. On August 15 the seller urged the buyer to change her mind and proceed with the scheduled closing on December 1. On October 1 having heard nothing further from the buyer the seller sold and conveyed his ranch to a rancher without notice to the buyer. On December 1 the buyer attempted to close under the June 1 contract by tendering the full purchase price to the seller. The seller rejected the tender. If the buyer sues the seller for breach of contract the buyer will probably",
         "options": {
@@ -8887,17 +8669,6 @@
         },
         "correct_answer": "B",
         "explanation": " Under the theory of detrimental reliance a gratuitous promise may be enforceable notwithstanding lack of consideration if the party making the promise has reason to expect the promise will induce reliance on the part of the promisee where there has been reliance in fact and where injustice may be avoided only by enforcement of the promise. The manager's conversation with the company's president gave the insurance company reason to expect that a promise of a lifetime pension would induce reliance on the part of the manager. The manager relied in fact by retiring and spending $30000 on a trailer. Finally justice requires enforcement because the manager is no longer eligible for employment."
-    },
-    {
-        "domain": "Contracts",
-        "question_number": 214,
-        "question": "  In exchange for valid and sufficient consideration a mother orally promised her son who had no car and wanted a minivan \"to pay to anyone from whom you buy a minivan within the next six months the full purchase-price thereof.\" Two months later the son bought a used minivan on credit from a car dealership for $8000. At the time the dealership was unaware of the mother's earlier promise to her son but learned of it shortly after the sale. Can the dealership enforce the mother's promise to her son?",
-        "options": {
-            "optionA": "A. Yes under the doctrine of promissory estoppel.",
-            "optionB": "B. Yes because the dealership is an intended beneficiary of the mother-son contract.",
-            "optionC": "C. No because the mother's promise to her son is unenforceable under the suretyship clause of the statute of frauds.",
-            "optionD": "D. No because the dealership was neither identified when the mother's promise was made nor aware of it when the minivan sale was made."
-        }
     },
     {
         "domain": "Contracts",
@@ -8976,17 +8747,6 @@
         },
         "correct_answer": "D",
         "explanation": " Because it is a contract for services this contract is governed by the common law of contracts and not the Uniform Commercial Code. The prevailing common law view is that a modification to a contract requires consideration to be valid. Here there was no consideration for the elimination of the contractor's duty to pave the sidewalk. The contractor actually promised to do less than he was under a pre-existing duty to do and so there was no enforceable modification of the contract. Thus Answer D is correct."
-    },
-    {
-        "domain": "Contracts",
-        "question_number": 221,
-        "question": "  During negotiations to purchase a used car a buyer asked a dealer whether the car had ever been in an accident. The dealer replied: \"It is a fine car and has been thoroughly inspected and comes with a certificate of assured quality. Feel free to have the car inspected by your own mechanic.\" In actuality the car had been in an accident and the dealer had repaired and repainted the car successfully concealing evidence of the accident. The buyer declined to have the car inspected by his own mechanic explaining that he would rely on the dealer's certificate of assured quality. At no time did the dealer disclose that the car had previously been in an accident. The parties then signed a contract of sale. After the car was delivered and paid for the buyer learned about the car's involvement in a major accident. If the buyer sues the dealer to rescind the transaction is the buyer likely to succeed?",
-        "options": {
-            "optionA": "A. No because the buyer had the opportunity to have the car inspected by his own mechanic and declined to do so.",
-            "optionB": "B. No because the dealer did not affirmatively assert that the car had not been in an accident.",
-            "optionC": "C. Yes because the contract was unconscionable.",
-            "optionD": "D. Yes because the dealer's statement was intentionally misleading and the dealer had concealed evidence of the accident."
-        }
     },
     {
         "domain": "Contracts",
@@ -9224,19 +8984,6 @@
     },
     {
         "domain": "Contracts",
-        "question_number": 240,
-        "question": "  A homeowner and a contractor entered into a contract for the construction of a home for the price of $300000. The contractor was to earn a profit of $10000 for the job. After the contractor had spent $45000 on labor and materials including $5000 on oak flooring not yet installed the homeowner informed the contractor that the homeowner had lost his job and could not pay for any services. The homeowner told the contractor to stop working immediately. The reasonable market value of the labor and materials provided by the contractor at that point including the oak flooring was $40000. The contractor used the $5000 worth of oak flooring on another job.  In an action by the contractor against the homeowner for damages which of the following would be the largest amount of damages recoverable by the contractor?",
-        "options": {
-            "optionA": "A. $40000 the reasonable value of the services the contractor had provided.",
-            "optionB": "B. $40000 the contractor's construction costs.",
-            "optionC": "C. $50000 the contractor's construction costs of $45000 plus the $10000 profit minus the $5000 saved by reusing the oak flooring on another job.",
-            "optionD": "D. $55000 the contractor's construction costs of $45000 plus the $10000 profit."
-        },
-        "correct_answer": "C",
-        "explanation": " "
-    },
-    {
-        "domain": "Contracts",
         "question_number": 241,
         "question": "  While waiting in line to open an account with a bank a customer read a poster on the bank's wall that said \"New Customers! $25 FOR 5 MINUTES. If you stand in line for more than five minutes we will pay you $25! We like happy customers! (This offer may be withdrawn at any time.)\" The customer started timing his wait and just as five minutes was about to pass the bank manager tore the poster down and announced \"The $25 stand-in-line promotion is over.\" The customer waited in line for 10 more minutes before being served. In the customer's action against the bank for $25 will the customer prevail?",
         "options": {
@@ -9455,19 +9202,6 @@
         },
         "correct_answer": "C",
         "explanation": " The rules of contract law limit the recoverability of damages for a breach of contract. According to the Restatement (Second) of Contracts \u00a7 351 a non-breaching party is entitled to recover damages that the party in breach \"had reason to foresee as a probable result of the breach\" when the parties entered into the contract. Reason to foresee can arise from circumstances that result in the breaching party having had actual or constructive knowledge of the loss that might result from the breach. Therefore the neighbor's failure to specifically inform the rancher that the crop might be destroyed by a hailstorm does not determine whether the loss was foreseeable. Thus Answer B is incorrect. In this case the rancher's experience and the frequency of hailstorms in the fall combined to make the loss resulting from the rancher's breach foreseeable. Thus Answer C is correct."
-    },
-    {
-        "domain": "Contracts",
-        "question_number": 258,
-        "question": "  A niece had worked in her aunt's bookstore for many years. The bookstore business which was housed in a building that the aunt leased was independently appraised at $200000. The aunt decided to retire. She wrote to the niece expressing her affection for the niece and offering to sell her the bookstore business for $125000 if the landlord would agree to a transfer of the lease. The letter also specified when the aunt would transfer the business. The niece wrote back accepting her aunt's offer. In a phone call to the niece the aunt stated that the landlord had approved the transfer of the lease and that she would now ask her attorney to draft a written contract so that there would be a record of the terms. Before the attorney had finished drafting the document the aunt changed her mind about selling the business and informed the niece of her decision. In an action for breach of contract brought by the niece against her aunt is the niece likely to prevail?",
-        "options": {
-            "optionA": "A. No because the motivation for the transfer of the business was the aunt's affection for her niece not the price.",
-            "optionB": "B. No because the promised consideration was inadequate in light of the market value of the business.",
-            "optionC": "C. Yes because the condition concerning the landlord's assent to the transfer of the lease was beyond the control of either party.",
-            "optionD": "D. Yes because the document being drafted by the attorney was merely a record of an agreement already made not a condition to it."
-        },
-        "correct_answer": "D",
-        "explanation": " "
     },
     {
         "domain": "Contracts",
@@ -9702,17 +9436,6 @@
         },
         "correct_answer": "B",
         "explanation": " An option promise is a promise not to revoke an offer to enter into a contract and it requires separate consideration to be enforceable. When a party exercises an option that party in effect accepts the offer and binds himself to the contract. The friend paid the neighbor $10000 in exchange for the neighbor's promise not to revoke his offer to sell. When the friend exercised the option he became obligated to purchase Broadacres for $325000 and his failure to consummate his purchase entitled the neighbor to pursue remedies for breach of contract. Specific performance generally will be awarded for breach of contract where an award of monetary damages would be inadequate or impracticable. Contracts involving the sale of land historically have been regarded as unique and therefore equitable relief traditionally has been allowed even where the breaching party is the buyer. Because the obligation that the neighbor seeks to enforce is the friend's obligation to purchase Broadacres (a contract to purchase land) specific performance will be awarded."
-    },
-    {
-        "domain": "Contracts",
-        "question_number": 277,
-        "question": "  A written contract was entered into between a financier-investor and a winery. The contract provided that the financier-investor would invest $1000000 in the winery for its capital expansion and in return that the winery from grapes grown in it famous vineyards would produce and market at least 500000 bottles of wine each year for five years under a label with the financier's name on it. The contract included provisions that the parties would share equally the profits and losses from the venture and that if feasible the wine would be distributed by the winery only through a wholesale distributor of fine wines. Neither the financier-investor nor the winery had previously dealt with this wholesale distributor. The wholesale distributor learned of the contract two days later from reading a trade newspaper. In reliance thereon he immediately hired an additional sales executive and contracted for enlargement of his wine storage and display facility. If the winery refuses to distribute the wine through the wholesale distributor and the wholesale distributor then sues the winery for breach of contract is it likely that the wholesale distributor will prevail?",
-        "options": {
-            "optionA": "A. Yes because the winery's performance was to run to the wholesale distributor rather than to the financier-investor.",
-            "optionB": "B. Yes because the financier-investor and the winery could reasonably foresee that the wholesale distributor would change his position in reliance on the contract.",
-            "optionC": "C. No because the financier-investor and the winery did not expressly agree that the wholesale distributor would have enforceable rights under their contract.",
-            "optionD": "D. No because the financier-investor and the winery having no apparent motive to benefit the wholesale distributor appeared in making the contract to have been protecting or serving only their own interests."
-        }
     },
     {
         "domain": "Contracts",
@@ -10028,19 +9751,6 @@
     },
     {
         "domain": "Constitutional_law",
-        "question_number": 15,
-        "question": " A child was the illegitimate, unacknowledged child of the decedent. The decedent died intestate, leaving neither spouse nor any children other than the illegitimate child. The state's law of intestate succession provides that an unacknowledged illegitimate child may not inherit his father's property. The spouse, all other blood relations, and the state are preferred as heirs over the unacknowledged illegitimate child. The illegitimate child filed suit in an appropriate court alleging that the state statute barring an illegitimate child from sharing in a parent's estate is invalid, and that he should be declared a lawful heir to his father's estate. The state's strongest defense of the statute would be that",
-        "options": {
-            "optionA": "A. the authority of a state over the disposition of decedents' property located in the state is not affected by the Constitution of the United States.",
-            "optionB": "B. a statute prescribing the means of disposing of the property of intestate decedents does not constitute invidious discrimination.",
-            "optionC": "C. inheritance under intestate succession laws is a privilege, not a right, and therefore is not protected as property under the due process clause.",
-            "optionD": "D. its interest in promoting family life and in encouraging the formal acknowledgment of paternity is an important governmental interest."
-        },
-        "correct_answer": "is",
-        "explanation": " Legitimacy classifications are generally afforded the protection of intermediate scrutiny, meaning the classification must be substantially related to an important governmental interest, and a state statute cannot absolutely exclude illegitimate children from inheriting from their intestate fathers. Courts will look to the intent behind the policy, and will not uphold legislation designed to punish illegitimate children. Therefore, the state's best argument is that instead of punishing the illegitimate offspring, the statute protects them by encouraging formal acknowledgment."
-    },
-    {
-        "domain": "Constitutional_law",
         "question_number": 16,
         "question": " In an effort to relieve serious and persistent unemployment in an industrialized state, its legislature enacted a statute requiring every business with annual sales in the state of over one million dollars to purchase goods and/or services in the state equal in value to at least half of the annual sales in the state of the business. Which of the following constitutional provisions is the strongest basis on which to attack this statue?",
         "options": {
@@ -10272,17 +9982,6 @@
         },
         "correct_answer": "D",
         "explanation": " This is a spending statute, and thus Congress' spending powers are implicated. Additionally, the interstate highway system impacts interstate commerce, and therefore its maintenance and condition are related to Congress' commerce power. Both give Congress broad power to enact legislation. As long as the legislation is reasonably related to a legitimate federal goal, it is constitutional. A speed limit of 55 miles per hour is reasonably related to highway safety, a legitimate federal goal. Therefore the statute is constitutional."
-    },
-    {
-        "domain": "Constitutional_law",
-        "question_number": 34,
-        "question": "  A city adopted an ordinance providing that street demonstrations involving more than 15 persons may not be held in commercial areas during \"rush\" hours. \"Exceptions\" may be made to the prohibition \"upon 24-hour advance application for an approval by the police department.\" The ordinance also imposes sanctions on any person \"who shall, without provocation, use to or of another, and in his presence, opprobrious words or abusive language tending to cause a breach of the peace.\" The ordinance has not yet had either judicial or administrative interpretation. Which of the following is the strongest argument for the unconstitutionality of both parts of the ordinance on their face?",
-        "options": {
-            "optionA": "A. No type of prior restraint may be imposed on speech in public places.",
-            "optionB": "B. Laws regulating, by their terms, expressive conduct or speech may not be overbroad or unduly vague.",
-            "optionC": "C. The determination as to whether public gatherings may be lawfully held cannot be vested in the police.",
-            "optionD": "D. The right of association in public places without interference is assured by the First and Fourteenth Amendments."
-        }
     },
     {
         "domain": "Constitutional_law",
@@ -10858,17 +10557,6 @@
     },
     {
         "domain": "Constitutional_law",
-        "question_number": 79,
-        "question": " A resident of a state brought suit in federal district court against a corporation of that state. The resident seeks recovery of $12,000 actual and $12,000 punitive damages arising from the corporation's sale to him of a defective automobile. The resident's suit is based only on a common law contract theory. From a constitutional standpoint, should the federal district court hear this suit on its merits?",
-        "options": {
-            "optionA": "A. Yes, because Article III vests federal courts with jurisdiction over cases involving the obligation of contracts.",
-            "optionB": "B. Yes, because it is an action affecting interstate commerce.",
-            "optionC": "C. No, because this suit is not within the jurisdiction of an Article III court.",
-            "optionD": "D. No, because there is no case or controversy within the meaning of Article III."
-        }
-    },
-    {
-        "domain": "Constitutional_law",
         "question_number": 80,
         "question": " A statute authorizes a specified federal administrative agency to issue rules governing the distribution of federal grant funds for scientific research. The statute provides that, in issuing those rules, the agency must follow procedures and substantive standards contained in the statute. In a severable provision, the statute also provides the otherwise valid rules issued by the agency under authority delegated to it by this statute may be set aside by a majority vote of a designated standing joint committee of Congress. The provision of this statute relating to the power of the designated standing joint committee of Congress is",
         "options": {
@@ -11233,19 +10921,6 @@
     },
     {
         "domain": "Constitutional_law",
-        "question_number": 108,
-        "question": "  A professional motorcycle rider put on a performance in a privately owned stadium during which he leaped his motorcycle over 21 automobiles. Spectators were charged $5 each to view the jump and were prohibited from using cameras. However, the local television station filmed the whole event from within the stadium without the knowledge or consent of the rider and showed the film in its entirety on the evening newscast that day. The rider thereafter brought suit to recover damages from the station for the admittedly unauthorized filming and broadcasting of the act. The television station raised only constitutional defenses. The court should",
-        "options": {
-            "optionA": "A. hold against the rider, because the First and Fourteenth Amendments authorize press coverage of newsworthy entertainment events.",
-            "optionB": "B. hold against the rider, because under the First and Fourteenth Amendments news broadcasts are absolutely privileged.",
-            "optionC": "C. find the station liable, because its action deprives the rider of his property without due process.",
-            "optionD": "D. find the station liable, because the First and Fourteenth Amendments do not deprive an entertainer of the commercial value of his or her performances."
-        },
-        "correct_answer": "is",
-        "explanation": " The rider has a property right in the commercial value of his performance, and although the television station has a First and Fourteenth Amendment right to publish information, it does not have any immunity under the Constitution for liability in tort if it deprives a person of the commercial value of that person's performance. Choice A is incorrect because the right of the press to cover newsworthy events is not an immunity from liability. Choice B is incorrect because there is no absolute privilege under the Constitution for the press. Choice C is incorrect because the Constitution only restricts the government from depriving people of property without due process of law. It does not restrict private parties. The television station does remain liable in tort, however."
-    },
-    {
-        "domain": "Constitutional_law",
         "question_number": 109,
         "question": "  Congress passed a bill prohibiting the President from granting a pardon to any person who had not served at least one-third of the sentence imposed by the court which convicted that person. The President vetoed the bill, claiming that it was unconstitutional. Nevertheless, Congress passed it over his veto by a two-thirds vote of each house. This act of Congress is",
         "options": {
@@ -11337,19 +11012,6 @@
     },
     {
         "domain": "Constitutional_law",
-        "question_number": 116,
-        "question": " The Federal Computer Abuse Act establishes the Federal Computer Abuse Commission, authorizes the Commission to issue licenses for the possession of computers on terms that are consistent with the purposes of the act, and makes the unlicensed possession of a computer a crime. The provisions of the Federal Computer Abuse Act are inseverable. A user applied to the Federal Computer Abuse Commission for a license to possess a computer. The Commission held, and the user participated in, a trial-type proceeding on the user's license application. In that proceeding it was demonstrated that the user repeatedly and intentionally used computers to introduce secret destructive computer programs (computer viruses) into electronic data banks without the consent of their owners. As a result, the Commission denied the user's application for a license. The license denial was based on a Commission rule authorized by the Computer Abuse Act that prohibited the issuance of computer licenses to persons who had engaged in such conduct. Nevertheless, the user retained and continued to use his computer. He was subsequently convicted of the crime of unlicensed possession of a computer. On appeal, he challenges the constitutionality of the licensing provision of the Federal Computer Abuse Act. In this case, the reviewing court would probably hold that act to be",
-        "options": {
-            "optionA": "A. constitutional, because the Constitution generally authorizes Congress to enact all laws that are necessary and proper to advance the general welfare, and Congress could reasonably believe that possession of computers by people like the user constitutes a threat to the general welfare.",
-            "optionB": "B. constitutional, because Congress may use the authority vested in it by the commerce clause to regulate the possession of computers and the provisions of this act do not violate any prohibitory provision of the Constitution.",
-            "optionC": "C. unconstitutional, because Congress may not impose a criminal penalty on action that is improper merely because it is inconsistent with an agency rule.",
-            "optionD": "D. unconstitutional, because the mere possession of a computer is a wholly local matter that is beyond the regulatory authority of Congress."
-        },
-        "correct_answer": "Answer",
-        "explanation": " Congress has broad power under the Constitution to regulate items in the stream of commerce including the possession of computers. Because this licensing act doesn't violate any prohibitory provision of the Constitution, it is constitutional. Choice A is incorrect because the power to enact laws that promote the general welfare is linked to Congress's spending power, and this is not a spending statute; rather, this is the regulation of possession of a good, and the necessary and proper clause enables Congress to enact laws that regulate interstate commerce. Choice C is incorrect because it is the act itself that makes unlicensed possession of a computer illegal. Choice D is incorrect because it is nearly impossible for a commercial product not to impact interstate commerce, and computers certainly move in interstate commerce. Because computers are part of the stream of commerce, they are not a purely local matter."
-    },
-    {
-        "domain": "Constitutional_law",
         "question_number": 117,
         "question": "  The United States Department of Energy regularly transports nuclear materials through a particular city on the way to a nuclear weapons processing plant it operates in a nearby state. The city recently adopted an ordinance prohibiting the transportation of any nuclear materials in or through the city. The ordinance declares that its purpose is to protect the health and safety of the residents of that city. May the Department of Energy continue to transport these nuclear materials through the city?",
         "options": {
@@ -11360,17 +11022,6 @@
         },
         "correct_answer": "C",
         "explanation": " Under the supremacy clause, the federal agency's activities supersede any inconsistent local law. A local body may not regulate any part of the federal government. Thus, as long as the federal agency is involved in a lawful federal function, which it is, the city may not prohibit it from performing that function without the consent of Congress."
-    },
-    {
-        "domain": "Constitutional_law",
-        "question_number": 118,
-        "question": "  The legislature of a particular state enacted a statute requiring that all law enforcement officers in that state be citizens of the United States. An alien, lawfully admitted to permanent residency five years before the enactment of this statute, sought employment as a forensic pathologist in the state coroner's office. He was denied such a job solely because he was not a citizen. The alien thereupon brought suit in federal district court against appropriate state officials seeking to invalidate this citizenship requirement on federal constitutional grounds. The strongest ground upon which to attack this citizenship requirement is that it",
-        "options": {
-            "optionA": "A. constitutes an ex post facto law as to previously admitted aliens.",
-            "optionB": "B. deprives an alien of a fundamental right to employment without the due process of law guaranteed by the Fourteenth Amendment.",
-            "optionC": "C. denies an alien a right to employment in violation of the privileges and immunities clause of the Fourteenth Amendment.",
-            "optionD": "D. denies an alien the equal protection of the laws guaranteed by the Fourteenth Amendment."
-        }
     },
     {
         "domain": "Constitutional_law",
@@ -11436,19 +11087,6 @@
         },
         "correct_answer": "C",
         "explanation": " The test to analyze whether a law violates the establishment clause of the First Amendment is 1) whether its purpose is secular, 2) whether its primary effect advances or inhibits religion, 3) and whether it fosters an excessive entanglement with religion. The new sales tax exemption gives a benefit only to \"recognized religious faiths\" and only for the publication of their sacred writings. That exemption is effectively a subsidy of recognized religious faiths. While the tax may have a secular purpose and the advancement of religion is not its primary effect, the tax is an excessive entanglement with religion. Therefore, it violates the establishment clause."
-    },
-    {
-        "domain": "Constitutional_law",
-        "question_number": 124,
-        "question": "  A statute in a particular state provided state monetary grants to private dance, theater, and opera groups located in that state. The statute required recipients of such grants to use the granted monies for the acquisition, construction, and maintenance of appropriate facilities for the public performance of their performing arts. The last section of the statute conditioned the award of each such grant on the recipient's agreement to refrain from all kinds of political lobbying calculated to secure additional tax support for the performing arts. The strongest constitutional basis for an attack upon the validity of the last section of the statute would be based upon the",
-        "options": {
-            "optionA": "A. commerce clause.",
-            "optionB": "B. obligation of contracts clause.",
-            "optionC": "C. Fifth Amendment.",
-            "optionD": "D. First and Fourteenth Amendments."
-        },
-        "correct_answer": "is",
-        "explanation": " The strongest constitutional basis for an attack on the provision is that by conditioning the award of a grant on the recipient's agreement to refrain from all kinds of political lobbying designed to secure additional tax support, the state was prohibiting a particular kind of speech or political activity in violation of the First and Fourteenth Amendments. State actions that restrict speech or similar political activity are subject to strict scrutiny, and rarely pass. A is not correct because the state action does not impair the flow of interstate commerce, since it does not restrict a commercial activity so much as a political activity. B is incorrect because no existing contract is being impaired by the statute. C is incorrect because the Fifth Amendment applies only to the federal government, not the states."
     },
     {
         "domain": "Constitutional_law",
@@ -11670,17 +11308,6 @@
         },
         "correct_answer": "A",
         "explanation": " The ground for the homeowner's complaint is that her taxes are higher than the taxes paid by other owners of similar homes. Because she is protesting the way that the government is treating her compared to people she claims are similarly situated, she is making an equal protection challenge. B is incorrect because the privileges and immunities clause only prohibits states from treating out of state residents differently than state residents. Here, there is no classification of non-residents. C is incorrect because taxation is almost never a taking of property for public use. D is incorrect because the law is not a new enactment that makes illegal something that was legal when it happened. Therefore, equal protection is really the only valid claim the owner can make."
-    },
-    {
-        "domain": "Constitutional_law",
-        "question_number": 142,
-        "question": " A generally applicable state statute requires an autopsy by the county coroner in all cases of death that are not obviously of natural causes. The purpose of this law is to ensure the discovery and prosecution of all illegal activity resulting in death. In the 50 years since its enactment, the statute has been consistently enforced. A husband and wife are sincere practicing members of a religion that maintains it is essential for a deceased person's body to be buried promptly and without any invasive procedures, including an autopsy. When the the couple's son died of mysterious causes and an autopsy was scheduled, the the couple filed an action in state court challenging the constitutionality of the state statute, and seeking an injunction prohibiting the county coroner from performing an autopsy on their son's body. In this action, the couple claimed only that the application of this statute in the circumstances of their son's death would violate their right to the free exercise of religion as guaranteed by the First and Fourteenth Amendments. Assume that no federal statutes are applicable. As applied to the couple's case, the court should rule that the state's autopsy statute is",
-        "options": {
-            "optionA": "A. constitutional, because a dead individual is not a person protected by the due process clause of the Fourteenth Amendment.",
-            "optionB": "B. constitutional, because it is a generally applicable statute and is rationally related to a legitimate state purpose.",
-            "optionC": "C. unconstitutional, because it is not necessary to vindicate a compelling state interest.",
-            "optionD": "D. unconstitutional, because it is not substantially related to an important state interest."
-        }
     },
     {
         "domain": "Constitutional_law",
@@ -12100,19 +11727,6 @@
     },
     {
         "domain": "Constitutional_law",
-        "question_number": 175,
-        "question": "  A federal statute imposes an excise tax of $100 on each new computer sold in the United States. It also appropriates the entire proceeds of that tax to a special fund, which is required to be used to purchase licenses for computer software that will be made available for use, free of charge, to any resident of the United States. Is this statute constitutional?",
-        "options": {
-            "optionA": "A. No, because the federal government may not impose any direct taxes on citizens of the United States.",
-            "optionB": "B. No, because this statute takes without just compensation the property of persons who hold patents or copyrights on computer software.",
-            "optionC": "C. Yes, because it is a reasonable exercise of the power of Congress to tax and spend for the general welfare.",
-            "optionD": "D. Yes, because the patent power authorizes Congress to impose reasonable charges on the sale of technology and to spend the proceeds of those charges to advance the use of technology in the United States."
-        },
-        "correct_answer": "is",
-        "explanation": " Courts defer to reasonable congressional taxing measures, such as the statute at issue in this case, as well as to expenditures that reasonably further the general welfare."
-    },
-    {
-        "domain": "Constitutional_law",
         "question_number": 176,
         "question": "  A toy manufacturer that has its headquarters and sole manufacturing plant in a particular state developed a \"Martian\" toy that simulates the exploration of Mars by a remote-controlled vehicle. It accurately depicts the Martian landscape and the unmanned exploratory vehicle traversing it. The toy is of high quality, safe, durable, and has sold very well. Other toy manufacturers, all located outside the state, developed similar toys that are lower in price. These manufacturers have contracts to sell their Martian toys to outlets in the state. Although these toys are safe and durable, they depict the Martian landscape less realistically than the toys manufactured in the state. Nevertheless, because of the price difference, sales of these toys have cut severely into the sales of the Martian toys manufactured in the state. The state legislature subsequently enacted a law \"to protect the children of the state from faulty science and to protect in-state toy manufacturers from unfair competition.\" This law forbids the sale in the state of any toy that purports to represent extraterrestrial objects and does not satisfy specified scientific criteria. The Martian toy manufactured in the state satisfies all of these criteria; none of the Martian toys of the competing manufacturers meets the requirements. Is the state law constitutional?",
         "options": {
@@ -12344,19 +11958,6 @@
         },
         "correct_answer": "C",
         "explanation": " The court has federal question jurisdiction over the case because it \"arises under\" a treaty of the United States, as provided for by Article III of the Constitution. The self-executing treaty is valid because it was entered into by the President and a foreign country with the advice and consent of the Senate."
-    },
-    {
-        "domain": "Constitutional_law",
-        "question_number": 194,
-        "question": "  A state legislature received complaints from accident victims who, in the days immediately following their accidents, had received unwelcome and occasionally misleading telephone calls on behalf of medical care providers. The callers warned of the risks of not obtaining prompt medical evaluation to detect injuries resulting from accidents and offered free examinations to determine whether the victims had suffered any injuries. In response to these complaints, the legislature enacted a law prohibiting medical care providers from soliciting any accident victim by telephone within 30 days of his or her accident. Which of the following is the most useful argument for the state to use in defending the constitutionality of the law?",
-        "options": {
-            "optionA": "A. Because the commercial speech that is the subject of this law includes some speech that is misleading, the First Amendment does not limit the power of the state to regulate that speech.",
-            "optionB": "B. Because the law regulates only commercial speech, the state need only demonstrate that the restriction is rationally related to achieving the state's legitimate interests in protecting the privacy of accident victims and in regulating the medical profession.",
-            "optionC": "C. The state has substantial interests in protecting the privacy of accident victims and in regulating the practice of medical care providers, and the law is narrowly tailored to achieve the state's objectives.",
-            "optionD": "D. The law is a reasonable time, place, and manner regulation."
-        },
-        "correct_answer": "law",
-        "explanation": " The U.S. Supreme Court has held that a law barring the solicitation of accident victims within a limited time period following an accident was narrowly tailored to serve the state's substantial interest in protecting the privacy of the victims. Thus, Answer C is correct."
     },
     {
         "domain": "Constitutional_law",
@@ -13036,17 +12637,6 @@
     },
     {
         "domain": "Property",
-        "question_number": 12,
-        "question": "  A landowner owns and possesses Goodacre, on which there is a lumber yard. The landowner conveyed to an electric company the right to construct and use an overhead electric line across Goodacre to serve other properties. The conveyance was in writing, but the writing made no provision concerning the responsibility for repair or maintenance of the line. The electric company installed the poles and erected the electric line in a proper and workmanlike manner. Neither the landowner nor the electric company took any steps toward the maintenance or repair of the line after it was built. Neither party complained to the other about any failure to repair. Because of the failure to repair or properly maintain the line, it fell to the ground during a storm. In doing so, it caused a fire in the lumber yard and did considerable damage. The landowner sued the electric company to recover for damages to the lumber yard. The decision should be for",
-        "options": {
-            "optionA": "A. The landowner, because the owner of an easement has a duty to maintain the easement so as to avoid unreasonable interference with the use of the servient tenement by its lawful possessor.",
-            "optionB": "B. The landowner, because the owner of an easement is absolutely liable for any damage caused to the servient tenement by the exercise of the easement.",
-            "optionC": "C. The electric company, because the possessor of the servient tenement has a duty to give the easement holder notice of defective conditions.",
-            "optionD": "D. The electric company, because an easement holder's right to repair is a right for its own benefit, and is therefore inconsistent with any duty to repair for the benefit of another."
-        }
-    },
-    {
-        "domain": "Property",
         "question_number": 13,
         "question": "  A diner containing a drive-in hamburger and ice cream stand recently opened for business in a suburban town. The diner's business hours are from 9:00 a.m. to midnight. It is in an area that for fifteen years has been zoned for small retail businesses, apartment buildings, and one-and two-family residences. The zoning code specifies that \"small retail business\" includes \"businesses where food and drink are dispensed for consumption on the premises.\" The diner was the first drive-in in the town. For seven years, a husband and wife have owned and lived in their single-family residence, which is across the street from the diner. The diner is heavily patronized during the day and night by high school students. The noise and lights of the cars, the lights illuminating the diner's parking lot, and the noise from the loudspeaker of the ordering system prevented the homeowners from sleeping before midnight. Paper cups, napkins, and other items from the drive-in are regularly blown into the homeowners' front yard by the prevailing wind. The traffic to and from the diner is so heavy on the street in front of their house that the homeowners are afraid to allow their small children to play in the front yard. The homeowners have asserted a claim against the diner based on private nuisance. The most likely effect of the fact that the homeowners were in the area before the diner is that it",
         "options": {
@@ -13281,17 +12871,6 @@
     },
     {
         "domain": "Property",
-        "question_number": 31,
-        "question": " An owner conveyed Goldacre to \"my son, his heirs and assigns, but if my son dies and is not survived by children by his present wife, then to my neice and his heirs and assigns.\" Shortly after taking possession, the son discovered rich metal deposits on the land, opened a mining operation, and removed and sold a considerable quantity of valuable ore without giving the neice any notice of his action. The son has no children. The son, his wife, and the neice are all still living. The neice brought an action in equity for an accounting of the value of the ore removed and for an injunction against further removal. If the decision is for the son, it will be because",
-        "options": {
-            "optionA": "A. the neice has no interest in Goldacre.",
-            "optionB": "B. the right to take minerals is an incident of a defeasible fee simple.",
-            "optionC": "C. the right to take minerals is an incident of the right to possession.",
-            "optionD": "D. there was no showing that the son acted in bad faith."
-        }
-    },
-    {
-        "domain": "Property",
         "question_number": 32,
         "question": " An unmarried couple purchased a condominium as tenants in common and lived in the condominium for three years. Subsequently, they made a verbal agreement that, on the death of either of them, the survivor would own the entire condominium, and, as a result, they decided they did not need wills. Two years later, the couple was involved in the same automobile accident. The woman was killed immediately. The man died one week later. Both died intestate. The woman's sole heir is her brother. The man's sole heir is his mother. The brother claimed one-half of the condominium, and the mother claimed all of it. The jurisdiction has no applicable statute except for the Statute of Frauds; nor does it recognize common-law marriages. In an appropriate action by the mother claiming the entire ownership of the condominium, the court will find that",
         "options": {
@@ -13315,17 +12894,6 @@
         },
         "correct_answer": "B",
         "explanation": " Some of the most basic sticks in the bundle of property rights are those relating to use of one's land. A property owner, whether an individual or a commercial entity, is entitled to make reasonable use of its property. An owner is likewise entitled to use and enjoy her land without invasions of that use and enjoyment by the activities of other owners. In this case, the facts indicate that the cement company's commercial activities result in a large cloud of concrete dust that fills the air on the plaintiff's residential land. Determining the parties' respective rights requires a balancing between the cement company's right to use its property as it wishes on the one hand, and the plaintiff's right to quiet enjoyment of her property on the other. For the plaintiff to prevail, she must establish that the cement company's use of its land constituted an unreasonable interference with the plaintiff's use of her own. Therefore, answer B is correct."
-    },
-    {
-        "domain": "Property",
-        "question_number": 34,
-        "question": "  A landowner entered a hospital to undergo surgery and feared that she might not survive. She instructed her lawyer by telephone to prepare a deed conveying Blackacre, a large tract of undeveloped land, as a gift to her nephew, who lived in a distant state. Her instructions were followed, and, prior to her surgery, she executed a document in a form sufficient to constitute a deed of conveyance. The deed was recorded by the lawyer promptly and properly as she instructed him to do. The recorded deed was returned to the lawyer by the land record office. The landowner, in fact, recovered from her surgery and the lawyer returned the recorded deed to her. Before the landowner or the lawyer thought to inform the nephew of the conveyance, the nephew was killed in an auto accident. The nephew's will left all of his estate to a satanic religious cult. The landowner was very upset at the prospect of the cult's acquiring Blackacre. The local taxing authority assessed the next real property tax bill on Blackacre to the nephew's estate. The landowner brought an appropriate action against the nephew's estate and the cult to set aside the conveyance to the nephew. If the landowner loses, it will be because",
-        "options": {
-            "optionA": "A. the gift of Blackacre was inter vivos rather than causa mortis.",
-            "optionB": "B. the showing of the nephew's estate as the owner of Blackacre on the tax rolls supplied what otherwise would be a missing essential element for a valid conveyance.",
-            "optionC": "C. disappointing the nephew's devisee would violate the religious freedom provisions of the First Amendment to the Constitution.",
-            "optionD": "D. delivery of the deed is presumed from the recording of the deed."
-        }
     },
     {
         "domain": "Property",
@@ -13365,19 +12933,6 @@
         },
         "correct_answer": "A",
         "explanation": " The man and the woman held the property in joint tenancy. A joint tenancy cannot be created without the \"four unities\" (time, title, possession and interest), and can be terminated in one of two ways: by partition or by severance. Where one joint tenant makes an inter vivos conveyance of their interest in the property, a severance occurs and the interest transferred is that of a tenant in common. As soon as the man transferred his interest to his wife, the joint tenancy was severed and the property was held by his wife and the woman as tenants in common. When the wife immediately transferred her interest back to the man, the joint tenancy was not recreated because the four unities were no longer present. The man and the woman then held the property as tenants in common, so A is correct. B is incorrect because the man's inter vivos conveyance, not his will, severed the tenancy. D is incorrect because the man had no fiduciary duty to the woman."
-    },
-    {
-        "domain": "Property",
-        "question_number": 38,
-        "question": "  At the time of his death last week, the testator owned Blackacre, a small farm. By his duly probated will, drawn five years ago, the testator did the following: (I) devised Blackacre \"to Arthur for the life of Baker, then to Casper\"; (II) gave \"all the rest, residue and remainder of my Estate, both real and personal, to my friend Fanny.\" At his death, the testator was survived by Arthur, Casper, Sonny (the testator's son and sole heir), and Fanny. Baker had died a week before the testator. Title to Blackacre is now in",
-        "options": {
-            "optionA": "A. Arthur for life, remainder to Casper.",
-            "optionB": "B. Casper, in fee simple.",
-            "optionC": "C. Sonny, in fee simple.",
-            "optionD": "D. Fanny, in fee simple."
-        },
-        "correct_answer": "B",
-        "explanation": " "
     },
     {
         "domain": "Property",
@@ -13638,17 +13193,6 @@
         },
         "correct_answer": "A",
         "explanation": " With regard to defects on a property, sellers are required to disclose all known defects that will not be open and obvious to a buyer, and are prohibited from concealing such defects in any way. The fact that sewage seeps into the basement of the Blackacre house would not be obvious to a buyer unless it was occurring during the time he was viewing or inspecting the house. The owner had an obligation to make the investor aware of this hidden or \"latent\" defect, so answer A is correct."
-    },
-    {
-        "domain": "Property",
-        "question_number": 59,
-        "question": "  A brother and sister were jointly in possession of Greenacre in fee simple as tenants in common. They joined in a mortgage of Greenacre to a local bank. The brother erected a fence along what he considered to be the true boundary between Greenacre and the adjoining property, owned by the neighbor. Shortly thereafter, the brother had an argument with his sister and gave up his possession of Greenacre. The debt secured by the mortgage has not been paid. The neighbor surveyed his land and found that the fence erected a year earlier by the brother did not follow the true boundary. Part of the fence was within Greenacre. Part of the fence encroached on the neighbor's land. The neighbor and the sister executed an agreement fixing the boundary line in accordance with the fence constructed by the brother. The agreement, which met all the formalities required in the jurisdiction, was promptly and properly recorded. A year after the agreement was recorded, the brother temporarily reconciled his differences with his sister and resumed joint possession of Greenacre. Thereafter, the brother repudiated the boundary line agreement and brought an appropriate action against the neighbor and the sister to quiet title along the original true boundary. In such action, the brother will",
-        "options": {
-            "optionA": "A. win, because the local bank was not a party to the agreement.",
-            "optionB": "B. win, because one tenant in common cannot bind another tenant in common to a boundary line agreement.",
-            "optionC": "C. lose, because the agreement, as a matter of law, was mutually beneficial to the sister and the brother.",
-            "optionD": "D. lose, because the sister was in sole possession of the premises at the time the agreement was signed."
-        }
     },
     {
         "domain": "Property",
@@ -14637,19 +14181,6 @@
         },
         "correct_answer": "D",
         "explanation": " The friend\u2019s best argument is that the streets on the plan signify a public dedication. Where there is: 1) an expressed intent to dedicate land for public use, and 2) an acceptance of the dedication, a public dedication of land is established, and title to the land will pass to the public entity. In this case, the plan was recorded containing language that clearly indicates that streets and other \"public areas\" have been set aside for public use. Further, the plan was fully approved by all necessary government (public) agencies, which arguably establishes that they have accepted the dedication of those streets and areas to the public. Therefore, the friend\u2019s best argument is that the plan constitutes a public dedication of the street areas, and answer D is correct."
-    },
-    {
-        "domain": "Property",
-        "question_number": 136,
-        "question": "  A testator devised his farm \"to my son for life, then to my son's children and their heirs and assigns.\" The son, a widower, had two unmarried adult children. In an appropriate action to construe the will, the court will determine that the remainder to children is",
-        "options": {
-            "optionA": "A. indefeasibly vested.",
-            "optionB": "B. contingent.",
-            "optionC": "C. vested subject to partial defeasance.",
-            "optionD": "D. vested subject to complete defeasance."
-        },
-        "correct_answer": "C",
-        "explanation": " "
     },
     {
         "domain": "Property",
@@ -16080,19 +15611,6 @@
         },
         "correct_answer": "B",
         "explanation": " When the man delivered the deed to his attorney with instructions to deliver it to the nephew on his death, he was attempting to create a valid death escrow. Neither a written nor an oral contract is required for a valid death escrow, since most are gratuitous. To create a valid death escrow, however, the man had to place the deed beyond his control, reserving no power over it once it had been given to the attorney. Because the man instructed the attorney to return the deed to the man if he asked, the man did not place the deed beyond his control, and no death escrow was created. Thus, Answer B is correct."
-    },
-    {
-        "domain": "Property",
-        "question_number": 251,
-        "question": "  Ten years ago, a seller sold land to a buyer, who financed the purchase price with a loan from a bank that was secured by a mortgage on the land. The buyer purchased a title insurance policy running to both the buyer and the bank, showing no liens on the property other than the buyer's mortgage to the bank. Eight years ago, the buyer paid the mortgage in full. Seven years ago, the buyer sold the land to an investor by a full covenant and warranty deed without exceptions. Six years ago, the investor gave the land to a donee by a quitclaim deed. Last year, the donee discovered an outstanding mortgage on the land that predated all of these conveyances. As a result of a title examiner's negligence, this mortgage was not disclosed in the title insurance policy issued to the buyer and the bank. Following this discovery, the donee successfully sued the buyer to recover the amount of the outstanding mortgage. If the buyer sues the title insurance company to recover the amount he paid to the donee, is he likely to prevail?",
-        "options": {
-            "optionA": "A. No, because the buyer conveyed the land to an investor.",
-            "optionB": "B. No, because the title insurance policy lapsed when the buyer paid off the bank's mortgage.",
-            "optionC": "C. Yes, because the d.",
-            "optionD": "D. Yes, because the buyer was successfully sued by a donee and not by a bona fide purchaser for value."
-        },
-        "correct_answer": "C",
-        "explanation": " "
     },
     {
         "domain": "Property",
@@ -20007,5 +19525,4 @@
         "correct_answer": "C",
         "explanation": "C is correct. There has been no finding of negligence on the part of the government. The trier of fact found that the government had selected a reliable manufacturer for the component part and could not have anticipated or prevented the malfunction. The court should therefore enter judgment for the defendant, on the ground that a case under the Federal Tort Claims Act has not been proved. A is incorrect. Res ipsa loquitur applies only to situations in which a lay jury could say that the accident would not ordinarily occur in the absence of the defendant's negligence. This is not such a situation because it involves complex machinery beyond the ordinary experience of a lay jury. Also, another potential defendant is involved, and the findings of the jury are inconsistent with a conclusion that this is the sort of accident that would not ordinarily occur in the absence of the government's negligence. B is incorrect. This is the principle of Rylands v. Fletcher, a case based on strict liability rather than on negligence, and the Federal Tort Claims Act only permits actions based on negligence. See Rylands v. Fletcher, [1868] All E.R. 1. D is incorrect. The actions of more than one defendant may be considered the proximate cause of the harm to the plaintiff. Moreover, while proximate cause is necessary to establish liability in negligence, it is not sufficient. Given the findings of the trier of fact, the farm owner has not established breach of a duty by the government."
     }
-    
 ]

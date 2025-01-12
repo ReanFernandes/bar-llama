@@ -26,12 +26,13 @@ trains = [
 # SLURM script template for job submission
 def generate_slurm_script(seed, dataset, train, prompt):
     return f"""#!/bin/bash
-#SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:A40:1
-#SBATCH --output=logs/train-out-%j.log
-#SBATCH --error=logs/train-err-%j.log
-#SBATCH --time=13:00:00
-#SBATCH --partition=single
+#SBATCH --job-name=run-finetuning-one-seed
+#SBATCH --output=logs/run-finetuning-one-seed-%j
+#SBATCH --error=logs/run-finetuning-one-seed-%j
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=mldlc2_gpu-l40s
+#SBATCH --gres=gpu:1
+#SBATCH --time=6:00:00 # 6 hours
 #SBATCH --job-name=ft_{seed}_{dataset}_{train}
 
 source ~/.bashrc

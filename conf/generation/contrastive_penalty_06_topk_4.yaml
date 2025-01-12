@@ -4,5 +4,4 @@ kwargs:
   penalty_alpha: 0.6  # Recommended starting value
   top_k: 4  # Balances diversity and coherence
   max_new_tokens: 600
-  return_full_text: False
 label: contrastive_penalty_06_topk_4

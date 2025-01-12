@@ -142,7 +142,7 @@ def main(cfg: DictConfig):
 
         #Level 4 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>/<model_adapter_name>
         lora_adapter_path = os.path.join(raw_adapter_path, cfg.eval.eval_model_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
-
+        logging.info(f"Loading model adapter from {lora_adapter_path}")
         # this should basically be the completed directory path for this models adapter to be saved to. 
         # ----------------- Load the model adapter and tokenizer -----------------#
 
@@ -220,24 +220,32 @@ def main(cfg: DictConfig):
             #dump data to raw outputs
             with open(raw_save_path, 'w', encoding='utf-8') as f:
                 json.dump(raw_outputs,f, indent=4)
+        
         prompt, ground_truth = promptor.create_prompt(data, 
                                                       mode="eval",
                                                       pipeline_available=cfg.eval.pipeline_available)
+        
         logging.info(f"Domain : {data['domain']}, Question : {data['question_number']}")
 
         if cfg.eval.pipeline_available is True: 
-            sequences = text_gen_pipeline(prompt,**cfg.generation.kwargs)
+            sequences = text_gen_pipeline(prompt,
+                                          return_full_text=False,
+                                          **cfg.generation.kwargs)
             processed_data = {"prompt": prompt,
                               "response":sequences[0]['generated_text'],
                               "ground_truth":ground_truth}
         elif cfg.eval.pipeline_available is False: 
+            
             # using manual generation for peft model
             inputs = tokenizer(prompt, return_tensors="pt")
             inputs.to(model.device)
 
             #generate model response 
             output = model.generate(**inputs, **cfg.generation.kwargs)
+
+            #Filter out the questions and only extract the model generated response
             sequences = tokenizer.batch_decode(output[:, inputs['input_ids'].shape[1]:], skip_special_tokens=True)
+            
             processed_data = {"prompt": prompt,
                               "response":sequences[0],
                               "ground_truth":ground_truth}
@@ -302,7 +310,7 @@ def main(cfg: DictConfig):
             'seed': cfg.seeds.label, # Seed used for the run
             'training_status': cfg.eval.training_status, # can be 'trained' or 'untrained'
             'quantisation_status': cfg.eval.quantisation_status, # can be 'quantised_model' or 'full_model'
-            'training dataset': cfg.dataset.label if cfg.eval.training_status == 'trained' else None, # dataset used for training
+            'training dataset': cfg.dataset.dataset_label if cfg.eval.training_status == 'trained' else None, # dataset used for training
             'num_training_samples': cfg.dataset.num_sample_label if cfg.eval.training_status == 'trained' else None, # number of samples used for training, if applicable
             'num_training_domains': cfg.dataset.domains if cfg.eval.training_status == 'trained' else None, # number, or rather the list of names of domains used for training, if applicable
             'randomised_training_samples' : cfg.dataset.randomise_questions if cfg.eval.training_status == 'trained' else None, # whether the samples were selected randomly from the train set

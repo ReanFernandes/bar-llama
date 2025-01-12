@@ -52,6 +52,7 @@ def set_global_seed(seed):
         torch.backends.cudnn.benchmark = False
     set_seed(seed)
 
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 @hydra.main(config_path="conf", config_name="config", version_base=None)
 def main(cfg: DictConfig):
@@ -75,11 +76,11 @@ def main(cfg: DictConfig):
      
     logging.info(f"Running Fine-tuning on the {cfg.dataset.dataset_label} dataset")
     logging.info(f"Current training config is : \n Prompt type : {cfg.train.prompt.prompt_type} \n Response type : {cfg.train.prompt.response_type} \n Explanation type : {cfg.train.prompt.explanation_type} \n Response Format : {cfg.train.prompt.response_format} ")
-    wandb.login(key=os.environ.get('WANDB_token'))
-    #create new customised name for run name using the seed and also the train set label
-    run_name = f"{cfg.seeds.label}_{cfg.dataset.dataset_label}_{cfg.generation.label}_{cfg.train.train_config_label}"
+    # wandb.login(key=os.environ.get('WANDB_token'))
+    # #create new customised name for run name using the seed and also the train set label
+    # run_name = f"{cfg.seeds.label}_{cfg.dataset.dataset_label}_{cfg.generation.label}_{cfg.train.train_config_label}"
 
-    wandb.init(project=cfg.train.wandb.project_name, name=run_name)
+    # wandb.init(project=cfg.train.wandb.project_name, name=run_name)
     #--------------------- Load the training dataset (VALIDATED)---------------------# 
     # the training dataset config contains a hardcoded path to a deprecated dataset, and we will load the dataset 
     # based on the explanation type, since there are two main training sets, one which is raw and the other which is distilled
@@ -98,10 +99,13 @@ def main(cfg: DictConfig):
 
     for data_item in unformatted_dataset:
         # run over loop to populate the prompt_dict for the training ready samples
-        promptor.create_prompt(question_item=data_item,
+        try:
+            promptor.create_prompt(question_item=data_item,
                                 mode="train", #when set to "train", the model format for training text is use to create the prompt
                                 store_prompt=True) # this stores the prompt to the prompt_dict of the class
-
+        except Exception as e:
+            logging.error(f"Error creating prompt for {data_item} : {e}, skipping this item")
+            continue
     #copy over the prompt_dict to the train_set,  at this point the dataset should look like a colleciton of {"text": "<training_question_sample_text>"}             
     train_set = promptor.prompt_dict
 

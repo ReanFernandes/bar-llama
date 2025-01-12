@@ -271,39 +271,43 @@ Response:
         ''' 
         Create a bundled system prompt and input prompt, to be passed to the model as one message.
         '''
-        input_prompt, ground_truth = self.input_prompt(question_item)
-        
-        if mode == "train":  # Use in the format of the model, with the answers appended after the input prompt
-            expected_response = self._set_response(question_item)
-            if model_name == "llama2":
-                if self.cfg["include_system_prompt"]:
-                    prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]{expected_response}</s>"""
+        try:
+            input_prompt, ground_truth = self.input_prompt(question_item)
+            
+            if mode == "train":  # Use in the format of the model, with the answers appended after the input prompt
+                expected_response = self._set_response(question_item)
+                if model_name == "llama2":
+                    if self.cfg["include_system_prompt"]:
+                        prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]{expected_response}</s>"""
+                    else:
+                        prompt_template = f"""[INST]\n{input_prompt}[/INST]{expected_response}</s>"""
+                elif model_name == "mistral":
+                    if self.cfg["include_system_prompt"]:
+                        raise NotImplementedError("Mistral model formatting is not implemented yet.")
+                    else:
+                        raise NotImplementedError("Mistral model formatting is not implemented yet.")
                 else:
-                    prompt_template = f"""[INST]\n{input_prompt}[/INST]{expected_response}</s>"""
-            elif model_name == "mistral":
-                if self.cfg["include_system_prompt"]:
-                    raise NotImplementedError("Mistral model formatting is not implemented yet.")
+                    raise ValueError(f"Unsupported model_name: {model_name}")
+            
+            elif mode == "eval":
+                if pipeline_available:
+                    if self.cfg["include_system_prompt"]:
+                        prompt_template = f"""{self.system}\n{input_prompt}"""
+                    else:
+                        prompt_template = f"""{input_prompt}"""
                 else:
-                    raise NotImplementedError("Mistral model formatting is not implemented yet.")
+                    if self.cfg["include_system_prompt"]:
+                        prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
+                    else:
+                        prompt_template = f"""[INST]\n{input_prompt}[/INST]"""
             else:
-                raise ValueError(f"Unsupported model_name: {model_name}")
-        
-        elif mode == "eval":
-            if pipeline_available:
-                if self.cfg["include_system_prompt"]:
-                    prompt_template = f"""{self.system}\n{input_prompt}"""
-                else:
-                    prompt_template = f"""{input_prompt}"""
-            else:
-                if self.cfg["include_system_prompt"]:
-                    prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
-                else:
-                    prompt_template = f"""[INST]\n{input_prompt}[/INST]"""
-        else:
-            raise ValueError(f"Invalid mode: {mode}")
+                raise ValueError(f"Invalid mode: {mode}")
 
-        if store_prompt:
-            # Append prompt_template as a value for the key "text", to self.prompt_dict
-            self.prompt_dict.append({"text": prompt_template})
+            if store_prompt:
+                # Append prompt_template as a value for the key "text", to self.prompt_dict
+                self.prompt_dict.append({"text": prompt_template})
 
-        return prompt_template, ground_truth
+            return prompt_template, ground_truth
+        except Exception as e:
+            logging.error(f"An error occurred: {e}", exc_info=True)
+            return {"error": str(e), "message": "An error occurred while processing the prompt."}
