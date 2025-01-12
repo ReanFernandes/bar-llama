@@ -1,0 +1,25 @@
+Running configuration: seeds=seed_21 generation=greedy evaluation_dataset=test_set_2 eval=json_fact_first_few_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+[2025-01-12 17:10:54,828][root][INFO] - Setting global seed to 21
+[2025-01-12 17:10:54,833][root][INFO] - Running evaluation of the untrained model on the test_set_2
+[2025-01-12 17:10:54,833][root][INFO] - Current evaluation config is : 
+ Prompt type : few_shot 
+ Response type : fact_first 
+ Explanation type : unstructured 
+ Response Format : json 
+[2025-01-12 17:10:54,834][root][INFO] - Loading dataset from /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/test_sets/bar_set_2.json
+[2025-01-12 17:10:54,834][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-01-12 17:10:54,836][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-01-12 17:10:54,836][root][INFO] - Questions selected, dataset contains 100 questions with 14.285714285714286 questions per domain
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: write).
+Your token has been saved to /home/fernandr/.cache/huggingface/token
+Login successful
+[2025-01-12 17:10:54,994][root][INFO] - Loading model : meta-llama/Llama-2-7b-hf
+[2025-01-12 17:10:55,189][root][INFO] - Full model selected, loading model
+[2025-01-12 17:10:57,549][root][INFO] - Baseline model selected, no adapter needed
+[2025-01-12 17:10:57,550][root][WARNING] - Inference will be done using hf pipeline since model.generate consistently generates gibberish
+[2025-01-12 17:11:02,163][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'few_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/unstructured_example.json', 'explanation_type': 'unstructured', 'response_type': 'fact_first', 'response_format': 'json', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-01-12 17:11:02,164][root][INFO] - Raw output for this run will be saved to /work/dlclarge1/fernandr-thesis_workspace/bar-llama/model_outputs/raw_responses/seed_21/all_domains_all_samples/untrained_full_model/greedy/json_fact_first_few_shot_unstructured/test_set_2.json
+[2025-01-12 17:11:02,164][root][INFO] - Starting inference
+[2025-01-12 17:11:02,249][root][INFO] - Processing question number 0
+[2025-01-12 17:11:02,328][root][INFO] - Domain : Constitutional_law, Question : 1

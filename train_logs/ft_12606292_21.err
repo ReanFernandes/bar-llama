@@ -1,0 +1,28 @@
+cpu-bind=MASK - dlc2gpu08, task  0  0 [256306]: mask 0xf0000000f0000000f0000000f000 set
+wandb: Currently logged in as: rean-fernandes. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.19.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.17.4
+wandb: Run data is saved locally in /work/dlclarge1/fernandr-thesis_workspace/bar-llama/wandb/run-20250112_124838-bitweqet
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run seed_21_all_domains_all_samples_temp_06_markdown_fact_first_few_shot_unstructured
+wandb: ⭐️ View project at https://wandb.ai/rean-fernandes/bar_llama
+wandb: 🚀 View run at https://wandb.ai/rean-fernandes/bar_llama/runs/bitweqet
+Error executing job with overrides: ['seeds=seed_21', 'dataset=all_domains_all_samples', 'train=markdown_fact_first_few_shot_unstructured']
+Traceback (most recent call last):
+  File "/work/dlclarge1/fernandr-thesis_workspace/bar-llama/train.py", line 101, in main
+    promptor.create_prompt(question_item=data_item,
+  File "/work/dlclarge1/fernandr-thesis_workspace/bar-llama/utils/prompt_utils.py", line 274, in create_prompt
+    input_prompt, ground_truth = self.input_prompt(question_item)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/dlclarge1/fernandr-thesis_workspace/bar-llama/utils/prompt_utils.py", line 69, in input_prompt
+    "correct_answer": question_item["correct_answer"],
+                      ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'correct_answer'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+wandb: - 0.014 MB of 0.014 MB uploadedwandb: \ 0.014 MB of 0.034 MB uploadedwandb: | 0.034 MB of 0.034 MB uploadedwandb: 🚀 View run seed_21_all_domains_all_samples_temp_06_markdown_fact_first_few_shot_unstructured at: https://wandb.ai/rean-fernandes/bar_llama/runs/bitweqet
+wandb: ⭐️ View project at: https://wandb.ai/rean-fernandes/bar_llama
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250112_124838-bitweqet/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.

@@ -1,0 +1,2 @@
+cpu-bind=MASK - dlc2gpu02, task  0  0 [198067]: mask 0xf0000001e0000000f0000001e000000 set
+slurmstepd-dlc2gpu02: error: *** JOB 12606909 ON dlc2gpu02 CANCELLED AT 2025-01-12T17:11:44 ***

@@ -1,0 +1,4 @@
+cpu-bind=MASK - dlc2gpu04, task  0  0 [307186]: mask 0xf0000000f0000000f0000000f0000000 set
+/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+slurmstepd-dlc2gpu04: error: *** JOB 12606905 ON dlc2gpu04 CANCELLED AT 2025-01-12T17:11:44 ***
