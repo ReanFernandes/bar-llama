@@ -14,5 +14,5 @@ defaults:
   - seeds : seed_21
 
 # using absolute paths here, need to change with rel paths at some point
-distilled_dataset_sft_path: /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/seed_dataset/distilled_dataset.json
-raw_dataset_sft_path: /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/seed_dataset/raw_dataset.json
+distilled_dataset_sft_path: /home/fr/fr_fr/fr_rf1031/bar-llama/dataset/seed_dataset/distilled_dataset.json
+raw_dataset_sft_path: /home/fr/fr_fr/fr_rf1031/bar-llama/dataset/seed_dataset/raw_dataset.json

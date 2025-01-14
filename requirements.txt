@@ -1,0 +1,24 @@
+# Core Python libraries
+jsonlib-python3
+numpy
+pandas
+
+# Machine learning and PyTorch
+torch>=1.9.0
+transformers>=4.20.0
+datasets>=2.0.0
+trl
+peft
+wandb
+
+# Configuration management
+omegaconf>=2.1.0
+hydra-core>=1.1.0
+
+# Hugging Face
+huggingface-hub>=0.10.0
+
+# File handling
+filelock
+
+

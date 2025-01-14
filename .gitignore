@@ -2,10 +2,9 @@ outputs
 wandb
 sft_adapters
 train_checkpoints
-/work/dlclarge1/fernandr-thesis_workspace/bar-llama/wandb
-/work/dlclarge1/fernandr-thesis_workspace/bar-llama/sft_adapters
-/work/dlclarge1/fernandr-thesis_workspace/bar-llama/train_checkpoints
-/work/dlclarge1/fernandr-thesis_workspace/bar-llama/outputs
+eval_logs
+job_configs
+train_logs
 #add safe tensors, model ckpt and bin file types to gitignore
 
 *.ckpt
