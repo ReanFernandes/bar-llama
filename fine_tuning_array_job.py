@@ -14,12 +14,14 @@ COMPONENTS = {
     'prompt_types': ['few_shot', 'zero_shot'],
     'explanation_types': ['structured', 'unstructured'],
     'seeds': ['seed_21'],# 'seed_1337', 'seed_42'],
-    'datasets': ['all_domains_1_samples', 
+    'datasets': [
+                #  'all_domains_1_samples', 
                 #  'all_domains_10_samples', 
                 #  'all_domains_20_samples',
                 #  'all_domains_75_samples',
-                #  'all_domains_125_samples',
-                 'all_domains_all_samples'],
+                 'all_domains_125_samples',
+                #  'all_domains_all_samples'
+                 ],
 }
 
 def generate_train_configs():
@@ -46,7 +48,8 @@ def create_array_job():
             train_configs
         )
     ]
-    
+    #temporary hack to ensure that the same directory is not overriden by the slurm command
+    dataset=COMPONENTS['datasets'][0]
     print(f"Total configurations: {len(configs)}")
     print("\nExample configs:")
     for c in configs[:3]:
@@ -57,7 +60,7 @@ def create_array_job():
     os.makedirs(f"{BASE_DIR}/helix_configs", exist_ok=True)
     
     # Save configs to file
-    config_file = f"{BASE_DIR}/helix_configs/train_configs.json"
+    config_file = f"{BASE_DIR}/helix_configs/train_configs_{dataset}.json"
     with open(config_file, 'w') as f:
         json.dump(configs, f, indent=2)
     
@@ -67,11 +70,11 @@ def create_array_job():
 #SBATCH --output={LOGS_DIR}/ft_%A_%a.out
 #SBATCH --error={LOGS_DIR}/ft_%A_%a.err
 #SBATCH --cpus-per-task=1
-#SBATCH --partition=gpu_4_a100
+#SBATCH --partition=gpu_4
 #SBATCH --gres=gpu:1
 #SBATCH --mem=36G
 #SBATCH --time=6:00:00
-#SBATCH --array=0-{len(configs)-1}%4
+#SBATCH --array=0-{len(configs)-1}%8
 
 # Setup logging
 echo "Job array ID: $SLURM_ARRAY_JOB_ID, Task ID: $SLURM_ARRAY_TASK_ID"
@@ -89,13 +92,13 @@ echo "Sourcing .bashrc..."
 source ~/.bashrc
 
 echo "Activating llama-env..."
-source llama-env/bin/activate
+source /home/fr/fr_fr/fr_rf1031/llama-env/bin/activate
 
 # Get the config for this array task
 CONFIG=$(python3 -c '
 import json
 import os
-with open("{BASE_DIR}/helix_configs/train_configs.json") as f:
+with open("{BASE_DIR}/helix_configs/train_configs_{dataset}.json") as f:
     configs = json.load(f)
 task_id = int(os.environ["SLURM_ARRAY_TASK_ID"])
 print(configs[task_id])
@@ -105,7 +108,7 @@ echo "Running configuration: $CONFIG"
 python3 {BASE_DIR}/train.py $CONFIG
 """
     
-    script_path = f"{BASE_DIR}/helix_configs/train_array.sh"
+    script_path = f"{BASE_DIR}/helix_configs/train_array_{dataset}.sh"
     with open(script_path, 'w') as f:
         f.write(array_script)
     

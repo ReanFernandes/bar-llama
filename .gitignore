@@ -5,6 +5,7 @@ train_checkpoints
 eval_logs
 job_configs
 train_logs
+helix-finetuning-logs
 #add safe tensors, model ckpt and bin file types to gitignore
 
 *.ckpt

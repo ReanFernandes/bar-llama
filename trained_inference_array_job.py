@@ -18,7 +18,8 @@ COMPONENTS = {
                 #  'all_domains_20_samples',
                 #  'all_domains_75_samples',
                 #  'all_domains_125_samples',
-                 'all_domains_all_samples'],
+                #  'all_domains_all_samples'
+                 ],
     'generation': ['greedy',
                 #    'temp_025',
                 #    'temp_06',

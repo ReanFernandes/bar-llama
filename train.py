@@ -204,13 +204,13 @@ def main(cfg: DictConfig):
 
     trainer = SFTTrainer(
         model=model,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         train_dataset = hf_format_train_set,
-        dataset_text_field='text',
+        # dataset_text_field='text',
         peft_config = lora_config,
-        max_seq_length = None,
+        # max_seq_length = None,
         args = training_args,
-        packing = False
+        # packing = False
     )
     trainer.train()
     trainer.save_model(raw_adapter_path)
