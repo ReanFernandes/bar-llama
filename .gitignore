@@ -6,6 +6,7 @@ eval_logs
 job_configs
 train_logs
 helix-finetuning-logs
+helix-inference-logs
 #add safe tensors, model ckpt and bin file types to gitignore
 
 *.ckpt
@@ -16,3 +17,4 @@ helix-finetuning-logs
 *.tar.gz
 *.model
 *.safetensors
+*.log

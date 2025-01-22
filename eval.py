@@ -117,7 +117,7 @@ def main(cfg: DictConfig):
     #load model based on quantisation status
     if cfg.eval.quantisation_status == 'quantised_model':
         logging.info("Quantised model selected, loading quantisation config")
-        bnb_config = BitsAndBytesConfig(**cfg.quantisation)
+        bnb_config = BitsAndBytesConfig(**cfg.quantization)
         model = AutoModelForCausalLM.from_pretrained(cfg.model.model_id, quantization_config=bnb_config)
     elif cfg.eval.quantisation_status == 'full_model':
         logging.info("Full model selected, loading model")
@@ -312,7 +312,7 @@ def main(cfg: DictConfig):
             'quantisation_status': cfg.eval.quantisation_status, # can be 'quantised_model' or 'full_model'
             'training dataset': cfg.dataset.dataset_label if cfg.eval.training_status == 'trained' else None, # dataset used for training
             'num_training_samples': cfg.dataset.num_sample_label if cfg.eval.training_status == 'trained' else None, # number of samples used for training, if applicable
-            'num_training_domains': cfg.dataset.domains if cfg.eval.training_status == 'trained' else None, # number, or rather the list of names of domains used for training, if applicable
+            'num_training_domains': list(cfg.dataset.domains) if cfg.eval.training_status == 'trained' else None, # number, or rather the list of names of domains used for training, if applicable
             'randomised_training_samples' : cfg.dataset.randomise_questions if cfg.eval.training_status == 'trained' else None, # whether the samples were selected randomly from the train set
             'generation_strategy': cfg.generation.label, # decoding strategy used for inference
             'prompt_type': cfg.eval.prompt.prompt_type, # type of prompt used, can be 'few_shot' or 'zero_shot'

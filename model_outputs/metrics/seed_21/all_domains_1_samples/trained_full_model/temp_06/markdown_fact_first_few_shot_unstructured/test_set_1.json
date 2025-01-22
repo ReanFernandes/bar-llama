@@ -1,0 +1,9 @@
+{
+    "config": {
+        "model_name": "llama2",
+        "seed": "seed_21",
+        "training_status": "trained",
+        "quantisation_status": "full_model",
+        "training dataset": "all_domains_1_samples",
+        "num_training_samples": "1",
+        "num_training_domains": 
