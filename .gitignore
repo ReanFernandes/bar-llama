@@ -7,6 +7,8 @@ job_configs
 train_logs
 helix-finetuning-logs
 helix-inference-logs
+master_metrics.lock
+/home/fr/fr_fr/fr_rf1031/bar-llama/master_metrics.csv
 #add safe tensors, model ckpt and bin file types to gitignore
 
 *.ckpt
