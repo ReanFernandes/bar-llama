@@ -4,7 +4,7 @@
         "seed": "seed_21",
         "training_status": "trained",
         "quantisation_status": "full_model",
-        "training dataset": "all_domains_20_samples",
+        "training_dataset": "all_domains_20_samples",
         "num_training_samples": "20",
         "num_training_domains": [
             "all"
@@ -32,7 +32,7 @@
         "Evidence_accuracy": 0.0,
         "Real_Property_accuracy": 0.0,
         "Torts_accuracy": 0.0,
-        "Civil_Procedure_accuracy": 0,
+        "Civil_Procedure_accuracy": 0.0,
         "Constitutional_Law_confidence": 0.0,
         "Contracts_confidence": 0.0,
         "Criminal_Law_confidence": 0.0,

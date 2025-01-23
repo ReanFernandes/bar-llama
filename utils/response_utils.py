@@ -53,8 +53,9 @@ class ResponseHandler():
         }        
         # most of the times if the answer is completed then the llm creates its own question starting with "Question:" i want to remove this in the starting itsel
         # as the text after this term is irrelevant. THIS IS THE COMMON PATTERN FOR NON-FINETUNED MODELS, FINETUNING TAKES CARE OF THIS ISSUE
-        cleaned_response = re.split(r"\n\nQuestion:\n", response, maxsplit=1)[0]
-
+        # cleaned_response = re.split(r"\n\nQuestion:\n", response, maxsplit=1)[0]
+        system_token_pattern = r'\n*(?:<</(?:SYS|INST)>>|\[/(?:SYS|INST)\]|</s>)\n*Question:'
+        cleaned_response = re.split(system_token_pattern, response, maxsplit=1)[0]
         if self.cfg["response_format"] == "markdown":
             fields = self._parse_markdown(cleaned_response, fields)
         elif self.cfg["response_format"] == "json":
@@ -108,6 +109,40 @@ class ResponseHandler():
 
         return  fields
     def _parse_json(self, response, fields):
+        """And in my hubris,
+            while my tower fell,
+            I thought adding more blocks to the top,
+            would save me from this hell
+
+            and now i sit on this pile of rubble
+            sifting through the ash
+            trying to piece things together
+            every run begins only to crash
+            """
+        def clean_response(response: str) -> str:
+                # First get the JSON object up until any instruction tokens
+            instruction_patterns = [
+                r'<</INST>.*$',
+                r'</s>.*$',
+                r'Question:.*$'
+            ]
+            
+            for pattern in instruction_patterns:
+                response = re.sub(pattern, '', response, flags=re.DOTALL)
+
+            # Clean up any remaining newlines/whitespace
+            response = response.strip()
+            
+            # Fix JSON structure if needed
+            if not response.startswith('{'):
+                response = '{' + response
+            if not response.endswith('}'):
+                response = response + '}'
+            
+            # Fix escaped quotes
+            response = response.replace('\"', '"')
+            
+            return response
         def fix_invalid_json(invalid_json, explanation_type):
                   
             invalid_json = invalid_json.strip()
@@ -212,7 +247,16 @@ class ResponseHandler():
                             json_data[key] = value
             return json.dumps(json_data, indent=4)
 
+        response = clean_response(response=response)
         try:
+            # this block is a last moment implementation that deals with a new issue of the models response escaping double quotes everywhere,
+            # something that shouldnt happen on account of the fine-tuning prompt not containing such behaviour. 
+            # i am implementing this in interest of still processing cases where there are responses to the question, and giving more
+            # priority to the answering instead of the formatting. 
+            system_token_pattern = r'\n*(?:<</(?:SYS|INST)>>|\[/(?:SYS|INST)\]|</s>)\n*Question:'
+            response = re.split(system_token_pattern, response, maxsplit=1)[0]
+            response = response.replace('\"', '"')
+
             json_data = json.loads(response)
         except json.JSONDecodeError:
             logging.warn(f"|Q. {self.current_q_num}||D: {self.domain}| has broken JSON output. Attempting to fix it.")

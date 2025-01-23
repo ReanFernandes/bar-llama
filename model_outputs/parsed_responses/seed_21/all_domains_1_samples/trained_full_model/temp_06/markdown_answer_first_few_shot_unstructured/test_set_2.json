@@ -4,7 +4,7 @@
         "response": {
             "domain": "Constitutional_law",
             "chosen_option_label": "A",
-            "explanation": "The law clearly effects a taking of property without just compensation. The owner of less than 1% of the oil and gas interests in a tract of land has a property interest in those interests. The law therefore effects a taking of that interest without providing just compensation."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 1,
@@ -46,7 +46,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "B",
-            "explanation": "B is correct because the action is not moot. The homeowner is challenging the constitutionality of the city's plan to replace the electric meters. The homeowner's action is not moot, because the homeowner's injury--the denial of a hearing--is ongoing and the city's conduct--the failure to give the homeowner a hearing--is continuing. The homeowner's failure to obtain a hearing before the city replaced the electric meter was the proximate cause of the homeowner's injury."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 20,
@@ -116,7 +116,7 @@
         "response": {
             "domain": "Constitutional_law",
             "chosen_option_label": "A",
-            "explanation": "The Supreme Court has original jurisdiction over cases involving federal officials acting in their official capacities. Article II grants the President as commander in chief the authority to \"take Care that the Laws be faithfully executed.\" This authority includes the power to discipline, and therefore to punish, military personnel. The statute here would give the Supreme Court original jurisdiction over actions brought against military officers for official misconduct. Because the President has the power to discipline military personnel, and because the Supreme Court does not have original jurisdiction over actions against federal officials acting in their official capacities, the Supreme Court would not have original jurisdiction over this action. The Supreme Court would therefore have to dismiss the case for lack of jurisdiction."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 56,
@@ -144,7 +144,7 @@
         "response": {
             "domain": "Constitutional_law",
             "chosen_option_label": "A",
-            "explanation": "A prior restraint is an attempt to prevent a person from making a communication. The ordinance is a prior restraint on First Amendment activities, which are all speech activities."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 70,
@@ -172,7 +172,7 @@
         "response": {
             "domain": "Constitutional_law",
             "chosen_option_label": "A",
-            "explanation": "The owner of the complex has a constitutionally protected right to freedom of association. That right includes the freedom to associate with the people who reside in his or her own house. The owner's tenants have as much right as the owner to use the pool, and therefore, to associate with each other in using the pool. Thus, requiring the owner to open the pool to all neighborhood residents would substantially burden the owner's exercise of his or her constitutional right to freedom of association."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 86,
@@ -186,7 +186,7 @@
         "response": {
             "domain": "Constitutional_law",
             "chosen_option_label": "B",
-            "explanation": "The demonstrators' conduct is clearly protected by the First Amendment. The conduct at issue here is a form of symbolic speech, which is entitled to the highest level of constitutional protection. The fact that the demonstrators' conduct was in the form of a dance does not change this analysis; the U.S. Supreme Court has held that nude dancing is protected by the First Amendment. Because the demonstrators' conduct is protected by the First Amendment, it may be regulated only if the regulation is content-neutral and is narrowly tailored to serve a significant government interest. The ordinance is content-neutral because it prohibits all public nudity, not just nude dancing. The ordinance is also narrowly tailored to serve the significant government interest of preserving order in the city park. The U.S. Supreme Court has consistently upheld laws prohibiting nudity in places where they are likely to lead to disorder, such as public parks."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 99,
@@ -200,7 +200,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "A",
-            "explanation": "A is correct because there is clear evidence of ineffective assistance of counsel. The video recording and multiple witnesses are all clear evidence of guilt. The fact that the woman was charged with stealing from her employer and that she was convicted and sentenced to a short prison term are all clear indications that the woman was found to be guilty beyond a reasonable doubt. This is clear evidence of ineffective assistance of counsel, because a reasonable attorney would have advised the woman to go to trial rather than plead guilty to the charge, given the overwhelming evidence of guilt and the fact that there was no evidence to support a conviction beyond a reasonable doubt."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 2,
@@ -214,7 +214,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "A",
-            "explanation": "Exigent circumstances are circumstances that will prevent the prompt completion of a request for a warrant. The officers had a reliable, articulable suspicion that a crime was occurring--the woman was selling drugs from her apartment. That, combined with the fact that the officers could hear items being moved inside the apartment and that the door was unlocked, all led the officers to reasonably believe that the woman was destroying evidence and that their own safety was at risk. Those are all clear indications of exigent circumstances. The officers had probable cause to believe that a crime was occurring, and that, combined with the existence of exigent circumstances, led the officers to conduct a lawful, protective sweep of the apartment, which led to the discovery of the drugs and cash. All of those facts are clear indications that the officers were acting in response to exigent circumstances, and that the entry was therefore lawful."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 8,
@@ -242,7 +242,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "A",
-            "explanation": "A is correct because a parolee has no privilege against self-incrimination. A parolee has no greater constitutional rights than a person who has never been in custody. A parolee is not entitled to remain silent or to refuse to answer questions."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 21,
@@ -284,7 +284,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "A",
-            "explanation": "The driver's failure to use as much care as a reasonably careful person would use in the circumstances was a violation of the duty that the driver owed to the bicyclist to use reasonable care. That failure was the proximate cause of the bicyclist's injuries, which were serious. The victim's serious injury is necessary to a conviction for attempted murder, because the victim's injury is the result that the action was intended to bring about."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 44,
@@ -298,7 +298,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "A",
-            "explanation": "A claim of self-defense will be successful against a charge of aggravated assault if the action is reasonably necessary to prevent imminent unlawful force as a result of unlawful force. The man's breaking of the woman's car window was an unlawful use of force, which led the woman to reasonably believe that her own use of force was necessary to protect herself. The man's use of unlawful force was an initiating factor in the violence and use of deadly force here."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 55,
@@ -312,7 +312,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "B",
-            "explanation": "B is correct because the husband and son were both victims of the woman's unlawful use of deadly force. The husband was the victim of an unsuccessful attack with a deadly weapon (a knife), and the son was the victim of a death that was unrelated to any actions by the husband but was a result of the woman's unlawful use of deadly force. Because the husband and son were both victims of the woman's unlawful use of deadly force, they can both be charged with the woman's conduct. The husband was the victim of an unsuccessful attack with a deadly weapon (a knife), and the son was the victim of a death that was unrelated to any actions by the husband but was a result of the woman's unlawful use of deadly force. Because the husband and son were both victims of the woman's unlawful use of deadly force, they can both be charged with the woman's conduct."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 64,
@@ -354,7 +354,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "B",
-            "explanation": "The evidence clearly established that the victim's actions were the proximate cause of the defendant's attack. The victim's kicking the defendant in the groin was an unprompted, unresistant use of violence. That, combined with the defendant's consistent failure to obey the victim's consistent commands to go outside and \"fight like men,\" all are clear indications that the victim was the initiator of the violence and use of unlawful force here. The victim's actions were an unprompted use of violence that led the defendant to reasonably believe that his own use of force was necessary to protect himself. The victim's actions were an unprompted use of violence that led the defendant to reasonably believe that his own use of force was necessary to protect himself. The victim's actions were an unprompted use of violence that led the defendant to reasonably believe that his own use of force was necessary to protect himself."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 83,
@@ -368,7 +368,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "A",
-            "explanation": "The question asks about a violation of federal constitutional rights, which are determined by federal courts. The relevant federal procedure law is Federal Rule of Criminal Procedure 52, which provides that a federal court may set aside a verdict if \"the court finds that the jury has not brought to the decision its informed judgment or has not applied the laws as they are written.\" Here, there has been no violation of the federal rules of criminal procedure because there has been no violation of the defendant's \"informed judgment.\" The prosecution's failure to disclose the witness's prior perjury conviction did not prevent the jury from making an informed judgment. The jury was still able to consider and weigh all of the evidence presented at trial."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 89,
@@ -382,7 +382,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "B",
-            "explanation": "B is correct. The defendant has hired new counsel to pursue his appeal. The defendant cannot be penalized for his attorney's failure to object. The defendant's failure to object waived his right to challenge the admission of the testimony. The defendant is therefore not entitled to a reversal of his conviction because the trial court's error was not preserved."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 96,
@@ -452,7 +452,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "A",
-            "explanation": "Because the work would take three days, and there were no trees left to cut down, the arborist was not able to complete his performance. However, the owner was still obligated to pay him $10,000, because he had already performed all of the work that was required under the contract. The owner's failure to pay the $10,000 would result in a breach of contract by the owner. The arborist's expectation interest is $10,000 less any costs the arborist avoided by not completing his performance. Because the trees were destroyed by the fire, the arborist did not incur any costs in completing the work."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 28,
@@ -466,7 +466,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "A",
-            "explanation": "The payment of $12,000 was not supported by consideration because the general contractor's payment of $12,000 was the same amount that was called for by the original contract. The original contract was for $12,000, and the general contractor's payment was in response to the subcontractor's request that the general contractor pay $15,000. That request was not supported by consideration."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 34,
@@ -606,7 +606,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "A",
-            "explanation": "The relevant state law is not clear on this issue. Because there is no controlling state law, the court should apply federal common law, as interpreted in the light of reason and experience."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 4,
@@ -634,7 +634,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "A",
-            "explanation": "A is correct because the trial judge has broad discretion to control the order of presentation of evidence at trial. That discretion is not limited to the order in which the defendant presents his evidence."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 16,
@@ -732,7 +732,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "B",
-            "explanation": "The man's statement is testimonial, because it was made to a person whom the man presumably expected to be his audience--his fianc\u00e9e. That, combined with the fact that the man's statement is clearly intended to be understood as a statement against his penal interest--that he was being paid to set fire to a building--means that this is a testimonial statement."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 60,
@@ -746,7 +746,7 @@
         "response": {
             "domain": "Evidence",
             "chosen_option_label": "A",
-            "explanation": "A's answer choice is correct because the neighbor's testimony is relevant to prove that the defendant did not run the red light, which is necessary to establish the defendant's negligence, the proximate cause of the pedestrian's injuries. The neighbor's testimony is also relevant to impeach the woman, who is the victim's key witness. The woman's statement is not within her own personal knowledge, so it is hearsay, but the neighbor's testimony about the statement is not hearsay because the neighbor himself is testifying."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 73,
@@ -788,7 +788,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "A",
-            "explanation": "The prosecutor may not use the investigator's testimony to prove the girlfriend's prior inconsistent statement, because that would be an attempt to prove the matter out of the investigator's own knowledge, which is not within the investigator's proper scope of knowledge. See, e.g., Fed. R. Evid. 701."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 90,
@@ -802,7 +802,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "B",
-            "explanation": "The answer choice indicates that the \"bar on expert testimony about a criminal defendant's mental state applies to the prosecution's expert witnesses only.\" That is, a prosecutor may not elicit testimony from a psychiatrist that a defendant is insane. But a defendant may testify as to his or her own mental state. Here, the defendant has raised an insanity defense, and thus is entitled to testify as to her own mental state."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 98,
@@ -844,7 +844,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "A",
-            "explanation": "The attorney has not shown good cause for the requested extension because he or she has not presented facts that would justify a finding that the failure to meet the deadlines was due to circumstances beyond the attorney's control. The attorney's own lack of diligence does not constitute circumstances beyond his or her control."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 19,
@@ -872,7 +872,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "B",
-            "explanation": "The man has presented three witnesses with testimony that is consistent with his version of the events. There is a clear dispute in the evidence that the man was at fault. That is a question for the jury to decide."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 33,
@@ -900,7 +900,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "B",
-            "explanation": "The attorney's failure to respond to the service of process was not unreasonable, because the attorney had no contacts with the state in which the court was sitting and no connection to the facts alleged in the complaint. The attorney's failure to respond was therefore not \"futile\" as required for a finding of lack of personal jurisdiction."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 47,
@@ -942,7 +942,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "A",
-            "explanation": "The Federal Rules of Civil Procedure govern the procedure for all civil actions in federal court. The question asks which law will be applied to determine whether the action may proceed as a class action. Because the Federal Rules of Civil Procedure do not address class actions, the appropriate law to apply is federal law."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 68,
@@ -970,7 +970,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "B",
-            "explanation": "Because the court is considering a JMOL motion, it must apply the same standard that it would apply if it were sitting as a judge in a bench trial. The court will not set aside the jury's verdict unless the evidence is so clearly contrary to the verdict that no rational jury could have found for the plaintiff. This is the \"clearly erroneous\" standard, which is the same as the \"any evidence\" standard."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 82,
@@ -984,7 +984,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "A",
-            "explanation": "Mistake is not a ground on which a court may reopen a judgment."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 93,
@@ -1054,7 +1054,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "A",
-            "explanation": "The father's signature on the deed is the only signature that is actually on the deed. The father's signature on the will is not on the deed, so the father's signature is not enough to make the deed valid."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 36,
@@ -1096,7 +1096,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "B",
-            "explanation": "The seller has as much right as the buyer to the benefit of the bargain. That is, the seller may take with him any item that gave rise to the bargain between him and the buyer. The seller's decision to remove the power lawn mower and the ceiling fan led the buyer to believe that the seller was leaving behind items with a combined value of at least $100.00. That led the buyer to deposit $100.00 in his own account and to pay $100.00 to the seller, both in cash. The seller's removal of the power lawn mower and the ceiling fan is therefore within his rights."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 59,
@@ -1138,7 +1138,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "B",
-            "explanation": "B is correct because the house is still subject to a mortgage, and the title insurance policy protects only the mortgagee from loss."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 81,
@@ -1180,7 +1180,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "B",
-            "explanation": "The man is in violation of the mortgage because he has not kept the property insured, as required by the mortgage. A mortgagee has a right to foreclose upon a mortgaged property if the mortgagor fails to comply with any of the mortgage's covenants or conditions. The man's failure to keep the property insured is a violation of the mortgage."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 94,
@@ -1250,7 +1250,7 @@
         "response": {
             "domain": "Torts",
             "chosen_option_label": "A",
-            "explanation": "A is correct because the relevant standards of care are different between medical malpractice and negligence of a possessor of property. The doctor is alleging that the grocery store's negligence was the proximate cause of the shopper's injury, which is a negligence claim."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 32,
@@ -1264,7 +1264,7 @@
         "response": {
             "domain": "Torts",
             "chosen_option_label": "B",
-            "explanation": "The woman is clearly in breach of the noncompetition agreement. The actions of the security officer were done at the request of the company, and they are therefore to be attributed to the company. That, combined with the fact that the security officer's actions were all done with the purpose of investigating the woman's conduct, and that the investigation was prompted by the supervisor's belief that the woman was violating the noncompetition agreement, all are clear indications that the company's actions are the proximate cause of the woman's injury. The woman's injury, the investigation by the security officer, is that the security officer's actions were an unreasonable use of investigative methods. That is, the security officer's use of the woman's phone records was an unreasonable use of an investigative method. That, combined with the fact that the security officer's actions were done to investigate the woman's conduct, and that the investigation was prompted by the supervisor's belief that the woman was violating the noncompetition agreement, all are clear indications that the company's actions are the proximate cause of the woman's injury."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 39,
@@ -1320,7 +1320,7 @@
         "response": {
             "domain": "Torts",
             "chosen_option_label": "A",
-            "explanation": "A is correct because there is no way to determine the extent of the emotional distress suffered by the dispatcher, so the jury would have to speculate."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 63,
@@ -1334,7 +1334,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "B",
-            "explanation": "The manufacturer did not make any misleading statements when it entered into the contract with the distributor. The manufacturer's denial that it had a withdrawal plan was not a misrepresentation, because the manufacturer did not make a false statement of fact. The manufacturer's denial was simply its opinion, that there was no such plan in place."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 67,
@@ -1376,7 +1376,7 @@
         "response": {
             "domain": "Torts",
             "chosen_option_label": "B",
-            "explanation": "There is no evidence of negligence here. The husband's failure to obey the husband's order to leave the house made him a trespasser."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 92,
@@ -1390,7 +1390,7 @@
         "response": {
             "domain": "Torts",
             "chosen_option_label": "B",
-            "explanation": "The dealership is vicariously liable for the actions of the EMTs because it was required to provide EMTs at the race and it contracted with the EMS firm to provide them. A rescuer who is not acting within the scope of his or her employment generally will not be found to be acting negligently. The EMT was clearly acting within the scope of her employment, as she was providing medical care at a racing event."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 95,

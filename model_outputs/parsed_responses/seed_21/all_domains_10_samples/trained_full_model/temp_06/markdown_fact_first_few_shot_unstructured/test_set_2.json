@@ -1320,7 +1320,7 @@
         "response": {
             "domain": "Torts",
             "chosen_option_label": "n/a",
-            "explanation": "A is correct. There is no bright-line test for when a jury should (or should not) be permitted to award damages for purely emotional distress. In some cases, a jury may be permitted to do so, while in others it may not. The fact that the jury will have to decide whether the dispatcher suffered any physical injury is not dispositive; a jury could reasonably find that the dispatcher suffered no physical injury and also award damages for emotional distress. B is incorrect. The supervisor\u2019s liability to the dispatcher would turn on whether the supervisor acted with ordinary care. There is evidence from which a jury could reasonably conclude that the supervisor failed to do so. C is incorrect. The fact that the dispatcher did not suffer any physical injury is not a complete bar to recovery for emotional distress. D is correct. There is no bright-line test for when a jury should (or should not) be permitted to award damages for purely emotional distress. In some cases, a jury may be permitted to do so, while in others it may not. Here, there is no evidence from which a jury could reasonably conclude that the supervisor acted with ordinary care with respect to the dispatcher\u2019s emotional well-being. As such, summary judgment would be appropriate."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 63,

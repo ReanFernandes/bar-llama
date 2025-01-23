@@ -8,7 +8,7 @@
                 "Legal_concept": "Diversity jurisdiction in federal court, specifically the requirement of complete diversity of citizenship between the parties.",
                 "Fact_analysis": "The question is asking about the information necessary for determining diversity between a shareholder and a corporation.",
                 "Rule_application": "To establish diversity, the shareholder must demonstrate that the corporation is completely different from him in citizenship. Therefore, the relevant information would be the location of the corporation\u2019s citizenship, which is typically determined by the state of incorporation. In this scenario, the correct answer would be B, as the corporation is a domestic corporation incorporated in a state, and the shareholder is a citizen of a different state.",
-                "Legal_conclusion": "Given that the shareholder is seeking to bring a claim against a domestic corporation in federal court, the correct verdict would be based on diversity, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -27,7 +27,7 @@
                 "Legal_concept": "Judicial preclusion, specifically the doctrine of res judicata, which prevents a party from raising a claim that was already decided in a previous lawsuit.",
                 "Fact_analysis": "In the initial lawsuit, the depositor brought a federal suit against the bank, challenging the bank's method of calculating interest. The court dismissed the claim based on federal preemption, but the question of the validity of the method under state law was not decided. In the subsequent state-law suit, the bank seeks to have the court dismiss the claim based on res judicata, arguing that the federal court's decision on preemption prevents the depositor from raising the same claim in a different court.",
                 "Rule_application": "Res judicata prevents a party from raising a claim that was already decided in a previous lawsuit. In this scenario, the depositor's state-law claim was raised in the same federal court in a prior lawsuit, and the court's decision on preemption prevented her from pursuing the claim further. Therefore, the correct verdict would be to preclude the state-law claim based on res judicata, supporting option A.",
-                "Legal_conclusion": "Given that the depositor's state-law claim was raised in the same federal court in a prior lawsuit and the court's decision on preemption prevented her from pursuing the claim further, the correct verdict would be to preclude the state-law claim based on res judicata, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -46,7 +46,7 @@
                 "Legal_concept": "Diversity jurisdiction in federal courts, specifically the requirement of complete diversity between parties.",
                 "Fact_analysis": "Both parties are citizens of different states, meeting the requirement of diversity.",
                 "Rule_application": "Diversity jurisdiction allows federal courts to hear cases where there is complete diversity between the parties, supporting option D.",
-                "Legal_conclusion": "Given that both parties are citizens of different states, the court would have jurisdiction under diversity jurisdiction, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -65,7 +65,7 @@
                 "Legal_concept": "Personal jurisdiction in federal court, specifically the requirement of proper service under Federal Rule of Civil Procedure 4.",
                 "Fact_analysis": "The defendant was personally served with process while she was visiting State B, more than 100 miles from the federal court where the action was filed.",
                 "Rule_application": "Under Federal Rule of Civil Procedure 4, proper service requires delivery of the summons and complaint to the defendant personally or at her dwelling place. In this scenario, service was not made at the defendant's residence, but rather at her place of business in State B. Therefore, the correct verdict would be based on the lack of proper service, supporting option B.",
-                "Legal_conclusion": "Given that the defendant was not properly served within the jurisdiction of the federal court, the court should not grant the defendant's motion to dismiss based on a lack of personal jurisdiction. Therefore, the correct verdict would be no, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -84,7 +84,7 @@
                 "Legal_concept": "Responding to a civil complaint in federal court, particularly the timeline for a defendant to file an answer or other pleading.",
                 "Fact_analysis": "The plaintiff mailed a notice of the complaint and two copies of a request to waive service to the defendant\u2019s managing agent, who was not authorized to receive process on behalf of the corporation. The defendant failed to timely file an answer or other pleading, and the plaintiff sought default judgment.",
                 "Rule_application": "In federal court, a defendant has 21 days to file an answer or other responsive pleading after being served with a complaint. If the defendant fails to do so, the court may enter a default judgment. In this scenario, the defendant was served more than 60 days before the plaintiff sought default judgment, meaning the default judgment would likely be granted.",
-                "Legal_conclusion": "Given that the defendant failed to timely file an answer or other pleading in response to the plaintiff\u2019s service of process, the court is likely to grant the default judgment. Therefore, the correct verdict would be yes based on the timely entry of default judgment, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -103,7 +103,7 @@
                 "Legal_concept": "Joinder of related federal court cases, specifically the doctrine of relatedness in multidistrict litigation.",
                 "Fact_analysis": "The diversity action was brought by a passenger who was injured when a train operated by the defendant derailed in a different state, and several other passengers have filed individual actions in a federal court in that state. The defendant has filed a motion to transfer the case to a federal court in the same state based on relatedness.",
                 "Rule_application": "The doctrine of relatedness allows a federal court to transfer related cases to a multidistrict litigation (MDL) in the same federal district court for coordinated pretrial proceedings. In this scenario, the relatedness would be based on the fact that multiple federal court cases involving the same defendant and common factual questions are being brought in the same federal district court.",
-                "Legal_conclusion": "Given that the cases involve the same defendant and common factual questions, the correct verdict would be to transfer the case to an MDL in the same federal district court based on relatedness, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -122,7 +122,7 @@
                 "Legal_concept": "Preliminary injunctions in administrative law, specifically the imminent threat requirement for issuing a TRO.",
                 "Fact_analysis": "The US Attorney filed a civil action against a political organization and its leader, seeking an injunction to prevent further protests at a military base. The organization and its leader were not notified of the hearing for the TRO, and the order did not describe the specific acts being restrained.",
                 "Rule_application": "To obtain a preliminary injunction in administrative proceedings, the movant must establish that there is a substantial likelihood of success on the merits and that the requested relief is appropriate and necessary. In this scenario, the imminent threat requirement for issuing a TRO requires that the movant demonstrate a immediate and irreparable harm that cannot be remedied by an appeal. Given that the organization and its leader were not notified of the hearing and the order did not describe the specific acts being restrained, it is unlikely that the movant met this requirement.",
-                "Legal_conclusion": "Given the lack of notice and specificity in the order, the movant likely did not meet the imminent threat requirement for issuing a TRO. Therefore, the correct verdict would be no based on failure to meet the imminent threat requirement, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -141,7 +141,7 @@
                 "Legal_concept": "Relation back doctrine in contract law, specifically the principle that a timely filed suit may be amended to add parties who should have been originally joined based on the same set of facts.",
                 "Fact_analysis": "The worker filed a timely diversity action against her former employer based on allegations of defamation related to her employment, and she sought to add a co-defendant based on new facts discovered during discovery.",
                 "Rule_application": "The relation back doctrine allows a party to be added to a lawsuit based on the same set of facts as the original complaint, provided that the addition is made within a reasonable time and the party was not prejudiced by the delay. In this scenario, the worker\u2019s attempt to add a co-defendant based on new discovery is well within the reasonable time frame, supporting option C.",
-                "Legal_conclusion": "Given that the worker\u2019s amendment is based on new facts discovered during discovery and that the relation back doctrine allows for timely additions based on the same set of facts, the correct verdict would be yes, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -160,7 +160,7 @@
                 "Legal_concept": "Waiver of appellate rights in criminal and civil proceedings, particularly the doctrine of forfeiture based on failure to object.",
                 "Fact_analysis": "The defendant failed to raise an objection to the jury instructions at trial, which is a prerequisite to raising the issue on appeal.",
                 "Rule_application": "In criminal and civil proceedings, a party forfeits the right to raise an issue on appeal if they fail to object at trial, establishing the doctrine of waiver. In this scenario, the defendant\u2019s failure to object to the jury instructions at trial supports option B.",
-                "Legal_conclusion": "Given that the defendant failed to raise an objection to the jury instructions at trial, they have forfeited their right to appeal on this ground. Therefore, the correct verdict would be not applicable, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -179,7 +179,7 @@
                 "Legal_concept": "Prejudicial error in judicial proceedings, particularly the duty of judges to avoid prejudicing a party\u2019s case.",
                 "Fact_analysis": "The judge in a federal diversity action erroneously instructed the jury on a pre-abrogated defense despite objection from the consumer\u2019s attorney, who raised the issue after the jury began deliberations.",
                 "Rule_application": "Judges have a duty to prevent prejudice and ensure a fair trial, and an erroneous instruction may constitute prejudicial error. In this scenario, the judge\u2019s failure to correct the error despite a timely objection from the consumer\u2019s attorney would likely result in prejudice, supporting option C.",
-                "Legal_conclusion": "Given that the judge\u2019s error prejudiced the consumer\u2019s case by allowing the jury to consider a invalid defense, the correct verdict would be not guilty based on prejudicial error, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -198,7 +198,7 @@
                 "Legal_concept": "Assumption of risk in tort law, specifically the defense of assumed risk in a negligence action.",
                 "Fact_analysis": "The friend, who was visiting a former co-worker at the store, was standing on the loading dock when the manager opened the truck doors and was struck by falling boxes. The friend was not a party to the delivery contract and did not have a duty to protect the driver from the driver's employer's potential negligence. However, given that the friend was standing on the loading dock and the driver and manager were attempting to cut through a rope that was holding back a pile of boxes when the boxes fell, the friend may assume the risk of the manager's negligence.",
                 "Rule_application": "Assumption of risk allows an individual to avoid liability for damages resulting from their own negligence if the plaintiff assumes the risk. In this scenario, the friend assumed the risk of the manager's negligence when he moved towards the truck to retrieve the lock that had fallen to the ground, potentially increasing the manager's exposure.",
-                "Legal_conclusion": "Given that the friend assumed the risk of the manager's negligence by moving towards the truck to retrieve the lock that had fallen to the ground, the correct verdict would be not guilty based on assumption of risk, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -217,7 +217,7 @@
                 "Legal_concept": "Dismissal without prejudice in contract law, specifically the ability to dismiss an action without affecting the parties' legal rights or obligations.",
                 "Fact_analysis": "The woman brought a federal diversity action against a doctor and a hospital for medical malpractice, and both parties have answered. The doctor has filed a motion for summary judgment, providing supporting evidence that contradicts the woman's claims. The woman is considering dismissing the action with the intent to refile at a later date.",
                 "Rule_application": "Dismissal without prejudice allows a party to dismiss an action while preserving their right to file a new action based on the same cause of action in the future. In this scenario, the woman could file a notice of dismissal without prejudice, allowing her to refile the action if she chooses to do so. Option B is the correct answer.",
-                "Legal_conclusion": "Given that the woman wants to dismiss the action without prejudice to preserve her right to refile, option B is the correct verdict. A motion for voluntary dismissal without prejudice would not be appropriate in this scenario because it would require the court's approval and would likely be opposed by the doctor. A notice of dismissal without prejudice would allow the woman to proceed without involving the court, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -236,7 +236,7 @@
                 "Legal_concept": "Judge's authority to declare a verdict invalid in a civil trial based on verdict form, specifically the requirement of unanimity in a jury verdict.",
                 "Fact_analysis": "In a civil trial with a seven-person jury, the judge instructed the jury to reach a verdict based on a non-unanimous verdict form, indicating that a majority vote would be sufficient. The jury returned a verdict in favor of the plaintiff, but a poll revealed that only four jurors agreed with the verdict.",
                 "Rule_application": "A judge has the authority to declare a verdict invalid if it is not based on the instructions given by the court, in this case, the requirement of unanimity in a jury verdict. In this scenario, a non-unanimous verdict would not be valid, supporting option D.",
-                "Legal_conclusion": "Given that a non-unanimous verdict is not valid in a civil trial, the judge should declare the verdict invalid and grant a new trial, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -255,7 +255,7 @@
                 "Legal_concept": "Preemption in constitutional law, specifically the preemption of state laws by federal laws.",
                 "Fact_analysis": "The federal diversity action is being brought in federal court, which means that the court will apply federal law, not state law.",
                 "Rule_application": "In this scenario, the constitutional limit on punitive damages preempts state-law limits, supporting option D.",
-                "Legal_conclusion": "Given that federal law supersedes state law in a federal diversity action, the correct verdict would be based on the constitutional limit, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -274,7 +274,7 @@
                 "Legal_concept": "Preliminary questions of law, specifically the interpretation of federal court procedural rules.",
                 "Fact_analysis": "The question concerns whether a tenant suing a landlord in federal court for negligence must plead non-contribution in their complaint based on a state law.",
                 "Rule_application": "Federal court procedural rules govern preliminary questions of law in federal court. In this scenario, the relevant rule is Federal Rule of Civil Procedure 8(a), which requires a pleading to contain a short and plain statement of the claim showing that the pleader is entitled to relief. Considering this rule, the tenant does not need to plead non-contribution in their complaint because the landlord must raise the affirmative defense of contributory negligence in a timely manner through an answer or other responsive pleading.",
-                "Legal_conclusion": "Given that the question of whether the tenant must plead non-contribution is a preliminary question of law related to the landlord\u2019s motion to dismiss, federal court procedural rules govern the determination. Therefore, the correct verdict would be A, supporting federal law."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -293,7 +293,7 @@
                 "Legal_concept": "Diversity jurisdiction in federal courts, specifically the requirement of complete diversity between the parties.",
                 "Fact_analysis": "The investor and the broker are both citizens of the same state, making them not diverse under the requirements of federal court jurisdiction.",
                 "Rule_application": "Complete diversity is required for federal court jurisdiction, and the lack of diversity between the parties in this scenario prevents the broker from asserting a contract claim as a counterclaim.",
-                "Legal_conclusion": "Given that the broker and the investor are not diverse, the broker cannot bring a contract claim as a counterclaim in federal court, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -312,7 +312,7 @@
                 "Legal_concept": "Habeas corpus, specifically the right to challenge the legality of one's detention in court.",
                 "Fact_analysis": "The governor was detained by federal agents pursuant to a valid arrest warrant issued by a federal judge, and he was being held in a federal detention facility.",
                 "Rule_application": "The Constitution guarantees the availability of habeas corpus to individuals who are in custody, allowing them to seek relief from a court to determine the legality of their detention. In this scenario, the governor is seeking to challenge the validity of his detention based on a federal statute that he believes violates the Tenth Amendment. Therefore, the correct legal concept would be the availability of habeas corpus in federal court.",
-                "Legal_conclusion": "Given that the governor is seeking to challenge his federal detention based on a federal statute that he believes violates the Constitution, he is entitled to bring his claim in federal court through habeas corpus. Therefore, the correct verdict would be yes based on the availability of habeas corpus in federal court, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -331,7 +331,7 @@
                 "Legal_concept": "First Amendment protection of freedom of the press, specifically the doctrine of governmental immunity for acts performed within the scope of governmental duties.",
                 "Fact_analysis": "The reporter was sued by the estranged daughter of a politician she had been investigating for an article, which raised a question of governmental immunity.",
                 "Rule_application": "Governmental immunity protects government officials performing their duties within the scope of their employment from liability, even if their actions would otherwise give rise to a cause of action. In this scenario, the reporter was sued for breach of contract based on her investigation of the politician, which was within the scope of her journalistic duties.",
-                "Legal_conclusion": "Given that the reporter was sued for conduct related to her journalistic duties, governmental immunity would protect her from liability. Therefore, the correct verdict would be not guilty based on governmental immunity, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -350,7 +350,7 @@
                 "Legal_concept": "Mootness in administrative law, specifically whether a case is moot when the government agency has completed its intended action and the court cannot provide a practical remedy.",
                 "Fact_analysis": "The federal agency completed construction of the bridge and opened it for use, rendering the original bid dispute moot.",
                 "Rule_application": "Mootness requires that the court lack the power to grant effective relief on a legal question presented in the case. In this scenario, the court cannot provide a practical remedy by ordering the agency to reconsider the bid or award the contract to the original bidder, as the bridge is already complete and operational.",
-                "Legal_conclusion": "Given that the case is moot due to the agency\u2019s completion of the bridge project, the court should dismiss the suit, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -369,7 +369,7 @@
                 "Legal_concept": "Political question doctrine in constitutional law, specifically the non-justiciability of questions related to foreign affairs.",
                 "Fact_analysis": "The question concerns the validity of a federal statute that seeks to prevent trade with a foreign country based on the government\u2019s failure to recognize that country\u2019s government, which the United States previously refused to recognize.",
                 "Rule_application": "The political question doctrine generally prevents courts from reviewing cases involving political questions, such as those related to foreign affairs. In this scenario, the question of whether the government should recognize a foreign country\u2019s government is inherently political and involves sensitive foreign policy considerations, supporting option C.",
-                "Legal_conclusion": "Given that the question in this scenario involves a political question related to foreign affairs, the court should not intervene. Therefore, the correct verdict would be not guilty based on the political question doctrine, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -388,7 +388,7 @@
                 "Legal_concept": "Preliminary questions in criminal procedure, specifically the justification for federal involvement in searches and seizures under the Fourth Amendment.",
                 "Fact_analysis": "The question focuses on whether Congress can validly make it a crime to possess a drug commonly found in vacant lots, despite a lack of commercial market, based on the Fourth Amendment's protection against unreasonable searches and seizures.",
                 "Rule_application": "The Fourth Amendment allows government search and seizure activities, but only when they are reasonable given the circumstances. In this scenario, the government would be searching and seizing a container of water and plant material commonly found in vacant lots, which is not a traditional area of search and seizure. Therefore, the government would likely need to demonstrate probable cause based on reasonable suspicion, given the lack of commercial market for the drug.",
-                "Legal_conclusion": "Given that the government would be searching and seizing a container of water and plant material commonly found in vacant lots without a valid reason, the verdict would likely be not guilty based on insufficient evidence. Therefore, the correct verdict would be not guilty based on the Fourth Amendment, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -407,7 +407,7 @@
                 "Legal_concept": "Separation of powers in the executive branch, specifically the president\u2019s authority to remove executive branch officials.",
                 "Fact_analysis": "The question describes Congress\u2019s creation of a new federal agency responsible for enforcing drug laws, the appointment of a director by the President with Senate confirmation, and the President\u2019s subsequent desire to remove the director due to disagreement with her performance.",
                 "Rule_application": "The president\u2019s authority to remove executive branch officials is established in Article II of the Constitution, which grants him the power to \u201cfill up all Vacancies that may happen during the Recess of the Senate.\u201d This authority is not subject to congressional approval, supporting option D.",
-                "Legal_conclusion": "Given that the president seeks to remove an executive branch official who was appointed with Senate confirmation, the appropriate verdict would be not guilty based on the president\u2019s authority to remove executive branch officials. Supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -426,7 +426,7 @@
                 "Legal_concept": "Separation of powers in the federal government, specifically the executive branch\u2019s duty to faithfully execute the laws as established by Congress.",
                 "Fact_analysis": "The President is responsible for implementing federal laws, including those related to appropriations. In this scenario, the President has announced his intention to divert funds appropriated for a specific purpose, planting wildflowers along public highways, towards unrelated purposes, training troops and retaining funds in the federal treasury.",
                 "Rule_application": "The separation of powers doctrine establishes the independence of the executive, legislative, and judicial branches within the federal government. The President\u2019s duty to faithfully execute the laws requires him to follow Congress\u2019s instructions on how to spend appropriated funds. In this scenario, the President\u2019s decisions to divert funds intended for planting wildflowers towards unrelated purposes would not be considered faithful execution.",
-                "Legal_conclusion": "Given that the President\u2019s decisions to divert appropriated funds towards unrelated purposes would not be considered faithful execution, his decisions are not constitutional. Therefore, the correct verdict would be B, supporting the decision to withhold funds."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -445,7 +445,7 @@
                 "Legal_concept": "Appointments clause of the United States Constitution, specifically the requirement that federal executive branch officials, including members of independent agencies, be appointed by the President with the advice and consent of the Senate.",
                 "Fact_analysis": "The commission is established by Congress and is independent of the executive branch, meaning the President does not have the authority to make appointments.",
                 "Rule_application": "Given that the appointment of commission members requires the advice and consent of the Senate, the correct method would be for Congress to make the appointments, supporting option B.",
-                "Legal_conclusion": "Given that the commission is established by Congress and is independent of the executive branch, the correct method of appointing commission members would be for Congress to make the appointments, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -464,7 +464,7 @@
                 "Legal_concept": "Governmental immunity in the Constitution, specifically the doctrine of sovereign immunity, which protects the federal government from being sued without its consent.",
                 "Fact_analysis": "The question involves a federal government contractor being subject to a state sales tax on materials purchased for a federal government contract, raising the question of whether the federal government can be sued.",
                 "Rule_application": "Governmental immunity generally protects the federal government from being sued, except in limited circumstances. In this scenario, the tax at issue is being imposed by a state on a federal contractor, raising the question of whether the federal government can be sued. Therefore, the relevant legal concept would be governmental immunity, supporting option A.",
-                "Legal_conclusion": "Given that governmental immunity generally protects the federal government from being sued, except in limited circumstances, the federal government cannot be sued in this scenario. Therefore, the correct verdict would be not guilty based on governmental immunity, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -483,7 +483,7 @@
                 "Legal_concept": "Preemption in constitutional law, specifically the doctrine of federal preemption, which allows Congress to preempt state laws that conflict with federal law.",
                 "Fact_analysis": "The question asks whether the state\u2019s requirements are constitutional when applied to a wholly interstate carrier, indicating that the carrier is operating solely within federal jurisdiction.",
                 "Rule_application": "Federal preemption allows Congress to preempt state laws that conflict with federal law, in this case the Federal Aviation Administration Authorization Act of 1994, which governs interstate air commerce and preempts state regulation of such commerce. Therefore, the state\u2019s requirements would be preempted by federal law, supporting option A.",
-                "Legal_conclusion": "Given that the state\u2019s requirements are preempted by federal law when applied to a wholly interstate carrier, the correct verdict would be no, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -502,7 +502,7 @@
                 "Legal_concept": "Due process in the Fourteenth Amendment, specifically the requirement of fair process before depriving someone of life, liberty, or property.",
                 "Fact_analysis": "The company terminated the resident's water service based on a company policy, without providing him an opportunity for a hearing.",
                 "Rule_application": "Due process requires that individuals be given notice and an opportunity to be heard before a government entity makes a decision that significantly affects their life, liberty, or property. In this scenario, the company's decision to terminate the resident's water service based on a company policy would likely be considered a significant decision, supporting the need for due process.",
-                "Legal_conclusion": "Given that the company is not a government entity but a private entity operating under a franchise granted by the city, the Fourteenth Amendment does not apply. Therefore, the correct verdict would be not guilty based on the lack of a governmental relationship, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -521,7 +521,7 @@
                 "Legal_concept": "Preemption in constitutional law, specifically the doctrine of federal preemption, which allows the federal government to supersede state laws when they conflict with federal laws or regulations.",
                 "Fact_analysis": "The state law at issue requires public schools to hire only tutors licensed by the state, potentially limiting the pool of tutors available to these schools. This could be seen as a conflict with the federal government\u2019s authority to regulate commerce, as the state law may restrict the ability of out-of-state tutors to work in the state.",
                 "Rule_application": "Federal preemption allows the federal government to preempt state laws that conflict with federal laws or regulations, particularly when the federal law is intended to occupy a field. In this scenario, the federal government has a strong interest in regulating commerce, and the state law at issue may limit that ability by restricting the pool of tutors available to public schools.",
-                "Legal_conclusion": "Given that the state law at issue may limit the ability of out-of-state tutors to work in the state, it is more likely that the federal government would preempt this law under the doctrine of federal preemption. Therefore, the correct verdict would be yes, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -540,7 +540,7 @@
                 "Legal_concept": "Equal protection clause in the 14th amendment, specifically the requirement of rational basis.",
                 "Fact_analysis": "The law requires that anyone convicted of a second sex offense serve a minimum prison sentence and be sterilized, disproportionately impacting members of racial minority groups who are overrepresented in sex offender convictions compared to their general population.",
                 "Rule_application": "The rational basis test requires that a government regulation be upheld if it is rationally related to a legitimate government interest. In this scenario, the government interest of protecting public safety by preventing repeat offenses would be a legitimate interest. However, the disproportionate impact of the sterilization requirement on racial minorities would not be rationally related to that interest, supporting option B.",
-                "Legal_conclusion": "Given that the requirement of sterilization disproportionately impacts racial minorities who are overrepresented in sex offender convictions, it is not a rationally related means of furthering the government interest of protecting public safety. Therefore, the correct verdict would be not guilty based on the failure of the state to meet the rational basis test, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -559,7 +559,7 @@
                 "Legal_concept": "Preemption in constitutional law, specifically the doctrine of implied preemption, which allows Congress to preempt state laws that conflict with federal law.",
                 "Fact_analysis": "The question describes a state tax on all leases of real estate, which would apply to federal agencies such as the Social Security Administration.",
                 "Rule_application": "Under the doctrine of implied preemption, Congress has the power to preempt state laws that conflict with federal law. In this scenario, the state tax on all leases of real estate would conflict with the federal government's authority to regulate interstate commerce, which includes the power to tax. Therefore, the correct verdict would be not guilty based on implied preemption, supporting option D.",
-                "Legal_conclusion": "Given that the state tax on all leases of real estate would conflict with the federal government's authority to regulate interstate commerce, the correct verdict would be not guilty based on implied preemption, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -578,7 +578,7 @@
                 "Legal_concept": "Intent to be bound in contract formation, particularly the doctrine of acceptance in contract formation.",
                 "Fact_analysis": "The retailer sent a purchase order to the manufacturer, requesting the shipment of a specific quantity of laptops and stating that the retailer could pursue remedies under the UCC if there was a breach. The manufacturer received the purchase order, promptly shipped the laptops, and then sent an acknowledgment form to the retailer, indicating that the shipment had been made. Based on this timely acknowledgment, the retailer reasonably believed that the manufacturer had accepted the offer to purchase laptops.",
                 "Rule_application": "In contract formation, acceptance must be made within a reasonable time and be made at a reasonable place and in a reasonable manner. In this scenario, the manufacturer\u2019s timely acknowledgment via mail, received by the retailer two days after delivery of the laptops, satisfies these requirements. Therefore, the retailer\u2019s reasonable belief that the manufacturer had accepted the offer to purchase laptops would be supported.",
-                "Legal_conclusion": "Given that the manufacturer timely acknowledged the purchase order and the retailer reasonably believed that the offer had been accepted, the retailer would be entitled to pursue damages under the UCC if the manufacturer breached the contract. Therefore, the correct verdict would be yes based on the retailer\u2019s ability to pursue damages under the UCC, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -597,7 +597,7 @@
                 "Legal_concept": "Implied-in-fact contract, particularly the formation of a contract based on the exchange of promises or consideration.",
                 "Fact_analysis": "The homeowner contacted the plumber, who had been hired to perform a specific task, and requested assistance with a specific problem. The plumber agreed to come and provided a reasonable timeframe for his arrival. Based on this exchange, the parties may have formed an implied-in-fact contract to complete the task.",
                 "Rule_application": "In the absence of a written contract, the parties may form an implied-in-fact contract based on their mutual assent and consideration. In this scenario, the homeowner\u2019s request for the plumber\u2019s assistance and the plumber\u2019s promise to arrive the next day to complete the task would constitute sufficient consideration.",
-                "Legal_conclusion": "Given that the plumber was hired to perform a specific task and arrived to complete it, he performed within the reasonable timeframe agreed upon. Therefore, the correct verdict would be based on the implied-in-fact contract formed between the parties, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -616,7 +616,7 @@
                 "Legal_concept": "Undue influence in contract law, specifically the concept of a party being unable to freely enter into a contract due to coercive pressure.",
                 "Fact_analysis": "The husband\u2019s brother aggressively pressured the wife to sell her inheritance, invading her home and pressuring her to sign a contract immediately despite her reservations.",
                 "Rule_application": "Undue influence allows a party to void a contract if they can demonstrate that the other party exercised coercive pressure that prevented them from freely entering into the agreement. In this scenario, the husband\u2019s brother\u2019s aggressive and persistent efforts to pressure the wife into selling her inheritance would likely be considered undue influence.",
-                "Legal_conclusion": "Given that the husband\u2019s brother used coercive pressure to compel the wife to sign a contract without considering her best interests, she may be able to void the agreement based on undue influence. Therefore, the correct verdict would be not guilty based on undue influence, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -635,7 +635,7 @@
                 "Legal_concept": "Consideration in contract law, particularly the requirement of mutual consideration in a valid contract.",
                 "Fact_analysis": "The parties had reached an agreement on all aspects of the employment except for the executive\u2019s salary, but the firm failed to respond to the executive\u2019s confirmation letter, which sought to formalize the oral agreement.",
                 "Rule_application": "Consideration requires that each party to a contract provides something of value to the other, and in this scenario, the firm\u2019s failure to respond to the executive\u2019s confirmation letter indicates that they did not intend to be bound by the agreement. Without consideration, the contract would be invalid.",
-                "Legal_conclusion": "Given that the firm\u2019s failure to respond to the confirmation letter indicates a lack of intent to be bound, the contract would be invalid without consideration. Therefore, the correct verdict would be not guilty based on lack of consideration, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -654,7 +654,7 @@
                 "Legal_concept": "Intent to form a contract in contract law, specifically the requirement of mutual assent.",
                 "Fact_analysis": "Both parties acted intentionally and with the knowledge that their actions would be interpreted as an offer to form a contract, leading to a meeting of the minds.",
                 "Rule_application": "Intent to form a contract requires that both parties have a mutual intention to enter into a binding agreement, which is satisfied in this scenario.",
-                "Legal_conclusion": "Given that both parties intended to form a contract based on their mutual understanding of the offer and acceptance, the correct verdict would be not guilty based on intent to form a contract, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -673,7 +673,7 @@
                 "Legal_concept": "The doctrine of mutual mistake in contract interpretation, particularly the principle that when both parties make a mutual mistake in the formation of a contract, the contract may be reformed to reflect the parties\u2019 intended agreement.",
                 "Fact_analysis": "Both parties made a mutual mistake in failing to include the price-escalation clause in the written contract, as the clause was not included in the final draft despite being included in the original verbal agreement.",
                 "Rule_application": "To rectify a mutual mistake in contract interpretation, the court may reform the contract to reflect the parties\u2019 intended agreement, considering the circumstances of the contract and the parties\u2019 reasonable expectations. In this scenario, the parties intended to include the price-escalation clause in the written contract but were mistakenly omitted, supporting the decision to reform the contract to include the clause.",
-                "Legal_conclusion": "Given that the parties made a mutual mistake in the formation of the contract and that the price-escalation clause is essential to the contract\u2019s meaning and performance, the court would likely reform the contract to include the clause, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -692,7 +692,7 @@
                 "Legal_concept": "Consideration in contract law, specifically the validity of a contract based on adequate consideration.",
                 "Fact_analysis": "The client made a valid offer to pay the attorney for legal advice on a specific document, and the attorney accepted by starting to provide that advice. However, before the attorney could complete the work, the client withdrew the offer by email.",
                 "Rule_application": "Consideration is a bargained-for exchange of value that supports a valid contract. In this scenario, the attorney\u2019s acceptance of the client\u2019s offer to pay for legal advice was valid consideration, but the client\u2019s subsequent withdrawal of the offer nullified the contract.",
-                "Legal_conclusion": "Given that the contract was invalidated due to the client\u2019s withdrawal of the offer, the attorney is not entitled to recover payment for the work she performed. Therefore, the correct verdict would be not guilty based on insufficient consideration, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -711,7 +711,7 @@
                 "Legal_concept": "Mutual mistake in contract formation, specifically the doctrine of unconscionability in contract invalidation.",
                 "Fact_analysis": "Both the heir and the neighbor were mistaken about the painting\u2019s true value, leading the heir to set a low price at the yard sale and the neighbor to purchase it at that price.",
                 "Rule_application": "Unconscionability allows a court to invalidate a contract based on fundamental unfairness, particularly where one party is significantly disadvantaged. In this scenario, the heir would be significantly disadvantaged if she were required to honor the contract, as she would be forced to pay damages to the neighbor based on the painting\u2019s significantly higher value.",
-                "Legal_conclusion": "Given that the heir was significantly disadvantaged by the contract due to mutual mistake in contract formation, the correct verdict would be not guilty based on unconscionability, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -730,7 +730,7 @@
                 "Legal_concept": "Impracticability in contract law, particularly the doctrine of frustration of purpose.",
                 "Fact_analysis": "The contract required the engineer to complete a feasibility study and master plan and use reasonable efforts to obtain county approval of the project. When the county failed to approve the project, the contract became impracticable due to unforeseen circumstances beyond the parties\u2019 control, frustrating the purpose of the contract.",
                 "Rule_application": "Impracticability allows a party to avoid performance or seek damages based on an unforeseen event beyond their control making performance impossible. In this scenario, the failure of the county to approve the project, despite the engineer\u2019s reasonable efforts, makes performance impracticable, supporting option D.",
-                "Legal_conclusion": "Given that the failure of the county to approve the project made performance of the contract impracticable, the engineer would likely prevail based on impracticability. Therefore, the correct verdict would be in favor of the engineer, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -749,7 +749,7 @@
                 "Legal_concept": "Breach of contract in general and the doctrine of anticipatory breach specifically, with regard to the timely revocation of a bid.",
                 "Fact_analysis": "The first subcontractor submitted a bid to the engineering firm to complete the electrical work on a municipal wastewater treatment plant, but the firm did not inform the subcontractor of the award before the subcontractor withdrew its bid.",
                 "Rule_application": "In the event of a breach of contract, a party may seek damages, and anticipatory breach allows a party to seek damages if a material promise is not reasonably expected to be performed. In this scenario, the first subcontractor\u2019s failure to perform its contractual obligation to complete the electrical work on the plant due to its withdrawal of the bid before the firm was notified of the award constitutes an anticipatory breach.",
-                "Legal_conclusion": "Given that the first subcontractor breached the contract by failing to complete the electrical work on the plant due to its withdrawal of the bid before the firm was notified of the award, the firm may seek damages. However, the firm completed the project at a profit, making any award nominal. Therefore, the correct verdict would be nominal damages based on the doctrine of anticipatory breach, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -768,7 +768,7 @@
                 "Legal_concept": "Mutual Mistake in contract law, specifically the doctrine of rescission and restitution in cases of mutual mistake.",
                 "Fact_analysis": "Both the lender and the borrower were under the common misunderstanding that the borrower\u2019s financial situation was stable when they signed the loan agreement, but this was later discovered to be untrue.",
                 "Rule_application": "Where both parties to a contract make a mistake about the same fact, the contract can be rescinded and the parties restored to their positions before the contract was made, in this case, the lender returning the loan funds and the borrower not receiving them. In the case of mutual mistake, rescission is appropriate even if one party knew the truth but the other did not, supporting option D.",
-                "Legal_conclusion": "Given that both parties made a mistake about the same fact (the borrower\u2019s financial stability), rescission and restitution are appropriate, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -787,7 +787,7 @@
                 "Legal_concept": "Anticipatory repudiation in contract law, particularly the doctrine of consideration in contract formation.",
                 "Fact_analysis": "The buyer\u2019s email to the owner on March 3, indicating his potential inability to meet the March 6 deadline, constitutes a valid consideration for a valid contract. However, the owner\u2019s failure to respond does not establish a valid contract, as the offer was not accepted. Therefore, the contract was not formed and the buyer was not bound to perform.",
                 "Rule_application": "Consideration is necessary for a valid contract, and the buyer\u2019s email in this scenario provides sufficient consideration. However, the absence of a valid contract means that the owner\u2019s subsequent sale to the neighbor is irrelevant, supporting option D.",
-                "Legal_conclusion": "Given that the buyer\u2019s email constitutes valid consideration for a valid contract, but the contract was never formed due to the owner\u2019s failure to respond, the owner would not be successful in a breach of contract action against the buyer. Therefore, the correct verdict would be not guilty based on the buyer\u2019s lack of contractual obligation, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -805,7 +805,7 @@
             "explanation": {
                 "Legal_concept": "Contractual interpretation, specifically the doctrine of reasonable expectations.",
                 "Fact_analysis": "The parties entered into a written contract that included an hourly rate of $150 for services, but omitted the oral agreement to pay a discounted rate of $125 for services in excess of 100 hours.",
-                "Rule_application": "When interpreting a contract, courts consider the parties' reasonable expectations at the time of formation, which can be established through the language of the contract and the surrounding circumstances. In this scenario, the parties' reasonable expectations at the time of formation were likely that the discounted rate would be included in the contract, given that they had previously agreed to it orally and intended to include it in the written contract. Therefore, the correct verdict would be based on contractual interpretation, supporting option B.",
+                "Rule_application": "n/a",
                 "Legal_conclusion": "n/a"
             }
         },
@@ -825,7 +825,7 @@
                 "Legal_concept": "Intention in contract interpretation, specifically the presumption against contract modification based on pre-existing agreements.",
                 "Fact_analysis": "The father made a valid contract with his daughter to convey a one-half interest in the land at his death, but he later tried to modify that agreement by directing her to convey a portion of the proceeds to the neighbor.",
                 "Rule_application": "In contract interpretation, the presumption against modification applies, which means that courts will not generally infer an intention to modify a contract unless the language of the contract is clear and unambiguous. In this scenario, the father\u2019s attempt to modify the contract through a subsequent written communication is not considered a valid modification because the language of the contract was not clear and unambiguous.",
-                "Legal_conclusion": "Given that the father\u2019s attempt to modify the contract through a subsequent written communication was not considered a valid modification, the nephew\u2019s interest in the contract would remain unmodified, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -844,7 +844,7 @@
                 "Legal_concept": "Intentional tort of battery, specifically the use of indirect force causing harmful contact.",
                 "Fact_analysis": "The cousin entered the home where the homeowner was staying and aggressively confronted her, inviting her to come outside to discuss the matter. When the homeowner refused, the cousin escalated further by pulling a knife from his pocket and lunging at her.",
                 "Rule_application": "Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the homeowner\u2019s use of a lamp to strike the cousin, who was armed with a knife and lunging towards her, would likely be considered a reasonable response under imminent threat.",
-                "Legal_conclusion": "Given that the homeowner was defending herself against an unlawful and immediate threat posed by the cousin with a deadly weapon, she acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -863,7 +863,7 @@
                 "Legal_concept": "Comparative negligence in tort law, particularly the principle of apportioning fault based on a plaintiff\u2019s degree of responsibility in a given scenario.",
                 "Fact_analysis": "The boy was driving a motorcycle on a private road where he was a trespasser when he was struck by a tire that had fallen off a truck driven by a delivery company employee making a delivery to an address on the road.",
                 "Rule_application": "In comparative negligence, fault is allocated based on each party\u2019s degree of responsibility, and the damages awarded are reduced in proportion to the plaintiff\u2019s degree of fault. In this scenario, the boy\u2019s trespassing on the private road would likely be considered a significant factor in his degree of responsibility, supporting option C.",
-                "Legal_conclusion": "Given that the boy was driving a motorcycle on a private road where he was a trespasser when he was struck by a tire that had fallen off a truck driven by a delivery company employee making a delivery, he would likely be found at least partially responsible for his damages based on his failure to obey the road\u2019s no-trespassing sign. Therefore, the correct verdict would be based on comparative negligence, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -882,7 +882,7 @@
                 "Legal_concept": "Intentional interference with contractual relations in tort, specifically the intentional interference with a contractual relationship.",
                 "Fact_analysis": "The former employee sent postcards to local residents promoting a new cemetery and offering a $100 rebate for anyone who canceled an existing pre-need funeral plan with the established cemetery. When several purchasers of plans with the established cemetery canceled their plans and purchased plans with the new cemetery, the established cemetery sued the former employee for tortious interference.",
                 "Rule_application": "Intentional interference with contractual relations allows an individual to recover damages if they are injured by another\u2019s intentional and direct interference with a contractual relationship. In this scenario, the former employee\u2019s actions of promoting a new cemetery and offering a rebate for cancelling a plan with the established cemetery could be considered intentional and direct interference with established contractual relationships.",
-                "Legal_conclusion": "Given that the former employee\u2019s actions of promoting a new cemetery and offering a rebate for cancelling a plan with the established cemetery may have motivated the purchasers to cancel their plans and purchase from the new cemetery, he potentially interfered with those contractual relationships. Therefore, the correct verdict would be based on intentional interference with contract, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -901,7 +901,7 @@
                 "Legal_concept": "Intentional tort of conversion, specifically the use of another\u2019s property without permission.",
                 "Fact_analysis": "The tree specialist was hired by the landowner to cut down four trees, but he and the landowner ignored the legal boundary when making their cuts and ended up cutting down three trees belonging to the neighbor.",
                 "Rule_application": "Conversion allows an individual to bring a claim against another who intentionally uses their property, in this case the trees, without permission. In this scenario, the tree specialist\u2019s use of the neighbor\u2019s trees without permission would likely be considered an intentional tort.",
-                "Legal_conclusion": "Given that the tree specialist intentionally used the neighbor\u2019s trees without permission, he would be found liable for conversion. Therefore, the correct verdict would be the tree specialist, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -920,7 +920,7 @@
                 "Legal_concept": "Comparative negligence in tort law, specifically the modified comparative negligence rule.",
                 "Fact_analysis": "The man was visiting a shooting range and was struck by a bullet fired by another customer who was using the range, but the range was not set up for visitors. The man sued the customer, the range owner, and the manufacturer of the signaling apparatus.",
                 "Rule_application": "Under modified comparative negligence, a plaintiff's recovery is reduced by their percentage of fault. In this scenario, the man's fault would be considered, as he was visiting a shooting range where he did not have permission to be and was struck by a bullet from another customer who was using the range. Therefore, the man's percentage of fault would be considered, with the customer and manufacturer each being equally at fault.",
-                "Legal_conclusion": "Given that the man's percentage of fault is equal to the customer and manufacturer's, he would not be able to recover damages under modified comparative negligence. Therefore, the correct verdict would be not based on the modified comparative negligence rule, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -939,7 +939,7 @@
                 "Legal_concept": "Intentional tort of battery in medical malpractice, specifically the use of force in contact.",
                 "Fact_analysis": "The radiologist used reasonable force when he grabbed the doctor by the neck and told him, \u201cYou\u2019ll be prosecuted for malpractice if you don\u2019t stop seeing my patient,\u201d escalating the confrontation further by inviting him to go outside and \u201cfight it out.\u201d",
                 "Rule_application": "Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the radiologist\u2019s use of reasonable force to protect himself against an unlawful and immediate threat posed by the doctor with whom he was grappling and who was armed with a chair, would likely be considered a reasonable response under imminent threat.",
-                "Legal_conclusion": "Given that the radiologist was defending himself against an unlawful and immediate threat posed by the doctor with whom he was grappling and who was armed with a chair, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -958,7 +958,7 @@
                 "Legal_concept": "Self-defense in criminal and civil law, particularly the justification of using reasonable force, including deadly force, to protect oneself if they reasonably believe it is necessary to prevent imminent harm.",
                 "Fact_analysis": "The buyer was defending herself against an unlawful and immediate threat posed by the loan company employee who entered her home and aggressively demanded the car keys, escalating the confrontation by inviting her to go outside and fight. When the buyer ignored this, the employee escalated further by grabbing her and pulling her towards the door.",
                 "Rule_application": "Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent harm. In this scenario, the buyer\u2019s use of reasonable force to protect herself against an unlawful and immediate threat posed by the aggressive loan company employee who entered her home and escalated the confrontation by inviting her to fight outside would likely be considered a reasonable response under imminent threat.",
-                "Legal_conclusion": "Given that the buyer was defending herself against an unlawful and immediate threat posed by the loan company employee who entered her home and escalated the confrontation by inviting her to go outside and fight, she acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -977,7 +977,7 @@
                 "Legal_concept": "Res ipsa loquitur, the legal doctrine that allows a plaintiff to establish negligence in a tort case based on the presence of unusual circumstances and the defendant\u2019s failure to explain why those circumstances occurred.",
                 "Fact_analysis": "A passenger was injured when an elevator suddenly started free-falling while he was inside, prompting him to reach out and try to stop the descent.",
                 "Rule_application": "Res ipsa loquitur allows a plaintiff to establish negligence in a tort case based on the presence of unusual circumstances and the defendant\u2019s failure to explain why those circumstances occurred. In this scenario, the unusual circumstance is an elevator suddenly starting a free-fall descent while carrying passengers, and the defendant\u2019s failure to explain why this happened would be based on the company\u2019s lack of control over the elevator once it was installed and maintained by a third party.",
-                "Legal_conclusion": "Given that res ipsa loquitur allows a plaintiff to establish negligence in a tort case based on the presence of unusual circumstances and the defendant\u2019s failure to explain why those circumstances occurred, the correct verdict would be based on the company\u2019s liability, supporting option C. However, the judge should also instruct the jury to consider any carelessness of the passenger in awarding damages if they find the company liable, considering that the passenger\u2019s impulsive attempt to stop the elevator\u2019s descent by reaching out and grabbing the doors may have contributed to his injury."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -996,7 +996,7 @@
                 "Legal_concept": "Self-defense in criminal and the justification of using reasonable force, particularly in the context of preventing harm to others, in tort law.",
                 "Fact_analysis": "The bystander entered the bedroom where the intoxicated man was barricaded and aggressively demanded him to leave, escalating the confrontation by stating he would call the police. When the man refused, the bystander escalated further by locking him in the bedroom.",
                 "Rule_application": "Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent harm. In this scenario, the bystander\u2019s use of reasonable force to prevent the intoxicated man from harming himself or others by jumping from a fifth-floor balcony would likely be considered a reasonable response under imminent threat.",
-                "Legal_conclusion": "Given that the bystander was trying to prevent the intoxicated man from harming himself by jumping from a balcony, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1014,7 +1014,7 @@
             "explanation": {
                 "Legal_concept": "The assumption of risk doctrine in tort law, specifically the modified comparative negligence framework in some jurisdictions.",
                 "Fact_analysis": "The man entered a darkened stairwell and attempted to navigate down the stairs in the dark, despite the availability of a light switch located above him.",
-                "Rule_application": "In modified comparative negligence, a plaintiff\u2019s degree of fault may be considered in determining liability, but the defendant\u2019s degree of fault is not relevant. Therefore, even if the man\u2019s failure to use reasonable care in descending the stairs in darkness was found to be a substantial factor in causing his injury, he would still potentially recover damages if the defendant\u2019s fault was found to be greater. In this scenario, the correct verdict would be in favor of the defendant based on the man\u2019s assumption of the risk of using an unlit stairwell, supporting option B.",
+                "Rule_application": "n/a",
                 "Legal_conclusion": "n/a"
             }
         },
@@ -1034,7 +1034,7 @@
                 "Legal_concept": "Intentional infliction of emotional distress in tort law, specifically the elements of extreme and outrageous conduct.",
                 "Fact_analysis": "The debt collector repeatedly called the woman late at night and made aggressive and threatening statements regarding her credit and where she lived, escalating the confrontation by suggesting he would harm her.",
                 "Rule_application": "To establish a claim in intentional infliction of emotional distress, the plaintiff must prove that the defendant\u2019s conduct was extreme and outrageous. In this scenario, the debt collector\u2019s late-night calls and threats towards a vulnerable and elderly woman, escalating to suggesting he would harm her, would likely be considered extreme and outrageous.",
-                "Legal_conclusion": "Given that the debt collector\u2019s conduct was extreme and outrageous, the correct verdict would be based on intentional infliction of emotional distress supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1053,7 +1053,7 @@
                 "Legal_concept": "Intentional tort of battery, specifically the use of indirect force causing harmful contact.",
                 "Fact_analysis": "The rocket was launched towards the sky during a fireworks display, but it failed to follow its intended trajectory and struck a spectator below, causing harm.",
                 "Rule_application": "Battery involves the direct application of force causing harmful contact, which would be satisfied in this scenario if the rocket had struck the spectator directly. Given that the rocket failed to follow its intended path and struck the spectator indirectly, the correct verdict would be not guilty based on the lack of direct contact, supporting option B.",
-                "Legal_conclusion": "Given that the rocket failed to follow its intended path and struck a spectator below, who was not within the expected range of danger, the amusement park would not be found liable based on battery. Therefore, the correct verdict would be not guilty based on the lack of direct contact, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1072,7 +1072,7 @@
                 "Legal_concept": "The relevant legal principle in the tort of private nuisance is whether the defendant\u2019s use of land has unreasonably interfered with the plaintiff\u2019s use and enjoyment of their property.",
                 "Fact_analysis": "The defendant placed unsightly items on his property, which were visible from the plaintiff\u2019s back deck, and the plaintiff requested him to move them. The defendant\u2019s failure to do so has unreasonably interfered with the plaintiff\u2019s use and enjoyment of her property.",
                 "Rule_application": "In the tort of private nuisance, the defendant\u2019s failure to take reasonable care to avoid causing harm to the plaintiff, in this case the unreasonable interference with her use and enjoyment of her property, may make him liable. In this scenario, the defendant\u2019s failure to move the unsightly items from his property, despite being asked by the plaintiff, would likely be considered a failure to take reasonable care.",
-                "Legal_conclusion": "Given that the defendant\u2019s failure to move the unsightly items from his property has unreasonably interfered with the plaintiff\u2019s use and enjoyment of her property, he may be found liable in a private nuisance action. Supporting option A, the correct verdict would be not guilty based on the defendant\u2019s reasonable argument that he did not intentionally cause harm to the plaintiff."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1091,7 +1091,7 @@
                 "Legal_concept": "Preliminary questions concerning the qualification of an expert witness, specifically whether the expert is qualified to offer an opinion based on relevant knowledge and experience.",
                 "Fact_analysis": "The question asks whether the prosecution can introduce evidence of a defendant\u2019s purchase of an airline ticket using an alias while on bail with travel restrictions, to establish his consciousness of guilt and motive to commit the crime of conspiracy to possess cocaine with intent to distribute.",
                 "Rule_application": "Preliminary questions concerning the qualification of an expert witness allow the court to determine whether the expert is qualified to provide an opinion based on relevant knowledge and experience. In this scenario, the expert\u2019s testimony would be relevant to establish the defendant\u2019s consciousness of guilt and motive to commit the crime, supporting option B.",
-                "Legal_conclusion": "Given that the expert\u2019s testimony would be relevant to establish the defendant\u2019s consciousness of guilt and motive to commit the crime, the court should allow the prosecution to introduce the evidence. Therefore, the correct verdict would be based on the preliminary question concerning the qualification of an expert witness, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1110,7 +1110,7 @@
                 "Legal_concept": "The attorney-client privilege, specifically the limited waiver of the privilege when a client inadvertently discloses privileged communications to a third party.",
                 "Fact_analysis": "The manufacturer inadvertently disclosed two privileged communications between its president and its attorney regarding the drug\u2019s potential side effects during discovery.",
                 "Rule_application": "A limited waiver of the attorney-client privilege occurs when a client inadvertently discloses privileged communications to a third party. In this scenario, the manufacturer\u2019s disclosure of the two privileged communications to the plaintiff would result in a limited waiver of the privilege regarding those specific documents.",
-                "Legal_conclusion": "Given that a limited waiver of the attorney-client privilege occurs when a client inadvertently discloses privileged communications to a third party, the manufacturer\u2019s disclosure of the two privileged communications to the plaintiff would result in a limited waiver of the privilege regarding those specific documents. Therefore, the correct verdict would be B, supporting a limited waiver of the privilege regarding the two disclosed documents."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1129,7 +1129,7 @@
                 "Legal_concept": "Intentional tort of battery, specifically the use of indirect force causing harmful contact.",
                 "Fact_analysis": "The homeowner hired a contractor to remove and replace old porch boards. The contractor and the homeowner were standing on the porch when the boards gave way, and they were injured when they fell through the floor. The contractor was suing the homeowner for breach of contract, and the homeowner was counterclaiming in tort for battery.",
                 "Rule_application": "Intentional battery requires direct contact, but indirect force causing harmful contact is possible. In this scenario, the contractor and homeowner were standing on the porch when the boards gave way, and they were injured when they fell through the floor below. The contractor was standing on the porch at the time of the accident, and the homeowner was entering the house when the boards gave way. Both were within the zone of danger created by the contractor\u2019s failure to secure the boards, and the contractor\u2019s failure to warn the homeowner of the danger was a proximate cause of her harm.",
-                "Legal_conclusion": "Given that the contractor\u2019s failure to secure the boards and his failure to warn the homeowner of the danger created a proximate cause of her harm, the correct verdict would be not guilty based on self-defense, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1148,7 +1148,7 @@
                 "Legal_concept": "Preliminary questions concerning the qualification of an expert witness in criminal proceedings, specifically whether the expert\u2019s specialized knowledge is relevant to the task at hand.",
                 "Fact_analysis": "The woman is suing the man for defamation based on a letter he sent to her employer, containing statements that were false and harmful to her reputation.",
                 "Rule_application": "In determining whether an expert witness is qualified to testify in a criminal trial, the court considers whether their specialized knowledge is relevant to the task at hand. In this scenario, the woman\u2019s proposed testimony about the statements made in the letter is relevant to establishing the defendant\u2019s liability for defamation, supporting option C.",
-                "Legal_conclusion": "Given that the woman is suing the defendant for defamation based on statements made in a letter he sent to her employer, her proposed testimony about those statements is relevant. Therefore, the correct verdict would be yes based on the preliminary question concerning the qualification of an expert witness, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1167,7 +1167,7 @@
                 "Legal_concept": "Preliminary questions concerning the admissibility of hearsay in criminal proceedings, specifically the exception for self-authentication.",
                 "Fact_analysis": "The photograph was taken by a lay witness using a cell phone, and the question is whether it can be introduced into evidence without additional authentication.",
                 "Rule_application": "Self-authentication allows hearsay evidence to be admitted without additional authentication if it bears a signature, handwriting, or other symbol executed or made by the declarant, or is a document that was prepared by the declarant in the course of business, government, or official duty, and the source of information is established. In this scenario, the photograph meets these requirements as it is a document prepared by the witness in the course of business, using a cell phone, and the source of information is established by the testimony of the witness.",
-                "Legal_conclusion": "Given that the photograph meets the criteria for self-authentication, the correct verdict would be yes, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1186,7 +1186,7 @@
                 "Legal_concept": "Preliminary questions concerning the qualification of an expert witness in criminal proceedings, specifically the forfeiture of hearsay and confrontation objections.",
                 "Fact_analysis": "The expert witness in this scenario is the prosecutor who is arguing that the defendant has forfeited his hearsay and confrontation objections based on the defendant\u2019s murder of the business rival who had come to the police station to report his concerns about the defendant.",
                 "Rule_application": "In criminal proceedings, the hearsay rule allows an expert witness to provide opinion testimony based on hearsay if the expert has sufficient knowledge, experience, and training to form an opinion on the relevant issue. However, in determining the admissibility of hearsay evidence, the confrontation clause requires that the declarant be present for cross-examination unless the declarant is unavailable or the hearsay is considered \u201ctrustworthy.\u201d In this scenario, the prosecutor is arguing that the defendant has forfeited his hearsay and confrontation objections based on the defendant\u2019s murder of the business rival who had come to the police station to report his concerns about the defendant, implying that the defendant killed the rival to prevent him from testifying. Therefore, the prosecutor\u2019s argument that the defendant has forfeited his hearsay and confrontation objections is based on a valid legal principle of preliminary questions concerning the qualification of an expert witness in criminal proceedings.",
-                "Legal_conclusion": "Given that the prosecutor\u2019s argument is based on a valid legal principle of preliminary questions concerning the qualification of an expert witness in criminal proceedings, the correct verdict would be A, supporting forfeiture of hearsay and confrontation objections."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1205,7 +1205,7 @@
                 "Legal_concept": "Preliminary questions concerning the qualification of an expert witness, specifically the relevance of their testimony in determining admissibility.",
                 "Fact_analysis": "The prosecutor called a witness who testified that a friend had told him that there was \u201cbad blood\u201d between the defendant and the victim. The defense objected on the grounds of relevance, preventing further questioning on that point.",
                 "Rule_application": "Expert testimony is generally allowed in criminal trials to help the jury understand complex issues, but the relevance of the testimony must be established. In this scenario, the friend\u2019s statement regarding the defendant\u2019s motivation in the murder trial is not directly relevant to the expert\u2019s opinion on the defendant\u2019s state of mind at the time of the crime. Therefore, the relevance of the statement is unclear, supporting option D.",
-                "Legal_conclusion": "Given that the defense objected to the question on relevance, the issue of admissibility has been preserved for appeal. The court would consider whether the expert\u2019s opinion could be established without the hearsay statement, ultimately determining that it cannot, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1223,7 +1223,7 @@
             "explanation": {
                 "Legal_concept": "Preliminary questions concerning the qualification of an expert witness in criminal and civil trials, specifically the Frye-Mack question, which addresses whether the expert's methodology is generally accepted in the relevant scientific community.",
                 "Fact_analysis": "The stockholder is seeking to offer an opinion based on his experience as a stockholder regarding the impact of the corporation's disclosure of false earnings reports on the stock price.",
-                "Rule_application": "The Frye-Mack question considers whether the expert's methodology is generally accepted in the relevant scientific community. In this scenario, the relevant scientific community would likely be economists and financial analysts who study the stock market. Given that the stockholder has no formal education or training in these fields, his opinion would likely not be considered sufficiently reliable by this community. Therefore, the correct verdict would be no based on the Frye-Mack question, supporting option A.",
+                "Rule_application": "n/a",
                 "Legal_conclusion": "n/a"
             }
         },
@@ -1243,7 +1243,7 @@
                 "Legal_concept": "Preliminary questions concerning the qualification of an expert witness in criminal cases, specifically whether the expert\u2019s testimony is relevant and reliable.",
                 "Fact_analysis": "The police officer was testifying about a statement made by the woman, who was a co-conspirator in a criminal drug conspiracy, to establish the defendant\u2019s guilt in the same criminal drug conspiracy.",
                 "Rule_application": "In criminal trials, the expert testimony of a co-conspirator concerning a jointly-undertaken criminal activity is admissible under Federal Rule of Evidence 801(d)(2)(E), supporting option C.",
-                "Legal_conclusion": "Given that the police officer was testifying about a statement made by a co-conspirator regarding a jointly-undertaken criminal activity, the statement would be considered relevant and admissible under Federal Rule of Evidence 801(d)(2)(E). Therefore, the correct verdict would be based on the admissibility of hearsay, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1262,7 +1262,7 @@
                 "Legal_concept": "Preponderance of the evidence standard in criminal trials, specifically in determining the authenticity of evidence.",
                 "Fact_analysis": "The prosecution seeks to introduce various items of evidence found in the bedroom where the defendant was staying during a search and rescue operation. The items include mail addressed to the defendant, receipts bearing his credit card information, and clothing of a size that would fit him. The prosecution intends to call a law enforcement officer who discovered the items to testify to their authenticity.",
                 "Rule_application": "In criminal trials, the preponderance of the evidence standard is used to determine the authenticity of evidence. This means that the prosecution must demonstrate that it is more likely than not that the items are what they claim based on the relevant evidence.",
-                "Legal_conclusion": "Given the specific question and answer choices, the correct verdict would be based on the preponderance of the evidence standard. Therefore, option A is the correct choice, supporting the correct legal concept and considering the relevant fact analysis and rule application."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1281,7 +1281,7 @@
                 "Legal_concept": "Preliminary questions concerning the validity of a witness\u2019s testimony, specifically the hearsay exception for prior inconsistent statements.",
                 "Fact_analysis": "The question centers around a hearsay statement made by a witness to an investigator, who is not testifying in the trial, regarding the witness\u2019s prior inconsistent statement made outside the trial.",
                 "Rule_application": "The hearsay exception for prior inconsistent statements allows a party to introduce a statement made by a witness in a prior proceeding or other setting, if the witness is testifying in the current trial or hearing and the statement is offered to attack the witness\u2019s credibility on a material point. In this scenario, the investigator\u2019s testimony would be admissible to impeach the witness\u2019s trial testimony, supporting option B.",
-                "Legal_conclusion": "Given that the investigator is testifying to establish the validity of the hearsay statement made by the witness, the hearsay exception for prior inconsistent statements allows his testimony, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1300,7 +1300,7 @@
                 "Legal_concept": "Self-incrimination in criminal procedure, specifically the Fifth Amendment protection against compelled testimonial incrimination.",
                 "Fact_analysis": "The lawyer is being asked to testify before a grand jury investigating a crime committed by the client, potentially incriminating the client.",
                 "Rule_application": "Self-incrimination allows an individual to refuse to answer questions before a tribunal that may incriminate them in a criminal proceeding. In this scenario, the lawyer\u2019s testimony regarding the identity of a client who may have been involved in a criminal act would likely incriminate the client, supporting option B.",
-                "Legal_conclusion": "Given that the lawyer\u2019s testimony could potentially incriminate the client, he is protected by the Fifth Amendment. Therefore, the correct verdict would be not guilty based on self-incrimination, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1319,7 +1319,7 @@
                 "Legal_concept": "Preliminary questions concerning the validity of a witness\u2019s testimony in a criminal trial, specifically the relevance of impeachment through prior bad acts.",
                 "Fact_analysis": "The bartender is seeking to impeach the eyewitness\u2019s credibility based on her intoxication at the time of the confrontation and the loud music in the nightclub, which may have impacted her ability to hear or see the confrontation.",
                 "Rule_application": "Impeachment through prior bad acts is relevant to determine the witness\u2019s credibility, particularly if the act makes the witness\u2019s testimony untrustworthy. In this scenario, the bartender\u2019s testimony regarding the eyewitness\u2019s intoxication and the loud music at the time of the confrontation would be relevant to establish that the eyewitness may have been impaired in her ability to see or hear what happened, potentially impacting her credibility.",
-                "Legal_conclusion": "Given that impeachment through prior bad acts is relevant in determining a witness\u2019s credibility, the bartender\u2019s testimony regarding the eyewitness\u2019s intoxication and the loud music at the time of the confrontation would be allowed, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1338,7 +1338,7 @@
                 "Legal_concept": "Preliminary questions concerning the validity of a hearsay statement, specifically whether a hearsay statement is not admissible because it is not trustworthy.",
                 "Fact_analysis": "The question concerns the admissibility of hearsay statement made by the defendant to a potential witness regarding a threat made by other robbers.",
                 "Rule_application": "Hearsay statements are generally not admissible in court, with a few exceptions, one of which is the preliminary question concerning the validity of a hearsay statement. In this scenario, the hearsay statement made by the defendant would not be admissible because it is not considered trustworthy given that it was made during a criminal trial and concerns his involvement in a criminal act.",
-                "Legal_conclusion": "Given that the hearsay statement made by the defendant is not considered trustworthy, the correct verdict would be not admissible based on the preliminary question concerning the validity of a hearsay statement, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1357,7 +1357,7 @@
                 "Legal_concept": "Preliminary questions concerning the qualification of an expert witness in federal court, specifically the admissibility of hearsay in determining expert qualifications.",
                 "Fact_analysis": "The plaintiff seeks to introduce a newspaper article to establish that the defendant was aware of the bankruptcy proceedings, which is relevant to the expert qualifications in determining the defendant\u2019s intent to pursue the debt collection.",
                 "Rule_application": "The preliminary questions concerning the qualification of an expert witness in federal court allow for the admission of hearsay if it is relevant to determining the expert\u2019s qualifications. In this scenario, the newspaper article would be relevant to establishing the defendant\u2019s knowledge of the bankruptcy proceedings, supporting the use of the hearsay exception for preliminary questions concerning qualification.",
-                "Legal_conclusion": "Given that the hearsay exception for preliminary questions concerning qualification allows for the admission of hearsay if it is relevant to determining the expert\u2019s qualifications, the newspaper article would be admissible in this scenario. Therefore, the correct verdict would be based on the hearsay exception supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1376,7 +1376,7 @@
                 "Legal_concept": "Estoppel in contract and property law, particularly the doctrine of equitable estoppel based on detrimental reliance.",
                 "Fact_analysis": "The grantor conveyed the property to the friend \u201cso long as alcoholic beverages are not sold on the property, and if alcoholic beverages are sold on the property, the estate is to end at once.\u201d The friend then opened a tavern and continued to operate it on the property, leading the grantor to believe that he intended to hold a valid joint tenancy in the property.",
                 "Rule_application": "In equitable estoppel, a party may be prevented from asserting a legal position if they have intentionally led another to rely on their statement or action, and the other party has reasonably relied on the statement or action to their detriment. In this scenario, the grantor reasonably relied on the friend\u2019s promise to hold a joint tenancy in the property, which he intended to use for his own residence, based on the friend\u2019s continued operation of the tavern.",
-                "Legal_conclusion": "Given that the grantor reasonably relied on the friend\u2019s promise to hold a joint tenancy in the property based on the friend\u2019s continued operation of the tavern, he is entitled to a portion of the condemnation proceeds. Therefore, the correct verdict would be in favor of the grantor, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1395,7 +1395,7 @@
                 "Legal_concept": "Implied covenant of good faith and fair dealing in contract interpretation, specifically the principle that parties to a contract are bound by the obligation of good faith in their performance and enforcement of the contract.",
                 "Fact_analysis": "The mother and daughter were co-owners of a vacant lot when the mother conveyed her interest to the daughter, who then owned the lot jointly with the son. The mother and son remained joint owners of the remaining lot. When the mother built a three-story house on her lot, the question of whether the covenant in the deed conveying the lot to the son would be enforceable against the daughter arose.",
                 "Rule_application": "The implied covenant of good faith and fair dealing requires parties to a contract to act in good faith and not use the contract to further their own interests at the other party's expense. In this scenario, the mother's construction of a three-story house on her lot would likely be considered a material breach of the contract, as it would prevent the daughter from building a single-story home on her jointly owned lot. Therefore, the mother's failure to act in good faith under the contract would support a finding in favor of the daughter.",
-                "Legal_conclusion": "Given that the mother breached the contract by constructing a three-story house on her lot, the daughter would likely prevail in a legal action to enforce the contract. Therefore, the correct verdict would be yes based on the mother's failure to act in good faith under the contract, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1414,7 +1414,7 @@
                 "Legal_concept": "Intention to be bound in contract formation, particularly the presumption of mutual assent in offer and acceptance.",
                 "Fact_analysis": "The buyer made a valid offer to purchase the house within the timeframe and price range specified in the listing agreement, and the seller rejected the offer without valid reason.",
                 "Rule_application": "In the absence of an express contract, the presumption of mutual assent in offer and acceptance establishes a valid contract if both parties intended to be bound. In this scenario, the seller\u2019s rejection of the buyer\u2019s offer during the listing period indicates that she did not intend to be bound, supporting option C.",
-                "Legal_conclusion": "Given that the seller did not intend to be bound by the buyer\u2019s offer during the listing period, the contract would not have been formed. Therefore, the broker would not be entitled to a commission, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1433,7 +1433,7 @@
                 "Legal_concept": "Surrender and rejection doctrine in contract law, specifically the principle that a promisee who accepts a promise and begins to rely on it has the option to rescind the promise if the promisor fails to perform within a reasonable time.",
                 "Fact_analysis": "The woman made a valid contract with her nephew to convey her interest in the house to him upon his marriage, but he failed to fulfill the condition within a reasonable time. Her death invalidated the contract, but the nephew could elect to treat the contract as rescinded if he notified her estate within a reasonable time.",
                 "Rule_application": "The surrender and rejection doctrine allows a promisee to rescind a promise if the promisor fails to perform within a reasonable time, even if the promisee has partially performed or has gained a benefit from the promise. In this scenario, the nephew could elect to rescind the contract based on the promisor\u2019s failure to perform within a reasonable time, supporting option D.",
-                "Legal_conclusion": "Given that the nephew failed to marry within a reasonable time after the woman\u2019s death and he was notified of her will, he would likely be considered to have rescinded the contract, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1452,7 +1452,7 @@
                 "Legal_concept": "Equitable mortgage in contract law, particularly the creation of a mortgage through an unrecorded promise to secure the payment of money.",
                 "Fact_analysis": "The woman and the friend entered into a verbal agreement to convey a fee simple interest in a tract of land to the woman, who would then convey a fee simple interest back to the friend, with the right for the woman to reside on the land. If the agreement were enforceable, it would create an equitable mortgage.",
                 "Rule_application": "An equitable mortgage can be created when a promisee promises to convey a fee simple interest in land to the promisor, who promises to reconvey the interest, and the promisee delivers possession of the land to the promisor. In this scenario, the woman\u2019s delivery of possession of the land to the friend would create an equitable mortgage.",
-                "Legal_conclusion": "Given that the woman\u2019s delivery of possession of the land to the friend created an equitable mortgage, she would have a valid claim to enforce the agreement. Therefore, the correct verdict would be yes based on equitable mortgage, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1471,7 +1471,7 @@
                 "Legal_concept": "Short sale in real estate contracts, particularly the allowance of a buyer to purchase a property subject to an existing mortgage.",
                 "Fact_analysis": "The woman made a valid offer to the bank to convey a fee simple interest in the property, free and clear of the mortgage, in exchange for the bank\u2019s agreement to discharge her liability on the mortgage.",
                 "Rule_application": "In a short sale, the buyer is not responsible for the seller\u2019s mortgage debt, allowing the seller to be released from the mortgage obligation. In this scenario, the woman\u2019s offer to the bank to transfer ownership of the property would allow the bank to accept the offer and be released from the mortgage, supporting option D.",
-                "Legal_conclusion": "Given that the woman is offering to convey a fee simple interest in the property to the bank, who would then have unencumbered title, the transaction would be a valid short sale. Therefore, the correct verdict would be not guilty based on the allowance of short sales in real estate contracts, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1490,7 +1490,7 @@
                 "Legal_concept": "Mutual mistake in contract interpretation, specifically the doctrine of frustration of purpose.",
                 "Fact_analysis": "Both parties made a good-faith effort to meet on the rescheduled closing date, but the buyer was prevented from attending due to an unforeseen circumstance (car accident).",
                 "Rule_application": "If the purpose of the contract is frustrated by the circumstances beyond the control of either party, the contract is discharged and neither party is obliged to perform. In this scenario, the buyer\u2019s inability to attend the rescheduled closing due to a car accident prevents him from fulfilling his obligation to close, thus frustrating the purpose of the contract.",
-                "Legal_conclusion": "Given that the buyer\u2019s failure to perform was due to an unforeseen circumstance beyond his control, he is not responsible for breaching the contract. Therefore, the correct verdict would be not guilty based on mutual mistake, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1508,7 +1508,7 @@
             "explanation": {
                 "Legal_concept": "Prescriptive easement in property law, specifically the acquisition of an easement by continuous and open use for a statutory period in this case 20 years.",
                 "Fact_analysis": "The woman conveyed a fee simple interest in the land to the city with the intention of reserving a park easement, but the city subsequently abandoned the intended use and began using the land as a parking lot. The question asks for the most likely explanation for the court's decision, indicating that the correct answer will provide a legal concept that explains the court's reasoning.",
-                "Rule_application": "A prescriptive easement may be acquired by continuous and open use of another's land for a statutory period, in this case 20 years. In this scenario, the woman conveyed the land to the city with the intent of reserving a park easement, but the city subsequently abandoned the intended use and began using the land as a parking lot, allowing the public to park there. If the woman were still alive, she would likely have a valid claim to the park easement based on the city's continued use of the land for that purpose. Therefore, the correct verdict would be based on the woman's retained interest in the park easement, supporting option D.",
+                "Rule_application": "n/a",
                 "Legal_conclusion": "n/a"
             }
         },
@@ -1528,7 +1528,7 @@
                 "Legal_concept": "Co-signer liability in contract law, particularly the joint and several liability of co-signers in a contract.",
                 "Fact_analysis": "The man borrowed money from the bank to purchase a commercial building, and his mother co-signed a separate mortgage on a motel she owned to further secure the loan. When the man defaulted on the loan, the bank sought to foreclose on both the commercial building and the motel, which the mother timely objected.",
                 "Rule_application": "Under joint and several liability, a co-signer is equally responsible for the debt and can be held liable even if the primary borrower does not pay. In this scenario, the mother\u2019s co-signature on the separate mortgage on the motel makes her jointly and severally liable with the man for the debt, even if the man defaulted. Therefore, the correct verdict would be based on co-signer liability, supporting option B.",
-                "Legal_conclusion": "Given that the mother is jointly and severally liable with the man for the debt due to her co-signature on the separate mortgage on the motel, she has an interest in the foreclosure proceedings and can object. Therefore, the correct verdict would be in favor of the mother, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1547,7 +1547,7 @@
                 "Legal_concept": "Easements in real property, specifically the creation and validity of an easement by implication.",
                 "Fact_analysis": "The man owned a strip of land between the street and the ocean, and the woman owned a parcel of land across the street that did not have direct ocean access. The man conveyed an easement over his land to the woman, who then sold the property to a third party. The man did not record the deed, and the buyer did not have actual notice of the easement. When the buyer tried to use the easement to access the ocean, the man blocked her with a fence, prompting the legal action.",
                 "Rule_application": "An easement by implication may be created when the parties\u2019 actions reasonably lead a third party to conclude that they intended to create an easement. In this scenario, the man\u2019s conveyance of a dedicated easement to the woman, who then sold the property to the buyer, would support a finding that the parties intended to create an easement that would benefit the buyer.",
-                "Legal_conclusion": "Given that the man conveyed a dedicated easement to the woman with the intention of benefiting future owners of the property, he would likely be found liable if the buyer prevailed in court. Therefore, the correct verdict would be in favor of the buyer, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1566,7 +1566,7 @@
                 "Legal_concept": "Co-ownership in property, specifically the right of a joint tenant to sever the joint tenancy.",
                 "Fact_analysis": "The nephew and niece inherited the property jointly, but the nephew learned that the property was subject to a mortgage, prompting him to make monthly payments to prevent foreclosure.",
                 "Rule_application": "A joint tenant has the right to sever the joint tenancy, allowing them to own the property independently. In this scenario, the nephew\u2019s decision to make mortgage payments to prevent foreclosure on the property he co-owned with his niece would allow him to sever the joint tenancy, supporting option B.",
-                "Legal_conclusion": "Given that the nephew\u2019s actions were made to preserve the joint tenancy, he acted within the bounds of severing a joint tenancy. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1585,7 +1585,7 @@
                 "Legal_concept": "Consideration in contract law, specifically the requirement of mutuality and material bargain.",
                 "Fact_analysis": "The buyer and seller entered into a valid contract to purchase and sell the property, with the buyer reserving the right to rescind if the seller failed to deliver marketable title. The buyer subsequently discovered that the property was subject to a restrictive covenant prohibiting commercial use, which the buyer did not know about when she entered into the contract.",
                 "Rule_application": "Consideration requires a bargained-for exchange of value between the parties, and in this scenario, the buyer received the benefit of a valid contract while the seller received the benefit of a reasonable chance to complete the transaction. However, the lack of consideration on the seller's part makes the contract invalid, as the seller did not offer anything of value in exchange for the buyer's promise to rescind. Therefore, the correct verdict would be not guilty based on lack of consideration, supporting option B.",
-                "Legal_conclusion": "Given that the seller did not offer any consideration in exchange for the buyer's promise to rescind the contract, the contract is invalid, making the correct verdict not guilty. Therefore, the correct answer choice is B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1604,7 +1604,7 @@
                 "Legal_concept": "Assignability of contractual rights and obligations, specifically the ability to transfer a mortgage in a commercial real estate transaction.",
                 "Fact_analysis": "The buyer defaulted on a commercial loan secured by a mortgage on the property, and the bank that originally made the loan assigned the note and mortgage to an investor. While the bank notified the buyer of the assignment, it did not record the assignment in the public land records.",
                 "Rule_application": "Under contract law, a party may transfer a contractual right or obligation to another party, provided that the transfer is made in good faith and with intent to be legally bound. In this scenario, the bank\u2019s valid assignment of the note to the investor would allow the investor to enforce the terms of the mortgage, including the right to foreclose.",
-                "Legal_conclusion": "Given that the investor obtained a valid assignment of the loan from the bank, he has a legal right to enforce the terms of the mortgage, including the right to foreclose. Therefore, the correct verdict would be yes based on the investor\u2019s right to foreclose, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1623,7 +1623,7 @@
                 "Legal_concept": "Spoliation of evidence in contract law, particularly the prevention of a party from asserting a valid claim based on destroyed or withheld evidence.",
                 "Fact_analysis": "The woman, who was the owner of the apartment building, attempted to invalidate the deed after the man's death, but before she died, based on her intent to take back the gift.\n### Rule application\nSpoliation of evidence allows a party to prevent another from asserting a valid claim based on destroyed or withheld evidence. In this scenario, the woman\u2019s attempt to invalidate the deed based on her intent to take back the gift after the man\u2019s death would likely be considered spoliation, given that she destroyed the evidence of the deed by the man.",
                 "Rule_application": "Spoliation of evidence allows a party to prevent another from asserting a valid claim based on destroyed or withheld evidence. In this scenario, the woman\u2019s attempt to invalidate the deed based on her intent to take back the gift after the man\u2019s death would likely be considered spoliation, given that she destroyed the evidence of the deed by the man.",
-                "Legal_conclusion": "Given that the woman\u2019s attempt to invalidate the deed based on her intent to take back the gift after the man\u2019s death would likely be considered spoliation, the correct verdict would be based on the non-prevailing party\u2019s failure to preserve evidence, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1642,7 +1642,7 @@
                 "Legal_concept": "Premeditated murder in common law, particularly the requirement of intent to kill.",
                 "Fact_analysis": "The supplier and dealer conspired to murder the lookout with a gun, using the dealer\u2019s car to drive him to a remote location to carry out the plan. When the lookout was lured to the meeting, the supplier drew a gun and fired at him, intending to kill him.",
                 "Rule_application": "To be found guilty of murder, a defendant must have acted with intent to kill. In this scenario, the supplier\u2019s intent to kill the lookout, who was lured to a remote location and aggressively approached with a gun, is clear.",
-                "Legal_conclusion": "Given that the supplier\u2019s intent was to kill the lookout, who was armed with a deadly weapon when he was fired upon, he acted within the bounds of premeditated murder. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1661,7 +1661,7 @@
                 "Legal_concept": "Intent to receive stolen property in criminal law, specifically the requirement of knowing that the property was stolen.",
                 "Fact_analysis": "The woman was caught attempting to receive stolen drugs from undercover agents who had obtained them legally.",
                 "Rule_application": "To be found guilty of intent to receive stolen property, the defendant must have known that the property was stolen. In this scenario, the woman was notified by the agents that they had obtained the drugs illegally but intended to deliver them to her, implying that they were aware of the illegality. Therefore, her knowledge of the drug\u2019s illicit origin would satisfy the requirement of knowing that the property was stolen, supporting option D.",
-                "Legal_conclusion": "Given that the woman was attempting to receive stolen drugs knowingly, the correct verdict would be guilty based on intent to receive stolen property, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1680,7 +1680,7 @@
                 "Legal_concept": "Embezzlement in criminal law, specifically the felony charge of embezzlement based on the value of the property stolen.",
                 "Fact_analysis": "The woman, who was the trustee of a trust fund, embezzled $200,000 in funds belonging to the trust when she invested the proceeds from the matured certificate of deposit into a speculative stock and then sold the stock, making a profit of $120,000.",
                 "Rule_application": "Embezzlement involves the fraudulent appropriation of property by a person to whom the property has been entrusted. In this scenario, the woman\u2019s fraudulent appropriation of the $200,000 in trust funds for her own use, knowing she had a duty to hold them for the benefit of the trust, would constitute embezzlement.",
-                "Legal_conclusion": "Given that the woman embezzled $200,000 in funds belonging to the trust, she committed a felony of embezzlement. Therefore, the correct verdict would be embezzlement of $200,000, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1699,7 +1699,7 @@
                 "Legal_concept": "Intentional murder based on a reckless disregard for human life, known as depraved-heart murder.",
                 "Fact_analysis": "The woman drove while intoxicated and struck and killed a pedestrian, who was walking on the roadway, in a 70 mph zone.",
                 "Rule_application": "Depraved-heart murder allows an individual to be found guilty of murder if they act with a malicious intent to kill or cause serious bodily harm and their actions demonstrate a reckless disregard for human life. In this scenario, the woman\u2019s reckless driving under the influence of alcohol, leading to the death of a pedestrian, would likely meet the criteria of depraved-heart murder.",
-                "Legal_conclusion": "Given that the woman acted with malice and reckless disregard for human life while driving under the influence of alcohol, she acted within the bounds of depraved-heart murder. Therefore, the correct verdict would be not guilty based on not guilty by reason of insanity, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1718,7 +1718,7 @@
                 "Legal_concept": "Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.",
                 "Fact_analysis": "The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.",
                 "Rule_application": "Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.",
-                "Legal_conclusion": "Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1737,7 +1737,7 @@
                 "Legal_concept": "Attempt in criminal law, particularly the attempted crime of drug distribution based on the common law of conspiracy and solicitation.",
                 "Fact_analysis": "The man was offered to sell illegal drugs to an undercover police officer, who immediately arrested him. The police searched the man but found no drugs on his person.",
                 "Rule_application": "In attempt, a defendant must have taken a substantial step towards completing the intended crime. In this scenario, the man\u2019s offer to sell drugs to the undercover police officer constitutes as a substantial step towards completing the crime of drug distribution.",
-                "Legal_conclusion": "Given that the man was attempting to distribute drugs based on his offer to the undercover police officer, he acted within the bounds of attempt. Therefore, the correct verdict would be not guilty based on attempt, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1756,7 +1756,7 @@
                 "Legal_concept": "Conspiracy to commit murder in criminal law, particularly the joint agreement to commit a crime.",
                 "Fact_analysis": "The man was arrested after being approached by an undercover police officer who posed as a hitman and offered to kill the man's ex-wife for $5,000.",
                 "Rule_application": "In a conspiracy, two or more people agree to commit a crime, and each party is considered equally responsible. In this scenario, the man's attempt to pay the undercover police officer to kill his ex-wife would make him just as culpable as the police officer in the plot to commit murder.",
-                "Legal_conclusion": "Given that the man was attempting to pay an undercover police officer to kill his ex-wife, the correct verdict would be not guilty based on self-defense, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1775,7 +1775,7 @@
                 "Legal_concept": "Complicity in criminal law, particularly the joint venture to commit a crime in bank robbery.",
                 "Fact_analysis": "The two women planned to rob a bank and enlisted the help of a friend to drive them to the bank, where they were armed with bags of money. When the alarm sounded, they fled in his car.",
                 "Rule_application": "A person can be found guilty of complicity in a crime if they act with another person to commit a crime, and their actions make them just as culpable as the principal actor. In this scenario, the friend\u2019s role in driving the women to the bank, where they were armed and intending to steal, would make him just as culpable as the principal actor in the robbery.",
-                "Legal_conclusion": "Given that the friend aided the women in carrying out the robbery by driving them to the bank, he would be found guilty of complicity in bank robbery. Therefore, the correct verdict would be not guilty based on not guilty by reason of complicity, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1794,7 +1794,7 @@
                 "Legal_concept": "Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.",
                 "Fact_analysis": "The police were responding to multiple calls from concerned neighbors about a man breaking windows and aggressively confronting them outside the house, prompting them to enter and arrest him while he was armed with a shotgun.",
                 "Rule_application": "Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the police were attempting to enter the house to protect themselves from an imminent threat posed by the armed man inside, who was aggressively and immediately confronting them with a deadly weapon.",
-                "Legal_conclusion": "Given that the police were acting within the bounds of self-defense to protect themselves, the correct verdict would be not guilty based on self-defense, supporting option D."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1813,7 +1813,7 @@
                 "Legal_concept": "Conspiracy to commit a federal offense, specifically armed robbery in this scenario.",
                 "Fact_analysis": "The man and his friend hatched a plan to rob someone using force, specifically the friend hiding in the bushes and jumping in front of the victim, and the man blocking her from behind. The friend then pulled out a gun, further escalating the threat.",
                 "Rule_application": "Conspiracy to commit a federal offense requires an agreement between two or more individuals to commit a crime, which was established in this scenario. Additionally, the crime must be federal, such as armed robbery in this scenario.",
-                "Legal_conclusion": "Given that the man and his friend planned to commit armed robbery using force, specifically the friend hiding in the bushes and lunging at the victim, the correct verdict would be conspiracy to commit armed robbery, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1832,7 +1832,7 @@
                 "Legal_concept": "Malice aforethought in murder, specifically the intent to kill.",
                 "Fact_analysis": "The woman drove above the speed limit on a curvy road and lost control, crossing the road and striking a parked truck with the driver standing nearby.",
                 "Rule_application": "Malice aforethought requires the intent to kill, which can be established in this scenario if the woman drove intentionally and recklessly into the truck, knowing that the driver was nearby and likely at risk.",
-                "Legal_conclusion": "Given that the woman intentionally drove into the truck while the driver was nearby, she acted with malice aforethought, making murder the correct verdict based on malice aforethought, supporting option A."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1851,7 +1851,7 @@
                 "Legal_concept": "Search and seizure under the Fourth Amendment, specifically the validity of government searches and seizures based on valid legislative regulations.",
                 "Fact_analysis": "The question asks whether a state law requiring police to collect DNA samples from individuals arrested for felonies violates the Fourth Amendment.",
                 "Rule_application": "The Fourth Amendment generally requires that searches and seizures be reasonable based on probable cause. However, the government may conduct searches and seizures pursuant to valid legislative regulations, and the relevant Supreme Court precedent on this issue is New York v. Belton, which established that the search incident to arrest is a valid exception to the Fourth Amendment. In this scenario, the police were conducting a valid search incident to arrest when they collected the defendant\u2019s DNA sample using a cheek swab.",
-                "Legal_conclusion": "Given that the search and seizure in this scenario were conducted pursuant to a valid legislative regulation established in New York v. Belton, the correct verdict would be no, supporting option B."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1870,7 +1870,7 @@
                 "Legal_concept": "Ineffective assistance of counsel in criminal law, particularly the duty of attorneys to provide reasonable legal representation in a capital murder trial.",
                 "Fact_analysis": "The attorney failed to investigate a potentially mitigating factor in the defendant\u2019s background, despite knowing it could be relevant in the penalty phase of the trial.",
                 "Rule_application": "The standard of care for attorneys in a criminal trial requires reasonable legal representation based on the facts and circumstances of the case. In this scenario, the failure to investigate a potentially mitigating factor would not be considered reasonable given the importance of mitigation in a capital murder trial.",
-                "Legal_conclusion": "Given that the attorney\u2019s failure to investigate a potentially mitigating factor in the defendant\u2019s background would not be considered reasonable in a capital murder trial, he failed to meet the standard of care. Therefore, the correct verdict would be yes based on ineffective assistance of counsel, supporting option C."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {

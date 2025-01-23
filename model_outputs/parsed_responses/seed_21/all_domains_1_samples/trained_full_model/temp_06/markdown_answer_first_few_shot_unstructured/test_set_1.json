@@ -18,7 +18,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "A",
-            "explanation": "Because the depositor's federal claim was dismissed for lack of subject-matter jurisdiction, the depositor's claim is so related to the federal claim that it forms part of the same case or controversy. The depositor's state-law claim is therefore within the court's subject-matter jurisdiction."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 7,
@@ -60,7 +60,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "A",
-            "explanation": "The plaintiff's failure to effect proper service of process will result in the court's refusal to grant the motion to enter default. The Federal Rules of Civil Procedure require that a defendant be served with a copy of the complaint and a waiver of service form. The plaintiff mailed a copy of the complaint and two copies of the waiver of service form to the defendant's managing agent, but this was not proper service of process. The court will not grant the motion to enter default because the plaintiff has not effected proper service of process."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 28,
@@ -172,7 +172,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "A",
-            "explanation": "Because the manufacturer agreed to a non-unanimous verdict, the court cannot order the jury to continue to deliberate. If the court ordered the jury to continue to deliberate, and if the jury subsequently returned a 4-3 verdict, the court would have to disregard the 4-3 verdict and order a new jury trial. Because the manufacturer has not waived its right to a jury trial by agreeing to a non-unanimous verdict, the court cannot order a new trial."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 77,
@@ -200,7 +200,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "A",
-            "explanation": "Federal law governs the motion to dismiss. The burden of pleading on a motion to dismiss in federal court is substantive, not procedural."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 91,
@@ -214,7 +214,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "A",
-            "explanation": "The federal court would have diversity jurisdiction over this case because the investor and the broker are citizens of different states. Therefore, the federal court would apply federal law. Because federal courts must apply federal law in all cases in which they have jurisdiction, the federal court would apply federal law to the broker's counterclaim. Because the broker's counterclaim is based on a breach of contract, it is governed by state law."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 98,
@@ -228,7 +228,7 @@
         "response": {
             "domain": "Constitutional_law",
             "chosen_option_label": "A",
-            "explanation": "The correct answer choice is A, because only federal courts have jurisdiction to issue writs of habeas corpus for individuals in federal custody. The governor was in federal custody, having been arrested pursuant to a federal arrest warrant."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 2,
@@ -256,7 +256,7 @@
         "response": {
             "domain": "Courts_and_judges",
             "chosen_option_label": "A",
-            "explanation": "Because the company did not seek damages for its own losses, this is not a moot case. A is correct."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 17,
@@ -298,7 +298,7 @@
         "response": {
             "domain": "Constitutional_law",
             "chosen_option_label": "B",
-            "explanation": "The President may remove an officer of the United States only with the Senate's consent, as provided in the Constitution. The director is an officer of the United States, because he is the head of an agency of the United States. The President may not remove the director without the Senate's consent, because the President may remove the director only with the Senate's consent. The President may not remove the director without the Senate's consent, because the President may remove the director only with the Senate's consent. The President may not remove the director without the Senate's consent, because the President may remove the director only with the Senate's consent."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 37,
@@ -368,7 +368,7 @@
         "response": {
             "domain": "Constitutional_law",
             "chosen_option_label": "C",
-            "explanation": "The Fourteenth Amendment applies to all state action, and the summary termination of the resident's water service was a \"state action\" for purposes of the Fourteenth Amendment. The resident's claim alleges a violation of his Fourteenth Amendment right to due process. The company is a private entity, but it is performing a public function--regulating the use of a public resource (water). Because the company is performing a public function, the Fourteenth Amendment applies to its actions."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 71,
@@ -452,7 +452,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "B",
-            "explanation": "The wife was clearly the victim of a mistake here. The brother's offer to buy the farm was a mistake, because the brother's brother-in-law had clearly been trying to buy the farm for some time. The wife's signature on the offer was, therefore, the result of a mistake. A mistake will prevent a contract from being enforced if it is central to the agreement and if the other party knew or should have known about the mistake. Here, the brother's failure to disclose that he was the brother-in-law of the owner of the farm was central to the agreement to sell the farm, and the brother's attorney knew or should have known about this fact."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 16,
@@ -508,7 +508,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "B",
-            "explanation": "The client's email stating, \"Please ignore my previous email. I have taken care of the problem,\" is a clear and unambiguous revocation of the client's offer to pay the attorney's fee. That, combined with the attorney's immediate response that she had already begun work, are clear indications that the attorney did not believe that the client was still willing to pay her fee. The attorney's failure to notify the client that she had begun working on the requested opinion was not a failure to comply with the relevant legal standard, because there was no relevant legal standard to comply with--the client had already revoked his offer."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 46,
@@ -564,7 +564,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "A",
-            "explanation": "A is correct because the lender did not verify the man's financial information, as is its duty. That failure to verify led to the lender's reliance on inaccurate information and, thus, its decision to make the loan. That reliance was the proximate cause of the lender's loss."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 72,
@@ -578,7 +578,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "B",
-            "explanation": "Anticipatory repudiation is an unambiguous and unconditional statement that a party will not perform his or her obligations under a contract. The owner's failure to respond to the buyer's email was an unambiguous and unconditional refusal to honor the contract, which led the buyer to reasonably believe that the owner would not perform her obligation to pay $15,000 by March 6. This was an anticipatory repudiation of the contract."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 81,
@@ -634,7 +634,7 @@
         "response": {
             "domain": "Torts",
             "chosen_option_label": "C",
-            "explanation": "Because the boy was a trespasser on the private road, he was not entitled to as much care as a person with as much right as a licensee to be there. The standard of care for a trespasser is the same as that of a person acting as a bare licensee, which is simply the standard of care that a reasonably prudent person would use under the circumstances."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 11,
@@ -802,7 +802,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "B",
-            "explanation": "B is correct because the evidence is relevant to show the defendant's consciousness of guilt and to show his motive to commit the crime. The defendant's purchase of an airplane ticket using an alias is relevant to show that the defendant had the intent to leave the jurisdiction to avoid prosecution, which is evidence of his consciousness of guilt. The defendant's purchase of an airplane ticket using an alias is also relevant to show that the defendant was planning to engage in conduct in another country that would violate the laws of that country, which is evidence of his motive to commit the crime."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 5,
@@ -816,7 +816,7 @@
         "response": {
             "domain": "Evidence",
             "chosen_option_label": "A",
-            "explanation": "An inadvertent disclosure will not waive the attorney-client privilege. The disclosure was inadvertent, as the manufacturer did not know about it until the day before trial."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 12,
@@ -844,7 +844,7 @@
         "response": {
             "domain": "Evidence",
             "chosen_option_label": "A",
-            "explanation": "Because the statements are hearsay and not within any exception."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 23,
@@ -970,7 +970,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "A",
-            "explanation": "Because the eyewitness's testimony was that the victim lunged at the defendant with a knife, and that the eyewitness's testimony was that the victim's lunging was the initiating event that prompted the defendant to pull a gun and to fire it, the bartender's testimony is relevant to the defendant's claim of self-defense. The eyewitness's intoxication is relevant to the defendant's ability to identify the person who lunged at him with a knife."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 78,
@@ -984,7 +984,7 @@
         "response": {
             "domain": "Evidence",
             "chosen_option_label": "A",
-            "explanation": "A hearsay statement is not within an exception to the hearsay rule if it is not accompanied by circumstances that demonstrate that the statement is trustworthy. The defendant\u2019s statement is not within any exception to the hearsay rule, because it is not accompanied by circumstances that demonstrate that the statement is trustworthy. The defendant\u2019s statement is not a present sense impression, as there are no circumstances indicating that the defendant personally perceived the events that he is describing. The defendant\u2019s statement is not a statement against a person\u2019s interest, because the defendant is not testifying as a witness. The defendant\u2019s statement is not a spontaneous statement, because there is no circumstance indicating that the defendant was prompted to make this statement by a recent event. The defendant\u2019s statement is not a statement by a victim of the crime, because the defendant is not a victim of the crime. The defendant\u2019s statement is not a declaration against interest made by a person with as much knowledge as the declarant, because the defendant is not making a declaration against his own interest. The defendant\u2019s statement is not a statement by a person with unique knowledge, because the defendant is not a person with unique knowledge."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 86,
@@ -1012,7 +1012,7 @@
         "response": {
             "domain": "Property",
             "chosen_option_label": "B",
-            "explanation": "Because the friend was in possession and therefore entitled to the possession-related remedy of condemnation, he is entitled to the proceeds of the condemnation."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 6,
@@ -1152,7 +1152,7 @@
         "response": {
             "domain": "Contracts",
             "chosen_option_label": "A",
-            "explanation": "The doctrine of exoneration will apply here. The mortgage was jointly and severally held by the nephew and the niece, so that either of them could be responsible for making the payments. The nephew has clearly exonerated the niece by paying the mortgage payments for a year. The niece is therefore responsible for the remaining 50% of the mortgage payments."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 83,
@@ -1194,7 +1194,7 @@
         "response": {
             "domain": "Real_property",
             "chosen_option_label": "B",
-            "explanation": "B is correct because the man's will was probated. That is sufficient to establish his intent to devise his property to his wife, which is consistent with the language of the deed."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 100,
@@ -1222,7 +1222,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "A",
-            "explanation": "Entrapment will prevent a conviction if the victim of the entrapment was predisposed to engage in the criminal activity but was goaded into it by a law enforcement officer or agent. The woman was clearly the victim of entrapment here. The agents set up the situation and encouraged the woman to engage in criminal activity. The woman was predisposed to engage in the criminal activity of receiving stolen property--she was attempting to receive the 1,000 tablets of the prescription drug that the agents had told her they had stolen from a pharmacy. The woman was clearly the victim of entrapment here."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 15,
@@ -1306,7 +1306,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "A",
-            "explanation": "The friend is clearly an accessory after the fact to the bank robbery, because he aided and abetted the commission of the crime by driving the women to and from the bank. To be an accomplice, a person must jointly undertake with another a criminal activity with the intent that the activity be carried out as planned. The friend did not join with the women in the bank robbery. The friend's presence at the bank and his driving the women to and from the bank were all prompted by the women's request that he drive them to the bank. The friend had as much reason as the women to believe that the bank was being robbed when the women rushed from the bank with bags of money."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 57,
@@ -1320,7 +1320,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "B",
-            "explanation": "The officers' entry was justified by the emergency aid exception to the Fourth Amendment, because the man's conduct led the officers to reasonably believe that the man was endangering his own safety and that of the officers. The man's consistent failure to obey the officers' orders to identify himself and that he was pointing a shotgun at the officers all led the officers to reasonably believe that the man was attacking them and that their own safety was in danger. That, combined with the man's failure to obey the officers' request that he identify himself and that he was pointing a deadly weapon at them, all are clear indications that the officers were acting to protect their own safety, and thus that the entry was justified under the emergency aid exception to the Fourth Amendment."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 64,
@@ -1348,7 +1348,7 @@
         "response": {
             "domain": "Criminal_law",
             "chosen_option_label": "B",
-            "explanation": "Manslaughter is a killing that is as a result of a voluntary act or failure to act as a result of extreme recklessness. The woman's driving was an extreme and reckless disregard for human life. That, combined with the fact that her driving caused a collision with a truck that was on the shoulder of the road, and that the driver was outside of the truck and that his injuries caused his death, are all clear indications that the woman's actions were the result of extreme recklessness, and thus that manslaughter is the appropriate charge here."
+            "explanation": "n/a"
         },
         "ground_truth": {
             "question_number": 80,

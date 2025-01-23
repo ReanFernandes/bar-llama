@@ -4,7 +4,7 @@
         "seed": "seed_21",
         "training_status": "trained",
         "quantisation_status": "full_model",
-        "training dataset": "all_domains_125_samples",
+        "training_dataset": "all_domains_125_samples",
         "num_training_samples": "125",
         "num_training_domains": [
             "all"
@@ -32,14 +32,14 @@
         "Evidence_accuracy": 0.06666666666666667,
         "Real_Property_accuracy": 0.2857142857142857,
         "Torts_accuracy": 0.5384615384615384,
-        "Civil_Procedure_accuracy": 0,
+        "Civil_Procedure_accuracy": 0.3125,
         "Constitutional_Law_confidence": 0.1414141414141414,
         "Contracts_confidence": 0.15151515151515152,
         "Criminal_Law_confidence": 0.1717171717171717,
         "Evidence_confidence": 0.09090909090909091,
         "Real_Property_confidence": 0.1414141414141414,
         "Torts_confidence": 0.1414141414141414,
-        "Civil_Procedure_confidence": 0.0,
+        "Civil_Procedure_confidence": 0.16161616161616163,
         "correct_domain_wrong_label": 56,
         "correct_label_wrong_domain": 2,
         "both_wrong": 7
