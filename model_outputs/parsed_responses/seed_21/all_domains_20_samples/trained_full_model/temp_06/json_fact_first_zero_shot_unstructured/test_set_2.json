@@ -143,7 +143,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": \"...\" ,\n    \"chosen_option_label\" : \"...\"\n}\n\n<</SYS>>\nQuestion:\nSwimmers were unable to use a city-owned beach for several days because demonstrators protesting city policies had taken over the beach. Immediately after the demonstration ended, the city enacted an ordinance that banned \u201call First Amendment activities\u201d on the beach. What is the best argument AGAINST the constitutionality of the ordinance?\nAnswer Choices:\nA. The ordinance amounts to a prior restraint on speech.\nB. The ordinance is overly broad.\nC. The beach is a public forum.\nD. The city enacted the ordinance to prevent further protests of its policies.\nResponse:\n[/INST]",
         "response": {
             "domain": "Constitutional_law",
-            "chosen_option_label": "n/a",
+            "chosen_option_label": "B",
             "explanation": " The ordinance is unconstitutionally vague. The term \"First Amendment activities\" is too broad a term to be enforceable. The ordinance is overly broad because it does not provide enough guidance for the public to know what exactly is prohibited. There is no limiting principle to the term \"First Amendment activities.\" A is incorrect because the ordinance does not amount to a prior restraint. B is incorrect because the ordinance is not overly broad. C is incorrect because the beach is not a public forum. D is incorrect because the city did not enact the ordinance to prevent further protests. The city enacted the ordinance after the protest ended."
         },
         "ground_truth": {
@@ -494,7 +494,7 @@
         "response": {
             "domain": "Property",
             "chosen_option_label": "n/a",
-            "explanation": " This question requires you to distinguish between an option and a right of first refusal. An option is a unilateral contract right whereby one party (the optionor) offers a second party (the optionee) the chance to accept a proposed contract. The optionee can accept the offer and enter into the contract"
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 48,
@@ -549,8 +549,8 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": \"...\" ,\n    \"chosen_option_label\" : \"...\"\n}\n\n<</SYS>>\nQuestion:\nIn a contract drafted by the owner of a commercial fishing company, the company agreed to provide a specified quantity of fresh tuna to a seafood cannery each week during the \u201csummer season\u201d at an agreed-upon rate. The owner of the fishing company honestly understood \u201csummer season\u201d to mean June 15 to September 15. The cannery\u2019s president honestly understood the term to mean May 15 to September 15, as it is understood according to trade usage in the parties\u2019 industry. The parties have now discovered that they attach different meanings to the term \u201csummer season.\u201d How would a court likely resolve the different meanings attached to the term by the parties?\nAnswer Choices:\nA. Because both parties were acting in good faith, they will be excused from performing under the contract.\nB. Because the fishing company drafted the contract, the meaning of the term \u201csummer season\u201d will be construed against it, and the cannery\u2019s meaning will be used.\nC. Because the fishing company works in the industry, it will be bound by the meaning supplied by trade usage.\nD. Because the parties have attached different meanings to a key term of the contract, there is no contract.\nResponse:\n[/INST]",
         "response": {
             "domain": "Contracts",
-            "chosen_option_label": "n/a",
-            "explanation": " A court will interpret a contract according to the plain meaning of its terms. If the terms are not ambiguous"
+            "chosen_option_label": "A",
+            "explanation": " A court will interpret a contract according to the plain meaning of its terms. If the terms are not ambiguous, the court will enforce the contract according to its terms. If a term is ambiguous, the court will interpret the term according to extrinsic evidence of the parties' intent. If the evidence includes trade usage, the court will consider that evidence as indicative of the parties' intent. If, however, there is no evidence of trade usage, the court will interpret the term according to its ordinary meaning. Because the term \"summer season\" is not ambiguous, the court will interpret the term according to its plain meaning. Because the term is not defined in the contract, the court will look to extrinsic evidence of the parties' intent. There is no evidence of trade usage, so the court will interpret the term according to its ordinary meaning. June 15 to September 15 is the ordinary meaning of \"summer season.\" Therefore, the court will interpret the contract as requiring delivery of fresh tuna from June 15 to September 15. The cannery's interpretation, requiring delivery from May 15 to September 15, will not be used because it is not the ordinary meaning of \"summer season.\" Answer B is incorrect because the court will interpret the contract according to its plain meaning, not according to the drafting party's intent. Answer C is incorrect because evidence of trade usage is only relevant if there is no defined term. Because \"summer season\" is not defined, the court will interpret the term according to its ordinary meaning. Answer D is incorrect because the parties' intent is irrelevant if the term is not ambiguous. The court will interpret the term according to its plain meaning."
         },
         "ground_truth": {
             "question_number": 77,
@@ -619,8 +619,8 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": \"...\" ,\n    \"chosen_option_label\" : \"...\"\n}\n\n<</SYS>>\nQuestion:\nA defendant is on trial for conspiracy to distribute drugs. The prosecutor wishes to introduce into evidence a ledger found at the defendant\u2019s home during the execution of a search warrant. The ledger includes detailed information regarding the defendant\u2019s purchases and sales of drugs over a two-year period. The prosecutor is considering two alternative ways to lay the foundation for admission of the ledger as a business record. The first alternative is to call the police officer who executed the search warrant to testify that she found the ledger in the defendant\u2019s home. The second alternative is to call a codefendant, who has pled guilty, to testify that he was the defendant\u2019s drug supplier for over two years and that he was present when the defendant used the ledger to record their transactions as well as transactions with other buyers and sellers as they occurred. Which of the following is correct regarding the ledger\u2019s admissibility under the business records exception to the hearsay rule?\nAnswer Choices:\nA. The ledger may be admitted through either the officer or the codefendant.\nB. The ledger may be admitted through the codefendant but not through the officer.\nC. The ledger may not be admitted through either the officer or the codefendant, because business records may be introduced only through testimony by a records custodian.\nD. The ledger may not be admitted through either the officer or the codefendant, because the business records exception to the hearsay rule does not apply to illegal activity.\nResponse:\n[/INST]",
         "response": {
             "domain": "Evidence",
-            "chosen_option_label": "n/a",
-            "explanation": " The officer who found the ledger is an appropriate witness to authenticate and testify as to the admissibility of the ledger as a business record. The codefendant's testimony is not necessary to establish the admissibility of the ledger as a business record. Answer B is incorrect because the officer's testimony is sufficient to establish the admissibility of the ledger as a business record. Answer C is incorrect because any person can testify as to the admissibility of a document as a business record. Answer D is incorrect because the ledger is admissible as a conspiracy admission. The business records exception to the hearsay rule applies to admissions by a party opponent in a conspiracy."
+            "chosen_option_label": "A\"",
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 10,
@@ -690,7 +690,7 @@
         "response": {
             "domain": "Evidence",
             "chosen_option_label": "n/a",
-            "explanation": " The court should allow the supervisor's testimony because the evidence is not barred by any of the exceptions to the admissibility of character evidence. The supervisor's testimony is not being offered for the purpose of proving the agent is honest"
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 43,
@@ -815,8 +815,8 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": \"...\" ,\n    \"chosen_option_label\" : \"...\"\n}\n\n<</SYS>>\nQuestion:\nA company hired an attorney to sue a former company manager for violating a covenant not to compete. The company\u2019s president told the attorney that the manager had begun working for a competitor and gave the attorney a copy of the signed covenant. The attorney brought a federal diversity action against the manager and attached to the complaint a copy of the signed covenant. The attorney also moved for a preliminary injunction, referring to the attached covenant and submitting a supporting affidavit from the company\u2019s president. At the hearing on the preliminary injunction motion, the manager denied ever having signed such a covenant and conclusively demonstrated that the copy of a signed covenant attached to the company\u2019s motion was forged. The court, on its own initiative, ordered the attorney to show cause why the attorney should not be sanctioned under Rule 11. Would sanctions against the attorney be proper?\nAnswer Choices:\nA. No, because the court did not give the attorney notice and 21 days to withdraw the preliminary injunction motion.\nB. No, because the motion was supported by evidence that was likely sufficient to satisfy an objectively reasonable attorney.\nC. Yes, because the attorney filed papers with the court that contained untrue assertions of fact.\nD. Yes, because the attorney should have verified the manager\u2019s signature before attaching the covenant to the complaint.\nResponse:\n[/INST]",
         "response": {
             "domain": "Civil_procedure",
-            "chosen_option_label": "n/a",
-            "explanation": "A is incorrect. Pursuant to Federal Rule 65(b)"
+            "chosen_option_label": "B",
+            "explanation": "A is incorrect. Pursuant to Federal Rule 65(b), a court may issue a preliminary injunction \"only on notice and hearing\" and must \"set forth in writing the findings of fact and conclusions of law\" that support the issuance of such an injunction. Thus, the court's order for the attorney to show cause is a sufficient notice to the attorney. B is correct. Pursuant to Federal Rule 11, a court shall impose sanctions on a party or its attorney if it finds that the party or its attorney: (1) filed a paper with the court that contained untrue assertions of fact, or (2) filed a paper that was not made in good faith. Here, the court found that the attorney filed a motion that contained untrue assertions of fact. Therefore, sanctions are proper. C is incorrect. The court's order for the attorney to show cause is a sufficient notice to the attorney. Moreover, the court found that the motion was supported by evidence that was likely sufficient to satisfy an objectively reasonable attorney. D is incorrect. The court's order for the attorney to show cause is a sufficient notice to the attorney. Moreover, the court found that the motion was supported by evidence that was likely sufficient to satisfy an objectively reasonable attorney. Therefore, the attorney's failure to verify the signature before attaching the covenant to the complaint is irrelevant."
         },
         "ground_truth": {
             "question_number": 5,
@@ -830,7 +830,7 @@
         "response": {
             "domain": "Civil_procedure",
             "chosen_option_label": "n/a",
-            "explanation": "A is incorrect. A claim is any demand for relief"
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 12,
@@ -927,8 +927,8 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": \"...\" ,\n    \"chosen_option_label\" : \"...\"\n}\n\n<</SYS>>\nQuestion:\nA scientist domiciled in State A brought a federal civil action against his former employer, a company incorporated and headquartered in State A, alleging retaliatory discharge under federal and state law and seeking damages under federal and state law. The company moved to dismiss the federal claim, and the court granted the motion. The court\u2019s written order read in its entirety: \u201c[The company\u2019s] motion to dismiss the federal claim is granted.\u201d The scientist immediately appealed this decision to the court of appeals. Is the appeal proper?\nAnswer Choices:\nA. No, because there is no final judgment.\nB. No, because there is no subject-matter jurisdiction over the state-law claim.\nC. Yes, as a discretionary interlocutory appeal.\nD. Yes, because the decision on the federal claim is final.\nResponse:\n[/INST]",
         "response": {
             "domain": "Civil_procedure",
-            "chosen_option_label": "n/a",
-            "explanation": "A is incorrect. There is a final judgment when a court has rendered a decision and the parties have been fully heard from on the merits of the case. Here"
+            "chosen_option_label": "D",
+            "explanation": "A is incorrect. There is a final judgment when a court has rendered a decision and the parties have been fully heard from on the merits of the case. Here, the court has not yet heard from the parties on the merits of the case. B is incorrect. There is no foreign-state-law-based subject-matter jurisdiction. Moreover, even if there was, the court could disregard that fact and exercise its federal question jurisdiction. C is incorrect. Interlocutory appeals from orders of the district court are generally disfavored and are only to be taken in cases of \"exceptional circumstances.\" D is correct. The Seventh Circuit has held that a district court's decision on a federal claim is a final decision for purposes of interlocutory appeal where the court has issued a written order that contains all of the information necessary to understand the court's decision. Here, the district court's written order contained all of the necessary information, so the decision on the federal claim is a final decision for purposes of interlocutory appeal."
         },
         "ground_truth": {
             "question_number": 61,
@@ -1012,7 +1012,7 @@
         "response": {
             "domain": "Property",
             "chosen_option_label": "n/a",
-            "explanation": " The parol evidence rule bars the introduction of evidence of an agreement made prior to the adoption of a final written contract. However"
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 17,
@@ -1026,7 +1026,7 @@
         "response": {
             "domain": "Property",
             "chosen_option_label": "n/a",
-            "explanation": " The \"as is\" clause is not a contract term that is per se unconscionable. The term is subject to the parol evidence rule"
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 25,
@@ -1039,8 +1039,8 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": \"...\" ,\n    \"chosen_option_label\" : \"...\"\n}\n\n<</SYS>>\nQuestion:\nA landlord owns a 10-unit apartment building and lives in one of the apartments. A uniformly enforced provision in every apartment lease prohibits all pets. A tenant with a serious hearing impairment asked permission from the landlord to keep a hearing-assistance service dog in her apartment to alert and assist her in the event of fire or other emergency. The landlord refused. Is the landlord\u2019s refusal likely a violation of the federal Fair Housing Act?\nAnswer Choices:\nA. No, because the landlord lives in an apartment in the building.\nB. No, because the tenant agreed to the \u201cno pets\u201d provision in her lease.\nC. Yes, because the landlord\u2019s refusal is arbitrary.\nD. Yes, because the tenant is entitled to a reasonable accommodation for her disability.\nResponse:\n[/INST]",
         "response": {
             "domain": "Property",
-            "chosen_option_label": "n/a",
-            "explanation": "D is correct. The Fair Housing Act makes it unlawful to refuse to make reasonable accommodations in a dwelling when such accommodations may be necessary to afford a handicapped person equal opportunity to use and enjoy a dwelling. The term \"handicapped\" includes a person who has a mental or physical disability. A hearing-assistance service dog is a reasonable accommodation for the tenant's disability. The landlord is required to make this reasonable accommodation unless it can be shown that doing so would cause an undue financial and administrative burden on the landlord. In this case"
+            "chosen_option_label": "D",
+            "explanation": "D is correct. The Fair Housing Act makes it unlawful to refuse to make reasonable accommodations in a dwelling when such accommodations may be necessary to afford a handicapped person equal opportunity to use and enjoy a dwelling. The term \"handicapped\" includes a person who has a mental or physical disability. A hearing-assistance service dog is a reasonable accommodation for the tenant's disability. The landlord is required to make this reasonable accommodation unless it can be shown that doing so would cause an undue financial and administrative burden on the landlord. In this case, the landlord's refusal to allow the tenant to have the service dog is a violation of the Fair Housing Act because a reasonable accommodation for the tenant's disability has not been made. A is incorrect because the landlord's personal use of the building is irrelevant to the issue of reasonable accommodation for a handicapped person. B is incorrect because the tenant's lease agreement contains a no-pet provision. However, the Fair Housing Act makes it unlawful to discriminate against a person because of a disability. C is incorrect because the landlord's refusal to allow the tenant to have the service dog is not an arbitrary decision. The landlord must make reasonable accommodations for a handicapped person. The landlord's refusal to allow the tenant to have the service dog is a violation of the Fair Housing Act. The landlord is required to make this reasonable accommodation unless it can be shown that doing so would cause an undue financial and administrative burden on the landlord. In this case, the landlord's refusal to allow the tenant to have the service dog is a violation of the Fair Housing Act because a reasonable accommodation for the tenant's disability has not been made."
         },
         "ground_truth": {
             "question_number": 30,
@@ -1068,7 +1068,7 @@
         "response": {
             "domain": "Property",
             "chosen_option_label": "n/a",
-            "explanation": " Although the lender is within its rights to require the owner to maintain the insurance"
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 46,
@@ -1110,7 +1110,7 @@
         "response": {
             "domain": "Property",
             "chosen_option_label": "n/a",
-            "explanation": " This question requires you to distinguish between the rule against perpetuities and the anti-lapse statute. The rule against perpetuities (RAP) is a common law rule that prevents a gift that was meant to benefit a person who has died from lapsing when that person predeceases the grantor. The anti-lapse statute is a statute that provides that a gift that would have lapsed under the rule against perpetuities will not lapse if the beneficiary is a member of the grantor's immediate family. The question asks which state's law will determine whether the bequest to the nephew lapsed. This can be answered by looking at which state has the most significant relationship with the parties. The man is from State B"
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 66,
@@ -1166,7 +1166,7 @@
         "response": {
             "domain": "Property",
             "chosen_option_label": "n/a",
-            "explanation": "C is correct. A sales agent is a fiduciary of the seller. The seller has a right to rely on the agent's expertise and judgment"
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 91,
@@ -1193,8 +1193,8 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": \"...\" ,\n    \"chosen_option_label\" : \"...\"\n}\n\n<</SYS>>\nQuestion:\nAt his death, a father devised a life estate in land to his daughter and the remainder to his son. The daughter later purported to convey a fee simple absolute interest in the land by warranty deed to a purchaser in exchange for valuable consideration. The purchaser properly recorded the deed. The son then transferred his remainder interest in the land to the daughter by quitclaim deed. The daughter died, leaving her husband as her sole beneficiary and executor. The husband has consulted an attorney to determine the ownership of the land. What advice should the attorney give the husband?\nAnswer Choices:\nA. The husband owns the land, because the warranty deed conveyed the land as a life estate pur autre vie to the purchaser.\nB. The purchaser owns a fee simple absolute interest in the land, because the son transferred his remainder interest to the daughter.\nC. The purchaser owns a life estate in the land, and the husband owns the remainder.\nD. The son owns the land, because the remainder was not alienable.\nResponse:\n[/INST]",
         "response": {
             "domain": "Property",
-            "chosen_option_label": "n/a",
-            "explanation": " This question requires you to distinguish between an estate pur autre vie and a life estate. A life estate is an estate held for the life of a named individual. It is a possibility that the named individual will die"
+            "chosen_option_label": "B",
+            "explanation": " This question requires you to distinguish between an estate pur autre vie and a life estate. A life estate is an estate held for the life of a named individual. It is a possibility that the named individual will die, and the estate will terminate. An estate pur autre vie is an estate held for the life of an individual, but it is a possibility that the individual will live forever, and the estate will continue indefinitely. A conveyance of land by warranty deed creates an estate. If the conveyance is a fee simple, the estate is a fee simple. If the conveyance is an estate, the estate will be either a life estate or an estate pur autre vie. A life estate is conveyed by the words \"to the grantee, his heirs and assigns, for life.\" An estate pur autre vie is conveyed by the words \"to the grantee, and his heirs for ever.\" The key to this question is the language of the conveyance from the daughter to the purchaser. The phrase \"for life\" creates a life estate. The husband owns the remainder, which is a possibility that the daughter will die. A life estate is an interest in land, and the purchaser holds the interest. The son transferred a remainder interest, which means that the purchaser holds the interest in the event of the daughter's death. The son's interest was not conveyed to the purchaser, so the son still holds that interest."
         },
         "ground_truth": {
             "question_number": 100,
@@ -1222,7 +1222,7 @@
         "response": {
             "domain": "Torts",
             "chosen_option_label": "n/a",
-            "explanation": "A is correct. The court should deny the motion because the evidence would permit a jury to find that a reasonable manufacturer would have taken greater care to prevent the undetectable defect that caused the rupture. B is incorrect. The evidence would permit a jury to find that the manufacturer did not know to a substantial certainty that its tires would rupture"
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 18,
@@ -1348,7 +1348,7 @@
         "response": {
             "domain": "Torts",
             "chosen_option_label": "n/a",
-            "explanation": "D is correct. The manufacturer has a duty to warn the consumer of the risks associated with the product"
+            "explanation": {}
         },
         "ground_truth": {
             "question_number": 74,

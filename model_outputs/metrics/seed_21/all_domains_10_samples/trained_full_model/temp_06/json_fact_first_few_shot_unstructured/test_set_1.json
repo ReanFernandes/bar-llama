@@ -21,7 +21,7 @@
         "label_accuracy": 0.30303030303030304,
         "misclassification_rate": 0.696969696969697,
         "combined_accuracy": 0.2828282828282828,
-        "malformed_label": 10,
+        "malformed_label": 5,
         "malformed_domain": 11,
         "total_predictions": 99,
         "correct_predictions": 30,

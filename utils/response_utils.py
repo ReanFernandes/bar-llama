@@ -34,7 +34,7 @@ class ResponseHandler():
         """
         Takes the model output, and based on the prompt type and format,
         will extract the relevant fields, and return a dict of the fields.
-        self.cfg["response_format"] =["json","markdown","none"]
+        self.cfg["response_format"] =["json","markdown","number_list"]
         """
         if self.cfg["explanation_type"] == "structured":
             explanation_fields = {
@@ -60,7 +60,7 @@ class ResponseHandler():
             fields = self._parse_markdown(cleaned_response, fields)
         elif self.cfg["response_format"] == "json":
             fields = self._parse_json(cleaned_response, fields)  
-        elif self.cfg["response_format"] == "none":
+        elif self.cfg["response_format"] == "number_list":
             fields = self._parse_none(cleaned_response, fields)
         return fields
     
@@ -148,16 +148,50 @@ class ResponseHandler():
             invalid_json = invalid_json.strip()
             # Fix incomplete string values within lines. This happens when the model is truncated while still in the midst of filling out some field
             lines = invalid_json.split('\n')
-            fixed_lines = []
+            # First escape inner quotes
+            fixed_lines2 = []
             for line in lines:
+                if ':' in line:
+                    quotes_indices = [i for i, char in enumerate(line) if char == '"']
+                    if len(quotes_indices) > 2:
+                        value_start = quotes_indices[2]
+                        value_end = quotes_indices[-1]
+                        inner_quotes = [i for i in quotes_indices if value_start < i < value_end]
+                        for idx in reversed(inner_quotes):
+                            line = line[:idx] + "\\" + line[idx:]
+                fixed_lines2.append(line)
+
+            # Then handle incomplete lines
+            fixed_lines = []
+            for line in fixed_lines2:
                 quote_count = line.count('"')
                 if quote_count % 2 != 0:
-                    # If there's an odd number of quotes, we need to add a closing quote
-                    # But only if it is a value part, not a key
                     if re.search(r':\s*".*$', line):
-                        line += '[INCOMPLETE]"'
+                        line += '[INCOMPLETE]",'
                 fixed_lines.append(line)
+
             invalid_json = '\n'.join(fixed_lines)
+            # fixed_lines = []
+            # for line in lines:
+            #     quote_count = line.count('"')
+            #     if quote_count % 2 != 0:
+            #         # If there's an odd number of quotes, we need to add a closing quote
+            #         # But only if it is a value part, not a key
+            #         if re.search(r':\s*".*$', line):
+            #             line += '[INCOMPLETE]",'
+            #     fixed_lines.append(line)
+            # fixed_lines2 = []
+            # for line in fixed_lines:
+            #     if ':' in line:
+            #         quotes_indices = [i for i, char in enumerate(line) if char == '"']
+            #         if len(quotes_indices) > 2:
+            #             value_start = quotes_indices[2]
+            #             value_end = quotes_indices[-1]
+            #             inner_quotes = [i for i in quotes_indices if value_start < i < value_end]
+            #             for idx in reversed(inner_quotes):
+            #                 line = line[:idx] + "\\" + line[idx:]
+            #     fixed_lines2.append(line)
+            # invalid_json = '\n'.join(fixed_lines2)
 
             # Remove trailing commas within nested objects first , this happens when the model is cut off while writing a nested object, or before making another entry
             # invalid_json = re.sub(r',\s*(?=[}\]])', '', invalid_json)
@@ -185,7 +219,11 @@ class ResponseHandler():
                 invalid_json = '{' + invalid_json
             if not invalid_json.endswith('}'):
                 invalid_json = invalid_json + '}'
-
+            # Find first complete JSON structure
+            # Look for a complete JSON object, for instances where  the model generates extra garbage and puts it inside braces
+            json_match = re.search(r'({[^}]*})[^{]*$', invalid_json, re.DOTALL)
+            if json_match:
+                invalid_json = json_match.group(1)
             # Balance the overall number of braces for the entire JSON structure
             open_braces = invalid_json.count('{')
             close_braces = invalid_json.count('}')
@@ -201,7 +239,7 @@ class ResponseHandler():
             if explanation_type == "structured":
                 required_fields = {
                     "domain": "n/a",
-                    "chosen_answer": "n/a",
+                    "chosen_option_label": "n/a",
                     "explanation": {
                         "Legal_concept": "n/a",
                         "Fact_analysis": "n/a",
@@ -212,7 +250,7 @@ class ResponseHandler():
             else:
                 required_fields = {
                     "domain": "n/a",
-                    "chosen_answer": "n/a",
+                    "chosen_option_label": "n/a",
                     "explanation": "n/a"
                 }
 
@@ -223,22 +261,39 @@ class ResponseHandler():
                 logging.warn(f"|Q. {self.current_q_num}||D: {self.domain}| Failed to fix invalid JSON, extracting as many fields as possible.")
                 try:
                     json_data = {}
-                    for key, value in required_fields.items():
-                        match = re.search(rf'"{key}"\s*:\s*(.*?)(,|\n|$)', invalid_json)
-                        if match:
-                            json_data[key] = match.group(1).strip('",')
-                        else:
-                            json_data[key] = value
+                    
 
-                    if explanation_type == "structured":
-                        if 'explanation' not in json_data or not isinstance(json_data['explanation'], dict):
+                    for key, value in required_fields.items():
+                        if key == 'explanation':
                             json_data['explanation'] = {}
-                        for subkey, subvalue in required_fields['explanation'].items():
-                            match = re.search(rf'"{subkey}"\s*:\s*(.*?)(,|\n|$)', invalid_json)
-                            if match:
-                                json_data['explanation'][subkey] = match.group(1).strip('",')
-                            else:
-                                json_data['explanation'][subkey] = subvalue
+                            exp_match = re.search(r'"explanation"\s*:\s*({[^}]+})', invalid_json, re.DOTALL)
+                            if exp_match:
+                                exp_text = exp_match.group(1)
+                                for subkey, subval in value.items():
+                                    submatch = re.search(rf'"{subkey}"\s*:\s*"(.*?)(?:",|\n|}})', exp_text, re.DOTALL)
+                                    json_data['explanation'][subkey] = submatch.group(1) if submatch else subval
+                            continue
+                        
+                        
+                        match = re.search(rf'"{key}"\s*:\s*"(.*?)(?:",|\n)', invalid_json, re.DOTALL)
+                        json_data[key] = match.group(1) if match else value
+                    # json_data = {}
+                    # for key, value in required_fields.items():
+                    #     match = re.search(rf'"{key}"\s*:\s*(.*?)(,|\n|$)', invalid_json)
+                    #     if match:
+                    #         json_data[key] = match.group(1).strip('",')
+                    #     else:
+                    #         json_data[key] = value
+
+                    # if explanation_type == "structured":
+                    #     if 'explanation' not in json_data or not isinstance(json_data['explanation'], dict):
+                    #         json_data['explanation'] = {}
+                    #     for subkey, subvalue in required_fields['explanation'].items():
+                    #         match = re.search(rf'"{subkey}"\s*:\s*(.*?)(,|\n|$)', invalid_json)
+                    #         if match:
+                    #             json_data['explanation'][subkey] = match.group(1).strip('",')
+                    #         else:
+                    #             json_data['explanation'][subkey] = subvalue
                 except Exception as e:
                     logging.error(f"|Q. {self.current_q_num}||D: {self.domain}| failed to extract valid fields from fixed JSON: {str(e)}")
                     # assign how much ever was able to be extracted from the invalid data to the required fields, and load it back to the json_data
@@ -261,7 +316,11 @@ class ResponseHandler():
         except json.JSONDecodeError:
             logging.warn(f"|Q. {self.current_q_num}||D: {self.domain}| has broken JSON output. Attempting to fix it.")
             response = fix_invalid_json(response, self.cfg["explanation_type"])
-            json_data = json.loads(response)
+            try:
+                json_data = json.loads(response)
+                logging.info(f"|Q. {self.current_q_num}||D: {self.domain}| was made valid into Valid json. Extracting responses.")
+            except json.JSONDecodeError:
+                logging.info(f"|Q. {self.current_q_num}||D: {self.domain}| Unable to convert response to JSON ")
         if not isinstance(json_data, dict):
             logging.error(f"|Q. {self.current_q_num}||D: {self.domain}| JSON data is not a dictionary.")
             return fields
@@ -293,7 +352,7 @@ class ResponseHandler():
         Looks for entries numbered and titled as specified in the schema, and ignores anything after a specified marker.
         """
         # Schema pattern , hardcoding this shit to stop headaches 
-        if self.cfg["response_type"] == "none":
+        if self.cfg["response_type"] == "answer_first":
             if self.cfg["explanation_type"] == "structured":
                 schema_keys = {
                     "1. Chosen Domain": "domain",

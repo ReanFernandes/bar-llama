@@ -461,10 +461,10 @@
             "domain": "Criminal_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between premeditated and non-premeditated murder in first-degree murder",
-                "Fact_analysis": "The defendant was tried on a charge of first-degree premeditated murder",
-                "Rule_application": "Premeditated murder requires that the defendant have a specific intent to kill",
-                "Legal_conclusion": "Given that the jury was properly instructed on the elements of both first- and second-degree murder"
+                "Legal_concept": "The distinction between premeditated and non-premeditated murder in first-degree murder, specifically the requirement of deliberation in premeditated murder.",
+                "Fact_analysis": "The defendant was tried on a charge of first-degree premeditated murder, but the court granted the defendant's request to have the jury also instructed on the lesser included offense of second-degree murder. After being instructed on the elements of both first- and second-degree murder, the jury found the defendant guilty of second-degree murder.",
+                "Rule_application": "Premeditated murder requires that the defendant have a specific intent to kill, as well as deliberation on the decision to kill. If the defendant did not deliberate on the decision to kill, the charge of premeditated murder fails, and the defendant can be convicted of the lesser included offense of second-degree murder, which requires only the intent to kill.\"",
+                "Legal_conclusion": "Given that the jury was properly instructed on the elements of both first- and second-degree murder, and that the jury found the defendant guilty of second-degree murder, the defendant can be retried on the original charge of first-degree murder, as the jury's verdict on the lesser included offense does not preclude a subsequent trial on the original charge.\""
             }
         },
         "ground_truth": {
@@ -556,8 +556,8 @@
             "domain": "Contracts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Intent to be bound by an offer",
-                "Fact_analysis": "The woman made an offer to the seller to buy the car",
+                "Legal_concept": "Intent to be bound by an offer, specifically the requirement of consideration in the form of an act or promise in exchange for another's promise.",
+                "Fact_analysis": "The woman made an offer to the seller to buy the car, which the seller accepted. The seller then reset the odometer to read 25,000 miles, knowing that the actual mileage was approximately 90,000. The woman purchased the car from the seller, who did not disclose the true mileage, and resold it to the friend seven months later, at which point the friend looked at the odometer, which read 30,000 miles, and said 'Great!'",
                 "Rule_application": "n/a",
                 "Legal_conclusion": "n/a"
             }
@@ -632,10 +632,10 @@
             "domain": "Contracts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Consideration in contract modification",
-                "Fact_analysis": "The general contractor and the subcontractor signed a contract",
-                "Rule_application": "A contract can be modified if consideration is present. Consideration is a bargained-for exchange that brings about a detrimental change in the obligations of the parties. In this case",
-                "Legal_conclusion": "Given that the contract modification satisfies the requirement of consideration"
+                "Legal_concept": "Consideration in contract modification, particularly in the context of unilateral mistake and fair and equitable grounds for modification.",
+                "Fact_analysis": "The general contractor and the subcontractor signed a contract, where the subcontractor agreed to pour a cement foundation for a building project for $12,000. The subcontractor later discovered that it had made an error in computing the size of the foundation, and should have quoted the general contractor $18,000 for the work. The subcontractor informed the general contractor of the mistake and asked whether the general contractor would agree to pay $15,000 for the foundation, which would cover the subcontractor\u2019s costs. The general contractor determined that other subcontractors would charge at least $18,000 for the work, and agreed in writing to pay $15,000. The work was completed, and the general contractor tendered the subcontractor $12,000. The subcontractor refused to accept the payment, and the subcontractor sues the general contractor for breach of contract.",
+                "Rule_application": "A contract can be modified if consideration is present. Consideration is a bargained-for exchange that brings about a detrimental change in the obligations of the parties. In this case, the general contractor\u2019s agreement to pay $15,000 for the foundation, which was more than what was originally agreed upon, satisfies the requirement of consideration. The fact that the subcontractor\u2019s mistake led to the increase in the price is irrelevant, as long as the general contractor is willing to pay more for the same services.\"",
+                "Legal_conclusion": "Given that the contract modification satisfies the requirement of consideration, the decision turns on whether the modification is supported by fair and equitable grounds for modification. The fact that the subcontractor made a unilateral mistake in computing the size of the foundation, leading to an increase in the price, is a valid ground for modification. The general contractor is not obligated to pay more than what was originally agreed upon, and the subcontractor\u2019s attempt to recover $18,000 would be unfair. The subcontractor\u2019s recovery is limited to $12,000, the original contract price, considering the fair and equitable grounds for modification.\""
             }
         },
         "ground_truth": {
@@ -898,8 +898,8 @@
             "domain": "Evidence",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preliminary questions into the independent factual basis for a hearsay exception",
-                "Fact_analysis": "The woman brought a wrongful death action against a car driver who hit and killed her husband while her husband was crossing a street. The woman and the driver settled the action",
+                "Legal_concept": "Preliminary questions into the independent factual basis for a hearsay exception, specifically the business records exception, in a criminal trial.",
+                "Fact_analysis": "The woman brought a wrongful death action against a car driver who hit and killed her husband while her husband was crossing a street. The woman and the driver settled the action, and the driver was charged with reckless homicide in a criminal trial. The prosecutor seeks to introduce the driver's statement to the woman during settlement negotiations as evidence of the driver's guilt.",
                 "Rule_application": "n/a",
                 "Legal_conclusion": "n/a"
             }
@@ -993,10 +993,10 @@
             "domain": "Evidence",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preliminary questions concerning the independent hearsay rule and the confrontation clause in criminal trials",
-                "Fact_analysis": "The prosecutor has presented evidence that the defendant paid a man to set fire to a restaurant",
-                "Rule_application": "The independent hearsay rule prevents a witness from testifying to a statement made by another person unless certain conditions are met. One exception is the declarant's preliminary question concerning the independent hearsay rule",
-                "Legal_conclusion": "Given that the questioning of the fianc\u00e9e is aimed at determining the declarant's own memory or observation"
+                "Legal_concept": "Preliminary questions concerning the independent hearsay rule and the confrontation clause in criminal trials, specifically the distinction between testimonial and nontestimonial statements.",
+                "Fact_analysis": "The prosecutor has presented evidence that the defendant paid a man to set fire to a restaurant, and the man has invoked his Fifth Amendment privilege against self-incrimination. The prosecutor then intends to call the man's fianc\u00e9e, who was told about the plan and can testify to the man's statement about it.",
+                "Rule_application": "The independent hearsay rule prevents a witness from testifying to a statement made by another person unless certain conditions are met. One exception is the declarant's preliminary question concerning the independent hearsay rule, which allows the declarant to be questioned about the statement made by another person, as long as the question and answer are determined to be relevant to a determination of the declarant's own memory or observation.\"",
+                "Legal_conclusion": "Given that the questioning of the fianc\u00e9e is aimed at determining the declarant's own memory or observation, specifically whether she remembers the man's statement, the use of the preliminary question concerning the independent hearsay rule to introduce the statement would be allowed, supporting option C.\""
             }
         },
         "ground_truth": {
@@ -1051,7 +1051,7 @@
             "chosen_option_label": "n/a",
             "explanation": {
                 "Legal_concept": "Preliminary questions concerning the independence of a hearsay declarant's statement in determining its admissibility under the hearsay exception for statements against interest.",
-                "Fact_analysis": "The defendant has been sued by his former employer for theft. The employer seeks to call the defendant's estranged daughter to testify",
+                "Fact_analysis": "The defendant has been sued by his former employer for theft. The employer seeks to call the defendant's estranged daughter to testify, who would testify that her brother told her that he helped the defendant steal money from his employer.",
                 "Rule_application": "n/a",
                 "Legal_conclusion": "n/a"
             }
@@ -1104,13 +1104,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\n\n<</SYS>>\nQuestion:\nA company hired an attorney to sue a former company manager for violating a covenant not to compete. The company\u2019s president told the attorney that the manager had begun working for a competitor and gave the attorney a copy of the signed covenant. The attorney brought a federal diversity action against the manager and attached to the complaint a copy of the signed covenant. The attorney also moved for a preliminary injunction, referring to the attached covenant and submitting a supporting affidavit from the company\u2019s president. At the hearing on the preliminary injunction motion, the manager denied ever having signed such a covenant and conclusively demonstrated that the copy of a signed covenant attached to the company\u2019s motion was forged. The court, on its own initiative, ordered the attorney to show cause why the attorney should not be sanctioned under Rule 11. Would sanctions against the attorney be proper?\nAnswer Choices:\nA. No, because the court did not give the attorney notice and 21 days to withdraw the preliminary injunction motion.\nB. No, because the motion was supported by evidence that was likely sufficient to satisfy an objectively reasonable attorney.\nC. Yes, because the attorney filed papers with the court that contained untrue assertions of fact.\nD. Yes, because the attorney should have verified the manager\u2019s signature before attaching the covenant to the complaint.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Federal rules of civil procedure",
+            "domain": "Federal rules of civil procedure, specifically Rule 11, regarding misconduct in filing pleadings and motions",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The standards for sanctions under Rule 11",
-                "Fact_analysis": "The attorney brought a federal diversity action against the manager",
-                "Rule_application": "Rule 11 requires that pleadings and motions be filed in good faith and be supported by reasonable grounds for their claims. The court has the discretion to impose sanctions for failure to meet these requirements",
-                "Legal_conclusion": "Given that the manager was able to conclusively demonstrate that the copy of the signed covenant attached to the company's motion was forged"
+                "Legal_concept": "The standards for sanctions under Rule 11, specifically misconduct in filing pleadings and motions, particularly the requirement of good faith and reasonable grounds for support.\"",
+                "Fact_analysis": "The attorney brought a federal diversity action against the manager, attached a copy of the signed covenant to the complaint, and supported the motion for a preliminary injunction with an affidavit from the company's president, who claimed to have seen the manager sign the covenant.\"",
+                "Rule_application": "Rule 11 requires that pleadings and motions be filed in good faith and be supported by reasonable grounds for their claims. The court has the discretion to impose sanctions for failure to meet these requirements, including the possibility of sanctions for the filing of false statements of fact.\"",
+                "Legal_conclusion": "Given that the manager was able to conclusively demonstrate that the copy of the signed covenant attached to the company's motion was forged, and that the motion was based on this false claim, sanctions against the attorney would be appropriate under Rule 11, as the motion and supporting materials contained untrue assertions of fact that were likely sufficient to satisfy an objectively reasonable attorney.\""
             }
         },
         "ground_truth": {
@@ -1259,10 +1259,10 @@
             "domain": "Federal_courts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between final and interlocutory appeals in federal court",
-                "Fact_analysis": "The scientist brought a federal civil action against his former employer",
+                "Legal_concept": "The distinction between final and interlocutory appeals in federal court, specifically the ability to appeal a decision on a federal claim in an interpleader action.",
+                "Fact_analysis": "The scientist brought a federal civil action against his former employer, a company incorporated and headquartered in State A, alleging retaliatory discharge under federal and state law and seeking damages under federal and state law. The company moved to dismiss the federal claim, and the court granted the motion, stating that the motion to dismiss the federal claim is granted.",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "Given that the court's decision to dismiss the federal claim is not appealable"
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1297,10 +1297,10 @@
             "domain": "Federal_civil_procedure",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Federal rule 15(a) consideration for pretrial order amendments",
-                "Fact_analysis": "The car owner brought a federal diversity action against the car's manufacturer",
-                "Rule_application": "Federal rule 15(a) allows parties to amend their pleadings 'upon a showing of good cause.' Good cause is determined by considering factors such as the timeliness of the motion",
-                "Legal_conclusion": "Given that the court has the discretion to allow the amendment"
+                "Legal_concept": "Federal rule 15(a) consideration for pretrial order amendments, specifically the standard for granting motions to amend based on good cause.",
+                "Fact_analysis": "The car owner brought a federal diversity action against the car's manufacturer, alleging that the manufacturer had fraudulently misrepresented the car's compliance with federal emissions standards. The manufacturer answered, denying the allegations. After discovery closed, the court entered a final pretrial order setting out the issues for trial. The owner then moved to amend the order to include the issue of whether the manufacturer had also fraudulently misrepresented the car's fuel economy.",
+                "Rule_application": "Federal rule 15(a) allows parties to amend their pleadings 'upon a showing of good cause.' Good cause is determined by considering factors such as the timeliness of the motion, the prejudice to the opposing party, and whether the amendment would be in keeping with the overall purpose of the action. If the court finds that good cause has been established, it has the discretion to allow the amendment.\"",
+                "Legal_conclusion": "Given that the court has the discretion to allow the amendment, the standard for determining whether to grant the motion to amend the pretrial order to include the issue of fuel economy is whether the owner's omission was due to good cause. Considering the factors mentioned above, it is possible that the court may grant the motion, as the owner's omission may be due to oversight, inadvertence, or excusable neglect, which would meet the standard for good cause.\""
             }
         },
         "ground_truth": {
@@ -1430,10 +1430,10 @@
             "domain": "Property_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The doctrine of revocation of a prior will through an inter vivos instrument",
-                "Fact_analysis": "The property owner executed a will five years earlier",
-                "Rule_application": "A prior will is revoked by an inter vivos instrument if the instrument is made by the testator",
-                "Legal_conclusion": "Given that the deed revoked the property owner's will"
+                "Legal_concept": "The doctrine of revocation of a prior will through an inter vivos instrument, specifically the effect of a deed on a property owner's testamentary capacity.",
+                "Fact_analysis": "The property owner executed a will five years earlier, devising his property to his wife. He then managed an apartment building owned by him and his son, who slipped in a deed that conveyed the property to the son. The father signed the documents without reading them, relying on his son's good faith. The son promptly recorded the deed, then sold the property to an investor who was unaware of the fraud. The father died, and his will was probated, devising the property to his wife.",
+                "Rule_application": "A prior will is revoked by an inter vivos instrument if the instrument is made by the testator, expressly revoking the will or devise, and if the instrument is executed, witnessed, and delivered, with the appropriate formalities, as a will. The deed at issue meets these requirements, as it was made by the property owner, expressly revoking his will, was executed, witnessed, and delivered as a deed, and therefore revoked the will.\"",
+                "Legal_conclusion": "Given that the deed revoked the property owner's will, the investor was a bona fide purchaser without knowledge of the fraud, and the property is now owned by the wife, who is entitled to the property under the father's original will.\""
             }
         },
         "ground_truth": {
@@ -1468,10 +1468,10 @@
             "domain": "Property",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between an express and an implied easement",
-                "Fact_analysis": "The man initially granted an easement over his land for use as a shortcut to his neighbor's cabin. The deed was silent on the location of the easement",
-                "Rule_application": "An easement in gross is a non-possessory interest that allows the holder to use the property of another for a specific purpose. An express easement requires explicit language in the granting document",
-                "Legal_conclusion": "Given that the grant of the easement was by deed of gift and without consideration"
+                "Legal_concept": "The distinction between an express and an implied easement, specifically the requirement of 'easement in gross' for an independent property right.",
+                "Fact_analysis": "The man initially granted an easement over his land for use as a shortcut to his neighbor's cabin. The deed was silent on the location of the easement, and the neighbor used a 15-foot strip along the west side of the man's land. The neighbor's cabin was destroyed by fire, and she rebuilt it in a new location, requiring a new access route from the east side of the man's land.",
+                "Rule_application": "An easement in gross is a non-possessory interest that allows the holder to use the property of another for a specific purpose. An express easement requires explicit language in the granting document, while an implied easement is established by necessary implication from the facts and circumstances. An easement in gross cannot be terminated by the grantor without the express consent of the grantee, making it difficult to modify or terminate.",
+                "Legal_conclusion": "Given that the grant of the easement was by deed of gift and without consideration, the man has the right to stop the neighbor from relocating the easement. The original grant established an easement in gross, which cannot be modified or terminated without the express consent of the grantee. The man's decision to keep the land vacant supports his claim to an independent property right in the easement, as it prevents the neighbor from using the land for other purposes."
             }
         },
         "ground_truth": {
@@ -1734,10 +1734,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Intentional tort of battery",
-                "Fact_analysis": "The store regularly gave repeat customers empty boxes to promote goodwill. The student",
-                "Rule_application": "Battery requires an act by the defendant that brings about harmful or offensive contact",
-                "Legal_conclusion": "Given that the store employee's actions meet the elements of battery"
+                "Legal_concept": "Intentional tort of battery, specifically the use of indirect force causing harmful contact.",
+                "Fact_analysis": "The store regularly gave repeat customers empty boxes to promote goodwill. The student, a repeat customer, asked a store employee for help in finding some boxes. The employee pointed toward the storeroom and said that all the empty boxes were there. The student entered the storeroom through a door with a sign that said 'Keep Out. Employees Only' and tripped on a fold in a floor mat, causing her to fall into a stack of wooden crates, which then fell on her, causing a head injury.",
+                "Rule_application": "Battery requires an act by the defendant that brings about harmful or offensive contact, intent to bring about such contact, and causation. The store employee's act of pointing toward the storeroom and saying that all the empty boxes were there was an act that brought about the student's harm. The store employee's intent to bring about such contact is established by his use of language that implied the student should go into the storeroom to find the boxes. Finally, the store employee's actions caused the student's harm, as the student's trip and fall on the floor mat led to her being crushed by the falling crates.[INCOMPLETE]",
+                "Legal_conclusion": "Given that the store employee's actions meet the elements of battery, the student has established that the store employee is liable for her harm. As a result, the student has established that the store is liable for her injuries, as the store employee's actions were within the scope of her employment. Therefore, the correct statement is that the student assumed the risk, as she knew that the storeroom was not normally accessible to the public and that it was used for storage, which could potentially lead to harmful conditions."
             }
         },
         "ground_truth": {
@@ -1772,10 +1772,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Intentional tort of battery",
-                "Fact_analysis": "The blasting company used explosives to widen a highway",
-                "Rule_application": "Battery requires an act by the defendant that brings about harmful or offensive contact",
-                "Legal_conclusion": "Given that the blasting company's actions meet the elements of battery"
+                "Legal_concept": "Intentional tort of battery, specifically the use of indirect force causing harmful contact.",
+                "Fact_analysis": "The blasting company used explosives to widen a highway, causing a flying rock to hit and damage a motorist's car. The motorist saw and understood the warning sign and the flagman's instructions to stop, but ignored them and was struck by the rock. The jurisdiction follows the traditional common law rules of contributory negligence and assumption of risk, which may be used to reduce the motorist's recovery.",
+                "Rule_application": "Battery requires an act by the defendant that brings about harmful or offensive contact, intent to bring about such contact, and causation. The use of explosives to widen a highway meets these elements, as it involves an act (the explosion), intent to cause harm (the aim of the blasting operation), and causation (the flying rock that hit the motorist).\"",
+                "Legal_conclusion": "Given that the blasting company's actions meet the elements of battery, the motorist's contribution to their own harm, specifically their failure to heed the warning sign and the flagman's instructions, may be used to reduce their recovery. If the motorist pursues a claim and the foregoing facts are established, the motorist's recovery would be reduced by the percentage of their own fault, as determined by the traditional common law rules of contributory negligence and assumption of risk, leading to a decision of C, where the motorist recovers the cost of restoring the car to its condition just before the accident, reduced by the percentage of their own fault.\""
             }
         },
         "ground_truth": {
@@ -1886,8 +1886,8 @@
             "domain": "Tort_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The vicarious liability of an entity for the tortious acts of its agents",
-                "Fact_analysis": "The racetrack held a motorcycle race",
+                "Legal_concept": "The vicarious liability of an entity for the tortious acts of its agents, specifically in the context of a special relationship such as that between a sponsor and an event organizer.",
+                "Fact_analysis": "The racetrack held a motorcycle race, which was sponsored by a local motorcycle dealership under a sponsorship agreement requiring the dealership to arrange for licensed and trained EMTs to be present during the race. The dealership contracted with an EMS firm to provide EMTs for events such as these, but one of the EMTs carelessly caused the motorcyclist's paralysis while treating him at the scene.",
                 "Rule_application": "n/a",
                 "Legal_conclusion": "n/a"
             }

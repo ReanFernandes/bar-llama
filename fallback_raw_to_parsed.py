@@ -63,7 +63,7 @@ COMPONENTS = {
   ]
 }
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-MASTER_CSV_PATH = os.path.join(os.getcwd(), "master_metrics.csv")
+MASTER_CSV_PATH = os.path.join(os.getcwd(), "master_metrics_after_the_fact.csv")
 LOCK_FILE_PATH = os.path.join(os.getcwd(), "master_metrics.lock")
 
 def flatten_and_serialize(metrics_dict):
@@ -192,7 +192,7 @@ def main(cfg: DictConfig):
                skipped += 1
                continue
 
-           logging.info(f"Processing [{processed}/{total}]: {raw_path.name}")
+           logging.info(f"Processing [{processed}/{total}]: {raw_path.parts[-2]} for {raw_path.parts[-5]} ")
 
            try:
                with open(raw_path) as f:

@@ -2,13 +2,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA shareholder of a car manufacturing company wants to sue the company in federal court for breach of fiduciary duty. What information about the company, besides its place of incorporation, does the shareholder\u2019s attorney need in order to determine whether the parties are diverse?\nAnswer Choices:\nA. Where the company distributes its cars.\nB. Where the company has sufficient minimum contacts.\nC. Where the company\u2019s headquarters is located.\nD. Where the company\u2019s major place of manufacturing is located.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Federal_courts",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Diversity jurisdiction in federal court",
-                "Fact_analysis": "The shareholder is suing the company",
-                "Rule_application": "To determine whether the company and the shareholder are diverse",
-                "Legal_conclusion": "Given that the question asks about the company\u2019s place of incorporation"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -81,10 +81,10 @@
             "domain": "Civil_procedure",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The timely service of process in federal court",
-                "Fact_analysis": "The plaintiff mailed a notice of the complaint and two copies of a request to waive service to the defendant\u2019s managing agent",
-                "Rule_application": "The Federal Rules of Civil Procedure allow for service by mailing a notice of the complaint and a request to waive service to an appropriate person",
-                "Legal_conclusion": "Given that the plaintiff failed to effect proper service within the 90-day period"
+                "Legal_concept": "The timely service of process in federal court, specifically the requirement of proper service within 90 days of filing a complaint.",
+                "Fact_analysis": "The plaintiff mailed a notice of the complaint and two copies of a request to waive service to the defendant\u2019s managing agent, who was not authorized to accept service on behalf of the defendant. The defendant failed to return the signed waiver request, answer, or otherwise plead within 60 days, which started running on the date of mailing.",
+                "Rule_application": "The Federal Rules of Civil Procedure allow for service by mailing a notice of the complaint and a request to waive service to an appropriate person, but the defendant must sign and return the request within 30 days. The defendant\u2019s failure to do so within the 60-day period starts a new 30-day period, during which the plaintiff must effect proper service.",
+                "Legal_conclusion": "Given that the plaintiff failed to effect proper service within the 90-day period, the court is unlikely to grant the motion for entry of default and a default judgment. Option B is the correct verdict, supporting the conclusion that the plaintiff failed to file proof of service within the 90-day period."
             }
         },
         "ground_truth": {
@@ -138,10 +138,10 @@
             "domain": "Civil_procedure",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The statute of limitations for a defamation claim in federal court is generally two years",
-                "Fact_analysis": "The worker's complaint described the events leading up to the employer's false accusation",
-                "Rule_application": "Leave to amend a complaint should be freely granted when the underlying action was timely",
-                "Legal_conclusion": "Given that the worker timely filed her initial complaint and discovered new information during discovery that could support her claim against the competitor"
+                "Legal_concept": "The statute of limitations for a defamation claim in federal court is generally two years, which means that the deadline to file a lawsuit would have expired one day before the worker filed her complaint.",
+                "Fact_analysis": "The worker's complaint described the events leading up to the employer's false accusation, including a statement made by a competitor to the employer. During discovery, the worker deposed the competitor, who may have learned additional information that could be used to support her claim against him.",
+                "Rule_application": "Leave to amend a complaint should be freely granted when the underlying action was timely, allowing the worker to add the competitor as a defendant based on new information discovered during discovery.",
+                "Legal_conclusion": "Given that the worker timely filed her initial complaint and discovered new information during discovery that could support her claim against the competitor, the court is likely to grant her motion to amend. Option C, which suggests that leave to amend should be freely granted when the underlying action was timely, supports this decision. Therefore, the correct verdict would be Yes, supporting option C."
             }
         },
         "ground_truth": {
@@ -157,10 +157,10 @@
             "domain": "Civil_procedure",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The prejudice standard in reviewing jury instructions",
-                "Fact_analysis": "The court asked the parties to submit proposed jury instructions",
-                "Rule_application": "Plain error is a federal appellate rule that allows an appellate court to consider an error that was not raised at trial",
-                "Legal_conclusion": "The plaintiff\u2019s best argument in response would be that the defendant\u2019s failure to object to the court\u2019s instructions at trial precludes him from raising those errors on appeal. This supports option D"
+                "Legal_concept": "The prejudice standard in reviewing jury instructions, specifically the defense of plain error in federal appellate review.",
+                "Fact_analysis": "The court asked the parties to submit proposed jury instructions, selected some of them, and charged the jury accordingly. The parties made no objections. The jury returned a verdict for the plaintiff, and the court entered judgment on the verdict. The defendant appealed, arguing that several of the court\u2019s instructions were plain error.",
+                "Rule_application": "Plain error is a federal appellate rule that allows an appellate court to consider an error that was not raised at trial, but that likely affected the outcome of the case, if the error was clear and obvious under current law.",
+                "Legal_conclusion": "The plaintiff\u2019s best argument in response would be that the defendant\u2019s failure to object to the court\u2019s instructions at trial precludes him from raising those errors on appeal. This supports option D, as the defendant waived the errors by not objecting to them at trial. The plaintiff can argue that the defendant\u2019s failure to object means that the errors were not prejudicial because the defendant did not raise them until the appeal, which is too late. This supports the plaintiff\u2019s argument that the defendant waived the errors by not objecting to them at trial."
             }
         },
         "ground_truth": {
@@ -214,10 +214,10 @@
             "domain": "Civil_procedure",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The difference between a motion for summary judgment and a notice of dismissal",
-                "Fact_analysis": "The woman brought a federal diversity action against a doctor and a hospital for medical malpractice",
-                "Rule_application": "When considering whether to file a motion or a notice of dismissal",
-                "Legal_conclusion": "Given that the woman wants to refile her action at a later date"
+                "Legal_concept": "The difference between a motion for summary judgment and a notice of dismissal, specifically the impact of judicial precedent on the decision to file a motion or notice.",
+                "Fact_analysis": "The woman brought a federal diversity action against a doctor and a hospital for medical malpractice, but the doctor filed a motion for summary judgment, attaching numerous exhibits that contradicted the facts alleged in the complaint. The woman has decided that she is not ready to proceed with the action, but she wants to dismiss the action, with the intent to refile at a later date.",
+                "Rule_application": "When considering whether to file a motion or a notice of dismissal, judicial precedent should be considered. In particular, the Federal Rules of Civil Procedure allow for the dismissal of an action without prejudice by filing a notice, which is a less formal and less burdensome procedure than a motion.",
+                "Legal_conclusion": "Given that the woman wants to refile her action at a later date, it would be appropriate to file a notice of dismissal without prejudice, supporting option B. A notice of dismissal allows the action to be refiled without starting the statute of limitations over, while a motion for summary judgment would require the woman to present additional evidence, which may be difficult if the doctor has already filed his own summary judgment materials."
             }
         },
         "ground_truth": {
@@ -269,7 +269,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nAfter a fire burned down a house that a tenant was renting, the tenant brought a federal diversity action against the landlord. The complaint alleged that the fire had been caused by the landlord\u2019s negligent failure to maintain the house\u2019s electrical system in accordance with the applicable housing code. The landlord\u2019s own investigation indicated that the fire had been caused by the tenant\u2019s leaving a soup pot unattended on a hot stove. The landlord has moved to dismiss the action on the ground that the tenant failed to comply with a state law that requires plaintiffs suing for negligence to plead that they were not contributorily negligent. In opposition to that motion, the tenant argues that under federal law, contributory negligence is an affirmative defense that a defendant who wishes to assert the defense must plead in an answer or other responsive pleading. Which law governs how the court should rule on the motion to dismiss?\nAnswer Choices:\nA. Federal law, because the burden of pleading on a motion to dismiss in federal court is substantive, not procedural.\nB. Federal law, because the Federal Rules of Civil Procedure control pleading in federal court.\nC. State law, because the application of federal law would be outcome-determinative.\nD. State law, because the assignment of the burden of pleading is bound up with the definition of the tenant\u2019s substantive rights.\nResponse:\n[/INST]",
         "response": {
             "domain": "Torts",
-            "chosen_option_label": "C",
+            "chosen_option_label": "n/a",
             "explanation": {
                 "Legal_concept": "The distinction between contributory negligence and comparative negligence in tort law, particularly the former\u2019s role as an affirmative defense in federal diversity actions.",
                 "Fact_analysis": "The landlord has moved to dismiss the tenant\u2019s negligence action based on the tenant\u2019s failure to plead that he was not contributorily negligent, which is an affirmative defense under state law. The tenant argues that federal law governs this question because the burden of pleading on a motion to dismiss is substantive, not procedural.",
@@ -347,10 +347,10 @@
             "domain": "Administrative_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The doctrine of sovereign immunity",
-                "Fact_analysis": "The federal agency solicited bids to build a bridge on an interstate highway",
-                "Rule_application": "Res judicata prevents a party from litigating a claim that has been previously decided on the merits by a court of competent jurisdiction. In this scenario",
-                "Legal_conclusion": "Given that the agency has already awarded the contract to the original bidder and the company\u2019s sole relief sought was to enjoin the issuance of a contract"
+                "Legal_concept": "The doctrine of sovereign immunity, specifically the principle of res judicata, which prevents a government agency from being sued for the same cause of action after a final judgment has been rendered in a previous suit.",
+                "Fact_analysis": "The federal agency solicited bids to build a bridge on an interstate highway, and the construction company submitted a bid that was lowest in cost. The agency chose another bidder based on other factors, and the company sued the agency in federal district court to prevent the issuance of a contract. The company sought only to enjoin the issuance of a contract, but the agency has already awarded the contract to the original bidder.",
+                "Rule_application": "Res judicata prevents a party from litigating a claim that has been previously decided on the merits by a court of competent jurisdiction. In this scenario, the court should apply res judicata and dismiss the suit because it is moot, supporting option B.",
+                "Legal_conclusion": "Given that the agency has already awarded the contract to the original bidder and the company\u2019s sole relief sought was to enjoin the issuance of a contract, the suit is now moot. Therefore, the correct verdict would be to dismiss the suit based on res judicata, supporting option B."
             }
         },
         "ground_truth": {
@@ -385,10 +385,10 @@
             "domain": "Constitutional_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between commercial and noncommercial activity in the context of federal regulation of drugs",
-                "Fact_analysis": "The question describes a scenario in which a person can be charged with a misdemeanor for possessing a tea made from a weed containing a stimulant",
-                "Rule_application": "The U.S. Constitution limits the powers of Congress to regulate activities that affect interstate commerce. In this scenario",
-                "Legal_conclusion": "Option B is the correct verdict"
+                "Legal_concept": "The distinction between commercial and noncommercial activity in the context of federal regulation of drugs, specifically the regulation of controlled substances.",
+                "Fact_analysis": "The question describes a scenario in which a person can be charged with a misdemeanor for possessing a tea made from a weed containing a stimulant, which can be extracted by boiling the weed in water. The tea can cause the person to remain awake for long periods of time, but also can cause paralysis and death.",
+                "Rule_application": "The U.S. Constitution limits the powers of Congress to regulate activities that affect interstate commerce. In this scenario, the person's possession of the tea is not related to interstate commerce, as the tea is not sold or intended for sale.",
+                "Legal_conclusion": "Option B is the correct verdict, as the question indicates that the person's possession of the tea is not related to interstate commerce. Congress cannot regulate purely local activities that do not have a substantial effect on interstate commerce. Therefore, the statute making possession of the tea a misdemeanor would be unconstitutional under this standard, supporting option B."
             }
         },
         "ground_truth": {
@@ -423,10 +423,10 @@
             "domain": "Constitutional_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The separation of powers between the legislative",
-                "Fact_analysis": "The president's decision to spend half of the appropriated funds on military training",
-                "Rule_application": "The president's decision to retain the remaining funds",
-                "Legal_conclusion": "Given that the president's decision to spend half of the funds on military training is a valid interpretation of the statute"
+                "Legal_concept": "The separation of powers between the legislative, executive, and judicial branches of government, specifically the president's obligation to faithfully execute laws enacted by Congress.",
+                "Fact_analysis": "The president's decision to spend half of the appropriated funds on military training, despite the specific purpose of the funds to plant wildflowers along public highways, would be considered a valid interpretation of the statute given that the president has broad discretion in determining how to execute laws within his administration.",
+                "Rule_application": "The president's decision to retain the remaining funds, however, would be considered an invalid interpretation of the statute, as it goes beyond the president's authority to determine how to execute the laws and into the realm of legislative appropriations, which is reserved for Congress.",
+                "Legal_conclusion": "Given that the president's decision to spend half of the funds on military training is a valid interpretation of the statute, while his decision to retain the remaining funds is an invalid interpretation, the correct verdict would be B, supporting option B. Therefore, the correct verdict would be B, supporting option B."
             }
         },
         "ground_truth": {
@@ -439,13 +439,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA new federal statute establishes a five-member commission on cultural heritage sites. The statute directs the commission to develop regulations to protect such sites on federal public lands and to implement the regulations through specified fact- finding and adjudicatory functions. The commission is not under the supervision or control of any federal agency. Which, if any, of the following methods of appointing the commission members would be constitutional?\nAnswer Choices:\nA. Members are appointed by a specially designated panel of federal judges.\nB. Members are appointed by the Speaker of the House of Representatives, with the advice and consent of both houses of Congress.\nC. Members are appointed by the President, with the advice and consent of the Senate.\nD. None of these appointment methods would be constitutional.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Constitutional_law",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The appointment process of federal government officials",
-                "Fact_analysis": "The question asks about the constitutional method of appointing members of a federal commission established by a new federal statute. The commission is not under the supervision or control of any federal agency",
-                "Rule_application": "The constitutional question at issue is whether the President or Congress has the power to appoint members of the commission. Specifically",
-                "Legal_conclusion": "Option D"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -461,10 +461,10 @@
             "domain": "Constitutional_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between federal and state taxing powers under the Constitution",
-                "Fact_analysis": "The question concerns the imposition of a state sales tax by the state on a private contractor hired by the federal government to repair and maintain roads in a national park located wholly within the state. The government agreed to pay the contractor an annual fixed fee and to reimburse the contractor for all expenses associated with the work",
-                "Rule_application": "The doctrine of federal implied preemption prevents states from imposing laws that conflict with federal law",
-                "Legal_conclusion": "Option D"
+                "Legal_concept": "The distinction between federal and state taxing powers under the Constitution, specifically the doctrine of federal implied preemption.",
+                "Fact_analysis": "The question concerns the imposition of a state sales tax by the state on a private contractor hired by the federal government to repair and maintain roads in a national park located wholly within the state. The government agreed to pay the contractor an annual fixed fee and to reimburse the contractor for all expenses associated with the work, including materials.",
+                "Rule_application": "The doctrine of federal implied preemption prevents states from imposing laws that conflict with federal law, specifically in this case, the federal government\u2019s authority to regulate interstate commerce. The state\u2019s imposition of a sales tax on materials purchased by the contractor with funds from a special bank account, which was directly funded by federal payments and reimbursements, would likely be considered a conflict with federal law.",
+                "Legal_conclusion": "Option D, which states that the tax did not discriminate against the federal government or its contractors, and that the materials were purchased by the contractor rather than by the federal government, supports the correct verdict. The state\u2019s imposition of the sales tax on materials purchased by the contractor with federal funds would not unduly interfere with the contractor\u2019s performance of the work, and the entire economic cost of the tax was borne by the federal government. Therefore, the correct verdict would be Yes, based on federal implied preemption, supporting option D."
             }
         },
         "ground_truth": {
@@ -518,10 +518,10 @@
             "domain": "Constitutional_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between state and federal government powers under Article IV of the Constitution",
-                "Fact_analysis": "The question concerns a state law that requires public schools to hire only tutors licensed by the state",
-                "Rule_application": "The privileges and immunities clause of Article IV protects the fundamental rights of citizens to move freely among the states and to enjoy the same rights and privileges in each state as they enjoy in their own state. Therefore",
-                "Legal_conclusion": "Given that the state law discriminates against out-of-state tutors by requiring public schools to hire only those who are licensed by the state"
+                "Legal_concept": "The distinction between state and federal government powers under Article IV of the Constitution, specifically the privileges and immunities clause.",
+                "Fact_analysis": "The question concerns a state law that requires public schools to hire only tutors licensed by the state, which is a regulation of the state government. The out-of-state tutoring company has sued to challenge the law, arguing that it violates the privileges and immunities clause of Article IV.",
+                "Rule_application": "The privileges and immunities clause of Article IV protects the fundamental rights of citizens to move freely among the states and to enjoy the same rights and privileges in each state as they enjoy in their own state. Therefore, the state government may not discriminate against citizens of other states in the exercise of those rights.",
+                "Legal_conclusion": "Given that the state law discriminates against out-of-state tutors by requiring public schools to hire only those who are licensed by the state, the company is likely to prevail. Therefore, the correct verdict would be based on federal preemption, supporting option D."
             }
         },
         "ground_truth": {
@@ -556,10 +556,10 @@
             "domain": "Constitutional_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between state and federal government powers under the Constitution",
-                "Fact_analysis": "The question asks whether the state may collect a tax on the lease of office space in the state by the United States Social Security Administration. The answer choice indicates that the state may collect the tax",
-                "Rule_application": "Preemption in federal preemption",
-                "Legal_conclusion": "Given that the state's tax on the lease of office space by the federal government is not related to a legitimate government interest and does not discriminate against the federal government"
+                "Legal_concept": "The distinction between state and federal government powers under the Constitution, specifically the doctrine of federal preemption.",
+                "Fact_analysis": "The question asks whether the state may collect a tax on the lease of office space in the state by the United States Social Security Administration. The answer choice indicates that the state may collect the tax, supporting option D.",
+                "Rule_application": "Preemption in federal preemption, specifically the doctrine of implied preemption, prevents states from regulating activities that fall within the scope of a valid federal regulatory power. In this scenario, the state's tax on the lease of office space by the federal government would likely be considered an impermissible regulation of a federal activity, as the federal government has the power to tax and spend under Article I, Section 8 of the Constitution.",
+                "Legal_conclusion": "Given that the state's tax on the lease of office space by the federal government is not related to a legitimate government interest and does not discriminate against the federal government, option D is the correct verdict. Therefore, the correct verdict would be yes, supporting option D."
             }
         },
         "ground_truth": {
@@ -629,13 +629,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA consulting firm orally agreed to employ an executive as its president for the executive\u2019s lifetime. The parties negotiated and have agreed to all aspects of the employment except for the executive\u2019s salary, on which they remain several thousand dollars apart. The executive has sent a signed letter to the firm confirming the terms to which the parties have orally agreed while acknowledging that the salary has yet to be set. The firm has not responded to the confirmation letter. Do the parties now have an enforceable contract?\nAnswer Choices:\nA. No, because an agreement for lifetime employment is subject to the statute of frauds, and the confirmation letter fails to satisfy the statute.\nB. No, because the agreement is too indefinite to be enforced.\nC. Yes, because the agreement is not subject to the statute of frauds, and the parties must negotiate the executive\u2019s salary in good faith.\nD. Yes, because the confirmation letter satisfies the statute of frauds and evidences the parties\u2019 intent to be bound.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Contract_law",
-            "chosen_option_label": "A",
+            "domain": "n/a",
+            "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The preliminary question of whether the parties are competent to form a valid contract.",
-                "Fact_analysis": "The question asks whether a minor can be bound by a contract to purchase land, implying that the minor is a party to the contract.",
-                "Rule_application": "The rule that a minor under the age of majority, typically 18, is not considered a legal adult and therefore cannot enter into a valid contract.",
-                "Legal_conclusion": "Given that the question asks whether a minor can be bound by a contract to purchase land, the correct verdict would be not guilty, supporting option A."
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -651,10 +651,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The definition of an implied-in-fact contract",
-                "Fact_analysis": "The court issued an instruction to the jury that stated that an implied-in-fact contract can be established by conduct alone",
-                "Rule_application": "The instruction correctly stated that an implied-in-fact contract can be established by conduct alone",
-                "Legal_conclusion": "Given that the instruction correctly stated that an implied-in-fact contract can be established by conduct alone"
+                "Legal_concept": "The definition of an implied-in-fact contract, specifically the requirement of mutual intent to create a contract based on the parties' conduct.",
+                "Fact_analysis": "The court issued an instruction to the jury that stated that an implied-in-fact contract can be established by conduct alone, as long as both parties are acting with intent and knowledge that the other party is interpreting the conduct as an agreement to enter into a contract. This interpretation of the instruction is supported by the common law definition of an implied-in-fact contract, which requires both parties to have acted with the intent to create a contract.",
+                "Rule_application": "The instruction correctly stated that an implied-in-fact contract can be established by conduct alone, supporting option C.",
+                "Legal_conclusion": "Given that the instruction correctly stated that an implied-in-fact contract can be established by conduct alone, the correct verdict would be yes, supporting option C."
             }
         },
         "ground_truth": {
@@ -686,13 +686,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA client emailed an attorney from whom he regularly sought advice, asking, \u201cPlease give me an opinion on the attached documents.\u201d Without responding to the email, the attorney immediately began reviewing the documents and working on the requested opinion. Two days later, the client sent the attorney a second email stating, \u201cPlease ignore my previous email. I have taken care of the problem.\u201d Minutes later, the attorney emailed a reply stating, \u201cI have already completed the work.\u201d The attorney has billed the client for the time she spent working on the requested opinion. Is the attorney entitled to recover?\nAnswer Choices:\nA. No, because the attorney failed to timely notify the client that she had begun the work.\nB. No, because the client revoked his offer before the attorney\u2019s acceptance.\nC. Yes, because a contract was formed when the attorney began working on the requested opinion.\nD. Yes, because the attorney\u2019s email accepted the client\u2019s offer, which was irrevocable for a reasonable time.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Contract_law",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The formation of a contract between an attorney and a client",
-                "Fact_analysis": "The client emailed the attorney seeking an opinion on documents he had provided",
-                "Rule_application": "The attorney-client relationship is based on the duty of care and confidentiality",
-                "Legal_conclusion": "Given that the client's second email clearly stated that he did not need the opinion"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -708,10 +708,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Mutual mistake of fact in contract formation",
-                "Fact_analysis": "The heir hired an appraiser to appraise various items of personal property that she had inherited",
-                "Rule_application": "Mutual mistake of fact allows either party to rescind a contract if both parties were mistaken about a fundamental assumption on which the contract was made. In this scenario",
-                "Legal_conclusion": "Given that both parties were mutually mistaken about the true value of the painting"
+                "Legal_concept": "Mutual mistake of fact in contract formation, specifically regarding the value of a personal property item.",
+                "Fact_analysis": "The heir hired an appraiser to appraise various items of personal property that she had inherited, including an original oil painting. The appraiser, who had no expertise in appraising art, recommended that the heir hire an art appraiser to value the painting. The heir declined, assuming that the painting's approximate value of $100, set by her at a yard sale, reflected its true value. The neighbor, who knew nothing about art, purchased the painting from the heir at this price.",
+                "Rule_application": "Mutual mistake of fact allows either party to rescind a contract if both parties were mistaken about a fundamental assumption on which the contract was made. In this scenario, both the heir and the neighbor were mistaken about the true value of the painting, as the painting was later discovered to be worth over $900,000.",
+                "Legal_conclusion": "Given that both parties were mutually mistaken about the true value of the painting, the heir would be likely to prevail in an action to rescind the contract. Option D, which states that enforcement of the contract would be unconscionable given its disadvantageous impact on the heir, supports this conclusion. The heir bore the risk of any mistake as to the true value of the painting, and she was harmed by the neighbor's purchase of the painting at the yard sale. Therefore, the correct verdict would be yes, supporting option D."
             }
         },
         "ground_truth": {
@@ -765,10 +765,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The duty of good faith and fair dealing in contract interpretation",
-                "Fact_analysis": "The man submitted a loan application to a lender",
-                "Rule_application": "The duty of good faith and fair dealing requires parties to a contract to act in good faith and deal fairly with each other. In this scenario",
-                "Legal_conclusion": "Therefore"
+                "Legal_concept": "The duty of good faith and fair dealing in contract interpretation, specifically regarding the obligation to disclose material information.",
+                "Fact_analysis": "The man submitted a loan application to a lender, which included a then-accurate statement of his financial condition. The lender reviewed the application and concluded that the man was creditworthy without verifying any of his information. However, the man\u2019s financial condition subsequently changed significantly for the worse, and he did not report this change to the lender. When the lender learned of the change, she tried to rescind the loan agreement based on the man\u2019s failure to disclose this material information.",
+                "Rule_application": "The duty of good faith and fair dealing requires parties to a contract to act in good faith and deal fairly with each other. In this scenario, the man\u2019s failure to disclose his changed financial condition to the lender would prevent him from recovering on the loan agreement because he made a material misrepresentation in the loan application.",
+                "Legal_conclusion": "Therefore, the correct verdict would be yes, based on the man\u2019s failure to disclose material information, supporting option D. The lender can cancel disbursement of the funds and rescind the loan agreement because the man\u2019s failure to disclose his changed financial condition made his previous statement of financial condition a misrepresentation, supporting option D."
             }
         },
         "ground_truth": {
@@ -820,7 +820,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA father whose only living relatives were a daughter and a nephew owned land worth $500,000. In return for his daughter\u2019s promise to pay $300,000 to his nephew at the time of the father\u2019s death, the father executed and delivered to his daughter a quitclaim deed to the land. The daughter took possession of the land. Two years later, in a signed writing, the father directed his daughter to pay to a neighbor, at the father\u2019s death, $50,000 of the $300,000 that was to go to the nephew. The daughter, who had long disliked the neighbor, told her father that she did not plan to honor his request. The father died, and his daughter has since refused to pay anything to either the nephew or the neighbor. The neighbor has sued the daughter for the $50,000. Is the neighbor likely to prevail?\nAnswer Choices:\nA. No, because the daughter did not consent to any modification of the contract she had made with her father.\nB. No, because the nephew was a third-party beneficiary of the contract between the father and his daughter, and the nephew\u2019s interest could not be modified without his express written consent.\nC. Yes, because the father retained a transferable interest in the future proceeds of his daughter\u2019s promise.\nD. Yes, because the father\u2019s signed modification is enforceable without consideration.\nResponse:\n[/INST]",
         "response": {
             "domain": "Contract_law",
-            "chosen_option_label": "D",
+            "chosen_option_label": "n/a",
             "explanation": {
                 "Legal_concept": "The doctrine of consideration in contract law, specifically the requirement that a promise must be supported by consideration, or a valid exchange.",
                 "Fact_analysis": "The father made a promise to his daughter to pay $300,000 to his nephew upon his death, and the daughter promised to pay $300,000 to her nephew. The father then executed and delivered a quitclaim deed to the daughter, transferring ownership of the land to her. Two years later, the father made a second promise to his daughter, this time to pay $50,000 to a neighbor at his death.",
@@ -841,10 +841,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The duty of care in tort law",
-                "Fact_analysis": "The cousin",
-                "Rule_application": "Businesses generally owe a duty of care to their customers to use reasonable care to protect them from foreseeable harm caused by the business\u2019s activities. In this scenario",
-                "Legal_conclusion": "The company\u2019s strongest defense would be that the cousin\u2019s actions were a proximate cause of the homeowner\u2019s loss"
+                "Legal_concept": "The duty of care in tort law, specifically the duty of care owed by a business to its customers.",
+                "Fact_analysis": "The cousin, who was not a party to the lawsuit, placed a public notice on a website owned by the company inviting people to come and take the furnishings from the homeowner\u2019s house. When the homeowner arrived and found the house empty, he sued the company. The cousin had no permission to place the notice and was not acting within the bounds of his agency relationship with the homeowner. Therefore, the cousin\u2019s actions are a proximate cause of the homeowner\u2019s loss.",
+                "Rule_application": "Businesses generally owe a duty of care to their customers to use reasonable care to protect them from foreseeable harm caused by the business\u2019s activities. In this scenario, the company\u2019s failure to prevent the cousin from placing a dangerous invitation to harm on its website may result in a finding of negligence.",
+                "Legal_conclusion": "The company\u2019s strongest defense would be that the cousin\u2019s actions were a proximate cause of the homeowner\u2019s loss, supporting option B. The company had no duty to the homeowner because the cousin was not a party to the lawsuit. The First Amendment does not prohibit all tort actions based on mere speech, and there is no evidence of careless conduct by the company."
             }
         },
         "ground_truth": {
@@ -860,10 +860,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The standard of care in negligence",
-                "Fact_analysis": "The fact that the boy was driving a full-size motorcycle on a private road",
-                "Rule_application": "The delivery company argues that the boy was contributorily negligent for driving a motorcycle on a private road where he was a trespasser",
-                "Legal_conclusion": "Given that the boy is arguing that his conduct should be judged according to the standard of care that he has argued for"
+                "Legal_concept": "The standard of care in negligence, specifically the duty of reasonable care that a person owes to others on the road, particularly when driving a motor vehicle.",
+                "Fact_analysis": "The fact that the boy was driving a full-size motorcycle on a private road, where he was a trespasser, creates a question of whether he was acting within the bounds of reasonable care. The delivery company employee was making a delivery on the private road when a tire fell off his truck and struck the boy, who was driving the motorcycle.",
+                "Rule_application": "The delivery company argues that the boy was contributorily negligent for driving a motorcycle on a private road where he was a trespasser, which suggests that he was not acting with reasonable care. Comparative negligence applies in determining damages in a negligence action, meaning that the boy\u2019s damages would be reduced in proportion to his own fault.",
+                "Legal_conclusion": "Given that the boy is arguing that his conduct should be judged according to the standard of care that he has argued for, he should be judged according to the standard of a reasonable child of like age, intelligence, and experience under the circumstances. Therefore, the correct verdict would be yes, supporting option D."
             }
         },
         "ground_truth": {
@@ -917,10 +917,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Comparative fault in tort law",
-                "Fact_analysis": "The question describes a scenario where a customer was shooting towards a target at a shooting range when a man who was visiting the range misunderstood a signal indicating shooting in progress and walked into the range",
-                "Rule_application": "Under the rule of joint and several liability",
-                "Legal_conclusion": "Given that the man is found to be 25% at fault and each defendant is found to be 25% at fault"
+                "Legal_concept": "Comparative fault in tort law, specifically the rule of joint and several liability.",
+                "Fact_analysis": "The question describes a scenario where a customer was shooting towards a target at a shooting range when a man who was visiting the range misunderstood a signal indicating shooting in progress and walked into the range, where he was struck by a bullet and injured. The customer, the range owner, and the manufacturer of the signaling apparatus are being sued by the man for his injuries.",
+                "Rule_application": "Under the rule of joint and several liability, each party is responsible for the entire damages award if the plaintiff is found more than 50% at fault. In this scenario, the man is found to be 25% at fault, and the customer, the range owner, and the manufacturer are each found to be 25% at fault. Therefore, the correct verdict would be that the man can recover damages from each defendant, but the amount recovered will be reduced based on each defendant's percentage of fault.",
+                "Legal_conclusion": "Given that the man is found to be 25% at fault and each defendant is found to be 25% at fault, the man will be able to recover damages from each defendant. However, because each defendant is equally responsible, the man will only be able to recover 25% of his damages from each defendant. Therefore, the correct verdict would be that the man can recover 25% of his damages from the customer, 25% of his damages from the range owner, and 25% of his damages from the manufacturer, supporting option B."
             }
         },
         "ground_truth": {
@@ -933,13 +933,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA doctor ordered chest X-rays for a patient who smoked cigarettes. After the consulting radiologist told the doctor that the X-rays looked normal, the doctor told the patient that he was in good health. In fact, the radiologist had missed signs of cancer on the X-rays that a trained radiologist, acting competently, would have detected. After another X-ray of the patient\u2019s chest, performed one year later, showed advanced lung cancer, the doctor discovered that the radiologist had misinterpreted the patient\u2019s earlier X-rays. The patient died within four months of the later X-ray, because by then his cancer had become untreatable. In a wrongful death suit against the radiologist based on only the facts set out above, a jury found the radiologist negligent and awarded $3 million in compensatory damages and $21 million in punitive damages. Is the radiologist likely to have the punitive damages award vacated on appeal?\nAnswer Choices:\nA. No, because a 7 to 1 ratio of punitive to compensatory damages is constitutionally permissible.\nB. No, because an award of punitive damages is appropriate for medical malpractice that results in death or serious injury.\nC. Yes, because punitive damages awards are not authorized unless there is proof of willful or wanton misconduct on the defendant\u2019s part.\nD. Yes, because the patient smoked cigarettes and therefore was contributorily negligent.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Torts",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Intentional tort of battery",
-                "Fact_analysis": "The radiologist",
-                "Rule_application": "The radiologist\u2019s failure to detect signs of cancer on the patient\u2019s initial X-ray",
-                "Legal_conclusion": "Given that the radiologist\u2019s failure to detect the cancer on the patient\u2019s initial X-ray led to the patient\u2019s death from lung cancer"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -974,10 +974,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Res ipsa loquitur",
-                "Fact_analysis": "The elevator suddenly started free-falling down the elevator shaft while carrying passengers",
-                "Rule_application": "Res ipsa loquitur allows the jury to infer negligence based on the elevator\u2019s sudden and unexpected fall",
-                "Legal_conclusion": "Given that the company installed and maintained the elevator"
+                "Legal_concept": "Res ipsa loquitur, which allows a plaintiff in a tort action to establish negligence based on imputed negligence without direct evidence of the defendant\u2019s breach of duty.",
+                "Fact_analysis": "The elevator suddenly started free-falling down the elevator shaft while carrying passengers, prompting a passenger to impulsively stick his arm through the doors to try to stop the fall. The elevator eventually stopped, but the passenger was injured when he was struck by the doors as they closed.",
+                "Rule_application": "Res ipsa loquitur allows the jury to infer negligence based on the elevator\u2019s sudden and unexpected fall, which suggests that the company was responsible for the elevator\u2019s proper functioning. The company\u2019s argument that the passenger\u2019s conduct caused his injuries is a valid defense, but it is not relevant to the question of res ipsa loquitur.",
+                "Legal_conclusion": "Given that the company installed and maintained the elevator, the passenger\u2019s use of res ipsa loquitur to establish negligence is appropriate. Therefore, the judge should grant the passenger\u2019s request and instruct the jury on res ipsa loquitur, supporting option C. Additionally, the judge should also instruct the jury to consider the passenger\u2019s own negligence in awarding damages if they find the company liable, supporting option C."
             }
         },
         "ground_truth": {
@@ -1050,10 +1050,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Strict products liability",
-                "Fact_analysis": "The question describes a rocket that failed to shoot upward but instead followed a trajectory parallel to the ground and struck a spectator",
-                "Rule_application": "Strict products liability holds manufacturers of defective products liable for damages resulting from those defects",
-                "Legal_conclusion": "Given that the amusement park was using the rocket to launch fireworks"
+                "Legal_concept": "Strict products liability, specifically the failure-to-warn aspect of the doctrine.",
+                "Fact_analysis": "The question describes a rocket that failed to shoot upward but instead followed a trajectory parallel to the ground and struck a spectator, who was attending an amusement park\u2019s fireworks display. The failure to warn in this scenario involves the manufacturer of the rocket failing to provide adequate instructions or warnings to the amusement park regarding the proper use or handling of the rocket.",
+                "Rule_application": "Strict products liability holds manufacturers of defective products liable for damages resulting from those defects, even if the manufacturer was not negligent in their design or manufacture. In this scenario, the failure to warn would make the manufacturer liable if the amusement park had not been properly informed of the risks associated with using the rocket in a fireworks display.",
+                "Legal_conclusion": "Given that the amusement park was using the rocket to launch fireworks, the spectator would be able to establish a valid claim based on strict products liability. Specifically, the failure-to-warn aspect of the doctrine allows a plaintiff to recover damages if the product was defective and the manufacturer failed to warn the user of the risk. Therefore, the correct verdict would be based on the spectator's ability to establish that the manufacturer failed to warn the amusement park of the risks associated with using the rocket in a fireworks display, supporting option D."
             }
         },
         "ground_truth": {
@@ -1066,13 +1066,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nThe owner of a home in a rural area had for many years enjoyed unspoiled views of the surrounding countryside from her back deck. Several months ago, a neighboring farmer placed unsightly items, including an old, rusted tractor and some machine parts, entirely on his own property, but in a location visible from the homeowner\u2019s deck. The homeowner asked the farmer to move the items to a different area of the farm, out of the homeowner\u2019s line of sight. The farmer acknowledged that it was not common for farmers in the area to keep old equipment on their land in locations visible to neighbors, but nonetheless refused to move the items. Concerned that the farmer\u2019s placement of the items might adversely affect the resale value of the property, the homeowner paid for an appraisal of her own property. The appraisal determined that the market value of the property had not been diminished by the farmer\u2019s actions. If the homeowner were to sue the farmer for private nuisance, which of the following would be the farmer\u2019s best argument against liability?\nAnswer Choices:\nA. The unsightly items have not caused a decrease in the market value of the homeowner\u2019s property.\nB. The unsightly items do not physically encroach on the homeowner\u2019s property.\nC. It is not common for farmers in the area to keep old equipment on their land in places that are visible to neighbors.\nD. Unsightly conditions ordinarily do not of themselves amount to an unreasonable interference with the use and enjoyment of a neighboring property.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Torts",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The private nuisance of neighboring landowner tort",
-                "Fact_analysis": "The neighboring farmer placed unsightly items",
-                "Rule_application": "The farmer\u2019s argument against liability would be that the unsightly items have not caused a decrease in the market value of the homeowner\u2019s property",
-                "Legal_conclusion": "Common-law reasonable use of land allows a landowner to make reasonable non-trespassory uses of their land"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1088,10 +1088,10 @@
             "domain": "Criminal_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The preliminary question of whether the defendant\u2019s purchase of an airline ticket using an alias while on bail with travel restrictions",
-                "Fact_analysis": "The fact that the defendant purchased an airline ticket using an alias while on bail with travel restrictions",
-                "Rule_application": "The Federal Rules of Evidence allow the prosecution to introduce evidence that is relevant to a material issue",
-                "Legal_conclusion": "Given that the defendant\u2019s motive to flee if he is found guilty may be relevant to establish his consciousness of guilt"
+                "Legal_concept": "The preliminary question of whether the defendant\u2019s purchase of an airline ticket using an alias while on bail with travel restrictions, and with the intent to travel to another country, may be introduced by the prosecution in a conspiracy to possess cocaine with intent to distribute trial.",
+                "Fact_analysis": "The fact that the defendant purchased an airline ticket using an alias while on bail with travel restrictions, and with the intent to travel to another country, may be relevant to establish his motive to flee if he is found guilty.",
+                "Rule_application": "The Federal Rules of Evidence allow the prosecution to introduce evidence that is relevant to a material issue, including motive, and not excluded by the Constitution or other rules. In this scenario, the defendant\u2019s motive to flee if he is found guilty may be relevant to establish his consciousness of guilt.",
+                "Legal_conclusion": "Given that the defendant\u2019s motive to flee if he is found guilty may be relevant to establish his consciousness of guilt, the correct verdict would be B, allowing the prosecution to introduce the evidence of the defendant\u2019s airline ticket purchase. Therefore, the correct option is B."
             }
         },
         "ground_truth": {
@@ -1142,13 +1142,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA woman has sued a man for defamation, alleging that he sent a letter to her employer making false and injurious statements about her. At trial, she proposes to testify about the statements in the letter but does not produce the letter itself or show that it is unavailable. Should the court allow the woman\u2019s testimony about the statements in the letter?\nAnswer Choices:\nA. No, because the statements were made out of court and are hearsay not within any exception.\nB. No, because the best evidence rule requires an original or duplicate of the letter to prove the letter\u2019s contents.\nC. Yes, because the statements are not being offered for their truth and thus are not hearsay.\nD. Yes, because the statements are those of a party-opponent and therefore are admissible under a hearsay exception.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Evidence",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preliminary questions concerning the qualification of a witness",
-                "Fact_analysis": "The question involves whether the woman can testify about the statements made in a letter sent by the man to her employer",
-                "Rule_application": "Preliminary questions concerning the qualification of a witness are generally determined by the court without regard to the burden of proof.",
-                "Legal_conclusion": "Given that the woman is suing the man for defamation based on statements made in a letter he sent to her employer"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1199,13 +1199,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA defendant was charged with murder. At trial, the prosecutor called a witness who testified that a friend had told him that there was \u201cbad blood\u201d between the defendant and the victim. After the witness was excused, the defense attorney moved to strike the portion of the testimony that included the friend\u2019s statement, arguing that the statement was inadmissible. Has the issue of admissibility been preserved for appeal?\nAnswer Choices:\nA. No, because an objection must be made before the evidence is presented to the jury.\nB. No, because the defense failed to make a timely objection stating the specific ground for objection.\nC. Yes, because admission of the statement affected the defendant\u2019s right to confront witnesses.\nD. Yes, because the defense objected to the statement during the trial.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Evidence",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preliminary questions concerning the qualification of a witness",
-                "Fact_analysis": "The prosecutor called a witness who testified that a friend had told him that there was \u2018bad blood\u2019 between the defendant and the victim. After the witness was excused",
-                "Rule_application": "Hearsay is generally not admissible in court",
-                "Legal_conclusion": "Yes"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1278,9 +1278,9 @@
             "domain": "Evidence",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preliminary questions concerning the qualification of a witness",
+                "Legal_concept": "Preliminary questions concerning the qualification of a witness, including whether the witness has personal knowledge of the subject matter at issue.",
                 "Fact_analysis": "The defendant\u2019s attorney intends to impeach the witness\u2019s trial testimony regarding whether she saw the plaintiff slip and fall on an oily substance on the floor of the store by showing that the witness previously told an investigator that she did not see the plaintiff fall.",
-                "Rule_application": "Preliminary questions concerning the qualification of a witness may be asked on direct examination or cross-examination",
+                "Rule_application": "Preliminary questions concerning the qualification of a witness may be asked on direct examination or cross-examination, but the scope of such questions is limited to determining whether the witness is qualified to testify",
                 "Legal_conclusion": "n/a"
             }
         },
@@ -1333,7 +1333,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA defendant is on trial as one of the armed robbers of a liquor store. The defendant testifies that he robbed the store involuntarily because his fellow gang members threatened to kill him right then if he backed out, as he wanted to do. Thereafter, the defense seeks to call a witness who would testify that six months after the defendant was arrested in connection with the robbery, the defendant told him that he had been threatened when he wanted to pull out of the robbery. The prosecution objects to the witness\u2019s testimony. Is the witness\u2019s testimony admissible?\nAnswer Choices:\nA. No, because it includes the defendant\u2019s own hearsay statement that is not within any exception.\nB. No, because it includes a self-serving statement offered by a criminal accused.\nC. Yes, because the defendant\u2019s hearsay statement fits the state of mind exception.\nD. Yes, because it includes the prior consistent statement of the defendant, who testified as a witness.\nResponse:\n[/INST]",
         "response": {
             "domain": "Criminal_law",
-            "chosen_option_label": "C",
+            "chosen_option_label": "n/a",
             "explanation": {
                 "Legal_concept": "Previous inconsistent statement, specifically the admissibility of a defendant\u2019s prior inconsistent statement in a criminal trial.",
                 "Fact_analysis": "The prosecution is objecting to the defense\u2019s plan to call a witness who would testify that the defendant made a prior inconsistent statement six months after he was arrested in connection with the liquor store robbery. The statement was that his fellow gang members had threatened to kill him if he did not participate in the robbery.",
@@ -1354,10 +1354,10 @@
             "domain": "Evidence",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preliminary questions of admissibility",
-                "Fact_analysis": "The defendant objects to the plaintiff\u2019s use of a local newspaper article to establish the defendant\u2019s notice of the plaintiff\u2019s bankruptcy",
-                "Rule_application": "Hearsay is generally not admissible in federal court proceedings",
-                "Legal_conclusion": "Given that the plaintiff is offering the newspaper article to establish the defendant\u2019s notice of the plaintiff\u2019s bankruptcy"
+                "Legal_concept": "Preliminary questions of admissibility, specifically hearsay and authentication in federal court proceedings.",
+                "Fact_analysis": "The defendant objects to the plaintiff\u2019s use of a local newspaper article to establish the defendant\u2019s notice of the plaintiff\u2019s bankruptcy, specifically the hearsay and authentication issues.",
+                "Rule_application": "Hearsay is generally not admissible in federal court proceedings, with the exception of specific rules such as prior statements by a declarant under oath, or the past recollection recorded exception. The past recollection recorded exception allows hearsay testimony if the witness is testifying about a prior statement made by another person and the witness\u2019s recollection of the statement is prompted by the court\u2019s question, and the statement is offered to establish the truth of the matter.",
+                "Legal_conclusion": "Given that the plaintiff is offering the newspaper article to establish the defendant\u2019s notice of the plaintiff\u2019s bankruptcy, and the article is provided by the defendant\u2019s own daily newspaper, the past recollection recorded exception would allow the article to be considered. Therefore, the correct verdict would be yes, based on the past recollection recorded exception, supporting option C."
             }
         },
         "ground_truth": {
@@ -1373,10 +1373,10 @@
             "domain": "Property_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between fee simple and life estate",
-                "Fact_analysis": "The question describes a grant that conveyed a commercial property to a friend",
-                "Rule_application": "When the friend opened a tavern and began selling alcohol on the property",
-                "Legal_conclusion": "Given that the friend opened a tavern and began selling alcohol on the property"
+                "Legal_concept": "The distinction between fee simple and life estate, specifically the distinction between a life estate that ends upon the death of the life tenant and a life estate that ends upon the happening of a specific event, such as the sale of the property.",
+                "Fact_analysis": "The question describes a grant that conveyed a commercial property to a friend, \"so long as alcoholic beverages are not sold on the property, and if alcoholic beverages are sold on the property, the estate is to end at once.\" The grant specifically stated that the friend could continue to own the property as long as he did not sell alcohol, but if he did, the grant would end. This language indicates that the friend held a life estate, rather than a fee simple, because a life estate ends upon the death of the life tenant or upon the occurrence of a specific event, in this case the sale of the property.",
+                "Rule_application": "When the friend opened a tavern and began selling alcohol on the property, the life estate ended, and the friend no longer had a valid interest in the property. Therefore, the correct verdict would be to pay the grantor, who still retains a fee simple interest in the property, based on the question and answer choice D.",
+                "Legal_conclusion": "Given that the friend opened a tavern and began selling alcohol on the property, his life estate ended, and he no longer had a valid interest in the property. Therefore, the correct verdict would be to pay the grantor, who still retains a fee simple interest in the property, based on the question and answer choice D."
             }
         },
         "ground_truth": {
@@ -1430,10 +1430,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The doctrine of merger",
-                "Fact_analysis": "The woman executed and delivered a warranty deed to her unmarried nephew",
-                "Rule_application": "The rule of merger states that a completed contract is merged into a later contract and is no longer enforceable. In this scenario",
-                "Legal_conclusion": "Given that the nephew failed to marry by the time of the woman\u2019s death"
+                "Legal_concept": "The doctrine of merger, which states that a completed contract is merged into a later contract and is no longer enforceable.",
+                "Fact_analysis": "The woman executed and delivered a warranty deed to her unmarried nephew, conveying her home to him on the date of his marriage. The nephew promptly recorded the deed, indicating his intention to be bound by the contract. However, the woman died testate, leaving her entire estate to her sister. The nephew failed to marry by the time of the woman\u2019s death, and the executor of the woman\u2019s estate has asserted that the nephew has no interest in the home.",
+                "Rule_application": "The rule of merger states that a completed contract is merged into a later contract and is no longer enforceable. In this scenario, the woman\u2019s death has completed the nephew\u2019s contract to marry within a certain time frame and convey the home to him, as stated in the deed. Therefore, the executor\u2019s assertion that the nephew has no interest in the home is correct, supporting option C.",
+                "Legal_conclusion": "Given that the nephew failed to marry by the time of the woman\u2019s death, the woman\u2019s will invalidated the deed, and the nephew no longer had an interest in the home. Therefore, the correct verdict would be yes, supporting option C."
             }
         },
         "ground_truth": {
@@ -1487,10 +1487,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The doctrine of frustration in contract law",
-                "Fact_analysis": "The buyer was hospitalized due to a car accident on his way to the rescheduled closing date",
+                "Legal_concept": "The doctrine of frustration in contract law, specifically the frustration of purpose due to unforeseen events.",
+                "Fact_analysis": "The buyer was hospitalized due to a car accident on his way to the rescheduled closing date, preventing him from attending and completing the transaction. The seller and her attorney responded by informing him that there would be no closing, citing the buyer\u2019s breach.",
                 "Rule_application": "Frustration of purpose allows a party to be excused from performing their contractual obligations if an unforeseen event makes performance impossible or radically different from what was agreed upon.",
-                "Legal_conclusion": "Given that the buyer\u2019s ability to perform was frustrated due to the unforeseen car accident"
+                "Legal_conclusion": "Given that the buyer\u2019s ability to perform was frustrated due to the unforeseen car accident, he can still enforce the contract. Therefore, the correct verdict would be yes, supporting option D, based on the buyer\u2019s ability to prove frustration of purpose."
             }
         },
         "ground_truth": {
@@ -1525,10 +1525,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between a secured and unsecured creditor in bankruptcy",
-                "Fact_analysis": "The man borrowed money from the bank to purchase a commercial building",
-                "Rule_application": "In bankruptcy",
-                "Legal_conclusion": "Given that the mother did not sign a promissory note"
+                "Legal_concept": "The distinction between a secured and unsecured creditor in bankruptcy, specifically the priority of liens on property.",
+                "Fact_analysis": "The man borrowed money from the bank to purchase a commercial building, and the bank secured the loan with a mortgage on the building. The man\u2019s mother later granted the bank a second mortgage on her own property, the motel, but she did not sign a promissory note. When the man defaulted on the loan, the bank initiated foreclosure proceedings against both the commercial building and the motel. The mother timely objected to the foreclosure proceedings against the motel, arguing that the bank cannot foreclose on her property because she is not a signatory to the loan.",
+                "Rule_application": "In bankruptcy, a creditor with a lien on the debtor\u2019s property has priority over an unsecured creditor. This means that a creditor with a secured claim has a higher priority in receiving payment from the debtor\u2019s estate than an unsecured creditor. In this scenario, the mother is an unsecured creditor because she does not have a lien on the commercial building, which is the collateral for the man\u2019s loan. Therefore, the bank\u2019s priority over the mother would be determined by the priority of liens on the motel.",
+                "Legal_conclusion": "Given that the mother did not sign a promissory note, the bank does not hold a valid lien on her motel. Therefore, the correct verdict would be the mother, supporting option D. The bank cannot foreclose on the motel because the mother is not a signatory to the loan and the bank does not hold a valid lien on the property. This supports the mother\u2019s argument that the bank cannot include the motel in the foreclosure proceedings."
             }
         },
         "ground_truth": {
@@ -1544,10 +1544,10 @@
             "domain": "Property_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between an easement appurtenant and an easement in gross",
-                "Fact_analysis": "The question describes a deed that the man executed to the woman",
-                "Rule_application": "In determining whether an easement is appurtenant or in gross",
-                "Legal_conclusion": "Given that the man received $10"
+                "Legal_concept": "The distinction between an easement appurtenant and an easement in gross, specifically the determination of whether an easement is appurtenant based on the ownership of the property affected by the easement.",
+                "Fact_analysis": "The question describes a deed that the man executed to the woman, granting her and her heirs and assigns a pedestrian right-of-way over a designated strip of his land between the street and the ocean. The deed was not recorded, but the woman later sold her land without mentioning the easement. The buyer, who received actual notice from neighbors, is suing the man to establish her right to use the easement.",
+                "Rule_application": "In determining whether an easement is appurtenant or in gross, the key consideration is whether the dominant estate and the servient estate are owned by the same person. In this scenario, the man owned the dominant estate (the land over which the easement was granted) and the woman owned the servient estate (the land on which the easement was intended to be used). Therefore, the easement would be appurtenant if it was intended to be used by the woman and her heirs and assigns.",
+                "Legal_conclusion": "Given that the man received $10,000 for the easement, the correct verdict would be the buyer, supporting option B. An easement is considered an encumbrance on the land, and the man\u2019s receipt of consideration for the easement indicates that it was intended to be appurtenant. Therefore, the buyer will likely prevail because the man received $10,000 for the easement, supporting option B."
             }
         },
         "ground_truth": {
@@ -1582,10 +1582,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The doctrine of frustration in contract law",
-                "Fact_analysis": "The buyer entered into a valid written contract with the seller to purchase vacant land",
-                "Rule_application": "The doctrine of frustration allows a party to be excused from performing their contractual obligations when an unforeseen event makes performance impossible. In this scenario",
-                "Legal_conclusion": "Given that the discovery of the restrictive covenant frustrated the purpose of the contract"
+                "Legal_concept": "The doctrine of frustration in contract law, specifically the frustration of purpose due to unforeseen events.",
+                "Fact_analysis": "The buyer entered into a valid written contract with the seller to purchase vacant land, but the seller was unaware that the buyer planned to construct a gas station on the land. When the buyer discovered that a restrictive covenant prohibited using the land for commercial purposes, he rescinded the contract based on the seller's failure to deliver marketable title. However, the discovery of the restrictive covenant frustrated the purpose of the contract, making it impossible to perform.",
+                "Rule_application": "The doctrine of frustration allows a party to be excused from performing their contractual obligations when an unforeseen event makes performance impossible. In this scenario, the discovery of the restrictive covenant prevents the buyer from using the land for commercial purposes, rendering the land unmarketable and frustrating the purpose of the contract.",
+                "Legal_conclusion": "Given that the discovery of the restrictive covenant frustrated the purpose of the contract, the seller should prevail. Therefore, the correct verdict would be yes, based on the buyer's failure to perform due to frustration of purpose, supporting option D."
             }
         },
         "ground_truth": {
@@ -1601,10 +1601,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The issue of whether an assignee of a promissory note can foreclose on a mortgage",
-                "Fact_analysis": "The buyer defaulted on the loan",
-                "Rule_application": "The relevant rule in this scenario is the principle of agency",
-                "Legal_conclusion": "Option D"
+                "Legal_concept": "The issue of whether an assignee of a promissory note can foreclose on a mortgage, despite the absence of an assignment of the mortgage, in a breach of contract action.",
+                "Fact_analysis": "The buyer defaulted on the loan, and the bank, which held the mortgage, assigned the promissory note to an investor but not the mortgage. The buyer argues that the investor cannot foreclose because the investor is not the mortgagee.",
+                "Rule_application": "The relevant rule in this scenario is the principle of agency, which allows an agent to act on behalf of the principal in matters within the scope of the agency. In this case, the investor is acting as the bank\u2019s agent in seeking to foreclose on the mortgage, based on the bank\u2019s prior ownership and control of the loan. Therefore, the investor can foreclose, even though he did not receive the mortgage.",
+                "Legal_conclusion": "Option D, which states that the public land records continue to show the investor\u2019s predecessor in title as the mortgagee, supports the investor\u2019s right to foreclose. The public land records serve as a historical record of ownership and can be used to determine the rightful owner of a property. In this scenario, the public land records show that the investor\u2019s predecessor in title was the mortgagee, which supports the investor\u2019s right to foreclose. Therefore, the correct verdict would be option D, supporting the investor\u2019s right to foreclose based on his ownership of both the note and the mortgage, despite the absence of an assignment of the mortgage to him."
             }
         },
         "ground_truth": {
@@ -1620,10 +1620,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The doctrine of mutual mistake in contract law",
-                "Fact_analysis": "The woman",
-                "Rule_application": "Mutual mistake of fact allows the parties to rescind a contract if both parties made a mistake of fact that was essential to the contract and neither party can reasonably be expected to perform the contract. In this scenario",
-                "Legal_conclusion": "Given that the man and the woman made a mutual mistake of fact when the man died before the woman could complete the gift"
+                "Legal_concept": "The doctrine of mutual mistake in contract law, specifically the invalidation of a contract due to a mutual mistake of fact.",
+                "Fact_analysis": "The woman, who owned an apartment building, intended to give the building to the man, who was not her husband but was married to another woman. The woman signed and promptly recorded a deed properly describing the property and identifying the man. However, the man had died before the woman executed and recorded the deed, and the woman was not aware of his death. The deed specified that under no circumstances was the property to ever pass to the man's wife, who was not the intended recipient.",
+                "Rule_application": "Mutual mistake of fact allows the parties to rescind a contract if both parties made a mistake of fact that was essential to the contract and neither party can reasonably be expected to perform the contract. In this scenario, the woman and the man made a mutual mistake of fact when the man died before the woman could complete the gift, rendering the deed invalid.",
+                "Legal_conclusion": "Given that the man and the woman made a mutual mistake of fact when the man died before the woman could complete the gift, the niece will likely prevail. The man's will did not specifically provide for the apartment building, and the woman's will did not specifically disinherit the man's wife. Therefore, the niece will likely inherit the apartment building based on the woman's intent to take back the deed, supporting option C."
             }
         },
         "ground_truth": {
@@ -1636,13 +1636,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA drug-dealing operation consisted of three men: a supplier, a dealer, and a lookout. The supplier became convinced that the lookout was a police informant. He persuaded the dealer that they should kill the lookout to avoid problems. They purchased a gun and ammunition to commit the murder and planned to dispose of the lookout\u2019s body by pushing it off a cliff. The supplier arranged a meeting in a remote area of a state park. After the three men arrived, the supplier fired two shots at the lookout, who fell to the ground. Both the supplier and the dealer believed that the lookout was dead. The dealer subsequently pushed the lookout\u2019s body off a nearby cliff. Unbeknownst to the supplier and the dealer, the lookout had been wounded by the bullets but was not dead; he died as a result of the fall from the cliff. Can the supplier be convicted of murder?\nAnswer Choices:\nA. No, because the shooting and the disposal of the body were separate events that cannot be viewed as a single scheme or plan.\nB. No, because the supplier did not intend that the fall from the cliff would kill the lookout.\nC. Yes, because both the shooting and the disposal of the body were part of the original plan to kill the lookout.\nD. Yes, because the supplier believed that his shots had killed the lookout.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Criminal_law",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Self-defense in criminal law",
-                "Fact_analysis": "The scenario describes a situation where the supplier and the dealer",
-                "Rule_application": "Self-defense allows an individual to use reasonable force",
-                "Legal_conclusion": "Given that the supplier and the dealer were defending themselves against an unlawful and immediate threat posed by the lookout with deadly weapons"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1696,10 +1696,10 @@
             "domain": "Criminal_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between criminal negligence and criminal recklessness",
-                "Fact_analysis": "The woman drove intoxicated and struck and killed a pedestrian",
-                "Rule_application": "Involuntary intoxication",
-                "Legal_conclusion": "Given that the woman was intoxicated beyond a reasonable doubt"
+                "Legal_concept": "The distinction between criminal negligence and criminal recklessness, specifically the distinction between voluntary and involuntary intoxication in criminal responsibility.",
+                "Fact_analysis": "The woman drove intoxicated and struck and killed a pedestrian, who was walking on the roadway, while driving 70 mph in a 30-mph zone. The woman was tried for murder, but the court refused to dismiss the charge and offered to give a lesser-offense instruction.",
+                "Rule_application": "Involuntary intoxication, also known as automatism, can be used as a defense in criminal responsibility. In this scenario, the woman became extremely intoxicated after a night of heavy drinking at a party, which caused her to drive recklessly and ultimately lead to the death of the pedestrian. Therefore, the correct verdict based on involuntary intoxication would be not guilty of murder, supporting option B.",
+                "Legal_conclusion": "Given that the woman was intoxicated beyond a reasonable doubt, the defense attorney should request an involuntary intoxication instruction. This would allow the jury to consider whether the woman\u2019s intoxication was so severe that she acted with complete lack of care, resulting in her not being criminally responsible for her actions. Therefore, the correct verdict based on involuntary intoxication would be not guilty of murder, supporting option B. Therefore, the correct verdict based on involuntary intoxication would be not guilty of murder, supporting option B."
             }
         },
         "ground_truth": {
@@ -1731,13 +1731,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA man offered to sell illegal drugs to an undercover police officer, who immediately arrested the man. The officer searched the man but found no drugs in his possession. The jurisdiction follows the common law of conspiracy and solicitation, and uses the dangerous- proximity test for attempt. What crime, if any, has the man committed?\nAnswer Choices:\nA. Conspiracy to distribute controlled substances.\nB. Attempted distribution of controlled substances.\nC. Solicitation.\nD. No crime.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Criminal_law",
-            "chosen_option_label": "B",
+            "domain": "n/a",
+            "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.",
-                "Fact_analysis": "The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.",
-                "Rule_application": "Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.",
-                "Legal_conclusion": "Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B."
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1769,13 +1769,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nTwo women decided to rob a bank. They asked a friend to drive them to the bank without telling him that they intended to rob it. The friend waited in his car outside the bank while the women went in. Suddenly, the two women rushed from the bank holding bags of money as alarms sounded. The friend drove the women back to their apartment. What crime, if any, has the friend committed?\nAnswer Choices:\nA. Accessory after the fact to bank robbery.\nB. Accomplice to bank robbery.\nC. Conspiracy to commit bank robbery.\nD. No crime.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Criminal_law",
-            "chosen_option_label": "A",
+            "domain": "n/a",
+            "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The criminal charge of accessory after the fact, specifically related to the role of an accomplice who assists a perpetrator after the commission of a crime.",
-                "Fact_analysis": "The friend drove the women to their apartment, where the women were hiding with bags of money, after they were confronted by bank security while attempting to rob the bank. He did not inform the police of their whereabouts.",
-                "Rule_application": "An accessory after the fact must have known that the perpetrator committed a felony and then helped the perpetrator to avoid apprehension. In this scenario, the friend\u2019s failure to inform the police of the women\u2019s whereabouts would make him an accessory after the fact.",
-                "Legal_conclusion": "Given that the friend knew of the women\u2019s plan to rob the bank and drove them to their apartment after they were confronted by bank security, he can be found guilty of accessory after the fact. Option A therefore, represents the correct verdict. Therefore, the response should be: [/INST][INCOMPLETE]"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1789,7 +1789,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nPolice officers responding to phone calls of complaining neighbors noticed several broken windows in a home, glass on the ground, and a blood-stained shirt on the front porch. Through a window, the officers saw a man, whose hands were bleeding, shouting and throwing things, but no one else appeared to be present in the home. When the officers knocked on the door, the man refused to respond. The officers then asked if he needed medical assistance. The man told them to leave and not come back unless they had a warrant. The officers then entered the home, and the man pointed a shotgun at them. The officers withdrew but later arrested the man for felony assault on a police officer. Alleging that the warrantless entry violated the Fourth Amendment, the man has moved to suppress the officers\u2019 testimony at trial. Should the court grant the motion to suppress?\nAnswer Choices:\nA. No, because the man lacks standing to complain of an entry under the emergency aid exception to the Fourth Amendment.\nB. No, because the warrantless entry was reasonable under the emergency aid exception to the Fourth Amendment.\nC. Yes, because officers cannot use the emergency aid exception to justify a warrantless entry when only the suspect himself needs aid.\nD. Yes, because the emergency aid exception does not apply when a homeowner clearly and unambiguously invokes his right to a warrant.\nResponse:\n[/INST]",
         "response": {
             "domain": "Criminal_law",
-            "chosen_option_label": "B",
+            "chosen_option_label": "n/a",
             "explanation": {
                 "Legal_concept": "The Fourth Amendment protection against unreasonable searches and seizures, specifically the emergency aid exception to this protection.",
                 "Fact_analysis": "The police were responding to multiple phone calls from neighbors reporting a disturbance at the man\u2019s home. When the police arrived, they saw broken windows, glass on the ground, and a blood-stained shirt on the front porch. Through a window, they saw the man, whose hands were bleeding, shouting and throwing things, but no one else was present. When the police knocked on the door, the man refused to answer, and the officers asked if he needed medical assistance. The man told the officers to leave and not come back unless they had a warrant. The man then aggressively approached the door and pulled a shotgun, prompting the officers to withdraw.",
@@ -1829,10 +1829,10 @@
             "domain": "Criminal_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between criminal negligence and criminal intent",
-                "Fact_analysis": "The woman was driving above the speed limit on a curvy road at night",
-                "Rule_application": "The difference between manslaughter and murder is that manslaughter requires a finding of criminal intent",
-                "Legal_conclusion": "Voluntary manslaughter based on reckless operation of a vehicle is the most serious homicide offense"
+                "Legal_concept": "The distinction between criminal negligence and criminal intent, specifically the difference between manslaughter and murder in regards to intent.",
+                "Fact_analysis": "The woman was driving above the speed limit on a curvy road at night, which caused her to lose control of her car and cross into the opposite lane where a parked truck was sitting. The driver of the truck was attempting to have the car towed when the woman struck him, causing him to be thrown down an embankment and killed. Based on this scenario, the woman would be charged with reckless driving, a misdemeanor.",
+                "Rule_application": "The difference between manslaughter and murder is that manslaughter requires a finding of criminal intent, specifically, that the defendant acted with criminal negligence. In this scenario, the woman did not intend to strike and kill the truck driver, but rather, her actions were based on negligence. Therefore, the correct verdict would be based on manslaughter, specifically, voluntary manslaughter based on reckless operation of a vehicle.",
+                "Legal_conclusion": "Voluntary manslaughter based on reckless operation of a vehicle is the most serious homicide offense, as the woman was driving above the speed limit and causing an accident that resulted in the death of the truck driver. Therefore, the correct verdict would be based on voluntary manslaughter, supporting option B."
             }
         },
         "ground_truth": {
@@ -1848,10 +1848,10 @@
             "domain": "Criminal_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The Fourth Amendment protection against unreasonable searches and seizures",
-                "Fact_analysis": "The question involves a defendant who was arrested and charged with burglary",
-                "Rule_application": "The Fourth Amendment protects individuals against unreasonable searches and seizures. In this scenario",
-                "Legal_conclusion": "Given that the state statute requiring DNA samples from felony arrestees does not establish probable cause"
+                "Legal_concept": "The Fourth Amendment protection against unreasonable searches and seizures, specifically the issue of whether a government agency may collect and store DNA samples from individuals who have been arrested but not convicted of a crime.",
+                "Fact_analysis": "The question involves a defendant who was arrested and charged with burglary, but was later acquitted. The police obtained a DNA sample from the defendant using a cheek swab, but the defendant did not object at the time of the arrest. A year later, the defendant was charged with sexual assault based on DNA evidence, and the defendant filed a motion to suppress the DNA sample on the grounds that the police had obtained it in violation of the Fourth Amendment.",
+                "Rule_application": "The Fourth Amendment protects individuals against unreasonable searches and seizures. In this scenario, the police obtained a DNA sample from the defendant without a warrant, which would generally require probable cause. The state statute requiring DNA samples from felony arrestees does not establish probable cause, and the defendant did not object at the time of the arrest. Therefore, the police acted within the bounds of the statute, but the Fourth Amendment requires a warrant based on probable cause.",
+                "Legal_conclusion": "Given that the state statute requiring DNA samples from felony arrestees does not establish probable cause, the police acted outside the bounds of the Fourth Amendment. Therefore, the correct verdict would be yes, supporting option D. The defendant did not object at the time of the arrest, but he can raise the issue on a timely appeal. Therefore, the correct verdict would be no, supporting option B, if the defendant had timely objected."
             }
         },
         "ground_truth": {

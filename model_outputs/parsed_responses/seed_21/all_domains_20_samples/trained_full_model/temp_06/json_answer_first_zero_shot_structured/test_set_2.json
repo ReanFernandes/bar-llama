@@ -1295,12 +1295,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"chosen_option_label\" : \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    }\n}\n\n<</SYS>>\nQuestion:\nA car owner brought a federal diversity action against the car\u2019s manufacturer, alleging that the manufacturer had fraudulently misrepresented the car\u2019s compliance with federal emissions standards. The manufacturer answered, denying the allegations. After discovery closed, the court entered a final pretrial order setting out the issues for trial. One week later, the owner moved to amend the order to include the issue of whether the manufacturer had also fraudulently misrepresented the car\u2019s fuel economy. What standard will the court use to determine whether to grant the owner\u2019s motion?\nAnswer Choices:\nA. The motion may be granted if justice so requires.\nB. The motion may be granted if the owner\u2019s omission of the fuel economy issue was due to oversight, inadvertence, or excusable neglect.\nC. The motion may be granted only for good cause.\nD. The motion may be granted only to prevent manifest injustice.\nResponse:\n[/INST]",
         "response": {
             "domain": "Civil_procedure",
-            "chosen_option_label": "n/a",
+            "chosen_option_label": "A",
             "explanation": {
-                "Legal_concept": "Amendment of a final pretrial order",
-                "Fact_analysis": "The owner moved to amend a final pretrial order to include the issue of fuel economy",
-                "Rule_application": "Federal Rule 16(e) allows a court to amend a final pretrial order \"to correct a mistake\" or \"to conform to the evidence.\" The court has the discretion to grant the motion if it believes that justice requires it or if the owner's omission was due to oversight",
-                "Legal_conclusion": "Given the court's discretion to grant the motion"
+                "Legal_concept": "Amendment of a final pretrial order, specifically the standard for granting a motion to amend based on the court's discretion.",
+                "Fact_analysis": "The owner moved to amend a final pretrial order to include the issue of fuel economy, one week after the order was entered. The manufacturer had denied the allegations in its answer.",
+                "Rule_application": "Federal Rule 16(e) allows a court to amend a final pretrial order \"to correct a mistake\" or \"to conform to the evidence.\" The court has the discretion to grant the motion if it believes that justice requires it or if the owner's omission was due to oversight, inadvertence, or excusable neglect.",
+                "Legal_conclusion": "Given the court's discretion to grant the motion, the owner's motion to amend the final pretrial order to include the issue of fuel economy is likely to be granted, supporting option A."
             }
         },
         "ground_truth": {
@@ -1561,12 +1561,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"chosen_option_label\" : \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    }\n}\n\n<</SYS>>\nQuestion:\nA developer conveyed a three-acre tract of land to a man by a warranty deed containing a covenant specifying that the land could be used for residential purposes only. The applicable zoning law required that any home in the community be surrounded by at least two acres of vacant land. The man built a home on the land that fully complied with the zoning law and moved into it. Subsequently, the man was diagnosed with a chronic debilitating disease. He told his daughter that he might have to sell his home, go to a nursing home, and after exhausting his assets paying for nursing home care, go on Medicaid for the rest of his life. His daughter offered to take care of him for the rest of his life if he would build her a small home on the westerly portion of his land. The man agreed, but because there was no way to site a home on the westerly portion of the land so that it was surrounded by two acres of vacant land, he applied to the local zoning board for a variance. Should the variance be granted?\nAnswer Choices:\nA. No, because hardship variances are not granted where the land is used for residential purposes.\nB. No, because the man is not entitled to a hardship variance.\nC. Yes, because hardship variances are normally granted when the proposed use is consistent with a covenant in a warranty deed.\nD. Yes, because otherwise the man would have to go on Medicaid.\nResponse:\n[/INST]",
         "response": {
             "domain": "Property",
-            "chosen_option_label": "n/a",
+            "chosen_option_label": "B",
             "explanation": {
-                "Legal_concept": "Hardship variances in zoning law",
-                "Fact_analysis": "The man built a home on the land that fully complied with the zoning law and later agreed to build a second home for his daughter on the westerly portion of his land",
-                "Rule_application": "Hardship variances are only granted when a property owner can demonstrate that the strict application of the zoning law would result in an unnecessary hardship. In this case",
-                "Legal_conclusion": "Given that the man's proposed use of the land does not meet the criteria for a hardship variance"
+                "Legal_concept": "Hardship variances in zoning law, specifically the criteria for granting variances and the concept of a \"hardship\".",
+                "Fact_analysis": "The man built a home on the land that fully complied with the zoning law and later agreed to build a second home for his daughter on the westerly portion of his land, which could not be surrounded by two acres of vacant land due to topographical constraints.",
+                "Rule_application": "Hardship variances are only granted when a property owner can demonstrate that the strict application of the zoning law would result in an unnecessary hardship. In this case, the man's desire to build a home for his daughter does not constitute a hardship, as he has the option to sell his home and move to a nursing home if necessary.",
+                "Legal_conclusion": "Given that the man's proposed use of the land does not meet the criteria for a hardship variance, the variance should not be granted, supporting option B."
             }
         },
         "ground_truth": {

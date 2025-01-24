@@ -176,10 +176,10 @@
             "domain": "Federal rules of civil procedure",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Timeliness of an objection to a federal rule 411 motion preliminary instruction",
-                "Fact_analysis": "The judge included the inappropriate contributory negligence instruction in the jury instructions. The parties had previously submitted proposed instructions",
-                "Rule_application": "Federal rule 411 requires that a party object to a preliminary instruction within 10 days after the jury is instructed",
-                "Legal_conclusion": "Given that the consumer's attorney failed to object to the inappropriate contributory negligence instruction within the time limit specified by federal rule 411"
+                "Legal_concept": "Timeliness of an objection to a federal rule 411 motion preliminary instruction, specifically the time limit for raising an issue on appeal.",
+                "Fact_analysis": "The judge included the inappropriate contributory negligence instruction in the jury instructions. The parties had previously submitted proposed instructions, and the manufacturer's attorney had proposed the language that the jury should not return a verdict for the consumer if they found that the consumer had been contributorily negligent. The judge ultimately included this language in the instructions, and the jury was given the instruction.\"",
+                "Rule_application": "Federal rule 411 requires that a party object to a preliminary instruction within 10 days after the jury is instructed, or the objection is waived. The consumer's attorney did not object to the instruction at that time, and the judge's decision to include the inappropriate language was not grounds for an objection later on. Therefore, the court will not consider the objection.\"",
+                "Legal_conclusion": "Given that the consumer's attorney failed to object to the inappropriate contributory negligence instruction within the time limit specified by federal rule 411, the court will not consider the objection. The decision to include the instruction, as well as the language used, are not grounds for an objection later on.\""
             }
         },
         "ground_truth": {
@@ -822,10 +822,10 @@
             "domain": "Contracts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Intent to create a joint venture in a contractual relationship",
-                "Fact_analysis": "The father made a promise to his daughter to convey property to her upon his death",
-                "Rule_application": "In a joint venture",
-                "Legal_conclusion": "Given that the father's attempt to create a joint venture in his contract with his daughter fails"
+                "Legal_concept": "Intent to create a joint venture in a contractual relationship, specifically the requirement of mutual assent in such a venture.",
+                "Fact_analysis": "The father made a promise to his daughter to convey property to her upon his death, in exchange for her promise to pay a third party, the nephew, $300,000. The father then executed a quitclaim deed to the daughter, transferring ownership of the property to her, without the nephew's knowledge or consent.",
+                "Rule_application": "In a joint venture, the parties must agree to a common objective and contribute something of value towards achieving that objective. The father's attempt to transfer property to his daughter while reserving a future interest in the proceeds of her promise to pay the nephew fails to satisfy this requirement, as it does not establish a common objective or a joint effort towards that objective.",
+                "Legal_conclusion": "Given that the father's attempt to create a joint venture in his contract with his daughter fails, the daughter's promise to pay the nephew is not enforceable, and the neighbor is unlikely to prevail in her suit against the daughter for the $50,000."
             }
         },
         "ground_truth": {
@@ -860,10 +860,10 @@
             "domain": "Tort_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Intentional tort of battery",
-                "Fact_analysis": "A delivery company employee threw a tire at a private road",
-                "Rule_application": "Battery requires an act by the defendant that brings about harmful or offensive contact",
-                "Legal_conclusion": "Given that the delivery company employee's actions meet the elements of battery"
+                "Legal_concept": "Intentional tort of battery, specifically the use of indirect force causing harmful contact.",
+                "Fact_analysis": "A delivery company employee threw a tire at a private road, causing it to hit an 11-year-old boy who was driving a motorcycle on the road. The boy was injured, and he sued the company for negligence.",
+                "Rule_application": "Battery requires an act by the defendant that brings about harmful or offensive contact, intent to bring about such contact, and causation. The throwing of the tire meets these elements, as it was an act that caused harmful contact, was done with the intent to cause such contact, and thus satisfies the requirement of battery.",
+                "Legal_conclusion": "Given that the delivery company employee's actions meet the elements of battery, the boy's argument that his conduct should be judged according to the standard of a reasonable child of like age, intelligence, and experience under the circumstances is irrelevant, as the appropriate standard of care is that of a reasonable person. Therefore, the delivery company's contention that the boy's conduct should be judged according to the standard of a reasonable motorcycle driver, which may be higher than that of a reasonable child, is supported, and the boy is not entitled to be judged according to the standard he has argued for."
             }
         },
         "ground_truth": {
@@ -879,9 +879,9 @@
             "domain": "Contracts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Intent to harm",
-                "Fact_analysis": "The established cemetery sold 'pre-need' funeral plans",
-                "Rule_application": "Tortious interference with contract requires proof of intent to harm",
+                "Legal_concept": "Intent to harm, specifically the tort of interference with contract, in the context of pre-need funeral plans.",
+                "Fact_analysis": "The established cemetery sold 'pre-need' funeral plans, which included funeral services, a casket, and a burial plot, in exchange for advance payment. These plans included a penalty imposed by the seller of up to 15% of the purchase price if the purchaser chose to cancel the plan. A former high-level employee of the cemetery, who knew of the limitations specified in the state statute, recently built a new cemetery near the established cemetery and used postcards to promote it, asserting that anyone who had already purchased a pre-need funeral plan had an unlimited right to cancel that plan at any time, for any reason, without penalty. The postcard also offered a $100 rebate on a pre-need funeral plan with the new cemetery to anyone who canceled an existing plan elsewhere. Several purchasers of funeral plans with the established cemetery canceled their plans and purchased plans from the new cemetery. The established cemetery withheld penalties from the refund amounts, and the purchasers objected and threatened to notify the state consumer protection bureau. The established cemetery sued the former employee for tortious interference with contract. The former employee has moved for summary judgment, based on the foregoing facts.",
+                "Rule_application": "Tortious interference with contract requires proof of intent to harm, specifically the intent to bring about the breach of a contractual duty. The former employee\u2019s actions in promoting the new cemetery and offering incentives to cancel existing plans could be interpreted as an attempt to persuade customers to cancel their contracts with the established cemetery, leading to a breach of the cemetery\u2019s obligation to provide services under the funeral plan. This could be considered intent to harm, as it causes harm to the established cemetery by diverting customers and potentially leading to financial losses.[INCOMPLETE]",
                 "Legal_conclusion": "n/a"
             }
         },
@@ -1012,10 +1012,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Intentional tort of battery",
-                "Fact_analysis": "The man rented a beach house for a weeklong vacation and unpacked in a second-floor bedroom. He realized that the stairwell was too dark to navigate without a light and started down the stairs",
-                "Rule_application": "Battery requires an act by the defendant that brings about harmful or offensive contact",
-                "Legal_conclusion": "Given that the owner's failure to provide reasonably safe premises led to the man's harm"
+                "Legal_concept": "Intentional tort of battery, specifically the use of indirect force causing harmful contact.",
+                "Fact_analysis": "The man rented a beach house for a weeklong vacation and unpacked in a second-floor bedroom. He realized that the stairwell was too dark to navigate without a light and started down the stairs, falling and being seriously injured. The owner failed to provide reasonably safe premises, leading to the man's harm.",
+                "Rule_application": "Battery requires an act by the defendant that brings about harmful or offensive contact, intent to bring about such contact, and causation. The use of indirect force, such as the creation of a dangerous condition, can satisfy the act requirement. The man's descent into the darkened stairwell led to his fall, which caused his harm. This satisfies the act requirement, as the owner's failure to provide adequate lighting caused the man to encounter the danger and fall.\"",
+                "Legal_conclusion": "Given that the owner's failure to provide reasonably safe premises led to the man's harm, and that the use of indirect force, such as the creation of a dangerous condition, can satisfy the act requirement in a battery claim, the man has established a valid claim against the owner for intentional tort of battery. If the jury finds in favor of the man, the court should instruct them to consider the issue of assumption of risk, specifically whether the man knowingly and voluntarily chose to encounter the risk of falling on the darkened stairs. If they conclude that the man did assume the risk, then they must find for the owner, as assumption of risk is a valid defense in a battery claim.\""
             }
         },
         "ground_truth": {
@@ -1240,10 +1240,10 @@
             "domain": "Evidence",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preliminary questions concerning the independent witness' knowledge of the facts",
-                "Fact_analysis": "The police officer received information from the woman",
-                "Rule_application": "Preliminary questions concerning the independent witness' knowledge of the facts are determined by the court. This allows the court to determine whether the witness has sufficient knowledge to provide relevant information",
-                "Legal_conclusion": "Since the court has the authority to determine the scope of the independent witness' testimony"
+                "Legal_concept": "Preliminary questions concerning the independent witness' knowledge of the facts, specifically the chain of events leading up to the witness' decision to testify.",
+                "Fact_analysis": "The police officer received information from the woman, who was being questioned by the police, that the defendant was her cocaine supplier.",
+                "Rule_application": "Preliminary questions concerning the independent witness' knowledge of the facts are determined by the court. This allows the court to determine whether the witness has sufficient knowledge to provide relevant information, as well as to ensure that the testimony is not hearsay, as it is considered by the court.\"",
+                "Legal_conclusion": "Since the court has the authority to determine the scope of the independent witness' testimony, the prosecutor's use of the woman's statement to establish the defendant's role as a cocaine supplier is admissible, as it falls within the realm of preliminary questions concerning the independent witness' knowledge of the facts.\""
             }
         },
         "ground_truth": {
@@ -1354,10 +1354,10 @@
             "domain": "Evidence",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preliminary questions concerning the authentication of a record into evidence",
-                "Fact_analysis": "The plaintiff has sued the defendant in federal court",
-                "Rule_application": "Under federal rules of evidence",
-                "Legal_conclusion": "Given that the newspaper is considered a public record under the federal rules of evidence"
+                "Legal_concept": "Preliminary questions concerning the authentication of a record into evidence, specifically the self-authentication of a newspaper under the federal rules of evidence.",
+                "Fact_analysis": "The plaintiff has sued the defendant in federal court, alleging that the defendant knowingly pursued the plaintiff for payment of debts in violation of an automatic bankruptcy stay. The defendant has moved for summary judgment, arguing that he had no notice of the plaintiff's bankruptcy, and the plaintiff offers a copy of a local newspaper that contains a front-page story about the plaintiff's petition for bankruptcy, along with evidence that the defendant is a daily subscriber to the newspaper.",
+                "Rule_application": "Under federal rules of evidence, a newspaper is considered a 'public record' and is self-authenticating, meaning that it does not require additional authentication to be considered authentic. The use of such a record to establish the truth of a matter is not considered hearsay, as it is not offered for a determination of the truth of the matter asserted, but rather to establish the fact of the matter, such as the date of publication or the name of the newspaper.\"",
+                "Legal_conclusion": "Given that the newspaper is considered a public record under the federal rules of evidence, and that the use of such a record to establish the truth of a matter is not considered hearsay, the newspaper story satisfies the requirement for admissibility of the plaintiff's offer to prove that the defendant is a daily subscriber to the newspaper, and therefore the motion for summary judgment will be denied, supporting option C.\""
             }
         },
         "ground_truth": {
@@ -1544,10 +1544,10 @@
             "domain": "Property_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between an easement appurtenant and an easement in gross",
-                "Fact_analysis": "The man owned an oceanfront cottage and the woman owned land across the street that did not have direct ocean access. The man executed a deed titled 'Grant of Pedestrian Right-of-Way' to the woman and 'her heirs and assigns' over a designated strip of his land between the street and the ocean. The deed was never recorded",
-                "Rule_application": "An easement is a nonpossessory interest in land that confers a limited set of rights on the easement holder. An easement appurtenant runs with the land and is tied to the property on which it is located",
-                "Legal_conclusion": "Given that the man's grant of an easement in gross to the woman created an obligation on his part to use reasonable efforts to ensure that the woman was able to use the easement"
+                "Legal_concept": "The distinction between an easement appurtenant and an easement in gross, specifically in the context of a grant of a right-of-way over another person's land.",
+                "Fact_analysis": "The man owned an oceanfront cottage and the woman owned land across the street that did not have direct ocean access. The man executed a deed titled 'Grant of Pedestrian Right-of-Way' to the woman and 'her heirs and assigns' over a designated strip of his land between the street and the ocean. The deed was never recorded, and the woman made no mention of the easement in her later sale of the land. The buyer learned about the easement after taking possession, and the man constructed a chain-link fence to block the way, leading the buyer to sue to establish her right to use the easement.",
+                "Rule_application": "An easement is a nonpossessory interest in land that confers a limited set of rights on the easement holder. An easement appurtenant runs with the land and is tied to the property on which it is located, while an easement in gross is a nonpossessory interest in land that is not tied to any specific property and can be transferred independently of the land on which it is located. A grant of an easement in gross creates an obligation on the part of the grantor to use reasonable efforts to see that the easement is used by the grantee, but the grantor is not obligated to ensure that the easement is actually used. In this case, the man's grant of an easement in gross to the woman created an obligation on his part to use reasonable efforts to ensure that the woman was able to use the easement, but he was not obligated to ensure that the easement was actually used by the woman or her successors in interest. Therefore, the man's failure to ensure that the woman was able to use the easement, as well as his construction of the chain-link fence, would likely result in the buyer's failure to establish her right to use the easement and support a decision in favor of the man.",
+                "Legal_conclusion": "Given that the man's grant of an easement in gross to the woman created an obligation on his part to use reasonable efforts to ensure that the woman was able to use the easement, but he was not obligated to ensure that the easement was actually used by the woman or her successors in interest, the buyer's failure to establish her right to use the easement and the man's construction of the chain-link fence would likely"
             }
         },
         "ground_truth": {
@@ -1675,7 +1675,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\n\n<</SYS>>\nQuestion:\nA woman was the trustee of a trust fund. The corpus of the fund was invested in certificates of deposit and high-grade bonds. When one of the certificates of deposit, in the amount of $100,000, matured, the woman cashed the certificate and invested the proceeds under her own name in a speculative stock. In three months, the value of the stock had soared, and the woman sold the stock for $200,000. With the proceeds of the sale, the woman purchased a $120,000 certificate of deposit in the name of the trust. She gave the remaining $80,000 to charity. The woman is charged with embezzlement. Under the applicable statute, the degree of the crime (and, hence, the severity of the authorized punishment) depends upon the value of the property embezzled. Of what crime, if any, could the woman properly be convicted?\nAnswer Choices:\nA. Embezzlement of $200,000.\nB. Embezzlement of $100,000.\nC. Embezzlement of $80,000.\nD. No embezzlement crime.\nResponse:\n[/INST]",
         "response": {
             "domain": "Criminal_law",
-            "chosen_option_label": "B",
+            "chosen_option_label": "n/a",
             "explanation": {
                 "Legal_concept": "The distinction between express and implied trusts, specifically the requirement of intention to create a trust in an express trust.",
                 "Fact_analysis": "The woman was the trustee of a trust fund, which was initially invested in certificates of deposit and high-grade bonds. When one of the certificates of deposit matured, the woman cashed it and invested the proceeds under her own name in a speculative stock. The value of the stock had soared, and the woman sold it, using the proceeds to purchase a certificate of deposit in the name of the trust. She then gave the remaining money to charity, which supports the argument that the money was intended for the trust. This evidence supports the conclusion that the woman intended to create a trust, which meets the requirement for an express trust.",

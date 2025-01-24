@@ -5,10 +5,10 @@
             "domain": "Constitutional_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The Fifth Amendment protection against government takings of private property without just compensation",
-                "Fact_analysis": "The state law at issue allows for the automatic termination of oil and gas interests of an owner who dies and does not own a certain threshold percentage of the interests",
-                "Rule_application": "Inverse condemnation allows a property owner to bring a suit against the government if the government takes private property without providing just compensation. In this scenario",
-                "Legal_conclusion": "Given that the state law automatically terminates an owner\u2019s interest in oil and gas reserves if they die and do not own a certain threshold percentage"
+                "Legal_concept": "The Fifth Amendment protection against government takings of private property without just compensation, specifically the concept of inverse condemnation.",
+                "Fact_analysis": "The state law at issue allows for the automatic termination of oil and gas interests of an owner who dies and does not own a certain threshold percentage of the interests, effectively transferring those interests to the remaining owners. This could result in the uncompensated taking of small ownership interests in oil and gas reserves, particularly if the owner dies shortly after obtaining the interest.",
+                "Rule_application": "Inverse condemnation allows a property owner to bring a suit against the government if the government takes private property without providing just compensation. In this scenario, the state law would trigger an inverse condemnation claim, as the owner\u2019s property interest is being taken without just compensation.",
+                "Legal_conclusion": "Given that the state law automatically terminates an owner\u2019s interest in oil and gas reserves if they die and do not own a certain threshold percentage, without providing just compensation, the answer would be B. The law burdens interstate commerce in oil and gas production by making it more difficult to enter into extraction contracts due to the need to include large numbers of heirs for any given tract of land. Therefore, the correct verdict would be B, supporting the burden on interstate commerce in oil and gas production."
             }
         },
         "ground_truth": {
@@ -24,10 +24,10 @@
             "domain": "Constitutional_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The First Amendment protection of freedom of speech and association",
-                "Fact_analysis": "The mayor\u2019s confrontation with the paving company owner",
-                "Rule_application": "Government officials may not",
-                "Legal_conclusion": "Given that the mayor\u2019s decision to reject the owner\u2019s bid was likely based on the owner\u2019s protected political speech and association"
+                "Legal_concept": "The First Amendment protection of freedom of speech and association, specifically the government\u2019s ability to regulate political speech.",
+                "Fact_analysis": "The mayor\u2019s confrontation with the paving company owner, who was supporting a candidate opposed to the incumbent mayor, regarding the removal of bumper stickers promoting the candidate, indicates that the mayor\u2019s motivation in rejecting the owner\u2019s bid was likely based on the owner\u2019s political activity.",
+                "Rule_application": "Government officials may not, on the basis of protected speech, prevent a person from engaging in activities related to the election of a candidate. Therefore, the mayor\u2019s decision to reject the owner\u2019s bid based on the owner\u2019s use of his paving trucks to promote the challenger candidate would not be a valid government action.",
+                "Legal_conclusion": "Given that the mayor\u2019s decision to reject the owner\u2019s bid was likely based on the owner\u2019s protected political speech and association, the correct verdict would be B, supporting the owner\u2019s right to free speech and association. Therefore, the verdict should be B, supporting option B."
             }
         },
         "ground_truth": {
@@ -100,10 +100,10 @@
             "domain": "Constitutional_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The constitutionality of government actions under the Takings Clause of the Fifth Amendment",
-                "Fact_analysis": "The question involves a state law that creates an easement across a portion of a private farm for hikers who wish to use a historic trail that crosses the farm. The law allows the farm\u2019s owner to charge hikers a fee to cover the costs of this use",
-                "Rule_application": "The Takings Clause of the Fifth Amendment requires the government to compensate a property owner when it takes private property for public use",
-                "Legal_conclusion": "Given that the government is not compensating the owner for the use of his land"
+                "Legal_concept": "The constitutionality of government actions under the Takings Clause of the Fifth Amendment, specifically whether a government action constitutes a valid taking of private property without just compensation.",
+                "Fact_analysis": "The question involves a state law that creates an easement across a portion of a private farm for hikers who wish to use a historic trail that crosses the farm. The law allows the farm\u2019s owner to charge hikers a fee to cover the costs of this use, but it does not otherwise compensate the owner.",
+                "Rule_application": "The Takings Clause of the Fifth Amendment requires the government to compensate a property owner when it takes private property for public use, even if the government has a valid public purpose. In this scenario, the government is taking the owner\u2019s land for the public purpose of promoting tourism by allowing hikers to use an easement across the farm. However, the government is not compensating the owner for this use.",
+                "Legal_conclusion": "Given that the government is not compensating the owner for the use of his land, the correct verdict would be no, supporting option B. The government must compensate the owner if it takes his land for public use, even if the public use is a valid one. Therefore, the fee provision in the law, which allows the owner to charge hikers a fee to cover the costs of this use, is unconstitutional under the Takings Clause. Therefore, the correct verdict would be no, supporting option B."
             }
         },
         "ground_truth": {
@@ -157,10 +157,10 @@
             "domain": "Constitutional_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The separation of powers under Article III of the US Constitution",
-                "Fact_analysis": "The question describes a statute that gives the Supreme Court original jurisdiction over any cause of action against a military officer for official misconduct",
-                "Rule_application": "Article III establishes the Supreme Court's original jurisdiction",
-                "Legal_conclusion": "Given that the statute would expand the Supreme Court's original jurisdiction beyond what is established by Article III"
+                "Legal_concept": "The separation of powers under Article III of the US Constitution, specifically the definition of the Supreme Court's original jurisdiction.",
+                "Fact_analysis": "The question describes a statute that gives the Supreme Court original jurisdiction over any cause of action against a military officer for official misconduct, with the stated intent of ensuring the prompt disposition of such actions by eliminating the need for appeals. This statute would directly conflict with Article III, which establishes the Supreme Court's original jurisdiction in certain cases, including those involving a federal question or a writ of habeas corpus.",
+                "Rule_application": "Article III establishes the Supreme Court's original jurisdiction, which includes cases involving a federal question or a writ of habeas corpus. The statute at issue would expand the Supreme Court's original jurisdiction to include causes of action against military officers for official misconduct, which does not fall within the established jurisdiction. Therefore, the statute would be unconstitutional under Article III.",
+                "Legal_conclusion": "Given that the statute would expand the Supreme Court's original jurisdiction beyond what is established by Article III, the correct verdict would be no, supporting option A. The correct option, A, considers the separation of powers under Article II, which grants the President as commander in chief the authority to sanction military misconduct. Therefore, the President's authority to discipline military officers supersedes the Supreme Court's original jurisdiction in this scenario, supporting option A."
             }
         },
         "ground_truth": {
@@ -176,10 +176,10 @@
             "domain": "Constitutional_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The free speech protection under the First Amendment",
-                "Fact_analysis": "The fact that the speaker set fire to a pile of one-dollar bills while he was arguing against the use of paper money in a public park suggests that he was using the fire to further his speech. However",
-                "Rule_application": "The government can regulate the time",
-                "Legal_conclusion": "Given that the speaker was convicted of violating an ordinance that prohibits starting an open fire in a public place without a permit"
+                "Legal_concept": "The free speech protection under the First Amendment, specifically the government's ability to regulate speech based on time, place, and manner.",
+                "Fact_analysis": "The fact that the speaker set fire to a pile of one-dollar bills while he was arguing against the use of paper money in a public park suggests that he was using the fire to further his speech. However, the speaker was convicted of violating a local ordinance that prohibits starting an open fire in a public place without a permit from the fire department.",
+                "Rule_application": "The government can regulate the time, place, and manner of free speech, as long as the regulation is content-neutral, serves a significant government interest, and is narrowly tailored. In this scenario, the government interest of preventing fires in public places is significant, and the ordinance is narrowly tailored because it requires a permit for open fires in public places.",
+                "Legal_conclusion": "Given that the speaker was convicted of violating an ordinance that prohibits starting an open fire in a public place without a permit, the correct verdict would be based on the government's ability to regulate time, place, and manner of free speech. Therefore, option B, which states that the ordinance is constitutional because it regulates conduct rather than speech, is the correct verdict."
             }
         },
         "ground_truth": {
@@ -192,13 +192,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nSwimmers were unable to use a city-owned beach for several days because demonstrators protesting city policies had taken over the beach. Immediately after the demonstration ended, the city enacted an ordinance that banned \u201call First Amendment activities\u201d on the beach. What is the best argument AGAINST the constitutionality of the ordinance?\nAnswer Choices:\nA. The ordinance amounts to a prior restraint on speech.\nB. The ordinance is overly broad.\nC. The beach is a public forum.\nD. The city enacted the ordinance to prevent further protests of its policies.\nResponse:\n[/INST]",
         "response": {
-            "domain": "First_Amendment",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The protection of free speech under the First Amendment",
-                "Fact_analysis": "The demonstrators had been protesting city policies on the beach",
-                "Rule_application": "The government may not restrict the content of speech based on the topic discussed",
-                "Legal_conclusion": "Option B is the best argument against the ordinance's constitutionality"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -423,10 +423,10 @@
             "domain": "Criminal_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Self-defense in criminal law",
-                "Fact_analysis": "The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave",
-                "Rule_application": "Self-defense allows an individual to use reasonable force",
-                "Legal_conclusion": "Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon"
+                "Legal_concept": "Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodynamic harm.",
+                "Fact_analysis": "The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.",
+                "Rule_application": "Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodynamic harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.",
+                "Legal_conclusion": "Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B. However, if state law allows it, the woman could be tried for both murder and attempted murder, with the verdicts and sentences being determined separately. Option A would allow for separate trials, with the woman being found not guilty of attempted murder and being tried again for murder, potentially resulting in a different verdict. Option C would allow for separate verdicts, but the sentences would have to run concurrently, which may not be appropriate in this scenario. Option D would allow for a single verdict, but the woman would be found not guilty of attempted murder, which would not be a just outcome given that she intentionally shot at her husband, who was sitting next to her on the bed. Therefore, the correct verdict would be based on self-defense, supporting option B, and the appropriate verdict would be based on state law, supporting option A."
             }
         },
         "ground_truth": {
@@ -442,10 +442,10 @@
             "domain": "Criminal_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Self-defense in criminal law",
-                "Fact_analysis": "The scenario describes two men who planned to rob a bank",
-                "Rule_application": "Self-defense allows an individual to use reasonable force",
-                "Legal_conclusion": "Given that the second man was not the actual shooter and was defending himself against an imminent threat posed by the first man with a deadly weapon"
+                "Legal_concept": "Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.",
+                "Fact_analysis": "The scenario describes two men who planned to rob a bank, and the first man shot and killed a teller during the robbery. The second man was tried and convicted based on his involvement in the robbery, but the jury found him not guilty of murder based on self-defense.",
+                "Rule_application": "Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the second man could argue that he was protecting himself against an immediate threat posed by the first man with a deadly weapon.",
+                "Legal_conclusion": "Given that the second man was not the actual shooter and was defending himself against an imminent threat posed by the first man with a deadly weapon, his death sentence would likely be found constitutional. Therefore, the correct verdict would be based on self-defense, supporting option B. The correct verdict would be no based on the first man's life sentence, supporting option A. The correct verdict would be no based on the second man's intellectual disability, supporting option C. The correct verdict would be yes based on the second man's involvement in the robbery and the first man's use of deadly force, supporting option D."
             }
         },
         "ground_truth": {
@@ -461,10 +461,10 @@
             "domain": "Criminal_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The preclusion of double jeopardy",
-                "Fact_analysis": "The question asks about a defendant who was tried on a charge of first-degree premeditated murder",
-                "Rule_application": "Double jeopardy protects against being tried again for the same offense after acquittal. Therefore",
-                "Legal_conclusion": "Therefore"
+                "Legal_concept": "The preclusion of double jeopardy, specifically the protection against being tried again for the same offense after acquittal.",
+                "Fact_analysis": "The question asks about a defendant who was tried on a charge of first-degree premeditated murder, but the jury was also instructed on the lesser included offense of second-degree murder. The defendant was acquitted of first-degree murder based on the verdict of second-degree murder, but the verdict was later overturned on an erroneous evidentiary ruling.",
+                "Rule_application": "Double jeopardy protects against being tried again for the same offense after acquittal. Therefore, the correct verdict would be based on whether the defendant can be retried for first-degree murder. Given that the jury was not asked to decide on the first-degree murder charge, the defendant can be retried because the verdict on the lesser included offense of second-degree murder does not preclude a retrial on the original charge of first-degree murder.",
+                "Legal_conclusion": "Therefore, the correct verdict would be based on whether the defendant can be retried for first-degree murder. Given that the jury was not asked to decide on the first-degree murder charge, the defendant can be retried because the verdict on the lesser included offense of second-degree murder does not preclude a retrial on the original charge of first-degree murder. Therefore, the correct verdict would be based on whether the defendant can be retried for first-degree murder. Given that the jury was not asked to decide on the first-degree murder charge, the defendant can be retried because the verdict on the lesser included offense of second-degree murder does not preclude a retrial on the original charge of first-degree murder. Therefore, the correct verdict would be based on whether the defendant can be retried for first-degree murder. Given that the jury was not asked to decide on the first-degree murder charge, the defendant can be retried because the verdict on the lesser included offense of second-degree murder does not preclude a retrial on the original charge of first-degree murder. Therefore, the correct verdict would be based on whether the defendant can be retried for first-degree murder. Given that the jury was not asked to decide on the first-degree murder charge, the defendant can be retried because the verdict on the lesser included off"
             }
         },
         "ground_truth": {
@@ -499,10 +499,10 @@
             "domain": "Criminal_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The pretrial discovery rule regarding the duty to disclose prior criminal convictions of a witness",
-                "Fact_analysis": "The prosecution failed to disclose the witness\u2019 prior perjury conviction",
-                "Rule_application": "Federal courts have established that the government must disclose to the defense any material",
-                "Legal_conclusion": "Given that the prosecution\u2019s failure to disclose the witness\u2019 prior perjury conviction violated the government\u2019s discovery obligation"
+                "Legal_concept": "The pretrial discovery rule regarding the duty to disclose prior criminal convictions of a witness, specifically the impeachment of a witness\u2019 credibility.",
+                "Fact_analysis": "The prosecution failed to disclose the witness\u2019 prior perjury conviction, which was relevant to impeach his credibility in the burglary trial. The defense filed a motion for a new trial based on the discovery rule, but the trial court rejected the motion.",
+                "Rule_application": "Federal courts have established that the government must disclose to the defense any material, exculpatory evidence that is known to the government. In this scenario, the government\u2019s failure to disclose the witness\u2019 prior perjury conviction, which was specifically relevant to his credibility, would be considered material.",
+                "Legal_conclusion": "Given that the prosecution\u2019s failure to disclose the witness\u2019 prior perjury conviction violated the government\u2019s discovery obligation, the correct verdict would be based on federal constitutional rights. Therefore, option D, which allows for a verdict based on federal constitutional rights regardless of the likelihood of a different outcome, is the correct verdict."
             }
         },
         "ground_truth": {
@@ -613,10 +613,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Frustration of purpose in contract law",
-                "Fact_analysis": "The question describes a scenario where the property owner hired an arborist to cut down all the trees on her property and transport them to a lumber company. The arborist completed his work on the first day",
-                "Rule_application": "When a contract is discharged by frustration of purpose",
-                "Legal_conclusion": "Option C"
+                "Legal_concept": "Frustration of purpose in contract law, specifically the discharge of a contract due to unforeseen circumstances that make performance impossible.",
+                "Fact_analysis": "The question describes a scenario where the property owner hired an arborist to cut down all the trees on her property and transport them to a lumber company. The arborist completed his work on the first day, but the trees were destroyed by fire the same night. This scenario implies that the fire was unforeseen and not caused by the arborist, making it a valid example of frustration of purpose.",
+                "Rule_application": "When a contract is discharged by frustration of purpose, the non-breaching party is not obligated to pay the other party for the work that was completed. In this scenario, the property owner is not obligated to pay the arborist because the trees were destroyed by fire, making the contract impossible to perform.",
+                "Legal_conclusion": "Option C, which states that the property owner is not obligated to pay the arborist because the contract was discharged by frustration of purpose, supports the correct verdict. Therefore, the correct verdict would be option C, supporting option C."
             }
         },
         "ground_truth": {
@@ -651,10 +651,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The statute of frauds",
-                "Fact_analysis": "The employer made an oral offer of employment to the job applicant",
-                "Rule_application": "Given that the offer was not fully performed within a year",
-                "Legal_conclusion": "The employer made an oral offer of employment to the job applicant"
+                "Legal_concept": "The statute of frauds, specifically the requirement that contracts involving the sale of goods, land, or other items of value must be in writing to be valid.",
+                "Fact_analysis": "The employer made an oral offer of employment to the job applicant, who accepted by starting work on January 2. However, the employment was to be for one year from that date, which was more than a year after the offer was made. Therefore, the offer was not fully performed within a year, which is a requirement for the statute of frauds to be avoided.",
+                "Rule_application": "Given that the offer was not fully performed within a year, the statute of frauds would be an effective defense for the employer in the job applicant\u2019s breach of contract action. Option C is the correct choice, supporting the defense.",
+                "Legal_conclusion": "The employer made an oral offer of employment to the job applicant, who accepted by starting work on January 2. However, the employment was to be for one year from that date, which was more than a year after the offer was made. Therefore, the offer was not fully performed within a year, which is a requirement for the statute of frauds to be avoided. Therefore, option C, supporting the defense, is the correct verdict."
             }
         },
         "ground_truth": {
@@ -689,10 +689,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The duty of good faith and fair dealing in contract interpretation",
-                "Fact_analysis": "The buyer and broker were parties to a contract that required delivery and payment on March 19",
-                "Rule_application": "The duty of good faith and fair dealing requires parties to a contract to act in good faith and not unreasonably withhold performance. In this scenario",
-                "Legal_conclusion": "Given that the broker\u2019s failure to perform on March 19 was the proximate cause of the buyer\u2019s inability to complete the transaction"
+                "Legal_concept": "The duty of good faith and fair dealing in contract interpretation, specifically regarding the issue of timely performance.",
+                "Fact_analysis": "The buyer and broker were parties to a contract that required delivery and payment on March 19, but neither party appeared at the warehouse on that date. When the buyer called the broker on March 21 and asked him to come to the warehouse to complete the transaction, the broker refused, indicating that he was not willing to perform his obligation under the contract. This failure to perform on the broker\u2019s part constitutes a breach.",
+                "Rule_application": "The duty of good faith and fair dealing requires parties to a contract to act in good faith and not unreasonably withhold performance. In this scenario, the broker\u2019s failure to show up at the warehouse on March 19 to complete the transaction would not be considered a reasonable effort under imminent threat.",
+                "Legal_conclusion": "Given that the broker\u2019s failure to perform on March 19 was the proximate cause of the buyer\u2019s inability to complete the transaction, the buyer has a viable breach of contract claim against the broker. Therefore, the correct verdict would be Yes, supporting option D."
             }
         },
         "ground_truth": {
@@ -708,10 +708,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The duty of good faith and fair dealing in contract interpretation",
-                "Fact_analysis": "The buyer and seller entered into a contract to purchase lumber for delivery on July 1. When the market price of lumber increased significantly",
-                "Rule_application": "The rule of good faith and fair dealing requires parties to interpret contract terms reasonably",
-                "Legal_conclusion": "Given that the buyer failed to accept the seller\u2019s reasonable offer to renegotiate the contract price"
+                "Legal_concept": "The duty of good faith and fair dealing in contract interpretation, specifically the requirement that parties act in good faith when interpreting the terms of a contract.",
+                "Fact_analysis": "The buyer and seller entered into a contract to purchase lumber for delivery on July 1. When the market price of lumber increased significantly, the seller notified the buyer of a price increase and invited her to renegotiate the contract price. The buyer refused, and the seller then cancelled the contract. The buyer then sued the seller for breach of contract.",
+                "Rule_application": "The rule of good faith and fair dealing requires parties to interpret contract terms reasonably, taking into account the circumstances of the particular transaction. In this scenario, the seller acted within the bounds of good faith when he notified the buyer of a price increase and offered to renegotiate the contract price. The buyer\u2019s failure to accept this offer would be considered a failure to act in good faith.",
+                "Legal_conclusion": "Given that the buyer failed to accept the seller\u2019s reasonable offer to renegotiate the contract price, she will likely be found to have breached her duty to act in good faith. Therefore, the correct verdict would be based on the buyer\u2019s breach, supporting option B. Additionally, the buyer\u2019s damages will be limited to the difference between the price offered by the seller and the price she actually paid for replacement lumber, which is $2,000. Therefore, the buyer will be likely to prevail, and her damages will be $2,000, supporting option B and D."
             }
         },
         "ground_truth": {
@@ -746,10 +746,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The interpretation of contractual terms",
-                "Fact_analysis": "The question describes a contract between a commercial fishing company and a seafood cannery",
-                "Rule_application": "When interpreting the meaning of a contractual term",
-                "Legal_conclusion": "Given that both parties were acting in good faith and the fishing company drafted the contract"
+                "Legal_concept": "The interpretation of contractual terms, specifically the meaning of a specific term in a contract.",
+                "Fact_analysis": "The question describes a contract between a commercial fishing company and a seafood cannery, where the fishing company agreed to provide a specified quantity of fresh tuna to the cannery at an agreed-upon rate during the summer season. However, the parties have discovered that they attach different meanings to the term \u2018summer season\u2019, with the fishing company understanding it to mean June 15 to September 15 and the cannery understanding it to mean May 15 to September 15, based on trade usage in their industry.",
+                "Rule_application": "When interpreting the meaning of a contractual term, courts will generally look to the intention of the parties at the time they entered into the contract. If the parties have explicitly stated the meaning of the term, that meaning will be given effect. However, if the parties have not explicitly stated the meaning, the court will look to the language of the contract and the surrounding circumstances to determine the parties\u2019 intent.",
+                "Legal_conclusion": "Given that both parties were acting in good faith and the fishing company drafted the contract, the court is likely to determine the meaning of the term \u2018summer season\u2019 based on the cannery\u2019s understanding, which is consistent with trade usage in the industry. Therefore, option B is the correct verdict, supporting the cannery\u2019s position that the summer season runs from May 15 to September 15."
             }
         },
         "ground_truth": {
@@ -822,10 +822,10 @@
             "domain": "Evidence",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The preliminary question of whether a federal court should apply federal common law or state law in determining the admissibility of a particular piece of evidence",
-                "Fact_analysis": "The question presents the scenario of a drug abuse counselor from an employee assistance program who was consulted by the defendant regarding his drug use. The plaintiff seeks to have the counselor testify about her communications with the defendant",
-                "Rule_application": "Federal common law",
-                "Legal_conclusion": "Given that federal common law provides for the recognition of privileged communications between attorney and client or spouses"
+                "Legal_concept": "The preliminary question of whether a federal court should apply federal common law or state law in determining the admissibility of a particular piece of evidence, specifically in the context of privileged communications in a diversity action.",
+                "Fact_analysis": "The question presents the scenario of a drug abuse counselor from an employee assistance program who was consulted by the defendant regarding his drug use. The plaintiff seeks to have the counselor testify about her communications with the defendant, but the communications are privileged under the relevant state law. The fact that the action is being brought in federal court raises the question of whether federal common law should be applied in determining the admissibility of the counselor\u2019s testimony.",
+                "Rule_application": "Federal common law, specifically the federal rules of evidence, provides that a privilege recognizes a limited protection for communications made in confidence between attorney and client, or between spouses. In this scenario, the privilege protects the communications between the counselor and the defendant, who was seeking counseling for his drug use. Therefore, federal common law would support the admissibility of the counselor\u2019s testimony, supporting option A.",
+                "Legal_conclusion": "Given that federal common law provides for the recognition of privileged communications between attorney and client or spouses, and that the defendant was seeking counseling from the counselor regarding his drug use, the court should apply federal common law in determining the admissibility of the counselor\u2019s testimony. Therefore, option A, which supports the application of federal common law, is the correct verdict."
             }
         },
         "ground_truth": {
@@ -877,7 +877,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nDuring a criminal investigation of possible securities fraud committed by the senior management of a public corporation, the prosecutor has called a witness to testify before a grand jury. The witness will testify that he was an accountant for the corporation, that he dealt with its senior management on a daily basis concerning the corporation\u2019s financial disclosures to the public, and that, in his opinion, all members of the senior management knew that the disclosures were fraudulent. Can the witness\u2019s testimony be considered by the grand jury?\nAnswer Choices:\nA. No, because the witness has not been qualified as an expert regarding fraudulent financial disclosures.\nB. No, because the witness\u2019s opinion about senior management\u2019s knowledge is not rationally based on his perception and would not be helpful to the grand jury.\nC. Yes, because the rules of evidence do not apply to grand jury proceedings.\nD. Yes, because the witness\u2019s opinion is rationally based on his perception and would be helpful to the grand jury.\nResponse:\n[/INST]",
         "response": {
             "domain": "Criminal_law",
-            "chosen_option_label": "D",
+            "chosen_option_label": "n/a",
             "explanation": {
                 "Legal_concept": "The hearsay rule in criminal proceedings, specifically the exception for former testimony of a witness who is unavailable to testify at trial.",
                 "Fact_analysis": "The question asks about a grand jury proceeding, where the hearsay rule does not generally apply. The witness is testifying about his own prior testimony regarding his opinion on the knowledge of senior management regarding fraudulent financial disclosures made by the corporation.",
@@ -917,10 +917,10 @@
             "domain": "Evidence",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preliminary questions concerning the qualification of an expert witness",
+                "Legal_concept": "Preliminary questions concerning the qualification of an expert witness, specifically the admissibility of expert testimony based on hearsay.",
                 "Fact_analysis": "The neighbor objects to the admission of a fire marshal\u2019s report that includes hearsay statements from a witness who stated that the neighbor started the fire by lighting a match. The neighbor\u2019s objection centers around the hearsay nature of the statement.",
-                "Rule_application": "Preliminary questions concerning the qualification of an expert witness are addressed by Federal Rule of Evidence 702",
-                "Legal_conclusion": "Given that the fire marshal\u2019s conclusion is based on his own training and experience"
+                "Rule_application": "Preliminary questions concerning the qualification of an expert witness are addressed by Federal Rule of Evidence 702, which allows the use of expert testimony if the expert has sufficient knowledge, based on specialized training or experience, to provide opinion testimony on a particular subject. In this scenario, the fire marshal is an expert witness who relied on his training and experience in fire investigation to reach a conclusion that the neighbor started the fire.",
+                "Legal_conclusion": "Given that the fire marshal\u2019s conclusion is based on his own training and experience, and that the hearsay statement from the witness supports his conclusion, the correct verdict would be to admit the report in its entirety. Option B is the correct verdict, supporting the admissibility of the report."
             }
         },
         "ground_truth": {
@@ -936,10 +936,10 @@
             "domain": "Insurance_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The issue of preliminary questions in a civil trial",
-                "Fact_analysis": "The fact that the agent did not notify the woman about the need for a supplemental policy to cover house contents",
-                "Rule_application": "Preliminary questions in a civil trial include issues of law and fact that are not material to the ultimate issue in the case and that are raised by a party before the jury is impaneled. In this scenario",
-                "Legal_conclusion": "Given that the agent\u2019s failure to notify the woman about the need for a supplemental policy to cover house contents led to the house being partially insured"
+                "Legal_concept": "The issue of preliminary questions in a civil trial, specifically whether the agent\u2019s failure to notify the woman about the need for a supplemental policy to cover house contents constituted a breach of contract.",
+                "Fact_analysis": "The fact that the agent did not notify the woman about the need for a supplemental policy to cover house contents, which led to the house being partially insured, is the central issue in the woman\u2019s breach of contract claim against the insurance company.",
+                "Rule_application": "Preliminary questions in a civil trial include issues of law and fact that are not material to the ultimate issue in the case and that are raised by a party before the jury is impaneled. In this scenario, the question of whether the agent\u2019s failure to notify the woman about the need for a supplemental policy to cover house contents constitutes a breach of contract is a preliminary question that is raised by the woman\u2019s attorney and that will be determined by the jury.",
+                "Legal_conclusion": "Given that the agent\u2019s failure to notify the woman about the need for a supplemental policy to cover house contents led to the house being partially insured, which contributed to the woman\u2019s loss in the fire, the correct verdict would be in favor of the woman. Therefore, the correct option based on this scenario would be D, allowing the supervisor\u2019s testimony regarding the company\u2019s routine practice of notifying customers about the need for supplemental policies, which supports the woman\u2019s claim that the agent breached his contractual duty to inform her of this requirement."
             }
         },
         "ground_truth": {
@@ -1012,10 +1012,10 @@
             "domain": "Evidence",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preliminary questions regarding the admissibility of hearsay evidence in a civil trial",
-                "Fact_analysis": "The question involves whether the defendant can introduce the neighbor\u2019s testimony that the woman told him a week after the accident that the defendant had not run the red light",
-                "Rule_application": "Preliminary questions regarding the admissibility of hearsay evidence are determined by federal rules of evidence",
-                "Legal_conclusion": "Given that the woman was not given an opportunity to explain or deny the statement made by the neighbor"
+                "Legal_concept": "Preliminary questions regarding the admissibility of hearsay evidence in a civil trial, specifically regarding the admissibility of a prior inconsistent statement by a witness.",
+                "Fact_analysis": "The question involves whether the defendant can introduce the neighbor\u2019s testimony that the woman told him a week after the accident that the defendant had not run the red light, to impeach the woman\u2019s credibility if she testified that the defendant had run the red light.",
+                "Rule_application": "Preliminary questions regarding the admissibility of hearsay evidence are determined by federal rules of evidence, specifically Rule 601, which states that a witness may be impeached by proof that the witness has testified falsely on a material point while under oath.",
+                "Legal_conclusion": "Given that the woman was not given an opportunity to explain or deny the statement made by the neighbor, the neighbor\u2019s testimony about the woman\u2019s statement would not be admissible under federal rules of evidence. Therefore, the correct verdict would be D, based on the lack of admissibility of hearsay evidence and the impeachment of a witness."
             }
         },
         "ground_truth": {
@@ -1047,13 +1047,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA defendant has been sued for theft by his former employer. At trial, the employer seeks to call the defendant\u2019s estranged daughter to testify. The daughter would testify that her brother told her, \u201cI helped [the defendant] steal money from his employer.\u201d The brother is available to testify but would be a hostile witness. The defendant\u2019s attorney objects to the daughter\u2019s testimony on hearsay grounds. The employer argues that the statement is admissible under the hearsay exception for statements against interest. Should the court permit the daughter to testify about her brother\u2019s statement over the defendant\u2019s objection?\nAnswer Choices:\nA. No, because the brother is available to testify.\nB. No, because the hearsay exception for statements against penal interest applies only in criminal cases.\nC. Yes, because the statement exposes the brother to criminal liability.\nD. Yes, but only if corroborating circumstances clearly indicate the statement\u2019s trustworthiness.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Evidence",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The hearsay exception for statements against interest",
-                "Fact_analysis": "The employer seeks to call the defendant\u2019s estranged daughter to testify regarding a statement made by the defendant\u2019s son",
-                "Rule_application": "The hearsay exception for statements against interest allows hearsay testimony to be admitted if the declarant made the statement while under stress because of the particular state of mind induced by the statement\u2019s subject matter and the declarant\u2019s interest in the outcome of the proceeding.",
-                "Legal_conclusion": "Given that the son\u2019s statement implicates him in a crime"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1221,10 +1221,10 @@
             "domain": "Civil_procedure",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Personal jurisdiction in federal court",
-                "Fact_analysis": "The complaint in the federal diversity action brought by the company against the attorney",
-                "Rule_application": "Personal jurisdiction allows a court to exercise jurisdiction over a non-resident defendant if the defendant has sufficient contacts with the state where the court is located. In this scenario",
-                "Legal_conclusion": "The attorney\u2019s best argument in support of his motion to set aside the default judgment would be that the court did not have personal jurisdiction over him. The attorney can argue that he was not properly served with the summons and complaint in State A"
+                "Legal_concept": "Personal jurisdiction in federal court, specifically whether a non-resident defendant can be sued in federal court based on contacts with the state where the court is located.",
+                "Fact_analysis": "The complaint in the federal diversity action brought by the company against the attorney, who was domiciled in State B and served with the summons and complaint in State B, alleged that the attorney had sent defamatory emails to the company\u2019s customers in many different states, including State A. The attorney had few contacts with State A and none of the contacts were related to the alleged defamatory emails.",
+                "Rule_application": "Personal jurisdiction allows a court to exercise jurisdiction over a non-resident defendant if the defendant has sufficient contacts with the state where the court is located. In this scenario, the attorney was not properly served with the summons and complaint in State A, where the company brought the federal diversity action against him. Therefore, the court would not have personal jurisdiction over the attorney, supporting option C.",
+                "Legal_conclusion": "The attorney\u2019s best argument in support of his motion to set aside the default judgment would be that the court did not have personal jurisdiction over him. The attorney can argue that he was not properly served with the summons and complaint in State A, where the company brought the federal diversity action against him. Therefore, the default judgment should be set aside, supporting option C."
             }
         },
         "ground_truth": {
@@ -1237,13 +1237,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nThree employees sued their employer in federal court for failing to pay overtime wages, in violation of both federal and state law. The employer moved for summary judgment on the federal-law claims but not on the state-law claims, which closely paralleled the federal-law claims. The court granted the employer\u2019s motion. The employees have moved in the district court for an order certifying an immediate appeal of the grant of summary judgment on the federal-law claims because there is no just reason for delay. Is the court likely to grant the motion?\nAnswer Choices:\nA. No, because the employees should have filed their certification motion in the court of appeals.\nB. No, because the federal-law claims are not separate and distinct from the state-law claims.\nC. Yes, because denying an immediate appeal may prejudice the employees by delaying their recovery.\nD. Yes, because the employees are entitled to immediate review of the grant of summary judgment on the federal-law claims.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Civil_procedure",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between separate and distinct claims in federal court",
-                "Fact_analysis": "The federal-law claims and the state-law claims in the employment dispute between the employees and their employer were closely paralleled",
-                "Rule_application": "Under Federal Rule of Civil Procedure 54(b)",
-                "Legal_conclusion": "Given that the employees failed to appeal the summary judgment on the state-law claims"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1316,10 +1316,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Preponderance of the evidence standard in civil trials",
-                "Fact_analysis": "The employer is arguing that the conductor's work-related injuries pre-dated her employment and are therefore outside the scope of the federal statute that provides liability for work-related injuries occurring on railroads. The employer has raised this issue on a motion for JMOL",
-                "Rule_application": "The standard for ruling on a JMOL motion is whether there is legally sufficient evidence to support the verdict",
-                "Legal_conclusion": "Given that the conductor was injured while working on the train and the employer's argument that her injuries pre-dated her employment"
+                "Legal_concept": "Preponderance of the evidence standard in civil trials, specifically in regard to judgments as a matter of law (JMOL) in favor of the employer.",
+                "Fact_analysis": "The employer is arguing that the conductor's work-related injuries pre-dated her employment and are therefore outside the scope of the federal statute that provides liability for work-related injuries occurring on railroads. The employer has raised this issue on a motion for JMOL, which is made at the end of the trial when the judge considers whether there is legally sufficient evidence to support the verdict.",
+                "Rule_application": "The standard for ruling on a JMOL motion is whether there is legally sufficient evidence to support the verdict, not whether the verdict is against the weight of the evidence or whether there is a scintilla of evidence to support the verdict. Therefore, the correct standard for the court to apply in ruling on the employer's JMOL motion would be whether there is legally sufficient evidence to support the verdict.",
+                "Legal_conclusion": "Given that the conductor was injured while working on the train and the employer's argument that her injuries pre-dated her employment, the court should consider whether there is legally sufficient evidence to support the verdict. Therefore, the correct verdict would be based on whether the employer's argument is supported by the preponderance of the evidence, supporting option A."
             }
         },
         "ground_truth": {
@@ -1335,10 +1335,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Mutual mistake in contract formation",
-                "Fact_analysis": "The employee sued the agency in federal court for employment discrimination and the agency prevailed",
-                "Rule_application": "Mutual mistake allows a party to void a contract based on the common misunderstanding of the parties at the time of contract formation. In this scenario",
-                "Legal_conclusion": "Yes"
+                "Legal_concept": "Mutual mistake in contract formation, specifically the question of whether a court may reopen a judgment based on mutual mistake.",
+                "Fact_analysis": "The employee sued the agency in federal court for employment discrimination and the agency prevailed, resulting in a judgment in their favor. The employee then learned that the settlement payments he received were not considered earnable salary under state law, which would have entitled him to retire with 30 years of service at a higher pension rate. The employee promptly moved to reopen the judgment based on mutual mistake.",
+                "Rule_application": "Mutual mistake allows a party to void a contract based on the common misunderstanding of the parties at the time of contract formation. In this scenario, the employee and the agency both made a mutual mistake in believing that the settlement payments would constitute earnable salary under state law, leading to the agency\u2019s higher pension rate.",
+                "Legal_conclusion": "Yes, the correct verdict would be based on the fact that the agency would be unjustly enriched if it did not have to pay the higher pension rate to the employee. Therefore, option D is the correct verdict, supporting the decision to reopen the judgment based on mutual mistake."
             }
         },
         "ground_truth": {
@@ -1354,10 +1354,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between a valid and invalid contract",
-                "Fact_analysis": "The woman owned land subject to a mortgage held by a bank",
-                "Rule_application": "The consideration for a valid contract is the bargained-for exchange of goods",
-                "Legal_conclusion": "Given that the woman\u2019s failure to make mortgage loan payments led to the foreclosure sale and the resulting surplus proceeds"
+                "Legal_concept": "The distinction between a valid and invalid contract, specifically the requirement of consideration in a valid contract.",
+                "Fact_analysis": "The woman owned land subject to a mortgage held by a bank, and she fell behind in her mortgage loan payments. The bank initiated foreclosure proceedings, and the land was sold at a foreclosure sale, resulting in surplus proceeds to which the woman was entitled. Before her death, the woman executed a will that specifically devised the land to a charity, but the remainder of her estate was given to her brother, her sole heir.",
+                "Rule_application": "The consideration for a valid contract is the bargained-for exchange of goods, services, or promise, and in this scenario, the woman\u2019s payment of her mortgage loan payments to the bank would have been the consideration for her contract with the bank.",
+                "Legal_conclusion": "Given that the woman\u2019s failure to make mortgage loan payments led to the foreclosure sale and the resulting surplus proceeds, her brother\u2019s claim to those proceeds would likely be considered an invalid contract based on the lack of consideration. Therefore, option B is the correct verdict, supporting the woman\u2019s will that specifically devised the land to the charity."
             }
         },
         "ground_truth": {
@@ -1411,10 +1411,10 @@
             "domain": "Federal_protective_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The federal Fair Housing Act",
-                "Fact_analysis": "The tenant\u2019s request to keep a service dog",
-                "Rule_application": "The landlord\u2019s failure to make the reasonable accommodation of allowing the tenant to keep a service dog",
-                "Legal_conclusion": "Given that the landlord\u2019s failure to make the reasonable accommodation of allowing the tenant to keep a service dog"
+                "Legal_concept": "The federal Fair Housing Act, specifically the protection against discrimination based on disability, which requires landlords to make reasonable accommodations for tenants with disabilities.",
+                "Fact_analysis": "The tenant\u2019s request to keep a service dog, specifically a hearing-assistance service dog, to assist her with her hearing impairment, is a reasonable accommodation under the Act. The landlord\u2019s failure to make this accommodation, specifically his refusal to allow the tenant to keep the dog, is likely a violation.",
+                "Rule_application": "The landlord\u2019s failure to make the reasonable accommodation of allowing the tenant to keep a service dog, specifically a hearing-assistance service dog, may be considered arbitrary given that the landlord lives in one of the apartments and is therefore familiar with the layout and design of the building. This information may be considered when determining whether the landlord\u2019s decision was reasonable.",
+                "Legal_conclusion": "Given that the landlord\u2019s failure to make the reasonable accommodation of allowing the tenant to keep a service dog, specifically a hearing-assistance service dog, may be considered arbitrary, the correct verdict would be yes, supporting option D. Therefore, the correct verdict would be yes, supporting option D."
             }
         },
         "ground_truth": {
@@ -1430,10 +1430,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The doctrine of consideration",
-                "Fact_analysis": "The father was a party to the original contract between himself and his son",
-                "Rule_application": "The rule of consideration requires that a bargain be supported by a valid consideration",
-                "Legal_conclusion": "Given that the father did not receive adequate consideration for his promise to the son"
+                "Legal_concept": "The doctrine of consideration, specifically the requirement that a bargain must be supported by consideration to be valid.",
+                "Fact_analysis": "The father was a party to the original contract between himself and his son, in which the son conveyed the apartment building to him in exchange for a deed. However, the father did not receive adequate consideration for this promise, as he did not intend to be bound by it.",
+                "Rule_application": "The rule of consideration requires that a bargain be supported by a valid consideration, which is something of value exchanged between the parties. In this scenario, the father did not receive anything of value from his son in exchange for the deed, as the son had already sold the building to an investor.",
+                "Legal_conclusion": "Given that the father did not receive adequate consideration for his promise to the son, the investor was a bona fide purchaser with no knowledge of the son\u2019s fraud. Therefore, the wife would be entitled to ownership of the apartment building, supporting option B. The correct verdict would be based on the investor\u2019s good faith purchase of the property, protecting her against the son\u2019s fraudulent conveyance to her."
             }
         },
         "ground_truth": {
@@ -1487,10 +1487,10 @@
             "domain": "Contract_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The implied warranty of fitness in a residential real estate contract",
-                "Fact_analysis": "The buyer and the seller signed a written contract for the sale of a house",
-                "Rule_application": "The implied warranty of fitness requires that a house be delivered with the necessary comfort",
-                "Legal_conclusion": "Given that the seller\u2019s plan to remove these items would not provide the necessary comfort"
+                "Legal_concept": "The implied warranty of fitness in a residential real estate contract, specifically the requirement that the house be delivered with the necessary comfort, convenience, and safety devices.",
+                "Fact_analysis": "The buyer and the seller signed a written contract for the sale of a house, but the contract was silent regarding which items would stay with the house. The buyer learned that the seller planned to remove several items that the buyer thought should stay with the house, including a garbage disposal, a dining room ceiling fan, and a power lawn mower. ",
+                "Rule_application": "The implied warranty of fitness requires that a house be delivered with the necessary comfort, convenience, and safety devices. In this scenario, the seller\u2019s plan to remove a garbage disposal, a dining room ceiling fan, and a power lawn mower would not provide the necessary comfort, convenience, or safety for the buyer to use and enjoy the house. ",
+                "Legal_conclusion": "Given that the seller\u2019s plan to remove these items would not provide the necessary comfort, convenience, or safety for the buyer to use and enjoy the house, he may only remove the power lawn mower. Therefore, the correct verdict would be that the seller may remove the power lawn mower, supporting option C."
             }
         },
         "ground_truth": {
@@ -1620,10 +1620,10 @@
             "domain": "Property_law",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The distinction between a life estate and a life estate pur autre vie",
-                "Fact_analysis": "The question describes a life estate in the father",
-                "Rule_application": "The life estate in the father is not alienable",
-                "Legal_conclusion": "Given that the life estate in the father has been extinguished by the daughter\u2019s conveyance to the purchaser and the son\u2019s conveyance to the daughter"
+                "Legal_concept": "The distinction between a life estate and a life estate pur autre vie, specifically the difference in alienability and duration.",
+                "Fact_analysis": "The question describes a life estate in the father, who conveyed a life estate in the daughter and a remainder to his son. The daughter later conveyed a fee simple absolute interest to a purchaser, who properly recorded the deed. The son then conveyed his remainder interest to the daughter, who died, leaving her husband as the sole beneficiary and executor. The husband has consulted an attorney to determine the ownership of the land.",
+                "Rule_application": "The life estate in the father is not alienable, meaning the daughter cannot convey it to another person. The remainder, on the other hand, is alienable, allowing the son to convey it to the daughter. The question asks whether the husband, who inherits the remainder, owns the land, implying that the life estate has been extinguished.",
+                "Legal_conclusion": "Given that the life estate in the father has been extinguished by the daughter\u2019s conveyance to the purchaser and the son\u2019s conveyance to the daughter, the husband owns a life estate in the land. Option A is incorrect, as the life estate pur autre vie does not involve an alienable remainder. Option B is also incorrect, as the purchaser owns a fee simple absolute interest, not a life estate. Option C is also incorrect, as the husband owns the remainder and the purchaser owns a life estate, not a fee simple absolute interest. Finally, Option D is correct, as the son was the original owner of the remainder and the life estate was extinguished by the daughter\u2019s conveyance to the purchaser and the son\u2019s conveyance to the daughter. Therefore, the correct verdict would be option D, supporting option D."
             }
         },
         "ground_truth": {
@@ -1677,10 +1677,10 @@
             "domain": "Products_liability",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Strict liability in tort",
-                "Fact_analysis": "The distributor knew that an improper ratio of sand",
-                "Rule_application": "Res ipsa loquitur allows a plaintiff to establish negligence based on the failure of an item to perform as expected",
-                "Legal_conclusion": "Given that the distributor knew that an improper ratio of sand"
+                "Legal_concept": "Strict liability in tort, specifically the theory of res ipsa loquitur, which allows a plaintiff to establish negligence based on the failure of an item to perform as expected.",
+                "Fact_analysis": "The distributor knew that an improper ratio of sand, water, and cement would result in defective concrete, but he played no role in determining the ratio used by the construction company in mixing the concrete. The construction company used the concrete to form supporting columns for a building, which collapsed during a minor earthquake, causing injury to the occupants.",
+                "Rule_application": "Res ipsa loquitur allows a plaintiff to establish negligence based on the failure of an item to perform as expected, in this case, the concrete columns supporting the building. The distributor knew that an improper ratio of sand, water, and cement would result in defective concrete, making him liable for the failure of the concrete columns to support the building.",
+                "Legal_conclusion": "Given that the distributor knew that an improper ratio of sand, water, and cement would result in defective concrete, he is liable for the failure of the concrete columns to support the building. Therefore, the correct verdict would be yes, supporting option D, based on strict liability in tort."
             }
         },
         "ground_truth": {
@@ -1696,10 +1696,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The proximate cause of an injury in tort law",
-                "Fact_analysis": "The shopper slipped and fell on a wet spot on the grocery store floor",
-                "Rule_application": "Proximate cause requires that the defendant\u2019s act must have set in motion a chain of events leading to the plaintiff\u2019s harm",
-                "Legal_conclusion": "Given that the grocery store\u2019s failure to clean up the wet spot on the floor may have contributed to the shopper\u2019s wrist injury"
+                "Legal_concept": "The proximate cause of an injury in tort law, specifically the question of whether the defendant\u2019s act was a proximate cause of the plaintiff\u2019s harm.",
+                "Fact_analysis": "The shopper slipped and fell on a wet spot on the grocery store floor, injuring her wrist. The doctor was then called to treat her wrist injury, but his failure to properly diagnose and treat the injury worsened it. The grocery store is being impleaded by the doctor into the medical malpractice action because the grocery store\u2019s failure to clean up the wet spot on the floor may have contributed to the shopper\u2019s injury.",
+                "Rule_application": "Proximate cause requires that the defendant\u2019s act must have set in motion a chain of events leading to the plaintiff\u2019s harm, and the harm must have been reasonably foreseeable. In this scenario, the grocery store\u2019s failure to clean up the wet spot on the floor may have caused the shopper to slip and fall, leading to her wrist injury. Therefore, the grocery store\u2019s act of not cleaning up the wet spot may have set in motion the chain of events leading to the shopper\u2019s wrist injury, making it a proximate cause.",
+                "Legal_conclusion": "Given that the grocery store\u2019s failure to clean up the wet spot on the floor may have contributed to the shopper\u2019s wrist injury, the correct verdict would be to allow the doctor to implead the grocery store. Option D, which allows the court to implead the grocery store based on the fact-finder\u2019s ability to assign some of the responsibility for the shopper\u2019s injuries to the grocery store, supports this decision."
             }
         },
         "ground_truth": {
@@ -1715,10 +1715,10 @@
             "domain": "Torts",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Intentional tort of invasion of privacy",
-                "Fact_analysis": "The former employer hired a security officer to investigate the former employee's possible breach of a non-compete agreement. The officer obtained the former employee's phone records without the former employer's knowledge",
+                "Legal_concept": "Intentional tort of invasion of privacy, specifically the intrusion upon seclusion, in this case the former employer's security officer's use of false pretense to obtain the former employee's phone records.",
+                "Fact_analysis": "The former employer hired a security officer to investigate the former employee's possible breach of a non-compete agreement. The officer obtained the former employee's phone records without the former employer's knowledge, using false pretense to obtain them from the former employee's phone service provider. The officer then provided the records to the former employer.",
                 "Rule_application": "The former employee sued the former employer for tortious invasion of privacy based on the security officer's invasion of her privacy through the use of her phone records. The question of whether the former employer acted appropriately in allowing the security officer to obtain the phone records is a question for the jury.",
-                "Legal_conclusion": "Option D suggests that the former employee can recover on a claim of invasion of privacy based on the security officer's use of her phone records to learn about her contacts with former company customers. Therefore"
+                "Legal_conclusion": "Option D suggests that the former employee can recover on a claim of invasion of privacy based on the security officer's use of her phone records to learn about her contacts with former company customers. Therefore, the correct verdict would be yes, on a claim of invasion of privacy, supporting option D."
             }
         },
         "ground_truth": {
@@ -1826,13 +1826,13 @@
     {
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multi state Bar exam question into this STRICT JSON format, considering the question and answer choices provided:\n\n{\n    \"chosen_domain\": \"...\",\n    \"explanation\": {\n        \"Legal_Concept\": \"...\",\n        \"Fact_Analysis\": \"...\",\n        \"Rule_Application\": \"...\",\n        \"Legal_Conclusion\": \"...\"\n    },\n    \"chosen_option_label\" : \"...\"\n}\nExample 1: \nQuestion:\n A neighbor frequently visited a woman who lived in the house next to him. The woman was separated from her husband. The husband resided with his mother but jointly owned the house in which the woman resided. Late one night, the neighbor and the woman were sitting and drinking on the bed in the woman's bedroom when the husband burst through the door and told the neighbor, \"Get out.\" When the neighbor refused, the husband challenged him to go outside and \"fight it out.\" The neighbor again refused. The husband then pulled a knife from his pocket and lunged at the neighbor. The neighbor grabbed a lamp, struck the husband on the head, and killed him. The neighbor is charged with murder. On a charge of murder, the neighbor should be found\n\nAnswer Choices:\nA. not guilty, because the neighbor had as much right as the husband to be in the house.\nB. not guilty, because the husband attacked the neighbor with a deadly weapon.\nC. guilty, because the neighbor's presence in the woman's bedroom prompted the husband's attack.\nD. guilty, because the neighbor's failure to obey the husband's order to leave the house made him a trespasser.\n\nResponse:\n\n{\n        \"domain\": \"Criminal_law\",\n        \"explanation\": {\n            \"Legal_concept\": \"Self-defense in criminal law, particularly the justification of using deadly force in response to an imminent threat of death or serious bodily harm.\",\n            \"Fact_analysis\": \"The husband entered the bedroom where the neighbor and the separated wife were sitting and aggressively demanded the neighbor leave, escalating the confrontation by inviting him to fight outside. When the neighbor refused, the husband escalated further by drawing a knife and lunging at him.\",\n            \"Rule_application\": \"Self-defense allows an individual to use reasonable force, including deadly force, to protect themselves if they reasonably believe it is necessary to prevent imminent death or serious bodily harm. In this scenario, the neighbor\u2019s use of a lamp to strike the husband, who was armed with a knife and lunging towards him, would likely be considered a reasonable response under imminent threat.\",\n            \"Legal_conclusion\": \"Given that the neighbor was defending himself against an unlawful and immediate threat posed by the husband with a deadly weapon, he acted within the bounds of self-defense. Therefore, the correct verdict would be not guilty based on self-defense, supporting option B.\"\n        },\n        \"chosen_option_label\": \"B\"\n}\n\n<</SYS>>\nQuestion:\nA mother purchased over-the-counter pain medication for her daughter, who suffered from headaches. The packaging indicated that the pills were \u201ccoated\u201d but did not list the ingredients in the coating. A few days after she bought the medication, because the daughter was in extreme pain, the mother gave the daughter three times the recommended dose of the medication. Thirty minutes later, because the daughter had a very rare allergy to an ingredient in the coating, she had a severe allergic reaction, for which she was hospitalized. The mother was aware of the daughter\u2019s allergy, but she did not know that the medication contained the ingredient to which the daughter was allergic. In a failure-to-warn action brought against the manufacturer of the medication, which of the arguments below would be the LEAST promising as a defense?\nAnswer Choices:\nA. The daughter\u2019s allergy to the ingredient in the coating was very rare.\nB. The manufacturer\u2019s duty was to warn learned intermediaries, not consumers of the medication.\nC. The mother should not have given her daughter a triple dose of the medication.\nD. The mother, knowing of her daughter\u2019s very rare allergy, should not have purchased the medication without knowing what ingredients were in the coating.\nResponse:\n[/INST]",
         "response": {
-            "domain": "Products_liability",
+            "domain": "n/a",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "The duty of care in products liability",
-                "Fact_analysis": "The mother purchased over-the-counter pain medication for her daughter",
-                "Rule_application": "Manufacturers have a duty to ensure that their products are reasonably safe for their intended users. In this scenario",
-                "Legal_conclusion": "Option B would be the least promising defense"
+                "Legal_concept": "n/a",
+                "Fact_analysis": "n/a",
+                "Rule_application": "n/a",
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1848,10 +1848,10 @@
             "domain": "Products_liability",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Strict products liability",
+                "Legal_concept": "Strict products liability, specifically the duty of care owed by manufacturers to consumers regarding the safety of their products.",
                 "Fact_analysis": "The fact that the dairy farmer purchased a faulty milking system from an independent distributor and was not notified of the defect by the manufacturer suggests that the manufacturer did not exercise reasonable care in designing or manufacturing the system. This failure to warn of the defect may result in the manufacturer being held liable for the farmer\u2019s lost revenue from his lucrative milk wholesale contracts.",
-                "Rule_application": "In a products liability action",
-                "Legal_conclusion": "Given that the manufacturer was not notified of the defect by the independent distributor and the farmer lost revenue from his lucrative milk wholesale contracts due to the malfunctioning milking system"
+                "Rule_application": "In a products liability action, the manufacturer may be held liable for damages caused by a defective product, even if the manufacturer was not aware of the particular individual who was injured. This is known as the 'strict products liability' rule, which holds the manufacturer responsible for harm caused by a defective product, regardless of fault.",
+                "Legal_conclusion": "Given that the manufacturer was not notified of the defect by the independent distributor and the farmer lost revenue from his lucrative milk wholesale contracts due to the malfunctioning milking system, the farmer may have a viable strict products liability claim against the manufacturer. Therefore, the correct verdict would be based on the manufacturer\u2019s failure to warn, supporting option C."
             }
         },
         "ground_truth": {
@@ -1867,10 +1867,10 @@
             "domain": "Products_liability",
             "chosen_option_label": "n/a",
             "explanation": {
-                "Legal_concept": "Strict products liability",
-                "Fact_analysis": "The question describes a spontaneous fire that completely destroyed the couple's newly purchased RV",
-                "Rule_application": "In this scenario",
-                "Legal_conclusion": "Given that the RV was defectively designed"
+                "Legal_concept": "Strict products liability, specifically the responsibility of manufacturers to ensure that their products are reasonably safe for use by consumers.",
+                "Fact_analysis": "The question describes a spontaneous fire that completely destroyed the couple's newly purchased RV, suggesting that the RV was defective. The manufacturer is responsible for ensuring that its products are reasonably safe for use, and a defective product can give rise to liability.",
+                "Rule_application": "In this scenario, the RV's sudden and spontaneous combustion would likely be considered a manufacturing defect. If the manufacturer had used reasonable care in designing and manufacturing the RV, the fire would not have started, and the couple would not have suffered damages.",
+                "Legal_conclusion": "Given that the RV was defectively designed, the correct verdict would be yes, supporting option D. The manufacturer should be held strictly liable for the damage caused by the defect, because the couple did not contribute to the damage and the RV was being used as intended when it caught fire. Therefore, the correct verdict would be yes, supporting option D."
             }
         },
         "ground_truth": {
