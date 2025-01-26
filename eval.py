@@ -38,7 +38,7 @@ import pandas as pd
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-MASTER_CSV_PATH = os.path.join(os.getcwd(), "master_metrics.csv")
+MASTER_CSV_PATH = os.path.join(os.getcwd(), "master_metrics_after_the_fact.csv")
 LOCK_FILE_PATH = os.path.join(os.getcwd(), "master_metrics.lock")
 
 def flatten_and_serialize(metrics_dict):

@@ -19,14 +19,14 @@ COMPONENTS = {
                 # 'all_domains_1_samples', 
                 #  'all_domains_10_samples', 
                 #  'all_domains_20_samples',
-                #  'all_domains_75_samples',
+                 'all_domains_75_samples',
                 #  'all_domains_125_samples',
-                 'all_domains_all_samples'
+                #  'all_domains_all_samples'
                  ],
     'generation': [
                     #'greedy',
-                    # 'temp_025',
-                   'temp_06',
+                    'temp_025',
+                #    'temp_06',
                    'temp_09'
                    ],
     'evaluation_datasets': [
@@ -95,7 +95,7 @@ def create_array_job():
 #SBATCH --gres=gpu:1
 #SBATCH --mem=36G
 #SBATCH --time=1:00:00
-#SBATCH --array=0-{len(configs)-1}%24
+#SBATCH --array=0-{len(configs)-1}%32
 
 # Setup logging
 echo "Job array ID: $SLURM_ARRAY_JOB_ID, Task ID: $SLURM_ARRAY_TASK_ID"
