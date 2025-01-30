@@ -8,30 +8,47 @@ BASE_DIR = "/home/fr/fr_fr/fr_rf1031/bar-llama"
 LOGS_DIR = f"{BASE_DIR}/helix-inference-logs"
 COMPONENTS = {
     # Components for constructing eval config names
-    'response_formats': ['json', 'number_list', 'markdown'],
-    'response_types': ['answer_first', 'fact_first'],
-    'prompt_types': ['few_shot', 'zero_shot'],
-    'explanation_types': ['structured', 'unstructured'],
+    'response_formats': [
+                        # 'json',
+                        #  'number_list',
+                          'markdown'
+                          ],
+    'response_types': [
+                        'answer_first', 
+                        'fact_first'
+                        ],
+    'prompt_types': [
+                'few_shot',
+                #  'zero_shot'
+                 ],
+    'explanation_types': [
+                    # 'structured',
+                     'unstructured'
+                     ],
     
     # Other components
     'seeds': ['seed_21'],#, 'seed_1337', 'seed_42'
     'datasets': [
-                # 'all_domains_1_samples', 
+                'all_domains_1_samples', 
                 #  'all_domains_10_samples', 
                 #  'all_domains_20_samples',
                  'all_domains_75_samples',
                 #  'all_domains_125_samples',
-                #  'all_domains_all_samples'
+                 'all_domains_all_samples'
                  ],
     'generation': [
-                    #'greedy',
+                    # 'greedy',
                     'temp_025',
-                #    'temp_06',
+                   'temp_06',
                    'temp_09'
                    ],
     'evaluation_datasets': [
-                            'test_set_1', 
-                            'test_set_2'
+                            # 'test_set_1', 
+                            # 'test_set_2'
+                            'val_set_1',
+                            'val_set_2',
+                            'val_set_3',
+                            'val_set_4'
                             ],
     'quantisation': [
                     'full_model', 

@@ -48,10 +48,10 @@ COMPONENTS = {
       'all_domains_all_samples'
   ],
   'generation': [
-    #   'greedy',
-    #   'temp_025',
+      'greedy',
+      'temp_025',
       'temp_06',
-    #   'temp_09'
+      'temp_09'
   ],
   'evaluation_datasets': [
       'test_set_1',
@@ -63,7 +63,7 @@ COMPONENTS = {
   ]
 }
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-MASTER_CSV_PATH = os.path.join(os.getcwd(), "master_metrics_after_the_fact.csv")
+MASTER_CSV_PATH = os.path.join(os.getcwd(), "new_fixed_metrics.csv")
 LOCK_FILE_PATH = os.path.join(os.getcwd(), "master_metrics.lock")
 
 def flatten_and_serialize(metrics_dict):

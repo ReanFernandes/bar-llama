@@ -150,7 +150,7 @@ def main(cfg: DictConfig):
     #--------------------- Load the lora config ---------------------#
     target_modules = OmegaConf.to_container(cfg.train.lora_config.target_modules)
     lora_config = LoraConfig(
-                r=128,
+                r=cfg.train.lora_config.r,
                 lora_alpha=cfg.train.lora_config.lora_alpha,
                 lora_dropout=cfg.train.lora_config.lora_dropout,
                 bias=cfg.train.lora_config.bias,
@@ -187,19 +187,21 @@ def main(cfg: DictConfig):
         per_device_train_batch_size = cfg.train.training_args.per_device_train_batch_size,
         gradient_checkpointing = cfg.train.training_args.gradient_checkpointing,
         gradient_accumulation_steps = cfg.train.training_args.gradient_accumulation_steps,
-        optim=cfg.train.training_args.optim,
-        # save_steps=cfg.train.training_args.save_steps,
-        save_strategy="no",
-        logging_steps=cfg.train.training_args.logging_steps,
-        learning_rate=cfg.train.training_args.learning_rate,
-        weight_decay=cfg.train.training_args.weight_decay,
-        fp16=cfg.train.training_args.fp16,
-        bf16=cfg.train.training_args.bf16,
-        max_grad_norm=cfg.train.training_args.max_grad_norm,
-        max_steps=cfg.train.training_args.max_steps,
-        group_by_length=cfg.train.training_args.group_by_length,
-        lr_scheduler_type=cfg.train.training_args.lr_scheduler_type,
-        report_to="wandb"
+        optim = cfg.train.training_args.optim,
+        save_strategy = "no",  #  no-save to make sure the i dont fill up with multiple checkpoints
+        logging_steps = cfg.train.training_args.logging_steps,
+        learning_rate = cfg.train.training_args.learning_rate,
+        weight_decay = cfg.train.training_args.weight_decay,
+        fp16 = cfg.train.training_args.fp16,
+        bf16 = cfg.train.training_args.bf16,
+        max_grad_norm = cfg.train.training_args.max_grad_norm,
+        max_steps = cfg.train.training_args.max_steps,
+        group_by_length = cfg.train.training_args.group_by_length,
+        lr_scheduler_type = cfg.train.training_args.lr_scheduler_type,
+        warmup_ratio = cfg.train.training_args.warmup_ratio,  # warmup for cosine annealing
+        report_to = "wandb",
+        # Additional parameters for cosine scheduling
+        num_cycles = cfg.train.training_args.num_cycles  # for cosine_with_restarts
     )
     hf_format_train_set =  Dataset.from_list(train_set)
 

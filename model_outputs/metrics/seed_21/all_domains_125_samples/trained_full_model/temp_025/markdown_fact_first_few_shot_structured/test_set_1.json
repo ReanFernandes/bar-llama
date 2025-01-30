@@ -4,7 +4,7 @@
         "seed": "seed_21",
         "training_status": "trained",
         "quantisation_status": "full_model",
-        "training dataset": "all_domains_125_samples",
+        "training_dataset": "all_domains_125_samples",
         "num_training_samples": "125",
         "num_training_domains": [
             "all"
@@ -18,21 +18,21 @@
         "evaluation_dataset": "test_set_1"
     },
     "metrics": {
-        "label_accuracy": 0.0,
-        "misclassification_rate": 1.0,
-        "combined_accuracy": 0.0,
-        "malformed_label": 99,
+        "label_accuracy": 0.36363636363636365,
+        "misclassification_rate": 0.6363636363636364,
+        "combined_accuracy": 0.35353535353535354,
+        "malformed_label": 0,
         "malformed_domain": 7,
         "total_predictions": 99,
-        "correct_predictions": 0,
-        "correct_label_and_domain": 0,
-        "Constitutional_Law_accuracy": 0.0,
-        "Contracts_accuracy": 0.0,
-        "Criminal_Law_accuracy": 0.0,
-        "Evidence_accuracy": 0.0,
-        "Real_Property_accuracy": 0.0,
-        "Torts_accuracy": 0.0,
-        "Civil_Procedure_accuracy": 0.0,
+        "correct_predictions": 36,
+        "correct_label_and_domain": 35,
+        "Constitutional_Law_accuracy": 0.07142857142857142,
+        "Contracts_accuracy": 0.42857142857142855,
+        "Criminal_Law_accuracy": 0.46153846153846156,
+        "Evidence_accuracy": 0.2,
+        "Real_Property_accuracy": 0.5,
+        "Torts_accuracy": 0.5384615384615384,
+        "Civil_Procedure_accuracy": 0.3125,
         "Constitutional_Law_confidence": 0.13131313131313133,
         "Contracts_confidence": 0.16161616161616163,
         "Criminal_Law_confidence": 0.13131313131313133,
@@ -40,8 +40,8 @@
         "Real_Property_confidence": 0.13131313131313133,
         "Torts_confidence": 0.1414141414141414,
         "Civil_Procedure_confidence": 0.15151515151515152,
-        "correct_domain_wrong_label": 92,
-        "correct_label_wrong_domain": 0,
-        "both_wrong": 7
+        "correct_domain_wrong_label": 57,
+        "correct_label_wrong_domain": 1,
+        "both_wrong": 6
     }
 }

@@ -17,10 +17,10 @@ wandb:
   # tags: [${model.model_label}, ${train.train_config_label}]
 
 lora_config:
-  r: 8
-  lora_alpha: 16
+  r: 64  # Increased for more capacity
+  lora_alpha: 32  # Increased to maintain alpha/r ratio
   bias: "none"
-  lora_dropout: 0.5 # higher drop out because more params than tokens
+  lora_dropout: 0.05  # Reduced for small dataset
   task_type: "CAUSAL_LM"
   target_modules: [
     "q_proj",
@@ -33,21 +33,23 @@ lora_config:
 
 training_args:
   output_dir: ${hydra:runtime.cwd}/train_checkpoints/${train.train_config_label}
-  num_train_epochs: 5
-  per_device_train_batch_size: 1
+  num_train_epochs: 10  # Increased for better learning on small dataset
+  per_device_train_batch_size: 1  # Kept for memory constraints
   gradient_checkpointing: True
-  gradient_accumulation_steps: 1
+  gradient_accumulation_steps: 8  # Increased for stability
   optim: "paged_adamw_32bit"
   save_steps: 500
   logging_steps: 10
-  learning_rate: 2e-4
-  weight_decay: 0.01 #l2 reg
+  learning_rate: 1e-4  # Reduced for stability
+  weight_decay: 0.01
   fp16: False
   bf16: False
   max_grad_norm: 0.3
   max_steps: -1
   group_by_length: True
-  lr_scheduler_type: "constant"
+  lr_scheduler_type: "cosine_with_restarts"  # Better exploration
+  warmup_ratio: 0.1  #  warmup
+  num_cycles: 3  # Number of cosine cycles
   report_to: "wandb"
 
 model_adapter_name: ${model.model_label}_${train.train_config_label}

@@ -72,6 +72,8 @@ class ResponseHandler():
                 domain_match = re.search(r"## Chosen Domain\n(.+?)\n", response, re.DOTALL)
                 if domain_match:
                     fields['domain'] = domain_match.group(1).strip()
+                else: 
+                    raise Exception
         except Exception as e:
             logging.error("Failed to extract domain: %s for response: %s", str(e), self.count)
 
@@ -89,7 +91,9 @@ class ResponseHandler():
                 try:
                     match = re.search(pattern, response, re.DOTALL)
                     if match:
-                        fields['explanation'][key] = match.group(1).strip()                        
+                        fields['explanation'][key] = match.group(1).strip() 
+                    else:
+                        raise Exception
                 except Exception as e:
                     logging.error(f"|Q. {self.current_q_num}||D: {self.domain}| Failed to extract {key}: {str(e)}")
         elif self.cfg["explanation_type"] == "unstructured":
@@ -97,13 +101,17 @@ class ResponseHandler():
                 explanation_match = re.search(r"## Explanation\n(.+?)\n", response, re.DOTALL)
                 if explanation_match:
                     fields['explanation'] = explanation_match.group(1).strip()
+                else: 
+                    raise Exception
             except Exception as e:
                 logging.error(f"|Q. {self.current_q_num}||D: {self.domain}| Failed to extract explanation: {str(e)}")
         # Extract chosen option
         try:
-            chosen_option_match = re.search(r"## Chosen Option\n(.+?)\n", response)
+            chosen_option_match = re.search(r"## Chosen Option\n([^\n]+)", response)
             if chosen_option_match:
                 fields['chosen_option_label'] = chosen_option_match.group(1).strip()
+            else: 
+                    raise Exception
         except Exception as e:
             logging.error(f"|Q. {self.current_q_num}||D: {self.domain}| Failed to extract chosen option: {str(e)}")
 

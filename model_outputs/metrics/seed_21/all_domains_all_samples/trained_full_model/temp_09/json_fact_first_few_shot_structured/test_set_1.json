@@ -4,7 +4,7 @@
         "seed": "seed_21",
         "training_status": "trained",
         "quantisation_status": "full_model",
-        "training dataset": "all_domains_all_samples",
+        "training_dataset": "all_domains_all_samples",
         "num_training_samples": "all",
         "num_training_domains": [
             "all"
@@ -21,7 +21,7 @@
         "label_accuracy": 0.30303030303030304,
         "misclassification_rate": 0.696969696969697,
         "combined_accuracy": 0.29292929292929293,
-        "malformed_label": 1,
+        "malformed_label": 2,
         "malformed_domain": 6,
         "total_predictions": 99,
         "correct_predictions": 30,
