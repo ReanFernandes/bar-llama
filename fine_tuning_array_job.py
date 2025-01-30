@@ -9,17 +9,34 @@ BASE_DIR = "/home/fr/fr_fr/fr_rf1031/bar-llama"
 LOGS_DIR = f"{BASE_DIR}/helix-finetuning-logs"
 
 COMPONENTS = {
-    'response_formats': ['json', 'number_list', 'markdown'],
-    'response_types': ['answer_first', 'fact_first'],
-    'prompt_types': ['few_shot', 'zero_shot'],
-    'explanation_types': ['structured', 'unstructured'],
-    'seeds': ['seed_21'],# 'seed_1337', 'seed_42'],
+    'response_formats': [
+                    # 'json', 
+                    # 'number_list',
+                    'markdown'
+                    ],
+    'response_types': [
+                'answer_first',
+                #  'fact_first'
+                 ],
+    'prompt_types': [
+        'few_shot',
+        #  'zero_shot'
+         ],
+    'explanation_types': [
+        'structured',
+        'unstructured'
+         ],
+    'seeds': [
+        # 'seed_21'
+        'seed_1337',
+        # 'seed_42'
+         ],
     'datasets': [
-                #  'all_domains_1_samples', 
-                #  'all_domains_10_samples', 
-                #  'all_domains_20_samples',
-                #  'all_domains_75_samples',
-                #  'all_domains_125_samples',
+                 'all_domains_1_samples', 
+                 'all_domains_10_samples', 
+                 'all_domains_20_samples',
+                 'all_domains_75_samples',
+                 'all_domains_125_samples',
                  'all_domains_all_samples'
                  ],
 }
@@ -70,11 +87,11 @@ def create_array_job():
 #SBATCH --output={LOGS_DIR}/ft_%A_%a.out
 #SBATCH --error={LOGS_DIR}/ft_%A_%a.err
 #SBATCH --cpus-per-task=1
-#SBATCH --partition=gpu_4
+#SBATCH --partition=gpu_8
 #SBATCH --gres=gpu:1
 #SBATCH --mem=36G
-#SBATCH --time=9:45:00
-#SBATCH --array=0-{len(configs)-1}%24
+#SBATCH --time=24:45:00
+#SBATCH --array=0-{len(configs)-1}%12
 
 # Setup logging
 echo "Job array ID: $SLURM_ARRAY_JOB_ID, Task ID: $SLURM_ARRAY_TASK_ID"

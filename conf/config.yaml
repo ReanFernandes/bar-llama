@@ -3,15 +3,15 @@ defaults:
   - dataset: all_domains_all_samples
   - evaluation_dataset: test_set_1 # toughest one out of 4 val sets
   - dataloader: default_dataloader
-  - prompt : json_answer_first_few_shot_structured
+  - prompt : markdown_answer_first_few_shot_unstructured
   - model: llama2
-  - train: json_answer_first_few_shot_structured
-  - eval: json_answer_first_few_shot_structured
+  - train: markdown_answer_first_few_shot_unstructured
+  - eval: markdown_answer_first_few_shot_unstructured
   - tokenizer: llama2
   - quantization: quantization
   - generation: temp_06
-  - parsing: json_answer_first_few_shot_structured
-  - seeds : seed_21
+  - parsing: markdown_answer_first_few_shot_unstructured
+  - seeds : seed_1337
 
 # using absolute paths here, need to change with rel paths at some point
 distilled_dataset_sft_path: /home/fr/fr_fr/fr_rf1031/bar-llama/dataset/seed_dataset/distilled_dataset.json

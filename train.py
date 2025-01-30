@@ -59,7 +59,7 @@ def main(cfg: DictConfig):
     #--------------------- set global seed (VALIDATED)---------------------
     set_global_seed(cfg.seeds.seed)
     logging.info(f"Global seed set to {cfg.seeds.seed}")
-
+    cfg.train.wandb.run_name += f"_{cfg.seeds.label}" # add seed name to wandb run name to separate diff seed runs
     #---------------------setting flags for run, need to set these for the code to run properly (VALIDATED)  ---------------------
     # set this flag as false if we are not quantising the model prior to training
     use_quantisation = False
@@ -194,14 +194,15 @@ def main(cfg: DictConfig):
         weight_decay = cfg.train.training_args.weight_decay,
         fp16 = cfg.train.training_args.fp16,
         bf16 = cfg.train.training_args.bf16,
-        max_grad_norm = cfg.train.training_args.max_grad_norm,
+        max_grad_norm = max(cfg.train.training_args.max_grad_norm, 1.0), # making 1.0 for better stabiliity
         max_steps = cfg.train.training_args.max_steps,
         group_by_length = cfg.train.training_args.group_by_length,
         lr_scheduler_type = cfg.train.training_args.lr_scheduler_type,
         warmup_ratio = cfg.train.training_args.warmup_ratio,  # warmup for cosine annealing
         report_to = "wandb",
+        seed=cfg.seeds.seed # have to set this here, since other things have to be seeded before this class is instantiated
         # Additional parameters for cosine scheduling
-        num_cycles = cfg.train.training_args.num_cycles  # for cosine_with_restarts
+        # num_cycles = cfg.train.training_args.num_cycles  # for cosine_with_restarts
     )
     hf_format_train_set =  Dataset.from_list(train_set)
 

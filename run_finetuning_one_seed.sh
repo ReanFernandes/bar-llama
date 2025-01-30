@@ -14,4 +14,4 @@
 source ~/.bashrc
 
 # run train.py, with default config already set in train.py
-python3 train.py 
+python3 train.py seeds=seed_1337
