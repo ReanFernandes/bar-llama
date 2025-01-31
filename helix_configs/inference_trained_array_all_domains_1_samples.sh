@@ -7,7 +7,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=36G
 #SBATCH --time=1:00:00
-#SBATCH --array=0-71%32
+#SBATCH --array=0-63%32
 
 # Setup logging
 echo "Job array ID: $SLURM_ARRAY_JOB_ID, Task ID: $SLURM_ARRAY_TASK_ID"
