@@ -36,7 +36,7 @@ COMPONENTS = {
   ],
   'seeds': [
       'seed_21',
-    #   'seed_1337', 
+      'seed_1337', 
     #   'seed_42'
   ],
   'datasets': [
@@ -55,7 +55,11 @@ COMPONENTS = {
   ],
   'evaluation_datasets': [
       'test_set_1',
-      'test_set_2'
+      'test_set_2',
+      'val_set_1',
+      'val_set_2',
+      'val_set_3',
+      'val_set_4',
   ],
   'quantisation': [
       'full_model',
