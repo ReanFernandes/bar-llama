@@ -11,7 +11,7 @@ LOGS_DIR = f"{BASE_DIR}/helix-finetuning-logs"
 COMPONENTS = {
     'response_formats': [
                     # 'json', 
-                    # 'number_list',
+                    'number_list',
                     'markdown'
                     ],
     'response_types': [
@@ -28,8 +28,8 @@ COMPONENTS = {
          ],
     'seeds': [
         # 'seed_21'
-        'seed_1337',
-        # 'seed_42'
+        # 'seed_1337', # with cosine annealling 
+        'seed_42' # specific qlora based training
          ],
     'datasets': [
                  'all_domains_1_samples', 

@@ -48,7 +48,7 @@ COMPONENTS = {
                    ],
     'evaluation_datasets': [
                             # 'test_set_1', 
-                            'test_set_2'
+                            'test_set_2',
                             # 'val_set_1',
                             # 'val_set_2',
                             # 'val_set_3',

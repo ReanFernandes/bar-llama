@@ -223,7 +223,8 @@ def main(cfg: DictConfig):
         
         prompt, ground_truth = promptor.create_prompt(data, 
                                                       mode="eval",
-                                                      pipeline_available=cfg.eval.pipeline_available)
+                                                      pipeline_available=cfg.eval.pipeline_available,
+                                                      model_name=cfg.model.model_label)
         
         logging.info(f"Domain : {data['domain']}, Question : {data['question_number']}")
 

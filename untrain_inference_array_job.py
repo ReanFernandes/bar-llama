@@ -6,13 +6,30 @@ import json
 
 COMPONENTS = {
     # Components for constructing eval config names
-    'response_formats': ['json', 'number_list', 'markdown'],
-    'response_types': ['answer_first', 'fact_first'],
-    'prompt_types': ['few_shot', 'zero_shot'],
-    'explanation_types': ['structured', 'unstructured'],
+    'response_formats': [
+                        'json', 
+                        'number_list', 
+                        'markdown'
+                        ],
+    'response_types': [
+                    'answer_first',
+                     'fact_first'
+                     ],
+    'prompt_types': [   
+                    'few_shot',
+                     'zero_shot'
+                     ],
+    'explanation_types': [
+                    'structured',
+                    'unstructured'
+                    ],
     
     # Other components (no datasets needed for untrained)
-    'seeds': ['seed_21'],# 'seed_1337', 'seed_42'],
+    'seeds': [  
+                'seed_21',
+                # 'seed_1337', 
+                # 'seed_42'
+            ],
     'generation': [
                 # 'beam_search_10','beam_search_3', 'beam_search_5',
                 # 'contrastive_penalty_06_topk_4', 'contrastive_penalty_08_topk_10',
@@ -20,7 +37,10 @@ COMPONENTS = {
                 # 'stochastic_beam_search_10', 'stochastic_beam_search_3', 'stochastic_beam_search_5',
                 'greedy','temp_025', 'temp_06', 'temp_09'],
     'evaluation_datasets': ['test_set_1', 'test_set_2'],
-    'quantisation': ['full_model', 'quantised_model']
+    'quantisation': [
+                    'full_model',
+                     'quantised_model'
+                    ]
 }
 
 def generate_eval_configs():
@@ -40,7 +60,7 @@ def create_array_job():
     
     # Generate all combinations with eval configs, using ++ for overrides
     configs = [
-        f"seeds={seed} generation={gen} evaluation_dataset={eval_set} eval={eval_cfg} ++eval.quantisation_status={quant} ++eval.training_status=untrained"
+        f"seeds={seed} generation={gen} evaluation_dataset={eval_set} eval={eval_cfg} ++eval.quantisation_status={quant} ++eval.training_status=untrained dataset=untrained"
         for seed, gen, eval_set, quant, eval_cfg in product(
             COMPONENTS['seeds'],
             COMPONENTS['generation'],
@@ -69,12 +89,14 @@ def create_array_job():
     # Create array job script
     array_script = f"""#!/bin/bash
 #SBATCH --job-name=eval_untrained
-#SBATCH --output=eval_logs/untrained_%A_%a.out
-#SBATCH --error=eval_logs/untrained_%A_%a.err
-#SBATCH --partition=alldlc2_gpu-l40s
+#SBATCH --output={LOGS_DIR}/ft_%A_%a.out
+#SBATCH --error={LOGS_DIR}/ft_%A_%a.err
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=gpu_4
 #SBATCH --gres=gpu:1
-#SBATCH --time=01:00:00
-#SBATCH --array=0-{len(configs)-1}%16
+#SBATCH --mem=36G
+#SBATCH --time=1:00:00
+#SBATCH --array=0-{len(configs)-1}%32
 
 source ~/.bashrc
 
