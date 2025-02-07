@@ -62,7 +62,7 @@ def main(cfg: DictConfig):
     cfg.train.wandb.run_name += f"_{cfg.seeds.label}" # add seed name to wandb run name to separate diff seed runs
     #---------------------setting flags for run, need to set these for the code to run properly (VALIDATED)  ---------------------
     # set this flag as false if we are not quantising the model prior to training
-    use_quantisation = False
+    use_quantisation = True
     if use_quantisation: # this will be the QLORA training case, in case LORA breaks things
         logging.warning("Quantisation will be done on loaded model, THIS IS A QLORA FINE-TUNING RUN")
     elif not use_quantisation: # LORA training case
@@ -183,7 +183,7 @@ def main(cfg: DictConfig):
     training_args = TrainingArguments(
         run_name = cfg.train.wandb.run_name,
         output_dir = cfg.train.training_args.output_dir,
-        num_train_epochs = cfg.train.training_args.num_train_epochs,
+        num_train_epochs = 20,
         per_device_train_batch_size = cfg.train.training_args.per_device_train_batch_size,
         gradient_checkpointing = cfg.train.training_args.gradient_checkpointing,
         gradient_accumulation_steps = cfg.train.training_args.gradient_accumulation_steps,

@@ -3,11 +3,11 @@
 #SBATCH --output=/home/fr/fr_fr/fr_rf1031/bar-llama/helix-inference-logs/ft_%A_%a.out
 #SBATCH --error=/home/fr/fr_fr/fr_rf1031/bar-llama/helix-inference-logs/ft_%A_%a.err
 #SBATCH --cpus-per-task=1
-#SBATCH --partition=gpu_4
+#SBATCH --partition=gpu_8
 #SBATCH --gres=gpu:1
 #SBATCH --mem=36G
-#SBATCH --time=1:00:00
-#SBATCH --array=0-95%24
+#SBATCH --time=1:15:00
+#SBATCH --array=0-31%16
 
 # Setup logging
 echo "Job array ID: $SLURM_ARRAY_JOB_ID, Task ID: $SLURM_ARRAY_TASK_ID"

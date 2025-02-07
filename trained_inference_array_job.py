@@ -10,7 +10,7 @@ COMPONENTS = {
     # Components for constructing eval config names
     'response_formats': [
                         # 'json',
-                        #  'number_list',
+                         'number_list',
                           'markdown'
                           ],
     'response_types': [
@@ -29,30 +29,31 @@ COMPONENTS = {
     # Other components
     'seeds': [  
         # 'seed_21',
-         'seed_1337', # this one is where new models have been trained for with new hyperparams
-        #  'seed_42'
+        #  'seed_1337', # this one is where new models have been trained for with new hyperparams
+        #  'seed_42',
+        'seed_3991' # this on is the newest, 20 epoch trained with cosine schedule ,qlora  
             ],
     'datasets': [
-                'all_domains_1_samples', 
-                 'all_domains_10_samples', 
-                 'all_domains_20_samples',
-                 'all_domains_75_samples',
-                 'all_domains_125_samples',
+                # 'all_domains_1_samples', 
+                #  'all_domains_10_samples', 
+                #  'all_domains_20_samples',
+                #  'all_domains_75_samples',
+                #  'all_domains_125_samples',
                  'all_domains_all_samples'
                  ],
     'generation': [
-                    # 'greedy',
+                    'greedy',
                     'temp_025',
                    'temp_06',
                    'temp_09'
                    ],
     'evaluation_datasets': [
-                            # 'test_set_1', 
+                            'test_set_1', 
                             'test_set_2',
                             # 'val_set_1',
                             # 'val_set_2',
                             # 'val_set_3',
-                            'val_set_4'
+                            # 'val_set_4'
                             ],
     'quantisation': [
                     'full_model', 
@@ -112,11 +113,11 @@ def create_array_job():
 #SBATCH --output={LOGS_DIR}/ft_%A_%a.out
 #SBATCH --error={LOGS_DIR}/ft_%A_%a.err
 #SBATCH --cpus-per-task=1
-#SBATCH --partition=gpu_4
+#SBATCH --partition=gpu_8
 #SBATCH --gres=gpu:1
 #SBATCH --mem=36G
-#SBATCH --time=1:00:00
-#SBATCH --array=0-{len(configs)-1}%32
+#SBATCH --time=1:15:00
+#SBATCH --array=0-{len(configs)-1}%16
 
 # Setup logging
 echo "Job array ID: $SLURM_ARRAY_JOB_ID, Task ID: $SLURM_ARRAY_TASK_ID"

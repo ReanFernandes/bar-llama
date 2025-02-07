@@ -12,6 +12,7 @@ defaults:
   - generation: temp_06
   - parsing: markdown_answer_first_few_shot_unstructured
   - seeds : seed_1337
+  - inference_seeds : seed_206
 
 # using absolute paths here, need to change with rel paths at some point
 distilled_dataset_sft_path: /home/fr/fr_fr/fr_rf1031/bar-llama/dataset/seed_dataset/distilled_dataset.json

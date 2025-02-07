@@ -93,7 +93,7 @@ def set_global_seed(seed):
 @hydra.main(config_path="conf", config_name="config", version_base=None)
 def main(cfg: DictConfig):
     #-----------------set global seed-----------------
-    seed = cfg.seeds.seed
+    seed = cfg.inference_seeds.seed
     logging.info(f"Setting global seed to {seed}")
     set_global_seed(seed)
     #-----------------Logging and configuration related information-----------------

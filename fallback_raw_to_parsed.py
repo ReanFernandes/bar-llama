@@ -14,7 +14,8 @@ import copy
 from filelock import FileLock
 import pandas as pd
 import os
-
+from multiprocessing import Pool, cpu_count
+from functools import partial
 
 COMPONENTS = {
   'response_formats': [
@@ -37,7 +38,8 @@ COMPONENTS = {
   'seeds': [
       'seed_21',
       'seed_1337', 
-    #   'seed_42'
+      'seed_42',
+      'seed_3991'
   ],
   'datasets': [
       'all_domains_1_samples',
@@ -67,7 +69,7 @@ COMPONENTS = {
   ]
 }
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-MASTER_CSV_PATH = os.path.join(os.getcwd(), "new_fixed_metrics.csv")
+MASTER_CSV_PATH = os.path.join(os.getcwd(), "latest_fixed_metrics.csv")
 LOCK_FILE_PATH = os.path.join(os.getcwd(), "master_metrics.lock")
 
 def flatten_and_serialize(metrics_dict):
@@ -153,117 +155,225 @@ def get_raw_path(cfg, combo):
    
    return raw_path, parsed_path, metrics_path
 
+def process_combo(cfg_base: DictConfig, combo: dict):
+    try:
+        cfg = load_full_config(combo)
+        if not cfg:
+            return False, "Config load failed"
+
+        raw_path, parsed_path, metrics_path = get_raw_path(cfg, combo)
+        if not raw_path.exists():
+            return False, f"Skipping missing: {raw_path}"
+
+        try:
+            with open(raw_path) as f:
+                raw_outputs = json.load(f)
+        except json.JSONDecodeError as e:
+            return False, f"JSON parse error {raw_path}: {e}"
+
+        parsed_path.parent.mkdir(parents=True, exist_ok=True)
+
+        parser = ResponseHandler(cfg.eval.prompt)
+        parse_failed = 0
+        for data in raw_outputs:
+            try:
+                parser.assess(data)
+            except Exception as e:
+                parse_failed += 1
+
+        if parse_failed == len(raw_outputs):
+            return False, f"All responses failed parsing in {raw_path}"
+
+        parsed_outputs = copy.deepcopy(parser.response_dump)
+        parser.dump_to(str(parsed_path))
+
+        comparison_dict = {
+            'config': {
+                'model_name': cfg.model.model_label,
+                'seed': cfg.seeds.label,
+                'training_status': 'trained',
+                'quantisation_status': cfg.eval.quantisation_status,
+                'training_dataset': cfg.dataset.dataset_label,
+                'num_training_samples': cfg.dataset.num_sample_label,
+                'num_training_domains': list(cfg.dataset.domains),
+                'randomised_training_samples': cfg.dataset.randomise_questions,
+                'generation_strategy': cfg.generation.label,
+                'prompt_type': cfg.eval.prompt.prompt_type,
+                'explanation_type': cfg.eval.prompt.explanation_type,
+                'response_type': cfg.eval.prompt.response_type,
+                'response_format': cfg.eval.prompt.response_format,
+                'evaluation_dataset': cfg.evaluation_dataset.dataset_label
+            },
+            'metrics': None
+        }
+
+        grader = ResponseGrader(comparison_dict)
+        for data in parsed_outputs:
+            grader.grade_response(data)
+        
+        metrics = grader.finalise_metrics()
+        grader.dump_metrics(str(metrics_path))
+        append_metrics_to_csv(metrics)
+        
+        return True, f"Processed {raw_path.name}"
+
+    except Exception as e:
+        return False, f"Failed {combo}: {e}"
+
+# @hydra.main(config_path="conf", config_name="config", version_base=None)
+# def main(cfg: DictConfig):
+#    logging.basicConfig(level=logging.INFO)
+   
+#    combos = [{
+#        'response_format': rf,
+#        'response_type': rt,
+#        'prompt_type': pt,
+#        'explanation_type': et,
+#        'seed': seed,
+#        'dataset': dataset,
+#        'gen': gen,
+#        'eval_dataset': eval_set,
+#        'quant': quant
+#    } for rf, rt, pt, et, seed, dataset, gen, eval_set, quant in 
+#    itertools.product(
+#        COMPONENTS['response_formats'],
+#        COMPONENTS['response_types'],
+#        COMPONENTS['prompt_types'],
+#        COMPONENTS['explanation_types'],
+#        COMPONENTS['seeds'],
+#        COMPONENTS['datasets'],
+#        COMPONENTS['generation'],
+#        COMPONENTS['evaluation_datasets'],
+#        COMPONENTS['quantisation']
+#    )]
+
+#    total = len(combos)
+#    processed = skipped = failed = 0
+   
+#    for combo in combos:
+#        try:
+#            cfg = load_full_config(combo)
+#            if not cfg:
+#                failed += 1
+#                continue
+
+#            raw_path, parsed_path, metrics_path = get_raw_path(cfg, combo)
+#            if not raw_path.exists():
+#                logging.info(f"Skipping missing: {raw_path}")
+#                skipped += 1
+#                continue
+
+#            logging.info(f"Processing [{processed}/{total}]: {raw_path.parts[-2]} for {raw_path.parts[-5]} ")
+
+#            try:
+#                with open(raw_path) as f:
+#                    raw_outputs = json.load(f)
+#            except json.JSONDecodeError as e:
+#                logging.error(f"JSON parse error {raw_path}: {e}")
+#                failed += 1
+#                continue
+
+#         #    parsed_path = raw_path.parent / raw_path.name.replace('raw_responses', 'parsed_responses')
+#         #    metrics_path = raw_path.parent / raw_path.name.replace('raw_responses', 'metrics')
+#            parsed_path.parent.mkdir(parents=True, exist_ok=True)
+
+#            parser = ResponseHandler(cfg.eval.prompt)
+#            parse_failed = 0
+#            for data in raw_outputs:
+#                try:
+#                    parser.assess(data)
+#                except Exception as e:
+#                    logging.error(f"Parse error in {raw_path}: {e}")
+#                    parse_failed += 1
+
+#            if parse_failed == len(raw_outputs):
+#                logging.error(f"All responses failed parsing in {raw_path}")
+#                failed += 1
+#                continue
+
+#            parsed_outputs = copy.deepcopy(parser.response_dump)
+#            parser.dump_to(str(parsed_path))
+
+#            comparison_dict = {
+#                'config': {
+#                    'model_name': cfg.model.model_label,
+#                    'seed': cfg.seeds.label,
+#                    'training_status': 'trained',
+#                    'quantisation_status': cfg.eval.quantisation_status,
+#                    'training_dataset': cfg.dataset.dataset_label,
+#                    'num_training_samples': cfg.dataset.num_sample_label,
+#                    'num_training_domains': list(cfg.dataset.domains),
+#                    'randomised_training_samples': cfg.dataset.randomise_questions,
+#                    'generation_strategy': cfg.generation.label,
+#                    'prompt_type': cfg.eval.prompt.prompt_type,
+#                    'explanation_type': cfg.eval.prompt.explanation_type,
+#                    'response_type': cfg.eval.prompt.response_type,
+#                    'response_format': cfg.eval.prompt.response_format,
+#                    'evaluation_dataset': cfg.evaluation_dataset.dataset_label
+#                },
+#                'metrics': None
+#            }
+
+#            grader = ResponseGrader(comparison_dict)
+#            for data in parsed_outputs:
+#                grader.grade_response(data)
+           
+#            metrics = grader.finalise_metrics()
+#            grader.dump_metrics(str(metrics_path))
+#            append_metrics_to_csv(metrics)
+           
+#            processed += 1
+#            logging.info(f"Processed {raw_path.name}")
+           
+#        except Exception as e:
+#            logging.error(f"Failed {combo}: {e}")
+#            failed += 1
+#            continue
+
+#    logging.info(f"Complete. Total: {total}, Processed: {processed}, Skipped: {skipped}, Failed: {failed}")
+
+# if __name__ == "__main__":
+#    main()
 @hydra.main(config_path="conf", config_name="config", version_base=None)
 def main(cfg: DictConfig):
-   logging.basicConfig(level=logging.INFO)
-   
-   combos = [{
-       'response_format': rf,
-       'response_type': rt,
-       'prompt_type': pt,
-       'explanation_type': et,
-       'seed': seed,
-       'dataset': dataset,
-       'gen': gen,
-       'eval_dataset': eval_set,
-       'quant': quant
-   } for rf, rt, pt, et, seed, dataset, gen, eval_set, quant in 
-   itertools.product(
-       COMPONENTS['response_formats'],
-       COMPONENTS['response_types'],
-       COMPONENTS['prompt_types'],
-       COMPONENTS['explanation_types'],
-       COMPONENTS['seeds'],
-       COMPONENTS['datasets'],
-       COMPONENTS['generation'],
-       COMPONENTS['evaluation_datasets'],
-       COMPONENTS['quantisation']
-   )]
+    logging.basicConfig(level=logging.INFO)
+    
+    combos = [{
+        'response_format': rf,
+        'response_type': rt,
+        'prompt_type': pt,
+        'explanation_type': et,
+        'seed': seed,
+        'dataset': dataset,
+        'gen': gen,
+        'eval_dataset': eval_set,
+        'quant': quant
+    } for rf, rt, pt, et, seed, dataset, gen, eval_set, quant in 
+    itertools.product(
+        COMPONENTS['response_formats'],
+        COMPONENTS['response_types'],
+        COMPONENTS['prompt_types'],
+        COMPONENTS['explanation_types'],
+        COMPONENTS['seeds'],
+        COMPONENTS['datasets'],
+        COMPONENTS['generation'],
+        COMPONENTS['evaluation_datasets'],
+        COMPONENTS['quantisation']
+    )]
 
-   total = len(combos)
-   processed = skipped = failed = 0
-   
-   for combo in combos:
-       try:
-           cfg = load_full_config(combo)
-           if not cfg:
-               failed += 1
-               continue
-
-           raw_path, parsed_path, metrics_path = get_raw_path(cfg, combo)
-           if not raw_path.exists():
-               logging.info(f"Skipping missing: {raw_path}")
-               skipped += 1
-               continue
-
-           logging.info(f"Processing [{processed}/{total}]: {raw_path.parts[-2]} for {raw_path.parts[-5]} ")
-
-           try:
-               with open(raw_path) as f:
-                   raw_outputs = json.load(f)
-           except json.JSONDecodeError as e:
-               logging.error(f"JSON parse error {raw_path}: {e}")
-               failed += 1
-               continue
-
-        #    parsed_path = raw_path.parent / raw_path.name.replace('raw_responses', 'parsed_responses')
-        #    metrics_path = raw_path.parent / raw_path.name.replace('raw_responses', 'metrics')
-           parsed_path.parent.mkdir(parents=True, exist_ok=True)
-
-           parser = ResponseHandler(cfg.eval.prompt)
-           parse_failed = 0
-           for data in raw_outputs:
-               try:
-                   parser.assess(data)
-               except Exception as e:
-                   logging.error(f"Parse error in {raw_path}: {e}")
-                   parse_failed += 1
-
-           if parse_failed == len(raw_outputs):
-               logging.error(f"All responses failed parsing in {raw_path}")
-               failed += 1
-               continue
-
-           parsed_outputs = copy.deepcopy(parser.response_dump)
-           parser.dump_to(str(parsed_path))
-
-           comparison_dict = {
-               'config': {
-                   'model_name': cfg.model.model_label,
-                   'seed': cfg.seeds.label,
-                   'training_status': 'trained',
-                   'quantisation_status': cfg.eval.quantisation_status,
-                   'training_dataset': cfg.dataset.dataset_label,
-                   'num_training_samples': cfg.dataset.num_sample_label,
-                   'num_training_domains': list(cfg.dataset.domains),
-                   'randomised_training_samples': cfg.dataset.randomise_questions,
-                   'generation_strategy': cfg.generation.label,
-                   'prompt_type': cfg.eval.prompt.prompt_type,
-                   'explanation_type': cfg.eval.prompt.explanation_type,
-                   'response_type': cfg.eval.prompt.response_type,
-                   'response_format': cfg.eval.prompt.response_format,
-                   'evaluation_dataset': cfg.evaluation_dataset.dataset_label
-               },
-               'metrics': None
-           }
-
-           grader = ResponseGrader(comparison_dict)
-           for data in parsed_outputs:
-               grader.grade_response(data)
-           
-           metrics = grader.finalise_metrics()
-           grader.dump_metrics(str(metrics_path))
-           append_metrics_to_csv(metrics)
-           
-           processed += 1
-           logging.info(f"Processed {raw_path.name}")
-           
-       except Exception as e:
-           logging.error(f"Failed {combo}: {e}")
-           failed += 1
-           continue
-
-   logging.info(f"Complete. Total: {total}, Processed: {processed}, Skipped: {skipped}, Failed: {failed}")
+    total = len(combos)
+    num_workers = min(cpu_count(), 8)  # Limit to 8 workers maximum
+    
+    logging.info(f"Starting processing with {num_workers} workers")
+    
+    with Pool(num_workers) as pool:
+        process_fn = partial(process_combo, cfg)
+        results = pool.map(process_fn, combos)
+    
+    processed = sum(1 for success, _ in results if success)
+    failed = sum(1 for success, _ in results if not success)
+    
+    logging.info(f"Complete. Total: {total}, Processed: {processed}, Failed: {failed}")
 
 if __name__ == "__main__":
-   main()
+    main()
