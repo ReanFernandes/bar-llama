@@ -11,7 +11,7 @@ defaults:
   - quantization: quantization
   - generation: temp_06
   - parsing: markdown_answer_first_few_shot_unstructured
-  - seeds : seed_1337
+  - seeds : seed_314
   - inference_seeds : seed_206
 
 # using absolute paths here, need to change with rel paths at some point

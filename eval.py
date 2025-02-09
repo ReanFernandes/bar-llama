@@ -94,6 +94,7 @@ def set_global_seed(seed):
 def main(cfg: DictConfig):
     #-----------------set global seed-----------------
     seed = cfg.inference_seeds.seed
+    inference_seed_label = cfg.inference_seeds.label
     logging.info(f"Setting global seed to {seed}")
     set_global_seed(seed)
     #-----------------Logging and configuration related information-----------------
@@ -130,19 +131,31 @@ def main(cfg: DictConfig):
     if cfg.eval.training_status == 'trained':
         #logic block to ensure the correct path is set to the adapter for this combination
         #--------------------- Create the pathing logic to store the model ---------------------#
-        # The  starting point is ${hydra:runtime.cwd}/sft_adapters
-        #Level 1 : Add seed label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>
-        raw_adapter_path = os.path.join(cfg.eval.lora_adapter_path, cfg.seeds.label)
+        # # The  starting point is ${hydra:runtime.cwd}/sft_adapters
+        # #Level 1 : Add seed label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>
+        # raw_adapter_path = os.path.join(cfg.eval.lora_adapter_path, cfg.seeds.label)
 
-        #Level 2 : Add training dataset label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>
-        raw_adapter_path = os.path.join(raw_adapter_path, cfg.dataset.dataset_label)
+        # #Level 2 : Add training dataset label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>
+        # raw_adapter_path = os.path.join(raw_adapter_path, cfg.dataset.dataset_label)
 
-        # #Level 3 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>
+        # # #Level 3 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>
+        # # raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
+
+        # #Level 4 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>/<model_adapter_name>
+        # lora_adapter_path = os.path.join(raw_adapter_path, cfg.eval.eval_model_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
+        # logging.info(f"Loading model adapter from {lora_adapter_path}")
+        ###UPDATED LOGIC THAT DECOUPLES THE SEED FROM THE SAVED ADAPTER ###
+        #Level 1 : Start with dataset label : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>
+        raw_adapter_path = os.path.join(cfg.train.lora_adapter_path, cfg.dataset.dataset_label)
+
+        # #Level 2 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>/<generation_strategy>
         # raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
 
-        #Level 4 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>/<model_adapter_name>
-        lora_adapter_path = os.path.join(raw_adapter_path, cfg.eval.eval_model_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
-        logging.info(f"Loading model adapter from {lora_adapter_path}")
+        #Level 3 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>/<model_adapter_name>
+        raw_adapter_path = os.path.join(raw_adapter_path, cfg.train.model_adapter_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
+
+        # this should basically be the completed directory path for this models adapter to be saved to. 
+        os.makedirs(raw_adapter_path, exist_ok=True)
         # this should basically be the completed directory path for this models adapter to be saved to. 
         # ----------------- Load the model adapter and tokenizer -----------------#
 

@@ -163,16 +163,13 @@ def main(cfg: DictConfig):
     # model.print_trainable_params()
     #--------------------- Create the pathing logic to store the model (VALIDATED)---------------------#
     # The  starting point is ${hydra:runtime.cwd}/sft_adapters
-    #Level 1 : Add seed label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>
-    raw_adapter_path = os.path.join(cfg.train.lora_adapter_path, cfg.seeds.label)
+    #Level 1 : Start with dataset label : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>
+    raw_adapter_path = os.path.join(cfg.train.lora_adapter_path, cfg.dataset.dataset_label)
 
-    #Level 2 : Add training dataset label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>
-    raw_adapter_path = os.path.join(raw_adapter_path, cfg.dataset.dataset_label)
-
-    # #Level 3 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>
+    # #Level 2 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>/<generation_strategy>
     # raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
 
-    #Level 4 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>/<model_adapter_name>
+    #Level 3 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>/<model_adapter_name>
     raw_adapter_path = os.path.join(raw_adapter_path, cfg.train.model_adapter_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
 
     # this should basically be the completed directory path for this models adapter to be saved to. 
