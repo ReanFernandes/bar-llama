@@ -118,33 +118,34 @@ from typing import Dict, List
 class ComponentConfig:
     response_formats: List[str] = (                         # Using tuples instead of lists
         # 'json',
-        'number_list', 
+        # 'number_list', 
         'markdown',
     )
     response_types: List[str] = (
-        'answer_first', 
+        # 'answer_first', 
         'fact_first',
     )
     prompt_types: List[str] = (
         'few_shot', 
-        'zero_shot'
+        # 'zero_shot'
     )
     explanation_types: List[str] = (
         'structured', 
-        'unstructured',
+        # 'unstructured',
     )
     seeds: List[str] = (
-        'seed_21', 
+        'seed_206',
+        # 'seed_21', 
         # 'seed_1337', 
         # 'seed_42', 
         # 'seed_3991'  # Deprecated
     )
     datasets: List[str] = (
         # 'all_domains_1_samples', 
-        'all_domains_10_samples',
-        'all_domains_20_samples',
-        'all_domains_75_samples',
-        'all_domains_125_samples',
+        # 'all_domains_10_samples',
+        # 'all_domains_20_samples',
+        # 'all_domains_75_samples',
+        # 'all_domains_125_samples',
         'all_domains_all_samples',
     )
     generation: List[str] = (

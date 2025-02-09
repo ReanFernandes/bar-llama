@@ -237,7 +237,19 @@ class DatabaseManager:
             return result[0] if result else None
         finally:
             conn.close()
-
+    def get_eval_configs(self, job_id: int) -> List[str]:
+        """Get evaluation config strings for a job"""
+        conn = sqlite3.connect(self.db_path)
+        c = conn.cursor()
+        
+        try:
+            c.execute('''
+                SELECT config_string FROM eval_configs 
+                WHERE job_id = ?
+            ''', (job_id,))
+            return [row[0] for row in c.fetchall()]
+        finally:
+            conn.close()
     def update_job_status(self, job_id: int, status: str, slurm_id: Optional[str] = None, 
                          exit_code: Optional[int] = None):
         conn = sqlite3.connect(self.db_path)
@@ -266,6 +278,41 @@ class DatabaseManager:
                 WHERE id = ?
             '''
             params.append(job_id)
+            
+            c.execute(query, params)
+            conn.commit()
+        finally:
+            conn.close()
+
+
+    def update_eval_status(self, job_id: int, config_string: str, status: str, 
+                        exit_code: Optional[int] = None, error_message: Optional[str] = None):
+        conn = sqlite3.connect(self.db_path)
+        c = conn.cursor()
+        
+        try:
+            updates = ['status = ?']
+            params = [status]
+            
+            if exit_code is not None:
+                updates.append('exit_code = ?')
+                params.append(exit_code)
+            
+            if error_message is not None:
+                updates.append('error_message = ?')
+                params.append(error_message)
+                
+            if status == 'running':
+                updates.append('start_time = CURRENT_TIMESTAMP')
+            elif status in ['completed', 'failed']:
+                updates.append('end_time = CURRENT_TIMESTAMP')
+                
+            query = f'''
+                UPDATE eval_configs 
+                SET {', '.join(updates)}
+                WHERE job_id = ? AND config_string = ?
+            '''
+            params.extend([job_id, config_string])
             
             c.execute(query, params)
             conn.commit()

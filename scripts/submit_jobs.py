@@ -4,8 +4,9 @@ import os
 import logging
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from job_management.manager import TrainEvalJobManager, BASE_DIR
+from job_management.manager import TrainEvalJobManager
 from job_management.config_generator import generate_train_eval_pairs
+from job_management.constants import BASE_DIR
 
 # Basic logging setup
 logging.basicConfig(

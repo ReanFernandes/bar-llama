@@ -175,15 +175,15 @@ if [ $TRAIN_EXIT -eq 0 ]; then
             script_content += f"""
 echo "Running evaluation with config: {eval_config}"
 # Update eval status to running
-sqlite3 {self.db_path} "UPDATE eval_configs SET status='running', start_time=CURRENT_TIMESTAMP WHERE job_id={job_id} AND config_string='{eval_config}'"
+python3 {self.base_dir}/scripts/update_eval_status.py {job_id} "{eval_config}" "running"
 
 python3 {self.base_dir}/eval.py {eval_config}
 EVAL_EXIT=$?
 
 if [ $EVAL_EXIT -eq 0 ]; then
-    sqlite3 {self.db_path} "UPDATE eval_configs SET status='completed', end_time=CURRENT_TIMESTAMP, exit_code=$EVAL_EXIT WHERE job_id={job_id} AND config_string='{eval_config}'"
+    python3 {self.base_dir}/scripts/update_eval_status.py {job_id} "{eval_config}" "completed" $EVAL_EXIT
 else
-    sqlite3 {self.db_path} "UPDATE eval_configs SET status='failed', end_time=CURRENT_TIMESTAMP, exit_code=$EVAL_EXIT, error_message='Evaluation failed' WHERE job_id={job_id} AND config_string='{eval_config}'"
+    python3 {self.base_dir}/scripts/update_eval_status.py {job_id} "{eval_config}" "failed" $EVAL_EXIT "Evaluation failed"
     echo "Evaluation failed with config: {eval_config}"
 fi
 """
@@ -235,4 +235,3 @@ echo "Job {job_id} completed at $(date)"
     def update_job_status(self, job_id: int, status: str, exit_code: Optional[int] = None):
         """Update status of a job"""
         self.db.update_job_status(job_id, status, exit_code=exit_code)
-

@@ -3,7 +3,8 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import logging
-from job_manager import TrainEvalJobManager, BASE_DIR
+from job_management.manager import TrainEvalJobManager
+from job_management.constants import BASE_DIR
 
 logger = logging.getLogger(__name__)
 

@@ -2,7 +2,8 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from pathlib import Path
-from job_manager import TrainEvalJobManager, BASE_DIR
+from job_management.manager import TrainEvalJobManager
+from job_management.constants import BASE_DIR
 
 def main():
     """Update job status from SLURM script"""

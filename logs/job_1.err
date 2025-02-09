@@ -1,0 +1,15 @@
+Unused kwargs: ['use_nested_quant']. These kwargs are not used in <class 'transformers.utils.quantization_config.BitsAndBytesConfig'>.
+`low_cpu_mem_usage` was None, now default to True since model is quantized.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:19<00:19, 19.38s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 10.60s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:23<00:00, 11.92s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Map:   0%|          | 0/1512 [00:00<?, ? examples/s]Map:  66%|██████▌   | 1000/1512 [00:00<00:00, 1232.14 examples/s]Map: 100%|██████████| 1512/1512 [00:01<00:00, 1323.99 examples/s]Map: 100%|██████████| 1512/1512 [00:01<00:00, 1282.17 examples/s]
+wandb: Currently logged in as: rean-fernandes. Use `wandb login --relogin` to force relogin
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Tracking run with wandb version 0.19.3
+wandb: Run data is saved locally in /pfs/data5/home/fr/fr_fr/fr_rf1031/bar-llama/wandb/run-20250210_000520-gntyc44h
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fine_tune_markdown_fact_first_few_shot_structured_seed_314
+wandb: ⭐️ View project at https://wandb.ai/rean-fernandes/huggingface
+wandb: 🚀 View run at https://wandb.ai/rean-fernandes/huggingface/runs/gntyc44h
+  0%|          | 0/1880 [00:00<?, ?it/s]  0%|          | 1/1880 [01:00<31:50:07, 60.99s/it]  0%|          | 2/1880 [01:54<29:31:13, 56.59s/it]  0%|          | 3/1880 [02:48<28:50:17, 55.31s/it]
