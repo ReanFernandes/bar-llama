@@ -8,7 +8,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=36G                         # Memory per job
 #SBATCH --time=6:00:00 # 6 hours
-
+export HUGGINGFACE_TOKEN="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"
 # Ensure logs directory exists
 echo "Ensuring logs directory exists..."
 mkdir -p /home/fr/fr_fr/fr_rf1031/bar-llama/helix-finetuning-logs

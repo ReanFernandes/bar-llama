@@ -1,6 +1,3 @@
 [
-  "seeds=seed_3991 dataset=all_domains_all_samples prompt=number_list_answer_first_few_shot_structured train=number_list_answer_first_few_shot_structured ++train.training_args.per_device_train_batch_size=8 ++train.training_args.gradient_accumulation_steps=2",
-  "seeds=seed_3991 dataset=all_domains_all_samples prompt=number_list_answer_first_few_shot_unstructured train=number_list_answer_first_few_shot_unstructured ++train.training_args.per_device_train_batch_size=8 ++train.training_args.gradient_accumulation_steps=2",
-  "seeds=seed_3991 dataset=all_domains_all_samples prompt=markdown_answer_first_few_shot_structured train=markdown_answer_first_few_shot_structured ++train.training_args.per_device_train_batch_size=8 ++train.training_args.gradient_accumulation_steps=2",
-  "seeds=seed_3991 dataset=all_domains_all_samples prompt=markdown_answer_first_few_shot_unstructured train=markdown_answer_first_few_shot_unstructured ++train.training_args.per_device_train_batch_size=8 ++train.training_args.gradient_accumulation_steps=2"
+  "seeds=seed_3991 dataset=all_domains_all_samples prompt=markdown_answer_first_few_shot_structured train=markdown_answer_first_few_shot_structured ++train.training_args.per_device_train_batch_size=16 ++train.training_args.gradient_accumulation_steps=2"
 ]

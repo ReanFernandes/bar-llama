@@ -98,6 +98,8 @@ def create_array_job():
 #SBATCH --time=1:00:00
 #SBATCH --array=0-{len(configs)-1}%32
 
+export HUGGINGFACE_TOKEN="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"
+
 source ~/.bashrc
 
 CONFIG=$(python3 -c '

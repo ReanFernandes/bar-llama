@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 COMPONENTS = {
     # Components for constructing eval config names
     'response_formats': [
-        'json',
+        # 'json',
         'number_list',
         'markdown'
     ],
@@ -39,18 +39,25 @@ COMPONENTS = {
     # Model-related components
     'model_names': [
         'llama2',
-        # 'llama3'  # For future use
+        'llama3'  # For future use
     ],
     'training_status': [
         'trained',
-        # 'untrained'
+        'untrained'
     ],
     
     # Other components
     'seeds': [
         'seed_21',
-        # 'seed_1337',
-        # 'seed_42'
+        'seed_42',
+        'seed_206',
+        'seed_314',
+        # 'seed_322',
+        # 'seed_786', 
+        # 'seed_989',
+        'seed_1337',
+        'seed_3991',   
+        
     ],
     'datasets': [
         'all_domains_1_samples',
@@ -61,7 +68,7 @@ COMPONENTS = {
         'all_domains_all_samples'
     ],
     'generation': [
-        # 'greedy',
+        'greedy',
         'temp_025',
         'temp_06',
         'temp_09'
@@ -128,7 +135,8 @@ class PathConstructor:
         
         path_components = [
             self.base_path,
-            "parsed_responses",
+            "parsed_responses", 
+            # config.model_name, # comment for older file save path, uncomment for latest convention
             config.seed,
             config.dataset,
             train_quant,
@@ -154,8 +162,10 @@ class ResponseProcessor:
                 result = {
                     'question_id': response.get('ground_truth', {}).get('question_number'),
                     'ground_truth_label': response.get('ground_truth', {}).get('correct_answer'),
-                    'ground_truth_domain': response.get('ground_truth', {}).get('domain'),
                     'predicted_label': response.get('response', {}).get('chosen_option_label') if response.get('response', {}).get('chosen_option_label') in {'A', 'B', 'C', 'D'} else None,
+                    'answer_match': 1 if (response.get('response', {}).get('chosen_option_label') == response.get('ground_truth', {}).get('correct_answer')
+                             and response.get('response', {}).get('chosen_option_label') in {'A', 'B', 'C', 'D'}) else 0,
+                    'ground_truth_domain': response.get('ground_truth', {}).get('domain'),
                     'predicted_domain': response.get('response', {}).get('domain'),
                     # 'confidence': response.get('confidence', None)
                 }
@@ -236,7 +246,7 @@ class QuestionLevelAnalyzer:
             
         return results
 
-    def build_analysis_dataset(self, num_workers: int = 4) -> pd.DataFrame:
+    def build_analysis_dataset(self, num_workers: int = 12) -> pd.DataFrame:
         """Build the complete analysis dataset using parallel processing"""
         configs = self._generate_configs()
         all_results = []
@@ -269,13 +279,13 @@ def main():
     """Main execution function"""
     # Set up base path and output path
     base_path = "/home/fr/fr_fr/fr_rf1031/bar-llama/model_outputs"
-    output_path = "question_level_analysis_results.csv"
+    output_path = "new_question_level_analysis_results.csv" # modify to add new files
     
     # Initialize analyzer
     analyzer = QuestionLevelAnalyzer(base_path, COMPONENTS)
     
     # Build and save dataset
-    results_df = analyzer.build_analysis_dataset(num_workers=4)
+    results_df = analyzer.build_analysis_dataset(num_workers=12)
     analyzer.save_results(output_path)
     
     # Print summary statistics

@@ -59,7 +59,7 @@ def main(cfg: DictConfig):
     #--------------------- set global seed (VALIDATED)---------------------
     set_global_seed(cfg.seeds.seed)
     logging.info(f"Global seed set to {cfg.seeds.seed}")
-    cfg.train.wandb.run_name += f"_{cfg.seeds.label}" # add seed name to wandb run name to separate diff seed runs
+    cfg.train.wandb.run_name += f"_{cfg.seeds.label}_{cfg.model.model_label}" # add seed name to wandb run name to separate diff seed runs
     #---------------------setting flags for run, need to set these for the code to run properly (VALIDATED)  ---------------------
     # set this flag as false if we are not quantising the model prior to training
     use_quantisation = True
@@ -102,7 +102,8 @@ def main(cfg: DictConfig):
         try:
             promptor.create_prompt(question_item=data_item,
                                 mode="train", #when set to "train", the model format for training text is use to create the prompt
-                                store_prompt=True) # this stores the prompt to the prompt_dict of the class
+                                store_prompt=True,# this stores the prompt to the prompt_dict of the class
+                                model_name=cfg.model.model_label) # model_label 60
         except Exception as e:
             logging.error(f"Error creating prompt for {data_item} : {e}, skipping this item")
             continue
@@ -163,24 +164,38 @@ def main(cfg: DictConfig):
     # model.print_trainable_params()
     #--------------------- Create the pathing logic to store the model (VALIDATED)---------------------#
     # The  starting point is ${hydra:runtime.cwd}/sft_adapters
-    #Level 1 : Start with dataset label : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>
-    raw_adapter_path = os.path.join(cfg.train.lora_adapter_path, cfg.dataset.dataset_label)
+    # #Level 1 : Start with dataset label : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>
+    # raw_adapter_path = os.path.join(cfg.train.lora_adapter_path, cfg.dataset.dataset_label)
 
-    # #Level 2 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>/<generation_strategy>
-    # raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
+    # # #Level 2 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>/<generation_strategy>
+    # # raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
 
-    #Level 3 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>/<model_adapter_name>
-    raw_adapter_path = os.path.join(raw_adapter_path, cfg.train.model_adapter_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
+    # #Level 3 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>/<model_adapter_name>
+    # raw_adapter_path = os.path.join(raw_adapter_path, cfg.train.model_adapter_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
 
-    # this should basically be the completed directory path for this models adapter to be saved to. 
+    # # this should basically be the completed directory path for this models adapter to be saved to. 
+    ###UPDATED LOGIC THAT DECOUPLES THE SEED FROM THE SAVED ADAPTER AND ADDS MODEL LEVEL###
+    #Level 0 : Start with model label : ${hydra:runtime.cwd}/sft_adapters/<model_label>
+    raw_adapter_path = os.path.join(cfg.train.lora_adapter_path, cfg.model.model_label)
+
+    #Level 1 : Dataset label : ${hydra:runtime.cwd}/sft_adapters/<model_label>/<training_dataset_label>
+    raw_adapter_path = os.path.join(raw_adapter_path, cfg.dataset.dataset_label)
+
+    #Level 2 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<model_label>/<training_dataset_label>/<model_adapter_name>
+    raw_adapter_path = os.path.join(raw_adapter_path, cfg.train.model_adapter_name) # this will be a combo like "llama2_json_answer_first_few_shot_structured"
+
+    # Create directory path for this model's adapter
     os.makedirs(raw_adapter_path, exist_ok=True)
-    # ------
+    try:
+        logging.info(f"Model adapter will be saved to {raw_adapter_path}")
+    except:
+        pass
     #--------------------- Create training arguments ---------------------#
 
     training_args = TrainingArguments(
         run_name = cfg.train.wandb.run_name,
         output_dir = cfg.train.training_args.output_dir,
-        num_train_epochs = 20,
+        num_train_epochs = 10,
         per_device_train_batch_size = cfg.train.training_args.per_device_train_batch_size,
         gradient_checkpointing = cfg.train.training_args.gradient_checkpointing,
         gradient_accumulation_steps = cfg.train.training_args.gradient_accumulation_steps,
@@ -191,7 +206,7 @@ def main(cfg: DictConfig):
         weight_decay = cfg.train.training_args.weight_decay,
         fp16 = cfg.train.training_args.fp16,
         bf16 = cfg.train.training_args.bf16,
-        max_grad_norm = max(cfg.train.training_args.max_grad_norm, 1.0), # making 1.0 for better stabiliity
+        max_grad_norm = max(cfg.train.training_args.max_grad_norm, 0.3), 
         max_steps = cfg.train.training_args.max_steps,
         group_by_length = cfg.train.training_args.group_by_length,
         lr_scheduler_type = cfg.train.training_args.lr_scheduler_type,
@@ -215,6 +230,7 @@ def main(cfg: DictConfig):
     )
     trainer.train()
     trainer.save_model(raw_adapter_path)
+    logging.info(f"Finetuning complete, model saved to {raw_adapter_path}")
     wandb.finish()
     
     

@@ -10,7 +10,7 @@ COMPONENTS = {
     # Components for constructing eval config names
     'response_formats': [
                         # 'json',
-                         'number_list',
+                        #  'number_list',
                           'markdown'
                           ],
     'response_types': [
@@ -34,12 +34,12 @@ COMPONENTS = {
         'seed_3991' # this on is the newest, 20 epoch trained with cosine schedule ,qlora  
             ],
     'datasets': [
-                # 'all_domains_1_samples', 
-                #  'all_domains_10_samples', 
+                'all_domains_1_samples', 
+                 'all_domains_10_samples', 
                 #  'all_domains_20_samples',
                 #  'all_domains_75_samples',
                 #  'all_domains_125_samples',
-                 'all_domains_all_samples'
+                #  'all_domains_all_samples'
                  ],
     'generation': [
                     'greedy',
@@ -78,7 +78,7 @@ def create_array_job():
     
     # Generate all combinations with eval configs, using + for parameter overrides
     configs = [
-        f"seeds={seed} dataset={dataset} generation={gen} evaluation_dataset={eval_set} eval={eval_cfg} ++eval.quantisation_status={quant} ++eval.training_status=trained"
+        f"model=llama3 tokenizer=llama3 seeds={seed} dataset={dataset} generation={gen} evaluation_dataset={eval_set} eval={eval_cfg} ++eval.quantisation_status={quant} ++eval.training_status=trained"
         for seed, dataset, gen, eval_set, quant, eval_cfg in product(
             COMPONENTS['seeds'],
             COMPONENTS['datasets'],
@@ -118,6 +118,8 @@ def create_array_job():
 #SBATCH --mem=36G
 #SBATCH --time=1:15:00
 #SBATCH --array=0-{len(configs)-1}%16
+
+export HUGGINGFACE_TOKEN="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"
 
 # Setup logging
 echo "Job array ID: $SLURM_ARRAY_JOB_ID, Task ID: $SLURM_ARRAY_TASK_ID"

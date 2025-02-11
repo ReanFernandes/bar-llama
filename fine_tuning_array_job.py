@@ -16,11 +16,11 @@ COMPONENTS = {
                     ],
     'response_types': [
                 'answer_first',
-                #  'fact_first'
+                 'fact_first'
                  ],
     'prompt_types': [
         'few_shot',
-        #  'zero_shot'
+         'zero_shot'
          ],
     'explanation_types': [
         'structured',
@@ -33,10 +33,10 @@ COMPONENTS = {
         'seed_3991', #qlora, batch size 8 grad accum 2, cosine anneal, 20 epoch
          ],
     'datasets': [
-                #  'all_domains_1_samples', 
-                #  'all_domains_10_samples', 
+                 'all_domains_1_samples', 
+                 'all_domains_10_samples', 
                 #  'all_domains_20_samples',
-                #  'all_domains_75_samples',
+                 'all_domains_75_samples',
                 #  'all_domains_125_samples',
                  'all_domains_all_samples'
                  ],
@@ -59,7 +59,7 @@ def create_array_job():
     
     # Generate all combinations
     configs = [
-        f"seeds={seed} dataset={dataset} prompt={train_cfg} train={train_cfg} ++train.training_args.per_device_train_batch_size=8 ++train.training_args.gradient_accumulation_steps=2"
+        f"model=llama3 tokenizer=llama3 seeds={seed} dataset={dataset} prompt={train_cfg} train={train_cfg} ++train.training_args.per_device_train_batch_size=8 ++train.training_args.gradient_accumulation_steps=2"
         for seed, dataset, train_cfg in product(
             COMPONENTS['seeds'],
             COMPONENTS['datasets'],
@@ -85,14 +85,16 @@ def create_array_job():
     # Create array job script
     array_script = f"""#!/bin/bash
 #SBATCH --job-name=helix-finetuning
-#SBATCH --output={LOGS_DIR}/ft_%A_%a.out
-#SBATCH --error={LOGS_DIR}/ft_%A_%a.err
+#SBATCH --output={LOGS_DIR}/ft_llama3_%A_%a.out
+#SBATCH --error={LOGS_DIR}/ft_llama3_%A_%a.err
 #SBATCH --cpus-per-task=1
 #SBATCH --partition=gpu_8
 #SBATCH --gres=gpu:1
 #SBATCH --mem=36G
 #SBATCH --time=39:45:00
-#SBATCH --array=0-{len(configs)-1}%12
+#SBATCH --array=0-{len(configs)-1}
+
+export HUGGINGFACE_TOKEN="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"
 
 # Setup logging
 echo "Job array ID: $SLURM_ARRAY_JOB_ID, Task ID: $SLURM_ARRAY_TASK_ID"

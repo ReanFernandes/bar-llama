@@ -38,7 +38,7 @@ import pandas as pd
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-MASTER_CSV_PATH = os.path.join(os.getcwd(), "master_metrics_after_the_fact.csv")
+MASTER_CSV_PATH = os.path.join(os.getcwd(), "new_results_consolidated.csv")
 LOCK_FILE_PATH = os.path.join(os.getcwd(), "master_metrics.lock")
 
 def flatten_and_serialize(metrics_dict):
@@ -93,8 +93,7 @@ def set_global_seed(seed):
 @hydra.main(config_path="conf", config_name="config", version_base=None)
 def main(cfg: DictConfig):
     #-----------------set global seed-----------------
-    seed = cfg.inference_seeds.seed
-    inference_seed_label = cfg.inference_seeds.label
+    seed = cfg.seeds.seed
     logging.info(f"Setting global seed to {seed}")
     set_global_seed(seed)
     #-----------------Logging and configuration related information-----------------
@@ -144,19 +143,17 @@ def main(cfg: DictConfig):
         # #Level 4 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>/<model_adapter_name>
         # lora_adapter_path = os.path.join(raw_adapter_path, cfg.eval.eval_model_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
         # logging.info(f"Loading model adapter from {lora_adapter_path}")
-        ###UPDATED LOGIC THAT DECOUPLES THE SEED FROM THE SAVED ADAPTER ###
-        #Level 1 : Start with dataset label : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>
-        raw_adapter_path = os.path.join(cfg.train.lora_adapter_path, cfg.dataset.dataset_label)
+       ###UPDATED LOGIC THAT DECOUPLES THE SEED FROM THE SAVED ADAPTER AND ADDS MODEL LEVEL###
+        #Level 0 : Start with model label : ${hydra:runtime.cwd}/sft_adapters/<model_label>
+        raw_adapter_path = os.path.join(cfg.eval.lora_adapter_path, cfg.model.model_label)
 
-        # #Level 2 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>/<generation_strategy>
-        # raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
+        #Level 1 : Dataset label : ${hydra:runtime.cwd}/sft_adapters/<model_label>/<training_dataset_label>
+        raw_adapter_path = os.path.join(raw_adapter_path, cfg.dataset.dataset_label)
 
-        #Level 3 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<training_dataset_label>/<model_adapter_name>
-        raw_adapter_path = os.path.join(raw_adapter_path, cfg.train.model_adapter_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
+        #Level 2 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<model_label>/<training_dataset_label>/<model_adapter_name>
+        lora_adapter_path = os.path.join(raw_adapter_path, cfg.eval.eval_model_name) # this will be a combo like "llama2_json_answer_first_few_shot_structured"
 
-        # this should basically be the completed directory path for this models adapter to be saved to. 
-        os.makedirs(raw_adapter_path, exist_ok=True)
-        # this should basically be the completed directory path for this models adapter to be saved to. 
+        # Create directory path for this model's adapter
         # ----------------- Load the model adapter and tokenizer -----------------#
 
         # add pad token to tokenizer and resize model embeddings 
@@ -181,6 +178,7 @@ def main(cfg: DictConfig):
                                     tokenizer=tokenizer,
                                     torch_dtype=torch.float16,
                                     device_map="auto",
+                                    device=device
                                     )
 
     # ----------------- Loading inference related stuff -----------------
@@ -194,9 +192,12 @@ def main(cfg: DictConfig):
 
     #----------------- specify correct saving paths for the raw output -----------------
     """ Slight caveat here that i currently have not that clear of an idea about how i want to go about saving outputs. It is super dependent on the type of experiment im aiming for, e.g. trying diff decoding techniques would need to involve saving the files that way"""
-    ### sanity check : The output_directory in eval configs is set to ${hydra:runtime.cwd}/model_outputs/raw_responses
-    ### Start with level 0 : the global seed : Output will be ${hydra:runtime.cwd}/model_outputs/raw_responses/<seed_label>
-    raw_save_path = os.path.join(cfg.eval.output_directory, cfg.seeds.label) # the global seed for the entire pipeline
+    ### sanity check : The output_directory in eval configs is set to ${hydra:runtime.cwd}/model_outputs/raw_responses/<model_label>
+    # Start with level -1 : the model name :  
+    raw_save_path = os.path.join(cfg.eval.output_directory, cfg.model.model_label)
+
+    ### Start with level 0 : the global seed : Output will be ${hydra:runtime.cwd}/model_outputs/raw_responses/<model_label>/<seed_label>
+    raw_save_path = os.path.join(raw_save_path, cfg.seeds.label) # the global seed for the entire pipeline
 
     ### Level 1 : Number of training samples(and optionally number of domains, but not testing for that currently) : For the timebeing i do not care about testing epoch wise results, so directly skipping it and movbing on to num samples
 
@@ -251,7 +252,7 @@ def main(cfg: DictConfig):
         elif cfg.eval.pipeline_available is False: 
             
             # using manual generation for peft model
-            inputs = tokenizer(prompt, return_tensors="pt")
+            inputs = tokenizer(prompt, return_tensors="pt",add_special_tokens=False)
             inputs.to(model.device)
 
             #generate model response 

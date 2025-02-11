@@ -158,6 +158,8 @@ class TrainEvalJobManager:
 echo "Starting job {job_id} at $(date)"
 echo "Configuration: {config}"
 
+export HUGGINGFACE_TOKEN="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"
+
 # Training phase
 python3 {self.base_dir}/scripts/update_status.py {job_id} training
 python3 {self.base_dir}/train.py {config}
@@ -235,3 +237,5 @@ echo "Job {job_id} completed at $(date)"
     def update_job_status(self, job_id: int, status: str, exit_code: Optional[int] = None):
         """Update status of a job"""
         self.db.update_job_status(job_id, status, exit_code=exit_code)
+
+    

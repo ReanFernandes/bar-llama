@@ -267,47 +267,117 @@ Response:
     #         self.prompt_dict.append({"text":prompt_template})
         
     #     return prompt_template, ground_truth
+
     def create_prompt(self, question_item, mode="eval", model_name="llama2", pipeline_available=False, store_prompt=False):
-        ''' 
+        '''
         Create a bundled system prompt and input prompt, to be passed to the model as one message.
+        Supports multiple model formats including llama2, llama3, and mistral
         '''
         try:
             input_prompt, ground_truth = self.input_prompt(question_item)
             
-            if mode == "train":  # Use in the format of the model, with the answers appended after the input prompt
-                expected_response = self._set_response(question_item)
-                if model_name == "llama2":
+            if model_name == "llama3":
+                if mode == "train":
+                    expected_response = self._set_response(question_item)
+                    if self.cfg["include_system_prompt"]:
+                        prompt_template = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+{self.system}<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{input_prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+{expected_response}<|eot_id|>"""
+                    else:
+                        prompt_template = f"""<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+{input_prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+{expected_response}<|eot_id|>"""
+            
+                elif mode == "eval":
+                    if self.cfg["include_system_prompt"]:
+                        prompt_template = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+{self.system}<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{input_prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>"""
+                else:
+                    prompt_template = f"""<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+{input_prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>"""
+
+            elif model_name == "llama2":
+                if mode == "train":
+                    expected_response = self._set_response(question_item)
                     if self.cfg["include_system_prompt"]:
                         prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]{expected_response}</s>"""
                     else:
                         prompt_template = f"""[INST]\n{input_prompt}[/INST]{expected_response}</s>"""
-                elif model_name == "mistral":
-                    if self.cfg["include_system_prompt"]:
-                        raise NotImplementedError("Mistral model formatting is not implemented yet.")
+                
+                elif mode == "eval":
+                    if pipeline_available:
+                        if self.cfg["include_system_prompt"]:
+                            prompt_template = f"""{self.system}\n{input_prompt}"""
+                        else:
+                            prompt_template = f"""{input_prompt}"""
                     else:
-                        raise NotImplementedError("Mistral model formatting is not implemented yet.")
-                else:
-                    raise ValueError(f"Unsupported model_name: {model_name}")
+                        if self.cfg["include_system_prompt"]:
+                            prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
+                        else:
+                            prompt_template = f"""[INST]\n{input_prompt}[/INST]"""
             
-            elif mode == "eval":
-                if pipeline_available:
-                    if self.cfg["include_system_prompt"]:
-                        prompt_template = f"""{self.system}\n{input_prompt}"""
-                    else:
-                        prompt_template = f"""{input_prompt}"""
-                else:
-                    if self.cfg["include_system_prompt"]:
-                        prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
-                    else:
-                        prompt_template = f"""[INST]\n{input_prompt}[/INST]"""
             else:
-                raise ValueError(f"Invalid mode: {mode}")
+                raise ValueError(f"Unsupported model_name: {model_name}")
 
             if store_prompt:
-                # Append prompt_template as a value for the key "text", to self.prompt_dict
                 self.prompt_dict.append({"text": prompt_template})
 
             return prompt_template, ground_truth
+        
         except Exception as e:
             logging.error(f"An error occurred: {e}", exc_info=True)
             return {"error": str(e), "message": "An error occurred while processing the prompt."}
+    # def create_prompt(self, question_item, mode="eval", model_name="llama2", pipeline_available=False, store_prompt=False):
+    #     ''' 
+    #     Create a bundled system prompt and input prompt, to be passed to the model as one message.
+    #     '''
+    #     try:
+    #         input_prompt, ground_truth = self.input_prompt(question_item)
+            
+    #         if mode == "train":  # Use in the format of the model, with the answers appended after the input prompt
+    #             expected_response = self._set_response(question_item)
+    #             if model_name == "llama2":
+    #                 if self.cfg["include_system_prompt"]:
+    #                     prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]{expected_response}</s>"""
+    #                 else:
+    #                     prompt_template = f"""[INST]\n{input_prompt}[/INST]{expected_response}</s>"""
+    #             elif model_name == "mistral":
+    #                 if self.cfg["include_system_prompt"]:
+    #                     raise NotImplementedError("Mistral model formatting is not implemented yet.")
+    #                 else:
+    #                     raise NotImplementedError("Mistral model formatting is not implemented yet.")
+    #             else:
+    #                 raise ValueError(f"Unsupported model_name: {model_name}")
+            
+    #         elif mode == "eval":
+    #             if pipeline_available:
+    #                 if self.cfg["include_system_prompt"]:
+    #                     prompt_template = f"""{self.system}\n{input_prompt}"""
+    #                 else:
+    #                     prompt_template = f"""{input_prompt}"""
+    #             else:
+    #                 if self.cfg["include_system_prompt"]:
+    #                     prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
+    #                 else:
+    #                     prompt_template = f"""[INST]\n{input_prompt}[/INST]"""
+    #         else:
+    #             raise ValueError(f"Invalid mode: {mode}")
+
+    #         if store_prompt:
+    #             # Append prompt_template as a value for the key "text", to self.prompt_dict
+    #             self.prompt_dict.append({"text": prompt_template})
+
+    #         return prompt_template, ground_truth
+    #     except Exception as e:
+    #         logging.error(f"An error occurred: {e}", exc_info=True)
+    #         return {"error": str(e), "message": "An error occurred while processing the prompt."}

@@ -35,6 +35,8 @@ def generate_slurm_script(seed, dataset, train, prompt):
 #SBATCH --time=6:00:00 # 6 hours
 #SBATCH --job-name=ft_{seed}_{dataset}_{train}
 
+export HUGGINGFACE_TOKEN="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"
+
 source ~/.bashrc
 conda activate thesis_env
 module load devel/cuda

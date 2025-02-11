@@ -1,0 +1,4 @@
+model_id: 'meta-llama/Meta-Llama-3-8B-Instruct'
+kwargs:
+  bos_token: <|begin_of_text|>
+  eos_token: <|end_of_text|>
