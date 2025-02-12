@@ -32,6 +32,7 @@ class DatabaseManager:
                     id INTEGER PRIMARY KEY,
                     base_config TEXT,
                     dataset TEXT,
+                    model TEXT,
                     train_config_string TEXT,
                     status TEXT DEFAULT 'pending',
                     slurm_id TEXT,
@@ -40,7 +41,7 @@ class DatabaseManager:
                     train_exit_code INTEGER,
                     current_eval_dataset TEXT,
                     error_message TEXT,
-                    UNIQUE(base_config, dataset)
+                    UNIQUE(base_config, dataset, model)
                 )
             ''')
             
@@ -48,6 +49,7 @@ class DatabaseManager:
                 CREATE TABLE IF NOT EXISTS eval_configs (
                     job_id INTEGER,
                     base_config TEXT,
+                    model TEXT, 
                     eval_dataset TEXT,
                     seed TEXT,
                     generation TEXT,
@@ -60,7 +62,7 @@ class DatabaseManager:
                     exit_code INTEGER,
                     error_message TEXT,
                     FOREIGN KEY(job_id) REFERENCES jobs(id),
-                    UNIQUE(job_id, base_config, eval_dataset, seed, generation, quantisation, training_status)
+                    UNIQUE(job_id, base_config,model ,eval_dataset, seed, generation, quantisation, training_status)
                 )
             ''')
             
@@ -77,11 +79,12 @@ class DatabaseManager:
         
         try:
             c.execute('''
-                INSERT INTO jobs (base_config, dataset, train_config_string)
+                INSERT INTO jobs (base_config, dataset, model ,train_config_string)
                 VALUES (?,?,?)
             ''', (
                 config_pair['identifiers']['base_config'],
                 config_pair['identifiers']['dataset'],
+                config_pair['identifiers']['model'],
                 config_pair['train_config_string']
 
             ))
@@ -90,11 +93,12 @@ class DatabaseManager:
             for eval_config in config_pair['eval_configs']: 
                 c.execute('''
                     INSERT INTO eval_configs(
-                    job_id, base_config, eval_dataset, seed, generation,
+                    job_id, base_config, model,eval_dataset, seed, generation,
                     quantisation, training_status, config_string ) VALUES(?,?,?,?,?,?,?,?)
                     ''', (
                         job_id,
-                        config_pair['identifiers']['base_config'],  
+                        config_pair['identifiers']['base_config'], 
+                        config_pair['identifiers']['model'],
                         eval_config['identifiers']['eval_dataset'],
                         eval_config['identifiers']['seed'],
                         eval_config['identifiers']['generation'],

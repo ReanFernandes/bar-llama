@@ -118,34 +118,38 @@ from typing import Dict, List
 class ComponentConfig:
     response_formats: List[str] = (                         # Using tuples instead of lists
         # 'json',
-        # 'number_list', 
+        'number_list', 
         'markdown',
     )
+    model: List[str] = (                         # models
+        'llama2',
+        'llama3'
+    )
     response_types: List[str] = (
-        # 'answer_first', 
+        'answer_first', 
         'fact_first',
     )
     prompt_types: List[str] = (
         'few_shot', 
-        # 'zero_shot'
+        'zero_shot'
     )
     explanation_types: List[str] = (
         'structured', 
-        # 'unstructured',
+        'unstructured',
     )
     seeds: List[str] = (
         'seed_206',
         # 'seed_21', 
         # 'seed_1337', 
-        # 'seed_42', 
+        'seed_42', 
         # 'seed_3991'  # Deprecated
     )
     datasets: List[str] = (
-        # 'all_domains_1_samples', 
-        # 'all_domains_10_samples',
-        # 'all_domains_20_samples',
-        # 'all_domains_75_samples',
-        # 'all_domains_125_samples',
+        'all_domains_1_samples', 
+        'all_domains_10_samples',
+        'all_domains_20_samples',
+        'all_domains_75_samples',
+        'all_domains_125_samples',
         'all_domains_all_samples',
     )
     generation: List[str] = (
@@ -184,17 +188,20 @@ def generate_train_eval_pairs(components: ComponentConfig = ComponentConfig()) -
     
     paired_configs = []
     # Remove seed from this product since it's only for eval
-    for dataset, base_config in product(
+    for dataset, base_config,model in product(
         components.datasets,
-        base_configs
+        base_configs,
+        components.model
     ):
         # Training config without seed specification
         train_config = (
+            f"model={model} "
+            f"tokenizer={model} "
             f"dataset={dataset} "
             f"prompt={base_config} "
             f"train={base_config} "
             f"++train.training_args.per_device_train_batch_size=8 "
-            f"++train.training_args.gradient_accumulation_steps=2"
+            f"++train.training_args.gradient_accumulation_steps=1"
         )
         
         # Generate all eval configurations for this training config
@@ -232,10 +239,13 @@ def generate_train_eval_pairs(components: ComponentConfig = ComponentConfig()) -
             components.seeds,
             components.generation,
             components.quantisation,
-            components.training_status
+            components.training_status,
+            
         ):
             eval_config_string = (
                 f"seeds={seed} "
+                f"model={model} "
+                f"tokenizer={model} "
                 f"dataset={dataset} "
                 f"generation={gen} "
                 f"evaluation_dataset={eval_set} "
@@ -257,7 +267,8 @@ def generate_train_eval_pairs(components: ComponentConfig = ComponentConfig()) -
         paired_configs.append({
             'identifiers': {
                 'base_config': base_config,
-                'dataset': dataset
+                'dataset': dataset,
+                'model': model
             },
             'train_config_string': train_config,  # Original string preserved
             'eval_configs': eval_configs

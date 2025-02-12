@@ -206,7 +206,7 @@ def main(cfg: DictConfig):
         weight_decay = cfg.train.training_args.weight_decay,
         fp16 = cfg.train.training_args.fp16,
         bf16 = cfg.train.training_args.bf16,
-        max_grad_norm = max(cfg.train.training_args.max_grad_norm, 0.3), 
+        max_grad_norm = max(cfg.train.training_args.max_grad_norm, 0.5), 
         max_steps = cfg.train.training_args.max_steps,
         group_by_length = cfg.train.training_args.group_by_length,
         lr_scheduler_type = cfg.train.training_args.lr_scheduler_type,

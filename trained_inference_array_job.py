@@ -10,16 +10,16 @@ COMPONENTS = {
     # Components for constructing eval config names
     'response_formats': [
                         # 'json',
-                        #  'number_list',
+                         'number_list',
                           'markdown'
                           ],
     'response_types': [
                         'answer_first', 
-                        # 'fact_first'
+                        'fact_first'
                         ],
     'prompt_types': [
                 'few_shot',
-                #  'zero_shot'
+                 'zero_shot'
                  ],
     'explanation_types': [
                     'structured',
@@ -30,16 +30,16 @@ COMPONENTS = {
     'seeds': [  
         # 'seed_21',
         #  'seed_1337', # this one is where new models have been trained for with new hyperparams
-        #  'seed_42',
+         'seed_42',
         'seed_3991' # this on is the newest, 20 epoch trained with cosine schedule ,qlora  
             ],
     'datasets': [
-                'all_domains_1_samples', 
-                 'all_domains_10_samples', 
+                # 'all_domains_1_samples', 
+                #  'all_domains_10_samples', 
                 #  'all_domains_20_samples',
-                #  'all_domains_75_samples',
+                 'all_domains_75_samples',
                 #  'all_domains_125_samples',
-                #  'all_domains_all_samples'
+                 'all_domains_all_samples'
                  ],
     'generation': [
                     'greedy',

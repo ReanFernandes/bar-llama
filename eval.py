@@ -325,7 +325,7 @@ def main(cfg: DictConfig):
             'seed': cfg.seeds.label, # Seed used for the run
             'training_status': cfg.eval.training_status, # can be 'trained' or 'untrained'
             'quantisation_status': cfg.eval.quantisation_status, # can be 'quantised_model' or 'full_model'
-            'training dataset': cfg.dataset.dataset_label if cfg.eval.training_status == 'trained' else None, # dataset used for training
+            'training_dataset': cfg.dataset.dataset_label if cfg.eval.training_status == 'trained' else None, # dataset used for training
             'num_training_samples': cfg.dataset.num_sample_label if cfg.eval.training_status == 'trained' else None, # number of samples used for training, if applicable
             'num_training_domains': list(cfg.dataset.domains) if cfg.eval.training_status == 'trained' else None, # number, or rather the list of names of domains used for training, if applicable
             'randomised_training_samples' : cfg.dataset.randomise_questions if cfg.eval.training_status == 'trained' else None, # whether the samples were selected randomly from the train set
