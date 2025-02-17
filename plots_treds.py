@@ -4,10 +4,10 @@ import seaborn as sns
 import numpy as np
 
 # Read and prepare the data
-df = pd.read_csv('master_metrics_after_the_fact.csv')
+df = pd.read_csv('master_metrics.csv')
 
 # Filter for validation sets only
-df = df[df['evaluation_dataset'].str.contains('val_set_[1-4]$', regex=True)]
+df = df[df['evaluation_dataset'].str.contains('test_set_[1-2]$', regex=True)]
 
 # Replace 'all' with 250 in num_training_samples
 df['num_training_samples'] = df['num_training_samples'].replace('all', '250')
@@ -19,8 +19,8 @@ plt.figure(figsize=(12, 8))
 
 # Set style
 # plt.style.use('seaborn')
-colors = ['#2E86C1', '#E67E22', '#27AE60', '#C0392B']
-datasets = ['val_set_1', 'val_set_2', 'val_set_3', 'val_set_4']
+colors = ['#2E86C1', '#E67E22']
+datasets = ['test_set_1', 'test_set_2']
 
 # Plot for each validation set
 for idx, (dataset, color) in enumerate(zip(datasets, colors)):
@@ -87,5 +87,5 @@ plt.xticks(sorted(df_clean['num_training_samples'].unique()))
 # Adjust layout to prevent legend cutoff
 plt.tight_layout()
 
-plt.savefig('accuracy_trend.png', bbox_inches='tight', dpi=300)
+plt.savefig('accuracy_trend.pdf', bbox_inches='tight')
 plt.close()

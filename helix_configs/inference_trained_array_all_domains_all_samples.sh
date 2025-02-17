@@ -7,7 +7,9 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=36G
 #SBATCH --time=1:15:00
-#SBATCH --array=0-31%16
+#SBATCH --array=0-95%16
+
+export HUGGINGFACE_TOKEN="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"
 
 # Setup logging
 echo "Job array ID: $SLURM_ARRAY_JOB_ID, Task ID: $SLURM_ARRAY_TASK_ID"
