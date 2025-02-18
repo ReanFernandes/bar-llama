@@ -80,7 +80,7 @@ class DatabaseManager:
         try:
             c.execute('''
                 INSERT INTO jobs (base_config, dataset, model ,train_config_string)
-                VALUES (?,?,?)
+                VALUES (?,?,?,?)
             ''', (
                 config_pair['identifiers']['base_config'],
                 config_pair['identifiers']['dataset'],
@@ -94,7 +94,7 @@ class DatabaseManager:
                 c.execute('''
                     INSERT INTO eval_configs(
                     job_id, base_config, model,eval_dataset, seed, generation,
-                    quantisation, training_status, config_string ) VALUES(?,?,?,?,?,?,?,?)
+                    quantisation, training_status, config_string ) VALUES(?,?,?,?,?,?,?,?,?)
                     ''', (
                         job_id,
                         config_pair['identifiers']['base_config'], 

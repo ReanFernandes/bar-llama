@@ -38,7 +38,7 @@ import pandas as pd
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-MASTER_CSV_PATH = os.path.join(os.getcwd(), "new_results_consolidated.csv")
+MASTER_CSV_PATH = os.path.join(os.getcwd(), "final_run_results.csv")
 LOCK_FILE_PATH = os.path.join(os.getcwd(), "master_metrics.lock")
 
 def flatten_and_serialize(metrics_dict):
@@ -326,7 +326,7 @@ def main(cfg: DictConfig):
             'training_status': cfg.eval.training_status, # can be 'trained' or 'untrained'
             'quantisation_status': cfg.eval.quantisation_status, # can be 'quantised_model' or 'full_model'
             'training_dataset': cfg.dataset.dataset_label if cfg.eval.training_status == 'trained' else None, # dataset used for training
-            'num_training_samples': cfg.dataset.num_sample_label if cfg.eval.training_status == 'trained' else None, # number of samples used for training, if applicable
+            'num_training_samples': cfg.dataset.num_sample_label if cfg.eval.training_status == 'trained' else 0, # number of samples used for training, if applicable otherwise 0 for untrained
             'num_training_domains': list(cfg.dataset.domains) if cfg.eval.training_status == 'trained' else None, # number, or rather the list of names of domains used for training, if applicable
             'randomised_training_samples' : cfg.dataset.randomise_questions if cfg.eval.training_status == 'trained' else None, # whether the samples were selected randomly from the train set
             'generation_strategy': cfg.generation.label, # decoding strategy used for inference

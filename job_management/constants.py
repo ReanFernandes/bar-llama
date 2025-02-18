@@ -1,6 +1,6 @@
 from pathlib import Path
 
-BASE_DIR = Path("/home/fr/fr_fr/fr_rf1031/bar-llama")
+BASE_DIR = Path("/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama")
 LOGS_DIR = BASE_DIR / "logs"
 DATABASE_DIR = BASE_DIR / "database"
 SCRIPTS_DIR = BASE_DIR / "job_scripts"

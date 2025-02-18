@@ -146,17 +146,17 @@ class ComponentConfig:
     )
     datasets: List[str] = (
         'all_domains_1_samples', 
-        'all_domains_10_samples',
-        'all_domains_20_samples',
-        'all_domains_75_samples',
-        'all_domains_125_samples',
-        'all_domains_all_samples',
+        # 'all_domains_10_samples',
+        # 'all_domains_20_samples',
+        # 'all_domains_75_samples',
+        # 'all_domains_125_samples',
+        # 'all_domains_all_samples',
     )
     generation: List[str] = (
         'greedy', 
         'temp_025', 
         'temp_06', 
-        # 'temp_09',
+        # 'temp_09', #not doing right now to save time on inference jobs, will incorporate later on
     )
     evaluation_datasets: List[str] = (
         'test_set_1',
@@ -200,7 +200,7 @@ def generate_train_eval_pairs(components: ComponentConfig = ComponentConfig()) -
             f"dataset={dataset} "
             f"prompt={base_config} "
             f"train={base_config} "
-            f"++train.training_args.per_device_train_batch_size=8 "
+            f"++train.training_args.per_device_train_batch_size=7 "
             f"++train.training_args.gradient_accumulation_steps=1"
         )
         

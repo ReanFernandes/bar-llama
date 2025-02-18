@@ -26,13 +26,13 @@ def main():
     logger.info("Added all configs to database")
     
     # # Then submit jobs if queue has space
-    # status = manager.get_queue_status()
-    # if status and status['available'] > 0:
-    #     submitted = manager.submit_jobs(status['available'])
-    #     logger.info(f"Submitted {submitted} jobs to SLURM queue")
-    #     logger.info(f"Queue status - Running: {status['running']}, "
-    #                f"Queued: {status['queued']}, "
-    #                f"Available: {status['available']}")
+    status = manager.get_queue_status()
+    if status and status['available'] > 0:
+        submitted = manager.submit_jobs(status['available'])
+        logger.info(f"Submitted {submitted} jobs to SLURM queue")
+        logger.info(f"Queue status - Running: {status['running']}, "
+                   f"Queued: {status['queued']}, "
+                   f"Available: {status['available']}")
 
 if __name__ == "__main__":
     main()

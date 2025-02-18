@@ -159,7 +159,7 @@ echo "Starting job {job_id} at $(date)"
 echo "Configuration: {config}"
 
 export HUGGINGFACE_TOKEN="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"
-
+export WANDB_PROJECT=Final_runs_paper
 # Training phase
 python3 {self.base_dir}/scripts/update_status.py {job_id} training
 python3 {self.base_dir}/train.py {config}
