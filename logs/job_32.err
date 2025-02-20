@@ -1,0 +1,4 @@
+Could not override 'model'. No match in the defaults list.
+To append to your default list use +model=llama3
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

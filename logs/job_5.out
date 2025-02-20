@@ -1,0 +1,900 @@
+Starting job 5 at Do 20. Feb 09:42:05 CET 2025
+Configuration: model=llama2 tokenizer=llama2 dataset=all_domains_1_samples prompt=number_list_answer_first_zero_shot_structured train=number_list_answer_first_zero_shot_structured ++train.training_args.per_device_train_batch_size=7 ++train.training_args.gradient_accumulation_steps=1
+[2025-02-20 09:42:22,285][root][INFO] - Global seed set to 314
+[2025-02-20 09:42:22,287][root][WARNING] - Quantisation will be done on loaded model, THIS IS A QLORA FINE-TUNING RUN
+[2025-02-20 09:42:22,287][root][WARNING] - Following flags are set for the run : 
+ Use Quantisation before fine-tuning : True 
+ Perform Validation on epoch end : False
+[2025-02-20 09:42:22,287][root][INFO] - Running Fine-tuning on the all_domains_1_samples dataset
+[2025-02-20 09:42:22,287][root][INFO] - Current training config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : structured 
+ Response Format : number_list 
+[2025-02-20 09:42:22,287][root][INFO] - Loading dataset from /home/fr/fr_fr/fr_rf1031/bar-llama/dataset/seed_dataset/distilled_dataset.json
+[2025-02-20 09:42:22,304][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-02-20 09:42:22,325][root][INFO] - Indexing complete, sampling of questions set to True
+[2025-02-20 09:42:22,327][root][INFO] - Questions selected, dataset contains 7 questions with 1.0 questions per domain
+[2025-02-20 09:42:22,332][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'number_list', 'store_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${train.prompt.response_format}_${train.prompt.response_type}_${train.prompt.explanation_type}.txt', 'include_system_prompt': True}
+[2025-02-20 09:42:22,779][root][INFO] - Tokenizer meta-llama/Llama-2-7b-hf loaded successfully
+[2025-02-20 09:42:42,623][root][INFO] - Quantised model meta-llama/Llama-2-7b-hf loaded successfully
+[2025-02-20 09:43:16,891][root][INFO] - Model prepared for kbit training
+[2025-02-20 09:43:16,892][root][INFO] - Lora config loaded, following are the details : 
+ LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type='CAUSAL_LM', inference_mode=False, r=64, target_modules={'up_proj', 'q_proj', 'o_proj', 'k_proj', 'v_proj', 'down_proj', 'gate_proj'}, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+[2025-02-20 09:43:18,742][root][INFO] - Lora adapter added to model
+[2025-02-20 09:43:18,745][root][INFO] - Model adapter will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/sft_adapters/llama2/all_domains_1_samples/llama2_number_list_answer_first_zero_shot_structured
+[2025-02-20 09:43:18,858][accelerate.utils.other][WARNING] - Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+{'loss': 1.2341, 'grad_norm': 0.241066575050354, 'learning_rate': 3.226975564787322e-05, 'epoch': 10.0}
+{'train_runtime': 358.7011, 'train_samples_per_second': 0.293, 'train_steps_per_second': 0.042, 'train_loss': 1.1245854377746582, 'epoch': 15.0}
+[2025-02-20 09:49:20,873][root][INFO] - Finetuning complete, model saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/sft_adapters/llama2/all_domains_1_samples/llama2_number_list_answer_first_zero_shot_structured
+Starting evaluations for job 5
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+[2025-02-20 09:49:30,775][root][INFO] - Setting global seed to 206
+[2025-02-20 09:49:30,784][root][INFO] - Running evaluation of the trained model on the test_set_1
+[2025-02-20 09:49:30,785][root][INFO] - Current evaluation config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : structured 
+ Response Format : number_list 
+[2025-02-20 09:49:30,786][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_1.json
+[2025-02-20 09:49:30,788][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-02-20 09:49:30,790][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-02-20 09:49:30,791][root][INFO] - Questions selected, dataset contains 99 questions with 14.142857142857142 questions per domain
+[2025-02-20 09:49:30,927][root][INFO] - Loading model : meta-llama/Llama-2-7b-hf
+[2025-02-20 09:49:31,308][root][INFO] - Full model selected, loading model
+[2025-02-20 09:49:51,625][root][INFO] - Tokenizer special tokens: {'bos_token': '<s>', 'eos_token': '</s>', 'unk_token': '<unk>', 'pad_token': '[PAD]'} have been added
+[2025-02-20 09:51:00,045][root][INFO] - Fine-tuned model selected, loading adapter
+[2025-02-20 09:51:00,046][root][WARNING] - Inference will be done using model.generate instead of hf pipeline since peft model is not compatible with it
+[2025-02-20 09:51:25,560][root][INFO] - Peft model loaded successfully
+[2025-02-20 09:51:31,767][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'number_list', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-02-20 09:51:31,769][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama2/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 09:51:31,769][root][INFO] - Starting inference
+[2025-02-20 09:51:31,944][root][INFO] - Processing question number 0
+[2025-02-20 09:51:31,946][root][INFO] - Domain : Civil_procedure, Question : 1
+[2025-02-20 09:51:45,244][root][INFO] - Domain : Civil_procedure, Question : 7
+[2025-02-20 09:52:04,514][root][INFO] - Domain : Civil_procedure, Question : 14
+[2025-02-20 09:52:22,465][root][INFO] - Domain : Civil_procedure, Question : 21
+[2025-02-20 09:52:49,890][root][INFO] - Domain : Civil_procedure, Question : 28
+[2025-02-20 09:53:16,758][root][INFO] - Domain : Civil_procedure, Question : 35
+[2025-02-20 09:53:32,128][root][INFO] - Domain : Civil_procedure, Question : 42
+[2025-02-20 09:53:45,674][root][INFO] - Domain : Civil_procedure, Question : 49
+[2025-02-20 09:53:59,673][root][INFO] - Domain : Civil_procedure, Question : 56
+[2025-02-20 09:54:26,326][root][INFO] - Domain : Civil_procedure, Question : 63
+[2025-02-20 09:54:45,337][root][INFO] - Processing question number 10
+[2025-02-20 09:54:45,339][root][INFO] - Domain : Civil_procedure, Question : 69
+[2025-02-20 09:55:07,562][root][INFO] - Domain : Civil_procedure, Question : 70
+[2025-02-20 09:55:23,076][root][INFO] - Domain : Civil_procedure, Question : 77
+[2025-02-20 09:55:42,804][root][INFO] - Domain : Civil_procedure, Question : 84
+[2025-02-20 09:55:57,117][root][INFO] - Domain : Civil_procedure, Question : 91
+[2025-02-20 09:56:09,165][root][INFO] - Domain : Civil_procedure, Question : 98
+[2025-02-20 09:56:20,023][root][INFO] - Domain : Constitutional_law, Question : 2
+[2025-02-20 09:56:46,549][root][INFO] - Domain : Constitutional_law, Question : 9
+[2025-02-20 09:56:59,668][root][INFO] - Domain : Constitutional_law, Question : 17
+[2025-02-20 09:57:26,651][root][INFO] - Domain : Constitutional_law, Question : 25
+[2025-02-20 09:57:41,072][root][INFO] - Processing question number 20
+[2025-02-20 09:57:41,077][root][INFO] - Domain : Constitutional_law, Question : 29
+[2025-02-20 09:57:56,985][root][INFO] - Domain : Constitutional_law, Question : 37
+[2025-02-20 09:58:25,845][root][INFO] - Domain : Constitutional_law, Question : 43
+[2025-02-20 09:58:39,161][root][INFO] - Domain : Constitutional_law, Question : 55
+[2025-02-20 09:58:49,545][root][INFO] - Domain : Constitutional_law, Question : 60
+[2025-02-20 09:59:05,490][root][INFO] - Domain : Constitutional_law, Question : 65
+[2025-02-20 09:59:32,394][root][INFO] - Domain : Constitutional_law, Question : 71
+[2025-02-20 10:00:00,088][root][INFO] - Domain : Constitutional_law, Question : 79
+[2025-02-20 10:00:15,276][root][INFO] - Domain : Constitutional_law, Question : 87
+[2025-02-20 10:00:31,077][root][INFO] - Domain : Constitutional_law, Question : 93
+[2025-02-20 10:00:41,864][root][INFO] - Processing question number 30
+[2025-02-20 10:00:41,867][root][INFO] - Domain : Contracts, Question : 3
+[2025-02-20 10:01:02,046][root][INFO] - Domain : Contracts, Question : 8
+[2025-02-20 10:01:11,355][root][INFO] - Domain : Contracts, Question : 16
+[2025-02-20 10:01:38,471][root][INFO] - Domain : Contracts, Question : 22
+[2025-02-20 10:02:05,448][root][INFO] - Domain : Contracts, Question : 27
+[2025-02-20 10:02:32,271][root][INFO] - Domain : Contracts, Question : 38
+[2025-02-20 10:02:50,249][root][INFO] - Domain : Contracts, Question : 46
+[2025-02-20 10:03:04,360][root][INFO] - Domain : Contracts, Question : 51
+[2025-02-20 10:03:23,566][root][INFO] - Domain : Contracts, Question : 58
+[2025-02-20 10:03:32,614][root][INFO] - Domain : Contracts, Question : 66
+[2025-02-20 10:03:58,669][root][INFO] - Processing question number 40
+[2025-02-20 10:03:58,672][root][INFO] - Domain : Contracts, Question : 72
+[2025-02-20 10:04:25,796][root][INFO] - Domain : Contracts, Question : 81
+[2025-02-20 10:04:41,480][root][INFO] - Domain : Contracts, Question : 88
+[2025-02-20 10:04:56,277][root][INFO] - Domain : Contracts, Question : 94
+[2025-02-20 10:05:23,703][root][INFO] - Domain : Torts, Question : 4
+[2025-02-20 10:05:44,439][root][INFO] - Domain : Torts, Question : 11
+[2025-02-20 10:06:02,424][root][INFO] - Domain : Torts, Question : 24
+[2025-02-20 10:06:30,739][root][INFO] - Domain : Torts, Question : 32
+[2025-02-20 10:06:42,541][root][INFO] - Domain : Torts, Question : 41
+[2025-02-20 10:06:54,293][root][INFO] - Domain : Torts, Question : 47
+[2025-02-20 10:07:09,719][root][INFO] - Processing question number 50
+[2025-02-20 10:07:09,722][root][INFO] - Domain : Torts, Question : 52
+[2025-02-20 10:07:34,077][root][INFO] - Domain : Torts, Question : 62
+[2025-02-20 10:07:52,442][root][INFO] - Domain : Torts, Question : 76
+[2025-02-20 10:08:03,333][root][INFO] - Domain : Torts, Question : 82
+[2025-02-20 10:08:16,535][root][INFO] - Domain : Torts, Question : 90
+[2025-02-20 10:08:30,634][root][INFO] - Domain : Torts, Question : 95
+[2025-02-20 10:08:40,736][root][INFO] - Domain : Torts, Question : 99
+[2025-02-20 10:09:08,560][root][INFO] - Domain : Evidence, Question : 5
+[2025-02-20 10:09:20,553][root][INFO] - Domain : Evidence, Question : 12
+[2025-02-20 10:09:47,022][root][INFO] - Domain : Evidence, Question : 18
+[2025-02-20 10:10:13,967][root][INFO] - Processing question number 60
+[2025-02-20 10:10:13,971][root][INFO] - Domain : Evidence, Question : 23
+[2025-02-20 10:10:25,328][root][INFO] - Domain : Evidence, Question : 31
+[2025-02-20 10:10:36,972][root][INFO] - Domain : Evidence, Question : 34
+[2025-02-20 10:10:55,568][root][INFO] - Domain : Evidence, Question : 40
+[2025-02-20 10:11:09,172][root][INFO] - Domain : Evidence, Question : 44
+[2025-02-20 10:11:22,973][root][INFO] - Domain : Evidence, Question : 53
+[2025-02-20 10:11:38,592][root][INFO] - Domain : Evidence, Question : 59
+[2025-02-20 10:11:51,460][root][INFO] - Domain : Evidence, Question : 68
+[2025-02-20 10:12:09,162][root][INFO] - Domain : Evidence, Question : 73
+[2025-02-20 10:12:21,778][root][INFO] - Domain : Evidence, Question : 78
+[2025-02-20 10:12:34,143][root][INFO] - Processing question number 70
+[2025-02-20 10:12:34,147][root][INFO] - Domain : Evidence, Question : 86
+[2025-02-20 10:12:45,910][root][INFO] - Domain : Evidence, Question : 96
+[2025-02-20 10:13:08,298][root][INFO] - Domain : Property, Question : 6
+[2025-02-20 10:13:20,486][root][INFO] - Domain : Property, Question : 13
+[2025-02-20 10:13:41,962][root][INFO] - Domain : Property, Question : 20
+[2025-02-20 10:13:59,235][root][INFO] - Domain : Property, Question : 33
+[2025-02-20 10:14:10,122][root][INFO] - Domain : Property, Question : 39
+[2025-02-20 10:14:37,590][root][INFO] - Domain : Property, Question : 48
+[2025-02-20 10:14:55,339][root][INFO] - Domain : Property, Question : 54
+[2025-02-20 10:15:22,049][root][INFO] - Domain : Property, Question : 61
+[2025-02-20 10:15:35,049][root][INFO] - Processing question number 80
+[2025-02-20 10:15:35,053][root][INFO] - Domain : Property, Question : 67
+[2025-02-20 10:16:02,364][root][INFO] - Domain : Property, Question : 75
+[2025-02-20 10:16:25,582][root][INFO] - Domain : Property, Question : 83
+[2025-02-20 10:16:38,853][root][INFO] - Domain : Property, Question : 89
+[2025-02-20 10:16:53,293][root][INFO] - Domain : Property, Question : 97
+[2025-02-20 10:17:07,626][root][INFO] - Domain : Property, Question : 100
+[2025-02-20 10:17:35,062][root][INFO] - Domain : Criminal_law, Question : 10
+[2025-02-20 10:17:55,366][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-02-20 10:18:22,205][root][INFO] - Domain : Criminal_law, Question : 26
+[2025-02-20 10:18:40,079][root][INFO] - Domain : Criminal_law, Question : 30
+[2025-02-20 10:18:49,515][root][INFO] - Processing question number 90
+[2025-02-20 10:18:49,520][root][INFO] - Domain : Criminal_law, Question : 36
+[2025-02-20 10:19:13,978][root][INFO] - Domain : Criminal_law, Question : 45
+[2025-02-20 10:19:32,210][root][INFO] - Domain : Criminal_law, Question : 50
+[2025-02-20 10:19:46,122][root][INFO] - Domain : Criminal_law, Question : 57
+[2025-02-20 10:19:57,931][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-02-20 10:20:10,157][root][INFO] - Domain : Criminal_law, Question : 74
+[2025-02-20 10:20:25,816][root][INFO] - Domain : Criminal_law, Question : 80
+[2025-02-20 10:20:35,303][root][INFO] - Domain : Criminal_law, Question : 85
+[2025-02-20 10:21:02,447][root][INFO] - Domain : Criminal_law, Question : 92
+[2025-02-20 10:21:14,185][root][INFO] - Inference complete
+[2025-02-20 10:21:14,185][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama2/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:21:14,195][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama2/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:21:14,213][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama2/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:21:14,218][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama2/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:21:14,218][root][INFO] - Saved parsed outputs
+[2025-02-20 10:21:14,218][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama2/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:21:14,220][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama2/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:21:14,220][root][INFO] - Saved parsing metadata
+[2025-02-20 10:21:14,224][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama2/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:21:14,226][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama2/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:21:14,227][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama2/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+Metrics successfully appended to master CSV.
+[2025-02-20 10:21:14,241][root][INFO] - Evaluation completed for number_list_answer_first_zero_shot_structured, on test_set_1
+[2025-02-20 10:21:14,241][root][INFO] - Summary of metrics : {'label_accuracy': 0.3434343434343434, 'misclassification_rate': 0.6565656565656566, 'combined_accuracy': 0.2727272727272727, 'malformed_label': 0, 'malformed_domain': 22, 'total_predictions': 99, 'correct_predictions': 34, 'correct_label_and_domain': 27, 'Constitutional_Law_accuracy': 0.07142857142857142, 'Contracts_accuracy': 0.2857142857142857, 'Criminal_Law_accuracy': 0.5384615384615384, 'Evidence_accuracy': 0.2, 'Real_Property_accuracy': 0.5, 'Torts_accuracy': 0.3076923076923077, 'Civil_Procedure_accuracy': 0.0625, 'Constitutional_Law_confidence': 0.18181818181818182, 'Contracts_confidence': 0.12121212121212122, 'Criminal_Law_confidence': 0.10101010101010101, 'Evidence_confidence': 0.1111111111111111, 'Real_Property_confidence': 0.13131313131313133, 'Torts_confidence': 0.15151515151515152, 'Civil_Procedure_confidence': 0.09090909090909091, 'correct_domain_wrong_label': 50, 'correct_label_wrong_domain': 7, 'both_wrong': 15}
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+[2025-02-20 10:21:21,574][root][INFO] - Setting global seed to 206
+[2025-02-20 10:21:21,582][root][INFO] - Running evaluation of the untrained model on the test_set_1
+[2025-02-20 10:21:21,582][root][INFO] - Current evaluation config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : structured 
+ Response Format : number_list 
+[2025-02-20 10:21:21,583][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_1.json
+[2025-02-20 10:21:21,585][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-02-20 10:21:21,587][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-02-20 10:21:21,587][root][INFO] - Questions selected, dataset contains 99 questions with 14.142857142857142 questions per domain
+[2025-02-20 10:21:21,738][root][INFO] - Loading model : meta-llama/Llama-2-7b-hf
+[2025-02-20 10:21:21,996][root][INFO] - Full model selected, loading model
+[2025-02-20 10:21:42,498][root][INFO] - Baseline model selected, no adapter needed
+[2025-02-20 10:21:42,499][root][WARNING] - Inference will be done using hf pipeline since model.generate consistently generates gibberish
+[2025-02-20 10:21:48,885][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'number_list', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-02-20 10:21:48,888][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama2/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:21:48,888][root][INFO] - Starting inference
+[2025-02-20 10:21:49,084][root][INFO] - Processing question number 0
+[2025-02-20 10:21:49,086][root][INFO] - Domain : Civil_procedure, Question : 1
+[2025-02-20 10:22:15,468][root][INFO] - Domain : Civil_procedure, Question : 7
+[2025-02-20 10:22:42,525][root][INFO] - Domain : Civil_procedure, Question : 14
+[2025-02-20 10:23:09,319][root][INFO] - Domain : Civil_procedure, Question : 21
+[2025-02-20 10:23:36,597][root][INFO] - Domain : Civil_procedure, Question : 28
+[2025-02-20 10:24:03,296][root][INFO] - Domain : Civil_procedure, Question : 35
+[2025-02-20 10:24:29,941][root][INFO] - Domain : Civil_procedure, Question : 42
+[2025-02-20 10:24:42,984][root][INFO] - Domain : Civil_procedure, Question : 49
+[2025-02-20 10:25:11,799][root][INFO] - Domain : Civil_procedure, Question : 56
+[2025-02-20 10:25:38,418][root][INFO] - Domain : Civil_procedure, Question : 63
+[2025-02-20 10:26:05,693][root][INFO] - Processing question number 10
+[2025-02-20 10:26:05,694][root][INFO] - Domain : Civil_procedure, Question : 69
+[2025-02-20 10:26:34,310][root][INFO] - Domain : Civil_procedure, Question : 70
+[2025-02-20 10:27:00,724][root][INFO] - Domain : Civil_procedure, Question : 77
+[2025-02-20 10:27:27,629][root][INFO] - Domain : Civil_procedure, Question : 84
+[2025-02-20 10:27:36,536][root][INFO] - Domain : Civil_procedure, Question : 91
+[2025-02-20 10:28:03,900][root][INFO] - Domain : Civil_procedure, Question : 98
+[2025-02-20 10:28:30,310][root][INFO] - Domain : Constitutional_law, Question : 2
+[2025-02-20 10:28:56,720][root][INFO] - Domain : Constitutional_law, Question : 9
+[2025-02-20 10:29:23,602][root][INFO] - Domain : Constitutional_law, Question : 17
+[2025-02-20 10:29:26,707][root][INFO] - Domain : Constitutional_law, Question : 25
+[2025-02-20 10:29:29,167][root][INFO] - Processing question number 20
+[2025-02-20 10:29:29,168][root][INFO] - Domain : Constitutional_law, Question : 29
+[2025-02-20 10:29:56,065][root][INFO] - Domain : Constitutional_law, Question : 37
+[2025-02-20 10:30:23,115][root][INFO] - Domain : Constitutional_law, Question : 43
+[2025-02-20 10:30:30,971][root][INFO] - Domain : Constitutional_law, Question : 55
+[2025-02-20 10:30:57,261][root][INFO] - Domain : Constitutional_law, Question : 60
+[2025-02-20 10:31:00,370][root][INFO] - Domain : Constitutional_law, Question : 65
+[2025-02-20 10:31:03,415][root][INFO] - Domain : Constitutional_law, Question : 71
+[2025-02-20 10:31:06,628][root][INFO] - Domain : Constitutional_law, Question : 79
+[2025-02-20 10:31:33,492][root][INFO] - Domain : Constitutional_law, Question : 87
+[2025-02-20 10:31:36,981][root][INFO] - Domain : Constitutional_law, Question : 93
+[2025-02-20 10:32:03,282][root][INFO] - Processing question number 30
+[2025-02-20 10:32:03,284][root][INFO] - Domain : Contracts, Question : 3
+[2025-02-20 10:32:30,457][root][INFO] - Domain : Contracts, Question : 8
+[2025-02-20 10:32:57,908][root][INFO] - Domain : Contracts, Question : 16
+[2025-02-20 10:33:24,856][root][INFO] - Domain : Contracts, Question : 22
+[2025-02-20 10:33:51,577][root][INFO] - Domain : Contracts, Question : 27
+[2025-02-20 10:34:18,228][root][INFO] - Domain : Contracts, Question : 38
+[2025-02-20 10:34:45,587][root][INFO] - Domain : Contracts, Question : 46
+[2025-02-20 10:35:12,322][root][INFO] - Domain : Contracts, Question : 51
+[2025-02-20 10:35:39,453][root][INFO] - Domain : Contracts, Question : 58
+[2025-02-20 10:36:06,356][root][INFO] - Domain : Contracts, Question : 66
+[2025-02-20 10:36:33,869][root][INFO] - Processing question number 40
+[2025-02-20 10:36:33,872][root][INFO] - Domain : Contracts, Question : 72
+[2025-02-20 10:37:00,855][root][INFO] - Domain : Contracts, Question : 81
+[2025-02-20 10:37:27,821][root][INFO] - Domain : Contracts, Question : 88
+[2025-02-20 10:37:55,282][root][INFO] - Domain : Contracts, Question : 94
+[2025-02-20 10:38:22,688][root][INFO] - Domain : Torts, Question : 4
+[2025-02-20 10:38:31,214][root][INFO] - Domain : Torts, Question : 11
+[2025-02-20 10:38:34,278][root][INFO] - Domain : Torts, Question : 24
+[2025-02-20 10:38:45,039][root][INFO] - Domain : Torts, Question : 32
+[2025-02-20 10:39:11,093][root][INFO] - Domain : Torts, Question : 41
+[2025-02-20 10:39:37,890][root][INFO] - Domain : Torts, Question : 47
+[2025-02-20 10:40:05,366][root][INFO] - Processing question number 50
+[2025-02-20 10:40:05,370][root][INFO] - Domain : Torts, Question : 52
+[2025-02-20 10:40:33,082][root][INFO] - Domain : Torts, Question : 62
+[2025-02-20 10:40:36,285][root][INFO] - Domain : Torts, Question : 76
+[2025-02-20 10:41:02,565][root][INFO] - Domain : Torts, Question : 82
+[2025-02-20 10:41:30,516][root][INFO] - Domain : Torts, Question : 90
+[2025-02-20 10:41:36,152][root][INFO] - Domain : Torts, Question : 95
+[2025-02-20 10:42:02,114][root][INFO] - Domain : Torts, Question : 99
+[2025-02-20 10:42:29,714][root][INFO] - Domain : Evidence, Question : 5
+[2025-02-20 10:42:32,158][root][INFO] - Domain : Evidence, Question : 12
+[2025-02-20 10:42:59,624][root][INFO] - Domain : Evidence, Question : 18
+[2025-02-20 10:43:27,847][root][INFO] - Processing question number 60
+[2025-02-20 10:43:27,851][root][INFO] - Domain : Evidence, Question : 23
+[2025-02-20 10:43:54,307][root][INFO] - Domain : Evidence, Question : 31
+[2025-02-20 10:44:21,100][root][INFO] - Domain : Evidence, Question : 34
+[2025-02-20 10:44:41,570][root][INFO] - Domain : Evidence, Question : 40
+[2025-02-20 10:44:44,010][root][INFO] - Domain : Evidence, Question : 44
+[2025-02-20 10:45:10,863][root][INFO] - Domain : Evidence, Question : 53
+[2025-02-20 10:45:13,928][root][INFO] - Domain : Evidence, Question : 59
+[2025-02-20 10:45:40,892][root][INFO] - Domain : Evidence, Question : 68
+[2025-02-20 10:46:08,171][root][INFO] - Domain : Evidence, Question : 73
+[2025-02-20 10:46:35,213][root][INFO] - Domain : Evidence, Question : 78
+[2025-02-20 10:47:02,724][root][INFO] - Processing question number 70
+[2025-02-20 10:47:02,728][root][INFO] - Domain : Evidence, Question : 86
+[2025-02-20 10:47:29,291][root][INFO] - Domain : Evidence, Question : 96
+[2025-02-20 10:47:56,033][root][INFO] - Domain : Property, Question : 6
+[2025-02-20 10:48:24,349][root][INFO] - Domain : Property, Question : 13
+[2025-02-20 10:48:51,681][root][INFO] - Domain : Property, Question : 20
+[2025-02-20 10:49:18,888][root][INFO] - Domain : Property, Question : 33
+[2025-02-20 10:49:45,460][root][INFO] - Domain : Property, Question : 39
+[2025-02-20 10:50:12,727][root][INFO] - Domain : Property, Question : 48
+[2025-02-20 10:50:39,666][root][INFO] - Domain : Property, Question : 54
+[2025-02-20 10:51:06,826][root][INFO] - Domain : Property, Question : 61
+[2025-02-20 10:51:09,867][root][INFO] - Processing question number 80
+[2025-02-20 10:51:09,871][root][INFO] - Domain : Property, Question : 67
+[2025-02-20 10:51:13,106][root][INFO] - Domain : Property, Question : 75
+[2025-02-20 10:51:40,078][root][INFO] - Domain : Property, Question : 83
+[2025-02-20 10:52:07,589][root][INFO] - Domain : Property, Question : 89
+[2025-02-20 10:52:34,395][root][INFO] - Domain : Property, Question : 97
+[2025-02-20 10:53:01,902][root][INFO] - Domain : Property, Question : 100
+[2025-02-20 10:53:29,212][root][INFO] - Domain : Criminal_law, Question : 10
+[2025-02-20 10:53:56,579][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-02-20 10:54:23,251][root][INFO] - Domain : Criminal_law, Question : 26
+[2025-02-20 10:54:50,292][root][INFO] - Domain : Criminal_law, Question : 30
+[2025-02-20 10:55:16,718][root][INFO] - Processing question number 90
+[2025-02-20 10:55:16,724][root][INFO] - Domain : Criminal_law, Question : 36
+[2025-02-20 10:55:44,568][root][INFO] - Domain : Criminal_law, Question : 45
+[2025-02-20 10:56:10,505][root][INFO] - Domain : Criminal_law, Question : 50
+[2025-02-20 10:56:37,344][root][INFO] - Domain : Criminal_law, Question : 57
+[2025-02-20 10:57:03,451][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-02-20 10:57:30,829][root][INFO] - Domain : Criminal_law, Question : 74
+[2025-02-20 10:57:57,324][root][INFO] - Domain : Criminal_law, Question : 80
+[2025-02-20 10:58:06,911][root][INFO] - Domain : Criminal_law, Question : 85
+[2025-02-20 10:58:33,920][root][INFO] - Domain : Criminal_law, Question : 92
+[2025-02-20 10:58:42,373][root][INFO] - Inference complete
+[2025-02-20 10:58:42,373][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama2/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:58:42,381][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama2/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:58:42,384][root][WARNING] - No match found for 1. Chosen Domain in question number 7 in domain Civil_procedure
+[2025-02-20 10:58:42,384][root][WARNING] - No match found for 2. Chosen Option Label in question number 7 in domain Civil_procedure
+[2025-02-20 10:58:42,384][root][WARNING] - No match found for 3. Legal Concept in question number 7 in domain Civil_procedure
+[2025-02-20 10:58:42,384][root][WARNING] - No match found for 4. Fact Analysis in question number 7 in domain Civil_procedure
+[2025-02-20 10:58:42,384][root][WARNING] - No match found for 5. Rule Application in question number 7 in domain Civil_procedure
+[2025-02-20 10:58:42,384][root][WARNING] - No match found for 6. Legal Conclusion in question number 7 in domain Civil_procedure
+[2025-02-20 10:58:42,384][root][WARNING] - No match found for 1. Chosen Domain in question number 14 in domain Civil_procedure
+[2025-02-20 10:58:42,384][root][WARNING] - No match found for 2. Chosen Option Label in question number 14 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 3. Legal Concept in question number 14 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 4. Fact Analysis in question number 14 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 5. Rule Application in question number 14 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 6. Legal Conclusion in question number 14 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 1. Chosen Domain in question number 21 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 2. Chosen Option Label in question number 21 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 3. Legal Concept in question number 21 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 4. Fact Analysis in question number 21 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 5. Rule Application in question number 21 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 6. Legal Conclusion in question number 21 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 1. Chosen Domain in question number 28 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 2. Chosen Option Label in question number 28 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 3. Legal Concept in question number 28 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 4. Fact Analysis in question number 28 in domain Civil_procedure
+[2025-02-20 10:58:42,385][root][WARNING] - No match found for 5. Rule Application in question number 28 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 6. Legal Conclusion in question number 28 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 1. Chosen Domain in question number 35 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 2. Chosen Option Label in question number 35 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 3. Legal Concept in question number 35 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 4. Fact Analysis in question number 35 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 5. Rule Application in question number 35 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 6. Legal Conclusion in question number 35 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 1. Chosen Domain in question number 49 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 2. Chosen Option Label in question number 49 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 3. Legal Concept in question number 49 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 4. Fact Analysis in question number 49 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 5. Rule Application in question number 49 in domain Civil_procedure
+[2025-02-20 10:58:42,386][root][WARNING] - No match found for 6. Legal Conclusion in question number 49 in domain Civil_procedure
+[2025-02-20 10:58:42,388][root][WARNING] - No match found for 1. Chosen Domain in question number 63 in domain Civil_procedure
+[2025-02-20 10:58:42,389][root][WARNING] - No match found for 2. Chosen Option Label in question number 63 in domain Civil_procedure
+[2025-02-20 10:58:42,389][root][WARNING] - No match found for 3. Legal Concept in question number 63 in domain Civil_procedure
+[2025-02-20 10:58:42,389][root][WARNING] - No match found for 4. Fact Analysis in question number 63 in domain Civil_procedure
+[2025-02-20 10:58:42,389][root][WARNING] - No match found for 5. Rule Application in question number 63 in domain Civil_procedure
+[2025-02-20 10:58:42,389][root][WARNING] - No match found for 6. Legal Conclusion in question number 63 in domain Civil_procedure
+[2025-02-20 10:58:42,389][root][WARNING] - No match found for 4. Fact Analysis in question number 69 in domain Civil_procedure
+[2025-02-20 10:58:42,389][root][WARNING] - No match found for 5. Rule Application in question number 69 in domain Civil_procedure
+[2025-02-20 10:58:42,389][root][WARNING] - No match found for 6. Legal Conclusion in question number 69 in domain Civil_procedure
+[2025-02-20 10:58:42,391][root][WARNING] - No match found for 1. Chosen Domain in question number 70 in domain Civil_procedure
+[2025-02-20 10:58:42,391][root][WARNING] - No match found for 2. Chosen Option Label in question number 70 in domain Civil_procedure
+[2025-02-20 10:58:42,391][root][WARNING] - No match found for 3. Legal Concept in question number 70 in domain Civil_procedure
+[2025-02-20 10:58:42,391][root][WARNING] - No match found for 4. Fact Analysis in question number 70 in domain Civil_procedure
+[2025-02-20 10:58:42,391][root][WARNING] - No match found for 5. Rule Application in question number 70 in domain Civil_procedure
+[2025-02-20 10:58:42,391][root][WARNING] - No match found for 6. Legal Conclusion in question number 70 in domain Civil_procedure
+[2025-02-20 10:58:42,392][root][WARNING] - No match found for 1. Chosen Domain in question number 77 in domain Civil_procedure
+[2025-02-20 10:58:42,392][root][WARNING] - No match found for 2. Chosen Option Label in question number 77 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 3. Legal Concept in question number 77 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 4. Fact Analysis in question number 77 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 5. Rule Application in question number 77 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 6. Legal Conclusion in question number 77 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 1. Chosen Domain in question number 91 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 2. Chosen Option Label in question number 91 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 3. Legal Concept in question number 91 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 4. Fact Analysis in question number 91 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 5. Rule Application in question number 91 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 6. Legal Conclusion in question number 91 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 1. Chosen Domain in question number 98 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 2. Chosen Option Label in question number 98 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 3. Legal Concept in question number 98 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 4. Fact Analysis in question number 98 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 5. Rule Application in question number 98 in domain Civil_procedure
+[2025-02-20 10:58:42,393][root][WARNING] - No match found for 6. Legal Conclusion in question number 98 in domain Civil_procedure
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 1. Chosen Domain in question number 2 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 2. Chosen Option Label in question number 2 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 3. Legal Concept in question number 2 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 4. Fact Analysis in question number 2 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 5. Rule Application in question number 2 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 6. Legal Conclusion in question number 2 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 1. Chosen Domain in question number 9 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 2. Chosen Option Label in question number 9 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 3. Legal Concept in question number 9 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 4. Fact Analysis in question number 9 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 5. Rule Application in question number 9 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 6. Legal Conclusion in question number 9 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 1. Chosen Domain in question number 17 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 2. Chosen Option Label in question number 17 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 3. Legal Concept in question number 17 in domain Constitutional_law
+[2025-02-20 10:58:42,394][root][WARNING] - No match found for 4. Fact Analysis in question number 17 in domain Constitutional_law
+[2025-02-20 10:58:42,395][root][WARNING] - No match found for 5. Rule Application in question number 17 in domain Constitutional_law
+[2025-02-20 10:58:42,395][root][WARNING] - No match found for 6. Legal Conclusion in question number 17 in domain Constitutional_law
+[2025-02-20 10:58:42,395][root][WARNING] - No match found for 1. Chosen Domain in question number 25 in domain Constitutional_law
+[2025-02-20 10:58:42,395][root][WARNING] - No match found for 2. Chosen Option Label in question number 25 in domain Constitutional_law
+[2025-02-20 10:58:42,395][root][WARNING] - No match found for 3. Legal Concept in question number 25 in domain Constitutional_law
+[2025-02-20 10:58:42,395][root][WARNING] - No match found for 4. Fact Analysis in question number 25 in domain Constitutional_law
+[2025-02-20 10:58:42,395][root][WARNING] - No match found for 5. Rule Application in question number 25 in domain Constitutional_law
+[2025-02-20 10:58:42,395][root][WARNING] - No match found for 6. Legal Conclusion in question number 25 in domain Constitutional_law
+[2025-02-20 10:58:42,396][root][WARNING] - No match found for 1. Chosen Domain in question number 29 in domain Constitutional_law
+[2025-02-20 10:58:42,396][root][WARNING] - No match found for 2. Chosen Option Label in question number 29 in domain Constitutional_law
+[2025-02-20 10:58:42,396][root][WARNING] - No match found for 4. Fact Analysis in question number 29 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 5. Rule Application in question number 29 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 6. Legal Conclusion in question number 29 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 1. Chosen Domain in question number 37 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 2. Chosen Option Label in question number 37 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 3. Legal Concept in question number 37 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 4. Fact Analysis in question number 37 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 5. Rule Application in question number 37 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 6. Legal Conclusion in question number 37 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 1. Chosen Domain in question number 43 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 2. Chosen Option Label in question number 43 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 3. Legal Concept in question number 43 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 4. Fact Analysis in question number 43 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 5. Rule Application in question number 43 in domain Constitutional_law
+[2025-02-20 10:58:42,397][root][WARNING] - No match found for 6. Legal Conclusion in question number 43 in domain Constitutional_law
+[2025-02-20 10:58:42,399][root][WARNING] - No match found for 1. Chosen Domain in question number 55 in domain Constitutional_law
+[2025-02-20 10:58:42,399][root][WARNING] - No match found for 2. Chosen Option Label in question number 55 in domain Constitutional_law
+[2025-02-20 10:58:42,399][root][WARNING] - No match found for 3. Legal Concept in question number 55 in domain Constitutional_law
+[2025-02-20 10:58:42,399][root][WARNING] - No match found for 4. Fact Analysis in question number 55 in domain Constitutional_law
+[2025-02-20 10:58:42,399][root][WARNING] - No match found for 5. Rule Application in question number 55 in domain Constitutional_law
+[2025-02-20 10:58:42,399][root][WARNING] - No match found for 6. Legal Conclusion in question number 55 in domain Constitutional_law
+[2025-02-20 10:58:42,399][root][WARNING] - No match found for 1. Chosen Domain in question number 60 in domain Constitutional_law
+[2025-02-20 10:58:42,399][root][WARNING] - No match found for 2. Chosen Option Label in question number 60 in domain Constitutional_law
+[2025-02-20 10:58:42,399][root][WARNING] - No match found for 3. Legal Concept in question number 60 in domain Constitutional_law
+[2025-02-20 10:58:42,399][root][WARNING] - No match found for 4. Fact Analysis in question number 60 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 5. Rule Application in question number 60 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 6. Legal Conclusion in question number 60 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 1. Chosen Domain in question number 65 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 2. Chosen Option Label in question number 65 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 3. Legal Concept in question number 65 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 4. Fact Analysis in question number 65 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 5. Rule Application in question number 65 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 6. Legal Conclusion in question number 65 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 1. Chosen Domain in question number 71 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 2. Chosen Option Label in question number 71 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 3. Legal Concept in question number 71 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 4. Fact Analysis in question number 71 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 5. Rule Application in question number 71 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 6. Legal Conclusion in question number 71 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 1. Chosen Domain in question number 79 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 2. Chosen Option Label in question number 79 in domain Constitutional_law
+[2025-02-20 10:58:42,400][root][WARNING] - No match found for 3. Legal Concept in question number 79 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 4. Fact Analysis in question number 79 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 5. Rule Application in question number 79 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 6. Legal Conclusion in question number 79 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 1. Chosen Domain in question number 87 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 2. Chosen Option Label in question number 87 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 3. Legal Concept in question number 87 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 4. Fact Analysis in question number 87 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 5. Rule Application in question number 87 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 6. Legal Conclusion in question number 87 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 1. Chosen Domain in question number 93 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 2. Chosen Option Label in question number 93 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 3. Legal Concept in question number 93 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 4. Fact Analysis in question number 93 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 5. Rule Application in question number 93 in domain Constitutional_law
+[2025-02-20 10:58:42,401][root][WARNING] - No match found for 6. Legal Conclusion in question number 93 in domain Constitutional_law
+[2025-02-20 10:58:42,402][root][WARNING] - No match found for 1. Chosen Domain in question number 3 in domain Contracts
+[2025-02-20 10:58:42,402][root][WARNING] - No match found for 2. Chosen Option Label in question number 3 in domain Contracts
+[2025-02-20 10:58:42,402][root][WARNING] - No match found for 3. Legal Concept in question number 3 in domain Contracts
+[2025-02-20 10:58:42,402][root][WARNING] - No match found for 4. Fact Analysis in question number 3 in domain Contracts
+[2025-02-20 10:58:42,402][root][WARNING] - No match found for 5. Rule Application in question number 3 in domain Contracts
+[2025-02-20 10:58:42,402][root][WARNING] - No match found for 6. Legal Conclusion in question number 3 in domain Contracts
+[2025-02-20 10:58:42,403][root][WARNING] - No match found for 1. Chosen Domain in question number 8 in domain Contracts
+[2025-02-20 10:58:42,403][root][WARNING] - No match found for 2. Chosen Option Label in question number 8 in domain Contracts
+[2025-02-20 10:58:42,403][root][WARNING] - No match found for 3. Legal Concept in question number 8 in domain Contracts
+[2025-02-20 10:58:42,403][root][WARNING] - No match found for 4. Fact Analysis in question number 8 in domain Contracts
+[2025-02-20 10:58:42,403][root][WARNING] - No match found for 5. Rule Application in question number 8 in domain Contracts
+[2025-02-20 10:58:42,403][root][WARNING] - No match found for 6. Legal Conclusion in question number 8 in domain Contracts
+[2025-02-20 10:58:42,404][root][WARNING] - No match found for 1. Chosen Domain in question number 16 in domain Contracts
+[2025-02-20 10:58:42,404][root][WARNING] - No match found for 2. Chosen Option Label in question number 16 in domain Contracts
+[2025-02-20 10:58:42,404][root][WARNING] - No match found for 3. Legal Concept in question number 16 in domain Contracts
+[2025-02-20 10:58:42,404][root][WARNING] - No match found for 4. Fact Analysis in question number 16 in domain Contracts
+[2025-02-20 10:58:42,404][root][WARNING] - No match found for 5. Rule Application in question number 16 in domain Contracts
+[2025-02-20 10:58:42,404][root][WARNING] - No match found for 6. Legal Conclusion in question number 16 in domain Contracts
+[2025-02-20 10:58:42,404][root][WARNING] - No match found for 1. Chosen Domain in question number 22 in domain Contracts
+[2025-02-20 10:58:42,404][root][WARNING] - No match found for 2. Chosen Option Label in question number 22 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 3. Legal Concept in question number 22 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 4. Fact Analysis in question number 22 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 5. Rule Application in question number 22 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 6. Legal Conclusion in question number 22 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 1. Chosen Domain in question number 27 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 2. Chosen Option Label in question number 27 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 3. Legal Concept in question number 27 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 4. Fact Analysis in question number 27 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 5. Rule Application in question number 27 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 6. Legal Conclusion in question number 27 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 1. Chosen Domain in question number 38 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 2. Chosen Option Label in question number 38 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 3. Legal Concept in question number 38 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 4. Fact Analysis in question number 38 in domain Contracts
+[2025-02-20 10:58:42,405][root][WARNING] - No match found for 5. Rule Application in question number 38 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 6. Legal Conclusion in question number 38 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 1. Chosen Domain in question number 46 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 2. Chosen Option Label in question number 46 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 3. Legal Concept in question number 46 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 4. Fact Analysis in question number 46 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 5. Rule Application in question number 46 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 6. Legal Conclusion in question number 46 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 1. Chosen Domain in question number 51 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 2. Chosen Option Label in question number 51 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 3. Legal Concept in question number 51 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 4. Fact Analysis in question number 51 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 5. Rule Application in question number 51 in domain Contracts
+[2025-02-20 10:58:42,406][root][WARNING] - No match found for 6. Legal Conclusion in question number 51 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 1. Chosen Domain in question number 58 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 2. Chosen Option Label in question number 58 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 3. Legal Concept in question number 58 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 4. Fact Analysis in question number 58 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 5. Rule Application in question number 58 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 6. Legal Conclusion in question number 58 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 3. Legal Concept in question number 66 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 4. Fact Analysis in question number 66 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 5. Rule Application in question number 66 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 6. Legal Conclusion in question number 66 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 1. Chosen Domain in question number 72 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 2. Chosen Option Label in question number 72 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 3. Legal Concept in question number 72 in domain Contracts
+[2025-02-20 10:58:42,407][root][WARNING] - No match found for 4. Fact Analysis in question number 72 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 5. Rule Application in question number 72 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 6. Legal Conclusion in question number 72 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 1. Chosen Domain in question number 81 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 2. Chosen Option Label in question number 81 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 3. Legal Concept in question number 81 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 4. Fact Analysis in question number 81 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 5. Rule Application in question number 81 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 6. Legal Conclusion in question number 81 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 1. Chosen Domain in question number 88 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 2. Chosen Option Label in question number 88 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 3. Legal Concept in question number 88 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 4. Fact Analysis in question number 88 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 5. Rule Application in question number 88 in domain Contracts
+[2025-02-20 10:58:42,408][root][WARNING] - No match found for 6. Legal Conclusion in question number 88 in domain Contracts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 1. Chosen Domain in question number 94 in domain Contracts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 2. Chosen Option Label in question number 94 in domain Contracts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 3. Legal Concept in question number 94 in domain Contracts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 4. Fact Analysis in question number 94 in domain Contracts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 5. Rule Application in question number 94 in domain Contracts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 6. Legal Conclusion in question number 94 in domain Contracts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 1. Chosen Domain in question number 4 in domain Torts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 2. Chosen Option Label in question number 4 in domain Torts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 3. Legal Concept in question number 4 in domain Torts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 4. Fact Analysis in question number 4 in domain Torts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 5. Rule Application in question number 4 in domain Torts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 6. Legal Conclusion in question number 4 in domain Torts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 1. Chosen Domain in question number 11 in domain Torts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 2. Chosen Option Label in question number 11 in domain Torts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 3. Legal Concept in question number 11 in domain Torts
+[2025-02-20 10:58:42,409][root][WARNING] - No match found for 4. Fact Analysis in question number 11 in domain Torts
+[2025-02-20 10:58:42,410][root][WARNING] - No match found for 5. Rule Application in question number 11 in domain Torts
+[2025-02-20 10:58:42,410][root][WARNING] - No match found for 6. Legal Conclusion in question number 11 in domain Torts
+[2025-02-20 10:58:42,410][root][WARNING] - No match found for 4. Fact Analysis in question number 24 in domain Torts
+[2025-02-20 10:58:42,410][root][WARNING] - No match found for 5. Rule Application in question number 24 in domain Torts
+[2025-02-20 10:58:42,410][root][WARNING] - No match found for 6. Legal Conclusion in question number 24 in domain Torts
+[2025-02-20 10:58:42,411][root][WARNING] - No match found for 4. Fact Analysis in question number 32 in domain Torts
+[2025-02-20 10:58:42,411][root][WARNING] - No match found for 5. Rule Application in question number 32 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 6. Legal Conclusion in question number 32 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 1. Chosen Domain in question number 41 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 2. Chosen Option Label in question number 41 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 3. Legal Concept in question number 41 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 4. Fact Analysis in question number 41 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 5. Rule Application in question number 41 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 6. Legal Conclusion in question number 41 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 1. Chosen Domain in question number 47 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 2. Chosen Option Label in question number 47 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 3. Legal Concept in question number 47 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 4. Fact Analysis in question number 47 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 5. Rule Application in question number 47 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 6. Legal Conclusion in question number 47 in domain Torts
+[2025-02-20 10:58:42,412][root][WARNING] - No match found for 1. Chosen Domain in question number 52 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 2. Chosen Option Label in question number 52 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 3. Legal Concept in question number 52 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 4. Fact Analysis in question number 52 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 5. Rule Application in question number 52 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 6. Legal Conclusion in question number 52 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 1. Chosen Domain in question number 62 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 2. Chosen Option Label in question number 62 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 3. Legal Concept in question number 62 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 4. Fact Analysis in question number 62 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 5. Rule Application in question number 62 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 6. Legal Conclusion in question number 62 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 1. Chosen Domain in question number 76 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 2. Chosen Option Label in question number 76 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 3. Legal Concept in question number 76 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 4. Fact Analysis in question number 76 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 5. Rule Application in question number 76 in domain Torts
+[2025-02-20 10:58:42,413][root][WARNING] - No match found for 6. Legal Conclusion in question number 76 in domain Torts
+[2025-02-20 10:58:42,414][root][WARNING] - No match found for 4. Fact Analysis in question number 82 in domain Torts
+[2025-02-20 10:58:42,414][root][WARNING] - No match found for 5. Rule Application in question number 82 in domain Torts
+[2025-02-20 10:58:42,414][root][WARNING] - No match found for 6. Legal Conclusion in question number 82 in domain Torts
+[2025-02-20 10:58:42,414][root][WARNING] - No match found for 1. Chosen Domain in question number 90 in domain Torts
+[2025-02-20 10:58:42,414][root][WARNING] - No match found for 2. Chosen Option Label in question number 90 in domain Torts
+[2025-02-20 10:58:42,414][root][WARNING] - No match found for 3. Legal Concept in question number 90 in domain Torts
+[2025-02-20 10:58:42,414][root][WARNING] - No match found for 4. Fact Analysis in question number 90 in domain Torts
+[2025-02-20 10:58:42,414][root][WARNING] - No match found for 5. Rule Application in question number 90 in domain Torts
+[2025-02-20 10:58:42,414][root][WARNING] - No match found for 6. Legal Conclusion in question number 90 in domain Torts
+[2025-02-20 10:58:42,415][root][WARNING] - No match found for 1. Chosen Domain in question number 99 in domain Torts
+[2025-02-20 10:58:42,415][root][WARNING] - No match found for 2. Chosen Option Label in question number 99 in domain Torts
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 3. Legal Concept in question number 99 in domain Torts
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 4. Fact Analysis in question number 99 in domain Torts
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 5. Rule Application in question number 99 in domain Torts
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 6. Legal Conclusion in question number 99 in domain Torts
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 1. Chosen Domain in question number 5 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 2. Chosen Option Label in question number 5 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 3. Legal Concept in question number 5 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 4. Fact Analysis in question number 5 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 5. Rule Application in question number 5 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 6. Legal Conclusion in question number 5 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 1. Chosen Domain in question number 12 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 2. Chosen Option Label in question number 12 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 3. Legal Concept in question number 12 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 4. Fact Analysis in question number 12 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 5. Rule Application in question number 12 in domain Evidence
+[2025-02-20 10:58:42,416][root][WARNING] - No match found for 6. Legal Conclusion in question number 12 in domain Evidence
+[2025-02-20 10:58:42,418][root][WARNING] - No match found for 1. Chosen Domain in question number 18 in domain Evidence
+[2025-02-20 10:58:42,418][root][WARNING] - No match found for 2. Chosen Option Label in question number 18 in domain Evidence
+[2025-02-20 10:58:42,418][root][WARNING] - No match found for 3. Legal Concept in question number 18 in domain Evidence
+[2025-02-20 10:58:42,418][root][WARNING] - No match found for 4. Fact Analysis in question number 18 in domain Evidence
+[2025-02-20 10:58:42,418][root][WARNING] - No match found for 5. Rule Application in question number 18 in domain Evidence
+[2025-02-20 10:58:42,418][root][WARNING] - No match found for 6. Legal Conclusion in question number 18 in domain Evidence
+[2025-02-20 10:58:42,418][root][WARNING] - No match found for 1. Chosen Domain in question number 23 in domain Evidence
+[2025-02-20 10:58:42,418][root][WARNING] - No match found for 2. Chosen Option Label in question number 23 in domain Evidence
+[2025-02-20 10:58:42,418][root][WARNING] - No match found for 3. Legal Concept in question number 23 in domain Evidence
+[2025-02-20 10:58:42,418][root][WARNING] - No match found for 4. Fact Analysis in question number 23 in domain Evidence
+[2025-02-20 10:58:42,419][root][WARNING] - No match found for 5. Rule Application in question number 23 in domain Evidence
+[2025-02-20 10:58:42,419][root][WARNING] - No match found for 6. Legal Conclusion in question number 23 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 1. Chosen Domain in question number 31 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 2. Chosen Option Label in question number 31 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 3. Legal Concept in question number 31 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 4. Fact Analysis in question number 31 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 5. Rule Application in question number 31 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 6. Legal Conclusion in question number 31 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 1. Chosen Domain in question number 34 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 2. Chosen Option Label in question number 34 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 3. Legal Concept in question number 34 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 4. Fact Analysis in question number 34 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 5. Rule Application in question number 34 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 6. Legal Conclusion in question number 34 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 1. Chosen Domain in question number 40 in domain Evidence
+[2025-02-20 10:58:42,420][root][WARNING] - No match found for 2. Chosen Option Label in question number 40 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 3. Legal Concept in question number 40 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 4. Fact Analysis in question number 40 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 5. Rule Application in question number 40 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 6. Legal Conclusion in question number 40 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 1. Chosen Domain in question number 44 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 2. Chosen Option Label in question number 44 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 3. Legal Concept in question number 44 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 4. Fact Analysis in question number 44 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 5. Rule Application in question number 44 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 6. Legal Conclusion in question number 44 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 1. Chosen Domain in question number 53 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 2. Chosen Option Label in question number 53 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 3. Legal Concept in question number 53 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 4. Fact Analysis in question number 53 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 5. Rule Application in question number 53 in domain Evidence
+[2025-02-20 10:58:42,421][root][WARNING] - No match found for 6. Legal Conclusion in question number 53 in domain Evidence
+[2025-02-20 10:58:42,423][root][WARNING] - No match found for 1. Chosen Domain in question number 59 in domain Evidence
+[2025-02-20 10:58:42,423][root][WARNING] - No match found for 2. Chosen Option Label in question number 59 in domain Evidence
+[2025-02-20 10:58:42,423][root][WARNING] - No match found for 3. Legal Concept in question number 59 in domain Evidence
+[2025-02-20 10:58:42,423][root][WARNING] - No match found for 4. Fact Analysis in question number 59 in domain Evidence
+[2025-02-20 10:58:42,423][root][WARNING] - No match found for 5. Rule Application in question number 59 in domain Evidence
+[2025-02-20 10:58:42,423][root][WARNING] - No match found for 6. Legal Conclusion in question number 59 in domain Evidence
+[2025-02-20 10:58:42,424][root][WARNING] - No match found for 1. Chosen Domain in question number 68 in domain Evidence
+[2025-02-20 10:58:42,424][root][WARNING] - No match found for 2. Chosen Option Label in question number 68 in domain Evidence
+[2025-02-20 10:58:42,424][root][WARNING] - No match found for 3. Legal Concept in question number 68 in domain Evidence
+[2025-02-20 10:58:42,424][root][WARNING] - No match found for 4. Fact Analysis in question number 68 in domain Evidence
+[2025-02-20 10:58:42,424][root][WARNING] - No match found for 5. Rule Application in question number 68 in domain Evidence
+[2025-02-20 10:58:42,424][root][WARNING] - No match found for 6. Legal Conclusion in question number 68 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 1. Chosen Domain in question number 73 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 2. Chosen Option Label in question number 73 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 3. Legal Concept in question number 73 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 4. Fact Analysis in question number 73 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 5. Rule Application in question number 73 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 6. Legal Conclusion in question number 73 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 1. Chosen Domain in question number 86 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 2. Chosen Option Label in question number 86 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 3. Legal Concept in question number 86 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 4. Fact Analysis in question number 86 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 5. Rule Application in question number 86 in domain Evidence
+[2025-02-20 10:58:42,425][root][WARNING] - No match found for 6. Legal Conclusion in question number 86 in domain Evidence
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 1. Chosen Domain in question number 96 in domain Evidence
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 2. Chosen Option Label in question number 96 in domain Evidence
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 3. Legal Concept in question number 96 in domain Evidence
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 4. Fact Analysis in question number 96 in domain Evidence
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 5. Rule Application in question number 96 in domain Evidence
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 6. Legal Conclusion in question number 96 in domain Evidence
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 1. Chosen Domain in question number 6 in domain Property
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 2. Chosen Option Label in question number 6 in domain Property
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 3. Legal Concept in question number 6 in domain Property
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 4. Fact Analysis in question number 6 in domain Property
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 5. Rule Application in question number 6 in domain Property
+[2025-02-20 10:58:42,427][root][WARNING] - No match found for 6. Legal Conclusion in question number 6 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 1. Chosen Domain in question number 13 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 2. Chosen Option Label in question number 13 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 3. Legal Concept in question number 13 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 4. Fact Analysis in question number 13 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 5. Rule Application in question number 13 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 6. Legal Conclusion in question number 13 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 1. Chosen Domain in question number 20 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 2. Chosen Option Label in question number 20 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 3. Legal Concept in question number 20 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 4. Fact Analysis in question number 20 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 5. Rule Application in question number 20 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 6. Legal Conclusion in question number 20 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 1. Chosen Domain in question number 33 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 2. Chosen Option Label in question number 33 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 3. Legal Concept in question number 33 in domain Property
+[2025-02-20 10:58:42,428][root][WARNING] - No match found for 4. Fact Analysis in question number 33 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 5. Rule Application in question number 33 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 6. Legal Conclusion in question number 33 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 1. Chosen Domain in question number 39 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 2. Chosen Option Label in question number 39 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 3. Legal Concept in question number 39 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 4. Fact Analysis in question number 39 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 5. Rule Application in question number 39 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 6. Legal Conclusion in question number 39 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 1. Chosen Domain in question number 48 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 2. Chosen Option Label in question number 48 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 3. Legal Concept in question number 48 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 4. Fact Analysis in question number 48 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 5. Rule Application in question number 48 in domain Property
+[2025-02-20 10:58:42,429][root][WARNING] - No match found for 6. Legal Conclusion in question number 48 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 1. Chosen Domain in question number 54 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 2. Chosen Option Label in question number 54 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 3. Legal Concept in question number 54 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 4. Fact Analysis in question number 54 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 5. Rule Application in question number 54 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 6. Legal Conclusion in question number 54 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 1. Chosen Domain in question number 61 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 2. Chosen Option Label in question number 61 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 3. Legal Concept in question number 61 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 4. Fact Analysis in question number 61 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 5. Rule Application in question number 61 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 6. Legal Conclusion in question number 61 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 1. Chosen Domain in question number 67 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 2. Chosen Option Label in question number 67 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 3. Legal Concept in question number 67 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 4. Fact Analysis in question number 67 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 5. Rule Application in question number 67 in domain Property
+[2025-02-20 10:58:42,430][root][WARNING] - No match found for 6. Legal Conclusion in question number 67 in domain Property
+[2025-02-20 10:58:42,431][root][WARNING] - No match found for 1. Chosen Domain in question number 75 in domain Property
+[2025-02-20 10:58:42,431][root][WARNING] - No match found for 2. Chosen Option Label in question number 75 in domain Property
+[2025-02-20 10:58:42,431][root][WARNING] - No match found for 3. Legal Concept in question number 75 in domain Property
+[2025-02-20 10:58:42,431][root][WARNING] - No match found for 4. Fact Analysis in question number 75 in domain Property
+[2025-02-20 10:58:42,431][root][WARNING] - No match found for 5. Rule Application in question number 75 in domain Property
+[2025-02-20 10:58:42,431][root][WARNING] - No match found for 6. Legal Conclusion in question number 75 in domain Property
+[2025-02-20 10:58:42,432][root][WARNING] - No match found for 1. Chosen Domain in question number 83 in domain Property
+[2025-02-20 10:58:42,432][root][WARNING] - No match found for 2. Chosen Option Label in question number 83 in domain Property
+[2025-02-20 10:58:42,432][root][WARNING] - No match found for 4. Fact Analysis in question number 83 in domain Property
+[2025-02-20 10:58:42,432][root][WARNING] - No match found for 5. Rule Application in question number 83 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 6. Legal Conclusion in question number 83 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 1. Chosen Domain in question number 89 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 2. Chosen Option Label in question number 89 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 3. Legal Concept in question number 89 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 4. Fact Analysis in question number 89 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 5. Rule Application in question number 89 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 6. Legal Conclusion in question number 89 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 1. Chosen Domain in question number 97 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 2. Chosen Option Label in question number 97 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 3. Legal Concept in question number 97 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 4. Fact Analysis in question number 97 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 5. Rule Application in question number 97 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 6. Legal Conclusion in question number 97 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 1. Chosen Domain in question number 100 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 2. Chosen Option Label in question number 100 in domain Property
+[2025-02-20 10:58:42,433][root][WARNING] - No match found for 3. Legal Concept in question number 100 in domain Property
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 4. Fact Analysis in question number 100 in domain Property
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 5. Rule Application in question number 100 in domain Property
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 6. Legal Conclusion in question number 100 in domain Property
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 1. Chosen Domain in question number 10 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 2. Chosen Option Label in question number 10 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 3. Legal Concept in question number 10 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 4. Fact Analysis in question number 10 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 5. Rule Application in question number 10 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 6. Legal Conclusion in question number 10 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 1. Chosen Domain in question number 15 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 2. Chosen Option Label in question number 15 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 3. Legal Concept in question number 15 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 4. Fact Analysis in question number 15 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 5. Rule Application in question number 15 in domain Criminal_law
+[2025-02-20 10:58:42,434][root][WARNING] - No match found for 6. Legal Conclusion in question number 15 in domain Criminal_law
+[2025-02-20 10:58:42,436][root][WARNING] - No match found for 4. Fact Analysis in question number 26 in domain Criminal_law
+[2025-02-20 10:58:42,436][root][WARNING] - No match found for 5. Rule Application in question number 26 in domain Criminal_law
+[2025-02-20 10:58:42,436][root][WARNING] - No match found for 6. Legal Conclusion in question number 26 in domain Criminal_law
+[2025-02-20 10:58:42,436][root][WARNING] - No match found for 4. Fact Analysis in question number 30 in domain Criminal_law
+[2025-02-20 10:58:42,436][root][WARNING] - No match found for 5. Rule Application in question number 30 in domain Criminal_law
+[2025-02-20 10:58:42,436][root][WARNING] - No match found for 6. Legal Conclusion in question number 30 in domain Criminal_law
+[2025-02-20 10:58:42,436][root][WARNING] - No match found for 3. Legal Concept in question number 36 in domain Criminal_law
+[2025-02-20 10:58:42,436][root][WARNING] - No match found for 4. Fact Analysis in question number 36 in domain Criminal_law
+[2025-02-20 10:58:42,437][root][WARNING] - No match found for 5. Rule Application in question number 36 in domain Criminal_law
+[2025-02-20 10:58:42,437][root][WARNING] - No match found for 6. Legal Conclusion in question number 36 in domain Criminal_law
+[2025-02-20 10:58:42,437][root][WARNING] - No match found for 4. Fact Analysis in question number 45 in domain Criminal_law
+[2025-02-20 10:58:42,437][root][WARNING] - No match found for 5. Rule Application in question number 45 in domain Criminal_law
+[2025-02-20 10:58:42,437][root][WARNING] - No match found for 6. Legal Conclusion in question number 45 in domain Criminal_law
+[2025-02-20 10:58:42,439][root][WARNING] - No match found for 1. Chosen Domain in question number 50 in domain Criminal_law
+[2025-02-20 10:58:42,439][root][WARNING] - No match found for 2. Chosen Option Label in question number 50 in domain Criminal_law
+[2025-02-20 10:58:42,439][root][WARNING] - No match found for 3. Legal Concept in question number 50 in domain Criminal_law
+[2025-02-20 10:58:42,439][root][WARNING] - No match found for 4. Fact Analysis in question number 50 in domain Criminal_law
+[2025-02-20 10:58:42,439][root][WARNING] - No match found for 5. Rule Application in question number 50 in domain Criminal_law
+[2025-02-20 10:58:42,439][root][WARNING] - No match found for 6. Legal Conclusion in question number 50 in domain Criminal_law
+[2025-02-20 10:58:42,440][root][WARNING] - No match found for 4. Fact Analysis in question number 57 in domain Criminal_law
+[2025-02-20 10:58:42,440][root][WARNING] - No match found for 5. Rule Application in question number 57 in domain Criminal_law
+[2025-02-20 10:58:42,440][root][WARNING] - No match found for 6. Legal Conclusion in question number 57 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 1. Chosen Domain in question number 64 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 2. Chosen Option Label in question number 64 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 3. Legal Concept in question number 64 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 4. Fact Analysis in question number 64 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 5. Rule Application in question number 64 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 6. Legal Conclusion in question number 64 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 4. Fact Analysis in question number 74 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 5. Rule Application in question number 74 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 6. Legal Conclusion in question number 74 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 1. Chosen Domain in question number 80 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 2. Chosen Option Label in question number 80 in domain Criminal_law
+[2025-02-20 10:58:42,441][root][WARNING] - No match found for 3. Legal Concept in question number 80 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 4. Fact Analysis in question number 80 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 5. Rule Application in question number 80 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 6. Legal Conclusion in question number 80 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 1. Chosen Domain in question number 85 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 2. Chosen Option Label in question number 85 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 3. Legal Concept in question number 85 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 4. Fact Analysis in question number 85 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 5. Rule Application in question number 85 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 6. Legal Conclusion in question number 85 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 4. Fact Analysis in question number 92 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 5. Rule Application in question number 92 in domain Criminal_law
+[2025-02-20 10:58:42,442][root][WARNING] - No match found for 6. Legal Conclusion in question number 92 in domain Criminal_law
+[2025-02-20 10:58:42,443][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama2/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:58:42,448][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama2/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:58:42,448][root][INFO] - Saved parsed outputs
+[2025-02-20 10:58:42,448][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama2/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:58:42,450][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama2/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:58:42,450][root][INFO] - Saved parsing metadata
+[2025-02-20 10:58:42,452][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama2/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:58:42,453][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama2/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+[2025-02-20 10:58:42,455][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama2/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_answer_first_zero_shot_structured/test_set_1.json
+Metrics successfully appended to master CSV.
+[2025-02-20 10:58:42,462][root][INFO] - Evaluation completed for number_list_answer_first_zero_shot_structured, on test_set_1
+[2025-02-20 10:58:42,462][root][INFO] - Summary of metrics : {'label_accuracy': 0.04040404040404041, 'misclassification_rate': 0.9595959595959596, 'combined_accuracy': 0.030303030303030304, 'malformed_label': 87, 'malformed_domain': 91, 'total_predictions': 99, 'correct_predictions': 4, 'correct_label_and_domain': 3, 'Constitutional_Law_accuracy': 0.0, 'Contracts_accuracy': 0.0, 'Criminal_Law_accuracy': 0.15384615384615385, 'Evidence_accuracy': 0.0, 'Real_Property_accuracy': 0.0, 'Torts_accuracy': 0.07692307692307693, 'Civil_Procedure_accuracy': 0.0, 'Constitutional_Law_confidence': 0.0, 'Contracts_confidence': 0.020202020202020204, 'Criminal_Law_confidence': 0.06060606060606061, 'Evidence_confidence': 0.0, 'Real_Property_confidence': 0.010101010101010102, 'Torts_confidence': 0.020202020202020204, 'Civil_Procedure_confidence': 0.0, 'correct_domain_wrong_label': 5, 'correct_label_wrong_domain': 1, 'both_wrong': 90}
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama2 tokenizer=llama2 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Job 5 completed at Do 20. Feb 11:01:07 CET 2025
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n508
+Job ID: 25296010
+Cluster: uc2
+User/Group: fr_rf1031/fr_fr
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 01:17:55
+CPU Efficiency: 9.79% of 13:16:10 core-walltime
+Job Wall-clock time: 01:19:37
+Memory Utilized: 26.67 GB
+Memory Efficiency: 74.08% of 36.00 GB

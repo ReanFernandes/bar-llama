@@ -1,0 +1,642 @@
+Starting job 24 at Do 20. Feb 10:18:19 CET 2025
+Configuration: model=llama3 tokenizer=llama3 dataset=all_domains_1_samples prompt=markdown_answer_first_zero_shot_unstructured train=markdown_answer_first_zero_shot_unstructured ++train.training_args.per_device_train_batch_size=7 ++train.training_args.gradient_accumulation_steps=1
+[2025-02-20 10:18:34,152][root][INFO] - Global seed set to 314
+[2025-02-20 10:18:34,154][root][WARNING] - Quantisation will be done on loaded model, THIS IS A QLORA FINE-TUNING RUN
+[2025-02-20 10:18:34,154][root][WARNING] - Following flags are set for the run : 
+ Use Quantisation before fine-tuning : True 
+ Perform Validation on epoch end : False
+[2025-02-20 10:18:34,154][root][INFO] - Running Fine-tuning on the all_domains_1_samples dataset
+[2025-02-20 10:18:34,154][root][INFO] - Current training config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : unstructured 
+ Response Format : markdown 
+[2025-02-20 10:18:34,154][root][INFO] - Loading dataset from /home/fr/fr_fr/fr_rf1031/bar-llama/dataset/seed_dataset/raw_dataset.json
+[2025-02-20 10:18:34,171][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-02-20 10:18:34,186][root][INFO] - Indexing complete, sampling of questions set to True
+[2025-02-20 10:18:34,188][root][INFO] - Questions selected, dataset contains 7 questions with 1.0 questions per domain
+[2025-02-20 10:18:34,192][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/unstructured_example.json', 'explanation_type': 'unstructured', 'response_type': 'answer_first', 'response_format': 'markdown', 'store_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${train.prompt.response_format}_${train.prompt.response_type}_${train.prompt.explanation_type}.txt', 'include_system_prompt': True}
+[2025-02-20 10:18:35,363][root][INFO] - Tokenizer meta-llama/Meta-Llama-3-8B-Instruct loaded successfully
+[2025-02-20 10:18:59,001][root][INFO] - Quantised model meta-llama/Llama-3.1-8B-Instruct loaded successfully
+[2025-02-20 10:19:26,540][root][INFO] - Model prepared for kbit training
+[2025-02-20 10:19:26,541][root][INFO] - Lora config loaded, following are the details : 
+ LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type='CAUSAL_LM', inference_mode=False, r=64, target_modules={'k_proj', 'o_proj', 'gate_proj', 'v_proj', 'up_proj', 'q_proj', 'down_proj'}, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+[2025-02-20 10:19:28,215][root][INFO] - Lora adapter added to model
+[2025-02-20 10:19:28,218][root][INFO] - Model adapter will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/sft_adapters/llama3/all_domains_1_samples/llama3_markdown_answer_first_zero_shot_unstructured
+[2025-02-20 10:19:28,419][accelerate.utils.other][WARNING] - Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+{'loss': 1.6561, 'grad_norm': 0.5064964890480042, 'learning_rate': 3.226975564787322e-05, 'epoch': 10.0}
+{'train_runtime': 330.8905, 'train_samples_per_second': 0.317, 'train_steps_per_second': 0.045, 'train_loss': 1.456312370300293, 'epoch': 15.0}
+[2025-02-20 10:25:07,362][root][INFO] - Finetuning complete, model saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/sft_adapters/llama3/all_domains_1_samples/llama3_markdown_answer_first_zero_shot_unstructured
+Starting evaluations for job 24
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+[2025-02-20 10:25:17,857][root][INFO] - Setting global seed to 206
+[2025-02-20 10:25:17,865][root][INFO] - Running evaluation of the trained model on the test_set_1
+[2025-02-20 10:25:17,865][root][INFO] - Current evaluation config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : unstructured 
+ Response Format : markdown 
+[2025-02-20 10:25:17,866][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_1.json
+[2025-02-20 10:25:17,869][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-02-20 10:25:17,874][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-02-20 10:25:17,874][root][INFO] - Questions selected, dataset contains 99 questions with 14.142857142857142 questions per domain
+[2025-02-20 10:25:18,017][root][INFO] - Loading model : meta-llama/Llama-3.1-8B-Instruct
+[2025-02-20 10:25:18,560][root][INFO] - Full model selected, loading model
+[2025-02-20 10:25:33,510][root][INFO] - Tokenizer special tokens: {'bos_token': '<|begin_of_text|>', 'eos_token': '<|end_of_text|>', 'pad_token': '[PAD]'} have been added
+[2025-02-20 10:27:18,555][root][INFO] - Fine-tuned model selected, loading adapter
+[2025-02-20 10:27:18,555][root][WARNING] - Inference will be done using model.generate instead of hf pipeline since peft model is not compatible with it
+[2025-02-20 10:27:50,026][root][INFO] - Peft model loaded successfully
+[2025-02-20 10:27:57,310][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/unstructured_example.json', 'explanation_type': 'unstructured', 'response_type': 'answer_first', 'response_format': 'markdown', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-02-20 10:27:57,312][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 10:27:57,312][root][INFO] - Starting inference
+[2025-02-20 10:27:57,522][root][INFO] - Processing question number 0
+[2025-02-20 10:27:57,525][root][INFO] - Domain : Civil_procedure, Question : 1
+[2025-02-20 10:28:02,692][root][INFO] - Domain : Civil_procedure, Question : 7
+[2025-02-20 10:28:12,207][root][INFO] - Domain : Civil_procedure, Question : 14
+[2025-02-20 10:28:40,500][root][INFO] - Domain : Civil_procedure, Question : 21
+[2025-02-20 10:28:47,201][root][INFO] - Domain : Civil_procedure, Question : 28
+[2025-02-20 10:28:52,243][root][INFO] - Domain : Civil_procedure, Question : 35
+[2025-02-20 10:29:20,566][root][INFO] - Domain : Civil_procedure, Question : 42
+[2025-02-20 10:29:26,618][root][INFO] - Domain : Civil_procedure, Question : 49
+[2025-02-20 10:29:32,077][root][INFO] - Domain : Civil_procedure, Question : 56
+[2025-02-20 10:29:38,190][root][INFO] - Domain : Civil_procedure, Question : 63
+[2025-02-20 10:29:44,247][root][INFO] - Processing question number 10
+[2025-02-20 10:29:44,249][root][INFO] - Domain : Civil_procedure, Question : 69
+[2025-02-20 10:29:51,483][root][INFO] - Domain : Civil_procedure, Question : 70
+[2025-02-20 10:30:04,653][root][INFO] - Domain : Civil_procedure, Question : 77
+[2025-02-20 10:30:14,397][root][INFO] - Domain : Civil_procedure, Question : 84
+[2025-02-20 10:30:18,476][root][INFO] - Domain : Civil_procedure, Question : 91
+[2025-02-20 10:30:24,680][root][INFO] - Domain : Civil_procedure, Question : 98
+[2025-02-20 10:30:33,207][root][INFO] - Domain : Constitutional_law, Question : 2
+[2025-02-20 10:30:37,823][root][INFO] - Domain : Constitutional_law, Question : 9
+[2025-02-20 10:30:46,870][root][INFO] - Domain : Constitutional_law, Question : 17
+[2025-02-20 10:30:50,917][root][INFO] - Domain : Constitutional_law, Question : 25
+[2025-02-20 10:30:54,617][root][INFO] - Processing question number 20
+[2025-02-20 10:30:54,618][root][INFO] - Domain : Constitutional_law, Question : 29
+[2025-02-20 10:31:00,024][root][INFO] - Domain : Constitutional_law, Question : 37
+[2025-02-20 10:31:04,300][root][INFO] - Domain : Constitutional_law, Question : 43
+[2025-02-20 10:31:09,239][root][INFO] - Domain : Constitutional_law, Question : 55
+[2025-02-20 10:31:15,469][root][INFO] - Domain : Constitutional_law, Question : 60
+[2025-02-20 10:31:24,271][root][INFO] - Domain : Constitutional_law, Question : 65
+[2025-02-20 10:31:31,225][root][INFO] - Domain : Constitutional_law, Question : 71
+[2025-02-20 10:31:38,258][root][INFO] - Domain : Constitutional_law, Question : 79
+[2025-02-20 10:32:06,608][root][INFO] - Domain : Constitutional_law, Question : 87
+[2025-02-20 10:32:15,343][root][INFO] - Domain : Constitutional_law, Question : 93
+[2025-02-20 10:32:19,737][root][INFO] - Processing question number 30
+[2025-02-20 10:32:19,743][root][INFO] - Domain : Contracts, Question : 3
+[2025-02-20 10:32:48,200][root][INFO] - Domain : Contracts, Question : 8
+[2025-02-20 10:32:54,229][root][INFO] - Domain : Contracts, Question : 16
+[2025-02-20 10:33:01,786][root][INFO] - Domain : Contracts, Question : 22
+[2025-02-20 10:33:06,569][root][INFO] - Domain : Contracts, Question : 27
+[2025-02-20 10:33:09,959][root][INFO] - Domain : Contracts, Question : 38
+[2025-02-20 10:33:38,765][root][INFO] - Domain : Contracts, Question : 46
+[2025-02-20 10:33:43,687][root][INFO] - Domain : Contracts, Question : 51
+[2025-02-20 10:33:51,530][root][INFO] - Domain : Contracts, Question : 58
+[2025-02-20 10:33:56,165][root][INFO] - Domain : Contracts, Question : 66
+[2025-02-20 10:34:01,659][root][INFO] - Processing question number 40
+[2025-02-20 10:34:01,661][root][INFO] - Domain : Contracts, Question : 72
+[2025-02-20 10:34:06,620][root][INFO] - Domain : Contracts, Question : 81
+[2025-02-20 10:34:14,084][root][INFO] - Domain : Contracts, Question : 88
+[2025-02-20 10:34:37,614][root][INFO] - Domain : Contracts, Question : 94
+[2025-02-20 10:35:06,434][root][INFO] - Domain : Torts, Question : 4
+[2025-02-20 10:35:13,520][root][INFO] - Domain : Torts, Question : 11
+[2025-02-20 10:35:41,989][root][INFO] - Domain : Torts, Question : 24
+[2025-02-20 10:35:57,573][root][INFO] - Domain : Torts, Question : 32
+[2025-02-20 10:36:00,657][root][INFO] - Domain : Torts, Question : 41
+[2025-02-20 10:36:05,297][root][INFO] - Domain : Torts, Question : 47
+[2025-02-20 10:36:09,383][root][INFO] - Processing question number 50
+[2025-02-20 10:36:09,386][root][INFO] - Domain : Torts, Question : 52
+[2025-02-20 10:36:13,329][root][INFO] - Domain : Torts, Question : 62
+[2025-02-20 10:36:21,765][root][INFO] - Domain : Torts, Question : 76
+[2025-02-20 10:36:26,068][root][INFO] - Domain : Torts, Question : 82
+[2025-02-20 10:36:55,409][root][INFO] - Domain : Torts, Question : 90
+[2025-02-20 10:37:03,970][root][INFO] - Domain : Torts, Question : 95
+[2025-02-20 10:37:16,133][root][INFO] - Domain : Torts, Question : 99
+[2025-02-20 10:37:24,391][root][INFO] - Domain : Evidence, Question : 5
+[2025-02-20 10:37:28,088][root][INFO] - Domain : Evidence, Question : 12
+[2025-02-20 10:37:56,880][root][INFO] - Domain : Evidence, Question : 18
+[2025-02-20 10:38:01,648][root][INFO] - Processing question number 60
+[2025-02-20 10:38:01,651][root][INFO] - Domain : Evidence, Question : 23
+[2025-02-20 10:38:08,710][root][INFO] - Domain : Evidence, Question : 31
+[2025-02-20 10:38:12,683][root][INFO] - Domain : Evidence, Question : 34
+[2025-02-20 10:38:41,430][root][INFO] - Domain : Evidence, Question : 40
+[2025-02-20 10:38:48,070][root][INFO] - Domain : Evidence, Question : 44
+[2025-02-20 10:38:58,849][root][INFO] - Domain : Evidence, Question : 53
+[2025-02-20 10:39:11,056][root][INFO] - Domain : Evidence, Question : 59
+[2025-02-20 10:39:17,097][root][INFO] - Domain : Evidence, Question : 68
+[2025-02-20 10:39:31,729][root][INFO] - Domain : Evidence, Question : 73
+[2025-02-20 10:39:36,911][root][INFO] - Domain : Evidence, Question : 78
+[2025-02-20 10:39:46,471][root][INFO] - Processing question number 70
+[2025-02-20 10:39:46,474][root][INFO] - Domain : Evidence, Question : 86
+[2025-02-20 10:39:54,336][root][INFO] - Domain : Evidence, Question : 96
+[2025-02-20 10:39:57,101][root][INFO] - Domain : Property, Question : 6
+[2025-02-20 10:40:00,008][root][INFO] - Domain : Property, Question : 13
+[2025-02-20 10:40:13,629][root][INFO] - Domain : Property, Question : 20
+[2025-02-20 10:40:28,233][root][INFO] - Domain : Property, Question : 33
+[2025-02-20 10:40:32,644][root][INFO] - Domain : Property, Question : 39
+[2025-02-20 10:40:37,823][root][INFO] - Domain : Property, Question : 48
+[2025-02-20 10:40:43,383][root][INFO] - Domain : Property, Question : 54
+[2025-02-20 10:40:51,205][root][INFO] - Domain : Property, Question : 61
+[2025-02-20 10:40:56,808][root][INFO] - Processing question number 80
+[2025-02-20 10:40:56,812][root][INFO] - Domain : Property, Question : 67
+[2025-02-20 10:41:07,380][root][INFO] - Domain : Property, Question : 75
+[2025-02-20 10:41:19,060][root][INFO] - Domain : Property, Question : 83
+[2025-02-20 10:41:25,547][root][INFO] - Domain : Property, Question : 89
+[2025-02-20 10:41:33,907][root][INFO] - Domain : Property, Question : 97
+[2025-02-20 10:41:43,091][root][INFO] - Domain : Property, Question : 100
+[2025-02-20 10:41:50,087][root][INFO] - Domain : Criminal_law, Question : 10
+[2025-02-20 10:41:56,897][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-02-20 10:42:04,342][root][INFO] - Domain : Criminal_law, Question : 26
+[2025-02-20 10:42:32,932][root][INFO] - Domain : Criminal_law, Question : 30
+[2025-02-20 10:42:43,458][root][INFO] - Processing question number 90
+[2025-02-20 10:42:43,463][root][INFO] - Domain : Criminal_law, Question : 36
+[2025-02-20 10:42:48,782][root][INFO] - Domain : Criminal_law, Question : 45
+[2025-02-20 10:42:54,317][root][INFO] - Domain : Criminal_law, Question : 50
+[2025-02-20 10:43:22,719][root][INFO] - Domain : Criminal_law, Question : 57
+[2025-02-20 10:43:26,027][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-02-20 10:43:32,660][root][INFO] - Domain : Criminal_law, Question : 74
+[2025-02-20 10:43:39,210][root][INFO] - Domain : Criminal_law, Question : 80
+[2025-02-20 10:43:43,360][root][INFO] - Domain : Criminal_law, Question : 85
+[2025-02-20 10:44:11,914][root][INFO] - Domain : Criminal_law, Question : 92
+[2025-02-20 10:44:17,928][root][INFO] - Inference complete
+[2025-02-20 10:44:17,928][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 10:44:17,934][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 10:44:17,935][root][ERROR] - Failed to extract domain:  for response: 1
+[2025-02-20 10:44:17,935][root][ERROR] - Failed to extract domain:  for response: 2
+[2025-02-20 10:44:17,935][root][ERROR] - Failed to extract domain:  for response: 3
+[2025-02-20 10:44:17,936][root][ERROR] - Failed to extract domain:  for response: 4
+[2025-02-20 10:44:17,936][root][ERROR] - Failed to extract domain:  for response: 5
+[2025-02-20 10:44:17,936][root][ERROR] - Failed to extract domain:  for response: 6
+[2025-02-20 10:44:17,936][root][ERROR] - |Q. 35||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 10:44:17,936][root][ERROR] - Failed to extract domain:  for response: 7
+[2025-02-20 10:44:17,936][root][ERROR] - Failed to extract domain:  for response: 8
+[2025-02-20 10:44:17,936][root][ERROR] - Failed to extract domain:  for response: 9
+[2025-02-20 10:44:17,936][root][ERROR] - Failed to extract domain:  for response: 10
+[2025-02-20 10:44:17,937][root][ERROR] - Failed to extract domain:  for response: 11
+[2025-02-20 10:44:17,937][root][ERROR] - Failed to extract domain:  for response: 12
+[2025-02-20 10:44:17,937][root][ERROR] - Failed to extract domain:  for response: 13
+[2025-02-20 10:44:17,937][root][ERROR] - Failed to extract domain:  for response: 14
+[2025-02-20 10:44:17,937][root][ERROR] - Failed to extract domain:  for response: 15
+[2025-02-20 10:44:17,937][root][ERROR] - Failed to extract domain:  for response: 16
+[2025-02-20 10:44:17,937][root][ERROR] - Failed to extract domain:  for response: 17
+[2025-02-20 10:44:17,938][root][ERROR] - Failed to extract domain:  for response: 18
+[2025-02-20 10:44:17,938][root][ERROR] - Failed to extract domain:  for response: 19
+[2025-02-20 10:44:17,938][root][ERROR] - Failed to extract domain:  for response: 20
+[2025-02-20 10:44:17,938][root][ERROR] - Failed to extract domain:  for response: 21
+[2025-02-20 10:44:17,938][root][ERROR] - Failed to extract domain:  for response: 22
+[2025-02-20 10:44:17,938][root][ERROR] - Failed to extract domain:  for response: 23
+[2025-02-20 10:44:17,938][root][ERROR] - Failed to extract domain:  for response: 24
+[2025-02-20 10:44:17,938][root][ERROR] - Failed to extract domain:  for response: 25
+[2025-02-20 10:44:17,939][root][ERROR] - Failed to extract domain:  for response: 26
+[2025-02-20 10:44:17,939][root][ERROR] - Failed to extract domain:  for response: 27
+[2025-02-20 10:44:17,939][root][ERROR] - Failed to extract domain:  for response: 28
+[2025-02-20 10:44:17,939][root][ERROR] - |Q. 79||D: Constitutional_law| Failed to extract explanation: 
+[2025-02-20 10:44:17,939][root][ERROR] - Failed to extract domain:  for response: 29
+[2025-02-20 10:44:17,939][root][ERROR] - Failed to extract domain:  for response: 30
+[2025-02-20 10:44:17,939][root][ERROR] - Failed to extract domain:  for response: 31
+[2025-02-20 10:44:17,939][root][ERROR] - Failed to extract domain:  for response: 32
+[2025-02-20 10:44:17,940][root][ERROR] - Failed to extract domain:  for response: 33
+[2025-02-20 10:44:17,940][root][ERROR] - Failed to extract domain:  for response: 34
+[2025-02-20 10:44:17,940][root][ERROR] - Failed to extract domain:  for response: 35
+[2025-02-20 10:44:17,940][root][ERROR] - Failed to extract domain:  for response: 36
+[2025-02-20 10:44:17,940][root][ERROR] - |Q. 38||D: Contracts| Failed to extract explanation: 
+[2025-02-20 10:44:17,940][root][ERROR] - Failed to extract domain:  for response: 37
+[2025-02-20 10:44:17,940][root][ERROR] - Failed to extract domain:  for response: 38
+[2025-02-20 10:44:17,940][root][ERROR] - Failed to extract domain:  for response: 39
+[2025-02-20 10:44:17,941][root][ERROR] - Failed to extract domain:  for response: 40
+[2025-02-20 10:44:17,941][root][ERROR] - Failed to extract domain:  for response: 41
+[2025-02-20 10:44:17,941][root][ERROR] - Failed to extract domain:  for response: 42
+[2025-02-20 10:44:17,941][root][ERROR] - Failed to extract domain:  for response: 43
+[2025-02-20 10:44:17,941][root][ERROR] - Failed to extract domain:  for response: 44
+[2025-02-20 10:44:17,941][root][ERROR] - |Q. 94||D: Contracts| Failed to extract explanation: 
+[2025-02-20 10:44:17,941][root][ERROR] - Failed to extract domain:  for response: 45
+[2025-02-20 10:44:17,942][root][ERROR] - Failed to extract domain:  for response: 46
+[2025-02-20 10:44:17,942][root][ERROR] - |Q. 11||D: Torts| Failed to extract explanation: 
+[2025-02-20 10:44:17,942][root][ERROR] - Failed to extract domain:  for response: 47
+[2025-02-20 10:44:17,942][root][ERROR] - Failed to extract domain:  for response: 48
+[2025-02-20 10:44:17,942][root][ERROR] - Failed to extract domain:  for response: 49
+[2025-02-20 10:44:17,942][root][ERROR] - Failed to extract domain:  for response: 50
+[2025-02-20 10:44:17,942][root][ERROR] - Failed to extract domain:  for response: 51
+[2025-02-20 10:44:17,942][root][ERROR] - Failed to extract domain:  for response: 52
+[2025-02-20 10:44:17,943][root][ERROR] - Failed to extract domain:  for response: 53
+[2025-02-20 10:44:17,943][root][ERROR] - Failed to extract domain:  for response: 54
+[2025-02-20 10:44:17,943][root][ERROR] - |Q. 82||D: Torts| Failed to extract explanation: 
+[2025-02-20 10:44:17,943][root][ERROR] - Failed to extract domain:  for response: 55
+[2025-02-20 10:44:17,943][root][ERROR] - Failed to extract domain:  for response: 56
+[2025-02-20 10:44:17,943][root][ERROR] - Failed to extract domain:  for response: 57
+[2025-02-20 10:44:17,943][root][ERROR] - Failed to extract domain:  for response: 58
+[2025-02-20 10:44:17,944][root][ERROR] - Failed to extract domain:  for response: 59
+[2025-02-20 10:44:17,944][root][ERROR] - |Q. 12||D: Evidence| Failed to extract explanation: 
+[2025-02-20 10:44:17,944][root][ERROR] - Failed to extract domain:  for response: 60
+[2025-02-20 10:44:17,944][root][ERROR] - Failed to extract domain:  for response: 61
+[2025-02-20 10:44:17,944][root][ERROR] - Failed to extract domain:  for response: 62
+[2025-02-20 10:44:17,944][root][ERROR] - Failed to extract domain:  for response: 63
+[2025-02-20 10:44:17,944][root][ERROR] - |Q. 34||D: Evidence| Failed to extract explanation: 
+[2025-02-20 10:44:17,944][root][ERROR] - Failed to extract domain:  for response: 64
+[2025-02-20 10:44:17,945][root][ERROR] - Failed to extract domain:  for response: 65
+[2025-02-20 10:44:17,945][root][ERROR] - Failed to extract domain:  for response: 66
+[2025-02-20 10:44:17,945][root][ERROR] - Failed to extract domain:  for response: 67
+[2025-02-20 10:44:17,945][root][ERROR] - Failed to extract domain:  for response: 68
+[2025-02-20 10:44:17,945][root][ERROR] - Failed to extract domain:  for response: 69
+[2025-02-20 10:44:17,945][root][ERROR] - Failed to extract domain:  for response: 70
+[2025-02-20 10:44:17,945][root][ERROR] - Failed to extract domain:  for response: 71
+[2025-02-20 10:44:17,945][root][ERROR] - Failed to extract domain:  for response: 72
+[2025-02-20 10:44:17,946][root][ERROR] - Failed to extract domain:  for response: 73
+[2025-02-20 10:44:17,946][root][ERROR] - Failed to extract domain:  for response: 74
+[2025-02-20 10:44:17,946][root][ERROR] - Failed to extract domain:  for response: 75
+[2025-02-20 10:44:17,946][root][ERROR] - Failed to extract domain:  for response: 76
+[2025-02-20 10:44:17,946][root][ERROR] - Failed to extract domain:  for response: 77
+[2025-02-20 10:44:17,946][root][ERROR] - Failed to extract domain:  for response: 78
+[2025-02-20 10:44:17,946][root][ERROR] - Failed to extract domain:  for response: 79
+[2025-02-20 10:44:17,946][root][ERROR] - Failed to extract domain:  for response: 80
+[2025-02-20 10:44:17,947][root][ERROR] - Failed to extract domain:  for response: 81
+[2025-02-20 10:44:17,947][root][ERROR] - Failed to extract domain:  for response: 82
+[2025-02-20 10:44:17,947][root][ERROR] - Failed to extract domain:  for response: 83
+[2025-02-20 10:44:17,947][root][ERROR] - Failed to extract domain:  for response: 84
+[2025-02-20 10:44:17,947][root][ERROR] - Failed to extract domain:  for response: 85
+[2025-02-20 10:44:17,947][root][ERROR] - Failed to extract domain:  for response: 86
+[2025-02-20 10:44:17,947][root][ERROR] - Failed to extract domain:  for response: 87
+[2025-02-20 10:44:17,948][root][ERROR] - Failed to extract domain:  for response: 88
+[2025-02-20 10:44:17,948][root][ERROR] - Failed to extract domain:  for response: 89
+[2025-02-20 10:44:17,948][root][ERROR] - Failed to extract domain:  for response: 90
+[2025-02-20 10:44:17,948][root][ERROR] - Failed to extract domain:  for response: 91
+[2025-02-20 10:44:17,948][root][ERROR] - Failed to extract domain:  for response: 92
+[2025-02-20 10:44:17,948][root][ERROR] - Failed to extract domain:  for response: 93
+[2025-02-20 10:44:17,948][root][ERROR] - |Q. 50||D: Criminal_law| Failed to extract explanation: 
+[2025-02-20 10:44:17,948][root][ERROR] - Failed to extract domain:  for response: 94
+[2025-02-20 10:44:17,949][root][ERROR] - Failed to extract domain:  for response: 95
+[2025-02-20 10:44:17,949][root][ERROR] - Failed to extract domain:  for response: 96
+[2025-02-20 10:44:17,949][root][ERROR] - Failed to extract domain:  for response: 97
+[2025-02-20 10:44:17,949][root][ERROR] - Failed to extract domain:  for response: 98
+[2025-02-20 10:44:17,949][root][ERROR] - |Q. 85||D: Criminal_law| Failed to extract explanation: 
+[2025-02-20 10:44:17,949][root][ERROR] - Failed to extract domain:  for response: 99
+[2025-02-20 10:44:17,950][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 10:44:17,954][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 10:44:17,954][root][INFO] - Saved parsed outputs
+[2025-02-20 10:44:17,954][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 10:44:17,956][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 10:44:17,956][root][INFO] - Saved parsing metadata
+[2025-02-20 10:44:17,958][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 10:44:17,981][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 10:44:17,982][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+Metrics successfully appended to master CSV.
+[2025-02-20 10:44:18,011][root][INFO] - Evaluation completed for markdown_answer_first_zero_shot_unstructured, on test_set_1
+[2025-02-20 10:44:18,011][root][INFO] - Summary of metrics : {'label_accuracy': 0.26262626262626265, 'misclassification_rate': 0.7373737373737373, 'combined_accuracy': 0.0, 'malformed_label': 58, 'malformed_domain': 99, 'total_predictions': 99, 'correct_predictions': 26, 'correct_label_and_domain': 0, 'Constitutional_Law_accuracy': 0.0, 'Contracts_accuracy': 0.0, 'Criminal_Law_accuracy': 0.0, 'Evidence_accuracy': 0.0, 'Real_Property_accuracy': 0.0, 'Torts_accuracy': 0.0, 'Civil_Procedure_accuracy': 0.0, 'Constitutional_Law_confidence': 0.0, 'Contracts_confidence': 0.0, 'Criminal_Law_confidence': 0.0, 'Evidence_confidence': 0.0, 'Real_Property_confidence': 0.0, 'Torts_confidence': 0.0, 'Civil_Procedure_confidence': 0.0, 'correct_domain_wrong_label': 0, 'correct_label_wrong_domain': 26, 'both_wrong': 73}
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+[2025-02-20 10:44:25,541][root][INFO] - Setting global seed to 206
+[2025-02-20 10:44:25,548][root][INFO] - Running evaluation of the untrained model on the test_set_1
+[2025-02-20 10:44:25,549][root][INFO] - Current evaluation config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : unstructured 
+ Response Format : markdown 
+[2025-02-20 10:44:25,550][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_1.json
+[2025-02-20 10:44:25,551][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-02-20 10:44:25,553][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-02-20 10:44:25,553][root][INFO] - Questions selected, dataset contains 99 questions with 14.142857142857142 questions per domain
+[2025-02-20 10:44:25,706][root][INFO] - Loading model : meta-llama/Llama-3.1-8B-Instruct
+[2025-02-20 10:44:26,239][root][INFO] - Full model selected, loading model
+[2025-02-20 10:44:46,346][root][INFO] - Baseline model selected, no adapter needed
+[2025-02-20 10:44:46,346][root][WARNING] - Inference will be done using hf pipeline since model.generate consistently generates gibberish
+[2025-02-20 10:44:53,782][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/unstructured_example.json', 'explanation_type': 'unstructured', 'response_type': 'answer_first', 'response_format': 'markdown', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-02-20 10:44:53,784][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 10:44:53,784][root][INFO] - Starting inference
+[2025-02-20 10:44:53,987][root][INFO] - Processing question number 0
+[2025-02-20 10:44:53,989][root][INFO] - Domain : Civil_procedure, Question : 1
+[2025-02-20 10:45:04,073][root][INFO] - Domain : Civil_procedure, Question : 7
+[2025-02-20 10:45:11,625][root][INFO] - Domain : Civil_procedure, Question : 14
+[2025-02-20 10:45:25,976][root][INFO] - Domain : Civil_procedure, Question : 21
+[2025-02-20 10:45:39,550][root][INFO] - Domain : Civil_procedure, Question : 28
+[2025-02-20 10:45:51,294][root][INFO] - Domain : Civil_procedure, Question : 35
+[2025-02-20 10:46:07,095][root][INFO] - Domain : Civil_procedure, Question : 42
+[2025-02-20 10:46:14,731][root][INFO] - Domain : Civil_procedure, Question : 49
+[2025-02-20 10:46:21,888][root][INFO] - Domain : Civil_procedure, Question : 56
+[2025-02-20 10:46:32,558][root][INFO] - Domain : Civil_procedure, Question : 63
+[2025-02-20 10:46:41,711][root][INFO] - Processing question number 10
+[2025-02-20 10:46:41,713][root][INFO] - Domain : Civil_procedure, Question : 69
+[2025-02-20 10:46:51,070][root][INFO] - Domain : Civil_procedure, Question : 70
+[2025-02-20 10:47:07,594][root][INFO] - Domain : Civil_procedure, Question : 77
+[2025-02-20 10:47:13,750][root][INFO] - Domain : Civil_procedure, Question : 84
+[2025-02-20 10:47:23,236][root][INFO] - Domain : Civil_procedure, Question : 91
+[2025-02-20 10:47:31,860][root][INFO] - Domain : Civil_procedure, Question : 98
+[2025-02-20 10:47:40,140][root][INFO] - Domain : Constitutional_law, Question : 2
+[2025-02-20 10:47:51,455][root][INFO] - Domain : Constitutional_law, Question : 9
+[2025-02-20 10:47:58,161][root][INFO] - Domain : Constitutional_law, Question : 17
+[2025-02-20 10:48:10,454][root][INFO] - Domain : Constitutional_law, Question : 25
+[2025-02-20 10:48:27,597][root][INFO] - Processing question number 20
+[2025-02-20 10:48:27,599][root][INFO] - Domain : Constitutional_law, Question : 29
+[2025-02-20 10:48:37,160][root][INFO] - Domain : Constitutional_law, Question : 37
+[2025-02-20 10:48:50,276][root][INFO] - Domain : Constitutional_law, Question : 43
+[2025-02-20 10:49:01,425][root][INFO] - Domain : Constitutional_law, Question : 55
+[2025-02-20 10:49:10,300][root][INFO] - Domain : Constitutional_law, Question : 60
+[2025-02-20 10:49:27,587][root][INFO] - Domain : Constitutional_law, Question : 65
+[2025-02-20 10:49:40,857][root][INFO] - Domain : Constitutional_law, Question : 71
+[2025-02-20 10:49:52,074][root][INFO] - Domain : Constitutional_law, Question : 79
+[2025-02-20 10:50:01,109][root][INFO] - Domain : Constitutional_law, Question : 87
+[2025-02-20 10:50:18,393][root][INFO] - Domain : Constitutional_law, Question : 93
+[2025-02-20 10:50:34,550][root][INFO] - Processing question number 30
+[2025-02-20 10:50:34,552][root][INFO] - Domain : Contracts, Question : 3
+[2025-02-20 10:50:43,322][root][INFO] - Domain : Contracts, Question : 8
+[2025-02-20 10:50:52,798][root][INFO] - Domain : Contracts, Question : 16
+[2025-02-20 10:51:06,441][root][INFO] - Domain : Contracts, Question : 22
+[2025-02-20 10:51:15,147][root][INFO] - Domain : Contracts, Question : 27
+[2025-02-20 10:51:24,165][root][INFO] - Domain : Contracts, Question : 38
+[2025-02-20 10:51:31,011][root][INFO] - Domain : Contracts, Question : 46
+[2025-02-20 10:51:47,884][root][INFO] - Domain : Contracts, Question : 51
+[2025-02-20 10:51:57,511][root][INFO] - Domain : Contracts, Question : 58
+[2025-02-20 10:52:10,666][root][INFO] - Domain : Contracts, Question : 66
+[2025-02-20 10:52:17,159][root][INFO] - Processing question number 40
+[2025-02-20 10:52:17,162][root][INFO] - Domain : Contracts, Question : 72
+[2025-02-20 10:52:23,832][root][INFO] - Domain : Contracts, Question : 81
+[2025-02-20 10:52:32,965][root][INFO] - Domain : Contracts, Question : 88
+[2025-02-20 10:52:42,082][root][INFO] - Domain : Contracts, Question : 94
+[2025-02-20 10:52:50,238][root][INFO] - Domain : Torts, Question : 4
+[2025-02-20 10:52:59,554][root][INFO] - Domain : Torts, Question : 11
+[2025-02-20 10:53:10,807][root][INFO] - Domain : Torts, Question : 24
+[2025-02-20 10:53:19,014][root][INFO] - Domain : Torts, Question : 32
+[2025-02-20 10:53:28,893][root][INFO] - Domain : Torts, Question : 41
+[2025-02-20 10:53:39,336][root][INFO] - Domain : Torts, Question : 47
+[2025-02-20 10:53:45,326][root][INFO] - Processing question number 50
+[2025-02-20 10:53:45,329][root][INFO] - Domain : Torts, Question : 52
+[2025-02-20 10:54:08,467][root][INFO] - Domain : Torts, Question : 62
+[2025-02-20 10:54:19,472][root][INFO] - Domain : Torts, Question : 76
+[2025-02-20 10:54:31,414][root][INFO] - Domain : Torts, Question : 82
+[2025-02-20 10:54:54,912][root][INFO] - Domain : Torts, Question : 90
+[2025-02-20 10:55:04,740][root][INFO] - Domain : Torts, Question : 95
+[2025-02-20 10:55:20,723][root][INFO] - Domain : Torts, Question : 99
+[2025-02-20 10:55:32,025][root][INFO] - Domain : Evidence, Question : 5
+[2025-02-20 10:55:46,874][root][INFO] - Domain : Evidence, Question : 12
+[2025-02-20 10:56:07,629][root][INFO] - Domain : Evidence, Question : 18
+[2025-02-20 10:56:16,753][root][INFO] - Processing question number 60
+[2025-02-20 10:56:16,756][root][INFO] - Domain : Evidence, Question : 23
+[2025-02-20 10:56:26,188][root][INFO] - Domain : Evidence, Question : 31
+[2025-02-20 10:56:35,293][root][INFO] - Domain : Evidence, Question : 34
+[2025-02-20 10:56:50,655][root][INFO] - Domain : Evidence, Question : 40
+[2025-02-20 10:56:57,953][root][INFO] - Domain : Evidence, Question : 44
+[2025-02-20 10:57:07,688][root][INFO] - Domain : Evidence, Question : 53
+[2025-02-20 10:57:20,379][root][INFO] - Domain : Evidence, Question : 59
+[2025-02-20 10:57:32,920][root][INFO] - Domain : Evidence, Question : 68
+[2025-02-20 10:57:42,583][root][INFO] - Domain : Evidence, Question : 73
+[2025-02-20 10:57:56,627][root][INFO] - Domain : Evidence, Question : 78
+[2025-02-20 10:58:06,119][root][INFO] - Processing question number 70
+[2025-02-20 10:58:06,122][root][INFO] - Domain : Evidence, Question : 86
+[2025-02-20 10:58:16,052][root][INFO] - Domain : Evidence, Question : 96
+[2025-02-20 10:58:22,298][root][INFO] - Domain : Property, Question : 6
+[2025-02-20 10:58:35,780][root][INFO] - Domain : Property, Question : 13
+[2025-02-20 10:58:49,132][root][INFO] - Domain : Property, Question : 20
+[2025-02-20 10:59:02,340][root][INFO] - Domain : Property, Question : 33
+[2025-02-20 10:59:17,574][root][INFO] - Domain : Property, Question : 39
+[2025-02-20 10:59:37,335][root][INFO] - Domain : Property, Question : 48
+[2025-02-20 10:59:50,523][root][INFO] - Domain : Property, Question : 54
+[2025-02-20 10:59:59,667][root][INFO] - Domain : Property, Question : 61
+[2025-02-20 11:00:10,902][root][INFO] - Processing question number 80
+[2025-02-20 11:00:10,906][root][INFO] - Domain : Property, Question : 67
+[2025-02-20 11:00:20,062][root][INFO] - Domain : Property, Question : 75
+[2025-02-20 11:00:28,994][root][INFO] - Domain : Property, Question : 83
+[2025-02-20 11:00:38,450][root][INFO] - Domain : Property, Question : 89
+[2025-02-20 11:00:46,970][root][INFO] - Domain : Property, Question : 97
+[2025-02-20 11:00:55,302][root][INFO] - Domain : Property, Question : 100
+[2025-02-20 11:01:03,020][root][INFO] - Domain : Criminal_law, Question : 10
+[2025-02-20 11:01:14,582][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-02-20 11:01:25,888][root][INFO] - Domain : Criminal_law, Question : 26
+[2025-02-20 11:01:43,808][root][INFO] - Domain : Criminal_law, Question : 30
+[2025-02-20 11:01:49,927][root][INFO] - Processing question number 90
+[2025-02-20 11:01:49,932][root][INFO] - Domain : Criminal_law, Question : 36
+[2025-02-20 11:02:02,981][root][INFO] - Domain : Criminal_law, Question : 45
+[2025-02-20 11:02:12,594][root][INFO] - Domain : Criminal_law, Question : 50
+[2025-02-20 11:02:27,264][root][INFO] - Domain : Criminal_law, Question : 57
+[2025-02-20 11:02:30,913][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-02-20 11:02:41,597][root][INFO] - Domain : Criminal_law, Question : 74
+[2025-02-20 11:02:51,473][root][INFO] - Domain : Criminal_law, Question : 80
+[2025-02-20 11:02:59,076][root][INFO] - Domain : Criminal_law, Question : 85
+[2025-02-20 11:03:19,067][root][INFO] - Domain : Criminal_law, Question : 92
+[2025-02-20 11:03:40,667][root][INFO] - Inference complete
+[2025-02-20 11:03:40,667][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 11:03:40,672][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 11:03:40,673][root][ERROR] - Failed to extract domain:  for response: 1
+[2025-02-20 11:03:40,673][root][ERROR] - |Q. 1||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,673][root][ERROR] - Failed to extract domain:  for response: 2
+[2025-02-20 11:03:40,673][root][ERROR] - |Q. 7||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,673][root][ERROR] - Failed to extract domain:  for response: 3
+[2025-02-20 11:03:40,673][root][ERROR] - Failed to extract domain:  for response: 4
+[2025-02-20 11:03:40,673][root][ERROR] - Failed to extract domain:  for response: 5
+[2025-02-20 11:03:40,674][root][ERROR] - |Q. 28||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,674][root][ERROR] - Failed to extract domain:  for response: 6
+[2025-02-20 11:03:40,674][root][ERROR] - Failed to extract domain:  for response: 7
+[2025-02-20 11:03:40,674][root][ERROR] - |Q. 42||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,674][root][ERROR] - Failed to extract domain:  for response: 8
+[2025-02-20 11:03:40,674][root][ERROR] - |Q. 49||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,674][root][ERROR] - Failed to extract domain:  for response: 9
+[2025-02-20 11:03:40,674][root][ERROR] - Failed to extract domain:  for response: 10
+[2025-02-20 11:03:40,674][root][ERROR] - |Q. 63||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,675][root][ERROR] - Failed to extract domain:  for response: 11
+[2025-02-20 11:03:40,675][root][ERROR] - |Q. 69||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,675][root][ERROR] - Failed to extract domain:  for response: 12
+[2025-02-20 11:03:40,675][root][ERROR] - Failed to extract domain:  for response: 13
+[2025-02-20 11:03:40,675][root][ERROR] - |Q. 77||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,675][root][ERROR] - Failed to extract domain:  for response: 14
+[2025-02-20 11:03:40,675][root][ERROR] - |Q. 84||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,675][root][ERROR] - Failed to extract domain:  for response: 15
+[2025-02-20 11:03:40,675][root][ERROR] - |Q. 91||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,675][root][ERROR] - Failed to extract domain:  for response: 16
+[2025-02-20 11:03:40,676][root][ERROR] - |Q. 98||D: Civil_procedure| Failed to extract explanation: 
+[2025-02-20 11:03:40,676][root][ERROR] - Failed to extract domain:  for response: 17
+[2025-02-20 11:03:40,676][root][ERROR] - Failed to extract domain:  for response: 18
+[2025-02-20 11:03:40,676][root][ERROR] - |Q. 9||D: Constitutional_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,676][root][ERROR] - Failed to extract domain:  for response: 19
+[2025-02-20 11:03:40,676][root][ERROR] - Failed to extract domain:  for response: 20
+[2025-02-20 11:03:40,676][root][ERROR] - Failed to extract domain:  for response: 21
+[2025-02-20 11:03:40,676][root][ERROR] - Failed to extract domain:  for response: 22
+[2025-02-20 11:03:40,676][root][ERROR] - |Q. 37||D: Constitutional_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,677][root][ERROR] - Failed to extract domain:  for response: 23
+[2025-02-20 11:03:40,677][root][ERROR] - Failed to extract domain:  for response: 24
+[2025-02-20 11:03:40,677][root][ERROR] - |Q. 55||D: Constitutional_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,677][root][ERROR] - Failed to extract domain:  for response: 25
+[2025-02-20 11:03:40,677][root][ERROR] - Failed to extract domain:  for response: 26
+[2025-02-20 11:03:40,677][root][ERROR] - Failed to extract domain:  for response: 27
+[2025-02-20 11:03:40,677][root][ERROR] - Failed to extract domain:  for response: 28
+[2025-02-20 11:03:40,677][root][ERROR] - |Q. 79||D: Constitutional_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,678][root][ERROR] - Failed to extract domain:  for response: 29
+[2025-02-20 11:03:40,678][root][ERROR] - Failed to extract domain:  for response: 30
+[2025-02-20 11:03:40,678][root][ERROR] - Failed to extract domain:  for response: 31
+[2025-02-20 11:03:40,678][root][ERROR] - |Q. 3||D: Contracts| Failed to extract explanation: 
+[2025-02-20 11:03:40,678][root][ERROR] - Failed to extract domain:  for response: 32
+[2025-02-20 11:03:40,678][root][ERROR] - |Q. 8||D: Contracts| Failed to extract explanation: 
+[2025-02-20 11:03:40,678][root][ERROR] - Failed to extract domain:  for response: 33
+[2025-02-20 11:03:40,678][root][ERROR] - Failed to extract domain:  for response: 34
+[2025-02-20 11:03:40,678][root][ERROR] - |Q. 22||D: Contracts| Failed to extract explanation: 
+[2025-02-20 11:03:40,678][root][ERROR] - Failed to extract domain:  for response: 35
+[2025-02-20 11:03:40,679][root][ERROR] - Failed to extract domain:  for response: 36
+[2025-02-20 11:03:40,679][root][ERROR] - |Q. 38||D: Contracts| Failed to extract explanation: 
+[2025-02-20 11:03:40,679][root][ERROR] - Failed to extract domain:  for response: 37
+[2025-02-20 11:03:40,679][root][ERROR] - Failed to extract domain:  for response: 38
+[2025-02-20 11:03:40,679][root][ERROR] - |Q. 51||D: Contracts| Failed to extract explanation: 
+[2025-02-20 11:03:40,679][root][ERROR] - Failed to extract domain:  for response: 39
+[2025-02-20 11:03:40,679][root][ERROR] - Failed to extract domain:  for response: 40
+[2025-02-20 11:03:40,679][root][ERROR] - |Q. 66||D: Contracts| Failed to extract explanation: 
+[2025-02-20 11:03:40,679][root][ERROR] - Failed to extract domain:  for response: 41
+[2025-02-20 11:03:40,680][root][ERROR] - |Q. 72||D: Contracts| Failed to extract explanation: 
+[2025-02-20 11:03:40,680][root][ERROR] - Failed to extract domain:  for response: 42
+[2025-02-20 11:03:40,680][root][ERROR] - |Q. 81||D: Contracts| Failed to extract explanation: 
+[2025-02-20 11:03:40,680][root][ERROR] - Failed to extract domain:  for response: 43
+[2025-02-20 11:03:40,680][root][ERROR] - |Q. 88||D: Contracts| Failed to extract explanation: 
+[2025-02-20 11:03:40,680][root][ERROR] - Failed to extract domain:  for response: 44
+[2025-02-20 11:03:40,680][root][ERROR] - |Q. 94||D: Contracts| Failed to extract explanation: 
+[2025-02-20 11:03:40,680][root][ERROR] - Failed to extract domain:  for response: 45
+[2025-02-20 11:03:40,680][root][ERROR] - |Q. 4||D: Torts| Failed to extract explanation: 
+[2025-02-20 11:03:40,680][root][ERROR] - Failed to extract domain:  for response: 46
+[2025-02-20 11:03:40,681][root][ERROR] - Failed to extract domain:  for response: 47
+[2025-02-20 11:03:40,681][root][ERROR] - |Q. 24||D: Torts| Failed to extract explanation: 
+[2025-02-20 11:03:40,681][root][ERROR] - Failed to extract domain:  for response: 48
+[2025-02-20 11:03:40,681][root][ERROR] - Failed to extract domain:  for response: 49
+[2025-02-20 11:03:40,681][root][ERROR] - Failed to extract domain:  for response: 50
+[2025-02-20 11:03:40,681][root][ERROR] - |Q. 47||D: Torts| Failed to extract explanation: 
+[2025-02-20 11:03:40,681][root][ERROR] - Failed to extract domain:  for response: 51
+[2025-02-20 11:03:40,681][root][ERROR] - Failed to extract domain:  for response: 52
+[2025-02-20 11:03:40,681][root][ERROR] - |Q. 62||D: Torts| Failed to extract explanation: 
+[2025-02-20 11:03:40,681][root][ERROR] - Failed to extract domain:  for response: 53
+[2025-02-20 11:03:40,682][root][ERROR] - Failed to extract domain:  for response: 54
+[2025-02-20 11:03:40,682][root][ERROR] - Failed to extract domain:  for response: 55
+[2025-02-20 11:03:40,682][root][ERROR] - |Q. 90||D: Torts| Failed to extract explanation: 
+[2025-02-20 11:03:40,682][root][ERROR] - Failed to extract domain:  for response: 56
+[2025-02-20 11:03:40,682][root][ERROR] - Failed to extract domain:  for response: 57
+[2025-02-20 11:03:40,682][root][ERROR] - |Q. 99||D: Torts| Failed to extract explanation: 
+[2025-02-20 11:03:40,682][root][ERROR] - Failed to extract domain:  for response: 58
+[2025-02-20 11:03:40,682][root][ERROR] - Failed to extract domain:  for response: 59
+[2025-02-20 11:03:40,683][root][ERROR] - Failed to extract domain:  for response: 60
+[2025-02-20 11:03:40,683][root][ERROR] - |Q. 18||D: Evidence| Failed to extract explanation: 
+[2025-02-20 11:03:40,683][root][ERROR] - Failed to extract domain:  for response: 61
+[2025-02-20 11:03:40,683][root][ERROR] - |Q. 23||D: Evidence| Failed to extract explanation: 
+[2025-02-20 11:03:40,683][root][ERROR] - Failed to extract domain:  for response: 62
+[2025-02-20 11:03:40,683][root][ERROR] - |Q. 31||D: Evidence| Failed to extract explanation: 
+[2025-02-20 11:03:40,683][root][ERROR] - Failed to extract domain:  for response: 63
+[2025-02-20 11:03:40,683][root][ERROR] - Failed to extract domain:  for response: 64
+[2025-02-20 11:03:40,683][root][ERROR] - |Q. 40||D: Evidence| Failed to extract explanation: 
+[2025-02-20 11:03:40,683][root][ERROR] - Failed to extract domain:  for response: 65
+[2025-02-20 11:03:40,684][root][ERROR] - Failed to extract domain:  for response: 66
+[2025-02-20 11:03:40,684][root][ERROR] - Failed to extract domain:  for response: 67
+[2025-02-20 11:03:40,684][root][ERROR] - Failed to extract domain:  for response: 68
+[2025-02-20 11:03:40,684][root][ERROR] - |Q. 68||D: Evidence| Failed to extract explanation: 
+[2025-02-20 11:03:40,684][root][ERROR] - Failed to extract domain:  for response: 69
+[2025-02-20 11:03:40,684][root][ERROR] - Failed to extract domain:  for response: 70
+[2025-02-20 11:03:40,684][root][ERROR] - Failed to extract domain:  for response: 71
+[2025-02-20 11:03:40,684][root][ERROR] - |Q. 86||D: Evidence| Failed to extract explanation: 
+[2025-02-20 11:03:40,684][root][ERROR] - Failed to extract domain:  for response: 72
+[2025-02-20 11:03:40,685][root][ERROR] - |Q. 96||D: Evidence| Failed to extract explanation: 
+[2025-02-20 11:03:40,685][root][ERROR] - Failed to extract domain:  for response: 73
+[2025-02-20 11:03:40,685][root][ERROR] - Failed to extract domain:  for response: 74
+[2025-02-20 11:03:40,685][root][ERROR] - |Q. 13||D: Property| Failed to extract explanation: 
+[2025-02-20 11:03:40,685][root][ERROR] - Failed to extract domain:  for response: 75
+[2025-02-20 11:03:40,685][root][ERROR] - |Q. 20||D: Property| Failed to extract explanation: 
+[2025-02-20 11:03:40,685][root][ERROR] - Failed to extract domain:  for response: 76
+[2025-02-20 11:03:40,685][root][ERROR] - Failed to extract domain:  for response: 77
+[2025-02-20 11:03:40,685][root][ERROR] - Failed to extract domain:  for response: 78
+[2025-02-20 11:03:40,686][root][ERROR] - Failed to extract domain:  for response: 79
+[2025-02-20 11:03:40,686][root][ERROR] - |Q. 54||D: Property| Failed to extract explanation: 
+[2025-02-20 11:03:40,686][root][ERROR] - Failed to extract domain:  for response: 80
+[2025-02-20 11:03:40,686][root][ERROR] - |Q. 61||D: Property| Failed to extract explanation: 
+[2025-02-20 11:03:40,686][root][ERROR] - Failed to extract domain:  for response: 81
+[2025-02-20 11:03:40,686][root][ERROR] - |Q. 67||D: Property| Failed to extract explanation: 
+[2025-02-20 11:03:40,686][root][ERROR] - Failed to extract domain:  for response: 82
+[2025-02-20 11:03:40,686][root][ERROR] - |Q. 75||D: Property| Failed to extract explanation: 
+[2025-02-20 11:03:40,686][root][ERROR] - Failed to extract domain:  for response: 83
+[2025-02-20 11:03:40,686][root][ERROR] - |Q. 83||D: Property| Failed to extract explanation: 
+[2025-02-20 11:03:40,686][root][ERROR] - Failed to extract domain:  for response: 84
+[2025-02-20 11:03:40,687][root][ERROR] - |Q. 89||D: Property| Failed to extract explanation: 
+[2025-02-20 11:03:40,687][root][ERROR] - Failed to extract domain:  for response: 85
+[2025-02-20 11:03:40,687][root][ERROR] - |Q. 97||D: Property| Failed to extract explanation: 
+[2025-02-20 11:03:40,687][root][ERROR] - Failed to extract domain:  for response: 86
+[2025-02-20 11:03:40,687][root][ERROR] - |Q. 100||D: Property| Failed to extract explanation: 
+[2025-02-20 11:03:40,687][root][ERROR] - Failed to extract domain:  for response: 87
+[2025-02-20 11:03:40,687][root][ERROR] - |Q. 10||D: Criminal_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,687][root][ERROR] - Failed to extract domain:  for response: 88
+[2025-02-20 11:03:40,687][root][ERROR] - |Q. 15||D: Criminal_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,687][root][ERROR] - Failed to extract domain:  for response: 89
+[2025-02-20 11:03:40,687][root][ERROR] - Failed to extract domain:  for response: 90
+[2025-02-20 11:03:40,688][root][ERROR] - |Q. 30||D: Criminal_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,688][root][ERROR] - Failed to extract domain:  for response: 91
+[2025-02-20 11:03:40,688][root][ERROR] - |Q. 36||D: Criminal_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,688][root][ERROR] - Failed to extract domain:  for response: 92
+[2025-02-20 11:03:40,688][root][ERROR] - |Q. 45||D: Criminal_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,688][root][ERROR] - Failed to extract domain:  for response: 93
+[2025-02-20 11:03:40,688][root][ERROR] - Failed to extract domain:  for response: 94
+[2025-02-20 11:03:40,688][root][ERROR] - |Q. 57||D: Criminal_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,688][root][ERROR] - Failed to extract domain:  for response: 95
+[2025-02-20 11:03:40,688][root][ERROR] - |Q. 64||D: Criminal_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,688][root][ERROR] - Failed to extract domain:  for response: 96
+[2025-02-20 11:03:40,689][root][ERROR] - Failed to extract domain:  for response: 97
+[2025-02-20 11:03:40,689][root][ERROR] - |Q. 80||D: Criminal_law| Failed to extract explanation: 
+[2025-02-20 11:03:40,689][root][ERROR] - Failed to extract domain:  for response: 98
+[2025-02-20 11:03:40,689][root][ERROR] - Failed to extract domain:  for response: 99
+[2025-02-20 11:03:40,690][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 11:03:40,700][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 11:03:40,700][root][INFO] - Saved parsed outputs
+[2025-02-20 11:03:40,700][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 11:03:40,702][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 11:03:40,702][root][INFO] - Saved parsing metadata
+[2025-02-20 11:03:40,702][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 11:03:40,704][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+[2025-02-20 11:03:40,707][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/markdown_answer_first_zero_shot_unstructured/test_set_1.json
+Metrics successfully appended to master CSV.
+[2025-02-20 11:03:40,719][root][INFO] - Evaluation completed for markdown_answer_first_zero_shot_unstructured, on test_set_1
+[2025-02-20 11:03:40,719][root][INFO] - Summary of metrics : {'label_accuracy': 0.0, 'misclassification_rate': 1.0, 'combined_accuracy': 0.0, 'malformed_label': 99, 'malformed_domain': 99, 'total_predictions': 99, 'correct_predictions': 0, 'correct_label_and_domain': 0, 'Constitutional_Law_accuracy': 0.0, 'Contracts_accuracy': 0.0, 'Criminal_Law_accuracy': 0.0, 'Evidence_accuracy': 0.0, 'Real_Property_accuracy': 0.0, 'Torts_accuracy': 0.0, 'Civil_Procedure_accuracy': 0.0, 'Constitutional_Law_confidence': 0.0, 'Contracts_confidence': 0.0, 'Criminal_Law_confidence': 0.0, 'Evidence_confidence': 0.0, 'Real_Property_confidence': 0.0, 'Torts_confidence': 0.0, 'Civil_Procedure_confidence': 0.0, 'correct_domain_wrong_label': 0, 'correct_label_wrong_domain': 0, 'both_wrong': 99}
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_answer_first_zero_shot_unstructured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Job 24 completed at Do 20. Feb 11:06:03 CET 2025
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n509
+Job ID: 25296029
+Cluster: uc2
+User/Group: fr_rf1031/fr_fr
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 00:46:50
+CPU Efficiency: 9.70% of 08:02:40 core-walltime
+Job Wall-clock time: 00:48:16
+Memory Utilized: 34.46 GB
+Memory Efficiency: 95.74% of 36.00 GB

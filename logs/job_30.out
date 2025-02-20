@@ -1,0 +1,94 @@
+Starting job 30 at Do 20. Feb 10:51:23 CET 2025
+Configuration: model=llama3 tokenizer=llama3 dataset=all_domains_1_samples prompt=markdown_fact_first_zero_shot_structured train=markdown_fact_first_zero_shot_structured ++train.training_args.per_device_train_batch_size=7 ++train.training_args.gradient_accumulation_steps=1
+[2025-02-20 10:51:32,646][root][INFO] - Global seed set to 314
+[2025-02-20 10:51:32,648][root][WARNING] - Quantisation will be done on loaded model, THIS IS A QLORA FINE-TUNING RUN
+[2025-02-20 10:51:32,648][root][WARNING] - Following flags are set for the run : 
+ Use Quantisation before fine-tuning : True 
+ Perform Validation on epoch end : False
+[2025-02-20 10:51:32,648][root][INFO] - Running Fine-tuning on the all_domains_1_samples dataset
+[2025-02-20 10:51:32,648][root][INFO] - Current training config is : 
+ Prompt type : zero_shot 
+ Response type : fact_first 
+ Explanation type : structured 
+ Response Format : markdown 
+[2025-02-20 10:51:32,648][root][INFO] - Loading dataset from /home/fr/fr_fr/fr_rf1031/bar-llama/dataset/seed_dataset/distilled_dataset.json
+[2025-02-20 10:51:32,666][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-02-20 10:51:32,763][root][INFO] - Indexing complete, sampling of questions set to True
+[2025-02-20 10:51:32,765][root][INFO] - Questions selected, dataset contains 7 questions with 1.0 questions per domain
+[2025-02-20 10:51:32,769][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'fact_first', 'response_format': 'markdown', 'store_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${train.prompt.response_format}_${train.prompt.response_type}_${train.prompt.explanation_type}.txt', 'include_system_prompt': True}
+[2025-02-20 10:51:33,553][root][INFO] - Tokenizer meta-llama/Meta-Llama-3-8B-Instruct loaded successfully
+[2025-02-20 10:51:55,106][root][INFO] - Quantised model meta-llama/Llama-3.1-8B-Instruct loaded successfully
+[2025-02-20 10:52:22,619][root][INFO] - Model prepared for kbit training
+[2025-02-20 10:52:22,620][root][INFO] - Lora config loaded, following are the details : 
+ LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type='CAUSAL_LM', inference_mode=False, r=64, target_modules={'v_proj', 'o_proj', 'k_proj', 'q_proj', 'up_proj', 'gate_proj', 'down_proj'}, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+[2025-02-20 10:52:24,314][root][INFO] - Lora adapter added to model
+[2025-02-20 10:52:24,316][root][INFO] - Model adapter will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/sft_adapters/llama3/all_domains_1_samples/llama3_markdown_fact_first_zero_shot_structured
+[2025-02-20 10:52:24,540][accelerate.utils.other][WARNING] - Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+{'loss': 1.4241, 'grad_norm': 0.3872685730457306, 'learning_rate': 3.226975564787322e-05, 'epoch': 10.0}
+{'train_runtime': 335.7543, 'train_samples_per_second': 0.313, 'train_steps_per_second': 0.045, 'train_loss': 1.237253443400065, 'epoch': 15.0}
+[2025-02-20 10:58:08,129][root][INFO] - Finetuning complete, model saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/sft_adapters/llama3/all_domains_1_samples/llama3_markdown_fact_first_zero_shot_structured
+Starting evaluations for job 30
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=markdown_fact_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Job 30 completed at Do 20. Feb 11:00:37 CET 2025
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n514
+Job ID: 25296035
+Cluster: uc2
+User/Group: fr_rf1031/fr_fr
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 00:08:52
+CPU Efficiency: 9.02% of 01:38:20 core-walltime
+Job Wall-clock time: 00:09:50
+Memory Utilized: 5.72 GB
+Memory Efficiency: 15.89% of 36.00 GB

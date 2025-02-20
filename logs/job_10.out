@@ -1,0 +1,378 @@
+Starting job 10 at Do 20. Feb 10:02:32 CET 2025
+Configuration: model=llama3 tokenizer=llama3 dataset=all_domains_1_samples prompt=number_list_fact_first_few_shot_structured train=number_list_fact_first_few_shot_structured ++train.training_args.per_device_train_batch_size=7 ++train.training_args.gradient_accumulation_steps=1
+[2025-02-20 10:02:50,181][root][INFO] - Global seed set to 314
+[2025-02-20 10:02:50,183][root][WARNING] - Quantisation will be done on loaded model, THIS IS A QLORA FINE-TUNING RUN
+[2025-02-20 10:02:50,183][root][WARNING] - Following flags are set for the run : 
+ Use Quantisation before fine-tuning : True 
+ Perform Validation on epoch end : False
+[2025-02-20 10:02:50,183][root][INFO] - Running Fine-tuning on the all_domains_1_samples dataset
+[2025-02-20 10:02:50,183][root][INFO] - Current training config is : 
+ Prompt type : few_shot 
+ Response type : fact_first 
+ Explanation type : structured 
+ Response Format : number_list 
+[2025-02-20 10:02:50,183][root][INFO] - Loading dataset from /home/fr/fr_fr/fr_rf1031/bar-llama/dataset/seed_dataset/distilled_dataset.json
+[2025-02-20 10:02:50,203][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-02-20 10:02:50,253][root][INFO] - Indexing complete, sampling of questions set to True
+[2025-02-20 10:02:50,256][root][INFO] - Questions selected, dataset contains 7 questions with 1.0 questions per domain
+[2025-02-20 10:02:50,281][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'few_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'fact_first', 'response_format': 'number_list', 'store_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${train.prompt.response_format}_${train.prompt.response_type}_${train.prompt.explanation_type}.txt', 'include_system_prompt': True}
+[2025-02-20 10:02:51,024][root][INFO] - Tokenizer meta-llama/Meta-Llama-3-8B-Instruct loaded successfully
+[2025-02-20 10:03:15,689][root][INFO] - Quantised model meta-llama/Llama-3.1-8B-Instruct loaded successfully
+[2025-02-20 10:03:43,798][root][INFO] - Model prepared for kbit training
+[2025-02-20 10:03:43,799][root][INFO] - Lora config loaded, following are the details : 
+ LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type='CAUSAL_LM', inference_mode=False, r=64, target_modules={'up_proj', 'gate_proj', 'q_proj', 'down_proj', 'k_proj', 'o_proj', 'v_proj'}, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+[2025-02-20 10:03:45,543][root][INFO] - Lora adapter added to model
+[2025-02-20 10:03:45,546][root][INFO] - Model adapter will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/sft_adapters/llama3/all_domains_1_samples/llama3_number_list_fact_first_few_shot_structured
+[2025-02-20 10:03:45,773][accelerate.utils.other][WARNING] - Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+{'loss': 1.2798, 'grad_norm': 0.37087133526802063, 'learning_rate': 3.226975564787322e-05, 'epoch': 10.0}
+{'train_runtime': 416.1523, 'train_samples_per_second': 0.252, 'train_steps_per_second': 0.036, 'train_loss': 1.1024649302164713, 'epoch': 15.0}
+[2025-02-20 10:10:50,468][root][INFO] - Finetuning complete, model saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/sft_adapters/llama3/all_domains_1_samples/llama3_number_list_fact_first_few_shot_structured
+Starting evaluations for job 10
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+[2025-02-20 10:10:59,756][root][INFO] - Setting global seed to 206
+[2025-02-20 10:10:59,762][root][INFO] - Running evaluation of the trained model on the test_set_1
+[2025-02-20 10:10:59,762][root][INFO] - Current evaluation config is : 
+ Prompt type : few_shot 
+ Response type : fact_first 
+ Explanation type : structured 
+ Response Format : number_list 
+[2025-02-20 10:10:59,763][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_1.json
+[2025-02-20 10:10:59,765][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-02-20 10:10:59,767][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-02-20 10:10:59,767][root][INFO] - Questions selected, dataset contains 99 questions with 14.142857142857142 questions per domain
+[2025-02-20 10:10:59,920][root][INFO] - Loading model : meta-llama/Llama-3.1-8B-Instruct
+[2025-02-20 10:11:00,545][root][INFO] - Full model selected, loading model
+[2025-02-20 10:11:24,161][root][INFO] - Tokenizer special tokens: {'bos_token': '<|begin_of_text|>', 'eos_token': '<|end_of_text|>', 'pad_token': '[PAD]'} have been added
+[2025-02-20 10:13:09,566][root][INFO] - Fine-tuned model selected, loading adapter
+[2025-02-20 10:13:09,582][root][WARNING] - Inference will be done using model.generate instead of hf pipeline since peft model is not compatible with it
+[2025-02-20 10:13:47,825][root][INFO] - Peft model loaded successfully
+[2025-02-20 10:13:55,825][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'few_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'fact_first', 'response_format': 'number_list', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-02-20 10:13:55,827][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 10:13:55,827][root][INFO] - Starting inference
+[2025-02-20 10:13:55,991][root][INFO] - Processing question number 0
+[2025-02-20 10:13:55,993][root][INFO] - Domain : Civil_procedure, Question : 1
+[2025-02-20 10:14:07,147][root][INFO] - Domain : Civil_procedure, Question : 7
+[2025-02-20 10:14:21,246][root][INFO] - Domain : Civil_procedure, Question : 14
+[2025-02-20 10:14:38,064][root][INFO] - Domain : Civil_procedure, Question : 21
+[2025-02-20 10:14:53,686][root][INFO] - Domain : Civil_procedure, Question : 28
+[2025-02-20 10:15:06,983][root][INFO] - Domain : Civil_procedure, Question : 35
+[2025-02-20 10:15:18,889][root][INFO] - Domain : Civil_procedure, Question : 42
+[2025-02-20 10:15:30,999][root][INFO] - Domain : Civil_procedure, Question : 49
+[2025-02-20 10:15:45,309][root][INFO] - Domain : Civil_procedure, Question : 56
+[2025-02-20 10:15:57,737][root][INFO] - Domain : Civil_procedure, Question : 63
+[2025-02-20 10:16:07,953][root][INFO] - Processing question number 10
+[2025-02-20 10:16:07,955][root][INFO] - Domain : Civil_procedure, Question : 69
+[2025-02-20 10:16:23,688][root][INFO] - Domain : Civil_procedure, Question : 70
+[2025-02-20 10:16:36,627][root][INFO] - Domain : Civil_procedure, Question : 77
+[2025-02-20 10:16:49,792][root][INFO] - Domain : Civil_procedure, Question : 84
+[2025-02-20 10:17:04,723][root][INFO] - Domain : Civil_procedure, Question : 91
+[2025-02-20 10:17:15,876][root][INFO] - Domain : Civil_procedure, Question : 98
+[2025-02-20 10:17:30,311][root][INFO] - Domain : Constitutional_law, Question : 2
+[2025-02-20 10:17:45,261][root][INFO] - Domain : Constitutional_law, Question : 9
+[2025-02-20 10:17:57,224][root][INFO] - Domain : Constitutional_law, Question : 17
+[2025-02-20 10:18:13,634][root][INFO] - Domain : Constitutional_law, Question : 25
+[2025-02-20 10:18:29,877][root][INFO] - Processing question number 20
+[2025-02-20 10:18:29,879][root][INFO] - Domain : Constitutional_law, Question : 29
+[2025-02-20 10:18:41,846][root][INFO] - Domain : Constitutional_law, Question : 37
+[2025-02-20 10:18:55,268][root][INFO] - Domain : Constitutional_law, Question : 43
+[2025-02-20 10:19:09,077][root][INFO] - Domain : Constitutional_law, Question : 55
+[2025-02-20 10:19:20,197][root][INFO] - Domain : Constitutional_law, Question : 60
+[2025-02-20 10:19:34,657][root][INFO] - Domain : Constitutional_law, Question : 65
+[2025-02-20 10:19:47,179][root][INFO] - Domain : Constitutional_law, Question : 71
+[2025-02-20 10:19:59,198][root][INFO] - Domain : Constitutional_law, Question : 79
+[2025-02-20 10:20:13,915][root][INFO] - Domain : Constitutional_law, Question : 87
+[2025-02-20 10:20:26,964][root][INFO] - Domain : Constitutional_law, Question : 93
+[2025-02-20 10:20:39,575][root][INFO] - Processing question number 30
+[2025-02-20 10:20:39,578][root][INFO] - Domain : Contracts, Question : 3
+[2025-02-20 10:20:56,013][root][INFO] - Domain : Contracts, Question : 8
+[2025-02-20 10:21:09,534][root][INFO] - Domain : Contracts, Question : 16
+[2025-02-20 10:21:26,630][root][INFO] - Domain : Contracts, Question : 22
+[2025-02-20 10:21:40,733][root][INFO] - Domain : Contracts, Question : 27
+[2025-02-20 10:21:52,902][root][INFO] - Domain : Contracts, Question : 38
+[2025-02-20 10:22:06,640][root][INFO] - Domain : Contracts, Question : 46
+[2025-02-20 10:22:19,749][root][INFO] - Domain : Contracts, Question : 51
+[2025-02-20 10:22:34,764][root][INFO] - Domain : Contracts, Question : 58
+[2025-02-20 10:22:49,834][root][INFO] - Domain : Contracts, Question : 66
+[2025-02-20 10:23:04,117][root][INFO] - Processing question number 40
+[2025-02-20 10:23:04,120][root][INFO] - Domain : Contracts, Question : 72
+[2025-02-20 10:23:19,371][root][INFO] - Domain : Contracts, Question : 81
+[2025-02-20 10:23:37,125][root][INFO] - Domain : Contracts, Question : 88
+[2025-02-20 10:23:52,323][root][INFO] - Domain : Contracts, Question : 94
+[2025-02-20 10:24:05,405][root][INFO] - Domain : Torts, Question : 4
+[2025-02-20 10:24:18,528][root][INFO] - Domain : Torts, Question : 11
+[2025-02-20 10:24:33,017][root][INFO] - Domain : Torts, Question : 24
+[2025-02-20 10:24:46,507][root][INFO] - Domain : Torts, Question : 32
+[2025-02-20 10:24:59,600][root][INFO] - Domain : Torts, Question : 41
+[2025-02-20 10:25:12,769][root][INFO] - Domain : Torts, Question : 47
+[2025-02-20 10:25:24,793][root][INFO] - Processing question number 50
+[2025-02-20 10:25:24,796][root][INFO] - Domain : Torts, Question : 52
+[2025-02-20 10:25:37,041][root][INFO] - Domain : Torts, Question : 62
+[2025-02-20 10:25:51,059][root][INFO] - Domain : Torts, Question : 76
+[2025-02-20 10:26:02,662][root][INFO] - Domain : Torts, Question : 82
+[2025-02-20 10:26:15,202][root][INFO] - Domain : Torts, Question : 90
+[2025-02-20 10:26:28,375][root][INFO] - Domain : Torts, Question : 95
+[2025-02-20 10:26:37,966][root][INFO] - Domain : Torts, Question : 99
+[2025-02-20 10:26:52,473][root][INFO] - Domain : Evidence, Question : 5
+[2025-02-20 10:27:04,824][root][INFO] - Domain : Evidence, Question : 12
+[2025-02-20 10:27:19,233][root][INFO] - Domain : Evidence, Question : 18
+[2025-02-20 10:27:30,939][root][INFO] - Processing question number 60
+[2025-02-20 10:27:30,943][root][INFO] - Domain : Evidence, Question : 23
+[2025-02-20 10:27:44,515][root][INFO] - Domain : Evidence, Question : 31
+[2025-02-20 10:27:55,980][root][INFO] - Domain : Evidence, Question : 34
+[2025-02-20 10:28:11,963][root][INFO] - Domain : Evidence, Question : 40
+[2025-02-20 10:28:23,621][root][INFO] - Domain : Evidence, Question : 44
+[2025-02-20 10:28:37,858][root][INFO] - Domain : Evidence, Question : 53
+[2025-02-20 10:28:51,366][root][INFO] - Domain : Evidence, Question : 59
+[2025-02-20 10:29:02,723][root][INFO] - Domain : Evidence, Question : 68
+[2025-02-20 10:29:15,014][root][INFO] - Domain : Evidence, Question : 73
+[2025-02-20 10:29:28,767][root][INFO] - Domain : Evidence, Question : 78
+[2025-02-20 10:29:41,540][root][INFO] - Processing question number 70
+[2025-02-20 10:29:41,544][root][INFO] - Domain : Evidence, Question : 86
+[2025-02-20 10:29:55,751][root][INFO] - Domain : Evidence, Question : 96
+[2025-02-20 10:30:07,705][root][INFO] - Domain : Property, Question : 6
+[2025-02-20 10:30:21,692][root][INFO] - Domain : Property, Question : 13
+[2025-02-20 10:30:37,445][root][INFO] - Domain : Property, Question : 20
+[2025-02-20 10:30:53,235][root][INFO] - Domain : Property, Question : 33
+[2025-02-20 10:31:06,305][root][INFO] - Domain : Property, Question : 39
+[2025-02-20 10:31:22,068][root][INFO] - Domain : Property, Question : 48
+[2025-02-20 10:31:35,881][root][INFO] - Domain : Property, Question : 54
+[2025-02-20 10:31:49,918][root][INFO] - Domain : Property, Question : 61
+[2025-02-20 10:32:07,038][root][INFO] - Processing question number 80
+[2025-02-20 10:32:07,043][root][INFO] - Domain : Property, Question : 67
+[2025-02-20 10:32:22,307][root][INFO] - Domain : Property, Question : 75
+[2025-02-20 10:32:40,898][root][INFO] - Domain : Property, Question : 83
+[2025-02-20 10:32:53,601][root][INFO] - Domain : Property, Question : 89
+[2025-02-20 10:33:06,618][root][INFO] - Domain : Property, Question : 97
+[2025-02-20 10:33:20,422][root][INFO] - Domain : Property, Question : 100
+[2025-02-20 10:33:35,856][root][INFO] - Domain : Criminal_law, Question : 10
+[2025-02-20 10:33:48,209][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-02-20 10:34:03,878][root][INFO] - Domain : Criminal_law, Question : 26
+[2025-02-20 10:34:19,720][root][INFO] - Domain : Criminal_law, Question : 30
+[2025-02-20 10:34:29,952][root][INFO] - Processing question number 90
+[2025-02-20 10:34:29,958][root][INFO] - Domain : Criminal_law, Question : 36
+[2025-02-20 10:34:47,698][root][INFO] - Domain : Criminal_law, Question : 45
+[2025-02-20 10:35:01,889][root][INFO] - Domain : Criminal_law, Question : 50
+[2025-02-20 10:35:14,275][root][INFO] - Domain : Criminal_law, Question : 57
+[2025-02-20 10:35:27,777][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-02-20 10:35:42,098][root][INFO] - Domain : Criminal_law, Question : 74
+[2025-02-20 10:36:00,371][root][INFO] - Domain : Criminal_law, Question : 80
+[2025-02-20 10:36:13,035][root][INFO] - Domain : Criminal_law, Question : 85
+[2025-02-20 10:36:28,194][root][INFO] - Domain : Criminal_law, Question : 92
+[2025-02-20 10:36:43,521][root][INFO] - Inference complete
+[2025-02-20 10:36:43,522][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 10:36:43,528][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 10:36:43,544][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 10:36:43,551][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 10:36:43,551][root][INFO] - Saved parsed outputs
+[2025-02-20 10:36:43,551][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 10:36:43,553][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 10:36:43,553][root][INFO] - Saved parsing metadata
+[2025-02-20 10:36:43,553][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 10:36:43,556][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 10:36:43,558][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/trained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+Metrics successfully appended to master CSV.
+[2025-02-20 10:36:43,586][root][INFO] - Evaluation completed for number_list_fact_first_few_shot_structured, on test_set_1
+[2025-02-20 10:36:43,586][root][INFO] - Summary of metrics : {'label_accuracy': 0.5050505050505051, 'misclassification_rate': 0.4949494949494949, 'combined_accuracy': 0.32323232323232326, 'malformed_label': 0, 'malformed_domain': 32, 'total_predictions': 99, 'correct_predictions': 50, 'correct_label_and_domain': 32, 'Constitutional_Law_accuracy': 0.5714285714285714, 'Contracts_accuracy': 0.14285714285714285, 'Criminal_Law_accuracy': 0.6153846153846154, 'Evidence_accuracy': 0.4666666666666667, 'Real_Property_accuracy': 0.14285714285714285, 'Torts_accuracy': 0.23076923076923078, 'Civil_Procedure_accuracy': 0.125, 'Constitutional_Law_confidence': 0.13131313131313133, 'Contracts_confidence': 0.0707070707070707, 'Criminal_Law_confidence': 0.1919191919191919, 'Evidence_confidence': 0.10101010101010101, 'Real_Property_confidence': 0.12121212121212122, 'Torts_confidence': 0.09090909090909091, 'Civil_Procedure_confidence': 0.06060606060606061, 'correct_domain_wrong_label': 35, 'correct_label_wrong_domain': 18, 'both_wrong': 14}
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+[2025-02-20 10:36:51,726][root][INFO] - Setting global seed to 206
+[2025-02-20 10:36:51,733][root][INFO] - Running evaluation of the untrained model on the test_set_1
+[2025-02-20 10:36:51,733][root][INFO] - Current evaluation config is : 
+ Prompt type : few_shot 
+ Response type : fact_first 
+ Explanation type : structured 
+ Response Format : number_list 
+[2025-02-20 10:36:51,734][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_1.json
+[2025-02-20 10:36:51,736][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-02-20 10:36:51,738][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-02-20 10:36:51,738][root][INFO] - Questions selected, dataset contains 99 questions with 14.142857142857142 questions per domain
+[2025-02-20 10:36:51,885][root][INFO] - Loading model : meta-llama/Llama-3.1-8B-Instruct
+[2025-02-20 10:36:52,450][root][INFO] - Full model selected, loading model
+[2025-02-20 10:37:10,853][root][INFO] - Baseline model selected, no adapter needed
+[2025-02-20 10:37:10,853][root][WARNING] - Inference will be done using hf pipeline since model.generate consistently generates gibberish
+[2025-02-20 10:37:18,160][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'few_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'fact_first', 'response_format': 'number_list', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-02-20 10:37:18,161][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 10:37:18,161][root][INFO] - Starting inference
+[2025-02-20 10:37:18,332][root][INFO] - Processing question number 0
+[2025-02-20 10:37:18,334][root][INFO] - Domain : Civil_procedure, Question : 1
+[2025-02-20 10:37:29,792][root][INFO] - Domain : Civil_procedure, Question : 7
+[2025-02-20 10:37:43,073][root][INFO] - Domain : Civil_procedure, Question : 14
+[2025-02-20 10:37:59,833][root][INFO] - Domain : Civil_procedure, Question : 21
+[2025-02-20 10:38:12,025][root][INFO] - Domain : Civil_procedure, Question : 28
+[2025-02-20 10:38:25,115][root][INFO] - Domain : Civil_procedure, Question : 35
+[2025-02-20 10:38:38,838][root][INFO] - Domain : Civil_procedure, Question : 42
+[2025-02-20 10:38:54,334][root][INFO] - Domain : Civil_procedure, Question : 49
+[2025-02-20 10:39:07,310][root][INFO] - Domain : Civil_procedure, Question : 56
+[2025-02-20 10:39:20,083][root][INFO] - Domain : Civil_procedure, Question : 63
+[2025-02-20 10:39:31,153][root][INFO] - Processing question number 10
+[2025-02-20 10:39:31,155][root][INFO] - Domain : Civil_procedure, Question : 69
+[2025-02-20 10:39:46,514][root][INFO] - Domain : Civil_procedure, Question : 70
+[2025-02-20 10:39:59,554][root][INFO] - Domain : Civil_procedure, Question : 77
+[2025-02-20 10:40:12,649][root][INFO] - Domain : Civil_procedure, Question : 84
+[2025-02-20 10:40:27,375][root][INFO] - Domain : Civil_procedure, Question : 91
+[2025-02-20 10:40:40,822][root][INFO] - Domain : Civil_procedure, Question : 98
+[2025-02-20 10:40:54,398][root][INFO] - Domain : Constitutional_law, Question : 2
+[2025-02-20 10:41:09,182][root][INFO] - Domain : Constitutional_law, Question : 9
+[2025-02-20 10:41:23,277][root][INFO] - Domain : Constitutional_law, Question : 17
+[2025-02-20 10:41:36,278][root][INFO] - Domain : Constitutional_law, Question : 25
+[2025-02-20 10:41:48,911][root][INFO] - Processing question number 20
+[2025-02-20 10:41:48,914][root][INFO] - Domain : Constitutional_law, Question : 29
+[2025-02-20 10:42:00,259][root][INFO] - Domain : Constitutional_law, Question : 37
+[2025-02-20 10:42:15,836][root][INFO] - Domain : Constitutional_law, Question : 43
+[2025-02-20 10:42:29,932][root][INFO] - Domain : Constitutional_law, Question : 55
+[2025-02-20 10:42:44,479][root][INFO] - Domain : Constitutional_law, Question : 60
+[2025-02-20 10:42:59,409][root][INFO] - Domain : Constitutional_law, Question : 65
+[2025-02-20 10:43:12,798][root][INFO] - Domain : Constitutional_law, Question : 71
+[2025-02-20 10:43:26,897][root][INFO] - Domain : Constitutional_law, Question : 79
+[2025-02-20 10:43:41,363][root][INFO] - Domain : Constitutional_law, Question : 87
+[2025-02-20 10:43:57,362][root][INFO] - Domain : Constitutional_law, Question : 93
+[2025-02-20 10:44:10,531][root][INFO] - Processing question number 30
+[2025-02-20 10:44:10,534][root][INFO] - Domain : Contracts, Question : 3
+[2025-02-20 10:44:24,552][root][INFO] - Domain : Contracts, Question : 8
+[2025-02-20 10:44:40,598][root][INFO] - Domain : Contracts, Question : 16
+[2025-02-20 10:44:55,836][root][INFO] - Domain : Contracts, Question : 22
+[2025-02-20 10:45:09,678][root][INFO] - Domain : Contracts, Question : 27
+[2025-02-20 10:45:22,091][root][INFO] - Domain : Contracts, Question : 38
+[2025-02-20 10:45:34,647][root][INFO] - Domain : Contracts, Question : 46
+[2025-02-20 10:45:49,923][root][INFO] - Domain : Contracts, Question : 51
+[2025-02-20 10:46:07,006][root][INFO] - Domain : Contracts, Question : 58
+[2025-02-20 10:46:19,414][root][INFO] - Domain : Contracts, Question : 66
+[2025-02-20 10:46:33,533][root][INFO] - Processing question number 40
+[2025-02-20 10:46:33,536][root][INFO] - Domain : Contracts, Question : 72
+[2025-02-20 10:46:48,361][root][INFO] - Domain : Contracts, Question : 81
+[2025-02-20 10:47:02,768][root][INFO] - Domain : Contracts, Question : 88
+[2025-02-20 10:47:18,414][root][INFO] - Domain : Contracts, Question : 94
+[2025-02-20 10:47:34,997][root][INFO] - Domain : Torts, Question : 4
+[2025-02-20 10:47:47,498][root][INFO] - Domain : Torts, Question : 11
+[2025-02-20 10:48:00,805][root][INFO] - Domain : Torts, Question : 24
+[2025-02-20 10:48:14,336][root][INFO] - Domain : Torts, Question : 32
+[2025-02-20 10:48:26,720][root][INFO] - Domain : Torts, Question : 41
+[2025-02-20 10:48:40,176][root][INFO] - Domain : Torts, Question : 47
+[2025-02-20 10:48:52,641][root][INFO] - Processing question number 50
+[2025-02-20 10:48:52,645][root][INFO] - Domain : Torts, Question : 52
+[2025-02-20 10:49:08,191][root][INFO] - Domain : Torts, Question : 62
+[2025-02-20 10:49:22,362][root][INFO] - Domain : Torts, Question : 76
+[2025-02-20 10:49:32,750][root][INFO] - Domain : Torts, Question : 82
+[2025-02-20 10:49:44,146][root][INFO] - Domain : Torts, Question : 90
+[2025-02-20 10:49:57,098][root][INFO] - Domain : Torts, Question : 95
+[2025-02-20 10:50:13,680][root][INFO] - Domain : Torts, Question : 99
+[2025-02-20 10:50:27,564][root][INFO] - Domain : Evidence, Question : 5
+[2025-02-20 10:50:42,234][root][INFO] - Domain : Evidence, Question : 12
+[2025-02-20 10:50:55,708][root][INFO] - Domain : Evidence, Question : 18
+[2025-02-20 10:51:08,025][root][INFO] - Processing question number 60
+[2025-02-20 10:51:08,029][root][INFO] - Domain : Evidence, Question : 23
+[2025-02-20 10:51:21,794][root][INFO] - Domain : Evidence, Question : 31
+[2025-02-20 10:51:31,090][root][INFO] - Domain : Evidence, Question : 34
+[2025-02-20 10:51:47,684][root][INFO] - Domain : Evidence, Question : 40
+[2025-02-20 10:52:01,185][root][INFO] - Domain : Evidence, Question : 44
+[2025-02-20 10:52:13,068][root][INFO] - Domain : Evidence, Question : 53
+[2025-02-20 10:52:27,379][root][INFO] - Domain : Evidence, Question : 59
+[2025-02-20 10:52:37,651][root][INFO] - Domain : Evidence, Question : 68
+[2025-02-20 10:52:50,899][root][INFO] - Domain : Evidence, Question : 73
+[2025-02-20 10:53:03,574][root][INFO] - Domain : Evidence, Question : 78
+[2025-02-20 10:53:19,072][root][INFO] - Processing question number 70
+[2025-02-20 10:53:19,076][root][INFO] - Domain : Evidence, Question : 86
+[2025-02-20 10:53:32,485][root][INFO] - Domain : Evidence, Question : 96
+[2025-02-20 10:53:46,210][root][INFO] - Domain : Property, Question : 6
+[2025-02-20 10:53:58,858][root][INFO] - Domain : Property, Question : 13
+[2025-02-20 10:54:14,540][root][INFO] - Domain : Property, Question : 20
+[2025-02-20 10:54:31,439][root][INFO] - Domain : Property, Question : 33
+[2025-02-20 10:54:44,497][root][INFO] - Domain : Property, Question : 39
+[2025-02-20 10:55:01,251][root][INFO] - Domain : Property, Question : 48
+[2025-02-20 10:55:14,734][root][INFO] - Domain : Property, Question : 54
+[2025-02-20 10:55:30,757][root][INFO] - Domain : Property, Question : 61
+[2025-02-20 10:55:43,395][root][INFO] - Processing question number 80
+[2025-02-20 10:55:43,400][root][INFO] - Domain : Property, Question : 67
+[2025-02-20 10:55:57,095][root][INFO] - Domain : Property, Question : 75
+[2025-02-20 10:56:16,982][root][INFO] - Domain : Property, Question : 83
+[2025-02-20 10:56:31,039][root][INFO] - Domain : Property, Question : 89
+[2025-02-20 10:56:44,149][root][INFO] - Domain : Property, Question : 97
+[2025-02-20 10:56:57,478][root][INFO] - Domain : Property, Question : 100
+[2025-02-20 10:57:12,239][root][INFO] - Domain : Criminal_law, Question : 10
+[2025-02-20 10:57:26,520][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-02-20 10:57:40,193][root][INFO] - Domain : Criminal_law, Question : 26
+[2025-02-20 10:57:56,852][root][INFO] - Domain : Criminal_law, Question : 30
+[2025-02-20 10:58:11,244][root][INFO] - Processing question number 90
+[2025-02-20 10:58:11,250][root][INFO] - Domain : Criminal_law, Question : 36
+[2025-02-20 10:58:27,621][root][INFO] - Domain : Criminal_law, Question : 45
+[2025-02-20 10:58:43,818][root][INFO] - Domain : Criminal_law, Question : 50
+[2025-02-20 10:58:56,899][root][INFO] - Domain : Criminal_law, Question : 57
+[2025-02-20 10:59:09,295][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-02-20 10:59:23,282][root][INFO] - Domain : Criminal_law, Question : 74
+[2025-02-20 10:59:36,319][root][INFO] - Domain : Criminal_law, Question : 80
+[2025-02-20 10:59:49,371][root][INFO] - Domain : Criminal_law, Question : 85
+[2025-02-20 11:00:06,318][root][INFO] - Domain : Criminal_law, Question : 92
+[2025-02-20 11:00:20,538][root][INFO] - Inference complete
+[2025-02-20 11:00:20,538][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 11:00:20,544][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 11:00:20,560][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 11:00:20,566][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 11:00:20,566][root][INFO] - Saved parsed outputs
+[2025-02-20 11:00:20,566][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 11:00:20,568][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 11:00:20,568][root][INFO] - Saved parsing metadata
+[2025-02-20 11:00:20,568][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 11:00:20,570][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+[2025-02-20 11:00:20,571][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_1_samples/untrained_full_model/greedy/number_list_fact_first_few_shot_structured/test_set_1.json
+Metrics successfully appended to master CSV.
+[2025-02-20 11:00:20,585][root][INFO] - Evaluation completed for number_list_fact_first_few_shot_structured, on test_set_1
+[2025-02-20 11:00:20,585][root][INFO] - Summary of metrics : {'label_accuracy': 0.6161616161616161, 'misclassification_rate': 0.38383838383838387, 'combined_accuracy': 0.3333333333333333, 'malformed_label': 0, 'malformed_domain': 47, 'total_predictions': 99, 'correct_predictions': 61, 'correct_label_and_domain': 33, 'Constitutional_Law_accuracy': 0.21428571428571427, 'Contracts_accuracy': 0.14285714285714285, 'Criminal_Law_accuracy': 0.6153846153846154, 'Evidence_accuracy': 0.4, 'Real_Property_accuracy': 0.42857142857142855, 'Torts_accuracy': 0.38461538461538464, 'Civil_Procedure_accuracy': 0.1875, 'Constitutional_Law_confidence': 0.06060606060606061, 'Contracts_confidence': 0.04040404040404041, 'Criminal_Law_confidence': 0.10101010101010101, 'Evidence_confidence': 0.09090909090909091, 'Real_Property_confidence': 0.12121212121212122, 'Torts_confidence': 0.10101010101010101, 'Civil_Procedure_confidence': 0.06060606060606061, 'correct_domain_wrong_label': 19, 'correct_label_wrong_domain': 28, 'both_wrong': 19}
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=greedy evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_025 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Running evaluation with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Evaluation failed with config: seeds=seed_42 model=llama3 tokenizer=llama3 dataset=all_domains_1_samples generation=temp_06 evaluation_dataset=test_set_2 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=untrained
+Job 10 completed at Do 20. Feb 11:02:42 CET 2025
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n507
+Job ID: 25296015
+Cluster: uc2
+User/Group: fr_rf1031/fr_fr
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 00:59:12
+CPU Efficiency: 9.75% of 10:07:10 core-walltime
+Job Wall-clock time: 01:00:43
+Memory Utilized: 33.25 GB
+Memory Efficiency: 92.36% of 36.00 GB

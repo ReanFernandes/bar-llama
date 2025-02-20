@@ -278,8 +278,8 @@ class QuestionLevelAnalyzer:
 def main():
     """Main execution function"""
     # Set up base path and output path
-    base_path = "/home/fr/fr_fr/fr_rf1031/bar-llama/model_outputs"
-    output_path = "new_question_level_analysis_results.csv" # modify to add new files
+    base_path = "/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs"
+    output_path = "llam2_new_question_level_analysis_results.csv" # modify to add new files
     
     # Initialize analyzer
     analyzer = QuestionLevelAnalyzer(base_path, COMPONENTS)

@@ -1,0 +1,47 @@
+{
+    "config": {
+        "model_name": "llama3",
+        "seed": "seed_206",
+        "training_status": "trained",
+        "quantisation_status": "full_model",
+        "training_dataset": "all_domains_1_samples",
+        "num_training_samples": "1",
+        "num_training_domains": [
+            "all"
+        ],
+        "randomised_training_samples": true,
+        "generation_strategy": "temp_025",
+        "prompt_type": "zero_shot",
+        "explanation_type": "structured",
+        "response_type": "fact_first",
+        "response_format": "number_list",
+        "evaluation_dataset": "test_set_1"
+    },
+    "metrics": {
+        "label_accuracy": 0.5151515151515151,
+        "misclassification_rate": 0.48484848484848486,
+        "combined_accuracy": 0.30303030303030304,
+        "malformed_label": 5,
+        "malformed_domain": 48,
+        "total_predictions": 99,
+        "correct_predictions": 51,
+        "correct_label_and_domain": 30,
+        "Constitutional_Law_accuracy": 0.14285714285714285,
+        "Contracts_accuracy": 0.5,
+        "Criminal_Law_accuracy": 0.38461538461538464,
+        "Evidence_accuracy": 0.5333333333333333,
+        "Real_Property_accuracy": 0.07142857142857142,
+        "Torts_accuracy": 0.5384615384615384,
+        "Civil_Procedure_accuracy": 0.0,
+        "Constitutional_Law_confidence": 0.020202020202020204,
+        "Contracts_confidence": 0.15151515151515152,
+        "Criminal_Law_confidence": 0.09090909090909091,
+        "Evidence_confidence": 0.12121212121212122,
+        "Real_Property_confidence": 0.04040404040404041,
+        "Torts_confidence": 0.09090909090909091,
+        "Civil_Procedure_confidence": 0.020202020202020204,
+        "correct_domain_wrong_label": 21,
+        "correct_label_wrong_domain": 21,
+        "both_wrong": 27
+    }
+}

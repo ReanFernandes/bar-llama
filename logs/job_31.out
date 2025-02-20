@@ -1,0 +1,18 @@
+Starting job 31 at Do 20. Feb 11:16:27 CET 2025
+Configuration: model=llama2 tokenizer=llama2 dataset=all_domains_1_samples prompt=markdown_fact_first_zero_shot_unstructured train=markdown_fact_first_zero_shot_unstructured ++train.training_args.per_device_train_batch_size=7 ++train.training_args.gradient_accumulation_steps=1
+Job 31 completed at Do 20. Feb 11:16:41 CET 2025
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n508
+Job ID: 25296036
+Cluster: uc2
+User/Group: fr_rf1031/fr_fr
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 00:00:08
+CPU Efficiency: 1.74% of 00:07:40 core-walltime
+Job Wall-clock time: 00:00:46
+Memory Utilized: 505.97 MB
+Memory Efficiency: 1.37% of 36.00 GB

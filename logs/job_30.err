@@ -1,0 +1,138 @@
+Unused kwargs: ['use_nested_quant']. These kwargs are not used in <class 'transformers.utils.quantization_config.BitsAndBytesConfig'>.
+`low_cpu_mem_usage` was None, now default to True since model is quantized.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:20,  7.00s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:13<00:13,  6.66s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:19<00:06,  6.20s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  4.38s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:20<00:00,  5.17s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Map:   0%|          | 0/7 [00:00<?, ? examples/s]Map: 100%|██████████| 7/7 [00:00<00:00, 271.61 examples/s]
+wandb: Currently logged in as: rean-fernandes. Use `wandb login --relogin` to force relogin
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Tracking run with wandb version 0.19.3
+wandb: Run data is saved locally in /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/wandb/run-20250220_105225-kkilld14
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fine_tune_markdown_fact_first_zero_shot_structured_seed_314_llama3
+wandb: ⭐️ View project at https://wandb.ai/rean-fernandes/Final_runs_paper
+wandb: 🚀 View run at https://wandb.ai/rean-fernandes/Final_runs_paper/runs/kkilld14
+  0%|          | 0/15 [00:00<?, ?it/s]  7%|▋         | 1/15 [00:22<05:13, 22.39s/it] 13%|█▎        | 2/15 [00:44<04:49, 22.24s/it] 20%|██        | 3/15 [01:06<04:26, 22.21s/it] 27%|██▋       | 4/15 [01:28<04:04, 22.22s/it] 33%|███▎      | 5/15 [01:51<03:42, 22.23s/it] 40%|████      | 6/15 [02:13<03:20, 22.26s/it] 47%|████▋     | 7/15 [02:35<02:58, 22.28s/it] 53%|█████▎    | 8/15 [02:58<02:36, 22.30s/it] 60%|██████    | 9/15 [03:20<02:13, 22.33s/it] 67%|██████▋   | 10/15 [03:42<01:51, 22.33s/it]                                                67%|██████▋   | 10/15 [03:42<01:51, 22.33s/it] 73%|███████▎  | 11/15 [04:05<01:29, 22.32s/it] 80%|████████  | 12/15 [04:27<01:06, 22.32s/it] 87%|████████▋ | 13/15 [04:49<00:44, 22.32s/it] 93%|█████████▎| 14/15 [05:12<00:22, 22.33s/it]100%|██████████| 15/15 [05:34<00:00, 22.34s/it]                                               100%|██████████| 15/15 [05:34<00:00, 22.34s/it]100%|██████████| 15/15 [05:34<00:00, 22.30s/it]
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/peft/utils/save_and_load.py:257: UserWarning: Setting `save_embedding_layers` to `True` as the embedding layer has been resized during finetuning.
+  warnings.warn(
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:         train/epoch ▁█
+wandb:   train/global_step ▁█
+wandb:     train/grad_norm ▁
+wandb: train/learning_rate ▁
+wandb:          train/loss ▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 3992720108912640.0
+wandb:              train/epoch 15
+wandb:        train/global_step 15
+wandb:          train/grad_norm 0.38727
+wandb:      train/learning_rate 3e-05
+wandb:               train/loss 1.4241
+wandb:               train_loss 1.23725
+wandb:            train_runtime 335.7543
+wandb: train_samples_per_second 0.313
+wandb:   train_steps_per_second 0.045
+wandb: 
+wandb: 🚀 View run fine_tune_markdown_fact_first_zero_shot_structured_seed_314_llama3 at: https://wandb.ai/rean-fernandes/Final_runs_paper/runs/kkilld14
+wandb: ⭐️ View project at: https://wandb.ai/rean-fernandes/Final_runs_paper
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250220_105225-kkilld14/logs
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_206
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Could not override 'seeds'. No match in the defaults list.
+To append to your default list use +seeds=seed_42
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

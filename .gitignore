@@ -1,6 +1,7 @@
 outputs
 wandb
 sft_adapters
+sft_adapters_BACKUP
 train_checkpoints
 eval_logs
 job_configs
