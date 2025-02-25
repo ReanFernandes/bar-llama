@@ -3,12 +3,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nA shareholder of a car manufacturing company wants to sue the company in federal court for breach of fiduciary duty. What information about the company, besides its place of incorporation, does the shareholder\u2019s attorney need in order to determine whether the parties are diverse?\nAnswer Choices:\nA. Where the company distributes its cars.\nB. Where the company has sufficient minimum contacts.\nC. Where the company\u2019s headquarters is located.\nD. Where the company\u2019s major place of manufacturing is located.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "D",
+            "chosen_option_label": "C",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The correct answer choice is D, as the company\u2019s major place of manufacturing is the relevant information needed to determine whether the parties are diverse."
+                "Legal_conclusion": "The correct answer choice is C, as the company\u2019s headquarters is located in a different state from the plaintiff, which satisfies the requirement for diversity jurisdiction."
             }
         },
         "ground_truth": {
@@ -155,12 +155,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nAt the close of a two-week federal jury trial, the court asked the parties to submit proposed jury instructions. The court selected some of the proposed instructions, reformulated others, and charged the jury accordingly. The parties made no objections. The jury returned a verdict for the plaintiff, and the court entered judgment on the verdict. The defendant appealed, arguing that several of the court\u2019s instructions were plain error. What is the plaintiff\u2019s best argument in response?\nAnswer Choices:\nA. Any errors in the instructions did not affect the defendant\u2019s substantial rights.\nB. The defendant waived the appeal by failing to first move for a new trial.\nC. The court has discretion as to what instructions to give and can be reversed on appeal only for abuse of that discretion.\nD. The defendant waived the errors in the instructions by not objecting to them at trial.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "The letter corresponding to the correct answer choice.",
+            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "A concise statement explaining why the chosen option is the correct answer."
+                "Legal_conclusion": "*A concise statement explaining why the chosen option is the correct answer.*"
             }
         },
         "ground_truth": {
@@ -326,12 +326,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nA reporter writing an article about a politician offered the politician\u2019s estranged daughter $10,000 for information about the politician. The daughter agreed and provided the reporter with the information he sought. Subsequently, the daughter\u2019s information appeared in a newspaper article by the reporter, but the reporter refused to pay the daughter. The daughter sued the reporter in state court for breach of contract on the basis of generally applicable state contract law. The reporter has moved to dismiss the action solely on the ground that the daughter\u2019s lawsuit violates the freedom of the press clause of the First Amendment. Is the court likely to grant the reporter\u2019s motion to dismiss?\nAnswer Choices:\nA. No, because the daughter is not a state actor.\nB. No, because the First Amendment does not shield reporters from generally applicable state-law claims.\nC. Yes, because state contract law as applied to the reporter inhibits freedom of the press without a compelling government interest.\nD. Yes, because the politician is a public figure and any information about him is in the public domain.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "The letter corresponding to the correct answer choice.",
+            "chosen_option_label": "C",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "A concise statement explaining why the chosen option is the correct answer."
+                "Legal_conclusion": "The First Amendment protects freedom of speech, including the press, and prohibits the government from restricting this freedom without a compelling government interest. The reporter\u2019s motion to dismiss the daughter\u2019s lawsuit solely on the ground that it violates the freedom of the press clause of the First Amendment is likely to be granted."
             }
         },
         "ground_truth": {
@@ -402,12 +402,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nIn response to a nationwide increase in drug-related crime, Congress passed a statute creating a new agency responsible for enforcing federal drug laws. The statute authorizes the President to appoint the agency\u2019s director with the advice and consent of the Senate and prohibits the President from removing the director without the Senate\u2019s consent. The President appointed a director, and the Senate confirmed the appointment. Recently, the President has become dissatisfied with the director\u2019s strict approach to drug-law enforcement and wishes to remove the director. Because a majority of senators favor strict drug-law enforcement, the Senate has refused to consent to the director\u2019s removal. May the President constitutionally remove the director without the Senate\u2019s consent?\nAnswer Choices:\nA. No, because Congress created the director position and may properly impose conditions for the director\u2019s appointment and removal.\nB. No, because the President\u2019s removal of principal officers of the United States is subject to the advice and consent of the Senate.\nC. Yes, because congressional participation in the decision to remove a presidential appointee violates the separation of powers.\nD. Yes, because Congress cannot limit the ability of the President to remove any employee of the executive branch.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "D. Yes, because Congress cannot limit the ability of the President to remove any employee of the executive branch.",
+            "chosen_option_label": "D",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The President may not constitutionally remove the director without the Senate's consent, because the director is a principal officer of the United States who is appointed by the President with the advice and consent of the Senate. The President's removal of the director would violate the separation of powers doctrine and the advice and consent requirement."
+                "Legal_conclusion": "The President may constitutionally remove the director without the Senate's consent because Congress cannot limit the President's ability to remove executive branch officials."
             }
         },
         "ground_truth": {
@@ -730,7 +730,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The developer is likely to prevail in a breach of contract action because the express condition to the developer's performance obligation failed to occur."
+                "Legal_conclusion": "The developer is likely to prevail in a breach of contract action because the engineer failed to obtain the county's approval of the project, which was an express condition to the developer's performance obligation."
             }
         },
         "ground_truth": {
@@ -972,12 +972,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nA recently installed elevator suddenly started free- falling down the elevator shaft while carrying passengers. Frightened, a passenger pried the inside doors open and impulsively stuck his arm through them to try to stop the fall. As a result, his arm was broken. The elevator eventually stopped without causing further injuries. In a negligence action brought by the injured passenger against the company that installed and maintained the elevator, the injured passenger has asked the trial judge to instruct the jury that it may find the company negligent on a theory of res ipsa loquitur. In response, the company has argued that the passenger\u2019s conduct caused his injuries. How should the judge rule?\nAnswer Choices:\nA. The judge should deny the passenger\u2019s request, because it is possible that the company was not negligent.\nB. The judge should deny the passenger\u2019s request, because the jury could find that the conduct of the passenger contributed to his injuries.\nC. The judge should grant the passenger\u2019s request but should also instruct the jurors to consider any carelessness of the passenger in awarding damages if they find the company liable.\nD. The judge should grant the passenger\u2019s request, because the passenger acted reasonably considering the stress of the situation.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "D",
+            "chosen_option_label": "C",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The correct answer choice is D, which states that the judge should grant the passenger\u2019s request because the passenger acted reasonably considering the stress of the situation. Res ipsa loquitur allows the jury to infer negligence on the part of the defendant based on the unusual or unexpected nature of the injury, even if there is no specific evidence of negligence. However, the judge should also instruct the jurors to consider any carelessness of the passenger in awarding damages if they find the company liable. This instruction ensures that the jury does not place too much weight on the passenger\u2019s conduct and that they consider all relevant factors in determining liability."
+                "Legal_conclusion": "The correct answer choice is C, which states that the judge should grant the passenger\u2019s request but should also instruct the jurors to consider any carelessness of the passenger in awarding damages if they find the company liable. This is because res ipsa loquitur allows a plaintiff to establish negligence in certain circumstances without having to present direct evidence of negligence, but the judge should also instruct the jurors to consider any carelessness of the passenger in awarding damages if they find the company liable."
             }
         },
         "ground_truth": {
@@ -991,12 +991,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nAn intoxicated man who was standing on a fifth- floor apartment balcony threatened to jump off the building. A bystander pulled the man back into the building, pushed him into a bedroom, and locked the bedroom door from the outside. When the man became sober, the bystander released him from the bedroom. Does the man have a claim against the bystander?\nAnswer Choices:\nA. Yes, for battery, because the bystander pushed the man into the bedroom.\nB. Yes, for false imprisonment, because the bystander locked the man in the bedroom.\nC. Yes, for both battery and false imprisonment.\nD. No, because the bystander was privileged to act as he did.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
+            "chosen_option_label": "C. Yes, for both battery and false imprisonment.",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "*A concise statement explaining why the chosen option is the correct answer.*"
+                "Legal_conclusion": "The man has a claim against the bystander for battery and false imprisonment because the bystander intentionally caused harmful or offensive contact with the man without his consent and intentionally restricted his freedom of movement without legal justification."
             }
         },
         "ground_truth": {
@@ -1143,12 +1143,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nA woman has sued a man for defamation, alleging that he sent a letter to her employer making false and injurious statements about her. At trial, she proposes to testify about the statements in the letter but does not produce the letter itself or show that it is unavailable. Should the court allow the woman\u2019s testimony about the statements in the letter?\nAnswer Choices:\nA. No, because the statements were made out of court and are hearsay not within any exception.\nB. No, because the best evidence rule requires an original or duplicate of the letter to prove the letter\u2019s contents.\nC. Yes, because the statements are not being offered for their truth and thus are not hearsay.\nD. Yes, because the statements are those of a party-opponent and therefore are admissible under a hearsay exception.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
+            "chosen_option_label": "C",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "*A concise statement explaining why the chosen option is the correct answer.*"
+                "Legal_conclusion": "The court should allow the woman\u2019s testimony about the statements in the letter because the statements are not being offered for their truth and thus are not hearsay."
             }
         },
         "ground_truth": {
@@ -1162,12 +1162,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nA plaintiff has sued a defendant for negligently causing her injury. The plaintiff alleges that the defendant, who was standing on a scaffold while painting a building, dropped a paint can that struck the plaintiff on the head while she was walking under the scaffold. At trial, to prove her injury, the plaintiff offers a photograph for admission into evidence. A witness will testify that he took the photograph with his cell phone and that the photograph accurately portrays what he saw. The photograph shows the plaintiff lying on the sidewalk, bleeding from a gash on her head, with a spilled paint can nearby. Is the photograph admissible?\nAnswer Choices:\nA. No, because the unfair prejudicial effect of the photograph outweighs its probative value.\nB. No, because there is no testimony establishing that cell-phone technology produces accurate photographs.\nC. Yes, because the photograph will be authenticated by the witness\u2019s testimony.\nD. Yes, because the photograph is self- authenticating.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "The letter corresponding to the correct answer choice.",
+            "chosen_option_label": "C",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "A concise statement explaining why the chosen option is the correct answer."
+                "Legal_conclusion": "Option C is the correct answer because the photograph will be authenticated by the witness's testimony."
             }
         },
         "ground_truth": {
@@ -1300,7 +1300,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The lawyer cannot be compelled to disclose the client\u2019s identity to the grand jury because the identity of the client is not privileged when disclosure would not reveal a confidential communication."
+                "Legal_conclusion": "The lawyer cannot be compelled to disclose the client\u2019s identity to the grand jury because the attorney-client privilege protects confidential communications between a client and their attorney, and disclosure would not reveal a confidential attorney-client communication."
             }
         },
         "ground_truth": {
@@ -1371,12 +1371,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nA grantor conveyed a commercial property to a friend \u201cso long as alcoholic beverages are not sold on the property, and if alcoholic beverages are sold on the property, the estate is to end at once.\u201d The friend took possession of the property. Four years later, the friend opened a tavern that sold alcoholic beverages on the property. Six months after the opening, while the friend continued to operate the tavern, the municipality in which the property is located validly condemned the property. There are no applicable statutes. To whom should the condemnation proceeds be paid?\nAnswer Choices:\nA. To the friend and the grantor in equal shares, because they both had an interest in the property.\nB. To the friend, because he was in possession on the date of the condemnation.\nC. To the friend, because the limitation is an invalid restraint on the sale of alcohol.\nD. To the grantor, because the friend\u2019s estate had ended.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
+            "chosen_option_label": "D",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "*A concise statement explaining why the chosen option is the correct answer.*"
+                "Legal_conclusion": "Option D, which states that the condemnation proceeds should be paid to the grantor, is the correct answer because the friend\u2019s operation of a tavern that sold alcoholic beverages on the property constitutes a breach of the condition, which would prevent the grantor from asserting a claim for the sale of alcoholic beverages on the property."
             }
         },
         "ground_truth": {
@@ -1414,7 +1414,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The correct answer is C, as the broker produced a ready, willing, and able buyer during the term of the listing agreement, and the buyer\u2019s offer matched the ultimate sale price. The woman\u2019s rejection of the offer without giving a reason does not affect the broker\u2019s entitlement to a commission."
+                "Legal_conclusion": "Option C is the correct answer because the broker produced a ready, willing, and able buyer during the term of the listing agreement, and the buyer\u2019s offer matched the ultimate sale price."
             }
         },
         "ground_truth": {
@@ -1428,12 +1428,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nA woman executed and delivered to her unmarried nephew a warranty deed conveying her home to him \u201con the date of his marriage.\u201d The nephew promptly recorded the deed. Several years later, when the nephew was still unmarried, the woman died testate, leaving her entire estate to her sister. The executor of the woman\u2019s estate has asserted that the nephew has no interest in the home. Is the executor correct?\nAnswer Choices:\nA. No, because the nephew recorded the deed before the woman\u2019s death.\nB. No, because the woman\u2019s death did not affect the nephew\u2019s future interest in the home.\nC. Yes, because a deed that does not transfer immediate possession to a grantee is rendered void by the grantor\u2019s death.\nD. Yes, because the nephew did not marry before the woman\u2019s death.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C. Yes, because a deed that does not transfer immediate possession to a grantee is rendered void by the grantor's death.",
+            "chosen_option_label": "D. Yes, because the nephew did not marry before the woman's death.",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The executor is correct in asserting that the nephew has no interest in the home."
+                "Legal_conclusion": "The executor of the woman's estate is correct in asserting that the nephew has no interest in the home, as the deed was not recorded before the woman's death."
             }
         },
         "ground_truth": {
@@ -1504,12 +1504,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nTwenty years ago, a woman conveyed land to a city so long as the city used the land \u201cfor park purposes.\u201d The deed was promptly recorded. Seventeen years ago, the city discontinued using the land as a park. Because the city needed additional parking for nearby city buildings, it paved the land and has used it as a parking lot ever since. The period of time to acquire title by adverse possession in the jurisdiction is 10 years. Last year, the woman died intestate, leaving a son as her only heir. The son sued the city, claiming ownership of the land, but the court found against him. What is the most likely explanation for the court\u2019s decision?\nAnswer Choices:\nA. The city acquired the land by adverse possession.\nB. The son\u2019s interest ended as a result of the changing needs of the city.\nC. The son\u2019s interest lapsed on the death of the woman.\nD. The woman retained no interest in the land after she conveyed it to the city.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
+            "chosen_option_label": "D",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "*A concise statement explaining why the chosen option is the correct answer.*"
+                "Legal_conclusion": "The most likely explanation for the court\u2019s decision is that the city acquired the land by adverse possession. This is because the city has been using the land as a parking lot for 17 years, which is sufficient time to acquire title by adverse possession in the jurisdiction. The son\u2019s interest in the land ended as a result of the changing needs of the city, and the city retained ownership of the land."
             }
         },
         "ground_truth": {
@@ -1523,12 +1523,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nA man borrowed money from a bank to finance the purchase of a commercial building. The man signed a promissory note, which was secured by a mortgage on the building. Because the man had few other unencumbered assets, the bank required additional security. The man\u2019s mother granted the bank a mortgage on a motel that she owned, but she did not sign a promissory note. Both mortgages were promptly recorded. Five years later, after real estate values had dropped considerably, the man defaulted on the loan from the bank. After acceleration, the bank initiated foreclosure proceedings against both the commercial building and the motel owned by the mother. The mother timely objected to the foreclosure proceedings against the motel. The bank responded that it had the right to include both the commercial building and the motel in the foreclosure proceedings. Who is correct?\nAnswer Choices:\nA. The bank, because the motel was voluntarily mortgaged to secure the man\u2019s debt.\nB. The bank, because the mother is personally liable on any loan secured by the mortgage on the motel.\nC. The mother, because she did not sign a promissory note.\nD. The mother, because the bank does not hold an enforceable mortgage on the motel.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
+            "chosen_option_label": "D",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "*A concise statement explaining why the chosen option is the correct answer.*"
+                "Legal_conclusion": "Option D is correct, because the bank does not hold an enforceable mortgage on the motel."
             }
         },
         "ground_truth": {
@@ -1542,12 +1542,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.* \n\n\n<</SYS>>\nQuestion:\nA man owned an oceanfront cottage. A woman owned land across the street that did not have direct ocean access. For $10,000, the man executed a deed titled \u201cGrant of Pedestrian Right-of-Way\u201d to the woman and \u201cher heirs and assigns\u201d over a designated strip of his land between the street and the ocean. The deed was never recorded. Several years later, the woman sold her land. The woman made no mention of the easement, and the buyer had no actual notice of it. After the buyer took possession of the land, neighbors informed her about the pedestrian easement over the man\u2019s land, but when the buyer attempted to use the easement, the man informed her that it was no longer available and constructed a chain-link fence to block the way. The buyer promptly sued the man to establish her right to use the easement. Who will likely prevail?\nAnswer Choices:\nA. The buyer, because the easement was appurtenant to her land.\nB. The buyer, because the man received $10,000.\nC. The man, because the buyer purchased the land without notice.\nD. The man, because the easement was an easement in gross personal to the woman who previously owned the land.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
+            "chosen_option_label": "B",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "*A concise statement explaining why the chosen option is the correct answer.*"
+                "Legal_conclusion": "The buyer will likely prevail because the easement was appurtenant to her land and the man received $10,000."
             }
         },
         "ground_truth": {
@@ -1775,7 +1775,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The chosen option, accessory after the fact to bank robbery, is the correct answer because the friend drove the women back to their apartment after they had committed the robbery."
+                "Legal_conclusion": "The friend has committed the crime of accessory after the fact to bank robbery."
             }
         },
         "ground_truth": {

@@ -11,6 +11,10 @@ helix-inference-logs
 master_metrics.lock
 /home/fr/fr_fr/fr_rf1031/bar-llama/master_metrics.csv
 #add safe tensors, model ckpt and bin file types to gitignore
+model_outputs
+parsing_metadata
+job_scripts
+logs
 
 *.ckpt
 *.bin

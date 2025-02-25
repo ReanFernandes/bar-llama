@@ -160,7 +160,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The plaintiff\u2019s best argument in response is that the defendant waived the appeal by failing to first move for a new trial. This argument is based on the principle that a party must first move for a new trial before appealing a decision made by the court. If the party fails to do so, the court may find that the party has waived the right to appeal."
+                "Legal_conclusion": "The plaintiff's best argument in response is that the defendant waived the appeal by failing to first move for a new trial. This argument is based on the legal principle that a party must first move for a new trial before appealing an error in the instructions. If the party fails to do so, the error is deemed waived and cannot be raised on appeal."
             }
         },
         "ground_truth": {
@@ -174,12 +174,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA consumer brought a federal diversity action against a manufacturer, seeking damages for products liability claims. In its answer, the manufacturer included the affirmative defense of contributory negligence. Applicable state law had recently abolished contributory negligence as a defense in such actions. Before trial, the judge allowed the parties to submit proposed jury instructions. The manufacturer\u2019s attorney proposed an instruction that the jury should not return a verdict for the consumer if it found that the consumer had been contributorily negligent. After the close of the evidence, the judge told the parties that he would give the contributory negligence instruction. The consumer\u2019s attorney did not object. The judge instructed the jury. After the jury began their deliberations, the consumer\u2019s attorney objected to the contributory negligence instruction. Should the judge consider the objection?\nAnswer Choices:\nA. No, because the consumer\u2019s attorney did not object before the judge gave the instruction.\nB. No, because the consumer\u2019s attorney did not object when the judge gave the instruction.\nC. Yes, because the fact that the judge gave the inapplicable instruction constituted plain error that affected the consumer\u2019s substantial rights.\nD. Yes, because the consumer\u2019s attorney objected within 28 days after the judge gave the instruction.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The consumer\u2019s attorney objected to the contributory negligence instruction within 28 days after the judge gave the instruction, which constitutes plain error that affects the consumer\u2019s substantial rights."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -231,7 +231,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA homeowner brought a federal diversity action against a manufacturer of gas grills, asserting products liability claims and seeking damages for injuries she had suffered when her grill exploded as she was lighting it. The manufacturer timely demanded a jury trial, and the court informed the parties that it would seat a seven-person jury. The parties agreed to a non-unanimous jury verdict. The jury returned a verdict for the homeowner. The manufacturer asked the court to poll the jury, and the poll revealed a 4 to 3 vote in favor of the homeowner. The manufacturer objected to the verdict and has moved for a new trial. How should the court proceed?\nAnswer Choices:\nA. Deny a new trial, because the manufacturer agreed to a non-unanimous verdict.\nB. Direct the jury to deliberate further until it can return a verdict supported by at least six jurors.\nC. Grant a new trial, because fewer than six jurors voted in favor of the homeowner.\nD. Grant a new trial, because the verdict was not unanimous.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
@@ -312,7 +312,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The writ of habeas corpus is a valid remedy for the governor in this scenario, as the Tenth Amendment reserves certain powers to the states, including the power to issue writs of habeas corpus."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -426,7 +426,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "Both decisions are constitutional because they are consistent with the Constitution and the laws of the United States. The President's decision to spend half of the money to train troops is consistent with the Constitution and the laws of the United States because it is a valid use of appropriated funds for the purpose of training troops. The President's decision to retain the remaining funds in the federal treasury and not spend them at all is also consistent with the Constitution and the laws of the United States because it is a valid use of appropriated funds for the purpose of retaining them in the federal treasury."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -440,7 +440,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA new federal statute establishes a five-member commission on cultural heritage sites. The statute directs the commission to develop regulations to protect such sites on federal public lands and to implement the regulations through specified fact- finding and adjudicatory functions. The commission is not under the supervision or control of any federal agency. Which, if any, of the following methods of appointing the commission members would be constitutional?\nAnswer Choices:\nA. Members are appointed by a specially designated panel of federal judges.\nB. Members are appointed by the Speaker of the House of Representatives, with the advice and consent of both houses of Congress.\nC. Members are appointed by the President, with the advice and consent of the Senate.\nD. None of these appointment methods would be constitutional.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "D",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
@@ -464,7 +464,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The chosen option, C, is the correct answer because payment of the sales tax did not unduly interfere with the contractor's performance of the work and was not an undue burden on a federal function. The tax was not paid from an account directly funded with federal money, and the entire economic cost of the tax was borne by the federal government. The tax did not discriminate against the federal government or its contractors, and the materials were purchased by the contractor rather than by the federal government."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -478,12 +478,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA state law requires every motor carrier hauling goods on the state\u2019s highways to register with and obtain a permit from the state\u2019s transportation commission. The purpose of this requirement is to facilitate application of the state\u2019s valid police, welfare, and safety regulations to carriers using the state\u2019s highways. The fee for registration is nominal, and the commission has no discretion to deny a permit to a carrier that properly registers and pays the registration fee. Are the state\u2019s requirements constitutional when applied to a wholly interstate carrier?\nAnswer Choices:\nA. No, because neither a carrier\u2019s registration nor its payment of a nominal fee is necessary to facilitate the application of state laws to motor carriers.\nB. No, because the requirements impose an undue burden on interstate commerce.\nC. Yes, because the requirements apply equally to interstate and intrastate carriers and are the only prerequisites to the issuance of the permit.\nD. Yes, because the requirements are the least restrictive means of serving the state\u2019s compelling interest in highway safety.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "B",
+            "chosen_option_label": "C",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "n/a"
+                "Legal_conclusion": "The answer choice C states that the requirements apply equally to interstate and intrastate carriers and are the only prerequisites to the issuance of the permit. This indicates that the requirements are not a taking of private property without just compensation, as they do not have a significant economic impact on interstate carriers and are justified by the state\u2019s compelling interest in highway safety. Therefore, the answer choice C is the correct choice."
             }
         },
         "ground_truth": {
@@ -516,7 +516,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nIn order to ensure the high quality of tutors in state public schools, a state law requires public schools to hire only tutors licensed by the state. To obtain a license, a tutor is required to achieve a passing score on a state-administered exam in the tutor\u2019s area of specialty. On several occasions, an organization representing tutors licensed in the state has successfully lobbied against proposed legislation that would have eased the licensing requirement. An out-of-state tutoring company would like to conduct business in the state, but very few of its tutors are licensed by the state. The company has sued to challenge the law. Is the company likely to prevail?\nAnswer Choices:\nA. No, because the law is rationally related to a legitimate state interest.\nB. No, because the law is substantially related to an important state interest.\nC. Yes, because the law serves the special interests of licensed tutors rather than a legitimate government interest.\nD. Yes, because the law violates the privileges and immunities clause of Article IV.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
@@ -573,7 +573,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA retailer sent a purchase order to a computer manufacturer requesting the shipment of a specified quantity of laptops. The purchase order stated: \u201cIn the event of a breach, the retailer may pursue all remedies available to it under the UCC.\u201d The manufacturer received the purchase order and promptly shipped the laptops to the retailer. The manufacturer sent an acknowledgment form to the retailer four days later. Two days after accepting delivery of the laptops, the retailer received the manufacturer\u2019s acknowledgment form, which excluded consequential damages. The same day, the retailer discovered that the laptops were defective. If the retailer sues the manufacturer for breach of contract, will the retailer be entitled to pursue a claim for consequential damages?\nAnswer Choices:\nA. No, because the retailer and the manufacturer did not enter into a contract.\nB. No, because a contract was created that included the manufacturer\u2019s term excluding consequential damages.\nC. Yes, because the manufacturer\u2019s shipment of the laptops constituted an acceptance of the retailer\u2019s offer.\nD. Yes, because terms supplied by the UCC will govern the contract formed by the conduct of the parties.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "B",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
@@ -616,7 +616,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The wife\u2019s strongest argument for rescinding the contract would be undue influence. The pressure and influence exerted by the brother and his attorney on the wife to sell the farm was undue and resulted in an unfair outcome for the wife."
+                "Legal_conclusion": "The wife\u2019s strongest argument for rescinding the contract would be undue influence. The brother and his attorney exerted undue pressure on the wife to sell her farm, despite having other options available to her. The brother\u2019s offer to purchase the farm was made on numerous occasions, but the wife had always refused. However, after the husband\u2019s sudden death, the brother and his attorney visited the wife at the farm and told her that she needed to sell the farm to support her children. The brother also said that his attorney had drafted an offer to purchase the farm and that the wife needed to sign it right away. The attorney confirmed the need to accept quickly. This pressure and influence on the wife to sign the contract without adequate time to consider her options would be considered undue influence, which would give the wife the right to rescind the contract."
             }
         },
         "ground_truth": {
@@ -673,7 +673,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The contractor is likely to prevail in court, as the parol evidence rule would bar introduction of evidence of the price-escalation clause. The contractor and landowner agreed to build a wood-frame house for $300,000, with the price increasing by the amount that the cost of lumber exceeded $30 per 100 board feet. The landowner reduced the agreement to writing but inadvertently omitted the price-escalation clause relating to the cost of lumber. Both parties signed the contract without noticing the omission. When the contractor purchased lumber for the job, the price of the lumber had risen to $60 per 100 board feet. When the contractor submitted a final bill that included the increased price of lumber, the landowner refused to pay the increased price for the lumber on the grounds that the price-escalation clause was missing from the written contract."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -787,7 +787,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The buyer's anticipatory repudiation of the contract with the owner makes the owner likely to succeed in a breach of contract action. The buyer's failure to accept the owner's offer to enter into an option contract does not affect the outcome of the case."
+                "Legal_conclusion": "The owner's failure to respond to the buyer's email could be interpreted as an acceptance of the buyer's anticipatory repudiation, which would make the owner unlikely to succeed in a breach of contract action."
             }
         },
         "ground_truth": {
@@ -882,7 +882,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The former employee's actions of sending postcards to local residents asserting that anyone who had already purchased a pre-need funeral plan had \"an unlimited right to cancel that plan at any time, for any reason, without penalty\" and offering a $100 rebate on a pre- need funeral plan with the new cemetery to anyone who canceled an existing plan elsewhere could be found by a jury to constitute intentional and improper interference with the established cemetery's contracts, which would support a finding of tortious interference with contract."
+                "Legal_conclusion": "The former employee's actions of sending postcards to local residents asserting that anyone who had already purchased a pre-need funeral plan had \"an unlimited right to cancel that plan at any time, for any reason, without penalty\" and offering a $100 rebate on a pre-need funeral plan with the new cemetery to anyone who canceled an existing plan elsewhere could be found by a jury to constitute intentional and improper interference with the established cemetery's contracts with purchasers, which would support a finding of tortious interference with contract."
             }
         },
         "ground_truth": {
@@ -1048,7 +1048,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nWhile attending an amusement park\u2019s fireworks display, a spectator was struck and injured by a rocket set off as part of the display. The rocket unexpectedly failed to shoot upward but instead followed a trajectory parallel to the ground and struck the spectator. The spectator has sued the amusement park for damages. On which of the following theories is the spectator most likely to be able to obtain a summary judgment as to liability?\nAnswer Choices:\nA. Abnormally dangerous activity.\nB. Battery.\nC. Nuisance.\nD. Strict products liability.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
@@ -1143,7 +1143,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA woman has sued a man for defamation, alleging that he sent a letter to her employer making false and injurious statements about her. At trial, she proposes to testify about the statements in the letter but does not produce the letter itself or show that it is unavailable. Should the court allow the woman\u2019s testimony about the statements in the letter?\nAnswer Choices:\nA. No, because the statements were made out of court and are hearsay not within any exception.\nB. No, because the best evidence rule requires an original or duplicate of the letter to prove the letter\u2019s contents.\nC. Yes, because the statements are not being offered for their truth and thus are not hearsay.\nD. Yes, because the statements are those of a party-opponent and therefore are admissible under a hearsay exception.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "D",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
@@ -1219,7 +1219,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA stockholder sued a corporation for losses he allegedly suffered when the price of the corporation\u2019s publicly traded stock dropped. The price drop occurred shortly after it was publicly revealed that the corporation had released false earnings reports. At trial, the stockholder seeks to testify that, in his opinion, the drop in the corporation\u2019s stock price was directly attributable to the public revelation about the false earnings reports. The stockholder has conceded that he has no formal education or training in economics or the stock market. Should the stockholder be permitted to testify to his opinion?\nAnswer Choices:\nA. No, because he is not qualified to offer opinion testimony based on scientific, technical, or other specialized knowledge relating to stock price changes.\nB. No, because his personal interest in the outcome of the action renders his opinion insufficiently probative.\nC. Yes, because his opinion is rationally based on his perception as a stockholder and will be helpful to the trier of fact.\nD. Yes, because property owners such as the stockholder are entitled to express an opinion on changes in the value of their property.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
@@ -1333,7 +1333,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA defendant is on trial as one of the armed robbers of a liquor store. The defendant testifies that he robbed the store involuntarily because his fellow gang members threatened to kill him right then if he backed out, as he wanted to do. Thereafter, the defense seeks to call a witness who would testify that six months after the defendant was arrested in connection with the robbery, the defendant told him that he had been threatened when he wanted to pull out of the robbery. The prosecution objects to the witness\u2019s testimony. Is the witness\u2019s testimony admissible?\nAnswer Choices:\nA. No, because it includes the defendant\u2019s own hearsay statement that is not within any exception.\nB. No, because it includes a self-serving statement offered by a criminal accused.\nC. Yes, because the defendant\u2019s hearsay statement fits the state of mind exception.\nD. Yes, because it includes the prior consistent statement of the defendant, who testified as a witness.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
@@ -1376,7 +1376,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The grantor is estopped from asserting a claim to the condemnation proceeds, as the friend's operation of the tavern was inconsistent with the grantor's representation. The grantor and the friend would have an equal interest in the property, and the grantor would be estopped from asserting a claim to the condemnation proceeds."
+                "Legal_conclusion": "The condemnation proceeds should be paid to the grantor, as the friend\u2019s operation of the tavern constitutes a breach of the condition and the grantor would be estopped from asserting a claim to the property."
             }
         },
         "ground_truth": {
@@ -1390,12 +1390,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA mother subdivided vacant land that she owned into three lots. She kept one lot for herself, conveyed another to her daughter, and conveyed the remaining lot to her son. Each conveyance was by a deed of gift containing a covenant specifying that only one single-story home could be constructed on the conveyed lot in order to preserve views of a nearby lake from the mother\u2019s lot. The deeds were promptly recorded. The mother then constructed a large three-story house on her lot. Several years later, the son conveyed his vacant lot to a purchaser using a warranty deed that made no mention of the covenant in the previous deed from the mother. The purchaser promptly recorded her deed. When the purchaser later began constructing a three-story house similar to the mother\u2019s, the mother sued to enjoin the construction. Should the court grant the injunction?\nAnswer Choices:\nA. No, because the mother is estopped from enforcing the covenant, since she herself constructed a three-story house.\nB. No, because there was no consideration given for the covenants in the deeds of gift.\nC. Yes, because the burden of the covenant runs with the land even if the purchaser had no actual notice of the covenant.\nD. Yes, because the mother is in privity of contract with the purchaser.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The correct answer choice is C, which states that the mother is estopped from enforcing the covenant, since she herself constructed a three-story house. This conclusion is supported by the legal concept of estoppel and the facts presented in the question."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1452,7 +1452,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The woman in the question is likely to prevail in her lawsuit to compel the friend to convey the land to her because she has an equitable mortgage on the property. An equitable mortgage is a security interest in real property that is created by a written instrument that is executed and delivered to secure the payment of a debt or the performance of an obligation. The mortgagee has the right to foreclose on the property if the mortgagor defaults on the loan."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1509,7 +1509,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The most likely explanation for the court\u2019s decision is that the son\u2019s interest in the land ended as a result of the changing needs of the city, and the city acquired ownership of the land through adverse possession."
+                "Legal_conclusion": "The most likely explanation for the court\u2019s decision is that the son\u2019s interest in the land ended as a result of the changing needs of the city. The city\u2019s use of the land as a parking lot for city buildings was consistent with the original purpose of the conveyance, and the son\u2019s interest in the land lapsed on the death of the woman."
             }
         },
         "ground_truth": {
@@ -1580,7 +1580,7 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA buyer entered into a valid written contract with a seller to purchase vacant land. Unbeknownst to the seller, the buyer planned to construct a gas station on the land. The contract provided that the buyer could rescind the contract if the seller failed to deliver marketable title. After a title search, the buyer discovered that a restrictive covenant prohibited using the land for commercial purposes. The buyer had not had actual knowledge of the restrictive covenant before executing the contract. The buyer refused to close on the contract, and the seller has sued for specific performance. Should the seller prevail?\nAnswer Choices:\nA. No, because the restrictive covenant rendered the title unmarketable.\nB. No, because the seller was required to deliver perfect title to the buyer.\nC. Yes, because the restrictive covenant did not render the title unmarketable.\nD. Yes, because the seller was unaware of the buyer\u2019s plans to construct a gas station.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
@@ -1637,12 +1637,12 @@
         "prompt": "[INST]\n<<SYS>>\nRespond to the Multistate Bar Exam question with a detailed explanation in the following MARKDOWN format, considering the question and answer choices provided:\n\n## Domain\n*The relevant legal domain for this question.*\n\n## Chosen Option\n*The letter corresponding to the correct answer choice.*\n\n## Explanation\n\n### Legal Concept\n*The legal principle or doctrine at the heart of the question.*\n\n### Fact Analysis\n*A breakdown of the relevant facts presented in the question.*\n\n### Rule Application\n*How the legal concept applies to the facts in the question.*\n\n### Legal Conclusion\n*A concise statement explaining why the chosen option is the correct answer.*\n\n\n<</SYS>>\nQuestion:\nA drug-dealing operation consisted of three men: a supplier, a dealer, and a lookout. The supplier became convinced that the lookout was a police informant. He persuaded the dealer that they should kill the lookout to avoid problems. They purchased a gun and ammunition to commit the murder and planned to dispose of the lookout\u2019s body by pushing it off a cliff. The supplier arranged a meeting in a remote area of a state park. After the three men arrived, the supplier fired two shots at the lookout, who fell to the ground. Both the supplier and the dealer believed that the lookout was dead. The dealer subsequently pushed the lookout\u2019s body off a nearby cliff. Unbeknownst to the supplier and the dealer, the lookout had been wounded by the bullets but was not dead; he died as a result of the fall from the cliff. Can the supplier be convicted of murder?\nAnswer Choices:\nA. No, because the shooting and the disposal of the body were separate events that cannot be viewed as a single scheme or plan.\nB. No, because the supplier did not intend that the fall from the cliff would kill the lookout.\nC. Yes, because both the shooting and the disposal of the body were part of the original plan to kill the lookout.\nD. Yes, because the supplier believed that his shots had killed the lookout.\nResponse:\n[/INST]",
         "response": {
             "domain": "n/a",
-            "chosen_option_label": "C",
+            "chosen_option_label": "*The letter corresponding to the correct answer choice.*",
             "explanation": {
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The correct answer is C, which states that the supplier can be convicted of murder if it can be proven that he had the intent to kill the lookout. The other answer choices do not address the legal concept of intent to kill or the specific facts of the case."
+                "Legal_conclusion": "n/a"
             }
         },
         "ground_truth": {
@@ -1794,7 +1794,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "n/a"
+                "Legal_conclusion": "The man's refusal to respond to the officers' knock on the door and his request for a warrant before allowing them to enter the home indicate that he was not in need of immediate aid and that the officers' entry was not justified under the emergency aid exception to the Fourth Amendment. Therefore, the man has standing to complain of the warrantless entry and the court should grant his motion to suppress the officers' testimony at trial."
             }
         },
         "ground_truth": {
@@ -1813,7 +1813,7 @@
                 "Legal_concept": "n/a",
                 "Fact_analysis": "n/a",
                 "Rule_application": "n/a",
-                "Legal_conclusion": "The man can be properly convicted of conspiracy to commit a crime, as he and his friend agreed to commit a robbery and the friend showed a gun in his waistband to the woman, which constitutes an overt act in furtherance of the conspiracy."
+                "Legal_conclusion": "The man can be properly convicted of conspiracy to commit a crime, as he was involved in the planning and execution of the robbery with his friend."
             }
         },
         "ground_truth": {

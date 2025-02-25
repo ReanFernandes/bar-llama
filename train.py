@@ -201,7 +201,7 @@ def main(cfg: DictConfig):
         gradient_accumulation_steps = cfg.train.training_args.gradient_accumulation_steps,
         optim = cfg.train.training_args.optim,
         save_strategy = "no",  #  no-save to make sure the i dont fill up with multiple checkpoints
-        logging_steps = cfg.train.training_args.logging_steps,
+        logging_steps = 3,
         learning_rate = cfg.train.training_args.learning_rate,
         weight_decay = cfg.train.training_args.weight_decay,
         fp16 = cfg.train.training_args.fp16,
@@ -210,9 +210,10 @@ def main(cfg: DictConfig):
         max_steps = cfg.train.training_args.max_steps,
         group_by_length = cfg.train.training_args.group_by_length,
         lr_scheduler_type = cfg.train.training_args.lr_scheduler_type,
+        lr_scheduler_kwargs={'num_cycles':'2'},
         warmup_ratio = cfg.train.training_args.warmup_ratio,  # warmup for cosine annealing
         report_to = "wandb",
-        seed=cfg.seeds.seed # have to set this here, since other things have to be seeded before this class is instantiated
+        seed=cfg.seeds.seed, # have to set this here, since other things have to be seeded before this class is instantiated
         # Additional parameters for cosine scheduling
         # num_cycles = cfg.train.training_args.num_cycles  # for cosine_with_restarts
     )

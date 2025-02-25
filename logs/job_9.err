@@ -1,141 +1,146 @@
 Unused kwargs: ['use_nested_quant']. These kwargs are not used in <class 'transformers.utils.quantization_config.BitsAndBytesConfig'>.
 `low_cpu_mem_usage` was None, now default to True since model is quantized.
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.20s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.71s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.09s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.64s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.00s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
-Map:   0%|          | 0/7 [00:00<?, ? examples/s]Map: 100%|██████████| 7/7 [00:00<00:00, 170.70 examples/s]
+Map:   0%|          | 0/7 [00:00<?, ? examples/s]Map: 100%|██████████| 7/7 [00:00<00:00, 277.21 examples/s]
 wandb: Currently logged in as: rean-fernandes. Use `wandb login --relogin` to force relogin
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: Tracking run with wandb version 0.19.3
-wandb: Run data is saved locally in /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/wandb/run-20250220_100337-tyii89l9
+wandb: Tracking run with wandb version 0.19.3
+wandb: Run data is saved locally in /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/wandb/run-20250220_225353-4uoss822
 wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run fine_tune_number_list_fact_first_few_shot_structured_seed_314_llama2
 wandb: ⭐️ View project at https://wandb.ai/rean-fernandes/Final_runs_paper
-wandb: 🚀 View run at https://wandb.ai/rean-fernandes/Final_runs_paper/runs/tyii89l9
-  0%|          | 0/15 [00:00<?, ?it/s]  7%|▋         | 1/15 [00:24<05:38, 24.20s/it] 13%|█▎        | 2/15 [00:48<05:13, 24.09s/it] 20%|██        | 3/15 [01:12<04:48, 24.07s/it] 27%|██▋       | 4/15 [01:36<04:24, 24.06s/it] 33%|███▎      | 5/15 [02:00<04:00, 24.08s/it] 40%|████      | 6/15 [02:24<03:36, 24.09s/it] 47%|████▋     | 7/15 [02:48<03:12, 24.09s/it] 53%|█████▎    | 8/15 [03:12<02:48, 24.11s/it] 60%|██████    | 9/15 [03:36<02:24, 24.13s/it] 67%|██████▋   | 10/15 [04:01<02:00, 24.15s/it]                                                67%|██████▋   | 10/15 [04:01<02:00, 24.15s/it] 73%|███████▎  | 11/15 [04:25<01:36, 24.16s/it] 80%|████████  | 12/15 [04:49<01:12, 24.17s/it] 87%|████████▋ | 13/15 [05:13<00:48, 24.18s/it] 93%|█████████▎| 14/15 [05:37<00:24, 24.19s/it]100%|██████████| 15/15 [06:02<00:00, 24.21s/it]                                               100%|██████████| 15/15 [06:02<00:00, 24.21s/it]100%|██████████| 15/15 [06:02<00:00, 24.15s/it]
+wandb: 🚀 View run at https://wandb.ai/rean-fernandes/Final_runs_paper/runs/4uoss822
+  0%|          | 0/15 [00:00<?, ?it/s]  7%|▋         | 1/15 [00:24<05:43, 24.53s/it] 13%|█▎        | 2/15 [00:48<05:16, 24.33s/it] 20%|██        | 3/15 [01:12<04:51, 24.30s/it]                                               20%|██        | 3/15 [01:12<04:51, 24.30s/it] 27%|██▋       | 4/15 [01:37<04:27, 24.30s/it] 33%|███▎      | 5/15 [02:01<04:03, 24.31s/it] 40%|████      | 6/15 [02:25<03:38, 24.32s/it]                                               40%|████      | 6/15 [02:25<03:38, 24.32s/it] 47%|████▋     | 7/15 [02:50<03:14, 24.33s/it] 53%|█████▎    | 8/15 [03:14<02:50, 24.34s/it] 60%|██████    | 9/15 [03:39<02:26, 24.35s/it]                                               60%|██████    | 9/15 [03:39<02:26, 24.35s/it] 67%|██████▋   | 10/15 [04:03<02:01, 24.36s/it] 73%|███████▎  | 11/15 [04:27<01:37, 24.38s/it] 80%|████████  | 12/15 [04:52<01:13, 24.39s/it]                                                80%|████████  | 12/15 [04:52<01:13, 24.39s/it] 87%|████████▋ | 13/15 [05:16<00:48, 24.40s/it] 93%|█████████▎| 14/15 [05:41<00:24, 24.41s/it]100%|██████████| 15/15 [06:05<00:00, 24.43s/it]                                               100%|██████████| 15/15 [06:05<00:00, 24.43s/it]                                               100%|██████████| 15/15 [06:05<00:00, 24.43s/it]100%|██████████| 15/15 [06:05<00:00, 24.37s/it]
 /pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/peft/utils/save_and_load.py:257: UserWarning: Setting `save_embedding_layers` to `True` as the embedding layer has been resized during finetuning.
   warnings.warn(
 wandb:                                                                                
 wandb: 
 wandb: Run history:
-wandb:         train/epoch ▁█
-wandb:   train/global_step ▁█
-wandb:     train/grad_norm ▁
-wandb: train/learning_rate ▁
-wandb:          train/loss ▁
+wandb:         train/epoch ▁▃▅▆██
+wandb:   train/global_step ▁▃▅▆██
+wandb:     train/grad_norm ▁▅▅██
+wandb: train/learning_rate █▃█▄▁
+wandb:          train/loss █▆▅▃▁
 wandb: 
 wandb: Run summary:
 wandb:               total_flos 4365691901706240.0
 wandb:              train/epoch 15
 wandb:        train/global_step 15
-wandb:          train/grad_norm 0.23976
-wandb:      train/learning_rate 3e-05
-wandb:               train/loss 1.2332
-wandb:               train_loss 1.10843
-wandb:            train_runtime 367.9499
-wandb: train_samples_per_second 0.285
+wandb:          train/grad_norm 0.24686
+wandb:      train/learning_rate 0
+wandb:               train/loss 0.8465
+wandb:               train_loss 1.15525
+wandb:            train_runtime 366.8005
+wandb: train_samples_per_second 0.286
 wandb:   train_steps_per_second 0.041
 wandb: 
-wandb: 🚀 View run fine_tune_number_list_fact_first_few_shot_structured_seed_314_llama2 at: https://wandb.ai/rean-fernandes/Final_runs_paper/runs/tyii89l9
+wandb: 🚀 View run fine_tune_number_list_fact_first_few_shot_structured_seed_314_llama2 at: https://wandb.ai/rean-fernandes/Final_runs_paper/runs/4uoss822
 wandb: ⭐️ View project at: https://wandb.ai/rean-fernandes/Final_runs_paper
 wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-wandb: Find logs at: ./wandb/run-20250220_100337-tyii89l9/logs
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:12<00:12, 12.04s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:16<00:00,  7.83s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:16<00:00,  8.46s/it]
+wandb: Find logs at: ./wandb/run-20250220_225353-4uoss822/logs
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:12<00:12, 12.39s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  7.98s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.64s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 /pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
   warnings.warn(
 /pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
   warnings.warn(
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_206
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Could not override 'seeds'. No match in the defaults list.
-To append to your default list use +seeds=seed_42
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.99s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.98s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.43s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.92s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.93s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.38s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.79s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:14<00:00,  6.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:14<00:00,  7.32s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:11<00:11, 11.81s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.16s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.86s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.92s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.33s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.87s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.40s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.18s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:11<00:11, 11.71s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:16<00:00,  7.48s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:16<00:00,  8.11s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:11<00:11, 11.69s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:16<00:00,  7.71s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:16<00:00,  8.30s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.35s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.09s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.48s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.03s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.77s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.29s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.03s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.42s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.96s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:11<00:11, 11.24s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:14<00:00,  6.28s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:14<00:00,  7.02s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:11<00:11, 11.40s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:14<00:00,  6.37s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:14<00:00,  7.12s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.15s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.03s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.50s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.34s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:10<00:10, 10.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.30s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.83s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.72s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.74s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:13<00:13, 13.09s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.18s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.92s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:10<00:10, 10.75s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.45s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.94s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:12<00:12, 12.35s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.75s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:13<00:13, 13.27s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:19<00:00,  8.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:19<00:00,  9.56s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:12<00:12, 12.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.31s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:17<00:00,  8.90s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset

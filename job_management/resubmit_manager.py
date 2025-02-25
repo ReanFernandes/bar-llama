@@ -83,7 +83,7 @@ class ResubmissionManager:
 #SBATCH --partition=gpu_8
 #SBATCH --gres=gpu:1
 #SBATCH --mem=36G
-#SBATCH --time=47:45:00
+#SBATCH --time=48:00:00
 echo "Starting resubmitted job {job_id} at $(date)"
 
 # Set environment variables needed for both training and evaluation

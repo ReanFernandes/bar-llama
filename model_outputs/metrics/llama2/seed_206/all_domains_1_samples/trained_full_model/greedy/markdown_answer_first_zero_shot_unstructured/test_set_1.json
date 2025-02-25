@@ -18,13 +18,13 @@
         "evaluation_dataset": "test_set_1"
     },
     "metrics": {
-        "label_accuracy": 0.020202020202020204,
-        "misclassification_rate": 0.9797979797979798,
+        "label_accuracy": 0.04040404040404041,
+        "misclassification_rate": 0.9595959595959596,
         "combined_accuracy": 0.0,
-        "malformed_label": 90,
+        "malformed_label": 85,
         "malformed_domain": 99,
         "total_predictions": 99,
-        "correct_predictions": 2,
+        "correct_predictions": 4,
         "correct_label_and_domain": 0,
         "Constitutional_Law_accuracy": 0.0,
         "Contracts_accuracy": 0.0,
@@ -41,7 +41,7 @@
         "Torts_confidence": 0.0,
         "Civil_Procedure_confidence": 0.0,
         "correct_domain_wrong_label": 0,
-        "correct_label_wrong_domain": 2,
-        "both_wrong": 97
+        "correct_label_wrong_domain": 4,
+        "both_wrong": 95
     }
 }
