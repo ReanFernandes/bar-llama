@@ -15,7 +15,7 @@ model_outputs
 parsing_metadata
 job_scripts
 logs
-
+results_DEPRECATED
 *.ckpt
 *.bin
 *.pth
