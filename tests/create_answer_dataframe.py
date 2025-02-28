@@ -48,15 +48,15 @@ COMPONENTS = {
     
     # Other components
     'seeds': [
-        'seed_21',
-        'seed_42',
+        # 'seed_21',
+        # 'seed_42',
         'seed_206',
-        'seed_314',
+        # 'seed_314',
         # 'seed_322',
         # 'seed_786', 
-        # 'seed_989',
-        'seed_1337',
-        'seed_3991',   
+        'seed_989',
+        # 'seed_1337',
+        # 'seed_3991',   
         
     ],
     'datasets': [
@@ -71,7 +71,7 @@ COMPONENTS = {
         'greedy',
         'temp_025',
         'temp_06',
-        'temp_09'
+        # 'temp_09'
     ],
     'evaluation_datasets': [
         'test_set_1',
@@ -136,7 +136,7 @@ class PathConstructor:
         path_components = [
             self.base_path,
             "parsed_responses", 
-            # config.model_name, # comment for older file save path, uncomment for latest convention
+            config.model_name, # comment for older file save path, uncomment for latest convention
             config.seed,
             config.dataset,
             train_quant,
@@ -160,14 +160,14 @@ class ResponseProcessor:
             processed_results = []
             for response in parsed_responses:
                 result = {
-                    'question_id': response.get('ground_truth', {}).get('question_number'),
+                    'question_id': int(response.get('ground_truth', {}).get('question_number')),
                     'ground_truth_label': response.get('ground_truth', {}).get('correct_answer'),
-                    'predicted_label': response.get('response', {}).get('chosen_option_label') if response.get('response', {}).get('chosen_option_label') in {'A', 'B', 'C', 'D'} else None,
-                    'answer_match': 1 if (response.get('response', {}).get('chosen_option_label') == response.get('ground_truth', {}).get('correct_answer')
-                             and response.get('response', {}).get('chosen_option_label') in {'A', 'B', 'C', 'D'}) else 0,
+                    'predicted_label': response.get('response', {}).get('chosen_option_label') if response.get('response', {}).get('chosen_option_label') in {'A', 'B', 'C', 'D'} else 'n/a',
+                    'answer_match': int(1) if (response.get('response', {}).get('chosen_option_label') == response.get('ground_truth', {}).get('correct_answer')
+                             and response.get('response', {}).get('chosen_option_label') in {'A', 'B', 'C', 'D'}) else int(0),
                     'ground_truth_domain': response.get('ground_truth', {}).get('domain'),
                     'predicted_domain': response.get('response', {}).get('domain'),
-                    # 'confidence': response.get('confidence', None)
+                    'not_attempted': 'True' if (response.get('response', {}).get('chosen_option_label') not in {'A', 'B', 'C', 'D'}) else 'False'
                 }
                 processed_results.append(result)
             return processed_results
@@ -241,7 +241,7 @@ class QuestionLevelAnalyzer:
                 'ground_truth_domain': None,
                 'predicted_label': None,
                 'predicted_domain': None,
-                'confidence': None
+                'not_attempted': None
             }]
             
         return results
@@ -279,7 +279,7 @@ def main():
     """Main execution function"""
     # Set up base path and output path
     base_path = "/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs"
-    output_path = "llam2_new_question_level_analysis_results.csv" # modify to add new files
+    output_path = "ALL_llama_new_question_level_analysis_results.csv" # modify to add new files
     
     # Initialize analyzer
     analyzer = QuestionLevelAnalyzer(base_path, COMPONENTS)
