@@ -10,6 +10,11 @@ helix-finetuning-logs
 helix-inference-logs
 master_metrics.lock
 /home/fr/fr_fr/fr_rf1031/bar-llama/master_metrics.csv
+job_scripts_final_run_part_1
+logs_final_run_part_1
+job_scripts/
+
+database
 #add safe tensors, model ckpt and bin file types to gitignore
 model_outputs
 parsing_metadata

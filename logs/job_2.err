@@ -1,18 +1,18 @@
 Unused kwargs: ['use_nested_quant']. These kwargs are not used in <class 'transformers.utils.quantization_config.BitsAndBytesConfig'>.
 `low_cpu_mem_usage` was None, now default to True since model is quantized.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:26,  8.94s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:17<00:17,  8.66s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:24<00:08,  8.07s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:26<00:00,  5.69s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:26<00:00,  6.70s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:12<00:37, 12.59s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:22<00:22, 11.23s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:31<00:10, 10.09s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:33<00:00,  6.96s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:33<00:00,  8.44s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
-Map:   0%|          | 0/7 [00:00<?, ? examples/s]Map: 100%|██████████| 7/7 [00:00<00:00, 120.05 examples/s]
+Map:   0%|          | 0/7 [00:00<?, ? examples/s]Map: 100%|██████████| 7/7 [00:00<00:00, 393.19 examples/s]
 wandb: Currently logged in as: rean-fernandes. Use `wandb login --relogin` to force relogin
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Tracking run with wandb version 0.19.3
-wandb: Run data is saved locally in /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/wandb/run-20250220_223818-7to9cta2
+wandb: Run data is saved locally in /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/wandb/run-20250306_080352-zyyqref5
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run fine_tune_number_list_answer_first_few_shot_structured_seed_314_llama3
+wandb: Syncing run fine_tune_json_answer_first_few_shot_structured_seed_314_llama3
 wandb: ⭐️ View project at https://wandb.ai/rean-fernandes/Final_runs_paper
-wandb: 🚀 View run at https://wandb.ai/rean-fernandes/Final_runs_paper/runs/7to9cta2
-  0%|          | 0/15 [00:00<?, ?it/s]  7%|▋         | 1/15 [00:29<06:47, 29.13s/it] 13%|█▎        | 2/15 [00:57<06:09, 28.41s/it] 20%|██        | 3/15 [01:24<05:38, 28.19s/it]                                               20%|██        | 3/15 [01:24<05:38, 28.19s/it] 27%|██▋       | 4/15 [01:52<05:09, 28.12s/it] 33%|███▎      | 5/15 [02:21<04:40, 28.09s/it] 40%|████      | 6/15 [02:49<04:12, 28.08s/it]                                               40%|████      | 6/15 [02:49<04:12, 28.08s/it] 47%|████▋     | 7/15 [03:17<03:44, 28.10s/it] 53%|█████▎    | 8/15 [03:45<03:16, 28.10s/it] 60%|██████    | 9/15 [04:13<02:48, 28.12s/it]                                               60%|██████    | 9/15 [04:13<02:48, 28.12s/it] 67%|██████▋   | 10/15 [04:41<02:20, 28.12s/it] 73%|███████▎  | 11/15 [05:09<01:52, 28.13s/it] 80%|████████  | 12/15 [05:37<01:24, 28.14s/it]                                                80%|████████  | 12/15 [05:37<01:24, 28.14s/it] 87%|████████▋ | 13/15 [06:06<00:56, 28.15s/it] 93%|█████████▎| 14/15 [06:34<00:28, 28.15s/it]100%|██████████| 15/15 [07:02<00:00, 28.15s/it]                                               100%|██████████| 15/15 [07:02<00:00, 28.15s/it]                                               100%|██████████| 15/15 [07:02<00:00, 28.15s/it]100%|██████████| 15/15 [07:02<00:00, 28.16s/it]
+wandb: 🚀 View run at https://wandb.ai/rean-fernandes/Final_runs_paper/runs/zyyqref5
+  0%|          | 0/15 [00:00<?, ?it/s]  7%|▋         | 1/15 [00:33<07:55, 33.97s/it] 13%|█▎        | 2/15 [01:01<06:34, 30.37s/it] 20%|██        | 3/15 [01:29<05:51, 29.26s/it]                                               20%|██        | 3/15 [01:29<05:51, 29.26s/it] 27%|██▋       | 4/15 [01:57<05:16, 28.76s/it] 33%|███▎      | 5/15 [02:25<04:44, 28.50s/it] 40%|████      | 6/15 [02:53<04:15, 28.36s/it]                                               40%|████      | 6/15 [02:53<04:15, 28.36s/it] 47%|████▋     | 7/15 [03:22<03:46, 28.28s/it] 53%|█████▎    | 8/15 [03:50<03:17, 28.24s/it] 60%|██████    | 9/15 [04:18<02:49, 28.23s/it]                                               60%|██████    | 9/15 [04:18<02:49, 28.23s/it] 67%|██████▋   | 10/15 [04:46<02:21, 28.22s/it] 73%|███████▎  | 11/15 [05:14<01:52, 28.21s/it] 80%|████████  | 12/15 [05:42<01:24, 28.19s/it]                                                80%|████████  | 12/15 [05:42<01:24, 28.19s/it] 87%|████████▋ | 13/15 [06:11<00:56, 28.19s/it] 93%|█████████▎| 14/15 [06:39<00:28, 28.19s/it]100%|██████████| 15/15 [07:07<00:00, 28.18s/it]                                               100%|██████████| 15/15 [07:07<00:00, 28.18s/it]                                               100%|██████████| 15/15 [07:07<00:00, 28.18s/it]100%|██████████| 15/15 [07:07<00:00, 28.50s/it]
 /pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/peft/utils/save_and_load.py:257: UserWarning: Setting `save_embedding_layers` to `True` as the embedding layer has been resized during finetuning.
   warnings.warn(
 wandb:                                                                                
@@ -20,7 +20,7 @@ wandb:
 wandb: Run history:
 wandb:         train/epoch ▁▃▅▆██
 wandb:   train/global_step ▁▃▅▆██
-wandb:     train/grad_norm █▆▃▁▁
+wandb:     train/grad_norm █▁▄▄▄
 wandb: train/learning_rate █▃█▄▁
 wandb:          train/loss █▆▄▃▁
 wandb: 
@@ -28,19 +28,19 @@ wandb: Run summary:
 wandb:               total_flos 4949812822671360.0
 wandb:              train/epoch 15
 wandb:        train/global_step 15
-wandb:          train/grad_norm 0.34823
+wandb:          train/grad_norm 0.35758
 wandb:      train/learning_rate 0
-wandb:               train/loss 0.6884
-wandb:               train_loss 1.13242
-wandb:            train_runtime 423.6339
-wandb: train_samples_per_second 0.248
+wandb:               train/loss 0.6869
+wandb:               train_loss 1.12395
+wandb:            train_runtime 430.3967
+wandb: train_samples_per_second 0.244
 wandb:   train_steps_per_second 0.035
 wandb: 
-wandb: 🚀 View run fine_tune_number_list_answer_first_few_shot_structured_seed_314_llama3 at: https://wandb.ai/rean-fernandes/Final_runs_paper/runs/7to9cta2
+wandb: 🚀 View run fine_tune_json_answer_first_few_shot_structured_seed_314_llama3 at: https://wandb.ai/rean-fernandes/Final_runs_paper/runs/zyyqref5
 wandb: ⭐️ View project at: https://wandb.ai/rean-fernandes/Final_runs_paper
 wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-wandb: Find logs at: ./wandb/run-20250220_223818-7to9cta2/logs
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:12,  4.08s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:08,  4.03s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:12<00:04,  4.19s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.60s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.79s/it]
+wandb: Find logs at: ./wandb/run-20250306_080352-zyyqref5/logs
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:13,  4.35s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:13<00:14,  7.03s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:22<00:08,  8.14s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:26<00:00,  6.33s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:26<00:00,  6.57s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 /pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
@@ -146,7 +146,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:11<00:35, 11.71s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:23<00:23, 11.79s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:27<00:08,  8.14s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:28<00:00,  5.32s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:28<00:00,  7.08s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:12,  4.11s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:18<00:20, 10.11s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:32<00:11, 11.82s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:36<00:00,  8.65s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:36<00:00,  9.02s/it]
 Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
 /pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
   warnings.warn(
@@ -252,7 +252,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:22,  7.35s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:14<00:14,  7.22s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:21<00:07,  7.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  4.87s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  5.71s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:14,  5.00s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:09<00:09,  4.86s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:13<00:04,  4.46s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.37s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.86s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -354,7 +354,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:09<00:28,  9.62s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:16<00:15,  7.82s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:22<00:07,  7.27s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  5.59s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  6.45s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:25,  8.42s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:14,  7.48s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:21<00:07,  7.11s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:24<00:00,  5.25s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:24<00:00,  6.08s/it]
 Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -456,7 +456,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:20,  6.74s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.13s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.56s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:17<00:00,  3.73s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:17<00:00,  4.27s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:09<00:28,  9.52s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:16<00:16,  8.01s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:26<00:08,  8.77s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:27<00:00,  6.02s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:27<00:00,  6.99s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -558,7 +558,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:11,  3.96s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.98s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:11<00:03,  3.92s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  2.77s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.21s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:24,  8.15s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:15,  7.87s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:24<00:08,  8.34s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:26<00:00,  5.92s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:26<00:00,  6.73s/it]
 Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -660,627 +660,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:13,  4.50s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:11,  5.60s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:05,  5.97s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.01s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.57s/it]
-The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
-The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
-/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
-  warnings.warn(
-/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:21,  7.28s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.07s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:16<00:05,  5.20s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:17<00:00,  3.55s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:17<00:00,  4.42s/it]
-Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
-/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
-  warnings.warn(
-/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:13,  4.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.92s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:06,  6.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.11s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.71s/it]
-The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
-The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:20,  6.77s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.09s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.54s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.15s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.89s/it]
-Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:11,  4.00s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:08,  4.05s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:12<00:04,  4.03s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  2.84s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.28s/it]
-The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
-The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:17,  5.87s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.47s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:05,  5.62s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.07s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.76s/it]
-Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:12,  4.28s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.99s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:06,  6.14s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.22s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.77s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:22,  7.55s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:15,  7.89s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:22<00:07,  7.33s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.97s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 /pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
@@ -1386,8 +766,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:18,  6.09s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.31s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:18<00:06,  6.24s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.19s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.94s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:25,  8.48s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:15,  7.82s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:22<00:07,  7.26s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  5.48s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  6.30s/it]
 Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
 /pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
   warnings.warn(
@@ -1493,8 +872,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:12,  4.12s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:11,  5.67s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:06,  6.08s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.09s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.62s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:21,  7.01s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:13<00:12,  6.45s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:19<00:06,  6.59s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  4.64s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.37s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -1596,8 +974,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:11,  3.99s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:11,  5.62s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:16<00:05,  5.88s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.16s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.61s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:19,  6.53s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.48s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:19<00:06,  6.47s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  4.91s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.49s/it]
 Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -1699,8 +1076,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:20,  6.73s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.19s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:05,  5.99s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.03s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.70s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:24,  8.17s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:14<00:14,  7.36s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:21<00:07,  7.08s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.02s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.89s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -1802,8 +1178,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:19,  6.34s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:13<00:13,  6.80s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:20<00:06,  6.81s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  4.96s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  5.60s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:22,  7.35s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:14<00:14,  7.00s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:21<00:06,  6.99s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.21s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.89s/it]
 Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -1905,8 +1280,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:21,  7.12s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.35s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:16<00:05,  5.28s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:17<00:00,  3.60s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:17<00:00,  4.49s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:22,  7.39s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:14<00:14,  7.27s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:21<00:07,  7.07s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.83s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 /pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
@@ -2013,7 +1387,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:14,  4.94s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.89s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:06,  6.16s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.46s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:19<00:00,  4.96s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:26,  8.82s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:16<00:15,  7.89s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:23<00:07,  7.87s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:26<00:00,  5.90s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:26<00:00,  6.69s/it]
 Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
 /pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
   warnings.warn(
@@ -2120,7 +1494,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:12,  4.16s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:11,  5.70s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:06,  6.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.58s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:23,  7.70s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:14<00:14,  7.32s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:21<00:07,  7.19s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:24<00:00,  5.36s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:24<00:00,  6.09s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -2223,7 +1597,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:12,  4.09s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:11,  5.58s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:05,  5.93s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.00s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.53s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:23,  7.89s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:15,  7.94s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:22<00:07,  7.30s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  5.53s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  6.30s/it]
 Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -2326,7 +1700,7 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:14,  4.92s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.99s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:06,  6.13s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.11s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.74s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:15<00:47, 15.82s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:23<00:21, 10.74s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:29<00:08,  8.99s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:31<00:00,  6.19s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:31<00:00,  7.95s/it]
 The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
@@ -2429,7 +1803,633 @@ Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:18,  6.14s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.55s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:15<00:04,  4.86s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:16<00:00,  3.35s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:16<00:00,  4.09s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:23,  7.99s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:15,  7.73s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:23<00:07,  7.65s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:26<00:00,  5.79s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:26<00:00,  6.51s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:24,  8.04s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:15,  7.60s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:23<00:07,  7.66s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  5.52s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  6.33s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:21,  7.04s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:14<00:14,  7.06s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:21<00:07,  7.37s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:24<00:00,  5.57s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:24<00:00,  6.17s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/pfs/data5/home/fr/fr_fr/fr_rf1031/llama-env/lib64/python3.11/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:25,  8.47s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:15,  7.61s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:22<00:07,  7.15s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.02s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.96s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:22,  7.54s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:15,  7.56s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:23<00:07,  7.72s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  5.62s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  6.36s/it]
+Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:26,  8.93s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:17<00:16,  8.47s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:23<00:07,  7.62s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  5.42s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  6.43s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:09<00:29,  9.80s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:17<00:16,  8.31s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:26<00:08,  8.65s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:29<00:00,  6.67s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:29<00:00,  7.44s/it]
 Both `device` and `device_map` are specified. `device` will override `device_map`. You will most likely encounter unexpected behavior. Please remove `device` and keep `device_map`.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
 Setting `pad_token_id` to `eos_token_id`:None for open-end generation.

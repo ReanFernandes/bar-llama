@@ -7,9 +7,9 @@ from typing import Dict, List
 @dataclass(frozen=True)  # Make it immutable
 class ComponentConfig:
     response_formats: List[str] = (                         # Using tuples instead of lists
-        # 'json',
-        'number_list', 
-        'markdown',
+        'json',
+        # 'number_list', 
+        # 'markdown',
     )
     model: List[str] = (                         # models
         'llama2',
@@ -134,6 +134,8 @@ def generate_train_eval_pairs(components: ComponentConfig = ComponentConfig()) -
             components.training_status,
             
         ):
+            if train_status == 'untrained' and dataset != 'all_domains_1_samples': # We dont want to run untrained inference for different training datasets as that wastes compute
+                continue
             eval_config_string = (
                 f"seeds={seed} "
                 f"model={model} "
