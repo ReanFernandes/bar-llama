@@ -1,5 +1,0 @@
-padding_side: right
-pad_token: "</s>" 
-eos_token: "</s>"
-bos_token: "<s>"
-model_max_length: 2048  # Adjust this to the maximum length of the input you expect

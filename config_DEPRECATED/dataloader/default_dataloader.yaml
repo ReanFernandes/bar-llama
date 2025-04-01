@@ -1,8 +1,0 @@
-# mostly all unnecessary, but i currently dont want to tinker with it and possibly break stuff. 
-# it doesnt impact anything much since all i care about is loading the questions in a correct order regardless of whether i am fine-tuning or running inference
-
-batch_size: 1   # Larger batch size for evaluation
-shuffle: False      # No shuffling needed for evaluation
-num_workers: 1     # Adjust based on your system
-drop_last: False    # Process all samples in evaluation
-num_train_samples: None # integer if size is decided, or none if all. 

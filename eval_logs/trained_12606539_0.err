@@ -1,9 +1,0 @@
-cpu-bind=MASK - dlc2gpu15, task  0  0 [266814]: mask 0xf000003900000000f00000390 set
-/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
-  warn(
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:16<00:16, 16.84s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:22<00:00, 10.44s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:22<00:00, 11.40s/it]
-/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:540: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
-  warnings.warn(
-/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:545: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-slurmstepd-dlc2gpu15: error: *** JOB 12606540 ON dlc2gpu15 CANCELLED AT 2025-01-12T16:08:38 ***

@@ -1,1 +1,0 @@
-Running configuration: seeds=seed_21 generation=temp_025 evaluation_dataset=test_set_1 eval=number_list_fact_first_few_shot_structured ++eval.quantisation_status=quantised_model ++eval.training_status=untrained

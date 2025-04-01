@@ -1,3 +1,0 @@
-dataset_path: ${hydra:runtime.cwd}/dataset/stage_1_test_set/test_1_out.json
-domains: ["all"]
-label: test_set_1

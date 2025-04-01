@@ -1,3 +1,0 @@
-dataset_path: ${hydra:runtime.cwd}/dataset/results_zero_shot_low_temp.json
-domains: ["all"] 
-label: zero_shot_low_temp

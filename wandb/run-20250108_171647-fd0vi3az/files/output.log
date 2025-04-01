@@ -1,8 +1,0 @@
-[2025-01-08 17:17:04,564][root][INFO] - Loading dataset from /work/dlclarge1/fernandr-thesis_workspace/bar-llama/dataset/seed_dataset/distilled_dataset.json
-[2025-01-08 17:17:04,625][root][INFO] - Dataset loaded successfully, indexing questions...
-[2025-01-08 17:17:04,661][root][INFO] - Indexing complete, sampling of questions set to True
-[2025-01-08 17:17:04,681][root][INFO] - Questions selected, dataset contains 7 questions with 1.0 questions per domain
-[2025-01-08 17:17:23,344][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'few_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'json', 'store_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${train.prompt.response_format}_${train.prompt.response_type}_${train.prompt.explanation_type}.txt', 'include_system_prompt': True}
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-Token is valid (permission: write).
-Your token has been saved to /home/fernandr/.cache/huggingface/token

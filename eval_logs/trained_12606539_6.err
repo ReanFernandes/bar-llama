@@ -1,28 +1,0 @@
-cpu-bind=MASK - dlc2gpu02, task  0  0 [190220]: mask 0xc0c00001c0800000c0c00001c08000 set
-/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
-  warn(
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.50s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.03s/it]
-Error executing job with overrides: ['seeds=seed_21', 'dataset=all_domains_1_samples', 'generation=greedy', 'evaluation_dataset=test_set_1', 'eval=json_fact_first_zero_shot_structured', '++eval.quantisation_status=full_model', '++eval.training_status=trained']
-Traceback (most recent call last):
-  File "/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/peft/config.py", line 197, in _get_peft_type
-    config_file = hf_hub_download(
-                  ^^^^^^^^^^^^^^^^
-  File "/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
-    validate_repo_id(arg_value)
-  File "/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
-    raise HFValidationError(
-huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/work/dlclarge1/fernandr-thesis_workspace/bar-llama/sft_adapters/seed_21/all_domains_1_samples/llama2_json_fact_first_zero_shot_structured'. Use `repo_type` argument if needed.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/work/dlclarge1/fernandr-thesis_workspace/bar-llama/eval.py", line 157, in main
-    model = PeftModel.from_pretrained(model,lora_adapter_path)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/peft/peft_model.py", line 372, in from_pretrained
-    PeftConfig._get_peft_type(
-  File "/home/fernandr/miniconda3/envs/thesis_env/lib/python3.11/site-packages/peft/config.py", line 203, in _get_peft_type
-    raise ValueError(f"Can't find '{CONFIG_NAME}' at '{model_id}'")
-ValueError: Can't find 'adapter_config.json' at '/work/dlclarge1/fernandr-thesis_workspace/bar-llama/sft_adapters/seed_21/all_domains_1_samples/llama2_json_fact_first_zero_shot_structured'
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

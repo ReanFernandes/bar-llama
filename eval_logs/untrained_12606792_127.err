@@ -1,4 +1,0 @@
-cpu-bind=MASK - dlc2gpu04, task  0  0 [307971]: mask 0xf0000000f0000000f0000000f0 set
-slurmstepd-dlc2gpu04: error: *** JOB 12606920 ON dlc2gpu04 CANCELLED AT 2025-01-12T17:11:44 ***
-Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
-BrokenPipeError: [Errno 32] Broken pipe

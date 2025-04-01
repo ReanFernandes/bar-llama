@@ -1,6 +1,0 @@
-model_id: 'meta-llama/Llama-2-7b-hf'
-kwargs:
-  padding_side: right 
-  eos_token: "</s>"
-  bos_token: "<s>"
-

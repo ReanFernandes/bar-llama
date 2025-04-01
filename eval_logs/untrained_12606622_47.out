@@ -1,1 +1,0 @@
-Running configuration: seeds=seed_21 generation=greedy evaluation_dataset=test_set_1 eval=markdown_fact_first_zero_shot_unstructured ++eval.quantisation_status=quantised_model ++eval.training_status=untrained
