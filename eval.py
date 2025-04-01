@@ -10,7 +10,7 @@ steps
 7. save raw outputs 
 8. parse the results using parsing utils
 9. Grade the parsed results using gradind utils and compile the metric for the experiment
-11. saving the final evaluation metrics to consolidated dataframe ( not sure how to do concurrently for multiple exps)
+11. saving the final evaluation metrics to consolidated dataframe 
 """
 
 
@@ -128,22 +128,8 @@ def main(cfg: DictConfig):
     # ----------------- Logic block for correct model adapter if needed -----------------
     # TODO add padding token as was done in the training to ensure proper generation
     if cfg.eval.training_status == 'trained':
-        #logic block to ensure the correct path is set to the adapter for this combination
-        #--------------------- Create the pathing logic to store the model ---------------------#
-        # # The  starting point is ${hydra:runtime.cwd}/sft_adapters
-        # #Level 1 : Add seed label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>
-        # raw_adapter_path = os.path.join(cfg.eval.lora_adapter_path, cfg.seeds.label)
-
-        # #Level 2 : Add training dataset label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>
-        # raw_adapter_path = os.path.join(raw_adapter_path, cfg.dataset.dataset_label)
-
-        # # #Level 3 : Generation strategy : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>
-        # # raw_adapter_path = os.path.join(raw_adapter_path, cfg.generation.label)
-
-        # #Level 4 : Experiment label : ${hydra:runtime.cwd}/sft_adapters/<seed_label>/<training_dataset_label>/<generation_strategy>/<model_adapter_name>
-        # lora_adapter_path = os.path.join(raw_adapter_path, cfg.eval.eval_model_name) # this will be a combo like  "llama2_json_answer_first_few_shot_structured"
-        # logging.info(f"Loading model adapter from {lora_adapter_path}")
-       ###UPDATED LOGIC THAT DECOUPLES THE SEED FROM THE SAVED ADAPTER AND ADDS MODEL LEVEL###
+        ###UPDATED LOGIC THAT DECOUPLES THE SEED FROM THE SAVED ADAPTER AND ADDS MODEL LEVEL###
+        
         #Level 0 : Start with model label : ${hydra:runtime.cwd}/sft_adapters/<model_label>
         raw_adapter_path = os.path.join(cfg.eval.lora_adapter_path, cfg.model.model_label)
 

@@ -1,0 +1,2 @@
+*Note* 
+These files are specifically meant to be used for a SLURM based terminal, and as such, users would need to modify it extensively to fit their own remote clusters. These scripts only serve as an exemplar for others to adapt to their needs, and are not meant to be used as is for reproducability

@@ -51,7 +51,7 @@ class ResponseHandler():
             "chosen_option_label": "n/a",
             "explanation": explanation_fields
         }        
-        # most of the times if the answer is completed then the llm creates its own question starting with "Question:" i want to remove this in the starting itsel
+        # most of the times if the answer is completed then the llm creates its own question starting with "Question:" i want to remove this in the starting itself
         # as the text after this term is irrelevant. THIS IS THE COMMON PATTERN FOR NON-FINETUNED MODELS, FINETUNING TAKES CARE OF THIS ISSUE
         # cleaned_response = re.split(r"\n\nQuestion:\n", response, maxsplit=1)[0]
         system_token_pattern = r'\n*(?:<</(?:SYS|INST)>>|\[/(?:SYS|INST)\]|</s>)\n*Question:'
@@ -61,7 +61,7 @@ class ResponseHandler():
         elif self.cfg["response_format"] == "json":
             fields = self._parse_json(cleaned_response, fields)  
         elif self.cfg["response_format"] == "number_list":
-            fields = self._parse_none(cleaned_response, fields)
+            fields = self._parse_number_list(cleaned_response, fields)
         return fields
     
     def _parse_markdown(self, response, fields):
@@ -179,30 +179,7 @@ class ResponseHandler():
                 fixed_lines.append(line)
 
             invalid_json = '\n'.join(fixed_lines)
-            # fixed_lines = []
-            # for line in lines:
-            #     quote_count = line.count('"')
-            #     if quote_count % 2 != 0:
-            #         # If there's an odd number of quotes, we need to add a closing quote
-            #         # But only if it is a value part, not a key
-            #         if re.search(r':\s*".*$', line):
-            #             line += '[INCOMPLETE]",'
-            #     fixed_lines.append(line)
-            # fixed_lines2 = []
-            # for line in fixed_lines:
-            #     if ':' in line:
-            #         quotes_indices = [i for i, char in enumerate(line) if char == '"']
-            #         if len(quotes_indices) > 2:
-            #             value_start = quotes_indices[2]
-            #             value_end = quotes_indices[-1]
-            #             inner_quotes = [i for i in quotes_indices if value_start < i < value_end]
-            #             for idx in reversed(inner_quotes):
-            #                 line = line[:idx] + "\\" + line[idx:]
-            #     fixed_lines2.append(line)
-            # invalid_json = '\n'.join(fixed_lines2)
-
-            # Remove trailing commas within nested objects first , this happens when the model is cut off while writing a nested object, or before making another entry
-            # invalid_json = re.sub(r',\s*(?=[}\]])', '', invalid_json)
+        
             nested_objects = re.findall(r'\{[^{}]*\}', invalid_json)
             for obj in nested_objects:
                 obj_fixed = re.sub(r',\s*(?=[}\]])', '', obj)
@@ -285,23 +262,7 @@ class ResponseHandler():
                         
                         match = re.search(rf'"{key}"\s*:\s*"(.*?)(?:",|\n)', invalid_json, re.DOTALL)
                         json_data[key] = match.group(1) if match else value
-                    # json_data = {}
-                    # for key, value in required_fields.items():
-                    #     match = re.search(rf'"{key}"\s*:\s*(.*?)(,|\n|$)', invalid_json)
-                    #     if match:
-                    #         json_data[key] = match.group(1).strip('",')
-                    #     else:
-                    #         json_data[key] = value
-
-                    # if explanation_type == "structured":
-                    #     if 'explanation' not in json_data or not isinstance(json_data['explanation'], dict):
-                    #         json_data['explanation'] = {}
-                    #     for subkey, subvalue in required_fields['explanation'].items():
-                    #         match = re.search(rf'"{subkey}"\s*:\s*(.*?)(,|\n|$)', invalid_json)
-                    #         if match:
-                    #             json_data['explanation'][subkey] = match.group(1).strip('",')
-                    #         else:
-                    #             json_data['explanation'][subkey] = subvalue
+                    
                 except Exception as e:
                     logging.error(f"|Q. {self.current_q_num}||D: {self.domain}| failed to extract valid fields from fixed JSON: {str(e)}")
                     # assign how much ever was able to be extracted from the invalid data to the required fields, and load it back to the json_data
@@ -354,12 +315,12 @@ class ResponseHandler():
         return fields
 
 
-    def _parse_none(self, response, fields):
+    def _parse_number_list(self, response, fields):
         """
         Parses unstructured or semi-structured output that loosely follows a given schema.
         Looks for entries numbered and titled as specified in the schema, and ignores anything after a specified marker.
         """
-        # Schema pattern , hardcoding this shit to stop headaches 
+        # Schema pattern , hardcoding this  to stop headaches 
         if self.cfg["response_type"] == "answer_first":
             if self.cfg["explanation_type"] == "structured":
                 schema_keys = {

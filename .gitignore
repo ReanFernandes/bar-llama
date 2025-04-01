@@ -13,7 +13,6 @@ master_metrics.lock
 job_scripts_final_run_part_1
 logs_final_run_part_1
 job_scripts/
-
 database
 #add safe tensors, model ckpt and bin file types to gitignore
 model_outputs

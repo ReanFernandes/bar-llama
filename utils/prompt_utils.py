@@ -4,7 +4,6 @@ import logging
 
 class PromptHandler:
     '''
-    copilot generated lolol
     PromptHandler is a class designed to handle the creation and management of prompts for a language model. It supports both zero-shot and few-shot learning paradigms and can format responses in various ways, including JSON and Markdown.
     Attributes:
         cfg (dict): Configuration dictionary containing various settings for prompt handling.
@@ -239,34 +238,6 @@ Response:
 
         return examples_text
 
-    # def create_prompt(self, question_item):
-    #     ''' 
-    #         Create a bundled system prompt and input prompt, to be passed to the model as one message.
-    #     '''
-    #     input_prompt, ground_truth = self.input_prompt(question_item)
-        
-    #     if self.cfg["mode"] == "train": # use in the format of the model, with the answers appended after the input prompt
-    #         # add an exception where if there is no correct answer, or explanation provided,  the question item will be skipped
-            
-    #         expected_response = self._set_response(question_item)
-    #         if self.cfg["model_name"]=="llama2":
-    #             prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]{expected_response}</s>"""
-    #         elif self.cfg["model_name"]=="mistral":
-    #             print("model not implemented yet")
-                
-    #     elif self.cfg["mode"]=="eval":
-    #         if self.cfg["pipeline_available"] is True:
-    #             prompt_template = f"""{self.system}\n{input_prompt}"""
-    #         elif self.cfg["pipeline_available"] is False:
-    #             prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
-    #         else:
-    #             Exception("pipeline available not set correctly")
-        
-    #     if self.cfg["store_prompt"]:
-    #         # append prompt_template as a value for the key "text", to self.prompt_list
-    #         self.prompt_dict.append({"text":prompt_template})
-        
-    #     return prompt_template, ground_truth
 
     def create_prompt(self, question_item, mode="eval", model_name="llama2", pipeline_available=False, store_prompt=False):
         '''
@@ -337,47 +308,4 @@ Response:
         except Exception as e:
             logging.error(f"An error occurred: {e}", exc_info=True)
             return {"error": str(e), "message": "An error occurred while processing the prompt."}
-    # def create_prompt(self, question_item, mode="eval", model_name="llama2", pipeline_available=False, store_prompt=False):
-    #     ''' 
-    #     Create a bundled system prompt and input prompt, to be passed to the model as one message.
-    #     '''
-    #     try:
-    #         input_prompt, ground_truth = self.input_prompt(question_item)
-            
-    #         if mode == "train":  # Use in the format of the model, with the answers appended after the input prompt
-    #             expected_response = self._set_response(question_item)
-    #             if model_name == "llama2":
-    #                 if self.cfg["include_system_prompt"]:
-    #                     prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]{expected_response}</s>"""
-    #                 else:
-    #                     prompt_template = f"""[INST]\n{input_prompt}[/INST]{expected_response}</s>"""
-    #             elif model_name == "mistral":
-    #                 if self.cfg["include_system_prompt"]:
-    #                     raise NotImplementedError("Mistral model formatting is not implemented yet.")
-    #                 else:
-    #                     raise NotImplementedError("Mistral model formatting is not implemented yet.")
-    #             else:
-    #                 raise ValueError(f"Unsupported model_name: {model_name}")
-            
-    #         elif mode == "eval":
-    #             if pipeline_available:
-    #                 if self.cfg["include_system_prompt"]:
-    #                     prompt_template = f"""{self.system}\n{input_prompt}"""
-    #                 else:
-    #                     prompt_template = f"""{input_prompt}"""
-    #             else:
-    #                 if self.cfg["include_system_prompt"]:
-    #                     prompt_template = f"""[INST]\n<<SYS>>\n{self.system}\n<</SYS>>{input_prompt}[/INST]"""
-    #                 else:
-    #                     prompt_template = f"""[INST]\n{input_prompt}[/INST]"""
-    #         else:
-    #             raise ValueError(f"Invalid mode: {mode}")
-
-    #         if store_prompt:
-    #             # Append prompt_template as a value for the key "text", to self.prompt_dict
-    #             self.prompt_dict.append({"text": prompt_template})
-
-    #         return prompt_template, ground_truth
-    #     except Exception as e:
-    #         logging.error(f"An error occurred: {e}", exc_info=True)
-    #         return {"error": str(e), "message": "An error occurred while processing the prompt."}
+    

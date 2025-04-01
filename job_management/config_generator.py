@@ -95,35 +95,6 @@ def generate_train_eval_pairs(components: ComponentConfig = ComponentConfig()) -
             f"++train.training_args.per_device_train_batch_size=7 "
             f"++train.training_args.gradient_accumulation_steps=1"
         )
-        
-        # Generate all eval configurations for this training config
-        # eval_configs = []
-        # # Include seed in the eval config product
-        # for eval_set, seed, gen, quant, train_status in product(
-        #     components.evaluation_datasets,
-        #     components.seeds,
-        #     components.generation,
-        #     components.quantisation,
-        #     components.training_status
-        # ):
-        #     eval_config = (
-        #         f"seeds={seed} "  # Seed varies for eval
-        #         f"dataset={dataset} "
-        #         f"generation={gen} "
-        #         f"evaluation_dataset={eval_set} "
-        #         f"eval={base_config} "
-        #         f"++eval.quantisation_status={quant} "
-        #         f"++eval.training_status={train_status}"
-        #     )
-        #     eval_configs.append((eval_set, train_status, eval_config))
-        
-        # paired_configs.append({
-        #     'train_config': train_config,
-        #     'eval_configs': eval_configs,
-        #     'base_config': base_config,
-        #     'dataset': dataset
-        # })
-# The outer loops remain the same until the eval_configs generation
 
         eval_configs = []
         for eval_set, seed, gen, quant, train_status in product(

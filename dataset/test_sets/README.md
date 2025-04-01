@@ -1,2 +1,2 @@
 The test sets labelled `test_sets` are the ones put together from the older ( pre-2015) bar exam questions. Thus they dont contain Civil Procedure questions. 
-Bar_test_set contains actual bar exam questions that were sourced from the 2022 bar exam. For all work, this is the definitive test set and the others can be considered as validation sets
+These sets were originally used for validation, and to see if fine-tuning leads to better performance. We use these as a placeholder for the actual bar exam, so that results may be verified for the performance improvement without the need for licensing the actual test set. 

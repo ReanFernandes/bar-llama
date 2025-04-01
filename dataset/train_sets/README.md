@@ -1,2 +1,0 @@
-The prompt formatted datasets are stored here. These are created individually for all possible configs, so that for whichever configuration is selected, the entire corresponding dataset is loaded by the dataloader to send to the sft trainer
-The datasets have been put together from the seed dataset, with the help of the prompt formatting pipeline.
