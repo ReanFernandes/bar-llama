@@ -892,3 +892,1093 @@ Eval status update completed for job 22
 [2025-03-06 21:50:32,381][root][INFO] - Starting inference
 [2025-03-06 21:50:32,586][root][INFO] - Processing question number 0
 [2025-03-06 21:50:32,589][root][INFO] - Domain : Civil_procedure, Question : 1
+[2025-03-06 21:50:42,547][root][INFO] - Domain : Civil_procedure, Question : 7
+[2025-03-06 21:50:56,590][root][INFO] - Domain : Civil_procedure, Question : 14
+[2025-03-06 21:51:11,352][root][INFO] - Domain : Civil_procedure, Question : 21
+[2025-03-06 21:51:25,201][root][INFO] - Domain : Civil_procedure, Question : 28
+[2025-03-06 21:51:37,143][root][INFO] - Domain : Civil_procedure, Question : 35
+[2025-03-06 21:51:49,526][root][INFO] - Domain : Civil_procedure, Question : 42
+[2025-03-06 21:52:03,874][root][INFO] - Domain : Civil_procedure, Question : 49
+[2025-03-06 21:52:17,270][root][INFO] - Domain : Civil_procedure, Question : 56
+[2025-03-06 21:52:28,204][root][INFO] - Domain : Civil_procedure, Question : 63
+[2025-03-06 21:52:40,604][root][INFO] - Processing question number 10
+[2025-03-06 21:52:40,606][root][INFO] - Domain : Civil_procedure, Question : 69
+[2025-03-06 21:52:54,444][root][INFO] - Domain : Civil_procedure, Question : 70
+[2025-03-06 21:53:05,755][root][INFO] - Domain : Civil_procedure, Question : 77
+[2025-03-06 21:53:16,654][root][INFO] - Domain : Civil_procedure, Question : 84
+[2025-03-06 21:53:28,168][root][INFO] - Domain : Civil_procedure, Question : 91
+[2025-03-06 21:53:38,129][root][INFO] - Domain : Civil_procedure, Question : 98
+[2025-03-06 21:53:49,264][root][INFO] - Domain : Constitutional_law, Question : 2
+[2025-03-06 21:54:00,810][root][INFO] - Domain : Constitutional_law, Question : 9
+[2025-03-06 21:54:13,445][root][INFO] - Domain : Constitutional_law, Question : 17
+[2025-03-06 21:54:24,725][root][INFO] - Domain : Constitutional_law, Question : 25
+[2025-03-06 21:54:34,696][root][INFO] - Processing question number 20
+[2025-03-06 21:54:34,698][root][INFO] - Domain : Constitutional_law, Question : 29
+[2025-03-06 21:54:48,974][root][INFO] - Domain : Constitutional_law, Question : 37
+[2025-03-06 21:55:01,961][root][INFO] - Domain : Constitutional_law, Question : 43
+[2025-03-06 21:55:11,434][root][INFO] - Domain : Constitutional_law, Question : 55
+[2025-03-06 21:55:24,028][root][INFO] - Domain : Constitutional_law, Question : 60
+[2025-03-06 21:55:35,897][root][INFO] - Domain : Constitutional_law, Question : 65
+[2025-03-06 21:55:46,923][root][INFO] - Domain : Constitutional_law, Question : 71
+[2025-03-06 21:55:58,100][root][INFO] - Domain : Constitutional_law, Question : 79
+[2025-03-06 21:56:11,696][root][INFO] - Domain : Constitutional_law, Question : 87
+[2025-03-06 21:56:22,315][root][INFO] - Domain : Constitutional_law, Question : 93
+[2025-03-06 21:56:33,069][root][INFO] - Processing question number 30
+[2025-03-06 21:56:33,072][root][INFO] - Domain : Contracts, Question : 3
+[2025-03-06 21:56:46,204][root][INFO] - Domain : Contracts, Question : 8
+[2025-03-06 21:56:59,229][root][INFO] - Domain : Contracts, Question : 16
+[2025-03-06 21:57:11,276][root][INFO] - Domain : Contracts, Question : 22
+[2025-03-06 21:57:23,907][root][INFO] - Domain : Contracts, Question : 27
+[2025-03-06 21:57:36,146][root][INFO] - Domain : Contracts, Question : 38
+[2025-03-06 21:57:48,186][root][INFO] - Domain : Contracts, Question : 46
+[2025-03-06 21:58:00,871][root][INFO] - Domain : Contracts, Question : 51
+[2025-03-06 21:58:13,099][root][INFO] - Domain : Contracts, Question : 58
+[2025-03-06 21:58:26,030][root][INFO] - Domain : Contracts, Question : 66
+[2025-03-06 21:58:38,288][root][INFO] - Processing question number 40
+[2025-03-06 21:58:38,291][root][INFO] - Domain : Contracts, Question : 72
+[2025-03-06 21:58:49,202][root][INFO] - Domain : Contracts, Question : 81
+[2025-03-06 21:59:01,959][root][INFO] - Domain : Contracts, Question : 88
+[2025-03-06 21:59:17,218][root][INFO] - Domain : Contracts, Question : 94
+[2025-03-06 21:59:28,737][root][INFO] - Domain : Torts, Question : 4
+[2025-03-06 21:59:41,212][root][INFO] - Domain : Torts, Question : 11
+[2025-03-06 21:59:52,593][root][INFO] - Domain : Torts, Question : 24
+[2025-03-06 22:00:05,856][root][INFO] - Domain : Torts, Question : 32
+[2025-03-06 22:00:16,217][root][INFO] - Domain : Torts, Question : 41
+[2025-03-06 22:00:28,347][root][INFO] - Domain : Torts, Question : 47
+[2025-03-06 22:00:39,054][root][INFO] - Processing question number 50
+[2025-03-06 22:00:39,058][root][INFO] - Domain : Torts, Question : 52
+[2025-03-06 22:00:52,305][root][INFO] - Domain : Torts, Question : 62
+[2025-03-06 22:01:04,748][root][INFO] - Domain : Torts, Question : 76
+[2025-03-06 22:01:19,719][root][INFO] - Domain : Torts, Question : 82
+[2025-03-06 22:01:34,725][root][INFO] - Domain : Torts, Question : 90
+[2025-03-06 22:01:47,297][root][INFO] - Domain : Torts, Question : 95
+[2025-03-06 22:01:56,721][root][INFO] - Domain : Torts, Question : 99
+[2025-03-06 22:02:10,057][root][INFO] - Domain : Evidence, Question : 5
+[2025-03-06 22:02:19,667][root][INFO] - Domain : Evidence, Question : 12
+[2025-03-06 22:02:33,182][root][INFO] - Domain : Evidence, Question : 18
+[2025-03-06 22:02:45,598][root][INFO] - Processing question number 60
+[2025-03-06 22:02:45,602][root][INFO] - Domain : Evidence, Question : 23
+[2025-03-06 22:02:56,060][root][INFO] - Domain : Evidence, Question : 31
+[2025-03-06 22:03:05,808][root][INFO] - Domain : Evidence, Question : 34
+[2025-03-06 22:03:24,000][root][INFO] - Domain : Evidence, Question : 40
+[2025-03-06 22:03:34,276][root][INFO] - Domain : Evidence, Question : 44
+[2025-03-06 22:03:46,278][root][INFO] - Domain : Evidence, Question : 53
+[2025-03-06 22:03:57,087][root][INFO] - Domain : Evidence, Question : 59
+[2025-03-06 22:04:08,922][root][INFO] - Domain : Evidence, Question : 68
+[2025-03-06 22:04:20,370][root][INFO] - Domain : Evidence, Question : 73
+[2025-03-06 22:04:33,024][root][INFO] - Domain : Evidence, Question : 78
+[2025-03-06 22:04:47,553][root][INFO] - Processing question number 70
+[2025-03-06 22:04:47,556][root][INFO] - Domain : Evidence, Question : 86
+[2025-03-06 22:04:59,189][root][INFO] - Domain : Evidence, Question : 96
+[2025-03-06 22:05:12,949][root][INFO] - Domain : Property, Question : 6
+[2025-03-06 22:05:25,401][root][INFO] - Domain : Property, Question : 13
+[2025-03-06 22:05:37,789][root][INFO] - Domain : Property, Question : 20
+[2025-03-06 22:05:53,246][root][INFO] - Domain : Property, Question : 33
+[2025-03-06 22:06:06,952][root][INFO] - Domain : Property, Question : 39
+[2025-03-06 22:06:19,631][root][INFO] - Domain : Property, Question : 48
+[2025-03-06 22:06:30,582][root][INFO] - Domain : Property, Question : 54
+[2025-03-06 22:06:44,154][root][INFO] - Domain : Property, Question : 61
+[2025-03-06 22:06:55,896][root][INFO] - Processing question number 80
+[2025-03-06 22:06:55,900][root][INFO] - Domain : Property, Question : 67
+[2025-03-06 22:07:07,911][root][INFO] - Domain : Property, Question : 75
+[2025-03-06 22:07:22,557][root][INFO] - Domain : Property, Question : 83
+[2025-03-06 22:07:32,397][root][INFO] - Domain : Property, Question : 89
+[2025-03-06 22:07:42,994][root][INFO] - Domain : Property, Question : 97
+[2025-03-06 22:07:56,482][root][INFO] - Domain : Property, Question : 100
+[2025-03-06 22:08:10,487][root][INFO] - Domain : Criminal_law, Question : 10
+[2025-03-06 22:08:24,105][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-03-06 22:08:34,983][root][INFO] - Domain : Criminal_law, Question : 26
+[2025-03-06 22:08:48,129][root][INFO] - Domain : Criminal_law, Question : 30
+[2025-03-06 22:08:58,951][root][INFO] - Processing question number 90
+[2025-03-06 22:08:58,955][root][INFO] - Domain : Criminal_law, Question : 36
+[2025-03-06 22:09:14,541][root][INFO] - Domain : Criminal_law, Question : 45
+[2025-03-06 22:09:25,712][root][INFO] - Domain : Criminal_law, Question : 50
+[2025-03-06 22:09:38,303][root][INFO] - Domain : Criminal_law, Question : 57
+[2025-03-06 22:09:48,911][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-03-06 22:10:00,946][root][INFO] - Domain : Criminal_law, Question : 74
+[2025-03-06 22:10:15,580][root][INFO] - Domain : Criminal_law, Question : 80
+[2025-03-06 22:10:27,156][root][INFO] - Domain : Criminal_law, Question : 85
+[2025-03-06 22:10:38,851][root][INFO] - Domain : Criminal_law, Question : 92
+[2025-03-06 22:10:50,552][root][INFO] - Inference complete
+[2025-03-06 22:10:50,552][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_1.json
+[2025-03-06 22:10:50,559][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_1.json
+[2025-03-06 22:10:50,570][root][WARNING] - |Q. 10||D: Criminal_law| has broken JSON output. Attempting to fix it.
+[2025-03-06 22:10:50,570][root][WARNING] - |Q. 10||D: Criminal_law| Successfully fixed invalid JSON. Not all fields may be present.
+[2025-03-06 22:10:50,570][root][INFO] - |Q. 10||D: Criminal_law| was made valid into Valid json. Extracting responses.
+[2025-03-06 22:10:50,573][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_1.json
+[2025-03-06 22:10:50,577][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_1.json
+[2025-03-06 22:10:50,578][root][INFO] - Saved parsed outputs
+[2025-03-06 22:10:50,578][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_1.json
+[2025-03-06 22:10:50,579][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_1.json
+[2025-03-06 22:10:50,579][root][INFO] - Saved parsing metadata
+[2025-03-06 22:10:50,579][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_1.json
+[2025-03-06 22:10:50,581][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_1.json
+[2025-03-06 22:10:50,583][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_1.json
+Metrics successfully appended to master CSV.
+[2025-03-06 22:10:50,617][root][INFO] - Evaluation completed for json_answer_first_zero_shot_structured, on test_set_1
+[2025-03-06 22:10:50,618][root][INFO] - Summary of metrics : {'label_accuracy': 0.5252525252525253, 'misclassification_rate': 0.4747474747474747, 'combined_accuracy': 0.494949494949495, 'malformed_label': 0, 'malformed_domain': 6, 'total_predictions': 99, 'correct_predictions': 52, 'correct_label_and_domain': 49, 'Constitutional_Law_accuracy': 0.5714285714285714, 'Contracts_accuracy': 0.42857142857142855, 'Criminal_Law_accuracy': 0.6153846153846154, 'Evidence_accuracy': 0.4, 'Real_Property_accuracy': 0.42857142857142855, 'Torts_accuracy': 0.46153846153846156, 'Civil_Procedure_accuracy': 0.5625, 'Constitutional_Law_confidence': 0.16161616161616163, 'Contracts_confidence': 0.15151515151515152, 'Criminal_Law_confidence': 0.12121212121212122, 'Evidence_confidence': 0.13131313131313133, 'Real_Property_confidence': 0.13131313131313133, 'Torts_confidence': 0.1414141414141414, 'Civil_Procedure_confidence': 0.16161616161616163, 'correct_domain_wrong_label': 44, 'correct_label_wrong_domain': 3, 'both_wrong': 3}
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_989 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_06 evaluation_dataset=test_set_1 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'completed', '0']
+Updating eval for job 22 to status completed with exit code 0
+Eval status update completed for job 22
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=greedy evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=greedy evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'running']
+Updating eval for job 22 to status running with exit code None
+Eval status update completed for job 22
+[2025-03-06 22:10:59,632][root][INFO] - Setting global seed to 206
+[2025-03-06 22:10:59,674][root][INFO] - Running evaluation of the trained model on the test_set_2
+[2025-03-06 22:10:59,674][root][INFO] - Current evaluation config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : structured 
+ Response Format : json 
+[2025-03-06 22:10:59,676][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_2.json
+[2025-03-06 22:10:59,678][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-03-06 22:10:59,681][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-03-06 22:10:59,681][root][INFO] - Questions selected, dataset contains 100 questions with 14.285714285714286 questions per domain
+[2025-03-06 22:10:59,828][root][INFO] - Loading model : meta-llama/Llama-3.1-8B-Instruct
+[2025-03-06 22:11:00,434][root][INFO] - Full model selected, loading model
+[2025-03-06 22:11:25,111][root][INFO] - Tokenizer special tokens: {'bos_token': '<|begin_of_text|>', 'eos_token': '<|end_of_text|>', 'pad_token': '[PAD]'} have been added
+[2025-03-06 22:13:15,759][root][INFO] - Fine-tuned model selected, loading adapter
+[2025-03-06 22:13:15,760][root][WARNING] - Inference will be done using model.generate instead of hf pipeline since peft model is not compatible with it
+[2025-03-06 22:13:48,528][root][INFO] - Peft model loaded successfully
+[2025-03-06 22:13:55,728][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'json', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-03-06 22:13:55,730][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:13:55,730][root][INFO] - Starting inference
+[2025-03-06 22:13:55,967][root][INFO] - Processing question number 0
+[2025-03-06 22:13:55,970][root][INFO] - Domain : Constitutional_law, Question : 1
+[2025-03-06 22:14:07,171][root][INFO] - Domain : Constitutional_law, Question : 6
+[2025-03-06 22:14:20,928][root][INFO] - Domain : Constitutional_law, Question : 13
+[2025-03-06 22:14:33,868][root][INFO] - Domain : Constitutional_law, Question : 20
+[2025-03-06 22:14:45,429][root][INFO] - Domain : Constitutional_law, Question : 27
+[2025-03-06 22:14:54,276][root][INFO] - Domain : Constitutional_law, Question : 35
+[2025-03-06 22:15:04,887][root][INFO] - Domain : Constitutional_law, Question : 41
+[2025-03-06 22:15:16,573][root][INFO] - Domain : Constitutional_law, Question : 49
+[2025-03-06 22:15:27,717][root][INFO] - Domain : Constitutional_law, Question : 56
+[2025-03-06 22:15:37,423][root][INFO] - Domain : Constitutional_law, Question : 62
+[2025-03-06 22:15:47,410][root][INFO] - Processing question number 10
+[2025-03-06 22:15:47,412][root][INFO] - Domain : Constitutional_law, Question : 70
+[2025-03-06 22:15:58,937][root][INFO] - Domain : Constitutional_law, Question : 78
+[2025-03-06 22:16:11,428][root][INFO] - Domain : Constitutional_law, Question : 86
+[2025-03-06 22:16:23,050][root][INFO] - Domain : Constitutional_law, Question : 99
+[2025-03-06 22:16:33,752][root][INFO] - Domain : Criminal_law, Question : 2
+[2025-03-06 22:16:45,535][root][INFO] - Domain : Criminal_law, Question : 8
+[2025-03-06 22:16:56,403][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-03-06 22:17:07,561][root][INFO] - Domain : Criminal_law, Question : 21
+[2025-03-06 22:17:19,854][root][INFO] - Domain : Criminal_law, Question : 29
+[2025-03-06 22:17:30,860][root][INFO] - Domain : Criminal_law, Question : 37
+[2025-03-06 22:17:42,244][root][INFO] - Processing question number 20
+[2025-03-06 22:17:42,247][root][INFO] - Domain : Criminal_law, Question : 44
+[2025-03-06 22:17:54,559][root][INFO] - Domain : Criminal_law, Question : 55
+[2025-03-06 22:18:05,923][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-03-06 22:18:14,585][root][INFO] - Domain : Criminal_law, Question : 71
+[2025-03-06 22:18:22,713][root][INFO] - Domain : Criminal_law, Question : 76
+[2025-03-06 22:18:34,071][root][INFO] - Domain : Criminal_law, Question : 83
+[2025-03-06 22:18:45,982][root][INFO] - Domain : Criminal_law, Question : 89
+[2025-03-06 22:18:58,525][root][INFO] - Domain : Criminal_law, Question : 96
+[2025-03-06 22:19:10,672][root][INFO] - Domain : Contracts, Question : 3
+[2025-03-06 22:19:22,179][root][INFO] - Domain : Contracts, Question : 7
+[2025-03-06 22:19:34,975][root][INFO] - Processing question number 30
+[2025-03-06 22:19:34,977][root][INFO] - Domain : Contracts, Question : 14
+[2025-03-06 22:19:46,107][root][INFO] - Domain : Contracts, Question : 24
+[2025-03-06 22:19:58,926][root][INFO] - Domain : Contracts, Question : 28
+[2025-03-06 22:20:10,299][root][INFO] - Domain : Contracts, Question : 34
+[2025-03-06 22:20:23,682][root][INFO] - Domain : Contracts, Question : 42
+[2025-03-06 22:20:37,927][root][INFO] - Domain : Contracts, Question : 48
+[2025-03-06 22:20:50,680][root][INFO] - Domain : Contracts, Question : 58
+[2025-03-06 22:21:00,881][root][INFO] - Domain : Contracts, Question : 65
+[2025-03-06 22:21:13,027][root][INFO] - Domain : Contracts, Question : 72
+[2025-03-06 22:21:22,876][root][INFO] - Domain : Contracts, Question : 77
+[2025-03-06 22:21:37,251][root][INFO] - Processing question number 40
+[2025-03-06 22:21:37,255][root][INFO] - Domain : Contracts, Question : 84
+[2025-03-06 22:21:49,058][root][INFO] - Domain : Contracts, Question : 87
+[2025-03-06 22:21:59,905][root][INFO] - Domain : Contracts, Question : 97
+[2025-03-06 22:22:11,998][root][INFO] - Domain : Evidence, Question : 4
+[2025-03-06 22:22:22,072][root][INFO] - Domain : Evidence, Question : 10
+[2025-03-06 22:22:34,821][root][INFO] - Domain : Evidence, Question : 16
+[2025-03-06 22:22:47,560][root][INFO] - Domain : Evidence, Question : 23
+[2025-03-06 22:22:57,808][root][INFO] - Domain : Evidence, Question : 31
+[2025-03-06 22:23:08,823][root][INFO] - Domain : Evidence, Question : 38
+[2025-03-06 22:23:21,149][root][INFO] - Domain : Evidence, Question : 43
+[2025-03-06 22:23:31,513][root][INFO] - Processing question number 50
+[2025-03-06 22:23:31,517][root][INFO] - Domain : Evidence, Question : 50
+[2025-03-06 22:23:43,247][root][INFO] - Domain : Evidence, Question : 51
+[2025-03-06 22:23:55,265][root][INFO] - Domain : Evidence, Question : 60
+[2025-03-06 22:24:08,072][root][INFO] - Domain : Evidence, Question : 73
+[2025-03-06 22:24:22,880][root][INFO] - Domain : Evidence, Question : 80
+[2025-03-06 22:24:33,110][root][INFO] - Domain : Evidence, Question : 85
+[2025-03-06 22:24:46,671][root][INFO] - Domain : Evidence, Question : 90
+[2025-03-06 22:25:00,912][root][INFO] - Domain : Evidence, Question : 98
+[2025-03-06 22:25:14,364][root][INFO] - Domain : Civil_procedure, Question : 5
+[2025-03-06 22:25:27,239][root][INFO] - Domain : Civil_procedure, Question : 12
+[2025-03-06 22:25:41,708][root][INFO] - Processing question number 60
+[2025-03-06 22:25:41,712][root][INFO] - Domain : Civil_procedure, Question : 19
+[2025-03-06 22:25:55,029][root][INFO] - Domain : Civil_procedure, Question : 26
+[2025-03-06 22:26:08,493][root][INFO] - Domain : Civil_procedure, Question : 33
+[2025-03-06 22:26:22,619][root][INFO] - Domain : Civil_procedure, Question : 40
+[2025-03-06 22:26:36,074][root][INFO] - Domain : Civil_procedure, Question : 47
+[2025-03-06 22:26:50,803][root][INFO] - Domain : Civil_procedure, Question : 54
+[2025-03-06 22:27:03,665][root][INFO] - Domain : Civil_procedure, Question : 61
+[2025-03-06 22:27:16,320][root][INFO] - Domain : Civil_procedure, Question : 68
+[2025-03-06 22:27:27,452][root][INFO] - Domain : Civil_procedure, Question : 75
+[2025-03-06 22:27:41,040][root][INFO] - Domain : Civil_procedure, Question : 82
+[2025-03-06 22:27:54,070][root][INFO] - Processing question number 70
+[2025-03-06 22:27:54,074][root][INFO] - Domain : Civil_procedure, Question : 93
+[2025-03-06 22:28:06,645][root][INFO] - Domain : Property, Question : 9
+[2025-03-06 22:28:20,163][root][INFO] - Domain : Property, Question : 17
+[2025-03-06 22:28:31,598][root][INFO] - Domain : Property, Question : 25
+[2025-03-06 22:28:47,317][root][INFO] - Domain : Property, Question : 30
+[2025-03-06 22:28:57,567][root][INFO] - Domain : Property, Question : 36
+[2025-03-06 22:29:11,362][root][INFO] - Domain : Property, Question : 46
+[2025-03-06 22:29:24,516][root][INFO] - Domain : Property, Question : 53
+[2025-03-06 22:29:37,057][root][INFO] - Domain : Property, Question : 59
+[2025-03-06 22:29:49,322][root][INFO] - Domain : Property, Question : 66
+[2025-03-06 22:30:00,260][root][INFO] - Processing question number 80
+[2025-03-06 22:30:00,264][root][INFO] - Domain : Property, Question : 69
+[2025-03-06 22:30:13,127][root][INFO] - Domain : Property, Question : 81
+[2025-03-06 22:30:26,769][root][INFO] - Domain : Property, Question : 88
+[2025-03-06 22:30:37,893][root][INFO] - Domain : Property, Question : 91
+[2025-03-06 22:30:50,127][root][INFO] - Domain : Property, Question : 94
+[2025-03-06 22:31:04,885][root][INFO] - Domain : Property, Question : 100
+[2025-03-06 22:31:16,863][root][INFO] - Domain : Torts, Question : 11
+[2025-03-06 22:31:30,491][root][INFO] - Domain : Torts, Question : 18
+[2025-03-06 22:31:43,730][root][INFO] - Domain : Torts, Question : 22
+[2025-03-06 22:31:55,872][root][INFO] - Domain : Torts, Question : 32
+[2025-03-06 22:32:09,325][root][INFO] - Processing question number 90
+[2025-03-06 22:32:09,329][root][INFO] - Domain : Torts, Question : 39
+[2025-03-06 22:32:22,046][root][INFO] - Domain : Torts, Question : 45
+[2025-03-06 22:32:41,119][root][INFO] - Domain : Torts, Question : 52
+[2025-03-06 22:32:51,733][root][INFO] - Domain : Torts, Question : 57
+[2025-03-06 22:33:02,361][root][INFO] - Domain : Torts, Question : 63
+[2025-03-06 22:33:15,914][root][INFO] - Domain : Torts, Question : 67
+[2025-03-06 22:33:27,907][root][INFO] - Domain : Torts, Question : 74
+[2025-03-06 22:33:40,629][root][INFO] - Domain : Torts, Question : 79
+[2025-03-06 22:33:51,332][root][INFO] - Domain : Torts, Question : 92
+[2025-03-06 22:34:00,034][root][INFO] - Domain : Torts, Question : 95
+[2025-03-06 22:34:13,247][root][INFO] - Inference complete
+[2025-03-06 22:34:13,247][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:34:13,253][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:34:13,257][root][WARNING] - |Q. 89||D: Criminal_law| has broken JSON output. Attempting to fix it.
+[2025-03-06 22:34:13,257][root][WARNING] - |Q. 89||D: Criminal_law| Successfully fixed invalid JSON. Not all fields may be present.
+[2025-03-06 22:34:13,257][root][INFO] - |Q. 89||D: Criminal_law| was made valid into Valid json. Extracting responses.
+[2025-03-06 22:34:13,262][root][WARNING] - |Q. 61||D: Civil_procedure| has broken JSON output. Attempting to fix it.
+[2025-03-06 22:34:13,262][root][WARNING] - |Q. 61||D: Civil_procedure| Failed to fix invalid JSON, extracting as many fields as possible.
+[2025-03-06 22:34:13,263][root][INFO] - |Q. 61||D: Civil_procedure| was made valid into Valid json. Extracting responses.
+[2025-03-06 22:34:13,267][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:34:13,273][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:34:13,273][root][INFO] - Saved parsed outputs
+[2025-03-06 22:34:13,273][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:34:13,274][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:34:13,274][root][INFO] - Saved parsing metadata
+[2025-03-06 22:34:13,277][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:34:13,278][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:34:13,280][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+Metrics successfully appended to master CSV.
+[2025-03-06 22:34:13,424][root][INFO] - Evaluation completed for json_answer_first_zero_shot_structured, on test_set_2
+[2025-03-06 22:34:13,424][root][INFO] - Summary of metrics : {'label_accuracy': 0.54, 'misclassification_rate': 0.45999999999999996, 'combined_accuracy': 0.47, 'malformed_label': 0, 'malformed_domain': 11, 'total_predictions': 100, 'correct_predictions': 54, 'correct_label_and_domain': 47, 'Constitutional_Law_accuracy': 0.5, 'Contracts_accuracy': 0.3333333333333333, 'Criminal_Law_accuracy': 0.5714285714285714, 'Evidence_accuracy': 0.26666666666666666, 'Real_Property_accuracy': 0.3333333333333333, 'Torts_accuracy': 0.7142857142857143, 'Civil_Procedure_accuracy': 0.6153846153846154, 'Constitutional_Law_confidence': 0.16, 'Contracts_confidence': 0.14, 'Criminal_Law_confidence': 0.14, 'Evidence_confidence': 0.11, 'Real_Property_confidence': 0.16, 'Torts_confidence': 0.14, 'Civil_Procedure_confidence': 0.15, 'correct_domain_wrong_label': 42, 'correct_label_wrong_domain': 7, 'both_wrong': 4}
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=greedy evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'completed', '0']
+Updating eval for job 22 to status completed with exit code 0
+Eval status update completed for job 22
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_025 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_025 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'running']
+Updating eval for job 22 to status running with exit code None
+Eval status update completed for job 22
+[2025-03-06 22:34:39,180][root][INFO] - Setting global seed to 206
+[2025-03-06 22:34:39,245][root][INFO] - Running evaluation of the trained model on the test_set_2
+[2025-03-06 22:34:39,245][root][INFO] - Current evaluation config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : structured 
+ Response Format : json 
+[2025-03-06 22:34:39,246][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_2.json
+[2025-03-06 22:34:39,248][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-03-06 22:34:39,261][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-03-06 22:34:39,261][root][INFO] - Questions selected, dataset contains 100 questions with 14.285714285714286 questions per domain
+[2025-03-06 22:34:39,626][root][INFO] - Loading model : meta-llama/Llama-3.1-8B-Instruct
+[2025-03-06 22:34:40,210][root][INFO] - Full model selected, loading model
+[2025-03-06 22:35:10,648][root][INFO] - Tokenizer special tokens: {'bos_token': '<|begin_of_text|>', 'eos_token': '<|end_of_text|>', 'pad_token': '[PAD]'} have been added
+[2025-03-06 22:37:04,250][root][INFO] - Fine-tuned model selected, loading adapter
+[2025-03-06 22:37:04,252][root][WARNING] - Inference will be done using model.generate instead of hf pipeline since peft model is not compatible with it
+[2025-03-06 22:37:46,522][root][INFO] - Peft model loaded successfully
+[2025-03-06 22:37:54,196][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'json', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-03-06 22:37:54,198][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:37:54,198][root][INFO] - Starting inference
+[2025-03-06 22:37:54,365][root][INFO] - Processing question number 0
+[2025-03-06 22:37:54,368][root][INFO] - Domain : Constitutional_law, Question : 1
+[2025-03-06 22:38:07,586][root][INFO] - Domain : Constitutional_law, Question : 6
+[2025-03-06 22:38:22,015][root][INFO] - Domain : Constitutional_law, Question : 13
+[2025-03-06 22:38:34,999][root][INFO] - Domain : Constitutional_law, Question : 20
+[2025-03-06 22:38:46,387][root][INFO] - Domain : Constitutional_law, Question : 27
+[2025-03-06 22:38:55,322][root][INFO] - Domain : Constitutional_law, Question : 35
+[2025-03-06 22:39:05,486][root][INFO] - Domain : Constitutional_law, Question : 41
+[2025-03-06 22:39:17,723][root][INFO] - Domain : Constitutional_law, Question : 49
+[2025-03-06 22:39:27,934][root][INFO] - Domain : Constitutional_law, Question : 56
+[2025-03-06 22:39:37,600][root][INFO] - Domain : Constitutional_law, Question : 62
+[2025-03-06 22:39:49,524][root][INFO] - Processing question number 10
+[2025-03-06 22:39:49,526][root][INFO] - Domain : Constitutional_law, Question : 70
+[2025-03-06 22:39:59,363][root][INFO] - Domain : Constitutional_law, Question : 78
+[2025-03-06 22:40:11,503][root][INFO] - Domain : Constitutional_law, Question : 86
+[2025-03-06 22:40:22,772][root][INFO] - Domain : Constitutional_law, Question : 99
+[2025-03-06 22:40:33,260][root][INFO] - Domain : Criminal_law, Question : 2
+[2025-03-06 22:40:45,545][root][INFO] - Domain : Criminal_law, Question : 8
+[2025-03-06 22:40:56,802][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-03-06 22:41:10,064][root][INFO] - Domain : Criminal_law, Question : 21
+[2025-03-06 22:41:21,491][root][INFO] - Domain : Criminal_law, Question : 29
+[2025-03-06 22:41:32,183][root][INFO] - Domain : Criminal_law, Question : 37
+[2025-03-06 22:41:45,636][root][INFO] - Processing question number 20
+[2025-03-06 22:41:45,638][root][INFO] - Domain : Criminal_law, Question : 44
+[2025-03-06 22:41:55,946][root][INFO] - Domain : Criminal_law, Question : 55
+[2025-03-06 22:42:07,242][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-03-06 22:42:15,993][root][INFO] - Domain : Criminal_law, Question : 71
+[2025-03-06 22:42:26,855][root][INFO] - Domain : Criminal_law, Question : 76
+[2025-03-06 22:42:37,625][root][INFO] - Domain : Criminal_law, Question : 83
+[2025-03-06 22:42:49,946][root][INFO] - Domain : Criminal_law, Question : 89
+[2025-03-06 22:43:04,460][root][INFO] - Domain : Criminal_law, Question : 96
+[2025-03-06 22:43:16,726][root][INFO] - Domain : Contracts, Question : 3
+[2025-03-06 22:43:29,010][root][INFO] - Domain : Contracts, Question : 7
+[2025-03-06 22:43:41,937][root][INFO] - Processing question number 30
+[2025-03-06 22:43:41,939][root][INFO] - Domain : Contracts, Question : 14
+[2025-03-06 22:43:51,334][root][INFO] - Domain : Contracts, Question : 24
+[2025-03-06 22:44:02,489][root][INFO] - Domain : Contracts, Question : 28
+[2025-03-06 22:44:14,835][root][INFO] - Domain : Contracts, Question : 34
+[2025-03-06 22:44:26,545][root][INFO] - Domain : Contracts, Question : 42
+[2025-03-06 22:44:40,177][root][INFO] - Domain : Contracts, Question : 48
+[2025-03-06 22:44:54,627][root][INFO] - Domain : Contracts, Question : 58
+[2025-03-06 22:45:07,581][root][INFO] - Domain : Contracts, Question : 65
+[2025-03-06 22:45:19,871][root][INFO] - Domain : Contracts, Question : 72
+[2025-03-06 22:45:29,926][root][INFO] - Domain : Contracts, Question : 77
+[2025-03-06 22:45:48,965][root][INFO] - Processing question number 40
+[2025-03-06 22:45:48,968][root][INFO] - Domain : Contracts, Question : 84
+[2025-03-06 22:46:00,995][root][INFO] - Domain : Contracts, Question : 87
+[2025-03-06 22:46:11,972][root][INFO] - Domain : Contracts, Question : 97
+[2025-03-06 22:46:24,455][root][INFO] - Domain : Evidence, Question : 4
+[2025-03-06 22:46:34,333][root][INFO] - Domain : Evidence, Question : 10
+[2025-03-06 22:46:48,349][root][INFO] - Domain : Evidence, Question : 16
+[2025-03-06 22:47:01,531][root][INFO] - Domain : Evidence, Question : 23
+[2025-03-06 22:47:11,846][root][INFO] - Domain : Evidence, Question : 31
+[2025-03-06 22:47:22,979][root][INFO] - Domain : Evidence, Question : 38
+[2025-03-06 22:47:34,442][root][INFO] - Domain : Evidence, Question : 43
+[2025-03-06 22:47:44,779][root][INFO] - Processing question number 50
+[2025-03-06 22:47:44,782][root][INFO] - Domain : Evidence, Question : 50
+[2025-03-06 22:47:56,925][root][INFO] - Domain : Evidence, Question : 51
+[2025-03-06 22:48:08,982][root][INFO] - Domain : Evidence, Question : 60
+[2025-03-06 22:48:21,919][root][INFO] - Domain : Evidence, Question : 73
+[2025-03-06 22:48:36,842][root][INFO] - Domain : Evidence, Question : 80
+[2025-03-06 22:48:48,450][root][INFO] - Domain : Evidence, Question : 85
+[2025-03-06 22:49:03,486][root][INFO] - Domain : Evidence, Question : 90
+[2025-03-06 22:49:18,136][root][INFO] - Domain : Evidence, Question : 98
+[2025-03-06 22:49:30,281][root][INFO] - Domain : Civil_procedure, Question : 5
+[2025-03-06 22:49:45,244][root][INFO] - Domain : Civil_procedure, Question : 12
+[2025-03-06 22:49:59,173][root][INFO] - Processing question number 60
+[2025-03-06 22:49:59,176][root][INFO] - Domain : Civil_procedure, Question : 19
+[2025-03-06 22:50:09,982][root][INFO] - Domain : Civil_procedure, Question : 26
+[2025-03-06 22:50:23,420][root][INFO] - Domain : Civil_procedure, Question : 33
+[2025-03-06 22:50:35,886][root][INFO] - Domain : Civil_procedure, Question : 40
+[2025-03-06 22:50:47,516][root][INFO] - Domain : Civil_procedure, Question : 47
+[2025-03-06 22:50:59,538][root][INFO] - Domain : Civil_procedure, Question : 54
+[2025-03-06 22:51:12,386][root][INFO] - Domain : Civil_procedure, Question : 61
+[2025-03-06 22:51:23,122][root][INFO] - Domain : Civil_procedure, Question : 68
+[2025-03-06 22:51:34,346][root][INFO] - Domain : Civil_procedure, Question : 75
+[2025-03-06 22:51:46,032][root][INFO] - Domain : Civil_procedure, Question : 82
+[2025-03-06 22:51:59,117][root][INFO] - Processing question number 70
+[2025-03-06 22:51:59,122][root][INFO] - Domain : Civil_procedure, Question : 93
+[2025-03-06 22:52:11,893][root][INFO] - Domain : Property, Question : 9
+[2025-03-06 22:52:23,840][root][INFO] - Domain : Property, Question : 17
+[2025-03-06 22:52:36,598][root][INFO] - Domain : Property, Question : 25
+[2025-03-06 22:52:50,270][root][INFO] - Domain : Property, Question : 30
+[2025-03-06 22:52:59,178][root][INFO] - Domain : Property, Question : 36
+[2025-03-06 22:53:11,684][root][INFO] - Domain : Property, Question : 46
+[2025-03-06 22:53:24,978][root][INFO] - Domain : Property, Question : 53
+[2025-03-06 22:53:36,705][root][INFO] - Domain : Property, Question : 59
+[2025-03-06 22:53:52,915][root][INFO] - Domain : Property, Question : 66
+[2025-03-06 22:54:05,856][root][INFO] - Processing question number 80
+[2025-03-06 22:54:05,860][root][INFO] - Domain : Property, Question : 69
+[2025-03-06 22:54:17,961][root][INFO] - Domain : Property, Question : 81
+[2025-03-06 22:54:26,828][root][INFO] - Domain : Property, Question : 88
+[2025-03-06 22:54:37,980][root][INFO] - Domain : Property, Question : 91
+[2025-03-06 22:54:50,354][root][INFO] - Domain : Property, Question : 94
+[2025-03-06 22:55:05,377][root][INFO] - Domain : Property, Question : 100
+[2025-03-06 22:55:17,391][root][INFO] - Domain : Torts, Question : 11
+[2025-03-06 22:55:31,165][root][INFO] - Domain : Torts, Question : 18
+[2025-03-06 22:55:43,007][root][INFO] - Domain : Torts, Question : 22
+[2025-03-06 22:55:53,815][root][INFO] - Domain : Torts, Question : 32
+[2025-03-06 22:56:08,269][root][INFO] - Processing question number 90
+[2025-03-06 22:56:08,273][root][INFO] - Domain : Torts, Question : 39
+[2025-03-06 22:56:21,133][root][INFO] - Domain : Torts, Question : 45
+[2025-03-06 22:56:34,852][root][INFO] - Domain : Torts, Question : 52
+[2025-03-06 22:56:45,582][root][INFO] - Domain : Torts, Question : 57
+[2025-03-06 22:56:56,275][root][INFO] - Domain : Torts, Question : 63
+[2025-03-06 22:57:09,353][root][INFO] - Domain : Torts, Question : 67
+[2025-03-06 22:57:25,688][root][INFO] - Domain : Torts, Question : 74
+[2025-03-06 22:57:40,131][root][INFO] - Domain : Torts, Question : 79
+[2025-03-06 22:57:49,690][root][INFO] - Domain : Torts, Question : 92
+[2025-03-06 22:57:58,488][root][INFO] - Domain : Torts, Question : 95
+[2025-03-06 22:58:12,129][root][INFO] - Inference complete
+[2025-03-06 22:58:12,129][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:58:12,135][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:58:12,147][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:58:12,152][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:58:12,152][root][INFO] - Saved parsed outputs
+[2025-03-06 22:58:12,152][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:58:12,153][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:58:12,153][root][INFO] - Saved parsing metadata
+[2025-03-06 22:58:12,154][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:58:12,156][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 22:58:12,157][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+Metrics successfully appended to master CSV.
+[2025-03-06 22:58:12,173][root][INFO] - Evaluation completed for json_answer_first_zero_shot_structured, on test_set_2
+[2025-03-06 22:58:12,174][root][INFO] - Summary of metrics : {'label_accuracy': 0.53, 'misclassification_rate': 0.47, 'combined_accuracy': 0.46, 'malformed_label': 0, 'malformed_domain': 11, 'total_predictions': 100, 'correct_predictions': 53, 'correct_label_and_domain': 46, 'Constitutional_Law_accuracy': 0.5, 'Contracts_accuracy': 0.3333333333333333, 'Criminal_Law_accuracy': 0.5714285714285714, 'Evidence_accuracy': 0.2, 'Real_Property_accuracy': 0.3333333333333333, 'Torts_accuracy': 0.7142857142857143, 'Civil_Procedure_accuracy': 0.6153846153846154, 'Constitutional_Law_confidence': 0.16, 'Contracts_confidence': 0.14, 'Criminal_Law_confidence': 0.14, 'Evidence_confidence': 0.11, 'Real_Property_confidence': 0.16, 'Torts_confidence': 0.14, 'Civil_Procedure_confidence': 0.15, 'correct_domain_wrong_label': 43, 'correct_label_wrong_domain': 7, 'both_wrong': 4}
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_025 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'completed', '0']
+Updating eval for job 22 to status completed with exit code 0
+Eval status update completed for job 22
+Running evaluation with config: seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_06 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_06 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'running']
+Updating eval for job 22 to status running with exit code None
+Eval status update completed for job 22
+[2025-03-06 22:58:20,399][root][INFO] - Setting global seed to 206
+[2025-03-06 22:58:20,405][root][INFO] - Running evaluation of the trained model on the test_set_2
+[2025-03-06 22:58:20,406][root][INFO] - Current evaluation config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : structured 
+ Response Format : json 
+[2025-03-06 22:58:20,407][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_2.json
+[2025-03-06 22:58:20,408][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-03-06 22:58:20,410][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-03-06 22:58:20,410][root][INFO] - Questions selected, dataset contains 100 questions with 14.285714285714286 questions per domain
+[2025-03-06 22:58:20,574][root][INFO] - Loading model : meta-llama/Llama-3.1-8B-Instruct
+[2025-03-06 22:58:21,152][root][INFO] - Full model selected, loading model
+[2025-03-06 22:58:45,951][root][INFO] - Tokenizer special tokens: {'bos_token': '<|begin_of_text|>', 'eos_token': '<|end_of_text|>', 'pad_token': '[PAD]'} have been added
+[2025-03-06 23:00:35,675][root][INFO] - Fine-tuned model selected, loading adapter
+[2025-03-06 23:00:35,675][root][WARNING] - Inference will be done using model.generate instead of hf pipeline since peft model is not compatible with it
+[2025-03-06 23:01:09,255][root][INFO] - Peft model loaded successfully
+[2025-03-06 23:01:16,469][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'json', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-03-06 23:01:16,471][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:01:16,471][root][INFO] - Starting inference
+[2025-03-06 23:01:16,702][root][INFO] - Processing question number 0
+[2025-03-06 23:01:16,704][root][INFO] - Domain : Constitutional_law, Question : 1
+[2025-03-06 23:01:28,510][root][INFO] - Domain : Constitutional_law, Question : 6
+[2025-03-06 23:01:41,925][root][INFO] - Domain : Constitutional_law, Question : 13
+[2025-03-06 23:01:53,951][root][INFO] - Domain : Constitutional_law, Question : 20
+[2025-03-06 23:02:06,543][root][INFO] - Domain : Constitutional_law, Question : 27
+[2025-03-06 23:02:15,136][root][INFO] - Domain : Constitutional_law, Question : 35
+[2025-03-06 23:02:25,361][root][INFO] - Domain : Constitutional_law, Question : 41
+[2025-03-06 23:02:36,708][root][INFO] - Domain : Constitutional_law, Question : 49
+[2025-03-06 23:02:46,338][root][INFO] - Domain : Constitutional_law, Question : 56
+[2025-03-06 23:02:56,669][root][INFO] - Domain : Constitutional_law, Question : 62
+[2025-03-06 23:03:08,036][root][INFO] - Processing question number 10
+[2025-03-06 23:03:08,038][root][INFO] - Domain : Constitutional_law, Question : 70
+[2025-03-06 23:03:16,797][root][INFO] - Domain : Constitutional_law, Question : 78
+[2025-03-06 23:03:28,761][root][INFO] - Domain : Constitutional_law, Question : 86
+[2025-03-06 23:03:39,292][root][INFO] - Domain : Constitutional_law, Question : 99
+[2025-03-06 23:03:50,344][root][INFO] - Domain : Criminal_law, Question : 2
+[2025-03-06 23:04:01,671][root][INFO] - Domain : Criminal_law, Question : 8
+[2025-03-06 23:04:13,516][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-03-06 23:04:25,461][root][INFO] - Domain : Criminal_law, Question : 21
+[2025-03-06 23:04:38,261][root][INFO] - Domain : Criminal_law, Question : 29
+[2025-03-06 23:04:50,030][root][INFO] - Domain : Criminal_law, Question : 37
+[2025-03-06 23:05:03,509][root][INFO] - Processing question number 20
+[2025-03-06 23:05:03,511][root][INFO] - Domain : Criminal_law, Question : 44
+[2025-03-06 23:05:14,200][root][INFO] - Domain : Criminal_law, Question : 55
+[2025-03-06 23:05:26,258][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-03-06 23:05:37,826][root][INFO] - Domain : Criminal_law, Question : 71
+[2025-03-06 23:05:47,347][root][INFO] - Domain : Criminal_law, Question : 76
+[2025-03-06 23:05:58,392][root][INFO] - Domain : Criminal_law, Question : 83
+[2025-03-06 23:06:10,504][root][INFO] - Domain : Criminal_law, Question : 89
+[2025-03-06 23:06:22,464][root][INFO] - Domain : Criminal_law, Question : 96
+[2025-03-06 23:06:34,024][root][INFO] - Domain : Contracts, Question : 3
+[2025-03-06 23:06:45,601][root][INFO] - Domain : Contracts, Question : 7
+[2025-03-06 23:06:58,403][root][INFO] - Processing question number 30
+[2025-03-06 23:06:58,405][root][INFO] - Domain : Contracts, Question : 14
+[2025-03-06 23:07:11,082][root][INFO] - Domain : Contracts, Question : 24
+[2025-03-06 23:07:23,121][root][INFO] - Domain : Contracts, Question : 28
+[2025-03-06 23:07:35,303][root][INFO] - Domain : Contracts, Question : 34
+[2025-03-06 23:07:48,981][root][INFO] - Domain : Contracts, Question : 42
+[2025-03-06 23:08:01,202][root][INFO] - Domain : Contracts, Question : 48
+[2025-03-06 23:08:14,514][root][INFO] - Domain : Contracts, Question : 58
+[2025-03-06 23:08:24,904][root][INFO] - Domain : Contracts, Question : 65
+[2025-03-06 23:08:37,743][root][INFO] - Domain : Contracts, Question : 72
+[2025-03-06 23:08:46,960][root][INFO] - Domain : Contracts, Question : 77
+[2025-03-06 23:08:59,343][root][INFO] - Processing question number 40
+[2025-03-06 23:08:59,345][root][INFO] - Domain : Contracts, Question : 84
+[2025-03-06 23:09:11,431][root][INFO] - Domain : Contracts, Question : 87
+[2025-03-06 23:09:22,208][root][INFO] - Domain : Contracts, Question : 97
+[2025-03-06 23:09:35,983][root][INFO] - Domain : Evidence, Question : 4
+[2025-03-06 23:09:44,662][root][INFO] - Domain : Evidence, Question : 10
+[2025-03-06 23:09:58,641][root][INFO] - Domain : Evidence, Question : 16
+[2025-03-06 23:10:09,078][root][INFO] - Domain : Evidence, Question : 23
+[2025-03-06 23:10:19,859][root][INFO] - Domain : Evidence, Question : 31
+[2025-03-06 23:10:31,504][root][INFO] - Domain : Evidence, Question : 38
+[2025-03-06 23:10:42,685][root][INFO] - Domain : Evidence, Question : 43
+[2025-03-06 23:10:52,468][root][INFO] - Processing question number 50
+[2025-03-06 23:10:52,471][root][INFO] - Domain : Evidence, Question : 50
+[2025-03-06 23:11:06,467][root][INFO] - Domain : Evidence, Question : 51
+[2025-03-06 23:11:19,436][root][INFO] - Domain : Evidence, Question : 60
+[2025-03-06 23:11:33,085][root][INFO] - Domain : Evidence, Question : 73
+[2025-03-06 23:11:45,324][root][INFO] - Domain : Evidence, Question : 80
+[2025-03-06 23:11:57,565][root][INFO] - Domain : Evidence, Question : 85
+[2025-03-06 23:12:11,951][root][INFO] - Domain : Evidence, Question : 90
+[2025-03-06 23:12:25,664][root][INFO] - Domain : Evidence, Question : 98
+[2025-03-06 23:12:36,396][root][INFO] - Domain : Civil_procedure, Question : 5
+[2025-03-06 23:12:49,802][root][INFO] - Domain : Civil_procedure, Question : 12
+[2025-03-06 23:13:02,019][root][INFO] - Processing question number 60
+[2025-03-06 23:13:02,023][root][INFO] - Domain : Civil_procedure, Question : 19
+[2025-03-06 23:13:14,761][root][INFO] - Domain : Civil_procedure, Question : 26
+[2025-03-06 23:13:27,627][root][INFO] - Domain : Civil_procedure, Question : 33
+[2025-03-06 23:13:41,924][root][INFO] - Domain : Civil_procedure, Question : 40
+[2025-03-06 23:13:54,743][root][INFO] - Domain : Civil_procedure, Question : 47
+[2025-03-06 23:14:05,544][root][INFO] - Domain : Civil_procedure, Question : 54
+[2025-03-06 23:14:17,449][root][INFO] - Domain : Civil_procedure, Question : 61
+[2025-03-06 23:14:31,173][root][INFO] - Domain : Civil_procedure, Question : 68
+[2025-03-06 23:14:42,401][root][INFO] - Domain : Civil_procedure, Question : 75
+[2025-03-06 23:14:53,064][root][INFO] - Domain : Civil_procedure, Question : 82
+[2025-03-06 23:15:05,480][root][INFO] - Processing question number 70
+[2025-03-06 23:15:05,484][root][INFO] - Domain : Civil_procedure, Question : 93
+[2025-03-06 23:15:17,395][root][INFO] - Domain : Property, Question : 9
+[2025-03-06 23:15:29,953][root][INFO] - Domain : Property, Question : 17
+[2025-03-06 23:15:43,366][root][INFO] - Domain : Property, Question : 25
+[2025-03-06 23:15:56,071][root][INFO] - Domain : Property, Question : 30
+[2025-03-06 23:16:06,104][root][INFO] - Domain : Property, Question : 36
+[2025-03-06 23:16:19,035][root][INFO] - Domain : Property, Question : 46
+[2025-03-06 23:16:32,568][root][INFO] - Domain : Property, Question : 53
+[2025-03-06 23:16:42,840][root][INFO] - Domain : Property, Question : 59
+[2025-03-06 23:16:52,739][root][INFO] - Domain : Property, Question : 66
+[2025-03-06 23:17:02,685][root][INFO] - Processing question number 80
+[2025-03-06 23:17:02,689][root][INFO] - Domain : Property, Question : 69
+[2025-03-06 23:17:14,408][root][INFO] - Domain : Property, Question : 81
+[2025-03-06 23:17:25,518][root][INFO] - Domain : Property, Question : 88
+[2025-03-06 23:17:37,198][root][INFO] - Domain : Property, Question : 91
+[2025-03-06 23:17:49,482][root][INFO] - Domain : Property, Question : 94
+[2025-03-06 23:18:04,676][root][INFO] - Domain : Property, Question : 100
+[2025-03-06 23:18:16,778][root][INFO] - Domain : Torts, Question : 11
+[2025-03-06 23:18:30,350][root][INFO] - Domain : Torts, Question : 18
+[2025-03-06 23:18:42,149][root][INFO] - Domain : Torts, Question : 22
+[2025-03-06 23:18:55,085][root][INFO] - Domain : Torts, Question : 32
+[2025-03-06 23:19:06,739][root][INFO] - Processing question number 90
+[2025-03-06 23:19:06,743][root][INFO] - Domain : Torts, Question : 39
+[2025-03-06 23:19:19,739][root][INFO] - Domain : Torts, Question : 45
+[2025-03-06 23:19:32,970][root][INFO] - Domain : Torts, Question : 52
+[2025-03-06 23:19:43,523][root][INFO] - Domain : Torts, Question : 57
+[2025-03-06 23:19:55,305][root][INFO] - Domain : Torts, Question : 63
+[2025-03-06 23:20:08,039][root][INFO] - Domain : Torts, Question : 67
+[2025-03-06 23:20:21,456][root][INFO] - Domain : Torts, Question : 74
+[2025-03-06 23:20:33,936][root][INFO] - Domain : Torts, Question : 79
+[2025-03-06 23:20:44,856][root][INFO] - Domain : Torts, Question : 92
+[2025-03-06 23:20:53,628][root][INFO] - Domain : Torts, Question : 95
+[2025-03-06 23:21:05,077][root][INFO] - Inference complete
+[2025-03-06 23:21:05,077][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:21:05,082][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:21:05,085][root][WARNING] - |Q. 21||D: Criminal_law| has broken JSON output. Attempting to fix it.
+[2025-03-06 23:21:05,085][root][WARNING] - |Q. 21||D: Criminal_law| Successfully fixed invalid JSON. Not all fields may be present.
+[2025-03-06 23:21:05,085][root][INFO] - |Q. 21||D: Criminal_law| was made valid into Valid json. Extracting responses.
+[2025-03-06 23:21:05,095][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:21:05,100][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:21:05,100][root][INFO] - Saved parsed outputs
+[2025-03-06 23:21:05,100][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:21:05,101][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:21:05,101][root][INFO] - Saved parsing metadata
+[2025-03-06 23:21:05,102][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:21:05,103][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:21:05,105][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_206/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+Metrics successfully appended to master CSV.
+[2025-03-06 23:21:05,123][root][INFO] - Evaluation completed for json_answer_first_zero_shot_structured, on test_set_2
+[2025-03-06 23:21:05,123][root][INFO] - Summary of metrics : {'label_accuracy': 0.52, 'misclassification_rate': 0.48, 'combined_accuracy': 0.45, 'malformed_label': 0, 'malformed_domain': 11, 'total_predictions': 100, 'correct_predictions': 52, 'correct_label_and_domain': 45, 'Constitutional_Law_accuracy': 0.5, 'Contracts_accuracy': 0.3333333333333333, 'Criminal_Law_accuracy': 0.5, 'Evidence_accuracy': 0.2, 'Real_Property_accuracy': 0.3333333333333333, 'Torts_accuracy': 0.7142857142857143, 'Civil_Procedure_accuracy': 0.6153846153846154, 'Constitutional_Law_confidence': 0.16, 'Contracts_confidence': 0.14, 'Criminal_Law_confidence': 0.14, 'Evidence_confidence': 0.11, 'Real_Property_confidence': 0.16, 'Torts_confidence': 0.14, 'Civil_Procedure_confidence': 0.15, 'correct_domain_wrong_label': 44, 'correct_label_wrong_domain': 7, 'both_wrong': 4}
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_206 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_06 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'completed', '0']
+Updating eval for job 22 to status completed with exit code 0
+Eval status update completed for job 22
+Running evaluation with config: seeds=seed_989 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=greedy evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_989 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=greedy evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'running']
+Updating eval for job 22 to status running with exit code None
+Eval status update completed for job 22
+[2025-03-06 23:21:13,089][root][INFO] - Setting global seed to 989
+[2025-03-06 23:21:13,096][root][INFO] - Running evaluation of the trained model on the test_set_2
+[2025-03-06 23:21:13,096][root][INFO] - Current evaluation config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : structured 
+ Response Format : json 
+[2025-03-06 23:21:13,098][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_2.json
+[2025-03-06 23:21:13,099][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-03-06 23:21:13,101][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-03-06 23:21:13,102][root][INFO] - Questions selected, dataset contains 100 questions with 14.285714285714286 questions per domain
+[2025-03-06 23:21:13,256][root][INFO] - Loading model : meta-llama/Llama-3.1-8B-Instruct
+[2025-03-06 23:21:13,919][root][INFO] - Full model selected, loading model
+[2025-03-06 23:21:38,107][root][INFO] - Tokenizer special tokens: {'bos_token': '<|begin_of_text|>', 'eos_token': '<|end_of_text|>', 'pad_token': '[PAD]'} have been added
+[2025-03-06 23:23:26,267][root][INFO] - Fine-tuned model selected, loading adapter
+[2025-03-06 23:23:26,267][root][WARNING] - Inference will be done using model.generate instead of hf pipeline since peft model is not compatible with it
+[2025-03-06 23:24:01,707][root][INFO] - Peft model loaded successfully
+[2025-03-06 23:24:08,971][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'json', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-03-06 23:24:08,973][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:24:08,973][root][INFO] - Starting inference
+[2025-03-06 23:24:09,214][root][INFO] - Processing question number 0
+[2025-03-06 23:24:09,217][root][INFO] - Domain : Constitutional_law, Question : 1
+[2025-03-06 23:24:20,405][root][INFO] - Domain : Constitutional_law, Question : 6
+[2025-03-06 23:24:34,085][root][INFO] - Domain : Constitutional_law, Question : 13
+[2025-03-06 23:24:47,048][root][INFO] - Domain : Constitutional_law, Question : 20
+[2025-03-06 23:24:58,628][root][INFO] - Domain : Constitutional_law, Question : 27
+[2025-03-06 23:25:07,442][root][INFO] - Domain : Constitutional_law, Question : 35
+[2025-03-06 23:25:17,965][root][INFO] - Domain : Constitutional_law, Question : 41
+[2025-03-06 23:25:29,560][root][INFO] - Domain : Constitutional_law, Question : 49
+[2025-03-06 23:25:40,615][root][INFO] - Domain : Constitutional_law, Question : 56
+[2025-03-06 23:25:50,238][root][INFO] - Domain : Constitutional_law, Question : 62
+[2025-03-06 23:26:00,166][root][INFO] - Processing question number 10
+[2025-03-06 23:26:00,167][root][INFO] - Domain : Constitutional_law, Question : 70
+[2025-03-06 23:26:11,676][root][INFO] - Domain : Constitutional_law, Question : 78
+[2025-03-06 23:26:24,179][root][INFO] - Domain : Constitutional_law, Question : 86
+[2025-03-06 23:26:35,798][root][INFO] - Domain : Constitutional_law, Question : 99
+[2025-03-06 23:26:46,501][root][INFO] - Domain : Criminal_law, Question : 2
+[2025-03-06 23:26:58,289][root][INFO] - Domain : Criminal_law, Question : 8
+[2025-03-06 23:27:09,168][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-03-06 23:27:20,254][root][INFO] - Domain : Criminal_law, Question : 21
+[2025-03-06 23:27:32,529][root][INFO] - Domain : Criminal_law, Question : 29
+[2025-03-06 23:27:43,540][root][INFO] - Domain : Criminal_law, Question : 37
+[2025-03-06 23:27:54,926][root][INFO] - Processing question number 20
+[2025-03-06 23:27:54,929][root][INFO] - Domain : Criminal_law, Question : 44
+[2025-03-06 23:28:07,220][root][INFO] - Domain : Criminal_law, Question : 55
+[2025-03-06 23:28:18,511][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-03-06 23:28:27,125][root][INFO] - Domain : Criminal_law, Question : 71
+[2025-03-06 23:28:35,261][root][INFO] - Domain : Criminal_law, Question : 76
+[2025-03-06 23:28:46,631][root][INFO] - Domain : Criminal_law, Question : 83
+[2025-03-06 23:28:58,533][root][INFO] - Domain : Criminal_law, Question : 89
+[2025-03-06 23:29:10,969][root][INFO] - Domain : Criminal_law, Question : 96
+[2025-03-06 23:29:23,011][root][INFO] - Domain : Contracts, Question : 3
+[2025-03-06 23:29:34,419][root][INFO] - Domain : Contracts, Question : 7
+[2025-03-06 23:29:47,107][root][INFO] - Processing question number 30
+[2025-03-06 23:29:47,110][root][INFO] - Domain : Contracts, Question : 14
+[2025-03-06 23:29:58,142][root][INFO] - Domain : Contracts, Question : 24
+[2025-03-06 23:30:10,846][root][INFO] - Domain : Contracts, Question : 28
+[2025-03-06 23:30:22,119][root][INFO] - Domain : Contracts, Question : 34
+[2025-03-06 23:30:35,386][root][INFO] - Domain : Contracts, Question : 42
+[2025-03-06 23:30:49,505][root][INFO] - Domain : Contracts, Question : 48
+[2025-03-06 23:31:02,146][root][INFO] - Domain : Contracts, Question : 58
+[2025-03-06 23:31:12,254][root][INFO] - Domain : Contracts, Question : 65
+[2025-03-06 23:31:24,300][root][INFO] - Domain : Contracts, Question : 72
+[2025-03-06 23:31:34,063][root][INFO] - Domain : Contracts, Question : 77
+[2025-03-06 23:31:48,313][root][INFO] - Processing question number 40
+[2025-03-06 23:31:48,316][root][INFO] - Domain : Contracts, Question : 84
+[2025-03-06 23:32:00,014][root][INFO] - Domain : Contracts, Question : 87
+[2025-03-06 23:32:10,764][root][INFO] - Domain : Contracts, Question : 97
+[2025-03-06 23:32:22,750][root][INFO] - Domain : Evidence, Question : 4
+[2025-03-06 23:32:32,727][root][INFO] - Domain : Evidence, Question : 10
+[2025-03-06 23:32:45,369][root][INFO] - Domain : Evidence, Question : 16
+[2025-03-06 23:32:57,999][root][INFO] - Domain : Evidence, Question : 23
+[2025-03-06 23:33:08,155][root][INFO] - Domain : Evidence, Question : 31
+[2025-03-06 23:33:19,070][root][INFO] - Domain : Evidence, Question : 38
+[2025-03-06 23:33:31,291][root][INFO] - Domain : Evidence, Question : 43
+[2025-03-06 23:33:41,566][root][INFO] - Processing question number 50
+[2025-03-06 23:33:41,569][root][INFO] - Domain : Evidence, Question : 50
+[2025-03-06 23:33:53,196][root][INFO] - Domain : Evidence, Question : 51
+[2025-03-06 23:34:05,099][root][INFO] - Domain : Evidence, Question : 60
+[2025-03-06 23:34:17,797][root][INFO] - Domain : Evidence, Question : 73
+[2025-03-06 23:34:32,476][root][INFO] - Domain : Evidence, Question : 80
+[2025-03-06 23:34:42,612][root][INFO] - Domain : Evidence, Question : 85
+[2025-03-06 23:34:56,054][root][INFO] - Domain : Evidence, Question : 90
+[2025-03-06 23:35:10,154][root][INFO] - Domain : Evidence, Question : 98
+[2025-03-06 23:35:23,348][root][INFO] - Domain : Civil_procedure, Question : 5
+[2025-03-06 23:35:35,995][root][INFO] - Domain : Civil_procedure, Question : 12
+[2025-03-06 23:35:50,225][root][INFO] - Processing question number 60
+[2025-03-06 23:35:50,229][root][INFO] - Domain : Civil_procedure, Question : 19
+[2025-03-06 23:36:03,378][root][INFO] - Domain : Civil_procedure, Question : 26
+[2025-03-06 23:36:16,560][root][INFO] - Domain : Civil_procedure, Question : 33
+[2025-03-06 23:36:30,443][root][INFO] - Domain : Civil_procedure, Question : 40
+[2025-03-06 23:36:43,533][root][INFO] - Domain : Civil_procedure, Question : 47
+[2025-03-06 23:36:57,951][root][INFO] - Domain : Civil_procedure, Question : 54
+[2025-03-06 23:37:10,546][root][INFO] - Domain : Civil_procedure, Question : 61
+[2025-03-06 23:37:22,953][root][INFO] - Domain : Civil_procedure, Question : 68
+[2025-03-06 23:37:33,967][root][INFO] - Domain : Civil_procedure, Question : 75
+[2025-03-06 23:37:47,518][root][INFO] - Domain : Civil_procedure, Question : 82
+[2025-03-06 23:38:00,314][root][INFO] - Processing question number 70
+[2025-03-06 23:38:00,318][root][INFO] - Domain : Civil_procedure, Question : 93
+[2025-03-06 23:38:12,724][root][INFO] - Domain : Property, Question : 9
+[2025-03-06 23:38:26,118][root][INFO] - Domain : Property, Question : 17
+[2025-03-06 23:38:37,434][root][INFO] - Domain : Property, Question : 25
+[2025-03-06 23:38:52,874][root][INFO] - Domain : Property, Question : 30
+[2025-03-06 23:39:02,935][root][INFO] - Domain : Property, Question : 36
+[2025-03-06 23:39:16,574][root][INFO] - Domain : Property, Question : 46
+[2025-03-06 23:39:29,636][root][INFO] - Domain : Property, Question : 53
+[2025-03-06 23:39:42,082][root][INFO] - Domain : Property, Question : 59
+[2025-03-06 23:39:54,246][root][INFO] - Domain : Property, Question : 66
+[2025-03-06 23:40:05,099][root][INFO] - Processing question number 80
+[2025-03-06 23:40:05,103][root][INFO] - Domain : Property, Question : 69
+[2025-03-06 23:40:17,872][root][INFO] - Domain : Property, Question : 81
+[2025-03-06 23:40:31,412][root][INFO] - Domain : Property, Question : 88
+[2025-03-06 23:40:42,456][root][INFO] - Domain : Property, Question : 91
+[2025-03-06 23:40:54,600][root][INFO] - Domain : Property, Question : 94
+[2025-03-06 23:41:09,256][root][INFO] - Domain : Property, Question : 100
+[2025-03-06 23:41:21,142][root][INFO] - Domain : Torts, Question : 11
+[2025-03-06 23:41:34,663][root][INFO] - Domain : Torts, Question : 18
+[2025-03-06 23:41:47,803][root][INFO] - Domain : Torts, Question : 22
+[2025-03-06 23:41:59,858][root][INFO] - Domain : Torts, Question : 32
+[2025-03-06 23:42:13,209][root][INFO] - Processing question number 90
+[2025-03-06 23:42:13,213][root][INFO] - Domain : Torts, Question : 39
+[2025-03-06 23:42:25,833][root][INFO] - Domain : Torts, Question : 45
+[2025-03-06 23:42:44,770][root][INFO] - Domain : Torts, Question : 52
+[2025-03-06 23:42:55,313][root][INFO] - Domain : Torts, Question : 57
+[2025-03-06 23:43:05,861][root][INFO] - Domain : Torts, Question : 63
+[2025-03-06 23:43:19,322][root][INFO] - Domain : Torts, Question : 67
+[2025-03-06 23:43:31,232][root][INFO] - Domain : Torts, Question : 74
+[2025-03-06 23:43:43,861][root][INFO] - Domain : Torts, Question : 79
+[2025-03-06 23:43:54,486][root][INFO] - Domain : Torts, Question : 92
+[2025-03-06 23:44:03,120][root][INFO] - Domain : Torts, Question : 95
+[2025-03-06 23:44:16,234][root][INFO] - Inference complete
+[2025-03-06 23:44:16,234][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:44:16,239][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:44:16,243][root][WARNING] - |Q. 89||D: Criminal_law| has broken JSON output. Attempting to fix it.
+[2025-03-06 23:44:16,243][root][WARNING] - |Q. 89||D: Criminal_law| Successfully fixed invalid JSON. Not all fields may be present.
+[2025-03-06 23:44:16,243][root][INFO] - |Q. 89||D: Criminal_law| was made valid into Valid json. Extracting responses.
+[2025-03-06 23:44:16,248][root][WARNING] - |Q. 61||D: Civil_procedure| has broken JSON output. Attempting to fix it.
+[2025-03-06 23:44:16,248][root][WARNING] - |Q. 61||D: Civil_procedure| Failed to fix invalid JSON, extracting as many fields as possible.
+[2025-03-06 23:44:16,249][root][INFO] - |Q. 61||D: Civil_procedure| was made valid into Valid json. Extracting responses.
+[2025-03-06 23:44:16,253][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:44:16,258][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:44:16,258][root][INFO] - Saved parsed outputs
+[2025-03-06 23:44:16,258][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:44:16,276][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:44:16,276][root][INFO] - Saved parsing metadata
+[2025-03-06 23:44:16,276][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:44:16,278][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:44:16,279][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/greedy/json_answer_first_zero_shot_structured/test_set_2.json
+Metrics successfully appended to master CSV.
+[2025-03-06 23:44:16,292][root][INFO] - Evaluation completed for json_answer_first_zero_shot_structured, on test_set_2
+[2025-03-06 23:44:16,292][root][INFO] - Summary of metrics : {'label_accuracy': 0.54, 'misclassification_rate': 0.45999999999999996, 'combined_accuracy': 0.47, 'malformed_label': 0, 'malformed_domain': 11, 'total_predictions': 100, 'correct_predictions': 54, 'correct_label_and_domain': 47, 'Constitutional_Law_accuracy': 0.5, 'Contracts_accuracy': 0.3333333333333333, 'Criminal_Law_accuracy': 0.5714285714285714, 'Evidence_accuracy': 0.26666666666666666, 'Real_Property_accuracy': 0.3333333333333333, 'Torts_accuracy': 0.7142857142857143, 'Civil_Procedure_accuracy': 0.6153846153846154, 'Constitutional_Law_confidence': 0.16, 'Contracts_confidence': 0.14, 'Criminal_Law_confidence': 0.14, 'Evidence_confidence': 0.11, 'Real_Property_confidence': 0.16, 'Torts_confidence': 0.14, 'Civil_Procedure_confidence': 0.15, 'correct_domain_wrong_label': 42, 'correct_label_wrong_domain': 7, 'both_wrong': 4}
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_989 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=greedy evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'completed', '0']
+Updating eval for job 22 to status completed with exit code 0
+Eval status update completed for job 22
+Running evaluation with config: seeds=seed_989 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_025 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_989 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_025 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'running']
+Updating eval for job 22 to status running with exit code None
+Eval status update completed for job 22
+[2025-03-06 23:44:42,146][root][INFO] - Setting global seed to 989
+[2025-03-06 23:44:42,189][root][INFO] - Running evaluation of the trained model on the test_set_2
+[2025-03-06 23:44:42,189][root][INFO] - Current evaluation config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : structured 
+ Response Format : json 
+[2025-03-06 23:44:42,190][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_2.json
+[2025-03-06 23:44:42,192][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-03-06 23:44:42,196][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-03-06 23:44:42,196][root][INFO] - Questions selected, dataset contains 100 questions with 14.285714285714286 questions per domain
+[2025-03-06 23:44:42,357][root][INFO] - Loading model : meta-llama/Llama-3.1-8B-Instruct
+[2025-03-06 23:44:42,937][root][INFO] - Full model selected, loading model
+[2025-03-06 23:45:08,043][root][INFO] - Tokenizer special tokens: {'bos_token': '<|begin_of_text|>', 'eos_token': '<|end_of_text|>', 'pad_token': '[PAD]'} have been added
+[2025-03-06 23:47:00,348][root][INFO] - Fine-tuned model selected, loading adapter
+[2025-03-06 23:47:00,349][root][WARNING] - Inference will be done using model.generate instead of hf pipeline since peft model is not compatible with it
+[2025-03-06 23:47:33,278][root][INFO] - Peft model loaded successfully
+[2025-03-06 23:47:40,500][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'json', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-03-06 23:47:40,501][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-06 23:47:40,501][root][INFO] - Starting inference
+[2025-03-06 23:47:40,722][root][INFO] - Processing question number 0
+[2025-03-06 23:47:40,724][root][INFO] - Domain : Constitutional_law, Question : 1
+[2025-03-06 23:47:56,500][root][INFO] - Domain : Constitutional_law, Question : 6
+[2025-03-06 23:48:10,336][root][INFO] - Domain : Constitutional_law, Question : 13
+[2025-03-06 23:48:23,895][root][INFO] - Domain : Constitutional_law, Question : 20
+[2025-03-06 23:48:35,386][root][INFO] - Domain : Constitutional_law, Question : 27
+[2025-03-06 23:48:44,814][root][INFO] - Domain : Constitutional_law, Question : 35
+[2025-03-06 23:48:54,994][root][INFO] - Domain : Constitutional_law, Question : 41
+[2025-03-06 23:49:07,562][root][INFO] - Domain : Constitutional_law, Question : 49
+[2025-03-06 23:49:16,998][root][INFO] - Domain : Constitutional_law, Question : 56
+[2025-03-06 23:49:27,183][root][INFO] - Domain : Constitutional_law, Question : 62
+[2025-03-06 23:49:38,354][root][INFO] - Processing question number 10
+[2025-03-06 23:49:38,356][root][INFO] - Domain : Constitutional_law, Question : 70
+[2025-03-06 23:49:50,226][root][INFO] - Domain : Constitutional_law, Question : 78
+[2025-03-06 23:50:02,171][root][INFO] - Domain : Constitutional_law, Question : 86
+[2025-03-06 23:50:13,118][root][INFO] - Domain : Constitutional_law, Question : 99
+[2025-03-06 23:50:23,333][root][INFO] - Domain : Criminal_law, Question : 2
+[2025-03-06 23:50:34,577][root][INFO] - Domain : Criminal_law, Question : 8
+[2025-03-06 23:50:45,931][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-03-06 23:50:59,414][root][INFO] - Domain : Criminal_law, Question : 21
+[2025-03-06 23:51:10,985][root][INFO] - Domain : Criminal_law, Question : 29
+[2025-03-06 23:51:22,017][root][INFO] - Domain : Criminal_law, Question : 37
+[2025-03-06 23:51:33,430][root][INFO] - Processing question number 20
+[2025-03-06 23:51:33,432][root][INFO] - Domain : Criminal_law, Question : 44
+[2025-03-06 23:51:44,864][root][INFO] - Domain : Criminal_law, Question : 55
+[2025-03-06 23:51:57,060][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-03-06 23:52:07,868][root][INFO] - Domain : Criminal_law, Question : 71
+[2025-03-06 23:52:16,565][root][INFO] - Domain : Criminal_law, Question : 76
+[2025-03-06 23:52:27,481][root][INFO] - Domain : Criminal_law, Question : 83
+[2025-03-06 23:52:39,704][root][INFO] - Domain : Criminal_law, Question : 89
+[2025-03-06 23:52:51,614][root][INFO] - Domain : Criminal_law, Question : 96
+[2025-03-06 23:53:03,553][root][INFO] - Domain : Contracts, Question : 3
+[2025-03-06 23:53:15,929][root][INFO] - Domain : Contracts, Question : 7
+[2025-03-06 23:53:27,387][root][INFO] - Processing question number 30
+[2025-03-06 23:53:27,390][root][INFO] - Domain : Contracts, Question : 14
+[2025-03-06 23:53:39,900][root][INFO] - Domain : Contracts, Question : 24
+[2025-03-06 23:53:51,901][root][INFO] - Domain : Contracts, Question : 28
+[2025-03-06 23:54:02,654][root][INFO] - Domain : Contracts, Question : 34
+[2025-03-06 23:54:14,366][root][INFO] - Domain : Contracts, Question : 42
+[2025-03-06 23:54:26,803][root][INFO] - Domain : Contracts, Question : 48
+[2025-03-06 23:54:39,582][root][INFO] - Domain : Contracts, Question : 58
+[2025-03-06 23:54:51,535][root][INFO] - Domain : Contracts, Question : 65
+[2025-03-06 23:55:06,384][root][INFO] - Domain : Contracts, Question : 72
+[2025-03-06 23:55:15,561][root][INFO] - Domain : Contracts, Question : 77
+[2025-03-06 23:55:34,630][root][INFO] - Processing question number 40
+[2025-03-06 23:55:34,634][root][INFO] - Domain : Contracts, Question : 84
+[2025-03-06 23:55:45,955][root][INFO] - Domain : Contracts, Question : 87
+[2025-03-06 23:55:57,289][root][INFO] - Domain : Contracts, Question : 97
+[2025-03-06 23:56:10,824][root][INFO] - Domain : Evidence, Question : 4
+[2025-03-06 23:56:20,319][root][INFO] - Domain : Evidence, Question : 10
+[2025-03-06 23:56:35,119][root][INFO] - Domain : Evidence, Question : 16
+[2025-03-06 23:56:45,739][root][INFO] - Domain : Evidence, Question : 23
+[2025-03-06 23:56:56,008][root][INFO] - Domain : Evidence, Question : 31
+[2025-03-06 23:57:07,572][root][INFO] - Domain : Evidence, Question : 38
+[2025-03-06 23:57:19,361][root][INFO] - Domain : Evidence, Question : 43
+[2025-03-06 23:57:29,655][root][INFO] - Processing question number 50
+[2025-03-06 23:57:29,658][root][INFO] - Domain : Evidence, Question : 50
+[2025-03-06 23:57:42,554][root][INFO] - Domain : Evidence, Question : 51
+[2025-03-06 23:57:54,179][root][INFO] - Domain : Evidence, Question : 60
+[2025-03-06 23:58:07,350][root][INFO] - Domain : Evidence, Question : 73
+[2025-03-06 23:58:22,206][root][INFO] - Domain : Evidence, Question : 80
+[2025-03-06 23:58:32,370][root][INFO] - Domain : Evidence, Question : 85
+[2025-03-06 23:58:44,643][root][INFO] - Domain : Evidence, Question : 90
+[2025-03-06 23:58:55,602][root][INFO] - Domain : Evidence, Question : 98
+[2025-03-06 23:59:06,288][root][INFO] - Domain : Civil_procedure, Question : 5
+[2025-03-06 23:59:19,225][root][INFO] - Domain : Civil_procedure, Question : 12
+[2025-03-06 23:59:34,136][root][INFO] - Processing question number 60
+[2025-03-06 23:59:34,139][root][INFO] - Domain : Civil_procedure, Question : 19
+[2025-03-06 23:59:44,622][root][INFO] - Domain : Civil_procedure, Question : 26
+[2025-03-06 23:59:57,959][root][INFO] - Domain : Civil_procedure, Question : 33
+[2025-03-07 00:00:11,879][root][INFO] - Domain : Civil_procedure, Question : 40
+[2025-03-07 00:00:24,939][root][INFO] - Domain : Civil_procedure, Question : 47
+[2025-03-07 00:00:37,293][root][INFO] - Domain : Civil_procedure, Question : 54
+[2025-03-07 00:00:49,060][root][INFO] - Domain : Civil_procedure, Question : 61
+[2025-03-07 00:01:00,773][root][INFO] - Domain : Civil_procedure, Question : 68
+[2025-03-07 00:01:11,585][root][INFO] - Domain : Civil_procedure, Question : 75
+[2025-03-07 00:01:23,924][root][INFO] - Domain : Civil_procedure, Question : 82
+[2025-03-07 00:01:36,902][root][INFO] - Processing question number 70
+[2025-03-07 00:01:36,906][root][INFO] - Domain : Civil_procedure, Question : 93
+[2025-03-07 00:01:50,659][root][INFO] - Domain : Property, Question : 9
+[2025-03-07 00:02:03,035][root][INFO] - Domain : Property, Question : 17
+[2025-03-07 00:02:15,458][root][INFO] - Domain : Property, Question : 25
+[2025-03-07 00:02:28,073][root][INFO] - Domain : Property, Question : 30
+[2025-03-07 00:02:38,204][root][INFO] - Domain : Property, Question : 36
+[2025-03-07 00:02:50,853][root][INFO] - Domain : Property, Question : 46
+[2025-03-07 00:03:03,726][root][INFO] - Domain : Property, Question : 53
+[2025-03-07 00:03:16,561][root][INFO] - Domain : Property, Question : 59
+[2025-03-07 00:03:30,117][root][INFO] - Domain : Property, Question : 66
+[2025-03-07 00:03:40,770][root][INFO] - Processing question number 80
+[2025-03-07 00:03:40,774][root][INFO] - Domain : Property, Question : 69
+[2025-03-07 00:03:53,264][root][INFO] - Domain : Property, Question : 81
+[2025-03-07 00:04:05,531][root][INFO] - Domain : Property, Question : 88
+[2025-03-07 00:04:15,993][root][INFO] - Domain : Property, Question : 91
+[2025-03-07 00:04:27,295][root][INFO] - Domain : Property, Question : 94
+[2025-03-07 00:04:41,243][root][INFO] - Domain : Property, Question : 100
+[2025-03-07 00:04:53,217][root][INFO] - Domain : Torts, Question : 11
+[2025-03-07 00:05:06,365][root][INFO] - Domain : Torts, Question : 18
+[2025-03-07 00:05:17,746][root][INFO] - Domain : Torts, Question : 22
+[2025-03-07 00:05:30,124][root][INFO] - Domain : Torts, Question : 32
+[2025-03-07 00:05:43,621][root][INFO] - Processing question number 90
+[2025-03-07 00:05:43,626][root][INFO] - Domain : Torts, Question : 39
+[2025-03-07 00:05:56,581][root][INFO] - Domain : Torts, Question : 45
+[2025-03-07 00:06:12,902][root][INFO] - Domain : Torts, Question : 52
+[2025-03-07 00:06:23,556][root][INFO] - Domain : Torts, Question : 57
+[2025-03-07 00:06:34,028][root][INFO] - Domain : Torts, Question : 63
+[2025-03-07 00:06:47,199][root][INFO] - Domain : Torts, Question : 67
+[2025-03-07 00:06:59,235][root][INFO] - Domain : Torts, Question : 74
+[2025-03-07 00:07:12,307][root][INFO] - Domain : Torts, Question : 79
+[2025-03-07 00:07:23,281][root][INFO] - Domain : Torts, Question : 92
+[2025-03-07 00:07:32,014][root][INFO] - Domain : Torts, Question : 95
+[2025-03-07 00:07:44,132][root][INFO] - Inference complete
+[2025-03-07 00:07:44,133][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:07:44,138][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:07:44,140][root][WARNING] - |Q. 99||D: Constitutional_law| has broken JSON output. Attempting to fix it.
+[2025-03-07 00:07:44,141][root][WARNING] - |Q. 99||D: Constitutional_law| Successfully fixed invalid JSON. Not all fields may be present.
+[2025-03-07 00:07:44,141][root][INFO] - |Q. 99||D: Constitutional_law| was made valid into Valid json. Extracting responses.
+[2025-03-07 00:07:44,151][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:07:44,156][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:07:44,156][root][INFO] - Saved parsed outputs
+[2025-03-07 00:07:44,156][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:07:44,171][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:07:44,171][root][INFO] - Saved parsing metadata
+[2025-03-07 00:07:44,171][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:07:44,173][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:07:44,174][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_025/json_answer_first_zero_shot_structured/test_set_2.json
+Metrics successfully appended to master CSV.
+[2025-03-07 00:07:44,186][root][INFO] - Evaluation completed for json_answer_first_zero_shot_structured, on test_set_2
+[2025-03-07 00:07:44,186][root][INFO] - Summary of metrics : {'label_accuracy': 0.54, 'misclassification_rate': 0.45999999999999996, 'combined_accuracy': 0.47, 'malformed_label': 0, 'malformed_domain': 10, 'total_predictions': 100, 'correct_predictions': 54, 'correct_label_and_domain': 47, 'Constitutional_Law_accuracy': 0.5, 'Contracts_accuracy': 0.3333333333333333, 'Criminal_Law_accuracy': 0.5714285714285714, 'Evidence_accuracy': 0.26666666666666666, 'Real_Property_accuracy': 0.3333333333333333, 'Torts_accuracy': 0.7142857142857143, 'Civil_Procedure_accuracy': 0.6153846153846154, 'Constitutional_Law_confidence': 0.16, 'Contracts_confidence': 0.14, 'Criminal_Law_confidence': 0.14, 'Evidence_confidence': 0.12, 'Real_Property_confidence': 0.16, 'Torts_confidence': 0.14, 'Civil_Procedure_confidence': 0.14, 'correct_domain_wrong_label': 43, 'correct_label_wrong_domain': 7, 'both_wrong': 3}
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_989 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_025 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'completed', '0']
+Updating eval for job 22 to status completed with exit code 0
+Eval status update completed for job 22
+Running evaluation with config: seeds=seed_989 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_06 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_989 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_06 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'running']
+Updating eval for job 22 to status running with exit code None
+Eval status update completed for job 22
+[2025-03-07 00:07:53,845][root][INFO] - Setting global seed to 989
+[2025-03-07 00:07:53,854][root][INFO] - Running evaluation of the trained model on the test_set_2
+[2025-03-07 00:07:53,854][root][INFO] - Current evaluation config is : 
+ Prompt type : zero_shot 
+ Response type : answer_first 
+ Explanation type : structured 
+ Response Format : json 
+[2025-03-07 00:07:53,855][root][INFO] - Loading dataset from /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/dataset/test_sets/bar_set_2.json
+[2025-03-07 00:07:53,856][root][INFO] - Dataset loaded successfully, indexing questions...
+[2025-03-07 00:07:53,859][root][INFO] - Indexing complete, sampling of questions set to False
+[2025-03-07 00:07:53,859][root][INFO] - Questions selected, dataset contains 100 questions with 14.285714285714286 questions per domain
+[2025-03-07 00:07:54,018][root][INFO] - Loading model : meta-llama/Llama-3.1-8B-Instruct
+[2025-03-07 00:07:54,580][root][INFO] - Full model selected, loading model
+[2025-03-07 00:08:17,377][root][INFO] - Tokenizer special tokens: {'bos_token': '<|begin_of_text|>', 'eos_token': '<|end_of_text|>', 'pad_token': '[PAD]'} have been added
+[2025-03-07 00:10:06,402][root][INFO] - Fine-tuned model selected, loading adapter
+[2025-03-07 00:10:06,402][root][WARNING] - Inference will be done using model.generate instead of hf pipeline since peft model is not compatible with it
+[2025-03-07 00:10:39,270][root][INFO] - Peft model loaded successfully
+[2025-03-07 00:10:46,679][root][INFO] - Prompt Handler initialized with configuration: {'prompt_type': 'zero_shot', 'example_path': '${hydra:runtime.cwd}/prompt/examples/structured_example.json', 'explanation_type': 'structured', 'response_type': 'answer_first', 'response_format': 'json', 'store_prompt': False, 'include_system_prompt': True, 'system_prompt': '${hydra:runtime.cwd}/prompt/system_prompt/system_${eval.prompt.response_format}_${eval.prompt.response_type}_${eval.prompt.explanation_type}.txt'}
+[2025-03-07 00:10:46,681][root][INFO] - Raw output for this run will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:10:46,681][root][INFO] - Starting inference
+[2025-03-07 00:10:46,915][root][INFO] - Processing question number 0
+[2025-03-07 00:10:46,917][root][INFO] - Domain : Constitutional_law, Question : 1
+[2025-03-07 00:10:59,567][root][INFO] - Domain : Constitutional_law, Question : 6
+[2025-03-07 00:11:15,279][root][INFO] - Domain : Constitutional_law, Question : 13
+[2025-03-07 00:11:28,770][root][INFO] - Domain : Constitutional_law, Question : 20
+[2025-03-07 00:11:41,696][root][INFO] - Domain : Constitutional_law, Question : 27
+[2025-03-07 00:11:52,327][root][INFO] - Domain : Constitutional_law, Question : 35
+[2025-03-07 00:12:03,346][root][INFO] - Domain : Constitutional_law, Question : 41
+[2025-03-07 00:12:16,911][root][INFO] - Domain : Constitutional_law, Question : 49
+[2025-03-07 00:12:28,891][root][INFO] - Domain : Constitutional_law, Question : 56
+[2025-03-07 00:12:37,987][root][INFO] - Domain : Constitutional_law, Question : 62
+[2025-03-07 00:12:47,728][root][INFO] - Processing question number 10
+[2025-03-07 00:12:47,730][root][INFO] - Domain : Constitutional_law, Question : 70
+[2025-03-07 00:12:59,431][root][INFO] - Domain : Constitutional_law, Question : 78
+[2025-03-07 00:13:11,162][root][INFO] - Domain : Constitutional_law, Question : 86
+[2025-03-07 00:13:25,084][root][INFO] - Domain : Constitutional_law, Question : 99
+[2025-03-07 00:13:35,453][root][INFO] - Domain : Criminal_law, Question : 2
+[2025-03-07 00:13:47,612][root][INFO] - Domain : Criminal_law, Question : 8
+[2025-03-07 00:13:58,380][root][INFO] - Domain : Criminal_law, Question : 15
+[2025-03-07 00:14:11,269][root][INFO] - Domain : Criminal_law, Question : 21
+[2025-03-07 00:14:22,057][root][INFO] - Domain : Criminal_law, Question : 29
+[2025-03-07 00:14:32,679][root][INFO] - Domain : Criminal_law, Question : 37
+[2025-03-07 00:14:48,446][root][INFO] - Processing question number 20
+[2025-03-07 00:14:48,448][root][INFO] - Domain : Criminal_law, Question : 44
+[2025-03-07 00:15:01,221][root][INFO] - Domain : Criminal_law, Question : 55
+[2025-03-07 00:15:13,950][root][INFO] - Domain : Criminal_law, Question : 64
+[2025-03-07 00:15:26,635][root][INFO] - Domain : Criminal_law, Question : 71
+[2025-03-07 00:15:37,241][root][INFO] - Domain : Criminal_law, Question : 76
+[2025-03-07 00:15:48,032][root][INFO] - Domain : Criminal_law, Question : 83
+[2025-03-07 00:15:57,726][root][INFO] - Domain : Criminal_law, Question : 89
+[2025-03-07 00:16:09,982][root][INFO] - Domain : Criminal_law, Question : 96
+[2025-03-07 00:16:21,701][root][INFO] - Domain : Contracts, Question : 3
+[2025-03-07 00:16:35,740][root][INFO] - Domain : Contracts, Question : 7
+[2025-03-07 00:16:48,058][root][INFO] - Processing question number 30
+[2025-03-07 00:16:48,061][root][INFO] - Domain : Contracts, Question : 14
+[2025-03-07 00:16:59,648][root][INFO] - Domain : Contracts, Question : 24
+[2025-03-07 00:17:11,618][root][INFO] - Domain : Contracts, Question : 28
+[2025-03-07 00:17:22,656][root][INFO] - Domain : Contracts, Question : 34
+[2025-03-07 00:17:33,296][root][INFO] - Domain : Contracts, Question : 42
+[2025-03-07 00:17:44,247][root][INFO] - Domain : Contracts, Question : 48
+[2025-03-07 00:17:56,670][root][INFO] - Domain : Contracts, Question : 58
+[2025-03-07 00:18:08,777][root][INFO] - Domain : Contracts, Question : 65
+[2025-03-07 00:18:21,154][root][INFO] - Domain : Contracts, Question : 72
+[2025-03-07 00:18:31,182][root][INFO] - Domain : Contracts, Question : 77
+[2025-03-07 00:18:44,378][root][INFO] - Processing question number 40
+[2025-03-07 00:18:44,380][root][INFO] - Domain : Contracts, Question : 84
+[2025-03-07 00:18:56,603][root][INFO] - Domain : Contracts, Question : 87
+[2025-03-07 00:19:08,520][root][INFO] - Domain : Contracts, Question : 97
+[2025-03-07 00:19:22,545][root][INFO] - Domain : Evidence, Question : 4
+[2025-03-07 00:19:31,594][root][INFO] - Domain : Evidence, Question : 10
+[2025-03-07 00:19:45,688][root][INFO] - Domain : Evidence, Question : 16
+[2025-03-07 00:19:56,183][root][INFO] - Domain : Evidence, Question : 23
+[2025-03-07 00:20:06,793][root][INFO] - Domain : Evidence, Question : 31
+[2025-03-07 00:20:18,407][root][INFO] - Domain : Evidence, Question : 38
+[2025-03-07 00:20:32,336][root][INFO] - Domain : Evidence, Question : 43
+[2025-03-07 00:20:44,295][root][INFO] - Processing question number 50
+[2025-03-07 00:20:44,298][root][INFO] - Domain : Evidence, Question : 50
+[2025-03-07 00:20:56,781][root][INFO] - Domain : Evidence, Question : 51
+[2025-03-07 00:21:08,284][root][INFO] - Domain : Evidence, Question : 60
+[2025-03-07 00:21:20,008][root][INFO] - Domain : Evidence, Question : 73
+[2025-03-07 00:21:34,548][root][INFO] - Domain : Evidence, Question : 80
+[2025-03-07 00:21:44,726][root][INFO] - Domain : Evidence, Question : 85
+[2025-03-07 00:21:59,135][root][INFO] - Domain : Evidence, Question : 90
+[2025-03-07 00:22:12,868][root][INFO] - Domain : Evidence, Question : 98
+[2025-03-07 00:22:25,738][root][INFO] - Domain : Civil_procedure, Question : 5
+[2025-03-07 00:22:40,070][root][INFO] - Domain : Civil_procedure, Question : 12
+[2025-03-07 00:22:53,158][root][INFO] - Processing question number 60
+[2025-03-07 00:22:53,161][root][INFO] - Domain : Civil_procedure, Question : 19
+[2025-03-07 00:23:05,497][root][INFO] - Domain : Civil_procedure, Question : 26
+[2025-03-07 00:23:18,670][root][INFO] - Domain : Civil_procedure, Question : 33
+[2025-03-07 00:23:33,040][root][INFO] - Domain : Civil_procedure, Question : 40
+[2025-03-07 00:23:48,120][root][INFO] - Domain : Civil_procedure, Question : 47
+[2025-03-07 00:24:01,965][root][INFO] - Domain : Civil_procedure, Question : 54
+[2025-03-07 00:24:14,593][root][INFO] - Domain : Civil_procedure, Question : 61
+[2025-03-07 00:24:26,515][root][INFO] - Domain : Civil_procedure, Question : 68
+[2025-03-07 00:24:36,470][root][INFO] - Domain : Civil_procedure, Question : 75
+[2025-03-07 00:24:46,462][root][INFO] - Domain : Civil_procedure, Question : 82
+[2025-03-07 00:24:58,337][root][INFO] - Processing question number 70
+[2025-03-07 00:24:58,341][root][INFO] - Domain : Civil_procedure, Question : 93
+[2025-03-07 00:25:09,375][root][INFO] - Domain : Property, Question : 9
+[2025-03-07 00:25:22,237][root][INFO] - Domain : Property, Question : 17
+[2025-03-07 00:25:34,581][root][INFO] - Domain : Property, Question : 25
+[2025-03-07 00:25:49,039][root][INFO] - Domain : Property, Question : 30
+[2025-03-07 00:25:58,950][root][INFO] - Domain : Property, Question : 36
+[2025-03-07 00:26:11,901][root][INFO] - Domain : Property, Question : 46
+[2025-03-07 00:26:25,023][root][INFO] - Domain : Property, Question : 53
+[2025-03-07 00:26:38,626][root][INFO] - Domain : Property, Question : 59
+[2025-03-07 00:26:50,654][root][INFO] - Domain : Property, Question : 66
+[2025-03-07 00:27:01,539][root][INFO] - Processing question number 80
+[2025-03-07 00:27:01,543][root][INFO] - Domain : Property, Question : 69
+[2025-03-07 00:27:13,459][root][INFO] - Domain : Property, Question : 81
+[2025-03-07 00:27:26,575][root][INFO] - Domain : Property, Question : 88
+[2025-03-07 00:27:39,939][root][INFO] - Domain : Property, Question : 91
+[2025-03-07 00:27:54,216][root][INFO] - Domain : Property, Question : 94
+[2025-03-07 00:28:07,775][root][INFO] - Domain : Property, Question : 100
+[2025-03-07 00:28:20,455][root][INFO] - Domain : Torts, Question : 11
+[2025-03-07 00:28:33,606][root][INFO] - Domain : Torts, Question : 18
+[2025-03-07 00:28:46,524][root][INFO] - Domain : Torts, Question : 22
+[2025-03-07 00:28:58,203][root][INFO] - Domain : Torts, Question : 32
+[2025-03-07 00:29:10,810][root][INFO] - Processing question number 90
+[2025-03-07 00:29:10,814][root][INFO] - Domain : Torts, Question : 39
+[2025-03-07 00:29:22,638][root][INFO] - Domain : Torts, Question : 45
+[2025-03-07 00:29:35,977][root][INFO] - Domain : Torts, Question : 52
+[2025-03-07 00:29:47,673][root][INFO] - Domain : Torts, Question : 57
+[2025-03-07 00:29:58,479][root][INFO] - Domain : Torts, Question : 63
+[2025-03-07 00:30:12,087][root][INFO] - Domain : Torts, Question : 67
+[2025-03-07 00:30:24,460][root][INFO] - Domain : Torts, Question : 74
+[2025-03-07 00:30:37,753][root][INFO] - Domain : Torts, Question : 79
+[2025-03-07 00:30:47,246][root][INFO] - Domain : Torts, Question : 92
+[2025-03-07 00:30:56,483][root][INFO] - Domain : Torts, Question : 95
+[2025-03-07 00:31:10,081][root][INFO] - Inference complete
+[2025-03-07 00:31:10,081][root][INFO] - Saving raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:31:10,087][root][INFO] - Starting parsing of raw outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:31:10,092][root][WARNING] - |Q. 97||D: Contracts| has broken JSON output. Attempting to fix it.
+[2025-03-07 00:31:10,092][root][WARNING] - |Q. 97||D: Contracts| Successfully fixed invalid JSON. Not all fields may be present.
+[2025-03-07 00:31:10,092][root][INFO] - |Q. 97||D: Contracts| was made valid into Valid json. Extracting responses.
+[2025-03-07 00:31:10,100][root][INFO] - Saving parsed outputs to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:31:10,105][root][INFO] - Dumped the response to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/parsed_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:31:10,105][root][INFO] - Saved parsed outputs
+[2025-03-07 00:31:10,105][root][INFO] - Saving parsing metadata to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:31:10,106][root][INFO] - Dumped the stats to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/parsing_metadata/raw_responses/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:31:10,106][root][INFO] - Saved parsing metadata
+[2025-03-07 00:31:10,107][root][INFO] - Metrics will be saved to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:31:10,109][root][INFO] - Metrics calculated, saving backup to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+[2025-03-07 00:31:10,110][root][INFO] - Dumped the metrics to /pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs/metrics/llama3/seed_989/all_domains_10_samples/trained_full_model/temp_06/json_answer_first_zero_shot_structured/test_set_2.json
+Metrics successfully appended to master CSV.
+[2025-03-07 00:31:10,138][root][INFO] - Evaluation completed for json_answer_first_zero_shot_structured, on test_set_2
+[2025-03-07 00:31:10,138][root][INFO] - Summary of metrics : {'label_accuracy': 0.54, 'misclassification_rate': 0.45999999999999996, 'combined_accuracy': 0.46, 'malformed_label': 0, 'malformed_domain': 12, 'total_predictions': 100, 'correct_predictions': 54, 'correct_label_and_domain': 46, 'Constitutional_Law_accuracy': 0.5, 'Contracts_accuracy': 0.26666666666666666, 'Criminal_Law_accuracy': 0.5714285714285714, 'Evidence_accuracy': 0.26666666666666666, 'Real_Property_accuracy': 0.3333333333333333, 'Torts_accuracy': 0.7142857142857143, 'Civil_Procedure_accuracy': 0.6153846153846154, 'Constitutional_Law_confidence': 0.16, 'Contracts_confidence': 0.13, 'Criminal_Law_confidence': 0.14, 'Evidence_confidence': 0.11, 'Real_Property_confidence': 0.17, 'Torts_confidence': 0.14, 'Civil_Procedure_confidence': 0.15, 'correct_domain_wrong_label': 42, 'correct_label_wrong_domain': 8, 'both_wrong': 4}
+Starting update_eval_status.py
+Received arguments: ['/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/scripts/update_eval_status.py', '22', 'seeds=seed_989 model=llama3 tokenizer=llama3 dataset=all_domains_10_samples generation=temp_06 evaluation_dataset=test_set_2 eval=json_answer_first_zero_shot_structured ++eval.quantisation_status=full_model ++eval.training_status=trained', 'completed', '0']
+Updating eval for job 22 to status completed with exit code 0
+Eval status update completed for job 22
+Job 22 completed at Fri Mar  7 00:31:11 CET 2025
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n516
+Job ID: 25358397
+Cluster: uc2
+User/Group: fr_rf1031/fr_fr
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 05:23:01
+CPU Efficiency: 9.83% of 2-06:47:40 core-walltime
+Job Wall-clock time: 05:28:46
+Memory Utilized: 34.75 GB
+Memory Efficiency: 96.52% of 36.00 GB

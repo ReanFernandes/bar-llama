@@ -18,6 +18,11 @@ from multiprocessing import Pool, cpu_count
 from functools import partial
 
 COMPONENTS = {
+
+  'model': [
+            'llama3',
+            'llama2',
+            ]  ,
   'response_formats': [
       'json', 
       'number_list', 
@@ -36,10 +41,12 @@ COMPONENTS = {
       'unstructured'
   ],
   'seeds': [
-      'seed_21',
-      'seed_1337', 
-      'seed_42',
-      'seed_3991'
+    #   'seed_21',
+    #   'seed_1337', 
+    #   'seed_42',
+    #   'seed_3991',
+    'seed_206',
+    'seed_989',
   ],
   'datasets': [
       'all_domains_1_samples',
@@ -66,6 +73,10 @@ COMPONENTS = {
   'quantisation': [
       'full_model',
     #   'quantised_model'
+  ],
+  'train_status' : [
+                    'untrained',
+                    'trained'
   ]
 }
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -109,6 +120,8 @@ def load_full_config(combo):
     prompt_name = f"{combo['response_format']}_{combo['response_type']}_{combo['prompt_type']}_{combo['explanation_type']}"
     
     overrides = [
+        "model=" + combo['model'],
+        "tokenizer=" + combo['model'],
         "dataset=" + combo['dataset'],  # Removed + prefix
         "evaluation_dataset=" + combo['eval_dataset'],
         "prompt=" + prompt_name,
@@ -125,29 +138,10 @@ def load_full_config(combo):
     except Exception as e:
         logging.error(f"Config load failed for {prompt_name}: {e}")
         return None
-# def load_full_config(combo):
-#    prompt_name = f"{combo['response_format']}_{combo['response_type']}_{combo['prompt_type']}_{combo['explanation_type']}"
-   
-#    overrides = [
-#        f"+dataset={combo['dataset']}",
-#        f"+evaluation_dataset={combo['eval_dataset']}",
-#        f"+prompt={prompt_name}",
-#        f"+eval={prompt_name}",
-#        f"+train={prompt_name}",
-#        f"+generation={combo['gen']}",
-#        f"+parsing={prompt_name}",
-#        f"+seeds={combo['seed']}"
-#    ]
 
-#    try:
-#        cfg = hydra.compose(config_name="config", overrides=overrides)
-#        return cfg
-#    except Exception as e:
-#        logging.error(f"Config load failed: {e}")
-#        return None
 def get_raw_path(cfg, combo):
-   raw_path = Path(cfg.eval.output_directory) / combo['seed'] / combo['dataset'] / \
-          f"trained_{combo['quant']}" / combo['gen'] / \
+   raw_path = Path(cfg.eval.output_directory) / combo['model'] / combo['seed'] / combo['dataset'] / \
+          f"{combo['train_status']}_{combo['quant']}" / combo['gen'] / \
           cfg.eval.train_config_label / f"{combo['eval_dataset']}.json"
    
    parsed_path = Path(str(raw_path).replace("raw_responses", "parsed_responses"))
@@ -339,6 +333,7 @@ def main(cfg: DictConfig):
     logging.basicConfig(level=logging.INFO)
     
     combos = [{
+        'model': model ,
         'response_format': rf,
         'response_type': rt,
         'prompt_type': pt,
@@ -347,9 +342,11 @@ def main(cfg: DictConfig):
         'dataset': dataset,
         'gen': gen,
         'eval_dataset': eval_set,
-        'quant': quant
-    } for rf, rt, pt, et, seed, dataset, gen, eval_set, quant in 
+        'quant': quant,
+        'train_status': train_status
+    } for model, rf, rt, pt, et, seed, dataset, gen, eval_set, quant,train_status in 
     itertools.product(
+        COMPONENTS['model'],
         COMPONENTS['response_formats'],
         COMPONENTS['response_types'],
         COMPONENTS['prompt_types'],
@@ -358,7 +355,8 @@ def main(cfg: DictConfig):
         COMPONENTS['datasets'],
         COMPONENTS['generation'],
         COMPONENTS['evaluation_datasets'],
-        COMPONENTS['quantisation']
+        COMPONENTS['quantisation'],
+        COMPONENTS['train_status']
     )]
 
     total = len(combos)

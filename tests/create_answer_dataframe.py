@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 COMPONENTS = {
     # Components for constructing eval config names
     'response_formats': [
-        # 'json',
+        'json',
         'number_list',
         'markdown'
     ],
@@ -279,7 +279,7 @@ def main():
     """Main execution function"""
     # Set up base path and output path
     base_path = "/pfs/work7/workspace/scratch/fr_rf1031-model_temp_storage/bar-llama/model_outputs"
-    output_path = "ALL_llama_new_question_level_analysis_results.csv" # modify to add new files
+    output_path = "updated_llama2and3_option_analysis_results.csv" # modify to add new files
     
     # Initialize analyzer
     analyzer = QuestionLevelAnalyzer(base_path, COMPONENTS)
