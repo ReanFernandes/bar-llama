@@ -177,7 +177,7 @@ def main(cfg: DictConfig):
     raw_outputs = []
 
     #----------------- specify correct saving paths for the raw output -----------------
-    """ Slight caveat here that i currently have not that clear of an idea about how i want to go about saving outputs. It is super dependent on the type of experiment im aiming for, e.g. trying diff decoding techniques would need to involve saving the files that way"""
+    
     ### sanity check : The output_directory in eval configs is set to ${hydra:runtime.cwd}/model_outputs/raw_responses/<model_label>
     # Start with level -1 : the model name :  
     raw_save_path = os.path.join(cfg.eval.output_directory, cfg.model.model_label)
@@ -212,7 +212,7 @@ def main(cfg: DictConfig):
     # ----------------- For loop for running inference per question -----------------
     logging.info("Starting inference")
     # for the sake of simplicity im an not batching the inference here rather just evaluating one question at a time. 
-    # could possibly be improved by batching the inference and then saving the results in a batched manner
+    # could possibly be improved by batching the inference and then saving the results in a batched manner.
 
     for count, data in enumerate(dataloader):
         if count%10 == 0: 
