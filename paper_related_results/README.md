@@ -1,10 +1,6 @@
-# Research Dataset Documentation
 
 ## Overview
-This repository contains the consolidated results dataset from our research paper. The dataset includes all inference runs recorded and was used to derive the plots and findings presented in our publication.
-
-## Dataset Structure
-The CSV file contains the following columns:
+This CSV file contains the consolidated results dataset from our research paper. The dataset includes all inference runs recorded and was used to derive the plots and findings presented in our publication.
 
 ### Model Information
 - `model_name`: Name of the model used
